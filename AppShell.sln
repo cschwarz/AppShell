@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell", "src\AppShell\AppShell.csproj", "{DE3520C9-7226-4FFE-88F1-A72FFE6A88D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Mobile", "src\AppShell.Mobile\AppShell.Mobile.csproj", "{67F9D3A8-F71E-4428-913F-C37AE82CDB24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Desktop", "src\AppShell.Desktop\AppShell.Desktop.csproj", "{60CB4BCF-FE17-4C7C-BCFE-996C3EAC1896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Mobile.Android", "src\AppShell.Mobile.Android\AppShell.Mobile.Android.csproj", "{44E821C5-E63F-419D-8D22-C57214BEDEE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8191DD5A-EE1A-4489-A5BE-42486D01DFDC}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE3520C9-7226-4FFE-88F1-A72FFE6A88D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE3520C9-7226-4FFE-88F1-A72FFE6A88D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE3520C9-7226-4FFE-88F1-A72FFE6A88D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE3520C9-7226-4FFE-88F1-A72FFE6A88D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60CB4BCF-FE17-4C7C-BCFE-996C3EAC1896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60CB4BCF-FE17-4C7C-BCFE-996C3EAC1896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60CB4BCF-FE17-4C7C-BCFE-996C3EAC1896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60CB4BCF-FE17-4C7C-BCFE-996C3EAC1896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44E821C5-E63F-419D-8D22-C57214BEDEE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44E821C5-E63F-419D-8D22-C57214BEDEE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44E821C5-E63F-419D-8D22-C57214BEDEE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44E821C5-E63F-419D-8D22-C57214BEDEE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

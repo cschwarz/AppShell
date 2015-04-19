@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -76,7 +77,13 @@ namespace AppShell.Desktop.Views
         public void Dispatch(string serviceName, string methodName, string arguments)
         {
             object[] parameters = JsonConvert.DeserializeObject<Dictionary<int, object>>(arguments).Select(p => p.Value).ToArray();
-            
+
+            for (int i = 0; i < parameters.Length; i++)
+            {
+                if (parameters[i] is JObject)
+                    parameters[i] = (parameters[i] as JObject).ToObject<Dictionary<string, object>>();
+            }
+
             serviceDispatcher.Dispatch(serviceName, methodName, parameters);
         }
     }

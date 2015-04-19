@@ -8,9 +8,9 @@ namespace AppShell
 {
     public interface IShellConfigurationProvider
     {
-        IEnumerable<Type> GetSplashScreens();
-        IEnumerable<Type> GetPlugins();
-        IEnumerable<Type> GetViewModels();
+        IEnumerable<TypeConfiguration> GetSplashScreens();
+        IEnumerable<TypeConfiguration> GetPlugins();
+        IEnumerable<TypeConfiguration> GetViewModels();
         Type GetShellViewModel();
     }
 }

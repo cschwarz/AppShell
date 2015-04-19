@@ -56,20 +56,22 @@ namespace AppShell
 
         protected IShellConfigurationProvider configurationProvider;
         protected IViewFactory viewFactory;
+        protected IViewModelFactory viewModelFactory;
         protected IDataTemplateFactory dataTemplateFactory;
 
-        public SplashScreenHostViewModel(IShellConfigurationProvider configurationProvider, IViewFactory viewFactory, IDataTemplateFactory dataTemplateFactory)
+        public SplashScreenHostViewModel(IShellConfigurationProvider configurationProvider, IViewFactory viewFactory, IViewModelFactory viewModelFactory, IDataTemplateFactory dataTemplateFactory)
         {
             this.configurationProvider = configurationProvider;
             this.viewFactory = viewFactory;
+            this.viewModelFactory = viewModelFactory;
             this.dataTemplateFactory = dataTemplateFactory;
 
             splashScreens = new Stack<SplashScreenContainer>();
             
-            foreach (Type splashScreenType in configurationProvider.GetSplashScreens().Reverse())
+            foreach (TypeConfiguration splashScreenType in configurationProvider.GetSplashScreens().Reverse())
             {
-                SplashScreenViewModel viewModel = AppShellCore.Container.GetInstance(splashScreenType) as SplashScreenViewModel;
-                Type viewType = viewFactory.GetViewType(splashScreenType);
+                SplashScreenViewModel viewModel = viewModelFactory.GetViewModel(splashScreenType.Type, splashScreenType.Data) as SplashScreenViewModel;
+                Type viewType = viewFactory.GetViewType(splashScreenType.Type);
 
                 splashScreens.Push(new SplashScreenContainer(viewModel, viewType));
             }

@@ -8,6 +8,6 @@ namespace AppShell
 {
     public interface IViewModelFactory
     {
-        IViewModel GetViewModel(Type viewModelType);
+        IViewModel GetViewModel(Type viewModelType, Dictionary<string, object> data = null);
     }
 }

@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>AppShell.Desktop</id>
-    <version>0.0.3</version>
+    <version>$version$</version>
     <title>AppShell.Desktop</title>
     <authors>Christian Schwarz</authors>
     <owners>Christian Schwarz</owners>

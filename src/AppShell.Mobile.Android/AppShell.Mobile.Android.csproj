@@ -89,6 +89,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AppShell.Mobile.Android.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

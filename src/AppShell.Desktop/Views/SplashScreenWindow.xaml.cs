@@ -43,6 +43,14 @@ namespace AppShell.Desktop
             }
         }
 
+        protected override void OnActivated(EventArgs e)
+        {
+            base.OnActivated(e);
+
+            if (DataContext is SplashScreenHostViewModel)
+                (DataContext as SplashScreenHostViewModel).ShowSplashScreens();
+        }
+
         private void ExitRequested(object sender, EventArgs e)
         {
             Close();

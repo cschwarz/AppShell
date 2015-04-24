@@ -27,6 +27,14 @@ namespace AppShell.Mobile
             }
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (BindingContext is SplashScreenHostViewModel)
+                (BindingContext as SplashScreenHostViewModel).ShowSplashScreens();
+        }
+
         private void ExitRequested(object sender, EventArgs e)
         {
         }

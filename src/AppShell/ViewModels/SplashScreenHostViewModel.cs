@@ -75,7 +75,10 @@ namespace AppShell
 
                 splashScreens.Push(new SplashScreenContainer(viewModel, viewType));
             }
+        }
 
+        public virtual void ShowSplashScreens()
+        {
             ShowNextSplashScreen();
         }
 

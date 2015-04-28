@@ -14,6 +14,8 @@ namespace AppShell.Tests
         void ServiceMethod1();
         [ServiceMethod("serviceMethod2")]
         void ServiceMethod2(int value);
+        [ServiceMethod("serviceMethod3")]
+        int ServiceMethod3(int value1, int value2);
     }
 
     public class Service1 : IService1
@@ -30,8 +32,13 @@ namespace AppShell.Tests
         {
             ServiceMethod2Result = value;
         }
+
+        public int ServiceMethod3(int value1, int value2)
+        {
+            return value1 + value2;
+        }
     }
-    
+
     public class ServiceDispatcherTest
     {
         private class TestPlatformProvider : IPlatformProvider
@@ -51,7 +58,7 @@ namespace AppShell.Tests
         public void Services_WithoutInitialization_ShouldHaveNoServiceRegistered()
         {
             ServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
-            
+
             Assert.Equal(0, serviceDispatcher.Services.Count);
         }
 
@@ -63,9 +70,10 @@ namespace AppShell.Tests
 
             Assert.Equal(1, serviceDispatcher.Services.Count);
             Assert.True(serviceDispatcher.Services.ContainsKey("service1"));
-            Assert.Equal(2, serviceDispatcher.Services["service1"].Count());
+            Assert.Equal(3, serviceDispatcher.Services["service1"].Count());
             Assert.True(serviceDispatcher.Services["service1"].Contains("serviceMethod1"));
             Assert.True(serviceDispatcher.Services["service1"].Contains("serviceMethod2"));
+            Assert.True(serviceDispatcher.Services["service1"].Contains("serviceMethod3"));
         }
 
         [Fact]
@@ -166,6 +174,30 @@ namespace AppShell.Tests
             serviceDispatcher.Dispatch("service1", "serviceMethod2", new object[] { 42L });
 
             Assert.Equal(42, service1.ServiceMethod2Result);
+        }
+
+        [Fact]
+        public void Dispatch_ServiceShouldReturnValue()
+        {
+            ServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 service1 = new Service1();
+
+            serviceDispatcher.Subscribe<IService1>(service1);
+            Assert.Equal(3, serviceDispatcher.Dispatch<IService1, int>(s => s.ServiceMethod3(1, 2)).Single());
+        }
+
+        [Fact]
+        public void DispatchReflection_ServiceShouldReturnValue()
+        {
+            ServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 service1 = new Service1();
+
+            serviceDispatcher.Subscribe<IService1>(service1);
+            Assert.Equal(3, serviceDispatcher.Dispatch("service1", "serviceMethod3", new object[] { 1, 2 }).Cast<int>().Single());
         }
     }
 }

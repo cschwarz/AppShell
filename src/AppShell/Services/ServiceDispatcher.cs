@@ -93,10 +93,29 @@ namespace AppShell
             }
         }
 
-        public void Dispatch(string serviceName, string methodName, object[] parameters)
+        public IEnumerable<TResult> Dispatch<T, TResult>(Func<T, TResult> predicate)
         {
+            List<TResult> results = new List<TResult>();
+
+            Type serviceType = typeof(T);
+
+            if (subscribedServices.ContainsKey(serviceType))
+            {
+                IEnumerable<T> services = subscribedServices[serviceType].Cast<T>();
+
+                foreach (T service in services)
+                    results.Add(predicate(service));
+            }
+
+            return results;
+        }
+
+        public IEnumerable<object> Dispatch(string serviceName, string methodName, object[] parameters)
+        {
+            List<object> results = new List<object>();
+
             if (!serviceNameTypeMapping.ContainsKey(serviceName))
-                return;
+                return results;
 
             Type serviceType = serviceNameTypeMapping[serviceName];
 
@@ -113,8 +132,10 @@ namespace AppShell
                 }
 
                 foreach (object service in services)
-                    method.Invoke(service, parameters);
+                    results.Add(method.Invoke(service, parameters));
             }
+
+            return results;
         }
     }
 }

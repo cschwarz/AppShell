@@ -16,5 +16,19 @@ namespace AppShell
                 }
             }
         }
+
+        private string html;
+        public string Html
+        {
+            get { return html; }
+            set
+            {
+                if (html != value)
+                {
+                    html = value;
+                    OnPropertyChanged("Html");
+                }
+            }
+        }
     }
 }

@@ -104,8 +104,16 @@ namespace AppShell
             {
                 IEnumerable<object> services = subscribedServices[serviceType];
 
+                MethodInfo method = serviceMethodMapping[serviceName][methodName];
+
+                if (parameters != null)
+                {
+                    ParameterInfo[] parameterInfos = method.GetParameters();
+                    parameters = parameters.Select((p, i) => Convert.ChangeType(p, parameterInfos[i].ParameterType)).ToArray();
+                }
+
                 foreach (object service in services)
-                    serviceMethodMapping[serviceName][methodName].Invoke(service, parameters);
+                    method.Invoke(service, parameters);
             }
         }
     }

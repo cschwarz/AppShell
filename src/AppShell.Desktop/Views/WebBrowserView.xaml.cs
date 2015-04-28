@@ -88,7 +88,7 @@ namespace AppShell.Desktop.Views
             this.serviceDispatcher = serviceDispatcher;
         }
 
-        public void Dispatch(string serviceName, string methodName, string arguments)
+        public string Dispatch(string serviceName, string methodName, string arguments)
         {
             object[] parameters = JsonConvert.DeserializeObject<Dictionary<int, object>>(arguments).Select(p => p.Value).ToArray();
 
@@ -98,7 +98,7 @@ namespace AppShell.Desktop.Views
                     parameters[i] = (parameters[i] as JObject).ToObject<Dictionary<string, object>>();
             }
 
-            serviceDispatcher.Dispatch(serviceName, methodName, parameters);
+            return JsonConvert.SerializeObject(serviceDispatcher.Dispatch(serviceName, methodName, parameters));
         }
     }
 }

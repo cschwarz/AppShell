@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Threading;
@@ -10,7 +12,20 @@ namespace AppShell.Desktop
     {
         public IEnumerable<Assembly> GetAssemblies()
         {
-            return AppDomain.CurrentDomain.GetAssemblies();
+            List<Assembly> assemblies = new List<Assembly>();
+
+            foreach (string assemblyPath in Directory.EnumerateFiles(AppDomain.CurrentDomain.BaseDirectory, "*.exe").Concat(Directory.EnumerateFiles(AppDomain.CurrentDomain.BaseDirectory, "*.dll")))
+            {
+                try
+                {
+                    assemblies.Add(Assembly.LoadFile(assemblyPath));
+                }
+                catch
+                {
+                }
+            }
+
+            return assemblies;
         }
 
         public void ExecuteOnUIThread(Action action)

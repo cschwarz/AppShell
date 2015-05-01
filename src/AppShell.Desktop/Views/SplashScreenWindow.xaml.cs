@@ -20,6 +20,8 @@ namespace AppShell.Desktop
     [View(typeof(SplashScreenHostViewModel))]
     public partial class SplashScreenWindow : Window
     {
+        private bool hasBeenInitialActivated;
+
         public SplashScreenWindow()
         {
             InitializeComponent();
@@ -46,6 +48,11 @@ namespace AppShell.Desktop
         protected override void OnActivated(EventArgs e)
         {
             base.OnActivated(e);
+
+            if (hasBeenInitialActivated)
+                return;
+
+            hasBeenInitialActivated = true;
 
             if (DataContext is SplashScreenHostViewModel)
                 (DataContext as SplashScreenHostViewModel).ShowSplashScreens();

@@ -7,15 +7,24 @@ namespace AppShell
 {
     public class ServiceDispatcher : IServiceDispatcher
     {
+        private static MethodInfo createEventHandlerMethod;
+
         private Dictionary<Type, List<object>> subscribedServices;
 
         private Dictionary<string, IEnumerable<string>> services;
         private Dictionary<string, Type> serviceNameTypeMapping;
         private Dictionary<string, Dictionary<string, MethodInfo>> serviceMethodMapping;
 
+        private Dictionary<Type, List<EventRegistration>> eventRegistrations;
+
         private IPlatformProvider platformProvider;
 
         public IDictionary<string, IEnumerable<string>> Services { get { return services; } }
+
+        static ServiceDispatcher()
+        {
+            createEventHandlerMethod = typeof(ServiceDispatcher).GetRuntimeMethods().Single(m => m.Name == "CreateEventHandler");
+        }
 
         public ServiceDispatcher(IPlatformProvider platformProvider)
         {
@@ -26,6 +35,8 @@ namespace AppShell
             services = new Dictionary<string, IEnumerable<string>>();
             serviceNameTypeMapping = new Dictionary<string, Type>();
             serviceMethodMapping = new Dictionary<string, Dictionary<string, MethodInfo>>();
+
+            eventRegistrations = new Dictionary<Type, List<EventRegistration>>();
         }
 
         public void Initialize()
@@ -68,6 +79,16 @@ namespace AppShell
                 subscribedServices.Add(serviceType, new List<object>());
 
             subscribedServices[serviceType].Add(service);
+
+            foreach (var eventRegistration in eventRegistrations)
+            {
+                if (subscribedServices.ContainsKey(eventRegistration.Key))
+                {
+                    foreach (var subscribeAction in eventRegistration.Value.Select(a => a.SubscribeAction).Cast<Action<T>>())
+                        subscribeAction(service);
+                }
+            }
+
         }
 
         public void Unsubscribe<T>(T service)
@@ -78,6 +99,15 @@ namespace AppShell
                 return;
 
             subscribedServices[serviceType].Remove(service);
+
+            foreach (var eventRegistration in eventRegistrations)
+            {
+                if (subscribedServices.ContainsKey(eventRegistration.Key))
+                {
+                    foreach (var unsubscribeAction in eventRegistration.Value.Select(a => a.UnsubscribeAction).Cast<Action<T>>())
+                        unsubscribeAction(service);
+                }
+            }
         }
 
         public void Dispatch<T>(Action<T> predicate)
@@ -136,6 +166,89 @@ namespace AppShell
             }
 
             return results;
+        }
+
+        public EventRegistration SubscribeEvent<T>(Action<T> subscribe, Action<T> unsubscribe) where T : class
+        {
+            if (!eventRegistrations.ContainsKey(typeof(T)))
+                eventRegistrations.Add(typeof(T), new List<EventRegistration>());
+
+            EventRegistration eventRegistration = new EventRegistration(subscribe, unsubscribe);
+
+            eventRegistrations[typeof(T)].Add(eventRegistration);
+
+            if (subscribedServices.ContainsKey(typeof(T)))
+            {
+                foreach (var service in subscribedServices[typeof(T)])
+                    subscribe(service as T);
+            }
+
+            return eventRegistration;
+        }
+        
+        public EventRegistration SubscribeEvent(string serviceName, string eventName, object target, Action<object, object> callback)
+        {
+            if (!serviceNameTypeMapping.ContainsKey(serviceName))
+                throw new Exception();
+
+            Type serviceType = serviceNameTypeMapping[serviceName];
+
+            if (!eventRegistrations.ContainsKey(serviceType))
+                eventRegistrations.Add(serviceType, new List<EventRegistration>());
+            
+            EventInfo eventInfo = serviceType.GetRuntimeEvent(eventName);
+            Type eventType = eventInfo.EventHandlerType.GetRuntimeMethods().Single(m => m.Name == "Invoke").GetParameters()[1].ParameterType;
+            
+            MulticastDelegate handler = (MulticastDelegate)createEventHandlerMethod.MakeGenericMethod(eventType).Invoke(this, new object[] { callback });            
+
+            Action<object> subscribe = s => { eventInfo.AddEventHandler(s, handler); };
+            Action<object> unsubscribe = s => { eventInfo.RemoveEventHandler(s, handler); };
+
+            EventRegistration eventRegistration = new EventRegistration(subscribe, unsubscribe);
+
+            eventRegistrations[serviceType].Add(eventRegistration);
+
+            if (subscribedServices.ContainsKey(serviceType))
+            {
+                foreach (var service in subscribedServices[serviceType])
+                    eventInfo.AddEventHandler(service, handler);
+            }
+
+            return eventRegistration;
+        }
+
+        public void UnsubscribeEvent<T>(EventRegistration eventRegistration) where T : class
+        {
+            if (eventRegistrations.ContainsKey(typeof(T)))
+                eventRegistrations[typeof(T)].Remove(eventRegistration);
+
+            if (subscribedServices.ContainsKey(typeof(T)))
+            {
+                foreach (var service in subscribedServices[typeof(T)])
+                    ((Action<T>)eventRegistration.UnsubscribeAction)(service as T);
+            }
+        }
+
+        public void UnsubscribeEvent(string serviceName, EventRegistration eventRegistration)
+        {
+            if (!serviceNameTypeMapping.ContainsKey(serviceName))
+                throw new Exception();
+
+            Type serviceType = serviceNameTypeMapping[serviceName];
+
+            if (eventRegistrations.ContainsKey(serviceType))
+                eventRegistrations[serviceType].Remove(eventRegistration);
+
+            if (subscribedServices.ContainsKey(serviceType))
+            {
+                foreach (var service in subscribedServices[serviceType])
+                    ((Action<object>)eventRegistration.UnsubscribeAction)(service);
+            }
+        }
+
+        private static EventHandler<T> CreateEventHandler<T>(Action<object, object> callback) where T : class
+        {
+            return new EventHandler<T>(callback);
         }
     }
 }

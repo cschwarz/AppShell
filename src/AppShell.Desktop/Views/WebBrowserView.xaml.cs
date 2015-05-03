@@ -100,5 +100,17 @@ namespace AppShell.Desktop.Views
 
             return JsonConvert.SerializeObject(serviceDispatcher.Dispatch(serviceName, methodName, parameters));
         }
+                
+        public void SubscribeEvent(string serviceName, string eventName, dynamic callback)
+        {
+            serviceDispatcher.SubscribeEvent(serviceName, eventName, this, (s, e) =>
+            {
+                callback(JsonConvert.SerializeObject(e));                
+            });
+        }
+
+        public void UnsubscribeEvent()
+        {
+        }
     }
 }

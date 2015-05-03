@@ -25,4 +25,10 @@ ServiceDispatcher.prototype.dispatch = function (serviceName) {
     return this._services[serviceName];
 };
 
+ServiceDispatcher.prototype.subscribeEvent = function (serviceName, eventName, callback) {
+    return window.external.SubscribeEvent(serviceName, eventName, function (e) {
+        callback(JSON.parse(e));
+    });
+};
+
 window.serviceDispatcher = new ServiceDispatcher();

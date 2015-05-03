@@ -10,6 +10,9 @@ namespace AppShell.Tests
     [Service("service1")]
     public interface IService1
     {
+        event EventHandler Event1;
+        event EventHandler<string> Event2;
+
         [ServiceMethod("serviceMethod1")]
         void ServiceMethod1();
         [ServiceMethod("serviceMethod2")]
@@ -22,6 +25,9 @@ namespace AppShell.Tests
     {
         public bool ServiceMethod1Called { get; private set; }
         public int ServiceMethod2Result { get; private set; }
+
+        public event EventHandler Event1;
+        public event EventHandler<string> Event2;
 
         public void ServiceMethod1()
         {
@@ -36,6 +42,18 @@ namespace AppShell.Tests
         public int ServiceMethod3(int value1, int value2)
         {
             return value1 + value2;
+        }
+
+        public void RaiseEvent1()
+        {
+            if (Event1 != null)
+                Event1(this, EventArgs.Empty);
+        }
+
+        public void RaiseEvent2(string value)
+        {
+            if (Event2 != null)
+                Event2(this, value);
         }
     }
 
@@ -198,6 +216,44 @@ namespace AppShell.Tests
 
             serviceDispatcher.Subscribe<IService1>(service1);
             Assert.Equal(3, serviceDispatcher.Dispatch("service1", "serviceMethod3", new object[] { 1, 2 }).Cast<int>().Single());
+        }
+
+        [Fact]
+        public void EventShouldBeRaised()
+        {
+            bool event1Raised = false;
+            EventHandler event1Handler = (o, e) => { event1Raised = true; };
+
+            IServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 service1 = new Service1();
+
+            serviceDispatcher.Subscribe<IService1>(service1);
+            serviceDispatcher.SubscribeEvent<IService1>(s => s.Event1 += event1Handler, s => s.Event1 -= event1Handler);
+
+            service1.RaiseEvent1();
+
+            Assert.True(event1Raised);
+        }
+
+        [Fact]
+        public void EventShouldBeRaisedWithParameter()
+        {
+            string event2Raised = string.Empty;
+            EventHandler<string> event2Handler = (o, e) => { event2Raised = e; };
+
+            IServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 service1 = new Service1();
+
+            serviceDispatcher.Subscribe<IService1>(service1);
+            serviceDispatcher.SubscribeEvent<IService1>(s => s.Event2 += event2Handler, s => s.Event2 -= event2Handler);
+
+            service1.RaiseEvent2("Event2");
+
+            Assert.Equal("Event2", event2Raised);
         }
     }
 }

@@ -17,12 +17,12 @@ namespace AppShell.Samples.ServiceDispatcher
         private void RetrieveCurrentTime()
         {
             if (CurrentTime != null)
-                CurrentTime(this, DateTime.Now);
+                CurrentTime(this, new DateTimeEventArgs(DateTime.Now));
 
             Task.Delay(1000).ContinueWith(t => RetrieveCurrentTime());
         }
 
-        public event EventHandler<DateTime> CurrentTime;
+        public event EventHandler<DateTimeEventArgs> CurrentTime;
 
         public int Add(int value1, int value2)
         {

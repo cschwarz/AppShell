@@ -7,9 +7,15 @@
 </head>
 <body>
     1 + 2 = <span id="addResult"></span>
+    <br />
+    Current Time: <span id="currentDateTime"></span>
     <script>
         function serviceDispatcherReady() {
-            addResult.innerText = serviceDispatcher.dispatch('sampleService').add(1, 2);             
+            addResult.innerText = serviceDispatcher.dispatch('sampleService').add(1, 2);
+
+            serviceDispatcher.subscribeEvent('sampleService', 'CurrentTime', function (e) {
+                currentDateTime.innerText = e.DateTime;
+            });
         }
     </script>
 </body>

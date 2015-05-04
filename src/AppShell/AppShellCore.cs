@@ -1,5 +1,6 @@
 ﻿using SimpleInjector;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AppShell
 {
@@ -7,16 +8,11 @@ namespace AppShell
     {
         public static Container Container { get; private set; }
 
-        protected List<IPlugin> plugins;
+        protected IPluginProvider pluginProvider;
 
         static AppShellCore()
         {
             Container = new Container();
-        }
-
-        public AppShellCore()
-        {
-            plugins = new List<IPlugin>();
         }
 
         public virtual void Configure()
@@ -24,26 +20,23 @@ namespace AppShell
             Container.RegisterSingle<IServiceDispatcher, ServiceDispatcher>();
             Container.RegisterSingle<IViewModelFactory, ViewModelFactory>();
             Container.RegisterSingle<IPluginFactory, PluginFactory>();
+            Container.RegisterSingle<IPluginProvider, PluginProvider>();
         }
 
         public virtual void Initialize()
         {
             Container.GetInstance<IViewFactory>().Initialize();
             Container.GetInstance<IServiceDispatcher>().Initialize();
+            
+            pluginProvider = Container.GetInstance<IPluginProvider>();
 
             foreach (TypeConfiguration pluginConfiguration in Container.GetInstance<IShellConfigurationProvider>().GetPlugins())
-            {
-                IPlugin plugin = Container.GetInstance<IPluginFactory>().GetPlugin(pluginConfiguration.Type, pluginConfiguration.Data);
-                plugin.Start();
-
-                plugins.Add(plugin);
-            }
+                pluginProvider.StartPlugin(pluginConfiguration.Type, pluginConfiguration.Data);
         }
 
         public virtual void Shutdown()
         {
-            foreach (IPlugin plugin in plugins)
-                plugin.Stop();
+            pluginProvider.ShutdownPlugins();
         }
     }
 }

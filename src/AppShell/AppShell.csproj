@@ -51,12 +51,14 @@
     <Compile Include="Factories\IViewModelFactory.cs" />
     <Compile Include="Factories\PluginFactory.cs" />
     <Compile Include="Factories\ViewModelFactory.cs" />
+    <Compile Include="Providers\IPluginProvider.cs" />
     <Compile Include="Providers\IShellConfigurationProvider.cs" />
     <Compile Include="Providers\IPlatformProvider.cs" />
     <Compile Include="Factories\IViewFactory.cs" />
     <Compile Include="Plugins\IPlugin.cs" />
     <Compile Include="Plugins\ServicePlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\PluginProvider.cs" />
     <Compile Include="Providers\ShellConfigurationProvider.cs" />
     <Compile Include="Services\INavigationService.cs" />
     <Compile Include="Services\IServiceDispatcher.cs" />

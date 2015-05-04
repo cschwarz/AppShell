@@ -10,6 +10,10 @@
     <description>AppShell.Desktop</description>
     <copyright>Copyright 2015</copyright>
     <tags>AppShell.Desktop</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="6.0.8" />
+      <dependency id="SimpleInjector" version="2.8.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="bin\Release\AppShell.Desktop.dll" target="lib\net45"/>

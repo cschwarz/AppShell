@@ -23,6 +23,7 @@ namespace AppShell
         {
             Container.RegisterSingle<IServiceDispatcher, ServiceDispatcher>();
             Container.RegisterSingle<IViewModelFactory, ViewModelFactory>();
+            Container.RegisterSingle<IPluginFactory, PluginFactory>();
         }
 
         public virtual void Initialize()
@@ -32,7 +33,7 @@ namespace AppShell
 
             foreach (TypeConfiguration pluginConfiguration in Container.GetInstance<IShellConfigurationProvider>().GetPlugins())
             {
-                IPlugin plugin = Container.GetInstance(pluginConfiguration.Type) as IPlugin;
+                IPlugin plugin = Container.GetInstance<IPluginFactory>().GetPlugin(pluginConfiguration.Type, pluginConfiguration.Data);
                 plugin.Start();
 
                 plugins.Add(plugin);

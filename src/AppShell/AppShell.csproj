@@ -47,7 +47,9 @@
     <Compile Include="Events\SplashScreenEventArgs.cs" />
     <Compile Include="Extensions\IPlatformProviderExtensions.cs" />
     <Compile Include="Factories\IDataTemplateFactory.cs" />
+    <Compile Include="Factories\IPluginFactory.cs" />
     <Compile Include="Factories\IViewModelFactory.cs" />
+    <Compile Include="Factories\PluginFactory.cs" />
     <Compile Include="Factories\ViewModelFactory.cs" />
     <Compile Include="Providers\IShellConfigurationProvider.cs" />
     <Compile Include="Providers\IPlatformProvider.cs" />

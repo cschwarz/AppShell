@@ -94,7 +94,9 @@ namespace AppShell.Desktop.Views
 
             for (int i = 0; i < parameters.Length; i++)
             {
-                if (parameters[i] is JObject)
+                if (parameters[i] is JArray)
+                    parameters[i] = (parameters[i] as JArray).ToObject<object[]>();
+                else if (parameters[i] is JObject)
                     parameters[i] = (parameters[i] as JObject).ToObject<Dictionary<string, object>>();
             }
 

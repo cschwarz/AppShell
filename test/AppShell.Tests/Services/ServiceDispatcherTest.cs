@@ -19,12 +19,15 @@ namespace AppShell.Tests
         void ServiceMethod2(int value);
         [ServiceMethod("serviceMethod3")]
         int ServiceMethod3(int value1, int value2);
+        [ServiceMethod("serviceMethod4")]
+        void ServiceMethod4(string stringValue, long longValue, float floatValue, double doubleValue, string[] stringArray, long[] longArray, IEnumerable<string> stringEnumerable, IEnumerable<long> longEnumerable, IDictionary<string, string> stringDictionary);
     }
 
     public class Service1 : IService1
     {
         public bool ServiceMethod1Called { get; private set; }
         public int ServiceMethod2Result { get; private set; }
+        public DataTypeTest ServiceMethod4Result { get; private set; }
 
         public event EventHandler Event1;
         public event EventHandler<string> Event2;
@@ -44,6 +47,11 @@ namespace AppShell.Tests
             return value1 + value2;
         }
 
+        public void ServiceMethod4(string stringValue, long longValue, float floatValue, double doubleValue, string[] stringArray, long[] longArray, IEnumerable<string> stringEnumerable, IEnumerable<long> longEnumerable, IDictionary<string, string> stringDictionary)
+        {
+            ServiceMethod4Result = new DataTypeTest(stringValue, longValue, floatValue, doubleValue, stringArray, longArray, stringEnumerable, longEnumerable, stringDictionary);
+        }
+
         public void RaiseEvent1()
         {
             if (Event1 != null)
@@ -54,6 +62,60 @@ namespace AppShell.Tests
         {
             if (Event2 != null)
                 Event2(this, value);
+        }
+    }
+
+    public class DataTypeTest : IEquatable<DataTypeTest>
+    {
+        public string StringValue { get; private set; }
+        public long LongValue { get; private set; }
+        public float FloatValue { get; private set; }
+        public double DoubleValue { get; private set; }
+        public string[] StringArray { get; private set; }
+        public long[] LongArray { get; private set; }
+        public IEnumerable<string> StringEnumerable { get; private set; }
+        public IEnumerable<long> LongEnumerable { get; private set; }
+        public IDictionary<string, string> StringDictionary { get; private set; }
+
+        public DataTypeTest(string stringValue, long longValue, float floatValue, double doubleValue, string[] stringArray, long[] longArray, IEnumerable<string> stringEnumerable, IEnumerable<long> longEnumerable, IDictionary<string, string> stringDictionary)
+        {
+            StringValue = stringValue;
+            LongValue = longValue;
+            FloatValue = floatValue;
+            DoubleValue = doubleValue;
+            StringArray = stringArray;
+            LongArray = longArray;
+            StringEnumerable = stringEnumerable;
+            LongEnumerable = longEnumerable;
+            StringDictionary = stringDictionary;
+        }
+
+        public bool Equals(DataTypeTest other)
+        {
+            if (ReferenceEquals(null, other))
+                return false;
+            if (ReferenceEquals(this, other))
+                return true;
+            return StringValue == other.StringValue &&
+                LongValue == other.LongValue &&
+                FloatValue == other.FloatValue &&
+                DoubleValue == other.DoubleValue &&
+                StringArray == other.StringArray &&
+                LongArray == other.LongArray &&
+                StringEnumerable == other.StringEnumerable &&
+                LongEnumerable == other.LongEnumerable &&
+                StringDictionary == other.StringDictionary;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj))
+                return false;
+            if (ReferenceEquals(this, obj))
+                return true;
+            if (obj.GetType() != this.GetType())
+                return false;
+            return Equals((DataTypeTest)obj);
         }
     }
 
@@ -88,10 +150,11 @@ namespace AppShell.Tests
 
             Assert.Equal(1, serviceDispatcher.Services.Count);
             Assert.True(serviceDispatcher.Services.ContainsKey("service1"));
-            Assert.Equal(3, serviceDispatcher.Services["service1"].Count());
+            Assert.Equal(4, serviceDispatcher.Services["service1"].Count());
             Assert.True(serviceDispatcher.Services["service1"].Contains("serviceMethod1"));
             Assert.True(serviceDispatcher.Services["service1"].Contains("serviceMethod2"));
             Assert.True(serviceDispatcher.Services["service1"].Contains("serviceMethod3"));
+            Assert.True(serviceDispatcher.Services["service1"].Contains("serviceMethod4"));
         }
 
         [Fact]
@@ -216,6 +279,36 @@ namespace AppShell.Tests
 
             serviceDispatcher.Subscribe<IService1>(service1);
             Assert.Equal(3, serviceDispatcher.Dispatch("service1", "serviceMethod3", new object[] { 1, 2 }).Cast<int>().Single());
+        }
+
+        [Fact]
+        public void Dispatch_ServiceShouldBeCalledWithVariousDataTypes()
+        {
+            DataTypeTest dataTypeTest = new DataTypeTest("StringValue", 1L, 2.2f, 3.3d, new string[] { "1", "2", "3" }, new long[] { 1, 2, 3 }, new List<string>() { "1", "2", "3" }, new List<long>() { 1, 2, 3 }, new Dictionary<string, string>() { { "Key1", "Value1" }, { "Key2", "Value2" } });
+
+            ServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 service1 = new Service1();
+
+            serviceDispatcher.Subscribe<IService1>(service1);
+            serviceDispatcher.Dispatch<IService1>(s => s.ServiceMethod4(dataTypeTest.StringValue, dataTypeTest.LongValue, dataTypeTest.FloatValue, dataTypeTest.DoubleValue, dataTypeTest.StringArray, dataTypeTest.LongArray, dataTypeTest.StringEnumerable, dataTypeTest.LongEnumerable, dataTypeTest.StringDictionary));
+            Assert.Equal(dataTypeTest, service1.ServiceMethod4Result);
+        }
+
+        [Fact]
+        public void DispatchReflection_ServiceShouldBeCalledWithVariousDataTypes()
+        {
+            DataTypeTest dataTypeTest = new DataTypeTest("StringValue", 1L, 2.2f, 3.3d, new string[] { "1", "2", "3" }, new long[] { 1, 2, 3 }, new List<string>() { "1", "2", "3" }, new List<long>() { 1, 2, 3 }, new Dictionary<string, string>() { { "Key1", "Value1" }, { "Key2", "Value2" } });
+
+            ServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 service1 = new Service1();
+
+            serviceDispatcher.Subscribe<IService1>(service1);
+            serviceDispatcher.Dispatch("service1", "serviceMethod4", new object[] { dataTypeTest.StringValue, dataTypeTest.LongValue, dataTypeTest.FloatValue, dataTypeTest.DoubleValue, dataTypeTest.StringArray, dataTypeTest.LongArray, dataTypeTest.StringEnumerable, dataTypeTest.LongEnumerable, dataTypeTest.StringDictionary });
+            Assert.Equal(dataTypeTest, service1.ServiceMethod4Result);
         }
 
         [Fact]

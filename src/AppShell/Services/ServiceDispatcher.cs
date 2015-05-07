@@ -158,7 +158,7 @@ namespace AppShell
                 if (parameters != null)
                 {
                     ParameterInfo[] parameterInfos = method.GetParameters();
-                    parameters = parameters.Select((p, i) => Convert.ChangeType(p, parameterInfos[i].ParameterType)).ToArray();
+                    parameters = parameters.Select((p, i) => p.ChangeType(parameterInfos[i].ParameterType)).ToArray();
                 }
 
                 foreach (object service in services)

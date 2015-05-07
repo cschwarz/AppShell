@@ -39,6 +39,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Extensions\ObjectExtensionsTest.cs" />
     <Compile Include="Services\ServiceDispatcherTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

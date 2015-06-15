@@ -107,7 +107,13 @@ namespace AppShell.Desktop.Views
         {
             serviceDispatcher.SubscribeEvent(serviceName, eventName, this, (s, e) =>
             {
-                callback(JsonConvert.SerializeObject(e));                
+                try
+                {
+                    callback(JsonConvert.SerializeObject(e));
+                }
+                catch(UnauthorizedAccessException)
+                {
+                }
             });
         }
 

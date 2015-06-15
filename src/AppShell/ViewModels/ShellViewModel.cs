@@ -7,6 +7,8 @@ namespace AppShell
 {
     public class ShellViewModel : ViewModel, INavigationService
     {
+        public event EventHandler<IViewModel> DetachViewModelRequested;
+
         public ObservableCollection<IViewModel> Items { get; private set; }
 
         private IViewModel activeItem;
@@ -21,7 +23,7 @@ namespace AppShell
         }
 
         private IViewModelFactory viewModelFactory;
-        
+
         public ShellViewModel(IShellConfigurationProvider configurationProvider, IServiceDispatcher serviceDispatcher, IViewModelFactory viewModelFactory)
         {
             this.viewModelFactory = viewModelFactory;
@@ -55,6 +57,21 @@ namespace AppShell
                 ActiveItem = Items.Last();
             else
                 ActiveItem = null;
+        }
+
+        public void DetachActive()
+        {
+            IViewModel viewModel = Items.Last();
+
+            Items.Remove(viewModel);
+
+            if (Items.Any())
+                ActiveItem = Items.Last();
+            else
+                ActiveItem = null;
+
+            if (DetachViewModelRequested != null)
+                DetachViewModelRequested(this, viewModel);
         }
     }
 }

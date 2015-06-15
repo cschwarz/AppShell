@@ -23,6 +23,28 @@ namespace AppShell.Desktop
         public StackShellWindow()
         {            
             InitializeComponent();
+
+            DataContextChanged += StackShellWindow_DataContextChanged;
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+
+            DataContextChanged -= StackShellWindow_DataContextChanged;
+        }
+
+        private void StackShellWindow_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (DataContext is StackShellViewModel)
+                (DataContext as StackShellViewModel).DetachViewModelRequested += DetachViewModelRequested;
+        }
+
+        private void DetachViewModelRequested(object sender, IViewModel e)
+        {
+            DetachedWindow detachedWindow = new DetachedWindow();
+            detachedWindow.DataContext = e;
+            detachedWindow.Show();
         }
     }
 }

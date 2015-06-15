@@ -76,6 +76,9 @@
     </Compile>
     <Compile Include="ShellApplication.cs" />
     <Compile Include="ShellDataTemplateSelector.cs" />
+    <Compile Include="Views\DetachedWindow.xaml.cs">
+      <DependentUpon>DetachedWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SplashScreenWindow.xaml.cs">
       <DependentUpon>SplashScreenWindow.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\DetachedWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\SplashScreenWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -22,7 +22,29 @@ namespace AppShell.Desktop
     {
         public TabShellWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            
+            DataContextChanged += TabShellWindow_DataContextChanged;
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+
+            DataContextChanged -= TabShellWindow_DataContextChanged;
+        }
+
+        private void TabShellWindow_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (DataContext is StackShellViewModel)
+                (DataContext as StackShellViewModel).DetachViewModelRequested += DetachViewModelRequested;
+        }
+
+        private void DetachViewModelRequested(object sender, IViewModel e)
+        {
+            DetachedWindow detachedWindow = new DetachedWindow();
+            detachedWindow.DataContext = e;
+            detachedWindow.Show();
         }
     }
 }

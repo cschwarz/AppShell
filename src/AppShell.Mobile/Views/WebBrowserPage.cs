@@ -1,10 +1,14 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Reflection.Emit;
 using System.Text;
-
 using Xamarin.Forms;
+using XLabs.Forms.Controls;
+using XLabs.Serialization.JsonNET;
 
 namespace AppShell.Mobile
 {
@@ -28,18 +32,36 @@ namespace AppShell.Mobile
         public static void HtmlPropertyChanged(BindableObject d, string oldValue, string newValue)
         {
             WebBrowserPage webBrowserPage = d as WebBrowserPage;
-
+            
             if (newValue != null)
                 webBrowserPage.webView.Source = new HtmlWebViewSource() { Html = newValue };
         }
 
-        private WebView webView;
+        private HybridWebView webView;
 
         public WebBrowserPage()
         {
-            webView = new WebView();
+            webView = new HybridWebView(new XLabs.Serialization.JsonNET.JsonSerializer());
+            
+            string serviceDispatcherScript = null;
 
-            Content = webView;
+            using (StreamReader streamReader = new StreamReader(typeof(WebBrowserPage).GetTypeInfo().Assembly.GetManifestResourceStream("AppShell.Mobile.ServiceDispatcher.js")))
+                serviceDispatcherScript = streamReader.ReadToEnd();
+
+            string services = JsonConvert.SerializeObject(AppShellCore.Container.GetInstance<IServiceDispatcher>().Services);
+
+            webView.LoadFinished += (s, e) =>
+            {
+                webView.InjectJavaScript(serviceDispatcherScript);
+                webView.InjectJavaScript(string.Format("serviceDispatcher.initialize({0});", services));
+            };
+                        
+            webView.RegisterCallback("dispatch", args =>
+            {
+
+            });
+
+            Content = webView;       
 
             SetBinding(UrlProperty, new Binding("Url"));
             SetBinding(HtmlProperty, new Binding("Html"));

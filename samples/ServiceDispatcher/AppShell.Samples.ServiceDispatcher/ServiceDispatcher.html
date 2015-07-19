@@ -4,6 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <title></title>
+    <style>
+        body {
+            background: white;
+        }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js"></script>
 </head>
 <body>
@@ -11,7 +16,7 @@
     <br />
     Current Time: <span id="currentDateTime"></span>
     <script>
-        function serviceDispatcherReady() {
+        function serviceDispatcherReady() {            
             moment.locale('de');
 
             addResult.innerText = serviceDispatcher.dispatch('sampleService').add(1, 2);

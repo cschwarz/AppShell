@@ -2,7 +2,7 @@
     this._services = {};
 }
 
-ServiceDispatcher.prototype.initialize = function (services) {
+ServiceDispatcher.prototype.initialize = function (services) {    
     var self = this;
 
     Object.keys(services).forEach(function (serviceName) {
@@ -10,7 +10,9 @@ ServiceDispatcher.prototype.initialize = function (services) {
 
         services[serviceName].forEach(function (methodName) {
             service[methodName] = function () {
-                return JSON.parse(window.external.Dispatch(serviceName, methodName, JSON.stringify(arguments)));                
+                //return JSON.parse(window.external.Dispatch(serviceName, methodName, JSON.stringify(arguments)));
+                //return 5;
+                return Native('dispatch', JSON.stringify(arguments));
             };
         });
 

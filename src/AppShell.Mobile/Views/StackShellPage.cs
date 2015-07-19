@@ -21,7 +21,7 @@ namespace AppShell.Mobile
             shellViewModel = BindingContext as ShellViewModel;
 
             if (shellViewModel.ActiveItem != null)
-                PushAsync(viewFactory.GetView(shellViewModel.ActiveItem.GetType()) as Page);
+                PushAsync(viewFactory.GetView(shellViewModel.ActiveItem) as Page);
         }
     }
 }

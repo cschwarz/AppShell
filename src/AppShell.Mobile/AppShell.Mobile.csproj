@@ -46,6 +46,7 @@
     </Compile>
     <Compile Include="Views\StackShellPage.cs" />
     <Compile Include="Views\TabShellPage.cs" />
+    <Compile Include="Views\WebBrowserPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppShell\AppShell.csproj">

@@ -8,12 +8,16 @@
   </TemplateData>
   <TemplateContent>
     <ProjectCollection>
-      <ProjectTemplateLink ProjectName="$safeprojectname$">
+      <ProjectTemplateLink ProjectName="$safeprojectname$" CopyParameters="true">
         AppShell.Templates\MyTemplate.vstemplate
       </ProjectTemplateLink>
-      <ProjectTemplateLink ProjectName="$safeprojectname$.Desktop">
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Desktop" CopyParameters="true">
         AppShell.Templates.Desktop\MyTemplate.vstemplate
       </ProjectTemplateLink>
     </ProjectCollection>
   </TemplateContent>
+  <WizardExtension>
+    <Assembly>AppShell.Templates.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>AppShell.Templates.Wizard.AppShellWizard</FullClassName>    
+  </WizardExtension>
 </VSTemplate>

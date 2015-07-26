@@ -2,13 +2,13 @@
 
 namespace $safeprojectname$
 {
-    public class TemplateAppShellCore : AppShellCore
+    public class $ext_shellname$AppShellCore : AppShellCore
     {
         public override void Configure()
         {
             base.Configure();
 
-            Container.RegisterSingle<IShellConfigurationProvider, TemplateShellConfigurationProvider>();
+            Container.RegisterSingle<IShellConfigurationProvider, $ext_shellname$ShellConfigurationProvider>();
         }
     }
 }

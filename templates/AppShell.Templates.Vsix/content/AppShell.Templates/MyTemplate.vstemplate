@@ -20,9 +20,9 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       </Folder>
       <Folder Name="Providers" TargetFolderName="Providers">
-        <ProjectItem ReplaceParameters="true" TargetFileName="TemplateShellConfigurationProvider.cs">TemplateShellConfigurationProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_shellname$ShellConfigurationProvider.cs">TemplateShellConfigurationProvider.cs</ProjectItem>
       </Folder>
-      <ProjectItem ReplaceParameters="true" TargetFileName="TemplateAppShellCore.cs">TemplateAppShellCore.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$ext_shellname$AppShellCore.cs">TemplateAppShellCore.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

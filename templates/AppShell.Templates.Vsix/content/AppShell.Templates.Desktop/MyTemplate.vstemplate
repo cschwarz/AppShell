@@ -25,7 +25,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
       </Folder>
-      <ProjectItem ReplaceParameters="true" TargetFileName="TemplateApp.cs">TemplateApp.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$ext_shellname$App.cs">TemplateApp.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

@@ -2,9 +2,9 @@
 
 namespace $safeprojectname$
 {
-    public class TemplateShellConfigurationProvider : ShellConfigurationProvider
+    public class $ext_shellname$ShellConfigurationProvider : ShellConfigurationProvider
     {
-        public TemplateShellConfigurationProvider()
+        public $ext_shellname$ShellConfigurationProvider()
         {
             RegisterShellViewModel<StackShellViewModel>();
         }

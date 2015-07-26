@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AppShell.Templates
+namespace AppShell.Templates.Desktop
 {
     public static class Program
     {

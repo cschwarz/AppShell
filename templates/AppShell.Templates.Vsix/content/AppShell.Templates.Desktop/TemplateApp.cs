@@ -1,8 +1,8 @@
 ﻿using AppShell.Desktop;
 
-namespace AppShell.Templates
+namespace $safeprojectname$
 {
-    public class TemplateApp : ShellApplication<TemplateAppShellCore>
+    public class $ext_shellname$App : ShellApplication<$ext_shellname$AppShellCore>
     {
     }
 }

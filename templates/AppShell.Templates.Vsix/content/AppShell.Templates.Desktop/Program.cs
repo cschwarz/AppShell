@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace AppShell.Templates
+namespace $safeprojectname$
 {
     public static class Program
     {
         [STAThread]
         public static void Main()
         {
-            TemplateApp app = new TemplateApp();
+            $ext_shellname$App app = new $ext_shellname$App();
             app.Run();
         }
     }

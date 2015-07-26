@@ -36,8 +36,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Providers\$ext_shellname$ShellConfigurationProvider.cs" />
-    <Compile Include="$ext_shellname$AppShellCore.cs" />
+    <Compile Include="Providers\__shellname__ShellConfigurationProvider.cs" />
+    <Compile Include="__shellname__AppShellCore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

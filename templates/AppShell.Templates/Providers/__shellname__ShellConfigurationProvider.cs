@@ -2,9 +2,9 @@
 
 namespace AppShell.Templates
 {
-    public class TemplateShellConfigurationProvider : ShellConfigurationProvider
+    public class __shellname__ShellConfigurationProvider : ShellConfigurationProvider
     {
-        public TemplateShellConfigurationProvider()
+        public __shellname__ShellConfigurationProvider()
         {
             RegisterShellViewModel<StackShellViewModel>();
         }

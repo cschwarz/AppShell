@@ -2,7 +2,7 @@
 
 namespace AppShell.Templates.Desktop
 {
-    public class TemplateApp : ShellApplication<TemplateAppShellCore>
+    public class __shellname__App : ShellApplication<__shellname__AppShellCore>
     {
     }
 }

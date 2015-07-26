@@ -7,7 +7,7 @@ namespace AppShell.Templates.Desktop
         [STAThread]
         public static void Main()
         {
-            TemplateApp app = new TemplateApp();
+            __shellname__App app = new __shellname__App();
             app.Run();
         }
     }

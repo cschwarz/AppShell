@@ -7,7 +7,7 @@ namespace $safeprojectname$
         [STAThread]
         public static void Main()
         {
-            $ext_shellname$App app = new $ext_shellname$App();
+            __shellname__App app = new __shellname__App();
             app.Run();
         }
     }

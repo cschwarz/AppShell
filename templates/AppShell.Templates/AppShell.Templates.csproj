@@ -36,8 +36,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Providers\TemplateShellConfigurationProvider.cs" />
-    <Compile Include="TemplateAppShellCore.cs" />
+    <Compile Include="Providers\__shellname__ShellConfigurationProvider.cs" />
+    <Compile Include="__shellname__AppShellCore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

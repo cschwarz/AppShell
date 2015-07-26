@@ -125,8 +125,21 @@
   -->
   <Target Name="BeforeBuild">
     <ItemGroup>
-      <ContentFiles Include="content\**\*.*" />
+      <ContentFiles Include="content\**\*.*" />      
     </ItemGroup>
-    <Zip ZipFileName="ProjectTemplates\Content.zip" WorkingDirectory="content" Files="@(ContentFiles)" />
+    <RemoveDir Directories="$(OutDir)content" />
+    <Copy SourceFiles="@(ContentFiles)" DestinationFiles="$(OutDir)content\%(RecursiveDir)%(Filename)%(Extension)" />
+    <CallTarget Targets="PrepareContent" />
   </Target>
+
+  <Target Name="PrepareContent">
+    <ItemGroup>
+      <ZipFiles Include="$(OutDir)content\**\*.*" />
+      <ContentFiles Include="$(OutDir)content\**\*.*" Exclude="$(OutDir)content\**\*.vstemplate" />
+      <TemplateFiles Include="$(OutDir)content\**\*.vstemplate" />
+    </ItemGroup>
+    <FileUpdate Files="@(ContentFiles)" Regex="__(.+?)__" ReplacementText="$$ext_$1$$" />
+    <FileUpdate Files="@(TemplateFiles)" Regex="(TargetFileName=&quot;.*?)__(.+?)__(.*?&quot;)" ReplacementText="$1$$ext_$2$$$3" />
+    <Zip ZipFileName="ProjectTemplates\Content.zip" WorkingDirectory="$(OutDir)content" Files="@(ZipFiles)" />    
+  </Target>  
 </Project>

@@ -16,11 +16,8 @@
   <TemplateContent>
     <Project TargetFileName="AppShell.Templates.Desktop.csproj" File="AppShell.Templates.Desktop.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.xaml">MainWindow.xaml</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.xaml.cs">MainWindow.xaml.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
@@ -28,6 +25,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="TemplateApp.cs">TemplateApp.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

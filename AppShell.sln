@@ -50,7 +50,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Templates", "templates\AppShell.Templates\AppShell.Templates.csproj", "{0A94D1F8-F06F-48EF-B425-5B74758FBABA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Templates.Template", "templates\AppShell.Templates.Template\AppShell.Templates.Template.csproj", "{62E281FD-6608-4122-B98C-2682E6F7A0DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Templates.Vsix", "templates\AppShell.Templates.Vsix\AppShell.Templates.Vsix.csproj", "{62E281FD-6608-4122-B98C-2682E6F7A0DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Templates.Desktop", "templates\AppShell.Templates.Desktop\AppShell.Templates.Desktop.csproj", "{95CEF015-97F5-4773-8876-3D35F87DD588}"
 EndProject

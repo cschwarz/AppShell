@@ -37,8 +37,8 @@
     <ProjectGuid>{62E281FD-6608-4122-B98C-2682E6F7A0DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AppShell.Templates.Template</RootNamespace>
-    <AssemblyName>AppShell.Templates.Template</AssemblyName>
+    <RootNamespace>AppShell.Templates.Vsix</RootNamespace>
+    <AssemblyName>AppShell.Templates.Vsix</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>

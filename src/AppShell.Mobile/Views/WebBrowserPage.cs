@@ -45,7 +45,7 @@ namespace AppShell.Mobile
             
             string serviceDispatcherScript = null;
 
-            using (StreamReader streamReader = new StreamReader(typeof(WebBrowserPage).GetTypeInfo().Assembly.GetManifestResourceStream("AppShell.Mobile.ServiceDispatcher.js")))
+            using (StreamReader streamReader = new StreamReader(typeof(WebBrowserViewModel).GetTypeInfo().Assembly.GetManifestResourceStream("AppShell.ServiceDispatcher.js")))
                 serviceDispatcherScript = streamReader.ReadToEnd();
 
             string services = JsonConvert.SerializeObject(AppShellCore.Container.GetInstance<IServiceDispatcher>().Services);

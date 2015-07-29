@@ -65,7 +65,7 @@ namespace AppShell.Desktop.Views
             
             string serviceDispatcherScript = null;
 
-            using (StreamReader streamReader = new StreamReader(Assembly.GetExecutingAssembly().GetManifestResourceStream("AppShell.Desktop.ServiceDispatcher.js")))
+            using (StreamReader streamReader = new StreamReader(typeof(WebBrowserViewModel).Assembly.GetManifestResourceStream("AppShell.ServiceDispatcher.js")))
                 serviceDispatcherScript = streamReader.ReadToEnd();
 
             string services = JsonConvert.SerializeObject(AppShellCore.Container.GetInstance<IServiceDispatcher>().Services);

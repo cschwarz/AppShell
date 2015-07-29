@@ -10,7 +10,8 @@ ServiceDispatcher.prototype.initialize = function (services) {
 
         services[serviceName].forEach(function (methodName) {
             service[methodName] = function () {
-                return JSON.parse(window.external.Dispatch(serviceName, methodName, JSON.stringify(arguments)));                
+                return JSON.parse(window.external.Dispatch(serviceName, methodName, JSON.stringify(arguments)));
+                //return Native('dispatch', JSON.stringify(arguments));
             };
         });
 

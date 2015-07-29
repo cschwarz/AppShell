@@ -1,29 +1,49 @@
-﻿using Microsoft.VisualStudio.TemplateWizard;
+﻿using EnvDTE;
+using Microsoft.VisualStudio.TemplateWizard;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using System.Windows;
 
 namespace AppShell.Templates.Wizard
 {
     public class AppShellWizard : IWizard
     {
-        public void BeforeOpeningFile(EnvDTE.ProjectItem projectItem)
+        private DTE dte;
+
+        public void BeforeOpeningFile(ProjectItem projectItem)
         {
         }
 
-        public void ProjectFinishedGenerating(EnvDTE.Project project)
+        public void ProjectFinishedGenerating(Project project)
         {
         }
 
-        public void ProjectItemFinishedGenerating(EnvDTE.ProjectItem projectItem)
+        public void ProjectItemFinishedGenerating(ProjectItem projectItem)
         {
         }
 
         public void RunFinished()
         {
+            //Project project = dte.Solution.Projects.Cast<Project>().Where(p => p.Name == "AppShell.Desktop").Single();
+            //dte.Solution.Remove(project);
         }
 
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
+        {
+            dte = automationObject as DTE;
+            
+            WizardWindow window = new WizardWindow();
+            window.ShowDialog();
+
+            AddVariables(replacementsDictionary);            
+        }
+
+        public bool ShouldAddProjectItem(string filePath)
+        {
+            return true;
+        }
+
+        private void AddVariables(Dictionary<string, string> replacementsDictionary)
         {
             string safeProjectName = replacementsDictionary["$safeprojectname$"];
 
@@ -35,11 +55,6 @@ namespace AppShell.Templates.Wizard
                 shellName = safeProjectName.Substring(safeProjectName.LastIndexOf(".") + 1);
 
             replacementsDictionary.Add("$shellname$", shellName);
-        }
-
-        public bool ShouldAddProjectItem(string filePath)
-        {
-            return true;
         }
     }
 }

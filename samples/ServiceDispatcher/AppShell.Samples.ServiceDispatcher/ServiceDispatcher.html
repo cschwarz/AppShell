@@ -19,7 +19,9 @@
         function serviceDispatcherReady() {            
             moment.locale('de');
 
-            addResult.innerText = serviceDispatcher.dispatch('sampleService').add(1, 2);
+            serviceDispatcher.dispatch('sampleService').add(1, 2, function (result) {
+                addResult.innerText = result;
+            });
 
             serviceDispatcher.subscribeEvent('sampleService', 'CurrentTime', function (e) {
                 currentDateTime.innerText = moment(e.DateTime).format('LL LTS');

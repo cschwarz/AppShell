@@ -15,6 +15,21 @@ namespace AppShell.Mobile
     [View(typeof(WebBrowserViewModel))]
     public class WebBrowserPage : ContentPage
     {
+        class DispatchData
+        {
+            public string ServiceName { get; set; }
+            public string MethodName { get; set; }
+            public string CallbackId { get; set; }
+            public object[] Arguments { get; set; }
+        }
+
+        class SubscribeEventData
+        {
+            public string ServiceName { get; set; }
+            public string EventName { get; set; }
+            public string CallbackId { get; set; }
+        }
+
         public static readonly BindableProperty UrlProperty = BindableProperty.Create<WebBrowserPage, string>(d => d.Url, null, propertyChanged: UrlPropertyChanged);
         public static readonly BindableProperty HtmlProperty = BindableProperty.Create<WebBrowserPage, string>(d => d.Html, null, propertyChanged: HtmlPropertyChanged);
         
@@ -39,7 +54,7 @@ namespace AppShell.Mobile
 
         private HybridWebView webView;
 
-        public WebBrowserPage()
+        public WebBrowserPage(IServiceDispatcher serviceDispatcher)
         {
             webView = new HybridWebView(new XLabs.Serialization.JsonNET.JsonSerializer());
             
@@ -48,7 +63,7 @@ namespace AppShell.Mobile
             using (StreamReader streamReader = new StreamReader(typeof(WebBrowserViewModel).GetTypeInfo().Assembly.GetManifestResourceStream("AppShell.ServiceDispatcher.js")))
                 serviceDispatcherScript = streamReader.ReadToEnd();
 
-            string services = JsonConvert.SerializeObject(AppShellCore.Container.GetInstance<IServiceDispatcher>().Services);
+            string services = JsonConvert.SerializeObject(serviceDispatcher.Services);
 
             webView.LoadFinished += (s, e) =>
             {
@@ -58,7 +73,23 @@ namespace AppShell.Mobile
                         
             webView.RegisterCallback("dispatch", args =>
             {
+                DispatchData dispatchData = JsonConvert.DeserializeObject<DispatchData>(args);
+                
+                string result = JsonConvert.SerializeObject(serviceDispatcher.Dispatch(dispatchData.ServiceName, dispatchData.MethodName, dispatchData.Arguments));
 
+                if (dispatchData.CallbackId != null)
+                    webView.InjectJavaScript(string.Format("serviceDispatcher._dispatchCallback('{0}', {1});", dispatchData.CallbackId, result));
+            });
+
+            webView.RegisterCallback("subscribeEvent", args =>
+            {
+                SubscribeEventData subscribeEventData = JsonConvert.DeserializeObject<SubscribeEventData>(args);
+
+                serviceDispatcher.SubscribeEvent(subscribeEventData.ServiceName, subscribeEventData.EventName, this, (s, e) =>
+                {
+                    if (subscribeEventData.CallbackId != null)
+                        webView.InjectJavaScript(string.Format("serviceDispatcher._eventCallback('{0}', '{1}');", subscribeEventData.CallbackId, JsonConvert.SerializeObject(e)));
+                });
             });
 
             Content = webView;       

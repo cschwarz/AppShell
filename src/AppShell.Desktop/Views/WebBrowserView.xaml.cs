@@ -17,6 +17,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace AppShell.Desktop.Views
 {
@@ -61,7 +62,7 @@ namespace AppShell.Desktop.Views
             SetBinding(UrlProperty, new Binding("Url"));
             SetBinding(HtmlProperty, new Binding("Html"));
 
-            WebBrowser.ObjectForScripting = AppShellCore.Container.GetInstance<ScriptInterface>();
+            WebBrowser.ObjectForScripting = new ScriptInterface(AppShellCore.Container.GetInstance<IServiceDispatcher>(), WebBrowser);
             
             string serviceDispatcherScript = null;
 
@@ -83,14 +84,17 @@ namespace AppShell.Desktop.Views
     {
         private IServiceDispatcher serviceDispatcher;
 
-        public ScriptInterface(IServiceDispatcher serviceDispatcher)
+        private WebBrowser webBrowser;
+
+        public ScriptInterface(IServiceDispatcher serviceDispatcher, WebBrowser webBrowser)
         {
             this.serviceDispatcher = serviceDispatcher;
+            this.webBrowser = webBrowser;
         }
 
-        public string Dispatch(string serviceName, string methodName, string arguments)
+        public string Dispatch(string serviceName, string methodName, string callbackId, string arguments)
         {
-            object[] parameters = JsonConvert.DeserializeObject<Dictionary<int, object>>(arguments).Select(p => p.Value).ToArray();
+            object[] parameters = JsonConvert.DeserializeObject<object[]>(arguments);
 
             for (int i = 0; i < parameters.Length; i++)
             {
@@ -100,20 +104,20 @@ namespace AppShell.Desktop.Views
                     parameters[i] = (parameters[i] as JObject).ToObject<Dictionary<string, object>>();
             }
 
-            return JsonConvert.SerializeObject(serviceDispatcher.Dispatch(serviceName, methodName, parameters));
+            string result = JsonConvert.SerializeObject(serviceDispatcher.Dispatch(serviceName, methodName, parameters));
+
+            if (callbackId != null)
+                webBrowser.InvokeScript("eval", string.Format("serviceDispatcher._dispatchCallback('{0}', {1})", callbackId, result));
+
+            return null;
         }
                 
-        public void SubscribeEvent(string serviceName, string eventName, dynamic callback)
+        public void SubscribeEvent(string serviceName, string eventName, string callbackId)
         {
             serviceDispatcher.SubscribeEvent(serviceName, eventName, this, (s, e) =>
             {
-                try
-                {
-                    callback(JsonConvert.SerializeObject(e));
-                }
-                catch(UnauthorizedAccessException)
-                {
-                }
+                if (callbackId != null)
+                    Application.Current.Dispatcher.Invoke(() => webBrowser.InvokeScript("eval", string.Format("serviceDispatcher._eventCallback('{0}', '{1}')", callbackId, JsonConvert.SerializeObject(e))));
             });
         }
 

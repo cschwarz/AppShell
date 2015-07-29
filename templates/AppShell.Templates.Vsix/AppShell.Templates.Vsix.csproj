@@ -70,10 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="ProjectTemplates\Content.zip">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
@@ -125,13 +121,12 @@
   -->
   <Target Name="BeforeBuild">
     <ItemGroup>
-      <ContentFiles Include="content\**\*.*" />      
+      <ContentFiles Include="content\**\*.*" />
     </ItemGroup>
     <RemoveDir Directories="$(OutDir)content" />
     <Copy SourceFiles="@(ContentFiles)" DestinationFiles="$(OutDir)content\%(RecursiveDir)%(Filename)%(Extension)" />
     <CallTarget Targets="PrepareContent" />
   </Target>
-
   <Target Name="PrepareContent">
     <ItemGroup>
       <ZipFiles Include="$(OutDir)content\**\*.*" />
@@ -140,6 +135,6 @@
     </ItemGroup>
     <FileUpdate Files="@(ContentFiles)" Regex="__(.+?)__" ReplacementText="$$ext_$1$$" />
     <FileUpdate Files="@(TemplateFiles)" Regex="(TargetFileName=&quot;.*?)__(.+?)__(.*?&quot;)" ReplacementText="$1$$ext_$2$$$3" />
-    <Zip ZipFileName="ProjectTemplates\Content.zip" WorkingDirectory="$(OutDir)content" Files="@(ZipFiles)" />    
-  </Target>  
+    <Zip ZipFileName="ProjectTemplates\Content.zip" WorkingDirectory="$(OutDir)content" Files="@(ZipFiles)" />
+  </Target>
 </Project>

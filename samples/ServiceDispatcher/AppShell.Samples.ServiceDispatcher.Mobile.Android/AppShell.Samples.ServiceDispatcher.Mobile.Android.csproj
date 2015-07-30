@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7073F0C8-0A73-4BC6-B04D-049114B8EEFF}</ProjectGuid>
+    <ProjectGuid>{862D0445-6858-4197-8709-EFD5956DA29E}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AppShell.Samples.Todo.Android</RootNamespace>
-    <AssemblyName>AppShell.Samples.Todo.Android</AssemblyName>
+    <RootNamespace>AppShell.Samples.ServiceDispatcher.Mobile.Android</RootNamespace>
+    <AssemblyName>AppShell.Samples.ServiceDispatcher.Mobile.Android</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
@@ -21,9 +21,8 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
-    <NuGetPackageImportStamp>cfbddea6</NuGetPackageImportStamp>
     <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
-    <AndroidUseLatestPlatformSdk />
+    <NuGetPackageImportStamp>c1592a54</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,11 +46,16 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ExifLib.PCL.1.0.1\lib\portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10\ExifLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FormsViewGroup, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Xamarin.Forms.1.4.4.6392\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -77,6 +81,34 @@
       <HintPath>..\..\..\packages\Xamarin.Forms.1.4.4.6392\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="XLabs.Core, Version=2.0.5679.29810, Culture=neutral, PublicKeyToken=d65109b36e5040e4, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\XLabs.Core.2.0.5679\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XLabs.Forms, Version=2.0.5679.29810, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\XLabs.Forms.2.0.5679\lib\MonoAndroid\XLabs.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XLabs.Forms.Droid, Version=2.0.5679.29814, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\XLabs.Forms.2.0.5679\lib\MonoAndroid\XLabs.Forms.Droid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XLabs.Ioc, Version=2.0.5679.29810, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\XLabs.IoC.2.0.5679\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Ioc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XLabs.Platform, Version=2.0.5679.29810, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\XLabs.Platform.2.0.5679\lib\MonoAndroid\XLabs.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XLabs.Platform.Droid, Version=2.0.5679.29813, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\XLabs.Platform.2.0.5679\lib\MonoAndroid\XLabs.Platform.Droid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XLabs.Serialization, Version=2.0.5679.29810, Culture=neutral, PublicKeyToken=d65109b36e5040e4, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\XLabs.Serialization.2.0.5679\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Serialization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -84,7 +116,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
@@ -114,13 +145,13 @@
       <Project>{de3520c9-7226-4ffe-88f1-a72ffe6a88d3}</Project>
       <Name>AppShell</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AppShell.Samples.Todo.Mobile\AppShell.Samples.Todo.Mobile.csproj">
-      <Project>{f25680d1-22a3-4463-947e-e4d0b10bdf20}</Project>
-      <Name>AppShell.Samples.Todo.Mobile</Name>
+    <ProjectReference Include="..\AppShell.Samples.ServiceDispatcher.Mobile\AppShell.Samples.ServiceDispatcher.Mobile.csproj">
+      <Project>{19e2050d-e12c-4c21-a20a-f4b7b04451df}</Project>
+      <Name>AppShell.Samples.ServiceDispatcher.Mobile</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AppShell.Samples.Todo\AppShell.Samples.Todo.csproj">
-      <Project>{d6a773f0-39ba-4caa-be44-abbeca8a4ba4}</Project>
-      <Name>AppShell.Samples.Todo</Name>
+    <ProjectReference Include="..\AppShell.Samples.ServiceDispatcher\AppShell.Samples.ServiceDispatcher.csproj">
+      <Project>{60be5709-2354-47f5-9430-8c0a444f8b5a}</Project>
+      <Name>AppShell.Samples.ServiceDispatcher</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

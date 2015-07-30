@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("AppShell.Samples.Todo.Android.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("AppShell.Samples.Todo.Mobile.Android.Resource", IsApplication=true)]
 
-namespace AppShell.Samples.Todo.Android
+namespace AppShell.Samples.Todo.Mobile.Android
 {
 	
 	
@@ -26,8 +26,8 @@ namespace AppShell.Samples.Todo.Android
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::AppShell.Samples.Todo.Android.Resource.String.ApplicationName;
-			global::Xamarin.Forms.Platform.Resource.String.Hello = global::AppShell.Samples.Todo.Android.Resource.String.Hello;
+			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::AppShell.Samples.Todo.Mobile.Android.Resource.String.ApplicationName;
+			global::Xamarin.Forms.Platform.Resource.String.Hello = global::AppShell.Samples.Todo.Mobile.Android.Resource.String.Hello;
 		}
 		
 		public partial class Attribute

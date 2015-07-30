@@ -8,9 +8,9 @@ using Android.OS;
 using AppShell.Mobile.Android;
 using Android.Content.PM;
 
-namespace AppShell.Samples.Todo.Android
+namespace AppShell.Samples.Todo.Mobile.Android
 {
-    [Activity(Label = "AppShell.Samples.Todo.Android", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "AppShell.Samples.Todo.Mobile.Android", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)

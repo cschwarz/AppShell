@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("AppShell.Samples.ServiceDispatcher.Android.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource", IsApplication=true)]
 
-namespace AppShell.Samples.ServiceDispatcher.Android
+namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 {
 	
 	
@@ -26,50 +26,50 @@ namespace AppShell.Samples.ServiceDispatcher.Android
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::AppShell.Samples.ServiceDispatcher.Android.Resource.String.ApplicationName;
-			global::Xamarin.Forms.Platform.Resource.String.Hello = global::AppShell.Samples.ServiceDispatcher.Android.Resource.String.Hello;
-			global::XLabs.Forms.Resource.Color.calendar_active_month_bg = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Color.calendar_active_month_bg;
-			global::XLabs.Forms.Resource.Color.calendar_bg = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Color.calendar_bg;
-			global::XLabs.Forms.Resource.Color.calendar_divider = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Color.calendar_divider;
-			global::XLabs.Forms.Resource.Color.calendar_highlighted_day_bg = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Color.calendar_highlighted_day_bg;
-			global::XLabs.Forms.Resource.Color.calendar_inactive_month_bg = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Color.calendar_inactive_month_bg;
-			global::XLabs.Forms.Resource.Color.calendar_selected_day_bg = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Color.calendar_selected_day_bg;
-			global::XLabs.Forms.Resource.Color.calendar_selected_range_bg = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Color.calendar_selected_range_bg;
-			global::XLabs.Forms.Resource.Color.calendar_text_active = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Color.calendar_text_active;
-			global::XLabs.Forms.Resource.Color.calendar_text_inactive = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Color.calendar_text_inactive;
-			global::XLabs.Forms.Resource.Color.calendar_text_selected = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Color.calendar_text_selected;
-			global::XLabs.Forms.Resource.Color.calendar_text_selector = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Color.calendar_text_selector;
-			global::XLabs.Forms.Resource.Color.calendar_text_unselectable = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Color.calendar_text_unselectable;
-			global::XLabs.Forms.Resource.Dimension.calendar_day_headers_paddingbottom = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Dimension.calendar_day_headers_paddingbottom;
-			global::XLabs.Forms.Resource.Dimension.calendar_month_title_bottommargin = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Dimension.calendar_month_title_bottommargin;
-			global::XLabs.Forms.Resource.Dimension.calendar_month_topmargin = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Dimension.calendar_month_topmargin;
-			global::XLabs.Forms.Resource.Dimension.calendar_text_medium = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Dimension.calendar_text_medium;
-			global::XLabs.Forms.Resource.Dimension.calendar_text_small = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Dimension.calendar_text_small;
-			global::XLabs.Forms.Resource.Drawable.ad16 = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Drawable.ad16;
-			global::XLabs.Forms.Resource.Drawable.calendar_bg_selector = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Drawable.calendar_bg_selector;
-			global::XLabs.Forms.Resource.Id.calendar_grid = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Id.calendar_grid;
-			global::XLabs.Forms.Resource.Id.calendar_view = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Id.calendar_view;
-			global::XLabs.Forms.Resource.Id.left_arrow = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Id.left_arrow;
-			global::XLabs.Forms.Resource.Id.right_arrow = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Id.right_arrow;
-			global::XLabs.Forms.Resource.Id.title = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Id.title;
-			global::XLabs.Forms.Resource.Layout.calendar_pager_layout = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Layout.calendar_pager_layout;
-			global::XLabs.Forms.Resource.Layout.calendar_picker = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Layout.calendar_picker;
-			global::XLabs.Forms.Resource.Layout.dialog = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Layout.dialog;
-			global::XLabs.Forms.Resource.Layout.month = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Layout.month;
-			global::XLabs.Forms.Resource.Layout.week = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Layout.week;
-			global::XLabs.Forms.Resource.String.ApplicationName = global::AppShell.Samples.ServiceDispatcher.Android.Resource.String.ApplicationName;
-			global::XLabs.Forms.Resource.String.Hello = global::AppShell.Samples.ServiceDispatcher.Android.Resource.String.Hello;
-			global::XLabs.Forms.Resource.String.day_name_format = global::AppShell.Samples.ServiceDispatcher.Android.Resource.String.day_name_format;
-			global::XLabs.Forms.Resource.String.full_date_format = global::AppShell.Samples.ServiceDispatcher.Android.Resource.String.full_date_format;
-			global::XLabs.Forms.Resource.String.invalid_date = global::AppShell.Samples.ServiceDispatcher.Android.Resource.String.invalid_date;
-			global::XLabs.Forms.Resource.String.library_name = global::AppShell.Samples.ServiceDispatcher.Android.Resource.String.library_name;
-			global::XLabs.Forms.Resource.String.month_name_format = global::AppShell.Samples.ServiceDispatcher.Android.Resource.String.month_name_format;
-			global::XLabs.Forms.Resource.Style.CalendarCell = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Style.CalendarCell;
-			global::XLabs.Forms.Resource.Style.CalendarCell_CalendarDate = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Style.CalendarCell_CalendarDate;
-			global::XLabs.Forms.Resource.Style.CalendarCell_DayHeader = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Style.CalendarCell_DayHeader;
-			global::XLabs.Forms.Resource.Style.CalendarTitle = global::AppShell.Samples.ServiceDispatcher.Android.Resource.Style.CalendarTitle;
-			global::XLabs.Platform.Resource.String.ApplicationName = global::AppShell.Samples.ServiceDispatcher.Android.Resource.String.ApplicationName;
-			global::XLabs.Platform.Resource.String.Hello = global::AppShell.Samples.ServiceDispatcher.Android.Resource.String.Hello;
+			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.ApplicationName;
+			global::Xamarin.Forms.Platform.Resource.String.Hello = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.Hello;
+			global::XLabs.Forms.Resource.Color.calendar_active_month_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_active_month_bg;
+			global::XLabs.Forms.Resource.Color.calendar_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_bg;
+			global::XLabs.Forms.Resource.Color.calendar_divider = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_divider;
+			global::XLabs.Forms.Resource.Color.calendar_highlighted_day_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_highlighted_day_bg;
+			global::XLabs.Forms.Resource.Color.calendar_inactive_month_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_inactive_month_bg;
+			global::XLabs.Forms.Resource.Color.calendar_selected_day_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_selected_day_bg;
+			global::XLabs.Forms.Resource.Color.calendar_selected_range_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_selected_range_bg;
+			global::XLabs.Forms.Resource.Color.calendar_text_active = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_text_active;
+			global::XLabs.Forms.Resource.Color.calendar_text_inactive = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_text_inactive;
+			global::XLabs.Forms.Resource.Color.calendar_text_selected = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_text_selected;
+			global::XLabs.Forms.Resource.Color.calendar_text_selector = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_text_selector;
+			global::XLabs.Forms.Resource.Color.calendar_text_unselectable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_text_unselectable;
+			global::XLabs.Forms.Resource.Dimension.calendar_day_headers_paddingbottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.calendar_day_headers_paddingbottom;
+			global::XLabs.Forms.Resource.Dimension.calendar_month_title_bottommargin = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.calendar_month_title_bottommargin;
+			global::XLabs.Forms.Resource.Dimension.calendar_month_topmargin = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.calendar_month_topmargin;
+			global::XLabs.Forms.Resource.Dimension.calendar_text_medium = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.calendar_text_medium;
+			global::XLabs.Forms.Resource.Dimension.calendar_text_small = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.calendar_text_small;
+			global::XLabs.Forms.Resource.Drawable.ad16 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ad16;
+			global::XLabs.Forms.Resource.Drawable.calendar_bg_selector = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.calendar_bg_selector;
+			global::XLabs.Forms.Resource.Id.calendar_grid = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.calendar_grid;
+			global::XLabs.Forms.Resource.Id.calendar_view = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.calendar_view;
+			global::XLabs.Forms.Resource.Id.left_arrow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.left_arrow;
+			global::XLabs.Forms.Resource.Id.right_arrow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.right_arrow;
+			global::XLabs.Forms.Resource.Id.title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.title;
+			global::XLabs.Forms.Resource.Layout.calendar_pager_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.calendar_pager_layout;
+			global::XLabs.Forms.Resource.Layout.calendar_picker = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.calendar_picker;
+			global::XLabs.Forms.Resource.Layout.dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.dialog;
+			global::XLabs.Forms.Resource.Layout.month = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.month;
+			global::XLabs.Forms.Resource.Layout.week = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.week;
+			global::XLabs.Forms.Resource.String.ApplicationName = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.ApplicationName;
+			global::XLabs.Forms.Resource.String.Hello = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.Hello;
+			global::XLabs.Forms.Resource.String.day_name_format = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.day_name_format;
+			global::XLabs.Forms.Resource.String.full_date_format = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.full_date_format;
+			global::XLabs.Forms.Resource.String.invalid_date = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.invalid_date;
+			global::XLabs.Forms.Resource.String.library_name = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.library_name;
+			global::XLabs.Forms.Resource.String.month_name_format = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.month_name_format;
+			global::XLabs.Forms.Resource.Style.CalendarCell = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.CalendarCell;
+			global::XLabs.Forms.Resource.Style.CalendarCell_CalendarDate = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.CalendarCell_CalendarDate;
+			global::XLabs.Forms.Resource.Style.CalendarCell_DayHeader = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.CalendarCell_DayHeader;
+			global::XLabs.Forms.Resource.Style.CalendarTitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.CalendarTitle;
+			global::XLabs.Platform.Resource.String.ApplicationName = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.ApplicationName;
+			global::XLabs.Platform.Resource.String.Hello = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.Hello;
 		}
 		
 		public partial class Attribute

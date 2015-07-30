@@ -34,7 +34,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.Todo.Deskt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.Todo.Mobile", "samples\Todo\AppShell.Samples.Todo.Mobile\AppShell.Samples.Todo.Mobile.csproj", "{F25680D1-22A3-4463-947E-E4D0B10BDF20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.Todo.Android", "samples\Todo\AppShell.Samples.Todo.Android\AppShell.Samples.Todo.Android.csproj", "{7073F0C8-0A73-4BC6-B04D-049114B8EEFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.Todo.Android", "samples\Todo\AppShell.Samples.Todo.Mobile.Android\AppShell.Samples.Todo.Android.csproj", "{7073F0C8-0A73-4BC6-B04D-049114B8EEFF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceDispatcher", "ServiceDispatcher", "{98CBCB65-D1CB-420C-A660-78FED7ECAC30}"
 EndProject
@@ -42,7 +42,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.ServiceDis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.ServiceDispatcher", "samples\ServiceDispatcher\AppShell.Samples.ServiceDispatcher\AppShell.Samples.ServiceDispatcher.csproj", "{60BE5709-2354-47F5-9430-8C0A444F8B5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.ServiceDispatcher.Android", "samples\ServiceDispatcher\AppShell.Samples.ServiceDispatcher.Android\AppShell.Samples.ServiceDispatcher.Android.csproj", "{862D0445-6858-4197-8709-EFD5956DA29E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.ServiceDispatcher.Android", "samples\ServiceDispatcher\AppShell.Samples.ServiceDispatcher.Mobile.Android\AppShell.Samples.ServiceDispatcher.Android.csproj", "{862D0445-6858-4197-8709-EFD5956DA29E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.ServiceDispatcher.Mobile", "samples\ServiceDispatcher\AppShell.Samples.ServiceDispatcher.Mobile\AppShell.Samples.ServiceDispatcher.Mobile.csproj", "{19E2050D-E12C-4C21-A20A-F4B7B04451DF}"
 EndProject

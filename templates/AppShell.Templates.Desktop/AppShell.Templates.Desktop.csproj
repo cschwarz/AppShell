@@ -37,11 +37,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AppShell, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AppShell.0.0.1-ci43\lib\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\AppShell.dll</HintPath>
+      <HintPath>..\..\packages\AppShell.0.0.1-ci68\lib\portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10\AppShell.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="AppShell.Desktop, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AppShell.Desktop.0.0.1-ci43\lib\net45\AppShell.Desktop.dll</HintPath>
+      <HintPath>..\..\packages\AppShell.Desktop.0.0.1-ci68\lib\net45\AppShell.Desktop.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">

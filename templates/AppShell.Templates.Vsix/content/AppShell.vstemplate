@@ -14,6 +14,12 @@
       <ProjectTemplateLink ProjectName="$safeprojectname$.Desktop" CopyParameters="true">
         AppShell.Templates.Desktop\MyTemplate.vstemplate
       </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Mobile" CopyParameters="true">
+        AppShell.Templates.Mobile\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Android" CopyParameters="true">
+        AppShell.Templates.Android\MyTemplate.vstemplate
+      </ProjectTemplateLink>
     </ProjectCollection>
   </TemplateContent>
   <WizardExtension>

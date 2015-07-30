@@ -18,7 +18,7 @@
         AppShell.Templates.Mobile\MyTemplate.vstemplate
       </ProjectTemplateLink>
       <ProjectTemplateLink ProjectName="$safeprojectname$.Android" CopyParameters="true">
-        AppShell.Templates.Android\MyTemplate.vstemplate
+        AppShell.Templates.Mobile.Android\MyTemplate.vstemplate
       </ProjectTemplateLink>
     </ProjectCollection>
   </TemplateContent>

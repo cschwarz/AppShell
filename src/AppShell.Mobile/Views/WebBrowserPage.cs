@@ -54,7 +54,7 @@ namespace AppShell.Mobile
 
         private HybridWebView webView;
 
-        public WebBrowserPage(IServiceDispatcher serviceDispatcher)
+        public WebBrowserPage(IServiceDispatcher serviceDispatcher, IPlatformProvider platformProvider)
         {
             webView = new HybridWebView(new XLabs.Serialization.JsonNET.JsonSerializer());
             
@@ -78,7 +78,7 @@ namespace AppShell.Mobile
                 string result = JsonConvert.SerializeObject(serviceDispatcher.Dispatch(dispatchData.ServiceName, dispatchData.MethodName, dispatchData.Arguments));
 
                 if (dispatchData.CallbackId != null)
-                    webView.InjectJavaScript(string.Format("serviceDispatcher._dispatchCallback('{0}', {1});", dispatchData.CallbackId, result));
+                    platformProvider.ExecuteOnUIThread(() => webView.InjectJavaScript(string.Format("serviceDispatcher._dispatchCallback('{0}', {1});", dispatchData.CallbackId, result)));
             });
 
             webView.RegisterCallback("subscribeEvent", args =>
@@ -88,7 +88,7 @@ namespace AppShell.Mobile
                 serviceDispatcher.SubscribeEvent(subscribeEventData.ServiceName, subscribeEventData.EventName, this, (s, e) =>
                 {
                     if (subscribeEventData.CallbackId != null)
-                        webView.InjectJavaScript(string.Format("serviceDispatcher._eventCallback('{0}', '{1}');", subscribeEventData.CallbackId, JsonConvert.SerializeObject(e)));
+                        platformProvider.ExecuteOnUIThread(() => webView.InjectJavaScript(string.Format("serviceDispatcher._eventCallback('{0}', '{1}');", subscribeEventData.CallbackId, JsonConvert.SerializeObject(e))));
                 });
             });
 

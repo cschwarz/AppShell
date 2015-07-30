@@ -44,15 +44,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AppShell, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AppShell.0.0.1-ci68\lib\portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10\AppShell.dll</HintPath>
+      <HintPath>..\..\packages\AppShell.0.0.1-ci72\lib\portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10\AppShell.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="AppShell.Mobile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AppShell.Mobile.0.0.1-ci68\lib\portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10\AppShell.Mobile.dll</HintPath>
+      <HintPath>..\..\packages\AppShell.Mobile.0.0.1-ci72\lib\portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10\AppShell.Mobile.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="AppShell.Mobile.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AppShell.Mobile.Android.0.0.1-ci68\lib\MonoAndroid10\AppShell.Mobile.Android.dll</HintPath>
+      <HintPath>..\..\packages\AppShell.Mobile.Android.0.0.1-ci72\lib\MonoAndroid50\AppShell.Mobile.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -79,7 +79,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Android.Support.v4.22.2.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">

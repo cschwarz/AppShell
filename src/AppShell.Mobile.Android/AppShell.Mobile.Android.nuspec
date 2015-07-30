@@ -10,10 +10,6 @@
     <description>AppShell.Mobile.Android</description>
     <copyright>Copyright 2015</copyright>
     <tags>AppShell.Mobile.Android</tags>
-    <dependencies>
-      <dependency id="AppShell" version="$version$" />
-      <dependency id="AppShell.Mobile" version="$version$" />
-    </dependencies>
   </metadata>
   <files>
     <file src="bin\Release\AppShell.Mobile.Android.dll" target="lib\MonoAndroid10"/>

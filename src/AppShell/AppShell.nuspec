@@ -10,10 +10,6 @@
     <description>AppShell</description>
     <copyright>Copyright 2015</copyright>
     <tags>AppShell</tags>
-    <dependencies>
-      <dependency id="Newtonsoft.Json" version="7.0.1" />
-      <dependency id="SimpleInjector" version="2.8.3" />
-    </dependencies>
   </metadata>
   <files>
     <file src="bin\Release\AppShell.dll" target="lib\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10"/>

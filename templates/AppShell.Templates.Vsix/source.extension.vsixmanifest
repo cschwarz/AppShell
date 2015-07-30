@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="AppShell..caaf57b5-bf93-43f1-ab08-b730ca8b6164" Version="0.0.17" Language="en-US" Publisher="Christian Schwarz" />
+    <Identity Id="AppShell..caaf57b5-bf93-43f1-ab08-b730ca8b6164" Version="0.0.18" Language="en-US" Publisher="Christian Schwarz" />
     <DisplayName>AppShell</DisplayName>
     <Description xml:space="preserve">Empty AppShell Project.</Description>
   </Metadata>

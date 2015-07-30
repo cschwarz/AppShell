@@ -26,6 +26,11 @@ namespace AppShell.Templates.Wizard
         {
             if (!wizardWindow.DesktopCheckBox.IsChecked.Value)
                 dte.Solution.Remove(dte.Solution.Projects.Cast<Project>().Where(p => p.Name.EndsWith(".Desktop")).Single());
+            if (!wizardWindow.AndroidCheckBox.IsChecked.Value)
+            {
+                dte.Solution.Remove(dte.Solution.Projects.Cast<Project>().Where(p => p.Name.EndsWith(".Mobile")).Single());
+                dte.Solution.Remove(dte.Solution.Projects.Cast<Project>().Where(p => p.Name.EndsWith(".Android")).Single());
+            }
         }
 
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)

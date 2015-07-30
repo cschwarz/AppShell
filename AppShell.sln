@@ -72,6 +72,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Templates.Mobile",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Templates.Mobile.Android", "templates\AppShell.Templates.Mobile.Android\AppShell.Templates.Mobile.Android.csproj", "{89073F44-08CA-41C4-8B85-779E3434820D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{97AC81CD-4EAD-4056-8369-BFAD21C72812}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -598,5 +600,6 @@ Global
 		{ADF93EF7-B56B-4793-9885-8499D2D3CF7A} = {7DEF9E32-4EB8-4C1C-A390-2E82260CB92C}
 		{1A464DAA-3768-4FD1-B168-B1B96EFD7EFD} = {7DEF9E32-4EB8-4C1C-A390-2E82260CB92C}
 		{89073F44-08CA-41C4-8B85-779E3434820D} = {7DEF9E32-4EB8-4C1C-A390-2E82260CB92C}
+		{97AC81CD-4EAD-4056-8369-BFAD21C72812} = {433399A5-1379-4CC4-9D5F-1B712901E133}
 	EndGlobalSection
 EndGlobal

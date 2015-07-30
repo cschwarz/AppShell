@@ -10,6 +10,9 @@
     <description>AppShell.Desktop</description>
     <copyright>Copyright 2015</copyright>
     <tags>AppShell.Desktop</tags>
+    <dependencies>
+      <dependency id="AppShell" version="$version$" />
+    </dependencies>
   </metadata>
   <files>
     <file src="bin\Release\AppShell.Desktop.dll" target="lib\net45"/>

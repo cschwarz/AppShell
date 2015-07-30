@@ -29,7 +29,7 @@ namespace AppShell.Templates.Wizard
             if (!wizardWindow.AndroidCheckBox.IsChecked.Value)
             {
                 dte.Solution.Remove(dte.Solution.Projects.Cast<Project>().Where(p => p.Name.EndsWith(".Mobile")).Single());
-                dte.Solution.Remove(dte.Solution.Projects.Cast<Project>().Where(p => p.Name.EndsWith(".Android")).Single());
+                dte.Solution.Remove(dte.Solution.Projects.Cast<Project>().Where(p => p.Name.EndsWith(".Mobile.Android")).Single());
             }
         }
 

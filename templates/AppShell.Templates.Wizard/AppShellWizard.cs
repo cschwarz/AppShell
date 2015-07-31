@@ -1,7 +1,11 @@
 ﻿using EnvDTE;
 using Microsoft.VisualStudio.TemplateWizard;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
+using System.Windows;
 
 namespace AppShell.Templates.Wizard
 {
@@ -35,13 +39,36 @@ namespace AppShell.Templates.Wizard
 
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
         {
-            dte = automationObject as DTE;
-            
-            wizardWindow = new WizardWindow();
-            wizardWindow.Title = string.Format("New AppShell Project - {0}", replacementsDictionary["$projectname$"]);
-            wizardWindow.ShowDialog();
+            /*
+            StringBuilder builder = new StringBuilder();
 
-            AddVariables(replacementsDictionary);            
+            foreach (var temp in replacementsDictionary)
+                builder.AppendLine(string.Format("{0}: {1}", temp.Key, temp.Value));
+
+            MessageBox.Show(builder.ToString());*/
+
+            dte = automationObject as DTE;
+
+            string destinationDirectory = replacementsDictionary["$destinationdirectory$"];
+
+            try
+            {
+                wizardWindow = new WizardWindow();
+                wizardWindow.Title = string.Format("New AppShell Project - {0}", replacementsDictionary["$projectname$"]);
+                bool? result = wizardWindow.ShowDialog();
+
+                if (result.HasValue && !result.Value)
+                    throw new WizardBackoutException();
+
+                AddVariables(replacementsDictionary);
+            }
+            catch (Exception)
+            {
+                if (Directory.Exists(destinationDirectory))
+                    Directory.Delete(destinationDirectory, true);
+
+                throw;
+            }
         }
 
         public bool ShouldAddProjectItem(string filePath)

@@ -17,12 +17,12 @@
         <StackPanel>
             <CheckBox Name="DesktopCheckBox" IsChecked="True" Margin="5">Desktop</CheckBox>
             <CheckBox Name="AndroidCheckBox" IsChecked="True" Margin="5">Android</CheckBox>
-            <CheckBox Name="iOSCheckBox" IsChecked="True" Margin="5">iOS</CheckBox>
+            <!--<CheckBox Name="iOSCheckBox" IsChecked="True" Margin="5">iOS</CheckBox>-->
         </StackPanel>
     </GroupBox>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="2">
-            <Button Width="75" Margin="5">OK</Button>
-            <Button Width="75" Margin="5">Cancel</Button>
+            <Button Width="75" Margin="5" Click="OkClick">OK</Button>
+            <Button Width="75" Margin="5" Click="CancelClick">Cancel</Button>
         </StackPanel>
     </Grid>
 </Window>

@@ -24,5 +24,17 @@ namespace AppShell.Templates.Wizard
         {
             InitializeComponent();
         }
+
+        private void OkClick(object sender, RoutedEventArgs e)
+        {
+            DialogResult = true;
+            Close();
+        }
+
+        private void CancelClick(object sender, RoutedEventArgs e)
+        {
+            DialogResult = false;
+            Close();
+        }
     }
 }

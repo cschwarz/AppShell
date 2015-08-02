@@ -5,5 +5,6 @@ namespace AppShell
     public interface IViewModel : INotifyPropertyChanged
     {
         bool AllowClose { get; set; }
+        string Title { get; set; }
     }
 }

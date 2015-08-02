@@ -5,6 +5,7 @@ namespace AppShell
     public class ViewModel : IViewModel
     {
         public bool AllowClose { get; set; }
+        public string Title { get; set; }
 
         public ViewModel()
         {

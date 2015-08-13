@@ -73,9 +73,12 @@ namespace AppShell.Desktop.Views
 
             WebBrowser.LoadCompleted += (s, e) =>
             {
-                WebBrowser.InvokeScript("execScript", new object[] { serviceDispatcherScript, "JavaScript" });
-                WebBrowser.InvokeScript("execScript", new object[] { string.Format("serviceDispatcher.initialize({0});", services), "JavaScript" });
-            };            
+                dynamic document = WebBrowser.Document;
+                dynamic head = document.GetElementsByTagName("head")[0];
+                dynamic scriptElement = document.CreateElement("script");
+                scriptElement.text = string.Concat(serviceDispatcherScript, Environment.NewLine, string.Format("serviceDispatcher.initialize({0});", services));
+                head.AppendChild(scriptElement);
+            };
         }
     }
 

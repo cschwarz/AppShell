@@ -9,7 +9,6 @@ namespace AppShell.Samples.Navigation
             RegisterShellViewModel<TabShellViewModel>();
 
             RegisterViewModel<ViewModel1>();
-            RegisterViewModel<ViewModel2>();
         }
     }
 }

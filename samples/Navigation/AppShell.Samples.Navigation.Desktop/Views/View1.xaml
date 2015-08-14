@@ -6,6 +6,11 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <TextBlock Text="{Binding Title, StringFormat='Desktop View 1: {0}'}" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding Title, StringFormat='Desktop View 1: {0}'}" Grid.Row="0" />
+        <Button Command="{Binding OpenViewModel2Command}" Grid.Row="1">Open</Button>
     </Grid>
 </UserControl>

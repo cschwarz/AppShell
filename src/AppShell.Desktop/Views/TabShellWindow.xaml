@@ -6,5 +6,17 @@
     <Window.Resources>
         <local:ShellDataTemplateSelector x:Key="ShellDataTemplateSelector" />
     </Window.Resources>
-    <TabControl ItemsSource="{Binding Items}" SelectedItem="{Binding ActiveItem}" ContentTemplateSelector="{StaticResource ShellDataTemplateSelector}" />
+    <TabControl ItemsSource="{Binding Items}" SelectedItem="{Binding ActiveItem}" ContentTemplateSelector="{StaticResource ShellDataTemplateSelector}">
+        <TabControl.ItemContainerStyle>
+            <Style TargetType="{x:Type TabItem}">
+                <Setter Property="HeaderTemplate" >
+                    <Setter.Value>
+                        <DataTemplate>
+                            <TextBlock VerticalAlignment="Center" Text="{Binding RelativeSource={RelativeSource AncestorType=TabItem}, Path=Content.Title}" />                            
+                        </DataTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </TabControl.ItemContainerStyle>
+    </TabControl>
 </Window>

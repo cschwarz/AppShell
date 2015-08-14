@@ -45,7 +45,9 @@
       <DependentUpon>SplashScreenPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\StackShellPage.cs" />
-    <Compile Include="Views\TabShellPage.cs" />
+    <Compile Include="Views\TabShellPage.xaml.cs">
+      <DependentUpon>TabShellPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\WebBrowserPage.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +117,12 @@
     <EmbeddedResource Include="Views\SplashScreenPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\TabShellPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

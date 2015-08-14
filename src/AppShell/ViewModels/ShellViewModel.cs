@@ -7,6 +7,9 @@ namespace AppShell
 {
     public class ShellViewModel : ViewModel, INavigationService
     {
+        public event EventHandler<IViewModel> ViewModelPushed;
+        public event EventHandler<IViewModel> ViewModelPopped;
+
         public event EventHandler<IViewModel> DetachViewModelRequested;
 
         public ObservableCollection<IViewModel> Items { get; private set; }
@@ -47,16 +50,24 @@ namespace AppShell
 
             Items.Add(viewModel);
             ActiveItem = viewModel;
+
+            if (ViewModelPushed != null)
+                ViewModelPushed(this, viewModel);
         }
 
         public void Pop()
         {
-            Items.Remove(Items.Last());
+            IViewModel viewModel = Items.Last();
+
+            Items.Remove(viewModel);
 
             if (Items.Any())
                 ActiveItem = Items.Last();
             else
                 ActiveItem = null;
+
+            if (ViewModelPopped != null)
+                ViewModelPopped(this, viewModel);
         }
 
         public void DetachActive()

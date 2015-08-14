@@ -9,7 +9,6 @@ namespace AppShell.Mobile
         private IViewFactory viewFactory;
 
         public StackShellPage()
-            : base(new ContentPage())
         {
             this.viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
         }
@@ -20,8 +19,21 @@ namespace AppShell.Mobile
 
             shellViewModel = BindingContext as ShellViewModel;
 
+            shellViewModel.ViewModelPushed += ShellViewModel_ViewModelPushed;
+            shellViewModel.ViewModelPopped += ShellViewModel_ViewModelPopped;
+
             if (shellViewModel.ActiveItem != null)
                 PushAsync(viewFactory.GetView(shellViewModel.ActiveItem) as Page);
+        }
+
+        private void ShellViewModel_ViewModelPushed(object sender, IViewModel e)
+        {
+            PushAsync(viewFactory.GetView(e) as Page);
+        }
+
+        private void ShellViewModel_ViewModelPopped(object sender, IViewModel e)
+        {
+            PopAsync();
         }
     }
 }

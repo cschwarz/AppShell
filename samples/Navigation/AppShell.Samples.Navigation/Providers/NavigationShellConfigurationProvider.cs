@@ -6,7 +6,10 @@ namespace AppShell.Samples.Navigation
     {
         public NavigationShellConfigurationProvider()
         {
-            RegisterShellViewModel<StackShellViewModel>();
+            RegisterShellViewModel<TabShellViewModel>();
+
+            RegisterViewModel<ViewModel1>();
+            RegisterViewModel<ViewModel2>();
         }
     }
 }

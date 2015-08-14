@@ -11,7 +11,7 @@ namespace AppShell.Desktop
 
         public ShellDataTemplateSelector()
         {
-            this.viewFactory = AppShellCore.Container.GetInstance<IViewFactory>();
+            this.viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
         }
 
         public override DataTemplate SelectTemplate(object item, DependencyObject container)

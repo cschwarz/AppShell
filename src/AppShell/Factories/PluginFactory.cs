@@ -8,7 +8,7 @@ namespace AppShell
     {
         public IPlugin GetPlugin(Type pluginType, Dictionary<string, object> data = null)
         {
-            IPlugin plugin = AppShellCore.Container.GetInstance(pluginType) as IPlugin;
+            IPlugin plugin = ShellCore.Container.GetInstance(pluginType) as IPlugin;
 
             if (data != null)
             {

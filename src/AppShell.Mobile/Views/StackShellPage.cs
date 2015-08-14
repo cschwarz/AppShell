@@ -11,7 +11,7 @@ namespace AppShell.Mobile
         public StackShellPage()
             : base(new ContentPage())
         {
-            this.viewFactory = AppShellCore.Container.GetInstance<IViewFactory>();
+            this.viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
         }
 
         protected override void OnBindingContextChanged()

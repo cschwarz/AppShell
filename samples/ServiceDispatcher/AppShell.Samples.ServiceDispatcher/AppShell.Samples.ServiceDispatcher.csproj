@@ -46,7 +46,7 @@
     <Compile Include="Plugins\SamplePlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ServiceDispatcherShellConfigurationProvider.cs" />
-    <Compile Include="ServiceDispatcherAppShellCore.cs" />
+    <Compile Include="ServiceDispatcherShellCore.cs" />
     <Compile Include="Services\ISampleService.cs" />
   </ItemGroup>
   <ItemGroup>

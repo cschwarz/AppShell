@@ -2,7 +2,7 @@
 
 namespace AppShell.Samples.Navigation
 {
-    public class NavigationAppShellCore : AppShellCore
+    public class NavigationShellCore : ShellCore
     {
         public override void Configure()
         {

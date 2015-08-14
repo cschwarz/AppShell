@@ -41,7 +41,7 @@ namespace AppShell
 
         public void Initialize()
         {
-            foreach (Assembly assembly in platformProvider.GetAssemblies<AppShellResourceAttribute>())
+            foreach (Assembly assembly in platformProvider.GetAssemblies<ShellResourceAttribute>())
             {
                 foreach (Type type in assembly.ExportedTypes)
                 {

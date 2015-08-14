@@ -31,4 +31,4 @@ using AppShell;
 [assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: AssemblyInformationalVersion("1.0.0.0")]
 
-[assembly: AppShellResource]
+[assembly: ShellResource]

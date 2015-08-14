@@ -62,14 +62,14 @@ namespace AppShell.Desktop.Views
             SetBinding(UrlProperty, new Binding("Url"));
             SetBinding(HtmlProperty, new Binding("Html"));
 
-            WebBrowser.ObjectForScripting = new ScriptInterface(AppShellCore.Container.GetInstance<IServiceDispatcher>(), WebBrowser);
+            WebBrowser.ObjectForScripting = new ScriptInterface(ShellCore.Container.GetInstance<IServiceDispatcher>(), WebBrowser);
             
             string serviceDispatcherScript = null;
 
             using (StreamReader streamReader = new StreamReader(typeof(WebBrowserViewModel).Assembly.GetManifestResourceStream("AppShell.ServiceDispatcher.js")))
                 serviceDispatcherScript = streamReader.ReadToEnd();
 
-            string services = JsonConvert.SerializeObject(AppShellCore.Container.GetInstance<IServiceDispatcher>().Services);
+            string services = JsonConvert.SerializeObject(ShellCore.Container.GetInstance<IServiceDispatcher>().Services);
 
             WebBrowser.LoadCompleted += (s, e) =>
             {

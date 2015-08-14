@@ -8,7 +8,7 @@ namespace AppShell
     {
         public IViewModel GetViewModel(Type viewModelType, Dictionary<string, object> data = null)
         {
-            IViewModel viewModel = AppShellCore.Container.GetInstance(viewModelType) as IViewModel;
+            IViewModel viewModel = ShellCore.Container.GetInstance(viewModelType) as IViewModel;
 
             if (data != null)
             {

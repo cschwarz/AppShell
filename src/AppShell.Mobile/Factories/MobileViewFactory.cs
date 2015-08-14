@@ -12,14 +12,14 @@ namespace AppShell.Mobile
 
         public override object GetView(Type viewModelType)
         {
-            BindableObject view = AppShellCore.Container.GetInstance(views[viewModelType]) as BindableObject;
-            view.BindingContext = AppShellCore.Container.GetInstance(viewModelType);
+            BindableObject view = ShellCore.Container.GetInstance(views[viewModelType]) as BindableObject;
+            view.BindingContext = ShellCore.Container.GetInstance(viewModelType);
             return view;
         }
 
         public override object GetView(IViewModel viewModel)
         {
-            BindableObject view = AppShellCore.Container.GetInstance(views[viewModel.GetType()]) as BindableObject;
+            BindableObject view = ShellCore.Container.GetInstance(views[viewModel.GetType()]) as BindableObject;
             view.BindingContext = viewModel;
             return view;
         }

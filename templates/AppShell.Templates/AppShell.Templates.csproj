@@ -37,7 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Providers\__shellname__ShellConfigurationProvider.cs" />
-    <Compile Include="__shellname__AppShellCore.cs" />
+    <Compile Include="__shellname__ShellCore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

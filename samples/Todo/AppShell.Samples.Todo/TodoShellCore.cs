@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppShell.Samples.Todo
 {
-    public class TodoAppShellCore : AppShellCore
+    public class TodoShellCore : ShellCore
     {
         public override void Configure()
         {

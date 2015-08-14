@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppShell.Samples.ServiceDispatcher
 {
-    public class ServiceDispatcherAppShellCore : AppShellCore
+    public class ServiceDispatcherShellCore : ShellCore
     {
         public override void Configure()
         {

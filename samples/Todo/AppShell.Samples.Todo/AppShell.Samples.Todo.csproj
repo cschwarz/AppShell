@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\TodoShellConfigurationProvider.cs" />
-    <Compile Include="TodoAppShellCore.cs" />
+    <Compile Include="TodoShellCore.cs" />
     <Compile Include="ViewModels\TodoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

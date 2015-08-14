@@ -4,13 +4,13 @@ using System.Linq;
 
 namespace AppShell
 {
-    public class AppShellCore
+    public class ShellCore
     {
         public static Container Container { get; private set; }
 
         protected IPluginProvider pluginProvider;
 
-        static AppShellCore()
+        static ShellCore()
         {
             Container = new Container();
         }

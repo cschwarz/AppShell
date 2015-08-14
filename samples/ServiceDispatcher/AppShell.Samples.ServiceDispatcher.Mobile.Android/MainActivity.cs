@@ -13,7 +13,7 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new AndroidShellApplication<ServiceDispatcherAppShellCore>());
+            LoadApplication(new AndroidShellApplication<ServiceDispatcherShellCore>());
         }
     }
 }

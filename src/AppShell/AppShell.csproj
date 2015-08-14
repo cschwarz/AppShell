@@ -38,8 +38,8 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AppShellCore.cs" />
-    <Compile Include="Attributes\AppShellResourceAttribute.cs" />
+    <Compile Include="ShellCore.cs" />
+    <Compile Include="Attributes\ShellResourceAttribute.cs" />
     <Compile Include="Attributes\ServiceAttribute.cs" />
     <Compile Include="Attributes\ServiceMethodAttribute.cs" />
     <Compile Include="Attributes\ViewAttribute.cs" />

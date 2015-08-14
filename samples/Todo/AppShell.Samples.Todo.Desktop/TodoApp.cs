@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AppShell.Samples.Todo
 {
-    public class TodoApp : ShellApplication<TodoAppShellCore>
+    public class TodoApp : ShellApplication<TodoShellCore>
     {
     }
 }

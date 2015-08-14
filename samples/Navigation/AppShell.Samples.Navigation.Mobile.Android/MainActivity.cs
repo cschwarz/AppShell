@@ -13,7 +13,7 @@ namespace AppShell.Samples.Navigation.Mobile.Android
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new AndroidShellApplication<NavigationAppShellCore>());
+            LoadApplication(new AndroidShellApplication<NavigationShellCore>());
         }
     }
 }

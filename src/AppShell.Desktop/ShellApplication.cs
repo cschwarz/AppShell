@@ -3,9 +3,9 @@ using System.Windows;
 
 namespace AppShell.Desktop
 {
-    public class ShellApplication<T> : Application where T : AppShellCore
+    public class ShellApplication<T> : Application where T : ShellCore
     {
-        protected AppShellCore appShellCore;
+        protected ShellCore appShellCore;
 
         public ShellApplication()
         {
@@ -14,9 +14,9 @@ namespace AppShell.Desktop
 
         protected virtual void ConfigurePlatform()
         {
-            AppShellCore.Container.RegisterSingle<IPlatformProvider, DesktopPlatformProvider>();
-            AppShellCore.Container.RegisterSingle<IViewFactory, DesktopViewFactory>();
-            AppShellCore.Container.RegisterSingle<IDataTemplateFactory, DesktopDataTemplateFactory>();            
+            ShellCore.Container.RegisterSingle<IPlatformProvider, DesktopPlatformProvider>();
+            ShellCore.Container.RegisterSingle<IViewFactory, DesktopViewFactory>();
+            ShellCore.Container.RegisterSingle<IDataTemplateFactory, DesktopDataTemplateFactory>();            
         }
 
         protected override void OnStartup(StartupEventArgs e)
@@ -28,7 +28,7 @@ namespace AppShell.Desktop
             appShellCore.Configure();
             appShellCore.Initialize();
             
-            MainWindow = AppShellCore.Container.GetInstance<IViewFactory>().GetView(typeof(SplashScreenHostViewModel)) as Window;
+            MainWindow = ShellCore.Container.GetInstance<IViewFactory>().GetView(typeof(SplashScreenHostViewModel)) as Window;
             MainWindow.Show();
         }
 

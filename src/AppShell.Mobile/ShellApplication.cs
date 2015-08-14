@@ -3,9 +3,9 @@ using Xamarin.Forms;
 
 namespace AppShell.Mobile
 {
-    public class ShellApplication<T> : Application where T : AppShellCore
+    public class ShellApplication<T> : Application where T : ShellCore
     {
-        protected AppShellCore appShellCore;
+        protected ShellCore appShellCore;
 
         public ShellApplication()
         {
@@ -14,8 +14,8 @@ namespace AppShell.Mobile
 
         protected virtual void ConfigurePlatform()
         {
-            AppShellCore.Container.RegisterSingle<IViewFactory, MobileViewFactory>();
-            AppShellCore.Container.RegisterSingle<IDataTemplateFactory, MobileDataTemplateFactory>();            
+            ShellCore.Container.RegisterSingle<IViewFactory, MobileViewFactory>();
+            ShellCore.Container.RegisterSingle<IDataTemplateFactory, MobileDataTemplateFactory>();            
         }
 
         protected override void OnStart()
@@ -27,7 +27,7 @@ namespace AppShell.Mobile
             appShellCore.Configure();
             appShellCore.Initialize();
 
-            MainPage = AppShellCore.Container.GetInstance<IViewFactory>().GetView(typeof(SplashScreenHostViewModel)) as Page;            
+            MainPage = ShellCore.Container.GetInstance<IViewFactory>().GetView(typeof(SplashScreenHostViewModel)) as Page;            
         }
     }
 }

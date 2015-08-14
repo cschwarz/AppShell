@@ -12,13 +12,13 @@ using Android.Widget;
 
 namespace AppShell.Mobile.Android
 {
-    public class AndroidShellApplication<T> : ShellApplication<T> where T : AppShellCore
+    public class AndroidShellApplication<T> : ShellApplication<T> where T : ShellCore
     {
         protected override void ConfigurePlatform()
         {
             base.ConfigurePlatform();
 
-            AppShellCore.Container.RegisterSingle<IPlatformProvider, AndroidPlatformProvider>();
+            ShellCore.Container.RegisterSingle<IPlatformProvider, AndroidPlatformProvider>();
         }
     }
 }

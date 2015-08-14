@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AppShell.Samples.ServiceDispatcher
 {
-    public class ServiceDispatcherApp : ShellApplication<ServiceDispatcherAppShellCore>
+    public class ServiceDispatcherApp : ShellApplication<ServiceDispatcherShellCore>
     {
     }
 }

@@ -3,7 +3,7 @@
 namespace AppShell
 {
     [AttributeUsage(AttributeTargets.Assembly)]
-    public class AppShellResourceAttribute : Attribute
+    public class ShellResourceAttribute : Attribute
     {
     }
 }

@@ -41,7 +41,7 @@ namespace AppShell.Mobile
 
         private void ShellViewRequested(object sender, EventArgs e)
         {
-            Application.Current.MainPage = AppShellCore.Container.GetInstance<IViewFactory>().GetView(AppShellCore.Container.GetInstance<IShellConfigurationProvider>().GetShellViewModel()) as Page;
+            Application.Current.MainPage = ShellCore.Container.GetInstance<IViewFactory>().GetView(ShellCore.Container.GetInstance<IShellConfigurationProvider>().GetShellViewModel()) as Page;
         }
     }
 }

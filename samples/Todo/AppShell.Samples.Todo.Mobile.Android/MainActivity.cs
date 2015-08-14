@@ -18,7 +18,7 @@ namespace AppShell.Samples.Todo.Mobile.Android
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new AndroidShellApplication<TodoAppShellCore>());
+            LoadApplication(new AndroidShellApplication<TodoShellCore>());
         }
     }
 }

@@ -38,7 +38,7 @@ namespace AppShell
 
         public void Push<TViewModel>(Dictionary<string, object> data = null) where TViewModel : class, IViewModel
         {
-            Push(typeof(TViewModel).FullName, data);
+            Push(typeof(TViewModel).AssemblyQualifiedName, data);
         }
 
         public void Push(string viewModelType, Dictionary<string, object> data = null)

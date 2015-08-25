@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 
 namespace AppShell
@@ -19,16 +20,24 @@ namespace AppShell
 
         public virtual void Initialize()
         {
+            List<Type> types = new List<Type>();
+
             foreach (Assembly assembly in platformProvider.GetAssemblies<ShellResourceAttribute>())
+                types.AddRange(assembly.ExportedTypes);
+
+            foreach (Type type in types)
             {
-                foreach (Type type in assembly.ExportedTypes)
+                ViewAttribute viewAttribute = type.GetTypeInfo().GetCustomAttribute<ViewAttribute>();
+
+                if (viewAttribute == null)
+                    continue;
+
+                views[viewAttribute.ViewModelType] = type;
+
+                foreach (Type subViewModelType in types.Where(t => t.GetTypeInfo().IsSubclassOf(viewAttribute.ViewModelType)))
                 {
-                    ViewAttribute viewAttribute = type.GetTypeInfo().GetCustomAttribute<ViewAttribute>();
-
-                    if (viewAttribute == null)
-                        continue;
-
-                    views.Add(viewAttribute.ViewModelType, type);
+                    if (!views.ContainsKey(subViewModelType))
+                        views.Add(subViewModelType, type);
                 }
             }
         }

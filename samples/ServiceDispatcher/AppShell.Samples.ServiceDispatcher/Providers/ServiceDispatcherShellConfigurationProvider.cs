@@ -15,9 +15,8 @@ namespace AppShell.Samples.ServiceDispatcher
             RegisterShellViewModel<StackShellViewModel>();
 
             RegisterPlugin<SamplePlugin>();
-
-            using (StreamReader streamReader = new StreamReader(GetType().GetTypeInfo().Assembly.GetManifestResourceStream("AppShell.Samples.ServiceDispatcher.ServiceDispatcher.html")))
-                RegisterViewModel<WebBrowserViewModel>(new Dictionary<string, object>() { { "Html", streamReader.ReadToEnd() } });
+            
+            RegisterViewModel<ManifestResourceWebBrowserViewModel>(new Dictionary<string, object>() { { "ManifestResource", "AppShell.Samples.ServiceDispatcher.ServiceDispatcher.html" } });
         }
     }
 }

@@ -12,11 +12,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js"></script>
 </head>
 <body>
+    <span id="serviceDispatcherState">Initializing...</span>
+    <br />
     1 + 2 = <span id="addResult"></span>
     <br />
     Current Time: <span id="currentDateTime"></span>
     <script>
-        function serviceDispatcherReady() {            
+        var t0 = Date.now();
+
+        function serviceDispatcherReady() {
+            var t1 = Date.now();
+            serviceDispatcherState.innerText = 'serviceDispatcherReady: ' + (t1 - t0) + 'ms';
+
             moment.locale('de');
 
             serviceDispatcher.dispatch('sampleService').add(1, 2, function (result) {

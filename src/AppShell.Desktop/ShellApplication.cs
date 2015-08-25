@@ -14,9 +14,9 @@ namespace AppShell.Desktop
 
         protected virtual void ConfigurePlatform()
         {
-            ShellCore.Container.RegisterSingle<IPlatformProvider, DesktopPlatformProvider>();
-            ShellCore.Container.RegisterSingle<IViewFactory, DesktopViewFactory>();
-            ShellCore.Container.RegisterSingle<IDataTemplateFactory, DesktopDataTemplateFactory>();            
+            ShellCore.Container.RegisterSingleton<IPlatformProvider, DesktopPlatformProvider>();
+            ShellCore.Container.RegisterSingleton<IViewFactory, DesktopViewFactory>();
+            ShellCore.Container.RegisterSingleton<IDataTemplateFactory, DesktopDataTemplateFactory>();            
         }
 
         protected override void OnStartup(StartupEventArgs e)

@@ -17,10 +17,10 @@ namespace AppShell
 
         public virtual void Configure()
         {
-            Container.RegisterSingle<IServiceDispatcher, ServiceDispatcher>();
-            Container.RegisterSingle<IViewModelFactory, ViewModelFactory>();
-            Container.RegisterSingle<IPluginFactory, PluginFactory>();
-            Container.RegisterSingle<IPluginProvider, PluginProvider>();
+            Container.RegisterSingleton<IServiceDispatcher, ServiceDispatcher>();
+            Container.RegisterSingleton<IViewModelFactory, ViewModelFactory>();
+            Container.RegisterSingleton<IPluginFactory, PluginFactory>();
+            Container.RegisterSingleton<IPluginProvider, PluginProvider>();
         }
 
         public virtual void Initialize()

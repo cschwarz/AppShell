@@ -8,7 +8,7 @@ namespace AppShell.Templates
         {
             base.Configure();
 
-            Container.RegisterSingle<IShellConfigurationProvider, __shellname__ShellConfigurationProvider>();
+            Container.RegisterSingleton<IShellConfigurationProvider, __shellname__ShellConfigurationProvider>();
         }
     }
 }

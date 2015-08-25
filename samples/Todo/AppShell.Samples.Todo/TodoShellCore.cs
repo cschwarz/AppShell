@@ -12,7 +12,7 @@ namespace AppShell.Samples.Todo
         {
             base.Configure();
 
-            Container.RegisterSingle<IShellConfigurationProvider, TodoShellConfigurationProvider>();
+            Container.RegisterSingleton<IShellConfigurationProvider, TodoShellConfigurationProvider>();
         }
     }
 }

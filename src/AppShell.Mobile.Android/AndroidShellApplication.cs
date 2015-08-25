@@ -18,7 +18,7 @@ namespace AppShell.Mobile.Android
         {
             base.ConfigurePlatform();
 
-            ShellCore.Container.RegisterSingle<IPlatformProvider, AndroidPlatformProvider>();
+            ShellCore.Container.RegisterSingleton<IPlatformProvider, AndroidPlatformProvider>();
         }
     }
 }

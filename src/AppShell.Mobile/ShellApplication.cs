@@ -14,8 +14,8 @@ namespace AppShell.Mobile
 
         protected virtual void ConfigurePlatform()
         {
-            ShellCore.Container.RegisterSingle<IViewFactory, MobileViewFactory>();
-            ShellCore.Container.RegisterSingle<IDataTemplateFactory, MobileDataTemplateFactory>();            
+            ShellCore.Container.RegisterSingleton<IViewFactory, MobileViewFactory>();
+            ShellCore.Container.RegisterSingleton<IDataTemplateFactory, MobileDataTemplateFactory>();            
         }
 
         protected override void OnStart()

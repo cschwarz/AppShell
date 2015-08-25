@@ -12,7 +12,7 @@ namespace AppShell.Samples.ServiceDispatcher
         {
             base.Configure();
 
-            Container.RegisterSingle<IShellConfigurationProvider, ServiceDispatcherShellConfigurationProvider>();
+            Container.RegisterSingleton<IShellConfigurationProvider, ServiceDispatcherShellConfigurationProvider>();
         }
     }
 }

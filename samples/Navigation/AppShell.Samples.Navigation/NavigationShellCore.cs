@@ -8,7 +8,7 @@ namespace AppShell.Samples.Navigation
         {
             base.Configure();
 
-            Container.RegisterSingle<IShellConfigurationProvider, NavigationShellConfigurationProvider>();
+            Container.RegisterSingleton<IShellConfigurationProvider, NavigationShellConfigurationProvider>();
         }
     }
 }

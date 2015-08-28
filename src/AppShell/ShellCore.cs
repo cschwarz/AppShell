@@ -21,10 +21,13 @@ namespace AppShell
             Container.RegisterSingleton<IViewModelFactory, ViewModelFactory>();
             Container.RegisterSingleton<IPluginFactory, PluginFactory>();
             Container.RegisterSingleton<IPluginProvider, PluginProvider>();
+            Container.RegisterSingleton<IViewModelResolution, ViewModelResolution>();
+            Container.RegisterSingleton<IViewResolution, ViewResolution>();
         }
 
         public virtual void Initialize()
         {
+            Container.GetInstance<IViewModelFactory>().Initialize();
             Container.GetInstance<IViewFactory>().Initialize();
             Container.GetInstance<IServiceDispatcher>().Initialize();
             

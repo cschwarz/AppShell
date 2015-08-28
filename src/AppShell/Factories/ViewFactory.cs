@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 
 namespace AppShell
@@ -8,14 +7,14 @@ namespace AppShell
     public abstract class ViewFactory : IViewFactory
     {
         protected IPlatformProvider platformProvider;
+        protected IViewResolution viewResolution;
 
-        protected Dictionary<Type, Type> views;
+        protected IDictionary<Type, Type> viewMapping;
 
-        public ViewFactory(IPlatformProvider platformProvider)
+        public ViewFactory(IPlatformProvider platformProvider, IViewResolution viewResolution)
         {
             this.platformProvider = platformProvider;
-
-            views = new Dictionary<Type, Type>();                        
+            this.viewResolution = viewResolution;               
         }
 
         public virtual void Initialize()
@@ -25,26 +24,12 @@ namespace AppShell
             foreach (Assembly assembly in platformProvider.GetAssemblies<ShellResourceAttribute>())
                 types.AddRange(assembly.ExportedTypes);
 
-            foreach (Type type in types)
-            {
-                ViewAttribute viewAttribute = type.GetTypeInfo().GetCustomAttribute<ViewAttribute>();
-
-                if (viewAttribute == null)
-                    continue;
-
-                views[viewAttribute.ViewModelType] = type;
-
-                foreach (Type subViewModelType in types.Where(t => t.GetTypeInfo().IsSubclassOf(viewAttribute.ViewModelType)))
-                {
-                    if (!views.ContainsKey(subViewModelType))
-                        views.Add(subViewModelType, type);
-                }
-            }
+            viewMapping = viewResolution.GetViewMapping(types);
         }
         
         public void Register<TViewModel, TView>()
         {
-            views[typeof(TViewModel)] = typeof(TView);
+            viewMapping[typeof(TViewModel)] = typeof(TView);
         }
 
         public abstract object GetView(Type viewModelType);
@@ -52,7 +37,7 @@ namespace AppShell
 
         public virtual Type GetViewType(Type viewModelType)
         {
-            return views[viewModelType];
+            return viewMapping[viewModelType];
         }
     }
 }

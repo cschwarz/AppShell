@@ -65,7 +65,10 @@ namespace AppShell.Desktop
 
         private void ShellViewRequested(object sender, EventArgs e)
         {
-            Application.Current.MainWindow = ShellCore.Container.GetInstance<IViewFactory>().GetView(ShellCore.Container.GetInstance<IShellConfigurationProvider>().GetShellViewModel()) as Window;
+            Type shellViewModelType = ShellCore.Container.GetInstance<IShellConfigurationProvider>().GetShellViewModel();
+            IViewModel shellViewModel = ShellCore.Container.GetInstance<IViewModelFactory>().GetViewModel(shellViewModelType);
+
+            Application.Current.MainWindow = ShellCore.Container.GetInstance<IViewFactory>().GetView(shellViewModel) as Window;
             Application.Current.MainWindow.Show();
 
             Close();

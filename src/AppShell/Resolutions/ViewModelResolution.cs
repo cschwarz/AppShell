@@ -9,7 +9,28 @@ namespace AppShell
     {
         public IDictionary<Type, Type> GetViewModelMapping(IEnumerable<Type> types)
         {
-            return types.Where(t => t.GetTypeInfo().ImplementedInterfaces.Contains(typeof(IViewModel))).ToDictionary(t => t, t => t);
+            IDictionary<Type, Type> viewModelMapping = new Dictionary<Type, Type>();
+
+            foreach (Type type in types)
+            {
+                if (!type.GetTypeInfo().ImplementedInterfaces.Contains(typeof(IViewModel)))
+                    continue;
+
+                ViewModelAttribute viewModelAttribute = type.GetTypeInfo().GetCustomAttribute<ViewModelAttribute>();
+
+                if (viewModelAttribute != null)
+                {
+                    if (viewModelAttribute.Substitute != null)
+                        viewModelMapping[viewModelAttribute.Substitute] = type;
+                }
+                else
+                {
+                    if (!viewModelMapping.ContainsKey(type))
+                        viewModelMapping.Add(type, type);
+                }
+            }
+
+            return viewModelMapping;
         }
     }
 }

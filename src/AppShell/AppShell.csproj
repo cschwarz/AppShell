@@ -38,6 +38,7 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Attributes\ViewModelAttribute.cs" />
     <Compile Include="Resolutions\IViewModelResolution.cs" />
     <Compile Include="Resolutions\IViewResolution.cs" />
     <Compile Include="Resolutions\ViewModelResolution.cs" />

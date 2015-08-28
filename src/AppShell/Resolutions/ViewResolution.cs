@@ -9,7 +9,7 @@ namespace AppShell
     {
         public IDictionary<Type, Type> GetViewMapping(IEnumerable<Type> types)
         {
-            IDictionary<Type, Type> views = new Dictionary<Type, Type>();
+            IDictionary<Type, Type> viewMapping = new Dictionary<Type, Type>();
 
             foreach (Type type in types)
             {
@@ -18,16 +18,16 @@ namespace AppShell
                 if (viewAttribute == null)
                     continue;
 
-                views[viewAttribute.ViewModelType] = type;
+                viewMapping[viewAttribute.ViewModelType] = type;
 
                 foreach (Type subViewModelType in types.Where(t => t.GetTypeInfo().IsSubclassOf(viewAttribute.ViewModelType)))
                 {
-                    if (!views.ContainsKey(subViewModelType))
-                        views.Add(subViewModelType, type);
+                    if (!viewMapping.ContainsKey(subViewModelType))
+                        viewMapping.Add(subViewModelType, type);
                 }
             }
 
-            return views;
+            return viewMapping;
         }
     }
 }

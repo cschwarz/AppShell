@@ -13,7 +13,7 @@ namespace $safeprojectname$
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new AndroidShellApplication<__shellname__AppShellCore>());
+            LoadApplication(new AndroidShellApplication<__shellname__ShellCore>());
         }
     }
 }

@@ -15,7 +15,7 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="AppShell.Templates.csproj" File="AppShell.Templates.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="__shellname__AppShellCore.cs">__shellname__AppShellCore.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="__shellname__ShellCore.cs">__shellname__ShellCore.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">

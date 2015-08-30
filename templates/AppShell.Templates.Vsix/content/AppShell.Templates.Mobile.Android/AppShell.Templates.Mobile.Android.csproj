@@ -44,15 +44,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AppShell, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AppShell.0.0.1-ci72\lib\portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10\AppShell.dll</HintPath>
+      <HintPath>..\..\packages\AppShell.0.0.1-ci82\lib\portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10\AppShell.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="AppShell.Mobile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AppShell.Mobile.0.0.1-ci72\lib\portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10\AppShell.Mobile.dll</HintPath>
+      <HintPath>..\..\packages\AppShell.Mobile.0.0.1-ci82\lib\portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10\AppShell.Mobile.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="AppShell.Mobile.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AppShell.Mobile.Android.0.0.1-ci72\lib\MonoAndroid50\AppShell.Mobile.Android.dll</HintPath>
+      <HintPath>..\..\packages\AppShell.Mobile.Android.0.0.1-ci82\lib\MonoAndroid50\AppShell.Mobile.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -70,8 +70,8 @@
       <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SimpleInjector, Version=2.8.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SimpleInjector.2.8.3\lib\portable-net4+sl4+wp8+win8+wpa81\SimpleInjector.dll</HintPath>
+    <Reference Include="SimpleInjector, Version=3.0.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SimpleInjector.3.0.3\lib\portable-net4+sl4+wp8+win8+wpa81\SimpleInjector.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

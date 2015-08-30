@@ -1,6 +1,6 @@
 ﻿using AppShell;
 
-namespace AppShell.Templates
+namespace $safeprojectname$
 {
     public class __shellname__ShellCore : ShellCore
     {

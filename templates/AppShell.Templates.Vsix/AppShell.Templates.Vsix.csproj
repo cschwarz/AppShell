@@ -134,7 +134,7 @@
   <Target Name="PrepareContent">
     <ItemGroup>
       <ZipFiles Include="$(OutDir)content\**\*.*" />
-      <ContentFiles Include="$(OutDir)content\**\*.*" Exclude="$(OutDir)content\**\*.vstemplate" />
+      <ContentFiles Include="$(OutDir)content\**\*.cs;$(OutDir)content\**\*.csproj" />
       <TemplateFiles Include="$(OutDir)content\**\*.vstemplate" />
     </ItemGroup>
     <FileUpdate Files="@(ContentFiles)" Regex="__(.+?)__" ReplacementText="$$ext_$1$$" />

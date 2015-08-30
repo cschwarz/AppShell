@@ -24,6 +24,9 @@
       <Folder Name="Providers" TargetFolderName="Providers">
         <ProjectItem ReplaceParameters="true" TargetFileName="__shellname__ShellConfigurationProvider.cs">__shellname__ShellConfigurationProvider.cs</ProjectItem>
       </Folder>
+      <Folder Name="ViewModels" TargetFolderName="ViewModels">
+        <ProjectItem ReplaceParameters="false" TargetFileName=".keep">.keep</ProjectItem>
+      </Folder>
     </Project>
   </TemplateContent>
 </VSTemplate>

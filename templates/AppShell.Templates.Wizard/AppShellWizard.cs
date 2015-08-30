@@ -39,6 +39,7 @@ namespace AppShell.Templates.Wizard
 
             AddNugetSolutionFolder();            
             SetStartupProject();
+            RemoveKeepFiles();
         }
 
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
@@ -118,6 +119,29 @@ namespace AppShell.Templates.Wizard
         private void SetStartupProject()
         {
             dte.Solution.Properties.Item("StartupProject").Value = dte.Solution.Projects.Cast<Project>().Where(p => p.Name.EndsWith(".Desktop")).Single().Name;
+        }
+
+        private void RemoveKeepFiles()
+        {
+            foreach (Project project in dte.Solution.Projects)
+                RemoveKeepFiles(project.ProjectItems);
+        }
+
+        private void RemoveKeepFiles(ProjectItems projectItems)
+        {
+            if (projectItems == null)
+                return;
+
+            foreach (ProjectItem projectItem in projectItems)
+            {
+                if (projectItem.Name == ".keep")
+                {
+                    projectItem.Remove();
+                    File.Delete(projectItem.Properties.Item("FullPath").Value);
+                }
+
+                RemoveKeepFiles(projectItem.ProjectItems);
+            }
         }
     }
 }

@@ -1,11 +1,10 @@
 ﻿using EnvDTE;
+using EnvDTE80;
 using Microsoft.VisualStudio.TemplateWizard;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Windows;
 
 namespace AppShell.Templates.Wizard
 {
@@ -13,6 +12,8 @@ namespace AppShell.Templates.Wizard
     {
         private DTE dte;
         private WizardWindow wizardWindow;
+        private Dictionary<string, string> replacementsDictionary;
+        private string templatePath;
 
         public void BeforeOpeningFile(ProjectItem projectItem)
         {
@@ -35,6 +36,9 @@ namespace AppShell.Templates.Wizard
                 dte.Solution.Remove(dte.Solution.Projects.Cast<Project>().Where(p => p.Name.EndsWith(".Mobile")).Single());
                 dte.Solution.Remove(dte.Solution.Projects.Cast<Project>().Where(p => p.Name.EndsWith(".Mobile.Android")).Single());
             }
+
+            AddNugetSolutionFolder();            
+            SetStartupProject();
         }
 
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
@@ -48,6 +52,8 @@ namespace AppShell.Templates.Wizard
             MessageBox.Show(builder.ToString());*/
 
             dte = automationObject as DTE;
+            this.replacementsDictionary = replacementsDictionary;
+            this.templatePath = customParams[0] as string;
 
             string destinationDirectory = replacementsDictionary["$destinationdirectory$"];
 
@@ -60,7 +66,7 @@ namespace AppShell.Templates.Wizard
                 if (result.HasValue && !result.Value)
                     throw new WizardBackoutException();
 
-                AddVariables(replacementsDictionary);
+                AddReplacementVariables();
             }
             catch (Exception)
             {
@@ -76,7 +82,7 @@ namespace AppShell.Templates.Wizard
             return true;
         }
 
-        private void AddVariables(Dictionary<string, string> replacementsDictionary)
+        private void AddReplacementVariables()
         {
             string safeProjectName = replacementsDictionary["$safeprojectname$"];
 
@@ -88,6 +94,30 @@ namespace AppShell.Templates.Wizard
                 shellName = safeProjectName.Substring(safeProjectName.LastIndexOf(".") + 1);
 
             replacementsDictionary.Add("$shellname$", shellName);
+        }
+
+        private void AddNugetSolutionFolder()
+        {
+            string sourceDirectory = Path.Combine(Path.GetDirectoryName(templatePath), ".nuget");
+            string targetDirectory = Path.Combine(Directory.GetParent(replacementsDictionary["$destinationdirectory$"]).FullName, ".nuget");
+
+            if (!Directory.Exists(targetDirectory))
+                Directory.CreateDirectory(targetDirectory);
+
+            Project solutionFolderProject = ((Solution2)dte.Solution).Projects.Cast<Project>().Single(p => p.Name == ".nuget");
+
+            foreach (string file in Directory.EnumerateFiles(sourceDirectory))
+            {
+                string targetFile = Path.Combine(targetDirectory, Path.GetFileName(file));
+
+                File.Copy(file, targetFile);
+                solutionFolderProject.ProjectItems.AddFromFile(targetFile);
+            }
+        }
+        
+        private void SetStartupProject()
+        {
+            dte.Solution.Properties.Item("StartupProject").Value = dte.Solution.Projects.Cast<Project>().Where(p => p.Name.EndsWith(".Desktop")).Single().Name;
         }
     }
 }

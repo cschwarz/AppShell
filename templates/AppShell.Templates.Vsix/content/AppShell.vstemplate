@@ -8,6 +8,8 @@
   </TemplateData>
   <TemplateContent>
     <ProjectCollection>
+      <SolutionFolder Name=".nuget">        
+      </SolutionFolder>
       <ProjectTemplateLink ProjectName="$safeprojectname$" CopyParameters="true">
         AppShell.Templates\MyTemplate.vstemplate
       </ProjectTemplateLink>

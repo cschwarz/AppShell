@@ -48,7 +48,6 @@
     <Compile Include="Providers\ServiceDispatcherShellConfigurationProvider.cs" />
     <Compile Include="ServiceDispatcherShellCore.cs" />
     <Compile Include="Services\ISampleService.cs" />
-    <Compile Include="ViewModels\ManifestResourceWebBrowserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ServiceDispatcher.html" />

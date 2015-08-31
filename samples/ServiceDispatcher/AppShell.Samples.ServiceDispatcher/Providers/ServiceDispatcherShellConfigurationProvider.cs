@@ -15,8 +15,8 @@ namespace AppShell.Samples.ServiceDispatcher
             RegisterShellViewModel<StackShellViewModel>();
 
             RegisterPlugin<SamplePlugin>();
-            
-            RegisterViewModel<ManifestResourceWebBrowserViewModel>(new Dictionary<string, object>() { { "ManifestResource", "AppShell.Samples.ServiceDispatcher.ServiceDispatcher.html" } });
+
+            RegisterViewModel<WebBrowserViewModel>(new Dictionary<string, object>() { { "EmbeddedHtml", "AppShell.Samples.ServiceDispatcher.ServiceDispatcher.html;AppShell.Samples.ServiceDispatcher" } });
         }
     }
 }

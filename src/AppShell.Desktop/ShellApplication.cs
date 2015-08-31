@@ -5,11 +5,11 @@ namespace AppShell.Desktop
 {
     public class ShellApplication<T> : Application where T : ShellCore
     {
-        protected ShellCore appShellCore;
+        protected ShellCore shellCore;
 
         public ShellApplication()
         {
-            appShellCore = Activator.CreateInstance<T>();
+            shellCore = Activator.CreateInstance<T>();
         }
 
         protected virtual void ConfigurePlatform()
@@ -25,8 +25,8 @@ namespace AppShell.Desktop
 
             ConfigurePlatform();
 
-            appShellCore.Configure();
-            appShellCore.Initialize();
+            shellCore.Configure();
+            shellCore.Initialize();
             
             MainWindow = ShellCore.Container.GetInstance<IViewFactory>().GetView(typeof(SplashScreenHostViewModel)) as Window;
             MainWindow.Show();
@@ -36,7 +36,7 @@ namespace AppShell.Desktop
         {
             base.OnExit(e);
 
-            appShellCore.Shutdown();
+            shellCore.Shutdown();
         }
     }
 }

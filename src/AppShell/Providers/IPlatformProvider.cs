@@ -6,6 +6,7 @@ namespace AppShell
 {
     public interface IPlatformProvider
     {
+        Platform GetPlatform();
         IEnumerable<Assembly> GetAssemblies();
         void ExecuteOnUIThread(Action action);
     }

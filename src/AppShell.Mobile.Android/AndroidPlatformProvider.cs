@@ -16,6 +16,11 @@ namespace AppShell.Mobile.Android
 {
     public class AndroidPlatformProvider : IPlatformProvider
     {
+        public Platform GetPlatform()
+        {
+            return Platform.Android;
+        }
+
         public IEnumerable<Assembly> GetAssemblies()
         {
             return AppDomain.CurrentDomain.GetAssemblies();

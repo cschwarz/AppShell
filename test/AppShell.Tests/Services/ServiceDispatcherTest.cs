@@ -123,6 +123,11 @@ namespace AppShell.Tests
     {
         private class TestPlatformProvider : IPlatformProvider
         {
+            public Platform GetPlatform()
+            {
+                return Platform.None;
+            }
+
             public IEnumerable<Assembly> GetAssemblies()
             {
                 yield return typeof(TestPlatformProvider).GetTypeInfo().Assembly;

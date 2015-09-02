@@ -10,6 +10,11 @@ namespace AppShell.Desktop
 {
     public class DesktopPlatformProvider : IPlatformProvider
     {
+        public Platform GetPlatform()
+        {
+            return Platform.Windows;
+        }
+
         public IEnumerable<Assembly> GetAssemblies()
         {
             List<Assembly> assemblies = new List<Assembly>();

@@ -7,6 +7,7 @@ namespace AppShell
     public class ShellCore
     {
         public static Container Container { get; private set; }
+        public static Platform CurrentPlatform { get; private set; }
 
         protected IPluginProvider pluginProvider;
 
@@ -27,6 +28,8 @@ namespace AppShell
 
         public virtual void Initialize()
         {
+            CurrentPlatform = Container.GetInstance<IPlatformProvider>().GetPlatform();
+
             Container.GetInstance<IViewModelFactory>().Initialize();
             Container.GetInstance<IViewFactory>().Initialize();
             Container.GetInstance<IServiceDispatcher>().Initialize();

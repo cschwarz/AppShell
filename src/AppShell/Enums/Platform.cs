@@ -7,10 +7,11 @@ namespace AppShell
     {
         None = 0,
         Windows = 1,
-        Android = 2,
-        iOS = 4,
-        WindowsPhone = 8,
-        Desktop = Windows,
+        Mac = 2,
+        Android = 4,
+        iOS = 8,
+        WindowsPhone = 16,
+        Desktop = Windows | Mac,
         Mobile = Android | iOS | WindowsPhone,
         All = Desktop | Mobile
     }

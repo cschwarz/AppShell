@@ -60,7 +60,7 @@
   <ItemGroup>
     <Compile Include="Factories\DesktopDataTemplateFactory.cs" />
     <Compile Include="Factories\DesktopViewFactory.cs" />
-    <Compile Include="DesktopPlatformProvider.cs" />
+    <Compile Include="Providers\DesktopPlatformProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

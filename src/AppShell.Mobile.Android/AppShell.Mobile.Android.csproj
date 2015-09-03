@@ -75,7 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AndroidPlatformProvider.cs" />
+    <Compile Include="Providers\AndroidPlatformProvider.cs" />
     <Compile Include="AndroidShellApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

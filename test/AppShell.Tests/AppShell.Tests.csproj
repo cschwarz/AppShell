@@ -39,6 +39,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Enums\PlatformTest.cs" />
     <Compile Include="Extensions\ObjectExtensionsTest.cs" />
     <Compile Include="Resolutions\ViewModelResolutionTest.cs" />
     <Compile Include="Resolutions\ViewResolutionTest.cs" />

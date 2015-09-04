@@ -40,18 +40,18 @@ namespace AppShell
         }
 
         protected class SplashScreenContainer
-        {
-            public SplashScreenViewModel ViewModel { get; private set; }
+        {            
+            public TypeConfiguration ViewModelType { get; private set; }
             public Type ViewType { get; private set; }
 
-            public SplashScreenContainer(SplashScreenViewModel viewModel, Type viewType)
+            public SplashScreenContainer(TypeConfiguration viewModelType, Type viewType)
             {
-                ViewModel = viewModel;
+                ViewModelType = viewModelType;
                 ViewType = viewType;
             }
         }
 
-        protected SplashScreenContainer currentSplashScreen;
+        protected SplashScreenViewModel currentSplashScreen;
         protected Stack<SplashScreenContainer> splashScreens;
 
         protected IShellConfigurationProvider configurationProvider;
@@ -70,10 +70,8 @@ namespace AppShell
             
             foreach (TypeConfiguration splashScreenType in configurationProvider.GetSplashScreens().Reverse())
             {
-                SplashScreenViewModel viewModel = viewModelFactory.GetViewModel(splashScreenType.Type, splashScreenType.Data) as SplashScreenViewModel;
                 Type viewType = viewFactory.GetViewType(splashScreenType.Type);
-
-                splashScreens.Push(new SplashScreenContainer(viewModel, viewType));
+                splashScreens.Push(new SplashScreenContainer(splashScreenType, viewType));
             }
         }
 
@@ -90,12 +88,12 @@ namespace AppShell
                 return;
             }
 
-            currentSplashScreen = splashScreens.Pop();
+            SplashScreenContainer splashScreenContainter = splashScreens.Pop();
+            currentSplashScreen = viewModelFactory.GetViewModel(splashScreenContainter.ViewModelType.Type, splashScreenContainter.ViewModelType.Data) as SplashScreenViewModel;            
+            currentSplashScreen.Closed += SplashScreen_Closed;
 
-            currentSplashScreen.ViewModel.Closed += SplashScreen_Closed;
-
-            ContentTemplate = dataTemplateFactory.GetDataTemplate(currentSplashScreen.ViewType);
-            Content = currentSplashScreen.ViewModel;
+            ContentTemplate = dataTemplateFactory.GetDataTemplate(splashScreenContainter.ViewType);
+            Content = currentSplashScreen;
         }
 
         protected virtual void ShowMainView()
@@ -106,7 +104,7 @@ namespace AppShell
 
         private void SplashScreen_Closed(object sender, SplashScreenEventArgs e)
         {
-            currentSplashScreen.ViewModel.Closed -= SplashScreen_Closed;
+            currentSplashScreen.Closed -= SplashScreen_Closed;
                         
             if (!e.Result && ExitRequested != null)
                 ExitRequested(sender, EventArgs.Empty);

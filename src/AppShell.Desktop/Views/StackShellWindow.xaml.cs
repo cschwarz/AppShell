@@ -37,7 +37,10 @@ namespace AppShell.Desktop
         private void StackShellWindow_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             if (DataContext is StackShellViewModel)
+            {
                 (DataContext as StackShellViewModel).DetachViewModelRequested += DetachViewModelRequested;
+                (DataContext as StackShellViewModel).CloseRequested += CloseRequested;
+            }
         }
 
         private void DetachViewModelRequested(object sender, IViewModel e)
@@ -45,6 +48,11 @@ namespace AppShell.Desktop
             DetachedWindow detachedWindow = new DetachedWindow();
             detachedWindow.DataContext = e;
             detachedWindow.Show();
+        }
+
+        private void CloseRequested(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

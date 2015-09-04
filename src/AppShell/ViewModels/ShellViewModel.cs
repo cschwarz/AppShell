@@ -11,6 +11,7 @@ namespace AppShell
         public event EventHandler<IViewModel> ViewModelPopped;
 
         public event EventHandler<IViewModel> DetachViewModelRequested;
+        public event EventHandler CloseRequested;
 
         public ObservableCollection<IViewModel> Items { get; private set; }
 
@@ -68,6 +69,12 @@ namespace AppShell
 
             if (ViewModelPopped != null)
                 ViewModelPopped(this, viewModel);
+
+            if (!Items.Any())
+            {
+                if (CloseRequested != null)
+                    CloseRequested(this, EventArgs.Empty);
+            }
         }
 
         public void DetachActive()

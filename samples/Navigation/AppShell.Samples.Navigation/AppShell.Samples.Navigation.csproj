@@ -39,6 +39,9 @@
     <Compile Include="Providers\NavigationShellConfigurationProvider.cs" />
     <Compile Include="NavigationShellCore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\SplashScreenLargeViewModel.cs" />
+    <Compile Include="ViewModels\SplashScreenNormalViewModel.cs" />
+    <Compile Include="ViewModels\SplashScreenSmallViewModel.cs" />
     <Compile Include="ViewModels\ViewModel2.cs" />
     <Compile Include="ViewModels\ViewModel1.cs" />
   </ItemGroup>

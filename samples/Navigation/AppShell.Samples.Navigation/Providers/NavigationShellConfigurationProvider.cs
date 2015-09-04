@@ -6,6 +6,10 @@ namespace AppShell.Samples.Navigation
     {
         public NavigationShellConfigurationProvider()
         {
+            RegisterSplashScreen<SplashScreenNormalViewModel>();
+            RegisterSplashScreen<SplashScreenSmallViewModel>();
+            RegisterSplashScreen<SplashScreenLargeViewModel>();
+
             RegisterShellViewModel<StackShellViewModel>();
 
             RegisterViewModel<ViewModel1>();

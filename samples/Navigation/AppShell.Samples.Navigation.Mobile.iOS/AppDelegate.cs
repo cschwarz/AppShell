@@ -5,6 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 using AppShell.Mobile.iOS;
+using AppShell.Samples.Navigation.Mobile.Views;
 
 namespace AppShell.Samples.Navigation.Mobile.iOS
 {
@@ -23,6 +24,8 @@ namespace AppShell.Samples.Navigation.Mobile.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            var views = typeof(View1);
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new iOSShellApplication<NavigationShellCore>());
 

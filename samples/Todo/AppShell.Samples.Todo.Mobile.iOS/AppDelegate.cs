@@ -24,7 +24,7 @@ namespace AppShell.Samples.Todo.Mobile.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            var temp = typeof(TodoPage);
+            var views = typeof(TodoPage);
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new iOSShellApplication<TodoShellCore>());

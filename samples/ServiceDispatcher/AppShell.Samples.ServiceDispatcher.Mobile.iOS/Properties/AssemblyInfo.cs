@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AppShell.Samples.Todo.Mobile.iOS")]
+[assembly: AssemblyTitle("AppShell.Samples.ServiceDispatcher.Mobile.iOS")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AppShell.Samples.Todo.Mobile.iOS")]
+[assembly: AssemblyProduct("AppShell.Samples.ServiceDispatcher.Mobile.iOS")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("53f37972-3b05-4f5f-a07c-b7a500bc5e70")]
+[assembly: Guid("862e766f-847b-47a4-916c-5abb2947d8eb")]
 
 // Version information for an assembly consists of the following four values:
 //

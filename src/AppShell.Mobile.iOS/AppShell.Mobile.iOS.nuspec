@@ -16,6 +16,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\iPhone\Release\AppShell.Mobile.iOS.dll" target="lib\xamarinios10"/>
+    <file src="bin\Release\AppShell.Mobile.iOS.dll" target="lib\xamarinios10"/>
   </files>
 </package>

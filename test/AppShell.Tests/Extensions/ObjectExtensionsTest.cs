@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace AppShell.Tests
@@ -45,16 +42,40 @@ namespace AppShell.Tests
             Assert.Equal(new string[] { "1", "2", "3" }, new object[] { 1, 2, 3 }.ChangeType(typeof(string[])));
         }
 
-        [Fact(Skip = "NotImplemented")]
+        [Fact]
         public void ChangeType_ObjectArrayOfStringsToStringEnumerable()
         {
             Assert.Equal(new List<string>() { "1", "2", "3" }, new object[] { "1", "2", "3" }.ChangeType(typeof(IEnumerable<string>)));
         }
 
-        [Fact(Skip = "NotImplemented")]
+        [Fact]
         public void ChangeType_ObjectArrayOfIntsToStringEnumerable()
         {
             Assert.Equal(new List<string>() { "1", "2", "3" }, new object[] { 1, 2, 3 }.ChangeType(typeof(IEnumerable<string>)));
+        }
+
+        [Fact]
+        public void ChangeType_ObjectArrayOfStringsToStringList()
+        {
+            Assert.Equal(new List<string>() { "1", "2", "3" }, new object[] { "1", "2", "3" }.ChangeType(typeof(List<string>)));
+        }
+
+        [Fact]
+        public void ChangeType_ObjectArrayOfIntsToStringList()
+        {
+            Assert.Equal(new List<string>() { "1", "2", "3" }, new object[] { 1, 2, 3 }.ChangeType(typeof(List<string>)));
+        }
+
+        [Fact(Skip = "NotImplemented")]
+        public void ChangeType_ObjectArrayOfStringsToStringHashSet()
+        {
+            Assert.Equal(new HashSet<string>() { "1", "2", "3" }, new object[] { "1", "2", "3" }.ChangeType(typeof(HashSet<string>)));
+        }
+
+        [Fact(Skip = "NotImplemented")]
+        public void ChangeType_ObjectArrayOfIntsToStringHashSet()
+        {
+            Assert.Equal(new HashSet<string>() { "1", "2", "3" }, new object[] { 1, 2, 3 }.ChangeType(typeof(HashSet<string>)));
         }
     }
 }

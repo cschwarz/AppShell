@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
@@ -32,6 +33,23 @@ namespace System
                         array.SetValue(valueArray.GetValue(i).ChangeType(elementConversionType), i);
 
                     return array;
+                }
+            }
+            else if (valueType.IsArray && 
+                conversionType.GenericTypeArguments.Length == 1 &&
+                conversionType.GetGenericTypeDefinition().MakeGenericType(typeof(object)).GetTypeInfo().IsAssignableFrom(typeof(List<object>).GetTypeInfo()))
+            {
+                Type genericConversionType = conversionType.GenericTypeArguments.Single();
+                var valueArray = (value as Array);
+
+                if (valueArray != null)
+                {
+                    IList list = (IList)Activator.CreateInstance(typeof(List<>).MakeGenericType(genericConversionType));
+                    
+                    for (int i = 0; i < valueArray.Length; i++)
+                        list.Add(valueArray.GetValue(i).ChangeType(genericConversionType));
+
+                    return list;
                 }
             }
 

@@ -67,6 +67,15 @@ ServiceDispatcher.prototype.subscribeEvent = function (serviceName, eventName, c
         window.external.SubscribeEvent(serviceName, eventName, callbackId);
     else if (Native)
         Native('subscribeEvent', { serviceName: serviceName, eventName: eventName, callbackId: callbackId });
+
+    return callbackId;
+};
+
+ServiceDispatcher.prototype.unsubscribeEvent = function (serviceName, callbackId) {    
+    if (window.external)
+        window.external.UnsubscribeEvent(serviceName, callbackId);
+    else if (Native)
+        Native('unsubscribeEvent', { serviceName: serviceName, callbackId: callbackId });
 };
 
 window.serviceDispatcher = new ServiceDispatcher();

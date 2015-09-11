@@ -16,10 +16,22 @@ namespace AppShell.Samples.ServiceDispatcher
         }
     }
 
+    public class CounterEventArgs : EventArgs
+    {
+        public int Counter { get; private set; }
+
+        public CounterEventArgs(int counter)
+        {
+            Counter = counter;
+        }
+    }
+
+
     [Service("sampleService")]
     public interface ISampleService
     {
         event EventHandler<DateTimeEventArgs> CurrentTime;
+        event EventHandler<CounterEventArgs> CounterIncreased;
 
         [ServiceMethod("add")]
         int Add(int value1, int value2);

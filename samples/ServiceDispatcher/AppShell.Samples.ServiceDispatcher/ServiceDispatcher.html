@@ -17,6 +17,8 @@
     1 + 2 = <span id="addResult"></span>
     <br />
     Current Time: <span id="currentDateTime"></span>
+    <br />
+    Counter (unsubscribes after 5): <span id="counter"></span>
     <script>
         var t0 = Date.now();
 
@@ -32,6 +34,13 @@
 
             serviceDispatcher.subscribeEvent('sampleService', 'CurrentTime', function (e) {
                 currentDateTime.innerText = moment(e.DateTime).format('LL LTS');
+            });
+
+            var callbackId = serviceDispatcher.subscribeEvent('sampleService', 'CounterIncreased', function (e) {
+                counter.innerText = e.Counter;
+
+                if (e.Counter >= 5)
+                    serviceDispatcher.unsubscribeEvent('sampleService', callbackId);
             });
         }
     </script>

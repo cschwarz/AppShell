@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -30,6 +31,12 @@ namespace AppShell.Mobile
             public string CallbackId { get; set; }
         }
 
+        class UnsubscribeEventData
+        {
+            public string ServiceName { get; set; }            
+            public string CallbackId { get; set; }
+        }
+
         public static readonly BindableProperty UrlProperty = BindableProperty.Create<WebBrowserPage, string>(d => d.Url, null, propertyChanged: UrlPropertyChanged);
         public static readonly BindableProperty HtmlProperty = BindableProperty.Create<WebBrowserPage, string>(d => d.Html, null, propertyChanged: HtmlPropertyChanged);
         
@@ -53,10 +60,12 @@ namespace AppShell.Mobile
         }
 
         private HybridWebView webView;
+        private ConcurrentDictionary<string, EventRegistration> eventRegistrations;
 
         public WebBrowserPage(IServiceDispatcher serviceDispatcher, IPlatformProvider platformProvider)
         {
             webView = new HybridWebView(new XLabs.Serialization.JsonNET.JsonSerializer());
+            eventRegistrations = new ConcurrentDictionary<string, EventRegistration>();
             
             string serviceDispatcherScript = null;
 
@@ -85,11 +94,22 @@ namespace AppShell.Mobile
             {
                 SubscribeEventData subscribeEventData = JsonConvert.DeserializeObject<SubscribeEventData>(args);
 
-                serviceDispatcher.SubscribeEvent(subscribeEventData.ServiceName, subscribeEventData.EventName, this, (s, e) =>
+                EventRegistration eventRegistration = serviceDispatcher.SubscribeEvent(subscribeEventData.ServiceName, subscribeEventData.EventName, this, (s, e) =>
                 {
                     if (subscribeEventData.CallbackId != null)
                         platformProvider.ExecuteOnUIThread(() => webView.InjectJavaScript(string.Format("serviceDispatcher._eventCallback('{0}', '{1}');", subscribeEventData.CallbackId, JsonConvert.SerializeObject(e))));
                 });
+
+                eventRegistrations.AddOrUpdate(subscribeEventData.CallbackId, eventRegistration, (k, e) => e);
+            });
+
+            webView.RegisterCallback("unsubscribeEvent", args =>
+            {
+                UnsubscribeEventData unsubscribeEventData = JsonConvert.DeserializeObject<UnsubscribeEventData>(args);
+
+                EventRegistration eventRegistration = null;
+                if (eventRegistrations.TryRemove(unsubscribeEventData.CallbackId, out eventRegistration))
+                    serviceDispatcher.UnsubscribeEvent(unsubscribeEventData.ServiceName, eventRegistration);
             });
 
             Content = webView;       

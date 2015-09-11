@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -86,12 +87,14 @@ namespace AppShell.Desktop.Views
     public class ScriptInterface
     {
         private IServiceDispatcher serviceDispatcher;
+        private ConcurrentDictionary<string, EventRegistration> eventRegistrations;
 
         private WebBrowser webBrowser;
 
         public ScriptInterface(IServiceDispatcher serviceDispatcher, WebBrowser webBrowser)
         {
             this.serviceDispatcher = serviceDispatcher;
+            this.eventRegistrations = new ConcurrentDictionary<string, EventRegistration>();
             this.webBrowser = webBrowser;
         }
 
@@ -117,15 +120,20 @@ namespace AppShell.Desktop.Views
                 
         public void SubscribeEvent(string serviceName, string eventName, string callbackId)
         {
-            serviceDispatcher.SubscribeEvent(serviceName, eventName, this, (s, e) =>
+            EventRegistration eventRegistration = serviceDispatcher.SubscribeEvent(serviceName, eventName, this, (s, e) =>
             {
                 if (callbackId != null)
                     Application.Current.Dispatcher.Invoke(() => webBrowser.InvokeScript("eval", string.Format("serviceDispatcher._eventCallback('{0}', '{1}')", callbackId, JsonConvert.SerializeObject(e))));
             });
+
+            eventRegistrations.AddOrUpdate(callbackId, eventRegistration, (k, e) => e);
         }
 
-        public void UnsubscribeEvent()
+        public void UnsubscribeEvent(string serviceName, string callbackId)
         {
+            EventRegistration eventRegistration = null;
+            if (eventRegistrations.TryRemove(callbackId, out eventRegistration))
+                serviceDispatcher.UnsubscribeEvent(serviceName, eventRegistration);
         }
     }
 }

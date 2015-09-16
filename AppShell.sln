@@ -104,6 +104,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.NativeMaps
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.NativeMaps.Desktop", "samples\NativeMaps\AppShell.Samples.NativeMaps.Desktop\AppShell.Samples.NativeMaps.Desktop.csproj", "{29465966-A6F4-4439-9898-4FD671117153}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.NativeMaps.Mobile", "src\AppShell.NativeMaps.Mobile\AppShell.NativeMaps.Mobile.csproj", "{43B70D9C-4274-4C52-9DC7-488781F8C19C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -1012,6 +1014,30 @@ Global
 		{29465966-A6F4-4439-9898-4FD671117153}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{29465966-A6F4-4439-9898-4FD671117153}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{29465966-A6F4-4439-9898-4FD671117153}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Ad-Hoc|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Ad-Hoc|Mixed Platforms.Build.0 = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.AppStore|Any CPU.Build.0 = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.AppStore|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.AppStore|Mixed Platforms.Build.0 = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1054,5 +1080,6 @@ Global
 		{7499C756-2409-48B1-88CF-CA2FB8331360} = {433399A5-1379-4CC4-9D5F-1B712901E133}
 		{37356F77-D05A-4DB9-B76D-CC0A63EC9846} = {7499C756-2409-48B1-88CF-CA2FB8331360}
 		{29465966-A6F4-4439-9898-4FD671117153} = {7499C756-2409-48B1-88CF-CA2FB8331360}
+		{43B70D9C-4274-4C52-9DC7-488781F8C19C} = {DA3B3A42-8F3D-4AC8-B709-FA165215B746}
 	EndGlobalSection
 EndGlobal

@@ -23,6 +23,8 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            var temp = typeof(XLabs.Forms.Controls.HybridWebViewRenderer);
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new iOSShellApplication<ServiceDispatcherShellCore>());
 

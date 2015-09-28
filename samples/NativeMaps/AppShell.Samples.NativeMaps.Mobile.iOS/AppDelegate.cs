@@ -23,7 +23,11 @@ namespace AppShell.Samples.NativeMaps.Mobile.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            var mapViewModels = typeof(AppShell.NativeMaps.MapViewModel);
+            var mapViews = typeof(AppShell.NativeMaps.Mobile.MapPage);
+
             global::Xamarin.Forms.Forms.Init();
+            global::Xamarin.FormsMaps.Init();
             LoadApplication(new iOSShellApplication<NativeMapsShellCore>());
 
             return base.FinishedLaunching(app, options);

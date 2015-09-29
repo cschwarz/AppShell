@@ -6,6 +6,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300" Width="320" Height="240">
     <Grid>
-            
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="ExtraBold" FontSize="24">SplashScreen 2 of 3</TextBlock>
     </Grid>
 </UserControl>

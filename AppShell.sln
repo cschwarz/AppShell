@@ -1,16 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell", "src\AppShell\AppShell.csproj", "{DE3520C9-7226-4FFE-88F1-A72FFE6A88D3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Mobile", "src\AppShell.Mobile\AppShell.Mobile.csproj", "{67F9D3A8-F71E-4428-913F-C37AE82CDB24}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Desktop", "src\AppShell.Desktop\AppShell.Desktop.csproj", "{60CB4BCF-FE17-4C7C-BCFE-996C3EAC1896}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Mobile.Android", "src\AppShell.Mobile.Android\AppShell.Mobile.Android.csproj", "{44E821C5-E63F-419D-8D22-C57214BEDEE7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8191DD5A-EE1A-4489-A5BE-42486D01DFDC}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -24,9 +16,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{4333
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{76F25CFF-8D34-4EB8-932D-72304F4DEDB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Tests", "test\AppShell.Tests\AppShell.Tests.csproj", "{F03ADD53-6156-40FC-B7BA-EAD9EE834085}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Todo", "Todo", "{F2C466DF-6E78-412A-B7E5-EF4DCB46C683}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceDispatcher", "ServiceDispatcher", "{98CBCB65-D1CB-420C-A660-78FED7ECAC30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{7DEF9E32-4EB8-4C1C-A390-2E82260CB92C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{361BC05B-49AB-401B-A649-98DE592020CD}"
+	ProjectSection(SolutionItems) = preProject
+		Build.proj = Build.proj
+		.build\MSBuild.Community.Tasks.dll = .build\MSBuild.Community.Tasks.dll
+		.build\MSBuild.Community.Tasks.targets = .build\MSBuild.Community.Tasks.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{977D80E1-BC17-4757-B943-95603CA86FE1}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{97AC81CD-4EAD-4056-8369-BFAD21C72812}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NativeMaps", "NativeMaps", "{7499C756-2409-48B1-88CF-CA2FB8331360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell", "src\AppShell\AppShell.csproj", "{DE3520C9-7226-4FFE-88F1-A72FFE6A88D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Mobile", "src\AppShell.Mobile\AppShell.Mobile.csproj", "{67F9D3A8-F71E-4428-913F-C37AE82CDB24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Desktop", "src\AppShell.Desktop\AppShell.Desktop.csproj", "{60CB4BCF-FE17-4C7C-BCFE-996C3EAC1896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Mobile.Android", "src\AppShell.Mobile.Android\AppShell.Mobile.Android.csproj", "{44E821C5-E63F-419D-8D22-C57214BEDEE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Tests", "test\AppShell.Tests\AppShell.Tests.csproj", "{F03ADD53-6156-40FC-B7BA-EAD9EE834085}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.Todo", "samples\Todo\AppShell.Samples.Todo\AppShell.Samples.Todo.csproj", "{D6A773F0-39BA-4CAA-BE44-ABBECA8A4BA4}"
 EndProject
@@ -36,8 +56,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.Todo.Mobil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.Todo.Mobile.Android", "samples\Todo\AppShell.Samples.Todo.Mobile.Android\AppShell.Samples.Todo.Mobile.Android.csproj", "{7073F0C8-0A73-4BC6-B04D-049114B8EEFF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceDispatcher", "ServiceDispatcher", "{98CBCB65-D1CB-420C-A660-78FED7ECAC30}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.ServiceDispatcher.Desktop", "samples\ServiceDispatcher\AppShell.Samples.ServiceDispatcher.Desktop\AppShell.Samples.ServiceDispatcher.Desktop.csproj", "{EC8E1A50-FD04-481F-A646-AA605301F756}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.ServiceDispatcher", "samples\ServiceDispatcher\AppShell.Samples.ServiceDispatcher\AppShell.Samples.ServiceDispatcher.csproj", "{60BE5709-2354-47F5-9430-8C0A444F8B5A}"
@@ -46,33 +64,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.ServiceDis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.ServiceDispatcher.Mobile", "samples\ServiceDispatcher\AppShell.Samples.ServiceDispatcher.Mobile\AppShell.Samples.ServiceDispatcher.Mobile.csproj", "{19E2050D-E12C-4C21-A20A-F4B7B04451DF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{7DEF9E32-4EB8-4C1C-A390-2E82260CB92C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Templates", "templates\AppShell.Templates\AppShell.Templates.csproj", "{0A94D1F8-F06F-48EF-B425-5B74758FBABA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Templates.Vsix", "templates\AppShell.Templates.Vsix\AppShell.Templates.Vsix.csproj", "{62E281FD-6608-4122-B98C-2682E6F7A0DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Templates.Desktop", "templates\AppShell.Templates.Desktop\AppShell.Templates.Desktop.csproj", "{95CEF015-97F5-4773-8876-3D35F87DD588}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{361BC05B-49AB-401B-A649-98DE592020CD}"
-	ProjectSection(SolutionItems) = preProject
-		Build.proj = Build.proj
-		.build\MSBuild.Community.Tasks.dll = .build\MSBuild.Community.Tasks.dll
-		.build\MSBuild.Community.Tasks.targets = .build\MSBuild.Community.Tasks.targets
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Templates.Wizard", "templates\AppShell.Templates.Wizard\AppShell.Templates.Wizard.csproj", "{ADF93EF7-B56B-4793-9885-8499D2D3CF7A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{977D80E1-BC17-4757-B943-95603CA86FE1}"
-	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Templates.Mobile", "templates\AppShell.Templates.Mobile\AppShell.Templates.Mobile.csproj", "{1A464DAA-3768-4FD1-B168-B1B96EFD7EFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Templates.Mobile.Android", "templates\AppShell.Templates.Mobile.Android\AppShell.Templates.Mobile.Android.csproj", "{89073F44-08CA-41C4-8B85-779E3434820D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{97AC81CD-4EAD-4056-8369-BFAD21C72812}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.Navigation", "samples\Navigation\AppShell.Samples.Navigation\AppShell.Samples.Navigation.csproj", "{CD08BFDD-FF57-4153-811F-08786A6EAB50}"
 EndProject
@@ -97,8 +99,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.NativeMaps", "src\AppShell.NativeMaps\AppShell.NativeMaps.csproj", "{3C4971B2-6C9C-4DC1-81F1-EBB847ADFC8F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.NativeMaps.Desktop", "src\AppShell.NativeMaps.Desktop\AppShell.NativeMaps.Desktop.csproj", "{BDB1200E-C79C-4D86-9347-18D41E293659}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NativeMaps", "NativeMaps", "{7499C756-2409-48B1-88CF-CA2FB8331360}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Samples.NativeMaps", "samples\NativeMaps\AppShell.Samples.NativeMaps\AppShell.Samples.NativeMaps.csproj", "{37356F77-D05A-4DB9-B76D-CC0A63EC9846}"
 EndProject
@@ -1121,17 +1121,19 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{F2C466DF-6E78-412A-B7E5-EF4DCB46C683} = {433399A5-1379-4CC4-9D5F-1B712901E133}
+		{98CBCB65-D1CB-420C-A660-78FED7ECAC30} = {433399A5-1379-4CC4-9D5F-1B712901E133}
+		{97AC81CD-4EAD-4056-8369-BFAD21C72812} = {433399A5-1379-4CC4-9D5F-1B712901E133}
+		{7499C756-2409-48B1-88CF-CA2FB8331360} = {433399A5-1379-4CC4-9D5F-1B712901E133}
 		{DE3520C9-7226-4FFE-88F1-A72FFE6A88D3} = {DA3B3A42-8F3D-4AC8-B709-FA165215B746}
 		{67F9D3A8-F71E-4428-913F-C37AE82CDB24} = {DA3B3A42-8F3D-4AC8-B709-FA165215B746}
 		{60CB4BCF-FE17-4C7C-BCFE-996C3EAC1896} = {DA3B3A42-8F3D-4AC8-B709-FA165215B746}
 		{44E821C5-E63F-419D-8D22-C57214BEDEE7} = {DA3B3A42-8F3D-4AC8-B709-FA165215B746}
 		{F03ADD53-6156-40FC-B7BA-EAD9EE834085} = {76F25CFF-8D34-4EB8-932D-72304F4DEDB4}
-		{F2C466DF-6E78-412A-B7E5-EF4DCB46C683} = {433399A5-1379-4CC4-9D5F-1B712901E133}
 		{D6A773F0-39BA-4CAA-BE44-ABBECA8A4BA4} = {F2C466DF-6E78-412A-B7E5-EF4DCB46C683}
 		{C7A7122B-FE55-49D8-8F79-78518B02FF8F} = {F2C466DF-6E78-412A-B7E5-EF4DCB46C683}
 		{F25680D1-22A3-4463-947E-E4D0B10BDF20} = {F2C466DF-6E78-412A-B7E5-EF4DCB46C683}
 		{7073F0C8-0A73-4BC6-B04D-049114B8EEFF} = {F2C466DF-6E78-412A-B7E5-EF4DCB46C683}
-		{98CBCB65-D1CB-420C-A660-78FED7ECAC30} = {433399A5-1379-4CC4-9D5F-1B712901E133}
 		{EC8E1A50-FD04-481F-A646-AA605301F756} = {98CBCB65-D1CB-420C-A660-78FED7ECAC30}
 		{60BE5709-2354-47F5-9430-8C0A444F8B5A} = {98CBCB65-D1CB-420C-A660-78FED7ECAC30}
 		{862D0445-6858-4197-8709-EFD5956DA29E} = {98CBCB65-D1CB-420C-A660-78FED7ECAC30}
@@ -1142,7 +1144,6 @@ Global
 		{ADF93EF7-B56B-4793-9885-8499D2D3CF7A} = {7DEF9E32-4EB8-4C1C-A390-2E82260CB92C}
 		{1A464DAA-3768-4FD1-B168-B1B96EFD7EFD} = {7DEF9E32-4EB8-4C1C-A390-2E82260CB92C}
 		{89073F44-08CA-41C4-8B85-779E3434820D} = {7DEF9E32-4EB8-4C1C-A390-2E82260CB92C}
-		{97AC81CD-4EAD-4056-8369-BFAD21C72812} = {433399A5-1379-4CC4-9D5F-1B712901E133}
 		{CD08BFDD-FF57-4153-811F-08786A6EAB50} = {97AC81CD-4EAD-4056-8369-BFAD21C72812}
 		{CFAD324E-33C6-4ADE-85FC-30491351C210} = {97AC81CD-4EAD-4056-8369-BFAD21C72812}
 		{59F6E000-57E1-4ED6-A987-BA82BC16C8A1} = {97AC81CD-4EAD-4056-8369-BFAD21C72812}
@@ -1155,7 +1156,6 @@ Global
 		{FE163FDC-64A1-47F6-86B5-974853C19767} = {97AC81CD-4EAD-4056-8369-BFAD21C72812}
 		{3C4971B2-6C9C-4DC1-81F1-EBB847ADFC8F} = {DA3B3A42-8F3D-4AC8-B709-FA165215B746}
 		{BDB1200E-C79C-4D86-9347-18D41E293659} = {DA3B3A42-8F3D-4AC8-B709-FA165215B746}
-		{7499C756-2409-48B1-88CF-CA2FB8331360} = {433399A5-1379-4CC4-9D5F-1B712901E133}
 		{37356F77-D05A-4DB9-B76D-CC0A63EC9846} = {7499C756-2409-48B1-88CF-CA2FB8331360}
 		{29465966-A6F4-4439-9898-4FD671117153} = {7499C756-2409-48B1-88CF-CA2FB8331360}
 		{43B70D9C-4274-4C52-9DC7-488781F8C19C} = {DA3B3A42-8F3D-4AC8-B709-FA165215B746}

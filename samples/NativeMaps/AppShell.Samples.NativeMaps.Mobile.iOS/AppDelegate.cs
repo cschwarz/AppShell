@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿
+using AppShell.Mobile;
+using AppShell.Mobile.iOS;
 using Foundation;
 using UIKit;
-using AppShell.Mobile.iOS;
 
 namespace AppShell.Samples.NativeMaps.Mobile.iOS
 {
@@ -12,7 +10,7 @@ namespace AppShell.Samples.NativeMaps.Mobile.iOS
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
     [Register("AppDelegate")]
-    public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
+    public partial class AppDelegate : ShellApplicationDelegate<ShellApplication<NativeMapsShellCore>>
     {
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
@@ -25,11 +23,7 @@ namespace AppShell.Samples.NativeMaps.Mobile.iOS
         {
             var mapViewModels = typeof(AppShell.NativeMaps.MapViewModel);
             var mapViews = typeof(AppShell.NativeMaps.Mobile.MapPage);
-
-            global::Xamarin.Forms.Forms.Init();
-            global::Xamarin.FormsMaps.Init();
-            LoadApplication(new iOSShellApplication<NativeMapsShellCore>());
-
+            
             return base.FinishedLaunching(app, options);
         }
     }

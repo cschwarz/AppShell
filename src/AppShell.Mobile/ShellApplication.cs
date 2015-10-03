@@ -5,11 +5,11 @@ namespace AppShell.Mobile
 {
     public class ShellApplication<T> : Application where T : ShellCore
     {
-        protected ShellCore appShellCore;
+        protected ShellCore shellCore;
 
         public ShellApplication()
         {
-            appShellCore = Activator.CreateInstance<T>();
+            shellCore = Activator.CreateInstance<T>();
         }
 
         protected virtual void ConfigurePlatform()
@@ -24,8 +24,8 @@ namespace AppShell.Mobile
 
             ConfigurePlatform();
 
-            appShellCore.Configure();
-            appShellCore.Initialize();
+            shellCore.Configure();
+            shellCore.Initialize();
 
             MainPage = ShellCore.Container.GetInstance<IViewFactory>().GetView(typeof(SplashScreenHostViewModel)) as Page;            
         }

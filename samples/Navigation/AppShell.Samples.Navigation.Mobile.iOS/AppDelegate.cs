@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
-using UIKit;
+﻿
+using AppShell.Mobile;
 using AppShell.Mobile.iOS;
 using AppShell.Samples.Navigation.Mobile.Views;
+using Foundation;
+using UIKit;
 
 namespace AppShell.Samples.Navigation.Mobile.iOS
 {
@@ -13,7 +11,7 @@ namespace AppShell.Samples.Navigation.Mobile.iOS
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
     [Register("AppDelegate")]
-    public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
+    public partial class AppDelegate : ShellApplicationDelegate<ShellApplication<NavigationShellCore>>
     {
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
@@ -25,10 +23,7 @@ namespace AppShell.Samples.Navigation.Mobile.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             var views = typeof(View1);
-
-            global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new iOSShellApplication<NavigationShellCore>());
-
+            
             return base.FinishedLaunching(app, options);
         }
     }

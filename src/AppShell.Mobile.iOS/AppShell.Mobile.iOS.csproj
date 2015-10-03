@@ -37,9 +37,9 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="iOSShellApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\iOSPlatformProvider.cs" />
+    <Compile Include="ShellApplicationDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppShell.Mobile\AppShell.Mobile.csproj">

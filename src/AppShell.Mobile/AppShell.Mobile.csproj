@@ -36,6 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Providers\MobilePlatformProvider.cs" />
     <Compile Include="Views\ContentControl.cs" />
     <Compile Include="Factories\MobileDataTemplateFactory.cs" />
     <Compile Include="Factories\MobileViewFactory.cs" />

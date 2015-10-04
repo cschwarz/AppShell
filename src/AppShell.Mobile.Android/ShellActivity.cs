@@ -5,17 +5,17 @@ using Xamarin.Forms.Platform.Android;
 
 namespace AppShell.Mobile.Android
 {
-    public class ShellActivity<T> : FormsApplicationActivity where T : Application
+    public class ShellActivity<TApplication, TResource> : FormsApplicationActivity where TApplication : Application
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            Forms.Init(this, savedInstanceState);
-
+            Forms.Init(this, savedInstanceState, typeof(TResource).Assembly);
+            
             ShellCore.Container.RegisterSingleton<IPlatformProvider, AndroidPlatformProvider>();
 
-            LoadApplication(Activator.CreateInstance<T>());
+            LoadApplication(Activator.CreateInstance<TApplication>());
         }
     }
 }

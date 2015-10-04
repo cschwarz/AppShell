@@ -12,7 +12,7 @@ using System;
 namespace AppShell.Samples.Todo.Mobile.Android
 {
     [Activity(Label = "AppShell.Samples.Todo.Mobile.Android", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : ShellActivity<ShellApplication<TodoShellCore>>
+    public class MainActivity : ShellActivity<ShellApplication<TodoShellCore>, MainActivity>
     {
     }
 }

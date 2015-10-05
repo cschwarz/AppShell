@@ -1,7 +1,6 @@
-﻿
-namespace AppShell.NativeMaps
+﻿namespace AppShell.NativeMaps
 {
-    public class MapViewModel : ViewModel
+    public class MapViewModel : ViewModel, IMapService
     {
         private string apiKey;
         public string ApiKey
@@ -57,6 +56,22 @@ namespace AppShell.NativeMaps
                     OnPropertyChanged("ZoomLevel");
                 }
             }
+        }
+
+        public MapViewModel(IServiceDispatcher serviceDispatcher)
+        {
+            serviceDispatcher.Subscribe<IMapService>(this);
+        }
+
+        public void SetCenter(double latitude, double longitude)
+        {
+            Latitude = latitude;
+            Longitude = longitude;
+        }
+
+        public void SetZoomLevel(double zoomLevel)
+        {
+            ZoomLevel = zoomLevel;
         }
     }
 }

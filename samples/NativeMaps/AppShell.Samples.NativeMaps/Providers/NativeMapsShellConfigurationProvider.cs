@@ -13,8 +13,7 @@ namespace AppShell.Samples.NativeMaps
             {
                 { "ApiKey", "AocChPqL03_3u67XOXhITEjyx1P9sOLLTUIuOGZ52iySaBM7jzwmxM7bNIZPpb-Y" },
                 { "ZoomLevel", 15.0 },
-                { "Latitude", 48.21 },
-                { "Longitude", 16.37 }
+                { "Center", new Location(48.21, 16.37) }
             });
         }
     }

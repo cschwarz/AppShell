@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
+using System.ComponentModel;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
@@ -12,67 +9,61 @@ namespace AppShell.NativeMaps.Mobile
     [View(typeof(MapViewModel))]
     public class MapPage : ContentPage
     {
-        private static Dictionary<int, double> ZoomLevelMapping = new Dictionary<int, double>();
-
-        static MapPage()
-        {
-            double startRadius = 78271.52;
-
-            for (int i = 1; i < 20; i++)
-            {
-                ZoomLevelMapping.Add(i, startRadius);
-                startRadius /= 2.0;
-            }
-        }
-
-        public static readonly BindableProperty ZoomLevelProperty = BindableProperty.Create<MapPage, double>(d => d.ZoomLevel, 10.0, propertyChanged: ZoomLevelPropertyChanged);
-        public static readonly BindableProperty LatitudeProperty = BindableProperty.Create<MapPage, double>(d => d.Latitude, 0.0, propertyChanged: LatitudePropertyChanged);
-        public static readonly BindableProperty LongitudeProperty = BindableProperty.Create<MapPage, double>(d => d.Longitude, 0.0, propertyChanged: LongitudePropertyChanged);
-
+        public static readonly BindableProperty ZoomLevelProperty = BindableProperty.Create<MapPage, double>(d => d.ZoomLevel, 10.0, BindingMode.TwoWay, propertyChanged: ZoomLevelPropertyChanged);
+        public static readonly BindableProperty CenterProperty = BindableProperty.Create<MapPage, Location>(d => d.Center, null, BindingMode.TwoWay, propertyChanged: CenterPropertyChanged);
+        
         public double ZoomLevel { get { return (double)GetValue(ZoomLevelProperty); } set { SetValue(ZoomLevelProperty, value); } }
-        public double Latitude { get { return (double)GetValue(LatitudeProperty); } set { SetValue(LatitudeProperty, value); } }
-        public double Longitude { get { return (double)GetValue(LongitudeProperty); } set { SetValue(LongitudeProperty, value); } }
+        public Location Center { get { return (Location)GetValue(CenterProperty); } set { SetValue(CenterProperty, value); } }
         public double Radius
         {
-            get
-            {
-                int zoomLevel = (int)ZoomLevel;
-                if (ZoomLevelMapping.ContainsKey(zoomLevel))
-                    return ZoomLevelMapping[zoomLevel] * 200;
-
-                return 5000;
-            }
+            get { return 16000000 / Math.Pow(2, ZoomLevel); }
+            set { ZoomLevel = Math.Round(Math.Log(16000000 / value) / Math.Log(2), 2); }
         }
 
         public static void ZoomLevelPropertyChanged(BindableObject d, double oldValue, double newValue)
         {
+            if (oldValue == newValue)
+                return;
+
             MapPage mapPage = d as MapPage;
-            mapPage.map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(mapPage.Latitude, mapPage.Longitude), new Distance(mapPage.Radius)));
+
+            if (mapPage.map.VisibleRegion != null)
+                mapPage.map.MoveToRegion(MapSpan.FromCenterAndRadius(mapPage.map.VisibleRegion.Center, new Distance(mapPage.Radius)));
         }
 
-        public static void LatitudePropertyChanged(BindableObject d, double oldValue, double newValue)
+        public static void CenterPropertyChanged(BindableObject d, Location oldValue, Location newValue)
         {
-            MapPage mapPage = d as MapPage;
-            mapPage.map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(mapPage.Latitude, mapPage.Longitude), new Distance(mapPage.Radius)));
-        }
+            if (oldValue == newValue)
+                return;
 
-        public static void LongitudePropertyChanged(BindableObject d, double oldValue, double newValue)
-        {
             MapPage mapPage = d as MapPage;
-            mapPage.map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(mapPage.Latitude, mapPage.Longitude), new Distance(mapPage.Radius)));
-        }
 
+            if (newValue != null)
+                mapPage.map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(newValue.Latitude, newValue.Longitude), new Distance(mapPage.Radius)));
+        }
+        
         private Map map;
 
         public MapPage()
         {
             map = new Map();
+            map.PropertyChanged += Map_PropertyChanged;
 
             Content = map;
 
             SetBinding(ZoomLevelProperty, new Binding("ZoomLevel"));
-            SetBinding(LatitudeProperty, new Binding("Latitude"));
-            SetBinding(LongitudeProperty, new Binding("Longitude"));
+            SetBinding(CenterProperty, new Binding("Center"));
+        }
+
+        private void Map_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            Map map = sender as Map;
+
+            if (e.PropertyName == "VisibleRegion" && map != null && map.VisibleRegion != null)
+            {
+                Center = new Location(map.VisibleRegion.Center.Latitude, map.VisibleRegion.Center.Longitude);
+                Radius = map.VisibleRegion.Radius.Meters;
+            }
         }
     }
 }

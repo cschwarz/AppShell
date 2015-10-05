@@ -16,34 +16,20 @@
             }
         }
 
-        private double latitude;
-        public double Latitude
+        private Location center;
+        public Location Center
         {
-            get { return latitude; }
+            get { return center; }
             set
             {
-                if (latitude != value)
+                if (center != value)
                 {
-                    latitude = value;
-                    OnPropertyChanged("Latitude");
+                    center = value;
+                    OnPropertyChanged("Center");
                 }
             }
         }
-
-        private double longitude;
-        public double Longitude
-        {
-            get { return longitude; }
-            set
-            {
-                if (longitude != value)
-                {
-                    longitude = value;
-                    OnPropertyChanged("Longitude");
-                }
-            }
-        }
-
+        
         private double zoomLevel;
         public double ZoomLevel
         {
@@ -65,8 +51,7 @@
 
         public void SetCenter(double latitude, double longitude)
         {
-            Latitude = latitude;
-            Longitude = longitude;
+            Center = new Location(latitude, longitude);
         }
 
         public void SetZoomLevel(double zoomLevel)

@@ -11,6 +11,8 @@ namespace AppShell
         void Push(string viewModelType, Dictionary<string, object> data = null);
         [ServiceMethod("pop")]
         void Pop();
+        [ServiceMethod("getActive")]
+        IViewModel GetActive();
         [ServiceMethod("detachActive")]
         void DetachActive();
     }

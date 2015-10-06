@@ -77,6 +77,11 @@ namespace AppShell
             }
         }
 
+        public IViewModel GetActive()
+        {
+            return ActiveItem;
+        }
+
         public void DetachActive()
         {
             IViewModel viewModel = Items.Last();

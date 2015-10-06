@@ -23,6 +23,8 @@ namespace AppShell.Desktop
         {
             base.OnStartup(e);
 
+            ShellCore.InitializeContainer();
+
             ConfigurePlatform();
 
             shellCore.Configure();
@@ -35,8 +37,9 @@ namespace AppShell.Desktop
         protected override void OnExit(ExitEventArgs e)
         {
             base.OnExit(e);
-
+            
             shellCore.Shutdown();
+            ShellCore.ShutdownContainer();
         }
     }
 }

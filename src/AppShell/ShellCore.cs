@@ -1,6 +1,4 @@
 ﻿using SimpleInjector;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace AppShell
 {
@@ -10,10 +8,19 @@ namespace AppShell
         public static Platform CurrentPlatform { get; private set; }
 
         protected IPluginProvider pluginProvider;
-
-        static ShellCore()
+        
+        public static void InitializeContainer()
         {
             Container = new Container();
+        }
+
+        public static void ShutdownContainer()
+        {
+            if (Container != null)
+            {
+                Container.Dispose();
+                Container = null;
+            }
         }
 
         public virtual void Configure()

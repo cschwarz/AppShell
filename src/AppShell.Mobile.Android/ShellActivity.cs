@@ -12,10 +12,18 @@ namespace AppShell.Mobile.Android
             base.OnCreate(savedInstanceState);
 
             Forms.Init(this, savedInstanceState, typeof(TResource).Assembly);
-            
+
+            ShellCore.InitializeContainer();
             ShellCore.Container.RegisterSingleton<IPlatformProvider, AndroidPlatformProvider>();
 
             LoadApplication(Activator.CreateInstance<TApplication>());
+        }
+
+        protected override void OnDestroy()
+        {
+            base.OnDestroy();
+
+            ShellCore.ShutdownContainer();
         }
     }
 }

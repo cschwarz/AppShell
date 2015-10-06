@@ -12,6 +12,7 @@ namespace AppShell.Mobile.iOS
         {
             Forms.Init();
 
+            ShellCore.InitializeContainer();
             ShellCore.Container.RegisterSingleton<IPlatformProvider, iOSPlatformProvider>();
 
             LoadApplication(Activator.CreateInstance<T>());

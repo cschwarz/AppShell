@@ -8,7 +8,7 @@ using Xunit;
 namespace AppShell.Tests
 {
     [Service("service1")]
-    public interface IService1
+    public interface IService1 : IService
     {
         event EventHandler Event1;
         event EventHandler<string> Event2;
@@ -25,12 +25,22 @@ namespace AppShell.Tests
 
     public class Service1 : IService1
     {
+        public string Name { get; private set; }
         public bool ServiceMethod1Called { get; private set; }
         public int ServiceMethod2Result { get; private set; }
         public DataTypeTest ServiceMethod4Result { get; private set; }
 
         public event EventHandler Event1;
         public event EventHandler<string> Event2;
+
+        public Service1()
+        {
+        }
+
+        public Service1(string name)
+        {
+            Name = name;
+        }
 
         public void ServiceMethod1()
         {
@@ -191,6 +201,40 @@ namespace AppShell.Tests
         }
 
         [Fact]
+        public void Dispatch_NamedService_ServiceShouldHaveBeenCalled()
+        {
+            ServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 instance1 = new Service1("Instance1");
+            Service1 instance2 = new Service1("Instance2");
+
+            serviceDispatcher.Subscribe<IService1>(instance1);
+            serviceDispatcher.Subscribe<IService1>(instance2);
+            serviceDispatcher.Dispatch<IService1>("Instance1", s => s.ServiceMethod1());
+
+            Assert.True(instance1.ServiceMethod1Called);
+            Assert.False(instance2.ServiceMethod1Called);
+        }
+
+        [Fact]
+        public void DispatchReflection_NamedService_ServiceShouldHaveBeenCalled()
+        {
+            ServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 instance1 = new Service1("Instance1");
+            Service1 instance2 = new Service1("Instance2");
+
+            serviceDispatcher.Subscribe<IService1>(instance1);
+            serviceDispatcher.Subscribe<IService1>(instance2);
+            serviceDispatcher.Dispatch("service1", "Instance1", "serviceMethod1", null);
+
+            Assert.True(instance1.ServiceMethod1Called);
+            Assert.False(instance2.ServiceMethod1Called);
+        }
+
+        [Fact]
         public void Dispatch_NoSubscribedService_ServiceShouldNotHaveBeenCalled()
         {
             ServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
@@ -273,7 +317,7 @@ namespace AppShell.Tests
             serviceDispatcher.Subscribe<IService1>(service1);
             Assert.Equal(3, serviceDispatcher.Dispatch<IService1, int>(s => s.ServiceMethod3(1, 2)).Single());
         }
-
+        
         [Fact]
         public void DispatchReflection_ServiceShouldReturnValue()
         {
@@ -284,6 +328,34 @@ namespace AppShell.Tests
 
             serviceDispatcher.Subscribe<IService1>(service1);
             Assert.Equal(3, serviceDispatcher.Dispatch("service1", "serviceMethod3", new object[] { 1, 2 }).Cast<int>().Single());
+        }
+
+        [Fact]
+        public void Dispatch_NamedService_ServiceShouldReturnValue()
+        {
+            ServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 instance1 = new Service1("Instance1");
+            Service1 instance2 = new Service1("Instance2");
+
+            serviceDispatcher.Subscribe<IService1>(instance1);
+            serviceDispatcher.Subscribe<IService1>(instance2);
+            Assert.Equal(3, serviceDispatcher.Dispatch<IService1, int>("Instance1", s => s.ServiceMethod3(1, 2)));
+        }
+
+        [Fact]
+        public void DispatchReflection_NamedService_ServiceShouldReturnValue()
+        {
+            ServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 instance1 = new Service1("Instance1");
+            Service1 instance2 = new Service1("Instance2");
+
+            serviceDispatcher.Subscribe<IService1>(instance1);
+            serviceDispatcher.Subscribe<IService1>(instance2);
+            Assert.Equal(3, Convert.ToInt32(serviceDispatcher.Dispatch("service1", "Instance1", "serviceMethod3", new object[] { 1, 2 })));
         }
 
         [Fact]

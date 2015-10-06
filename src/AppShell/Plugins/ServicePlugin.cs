@@ -1,8 +1,10 @@
 ﻿
 namespace AppShell
 {
-    public class ServicePlugin<T> : IPlugin where T : class
+    public class ServicePlugin<T> : IPlugin where T : class, IService
     {
+        public string Name { get; set; }
+
         protected IServiceDispatcher serviceDispatcher;
 
         public ServicePlugin(IServiceDispatcher serviceDispatcher)

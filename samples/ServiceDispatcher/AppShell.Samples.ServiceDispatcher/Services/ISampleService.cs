@@ -28,7 +28,7 @@ namespace AppShell.Samples.ServiceDispatcher
 
 
     [Service("sampleService")]
-    public interface ISampleService
+    public interface ISampleService : IService
     {
         event EventHandler<DateTimeEventArgs> CurrentTime;
         event EventHandler<CounterEventArgs> CounterIncreased;

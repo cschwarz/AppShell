@@ -9,7 +9,7 @@ namespace AppShell
     {
         private static MethodInfo createEventHandlerMethod;
 
-        private Dictionary<Type, List<object>> subscribedServices;
+        private Dictionary<Type, List<IService>> subscribedServices;
 
         private Dictionary<string, IEnumerable<string>> services;
         private Dictionary<string, Type> serviceNameTypeMapping;
@@ -30,7 +30,7 @@ namespace AppShell
         {
             this.platformProvider = platformProvider;
 
-            subscribedServices = new Dictionary<Type, List<object>>();
+            subscribedServices = new Dictionary<Type, List<IService>>();
 
             services = new Dictionary<string, IEnumerable<string>>();
             serviceNameTypeMapping = new Dictionary<string, Type>();
@@ -71,12 +71,12 @@ namespace AppShell
             }
         }
 
-        public void Subscribe<T>(T service)
+        public void Subscribe<T>(T service) where T : IService
         {
             Type serviceType = typeof(T);
 
             if (!subscribedServices.ContainsKey(serviceType))
-                subscribedServices.Add(serviceType, new List<object>());
+                subscribedServices.Add(serviceType, new List<IService>());
 
             subscribedServices[serviceType].Add(service);
 
@@ -88,10 +88,9 @@ namespace AppShell
                         subscribeAction(service);
                 }
             }
-
         }
 
-        public void Unsubscribe<T>(T service)
+        public void Unsubscribe<T>(T service) where T : IService
         {
             Type serviceType = typeof(T);
 
@@ -110,7 +109,7 @@ namespace AppShell
             }
         }
 
-        public void Dispatch<T>(Action<T> predicate)
+        public void Dispatch<T>(Action<T> predicate) where T : IService
         {
             Type serviceType = typeof(T);
 
@@ -122,8 +121,8 @@ namespace AppShell
                     predicate(service);
             }
         }
-
-        public IEnumerable<TResult> Dispatch<T, TResult>(Func<T, TResult> predicate)
+                
+        public IEnumerable<TResult> Dispatch<T, TResult>(Func<T, TResult> predicate) where T : IService
         {
             List<TResult> results = new List<TResult>();
 
@@ -166,6 +165,55 @@ namespace AppShell
             }
 
             return results;
+        }
+
+        public void Dispatch<T>(string instanceName, Action<T> predicate) where T : class, IService
+        {
+            Type serviceType = typeof(T);
+
+            if (subscribedServices.ContainsKey(serviceType))
+            {
+                T service = subscribedServices[serviceType].Single(s => s.Name == instanceName) as T;
+                predicate(service);
+            }
+        }
+
+        public TResult Dispatch<T, TResult>(string instanceName, Func<T, TResult> predicate) where T : class, IService
+        {
+            Type serviceType = typeof(T);
+
+            if (subscribedServices.ContainsKey(serviceType))
+            {
+                T service = subscribedServices[serviceType].Single(s => s.Name == instanceName) as T;
+                return predicate(service);
+            }
+            
+            return default(TResult);
+        }
+
+        public object Dispatch(string serviceName, string instanceName, string methodName, object[] parameters)
+        {
+            if (!serviceNameTypeMapping.ContainsKey(serviceName))
+                return null;
+
+            Type serviceType = serviceNameTypeMapping[serviceName];
+
+            if (subscribedServices.ContainsKey(serviceType))
+            {
+                IService service = subscribedServices[serviceType].Single(s => s.Name == instanceName);
+
+                MethodInfo method = serviceMethodMapping[serviceName][methodName];
+
+                if (parameters != null)
+                {
+                    ParameterInfo[] parameterInfos = method.GetParameters();
+                    parameters = parameters.Select((p, i) => p.ChangeType(parameterInfos[i].ParameterType)).ToArray();
+                }
+
+                return method.Invoke(service, parameters);                
+            }
+
+            return null;
         }
 
         public EventRegistration SubscribeEvent<T>(Action<T> subscribe, Action<T> unsubscribe) where T : class

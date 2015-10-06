@@ -25,11 +25,11 @@ ServiceDispatcher.prototype.initialize = function (services) {
                         parameters.push(arguments[i]);
                     }
                 }
-
+                
                 if (window.external)
-                    window.external.Dispatch(serviceName, methodName, callbackId, JSON.stringify(parameters));
+                    window.external.Dispatch(serviceName, this.__instanceName, methodName, callbackId, JSON.stringify(parameters));
                 else if (Native)
-                    Native('dispatch', JSON.stringify({ serviceName: serviceName, methodName: methodName, callbackId: callbackId, arguments: parameters }));
+                    Native('dispatch', JSON.stringify({ serviceName: serviceName, instanceName: this.__instanceName, methodName: methodName, callbackId: callbackId, arguments: parameters }));
             };
         });
 
@@ -40,8 +40,10 @@ ServiceDispatcher.prototype.initialize = function (services) {
         window.serviceDispatcherReady();
 };
 
-ServiceDispatcher.prototype.dispatch = function (serviceName) {
-    return this._services[serviceName];
+ServiceDispatcher.prototype.dispatch = function (serviceName, instanceName) {
+    var service = this._services[serviceName];
+    service.__instanceName = instanceName;
+    return service;
 };
 
 ServiceDispatcher.prototype._dispatchCallback = function (callbackId, result) {

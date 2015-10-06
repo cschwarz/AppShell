@@ -1,7 +1,7 @@
 ﻿namespace AppShell.NativeMaps
 {
     [Service("mapService")]
-    public interface IMapService
+    public interface IMapService : IService
     {
         [ServiceMethod("setCenter")]
         void SetCenter(double latitude, double longitude);

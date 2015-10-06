@@ -19,6 +19,7 @@ namespace AppShell.Mobile
         class DispatchData
         {
             public string ServiceName { get; set; }
+            public string InstanceName { get; set; }
             public string MethodName { get; set; }
             public string CallbackId { get; set; }
             public object[] Arguments { get; set; }
@@ -84,7 +85,9 @@ namespace AppShell.Mobile
             {
                 DispatchData dispatchData = JsonConvert.DeserializeObject<DispatchData>(args);
                 
-                string result = JsonConvert.SerializeObject(serviceDispatcher.Dispatch(dispatchData.ServiceName, dispatchData.MethodName, dispatchData.Arguments));
+                string result = string.IsNullOrEmpty(dispatchData.InstanceName) 
+                    ? JsonConvert.SerializeObject(serviceDispatcher.Dispatch(dispatchData.ServiceName, dispatchData.MethodName, dispatchData.Arguments))
+                    : JsonConvert.SerializeObject(serviceDispatcher.Dispatch(dispatchData.ServiceName, dispatchData.InstanceName, dispatchData.MethodName, dispatchData.Arguments));
 
                 if (dispatchData.CallbackId != null)
                     platformProvider.ExecuteOnUIThread(() => webView.InjectJavaScript(string.Format("serviceDispatcher._dispatchCallback('{0}', {1});", dispatchData.CallbackId, result)));

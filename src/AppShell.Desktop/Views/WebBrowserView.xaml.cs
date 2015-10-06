@@ -98,7 +98,7 @@ namespace AppShell.Desktop.Views
             this.webBrowser = webBrowser;
         }
 
-        public string Dispatch(string serviceName, string methodName, string callbackId, string arguments)
+        public string Dispatch(string serviceName, string instanceName, string methodName, string callbackId, string arguments)
         {
             object[] parameters = JsonConvert.DeserializeObject<object[]>(arguments);
 
@@ -110,7 +110,9 @@ namespace AppShell.Desktop.Views
                     parameters[i] = (parameters[i] as JObject).ToObject<Dictionary<string, object>>();
             }
 
-            string result = JsonConvert.SerializeObject(serviceDispatcher.Dispatch(serviceName, methodName, parameters));
+            string result = string.IsNullOrEmpty(instanceName)
+                ? JsonConvert.SerializeObject(serviceDispatcher.Dispatch(serviceName, methodName, parameters))
+                : JsonConvert.SerializeObject(serviceDispatcher.Dispatch(serviceName, instanceName, methodName, parameters));
 
             if (callbackId != null)
                 webBrowser.InvokeScript("eval", string.Format("serviceDispatcher._dispatchCallback('{0}', {1})", callbackId, result));

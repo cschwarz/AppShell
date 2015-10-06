@@ -55,6 +55,11 @@ namespace AppShell
             }
         }
 
+        public WebBrowserViewModel(IServiceDispatcher serviceDispatcher)
+        {
+            serviceDispatcher.Subscribe<IWebBrowserService>(this);            
+        }
+
         public void Navigate(string url)
         {
             Url = url;

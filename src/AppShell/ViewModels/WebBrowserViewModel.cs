@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace AppShell
 {
-    public class WebBrowserViewModel : ViewModel
+    public class WebBrowserViewModel : ViewModel, IWebBrowserService
     {
         private string url;
         public string Url
@@ -53,6 +53,21 @@ namespace AppShell
                     OnPropertyChanged("EmbeddedHtml");
                 }
             }
+        }
+
+        public void Navigate(string url)
+        {
+            Url = url;
+        }
+
+        public void LoadHtml(string html)
+        {
+            Html = html;
+        }
+
+        public void LoadEmbeddedHtml(string embeddedHtml)
+        {
+            EmbeddedHtml = embeddedHtml;
         }
     }
 }

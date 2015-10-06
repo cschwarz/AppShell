@@ -46,6 +46,7 @@
     <Compile Include="Resolutions\ViewResolution.cs" />
     <Compile Include="Services\IService.cs" />
     <Compile Include="Services\ITabNavigationService.cs" />
+    <Compile Include="Services\IWebBrowserService.cs" />
     <Compile Include="ShellCore.cs" />
     <Compile Include="Attributes\ShellResourceAttribute.cs" />
     <Compile Include="Attributes\ServiceAttribute.cs" />

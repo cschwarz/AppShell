@@ -21,28 +21,23 @@ namespace AppShell.NativeMaps.Mobile
         }
 
         public static void ZoomLevelPropertyChanged(BindableObject d, double oldValue, double newValue)
-        {
-            if (oldValue == newValue)
-                return;
-
+        {    
             MapPage mapPage = d as MapPage;
-
-            if (mapPage.map.VisibleRegion != null)
+            
+            if (mapPage.map.VisibleRegion != null && !mapPage.ignoreInternalUpdate)
                 mapPage.map.MoveToRegion(MapSpan.FromCenterAndRadius(mapPage.map.VisibleRegion.Center, new Distance(mapPage.Radius)));
         }
 
         public static void CenterPropertyChanged(BindableObject d, Location oldValue, Location newValue)
         {
-            if (oldValue == newValue)
-                return;
-
             MapPage mapPage = d as MapPage;
-
-            if (newValue != null)
+            
+            if (newValue != null && !mapPage.ignoreInternalUpdate)
                 mapPage.map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(newValue.Latitude, newValue.Longitude), new Distance(mapPage.Radius)));
         }
         
         private Map map;
+        private bool ignoreInternalUpdate;
 
         public MapPage()
         {
@@ -61,8 +56,10 @@ namespace AppShell.NativeMaps.Mobile
 
             if (e.PropertyName == "VisibleRegion" && map != null && map.VisibleRegion != null)
             {
+                ignoreInternalUpdate = true;
                 Center = new Location(map.VisibleRegion.Center.Latitude, map.VisibleRegion.Center.Longitude);
                 Radius = map.VisibleRegion.Radius.Meters;
+                ignoreInternalUpdate = false;
             }
         }
     }

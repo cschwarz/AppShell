@@ -115,7 +115,7 @@ namespace AppShell
 
             if (subscribedServices.ContainsKey(serviceType))
             {
-                IEnumerable<T> services = subscribedServices[serviceType].Cast<T>();
+                IEnumerable<T> services = subscribedServices[serviceType].Cast<T>().ToList();
 
                 foreach (T service in services)
                     predicate(service);
@@ -130,7 +130,7 @@ namespace AppShell
 
             if (subscribedServices.ContainsKey(serviceType))
             {
-                IEnumerable<T> services = subscribedServices[serviceType].Cast<T>();
+                IEnumerable<T> services = subscribedServices[serviceType].Cast<T>().ToList();
 
                 foreach (T service in services)
                     results.Add(predicate(service));
@@ -150,7 +150,7 @@ namespace AppShell
 
             if (subscribedServices.ContainsKey(serviceType))
             {
-                IEnumerable<object> services = subscribedServices[serviceType];
+                IEnumerable<object> services = subscribedServices[serviceType].ToList();
 
                 MethodInfo method = serviceMethodMapping[serviceName][methodName];
 

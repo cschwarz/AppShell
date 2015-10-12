@@ -10,6 +10,13 @@ namespace AppShell
             serviceDispatcher.Subscribe<ITabNavigationService>(this);
         }
 
+        public override void Dispose()
+        {
+            base.Dispose();
+
+            serviceDispatcher.Unsubscribe<ITabNavigationService>(this);
+        }
+
         public void Select(string name)
         {
             ActiveItem = Items.FirstOrDefault(v => v.Name == name);

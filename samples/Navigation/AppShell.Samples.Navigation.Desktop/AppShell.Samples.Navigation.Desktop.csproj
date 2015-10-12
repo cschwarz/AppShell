@@ -90,6 +90,12 @@
     <Compile Include="Views\View2.xaml.cs">
       <DependentUpon>View2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\View3.xaml.cs">
+      <DependentUpon>View3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\View4.xaml.cs">
+      <DependentUpon>View4.xaml</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -136,6 +142,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\View2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\View3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\View4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

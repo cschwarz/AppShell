@@ -11,9 +11,13 @@ namespace AppShell.Mobile
     [View(typeof(SplashScreenHostViewModel))]
     public partial class SplashScreenPage : ContentPage
     {
-        public SplashScreenPage()
+        private IServiceDispatcher serviceDispatcher;
+
+        public SplashScreenPage(IServiceDispatcher serviceDispatcher)
         {
             InitializeComponent();
+
+            this.serviceDispatcher = serviceDispatcher;
 
             BindingContextChanged += SplashScreenPage_BindingContextChanged;
         }
@@ -41,8 +45,12 @@ namespace AppShell.Mobile
 
         private void ShellViewRequested(object sender, EventArgs e)
         {
-            Type shellViewModelType = ShellCore.Container.GetInstance<IShellConfigurationProvider>().GetShellViewModel();
-            IViewModel shellViewModel = ShellCore.Container.GetInstance<IViewModelFactory>().GetViewModel(shellViewModelType);
+            IShellConfigurationProvider configurationProvider = ShellCore.Container.GetInstance<IShellConfigurationProvider>();
+            TypeConfiguration shellViewModelConfiguration = configurationProvider.GetShellViewModel();
+            IViewModel shellViewModel = ShellCore.Container.GetInstance<IViewModelFactory>().GetViewModel(shellViewModelConfiguration.Type, shellViewModelConfiguration.Data);
+
+            foreach (TypeConfiguration viewModelConfiguration in configurationProvider.GetViewModels())
+                serviceDispatcher.Dispatch<INavigationService>(n => n.Push(viewModelConfiguration.Type, viewModelConfiguration.Data));
 
             Application.Current.MainPage = ShellCore.Container.GetInstance<IViewFactory>().GetView(shellViewModel) as Page;
         }

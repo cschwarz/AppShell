@@ -11,6 +11,6 @@ namespace AppShell
         IEnumerable<TypeConfiguration> GetSplashScreens();
         IEnumerable<TypeConfiguration> GetPlugins();
         IEnumerable<TypeConfiguration> GetViewModels();
-        Type GetShellViewModel();
+        TypeConfiguration GetShellViewModel();
     }
 }

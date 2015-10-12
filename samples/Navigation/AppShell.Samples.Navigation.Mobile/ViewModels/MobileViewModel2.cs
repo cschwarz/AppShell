@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AppShell.Samples.Navigation.Mobile
+﻿namespace AppShell.Samples.Navigation.Mobile
 {
+    [ViewModel(Substitute = typeof(ViewModel2))]
     public class MobileViewModel2 : ViewModel2
     {
-        public MobileViewModel2()
+        public MobileViewModel2(IServiceDispatcher serviceDispatcher)
+            :  base(serviceDispatcher)
         {
             Title = "MobileViewModel2";
         }

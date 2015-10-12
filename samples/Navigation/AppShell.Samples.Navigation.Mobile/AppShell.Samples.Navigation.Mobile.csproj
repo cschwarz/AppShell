@@ -54,6 +54,12 @@
     <Compile Include="Views\View2.xaml.cs">
       <DependentUpon>View2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\View3.xaml.cs">
+      <DependentUpon>View3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\View4.xaml.cs">
+      <DependentUpon>View4.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -149,6 +155,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\SplashScreenSmall.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\View3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\View4.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

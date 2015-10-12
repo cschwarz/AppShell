@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AppShell.Samples.Navigation.Desktop
+﻿namespace AppShell.Samples.Navigation.Desktop
 {
+    [ViewModel(Substitute = typeof(ViewModel2))]
     public class DesktopViewModel2 : ViewModel2
     {
-        public DesktopViewModel2()
+        public DesktopViewModel2(IServiceDispatcher serviceDispatcher)
+            : base(serviceDispatcher)
         {
             Title = "DesktopViewModel2";
         }

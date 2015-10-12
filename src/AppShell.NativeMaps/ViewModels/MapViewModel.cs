@@ -44,9 +44,20 @@
             }
         }
 
+        private IServiceDispatcher serviceDispatcher;
+
         public MapViewModel(IServiceDispatcher serviceDispatcher)
         {
+            this.serviceDispatcher = serviceDispatcher;
+
             serviceDispatcher.Subscribe<IMapService>(this);
+        }
+
+        public override void Dispose()
+        {
+            base.Dispose();
+
+            serviceDispatcher.Unsubscribe<IMapService>(this);
         }
 
         public void SetCenter(double latitude, double longitude)

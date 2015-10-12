@@ -55,9 +55,20 @@ namespace AppShell
             }
         }
 
+        private IServiceDispatcher serviceDispatcher;
+
         public WebBrowserViewModel(IServiceDispatcher serviceDispatcher)
         {
+            this.serviceDispatcher = serviceDispatcher;
+
             serviceDispatcher.Subscribe<IWebBrowserService>(this);            
+        }
+
+        public override void Dispose()
+        {
+            base.Dispose();
+
+            serviceDispatcher.Unsubscribe<IWebBrowserService>(this);
         }
 
         public void Navigate(string url)

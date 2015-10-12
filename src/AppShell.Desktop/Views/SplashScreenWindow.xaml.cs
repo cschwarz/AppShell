@@ -11,10 +11,14 @@ namespace AppShell.Desktop
     {
         private bool hasBeenInitialActivated;
 
-        public SplashScreenWindow()
+        private IServiceDispatcher serviceDispatcher;
+
+        public SplashScreenWindow(IServiceDispatcher serviceDispatcher)
         {
             InitializeComponent();
-            
+
+            this.serviceDispatcher = serviceDispatcher;
+
             DataContextChanged += SplashScreenWindow_DataContextChanged;
         }
 
@@ -62,9 +66,13 @@ namespace AppShell.Desktop
 
         private void ShellViewRequested(object sender, EventArgs e)
         {
-            Type shellViewModelType = ShellCore.Container.GetInstance<IShellConfigurationProvider>().GetShellViewModel();
-            IViewModel shellViewModel = ShellCore.Container.GetInstance<IViewModelFactory>().GetViewModel(shellViewModelType);
+            IShellConfigurationProvider configurationProvider = ShellCore.Container.GetInstance<IShellConfigurationProvider>();
+            TypeConfiguration shellViewModelConfiguration = configurationProvider.GetShellViewModel();
+            IViewModel shellViewModel = ShellCore.Container.GetInstance<IViewModelFactory>().GetViewModel(shellViewModelConfiguration.Type, shellViewModelConfiguration.Data);
 
+            foreach (TypeConfiguration viewModelConfiguration in configurationProvider.GetViewModels())
+                serviceDispatcher.Dispatch<INavigationService>(n => n.Push(viewModelConfiguration.Type, viewModelConfiguration.Data));
+            
             Application.Current.MainWindow = ShellCore.Container.GetInstance<IViewFactory>().GetView(shellViewModel) as Window;
             Application.Current.MainWindow.Show();
 

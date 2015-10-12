@@ -23,7 +23,7 @@ namespace AppShell
         protected List<TypeConfiguration> splashScreens;
         protected List<TypeConfiguration> plugins;
         protected List<TypeConfiguration> viewModels;
-        protected Type shellViewModel;
+        protected TypeConfiguration shellViewModel;
 
         public ShellConfigurationProvider()
         {
@@ -47,7 +47,7 @@ namespace AppShell
             return viewModels;
         }
 
-        public virtual Type GetShellViewModel()
+        public virtual TypeConfiguration GetShellViewModel()
         {
             return shellViewModel;
         }
@@ -67,9 +67,9 @@ namespace AppShell
             viewModels.Add(new TypeConfiguration(typeof(T), data));
         }
 
-        public void RegisterShellViewModel<T>()
+        public void RegisterShellViewModel<T>(Dictionary<string, object> data = null)
         {
-            shellViewModel = typeof(T);
+            shellViewModel = new TypeConfiguration(typeof(T), data);
         }
     }
 }

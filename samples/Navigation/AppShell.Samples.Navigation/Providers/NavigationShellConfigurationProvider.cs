@@ -1,4 +1,5 @@
 ﻿using AppShell;
+using System.Collections.Generic;
 
 namespace AppShell.Samples.Navigation
 {
@@ -10,7 +11,7 @@ namespace AppShell.Samples.Navigation
             RegisterSplashScreen<SplashScreenSmallViewModel>();
             RegisterSplashScreen<SplashScreenLargeViewModel>();
 
-            RegisterShellViewModel<StackShellViewModel>();
+            RegisterShellViewModel<StackShellViewModel>(new Dictionary<string, object>() { { "Name", "StackShell" } });
 
             RegisterViewModel<ViewModel1>();
         }

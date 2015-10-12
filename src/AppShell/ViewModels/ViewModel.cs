@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 
 namespace AppShell
 {
@@ -17,6 +18,10 @@ namespace AppShell
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public virtual void Dispose()
+        {
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

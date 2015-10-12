@@ -3,11 +3,26 @@ namespace AppShell
 {
     public class StackShellViewModel : ShellViewModel
     {
+        private bool hasNavigationBar;
+        public bool HasNavigationBar
+        {
+            get { return hasNavigationBar; }
+            set
+            {
+                if (hasNavigationBar != value)
+                {
+                    hasNavigationBar = value;
+                    OnPropertyChanged("HasNavigationBar");
+                }
+            }
+        }
+
         public Command BackCommand { get; private set; }
 
         public StackShellViewModel(IShellConfigurationProvider configurationProvider, IServiceDispatcher serviceDispatcher, IViewModelFactory viewModelFactory)
             : base(configurationProvider, serviceDispatcher, viewModelFactory)
         {
+            HasNavigationBar = true;
             BackCommand = new Command(Back, CanBack);
         }
 

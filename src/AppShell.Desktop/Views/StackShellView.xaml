@@ -8,9 +8,10 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.Resources>
         <local:ShellDataTemplateSelector x:Key="ShellDataTemplateSelector" />
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     </UserControl.Resources>
     <DockPanel>
-        <Button Content="Back" Command="{Binding BackCommand}" DockPanel.Dock="Top" />
+        <Button Content="Back" Command="{Binding BackCommand}" DockPanel.Dock="Top" Visibility="{Binding HasNavigationBar, Converter={StaticResource BooleanToVisibilityConverter}}" />
         <ContentControl Content="{Binding ActiveItem}" ContentTemplateSelector="{StaticResource ShellDataTemplateSelector}" />
     </DockPanel>
 </UserControl>

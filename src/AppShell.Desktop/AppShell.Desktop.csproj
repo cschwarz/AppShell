@@ -45,6 +45,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -78,6 +80,9 @@
     <Compile Include="ShellDataTemplateSelector.cs" />
     <Compile Include="Views\DetachedWindow.xaml.cs">
       <DependentUpon>DetachedWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InlineStackShellView.xaml.cs">
+      <DependentUpon>InlineStackShellView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ShellWindow.xaml.cs">
       <DependentUpon>ShellWindow.xaml</DependentUpon>
@@ -116,6 +121,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Views\DetachedWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\InlineStackShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

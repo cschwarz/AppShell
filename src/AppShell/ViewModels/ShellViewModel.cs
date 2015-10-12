@@ -43,6 +43,9 @@ namespace AppShell
         {
             base.Dispose();
 
+            foreach (IViewModel viewModel in Items)
+                viewModel.Dispose();
+
             serviceDispatcher.Unsubscribe<INavigationService>(this);
         }
 

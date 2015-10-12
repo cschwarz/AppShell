@@ -21,7 +21,8 @@ namespace AppShell.Samples.Navigation
         {
             serviceDispatcher.Dispatch<INavigationService>(n => n.Push<TabShellViewModel>(new Dictionary<string, object>() { { "Name", "TabShell" } }));
             serviceDispatcher.Dispatch<INavigationService>("TabShell", n => n.Push<ViewModel3>());
-            serviceDispatcher.Dispatch<INavigationService>("TabShell", n => n.Push<ViewModel4>());
+            serviceDispatcher.Dispatch<INavigationService>("TabShell", n => n.Push<InlineStackShellViewModel>(new Dictionary<string, object>() { { "Name", "InlineStackShell" }, { "Title", "InlineStackShell" } }));
+            serviceDispatcher.Dispatch<INavigationService>("InlineStackShell", n => n.Push<ViewModel4>());
         }        
     }
 }

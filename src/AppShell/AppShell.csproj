@@ -74,6 +74,7 @@
     <Compile Include="Services\IServiceDispatcher.cs" />
     <Compile Include="Services\ServiceDispatcher.cs" />
     <Compile Include="Factories\ViewFactory.cs" />
+    <Compile Include="ViewModels\InlineStackShellViewModel.cs" />
     <Compile Include="ViewModels\IViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="ViewModels\SplashScreenHostViewModel.cs" />

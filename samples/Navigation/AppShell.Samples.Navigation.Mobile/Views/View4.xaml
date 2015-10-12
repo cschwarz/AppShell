@@ -2,5 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppShell.Samples.Navigation.Mobile.Views.View4">
-  <Label Text="{Binding Title, StringFormat='Mobile View 4: {0}'}" />
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <Label Text="{Binding Title, StringFormat='Mobile View 4: {0}'}" Grid.Row="0" />
+    <Button Command="{Binding OpenViewModel5Command}" Text="Open" Grid.Row="1" />
+  </Grid>
 </ContentPage>

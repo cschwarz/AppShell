@@ -46,6 +46,7 @@
     <Compile Include="ViewModels\ViewModel1.cs" />
     <Compile Include="ViewModels\ViewModel3.cs" />
     <Compile Include="ViewModels\ViewModel4.cs" />
+    <Compile Include="ViewModels\ViewModel5.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

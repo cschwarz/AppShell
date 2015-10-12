@@ -79,14 +79,17 @@
     <Compile Include="Views\DetachedWindow.xaml.cs">
       <DependentUpon>DetachedWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ShellWindow.xaml.cs">
+      <DependentUpon>ShellWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SplashScreenWindow.xaml.cs">
       <DependentUpon>SplashScreenWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\StackShellWindow.xaml.cs">
-      <DependentUpon>StackShellWindow.xaml</DependentUpon>
+    <Compile Include="Views\StackShellView.xaml.cs">
+      <DependentUpon>StackShellView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\TabShellWindow.xaml.cs">
-      <DependentUpon>TabShellWindow.xaml</DependentUpon>
+    <Compile Include="Views\TabShellView.xaml.cs">
+      <DependentUpon>TabShellView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\WebBrowserView.xaml.cs">
       <DependentUpon>WebBrowserView.xaml</DependentUpon>
@@ -116,15 +119,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\ShellWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\SplashScreenWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\StackShellWindow.xaml">
+    <Page Include="Views\StackShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\TabShellWindow.xaml">
+    <Page Include="Views\TabShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

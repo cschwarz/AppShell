@@ -73,7 +73,7 @@ namespace AppShell.Desktop
             foreach (TypeConfiguration viewModelConfiguration in configurationProvider.GetViewModels())
                 serviceDispatcher.Dispatch<INavigationService>(n => n.Push(viewModelConfiguration.Type, viewModelConfiguration.Data));
             
-            Application.Current.MainWindow = ShellCore.Container.GetInstance<IViewFactory>().GetView(shellViewModel) as Window;
+            Application.Current.MainWindow = new ShellWindow(shellViewModel as ShellViewModel) { Content = ShellCore.Container.GetInstance<IViewFactory>().GetView(shellViewModel) };
             Application.Current.MainWindow.Show();
 
             Close();

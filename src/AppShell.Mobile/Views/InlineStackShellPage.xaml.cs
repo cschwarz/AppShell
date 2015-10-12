@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace AppShell.Samples.Navigation.Mobile.Views
+namespace AppShell.Mobile
 {
-    [View(typeof(ViewModel3))]
-    public partial class View3 : ContentView
+    [View(typeof(InlineStackShellViewModel))]
+    public partial class InlineStackShellPage : ContentPage
     {
-        public View3()
+        public InlineStackShellPage()
         {
             InitializeComponent();
         }

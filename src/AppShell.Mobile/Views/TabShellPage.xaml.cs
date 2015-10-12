@@ -17,12 +17,12 @@ namespace AppShell.Mobile.Views
         {
             InitializeComponent();
 
-            this.viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
+            viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
         }
 
         protected override Page CreateDefault(object item)
         {
-            Page page = viewFactory.GetView(item.GetType()) as Page;
+            Page page = ShellViewPage.Create(viewFactory.GetView(item as IViewModel));
 
             if (page != null)
                 page.SetBinding(TitleProperty, new Binding("Title"));

@@ -35,12 +35,12 @@ namespace AppShell.Mobile
             shellViewModel.ViewModelPopped += ShellViewModel_ViewModelPopped;
 
             if (shellViewModel.ActiveItem != null)
-                PushAsync(viewFactory.GetView(shellViewModel.ActiveItem) as Page);
+                PushAsync(ShellViewPage.Create(viewFactory.GetView(shellViewModel.ActiveItem)));
         }
         
         private void ShellViewModel_ViewModelPushed(object sender, IViewModel e)
         {
-            PushAsync(viewFactory.GetView(e) as Page);
+            PushAsync(ShellViewPage.Create(viewFactory.GetView(e)));
         }
 
         private void ShellViewModel_ViewModelPopped(object sender, IViewModel e)

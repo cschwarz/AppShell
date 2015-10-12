@@ -9,7 +9,7 @@ using Xamarin.Forms;
 namespace AppShell.Samples.Navigation.Mobile.Views
 {
     [View(typeof(ViewModel5))]
-    public partial class View5 : ContentPage
+    public partial class View5 : ContentView
     {
         public View5()
         {

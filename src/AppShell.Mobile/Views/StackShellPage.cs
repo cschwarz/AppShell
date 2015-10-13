@@ -5,7 +5,7 @@ namespace AppShell.Mobile
     [View(typeof(StackShellViewModel))]
     public class StackShellPage : NavigationPage
     {
-        private ShellViewModel shellViewModel;
+        private StackShellViewModel shellViewModel;
         private IViewFactory viewFactory;
         private bool ignorePopEvent;
 
@@ -13,11 +13,17 @@ namespace AppShell.Mobile
         {
             viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
 
+            Pushed += StackShellPage_Pushed;
             Popped += StackShellPage_Popped;
 
             SetBinding(HasNavigationBarProperty, new Binding("HasNavigationBar"));            
         }
-        
+
+        private void StackShellPage_Pushed(object sender, NavigationEventArgs e)
+        {
+            SetHasNavigationBar(e.Page, shellViewModel.HasNavigationBar);
+        }
+
         private void StackShellPage_Popped(object sender, NavigationEventArgs e)
         {
             if (shellViewModel != null)
@@ -31,7 +37,7 @@ namespace AppShell.Mobile
         {            
             base.OnBindingContextChanged();
 
-            shellViewModel = BindingContext as ShellViewModel;
+            shellViewModel = BindingContext as StackShellViewModel;
 
             shellViewModel.ViewModelPushed += ShellViewModel_ViewModelPushed;
             shellViewModel.ViewModelPopped += ShellViewModel_ViewModelPopped;

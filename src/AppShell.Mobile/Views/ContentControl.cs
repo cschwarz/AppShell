@@ -25,7 +25,7 @@ namespace AppShell.Mobile
 
             if (newValue != null)
             {
-                contentControl.Content = contentControl.viewFactory.GetView(newValue.GetType()) as View;
+                contentControl.Content = contentControl.viewFactory.GetView(newValue as IViewModel) as View;
                 if (contentControl.Content != null)
                     contentControl.Content.BindingContext = newValue;
             }

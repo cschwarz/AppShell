@@ -2,5 +2,12 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppShell.Samples.Navigation.Mobile.Views.View5">
-  <Label Text="{Binding Title, StringFormat='Mobile View 5: {0}'}" />
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <Label Text="{Binding Title, StringFormat='Mobile View 5: {0}'}" Grid.Row="0" />
+    <Button Command="{Binding CloseCommand}" Text="Close" Grid.Row="1" />
+  </Grid>
 </ContentView>

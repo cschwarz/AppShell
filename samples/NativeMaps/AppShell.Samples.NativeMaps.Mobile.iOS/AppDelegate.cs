@@ -23,6 +23,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.iOS
         {
             var mapViewModels = typeof(AppShell.NativeMaps.MapViewModel);
             var mapViews = typeof(AppShell.NativeMaps.Mobile.MapPage);
+
+            Xamarin.FormsMaps.Init();
             
             return base.FinishedLaunching(app, options);
         }

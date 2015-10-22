@@ -7,11 +7,14 @@ namespace AppShell.Desktop
     {
         public DesktopViewFactory(IPlatformProvider platformProvider, IViewResolution viewResolution)
             : base(platformProvider, viewResolution)
-        { 
+        {
         }
 
         public override object GetView(Type viewModelType)
         {
+            if (!viewMapping.ContainsKey(viewModelType))
+                throw new ViewNotFoundException(viewModelType);
+
             FrameworkElement view = ShellCore.Container.GetInstance(viewMapping[viewModelType]) as FrameworkElement;
             view.DataContext = ShellCore.Container.GetInstance(viewModelType);
             return view;
@@ -19,7 +22,12 @@ namespace AppShell.Desktop
 
         public override object GetView(IViewModel viewModel)
         {
-            FrameworkElement view = ShellCore.Container.GetInstance(viewMapping[viewModel.GetType()]) as FrameworkElement;
+            Type viewModelType = viewModel.GetType();
+
+            if (!viewMapping.ContainsKey(viewModelType))
+                throw new ViewNotFoundException(viewModelType);
+
+            FrameworkElement view = ShellCore.Container.GetInstance(viewMapping[viewModelType]) as FrameworkElement;
             view.DataContext = viewModel;
             return view;
         }

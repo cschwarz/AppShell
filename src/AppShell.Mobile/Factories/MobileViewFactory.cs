@@ -7,11 +7,14 @@ namespace AppShell.Mobile
     {
         public MobileViewFactory(IPlatformProvider platformProvider, IViewResolution viewResolution)
             : base(platformProvider, viewResolution)
-        { 
+        {
         }
 
         public override object GetView(Type viewModelType)
         {
+            if (!viewMapping.ContainsKey(viewModelType))
+                throw new ViewNotFoundException(viewModelType);
+
             BindableObject view = ShellCore.Container.GetInstance(viewMapping[viewModelType]) as BindableObject;
             view.BindingContext = ShellCore.Container.GetInstance(viewModelType);
             return view;
@@ -19,7 +22,12 @@ namespace AppShell.Mobile
 
         public override object GetView(IViewModel viewModel)
         {
-            BindableObject view = ShellCore.Container.GetInstance(viewMapping[viewModel.GetType()]) as BindableObject;
+            Type viewModelType = viewModel.GetType();
+
+            if (!viewMapping.ContainsKey(viewModelType))
+                throw new ViewNotFoundException(viewModelType);
+
+            BindableObject view = ShellCore.Container.GetInstance(viewMapping[viewModelType]) as BindableObject;
             view.BindingContext = viewModel;
             return view;
         }

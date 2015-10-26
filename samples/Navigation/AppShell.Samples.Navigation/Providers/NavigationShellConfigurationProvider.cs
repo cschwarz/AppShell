@@ -11,8 +11,8 @@ namespace AppShell.Samples.Navigation
             RegisterSplashScreen<SplashScreenSmallViewModel>();
             RegisterSplashScreen<SplashScreenLargeViewModel>();
 
-            RegisterShellViewModel<StackShellViewModel>(new Dictionary<string, object>() { { "Name", "StackShell" } });
-
+            RegisterShellViewModel<StackShellViewModel>(new { Name = "StackShell" });
+            
             RegisterViewModel<ViewModel1>();
         }
     }

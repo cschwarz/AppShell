@@ -7,6 +7,7 @@ namespace AppShell
     public interface INavigationService : IService
     {
         void Push<TViewModel>(Dictionary<string, object> data = null) where TViewModel : class, IViewModel;
+        void Push<TViewModel>(dynamic data) where TViewModel : class, IViewModel;
         void Push(Type viewModelType, Dictionary<string, object> data = null);
         [ServiceMethod("push")]
         void Push(string viewModelType, Dictionary<string, object> data = null);

@@ -55,5 +55,16 @@ namespace System
 
             return Convert.ChangeType(value, conversionType);
         }
+
+        public static Dictionary<string, object> ToDictionary(this object value)
+        {
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+
+            TypeInfo type = value.GetType().GetTypeInfo();
+            foreach (PropertyInfo propertyInfo in type.DeclaredProperties)
+                dictionary[propertyInfo.Name] = propertyInfo.GetValue(value);
+
+            return dictionary;
+        }
     }
 }

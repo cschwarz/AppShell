@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AppShell
 {
@@ -70,6 +67,26 @@ namespace AppShell
         public void RegisterShellViewModel<T>(Dictionary<string, object> data = null)
         {
             shellViewModel = new TypeConfiguration(typeof(T), data);
+        }
+
+        public void RegisterPlugin<T>(dynamic data)
+        {
+            RegisterPlugin<T>(ObjectExtensions.ToDictionary(data));
+        }
+
+        public void RegisterSplashScreen<T>(dynamic data)
+        {
+            RegisterSplashScreen<T>(ObjectExtensions.ToDictionary(data));
+        }
+
+        public void RegisterViewModel<T>(dynamic data)
+        {
+            RegisterViewModel<T>(ObjectExtensions.ToDictionary(data));
+        }
+
+        public void RegisterShellViewModel<T>(dynamic data)
+        {
+            RegisterShellViewModel<T>(ObjectExtensions.ToDictionary(data));
         }
     }
 }

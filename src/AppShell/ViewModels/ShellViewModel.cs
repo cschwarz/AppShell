@@ -54,6 +54,11 @@ namespace AppShell
             Push(typeof(TViewModel), data);
         }
 
+        public void Push<TViewModel>(dynamic data) where TViewModel : class, IViewModel
+        {
+            Push(typeof(TViewModel), ObjectExtensions.ToDictionary(data));
+        }
+
         public void Push(string viewModelType, Dictionary<string, object> data = null)
         {
             Push(Type.GetType(viewModelType), data);

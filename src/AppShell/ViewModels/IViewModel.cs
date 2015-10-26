@@ -8,5 +8,6 @@ namespace AppShell
         bool AllowClose { get; set; }
         string Name { get; set; }
         string Title { get; set; }
+        string Icon { get; set; }
     }
 }

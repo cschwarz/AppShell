@@ -25,7 +25,10 @@ namespace AppShell.Mobile.Views
             Page page = ShellViewPage.Create(viewFactory.GetView(item as IViewModel));
 
             if (page != null)
+            {
                 page.SetBinding(TitleProperty, new Binding("Title"));
+                page.SetBinding(IconProperty, new Binding("Icon"));
+            }
 
             return page;
         }

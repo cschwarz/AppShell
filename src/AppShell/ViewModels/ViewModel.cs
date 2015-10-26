@@ -8,6 +8,7 @@ namespace AppShell
         public bool AllowClose { get; set; }
         public string Name { get; set; }
         public string Title { get; set; }
+        public string Icon { get; set; }
 
         public ViewModel()
         {

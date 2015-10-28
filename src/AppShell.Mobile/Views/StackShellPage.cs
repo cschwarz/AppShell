@@ -14,14 +14,11 @@ namespace AppShell.Mobile
             viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
 
             Pushed += StackShellPage_Pushed;
-            Popped += StackShellPage_Popped;
-
-            SetBinding(HasNavigationBarProperty, new Binding("HasNavigationBar"));            
+            Popped += StackShellPage_Popped;          
         }
 
         private void StackShellPage_Pushed(object sender, NavigationEventArgs e)
         {
-            SetHasNavigationBar(e.Page, shellViewModel.HasNavigationBar);
         }
 
         private void StackShellPage_Popped(object sender, NavigationEventArgs e)

@@ -19,7 +19,7 @@ namespace AppShell.Samples.Navigation
 
         public void OpenTabViewModel()
         {
-            serviceDispatcher.Dispatch<INavigationService>(n => n.Push<TabShellViewModel>(new { Name = "TabShell" }));
+            serviceDispatcher.Dispatch<INavigationService>(n => n.Push<TabShellViewModel>(new { Name = "TabShell", HasNavigationBar = false }));
             serviceDispatcher.Dispatch<INavigationService>("TabShell", n => n.Push<ViewModel3>());
             serviceDispatcher.Dispatch<INavigationService>("TabShell", n => n.Push<InlineStackShellViewModel>(new { Name = "InlineStackShell", Title = "InlineStackShell" }));
             serviceDispatcher.Dispatch<INavigationService>("InlineStackShell", n => n.Push<ViewModel4>());

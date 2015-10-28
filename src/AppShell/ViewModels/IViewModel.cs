@@ -6,6 +6,7 @@ namespace AppShell
     public interface IViewModel : INotifyPropertyChanged, IDisposable
     {
         bool AllowClose { get; set; }
+        bool HasNavigationBar { get; set; }
         string Name { get; set; }
         string Title { get; set; }
         string Icon { get; set; }

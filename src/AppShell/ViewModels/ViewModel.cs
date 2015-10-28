@@ -6,6 +6,7 @@ namespace AppShell
     public class ViewModel : IViewModel
     {
         public bool AllowClose { get; set; }
+        public bool HasNavigationBar { get; set; }
         public string Name { get; set; }
         public string Title { get; set; }
         public string Icon { get; set; }
@@ -13,6 +14,7 @@ namespace AppShell
         public ViewModel()
         {
             AllowClose = true;
+            HasNavigationBar = true;
         }
 
         protected virtual void OnPropertyChanged(string propertyName = null)

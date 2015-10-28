@@ -11,7 +11,7 @@
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     </UserControl.Resources>
     <DockPanel>
-        <Button Content="Back" Command="{Binding BackCommand}" DockPanel.Dock="Top" Visibility="{Binding HasNavigationBar, Converter={StaticResource BooleanToVisibilityConverter}}" />
+        <Button Content="Back" Command="{Binding BackCommand}" DockPanel.Dock="Top" Visibility="{Binding ActiveItem.HasNavigationBar, Converter={StaticResource BooleanToVisibilityConverter}}" />
         <ContentControl Content="{Binding ActiveItem}" ContentTemplateSelector="{StaticResource ShellDataTemplateSelector}" />
     </DockPanel>
 </UserControl>

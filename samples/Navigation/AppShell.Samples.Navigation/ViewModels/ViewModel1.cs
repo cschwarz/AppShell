@@ -9,6 +9,7 @@
         public ViewModel1(IServiceDispatcher serviceDispatcher)
         {
             Title = "ViewModel1";
+            HasNavigationBar = false;
 
             this.serviceDispatcher = serviceDispatcher;
 

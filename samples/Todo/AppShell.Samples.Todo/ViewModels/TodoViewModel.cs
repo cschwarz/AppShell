@@ -20,7 +20,7 @@ namespace AppShell.Samples.Todo
                 if (todoItem != value)
                 {
                     todoItem = value;
-                    OnPropertyChanged("TodoItem");
+                    OnPropertyChanged();
                     AddItemCommand.ChangeCanExecute();
                 }
             }

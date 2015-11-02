@@ -1,8 +1,9 @@
-﻿<UserControl x:Class="AppShell.Samples.Navigation.Desktop.Views.View1"
+﻿<views:ShellControl x:Class="AppShell.Samples.Navigation.Desktop.Views.View1"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:views="clr-namespace:AppShell.Desktop.Views;assembly=AppShell.Desktop"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
@@ -13,4 +14,4 @@
         <TextBlock Text="{Binding Title, StringFormat='Desktop View 1: {0}'}" Grid.Row="0" />
         <Button Command="{Binding OpenViewModel2Command}" Grid.Row="1">Open</Button>
     </Grid>
-</UserControl>
+</views:ShellControl>

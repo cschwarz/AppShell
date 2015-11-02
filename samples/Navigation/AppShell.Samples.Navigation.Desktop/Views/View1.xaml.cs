@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppShell.Desktop.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,7 @@ namespace AppShell.Samples.Navigation.Desktop.Views
     /// Interaction logic for View1.xaml
     /// </summary>
     [View(typeof(ViewModel1))]
-    public partial class View1 : UserControl
+    public partial class View1 : ShellControl
     {
         public View1()
         {

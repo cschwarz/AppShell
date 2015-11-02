@@ -14,5 +14,10 @@ namespace AppShell.Mobile
         {
             Device.BeginInvokeOnMainThread(action);
         }
+
+        public void ShowMessage(string title, string message, string cancel)
+        {
+            Application.Current.MainPage.DisplayAlert(title, message, cancel);
+        }
     }
 }

@@ -37,5 +37,10 @@ namespace AppShell.Desktop
         {
             Application.Current.Dispatcher.Invoke(action);
         }
+
+        public void ShowMessage(string title, string message, string cancel)
+        {
+            MessageBox.Show(message, title);
+        }
     }
 }

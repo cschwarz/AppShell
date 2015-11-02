@@ -10,8 +10,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <TextBlock Text="{Binding Title, StringFormat='Desktop View 1: {0}'}" Grid.Row="0" />
         <Button Command="{Binding OpenViewModel2Command}" Grid.Row="1">Open</Button>
+        <Button Command="{Binding ShowMessageCommand}" Grid.Row="2">Show Message</Button>
     </Grid>
 </views:ShellControl>

@@ -7,8 +7,10 @@
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
       <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
     <Label Text="{Binding Title, StringFormat='Mobile View 1: {0}'}" Grid.Row="0" />
     <Button Command="{Binding OpenViewModel2Command}" Text="Open" Grid.Row="1" />
+    <Button Command="{Binding ShowMessageCommand}" Text="Show Message" Grid.Row="2" />
   </Grid>
 </views:ShellView>

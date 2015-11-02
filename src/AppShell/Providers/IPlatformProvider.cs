@@ -9,5 +9,6 @@ namespace AppShell
         Platform GetPlatform();
         IEnumerable<Assembly> GetAssemblies();
         void ExecuteOnUIThread(Action action);
+        void ShowMessage(string title, string message, string cancel);
     }
 }

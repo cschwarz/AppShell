@@ -147,6 +147,11 @@ namespace AppShell.Tests
             {
                 throw new NotImplementedException();
             }
+
+            public void ShowMessage(string title, string message, string cancel)
+            {
+                throw new NotImplementedException();
+            }
         }
 
         [Fact]

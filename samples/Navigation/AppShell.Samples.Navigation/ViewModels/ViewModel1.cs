@@ -33,7 +33,7 @@ namespace AppShell.Samples.Navigation
 
         public void ShowMessage()
         {
-            platformProvider.ShowMessage("Title", "Sample Message", "Ok");
+            platformProvider.ShowMessage("Title", "Sample Message", "OK");
         }
     }
 }

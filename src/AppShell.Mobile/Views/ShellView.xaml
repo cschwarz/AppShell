@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppShell.Mobile.Views.ShellView">
+  <ContentView.Content>
+    <Grid>
+      <ContentView x:Name="ShellContentView" />
+      <ContentView BackgroundColor="#AA000000" IsVisible="{Binding IsLoading}">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+          <ActivityIndicator IsRunning="{Binding IsLoading}" />
+          <Label Text="{Binding LoadingText}" TextColor="White" />
+        </StackLayout>
+      </ContentView>
+    </Grid>
+  </ContentView.Content>
+</ContentView>

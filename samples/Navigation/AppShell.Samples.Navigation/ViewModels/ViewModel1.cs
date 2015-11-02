@@ -1,4 +1,6 @@
-﻿namespace AppShell.Samples.Navigation
+﻿using System.Threading.Tasks;
+
+namespace AppShell.Samples.Navigation
 {
     public class ViewModel1 : ViewModel
     {
@@ -12,6 +14,10 @@
             HasNavigationBar = false;
 
             this.serviceDispatcher = serviceDispatcher;
+
+            IsLoading = true;
+            LoadingText = "Loading for 3 seconds...";
+            Task.Delay(3000).ContinueWith(t => IsLoading = false);
 
             OpenViewModel2Command = new Command(OpenViewModel2);
         }

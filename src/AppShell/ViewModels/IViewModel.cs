@@ -10,5 +10,7 @@ namespace AppShell
         string Name { get; set; }
         string Title { get; set; }
         string Icon { get; set; }
+        bool IsLoading { get; set; }
+        string LoadingText { get; set; }
     }
 }

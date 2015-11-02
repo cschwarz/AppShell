@@ -4,13 +4,105 @@ using System.Runtime.CompilerServices;
 namespace AppShell
 {
     public class ViewModel : IViewModel
-    {
-        public bool AllowClose { get; set; }
-        public bool HasNavigationBar { get; set; }
-        public string Name { get; set; }
-        public string Title { get; set; }
-        public string Icon { get; set; }
+    {   
+        private bool allowClose;
+        public bool AllowClose
+        {
+            get { return allowClose; }
+            set
+            {
+                if (allowClose != value)
+                {
+                    allowClose = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
+        private bool hasNavigationBar;
+        public bool HasNavigationBar
+        {
+            get { return hasNavigationBar; }
+            set
+            {
+                if (hasNavigationBar != value)
+                {
+                    hasNavigationBar = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set
+            {
+                if (name != value)
+                {
+                    name = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private string title;
+        public string Title
+        {
+            get { return title; }
+            set
+            {
+                if (title != value)
+                {
+                    title = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        
+        private string icon;
+        public string Icon
+        {
+            get { return icon; }
+            set
+            {
+                if (icon != value)
+                {
+                    icon = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private bool isLoading;
+        public bool IsLoading
+        {
+            get { return isLoading; }
+            set
+            {
+                if (isLoading != value)
+                {
+                    isLoading = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private string loadingText;
+        public string LoadingText
+        {
+            get { return loadingText; }
+            set
+            {
+                if (loadingText != value)
+                {
+                    loadingText = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        
         public ViewModel()
         {
             AllowClose = true;

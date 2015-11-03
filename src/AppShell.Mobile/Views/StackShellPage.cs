@@ -7,26 +7,21 @@ namespace AppShell.Mobile
     {
         private StackShellViewModel shellViewModel;
         private IViewFactory viewFactory;
-        private bool ignorePopEvent;
 
         public StackShellPage()
         {
             viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
-
-            Pushed += StackShellPage_Pushed;
+            
             Popped += StackShellPage_Popped;          
         }
-
-        private void StackShellPage_Pushed(object sender, NavigationEventArgs e)
-        {
-        }
-
+        
         private void StackShellPage_Popped(object sender, NavigationEventArgs e)
         {
             if (shellViewModel != null)
             {
-                ignorePopEvent = true;
+                shellViewModel.ViewModelPopped -= ShellViewModel_ViewModelPopped;
                 shellViewModel.Pop();
+                shellViewModel.ViewModelPopped += ShellViewModel_ViewModelPopped;
             }
         }
         
@@ -50,10 +45,8 @@ namespace AppShell.Mobile
 
         private void ShellViewModel_ViewModelPopped(object sender, IViewModel e)
         {
-            if (!ignorePopEvent)
-                PopAsync();
-            else
-                ignorePopEvent = false;
+            Popped -= StackShellPage_Popped;
+            PopAsync().ContinueWith(t => Popped += StackShellPage_Popped);
         }
     }
 }

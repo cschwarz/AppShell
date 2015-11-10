@@ -7,6 +7,10 @@ namespace AppShell.Mobile.Android
 {
     public class ShellActivity<TApplication, TResource> : FormsApplicationActivity where TApplication : Application
     {
+        protected virtual void ConfigurePlatform()
+        {
+        }
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -15,6 +19,8 @@ namespace AppShell.Mobile.Android
 
             ShellCore.InitializeContainer();
             ShellCore.Container.RegisterSingleton<IPlatformProvider, AndroidPlatformProvider>();
+
+            ConfigurePlatform();
 
             LoadApplication(Activator.CreateInstance<TApplication>());
         }

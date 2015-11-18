@@ -11,10 +11,17 @@ namespace AppShell.Mobile
         public StackShellPage()
         {
             viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
-            
+
+            Pushed += StackShellPage_Pushed;
             Popped += StackShellPage_Popped;          
         }
-        
+
+        private void StackShellPage_Pushed(object sender, NavigationEventArgs e)
+        {
+            if (!GetHasNavigationBar(e.Page))
+                e.Page.Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
+        }
+
         private void StackShellPage_Popped(object sender, NavigationEventArgs e)
         {
             if (shellViewModel != null)

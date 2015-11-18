@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 using Xamarin.Forms;
 
 namespace AppShell.Mobile.Views
@@ -27,13 +22,18 @@ namespace AppShell.Mobile.Views
             InitializeComponent();
 
             SetBinding(HasNavigationBarProperty, new Binding("HasNavigationBar"));
-
+            
             viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
         }
 
         protected override Page CreateDefault(object item)
         {
-            return ShellViewPage.Create(viewFactory.GetView(item as IViewModel));
+            Page page = ShellViewPage.Create(viewFactory.GetView(item as IViewModel));
+
+            if (!NavigationPage.GetHasNavigationBar(this))
+                page.Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
+
+            return page;
         }
     }
 }

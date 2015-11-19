@@ -9,8 +9,9 @@
         public ViewModel3(IServiceDispatcher serviceDispatcher)
         {
             this.serviceDispatcher = serviceDispatcher;
-
+            
             Title = "ViewModel3";
+            HasNavigationBar = false;
 
             CloseCommand = new Command(Close);
         }

@@ -28,12 +28,7 @@ namespace AppShell.Mobile.Views
 
         protected override Page CreateDefault(object item)
         {
-            Page page = ShellViewPage.Create(viewFactory.GetView(item as IViewModel));
-
-            if (!NavigationPage.GetHasNavigationBar(this))
-                page.Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
-
-            return page;
+            return ShellViewPage.Create(viewFactory.GetView(item as IViewModel));
         }
     }
 }

@@ -11,6 +11,7 @@
             this.serviceDispatcher = serviceDispatcher;
 
             Title = "ViewModel5";
+            HasNavigationBar = false;
 
             CloseCommand = new Command(Close);
         }

@@ -50,6 +50,7 @@
     <Compile Include="NativeMapsShellCore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\NativeMapsShellConfigurationProvider.cs" />
+    <Compile Include="ViewModels\MultipleMapViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SimpleInjector, Version=3.1.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">

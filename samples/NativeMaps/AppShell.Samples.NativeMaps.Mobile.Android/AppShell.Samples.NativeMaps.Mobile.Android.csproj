@@ -153,6 +153,10 @@
       <Project>{de3520c9-7226-4ffe-88f1-a72ffe6a88d3}</Project>
       <Name>AppShell</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AppShell.Samples.NativeMaps.Mobile\AppShell.Samples.NativeMaps.Mobile.csproj">
+      <Project>{f6ba6020-a261-437c-892c-81db04816cae}</Project>
+      <Name>AppShell.Samples.NativeMaps.Mobile</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AppShell.Samples.NativeMaps\AppShell.Samples.NativeMaps.csproj">
       <Project>{37356f77-d05a-4db9-b76d-cc0a63ec9846}</Project>
       <Name>AppShell.Samples.NativeMaps</Name>

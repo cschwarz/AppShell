@@ -2,20 +2,6 @@
 {
     public class MapViewModel : ViewModel, IMapService
     {
-        private string apiKey;
-        public string ApiKey
-        {
-            get { return apiKey; }
-            set
-            {
-                if (apiKey != value)
-                {
-                    apiKey = value;
-                    OnPropertyChanged("ApiKey");
-                }
-            }
-        }
-
         private Location center;
         public Location Center
         {

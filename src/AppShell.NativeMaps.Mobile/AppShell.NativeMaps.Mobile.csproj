@@ -38,7 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\MapPage.cs" />
+    <Compile Include="Views\MapView.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppShell.NativeMaps\AppShell.NativeMaps.csproj">

@@ -7,10 +7,10 @@ using Xamarin.Forms.Maps;
 namespace AppShell.NativeMaps.Mobile
 {
     [View(typeof(MapViewModel))]
-    public class MapPage : ContentPage
+    public class MapView : ContentView
     {
-        public static readonly BindableProperty ZoomLevelProperty = BindableProperty.Create<MapPage, double>(d => d.ZoomLevel, 10.0, BindingMode.TwoWay, propertyChanged: ZoomLevelPropertyChanged);
-        public static readonly BindableProperty CenterProperty = BindableProperty.Create<MapPage, Location>(d => d.Center, null, BindingMode.TwoWay, propertyChanged: CenterPropertyChanged);
+        public static readonly BindableProperty ZoomLevelProperty = BindableProperty.Create<MapView, double>(d => d.ZoomLevel, 10.0, BindingMode.TwoWay, propertyChanged: ZoomLevelPropertyChanged);
+        public static readonly BindableProperty CenterProperty = BindableProperty.Create<MapView, Location>(d => d.Center, null, BindingMode.TwoWay, propertyChanged: CenterPropertyChanged);
         
         public double ZoomLevel { get { return (double)GetValue(ZoomLevelProperty); } set { SetValue(ZoomLevelProperty, value); } }
         public Location Center { get { return (Location)GetValue(CenterProperty); } set { SetValue(CenterProperty, value); } }
@@ -22,24 +22,24 @@ namespace AppShell.NativeMaps.Mobile
 
         public static void ZoomLevelPropertyChanged(BindableObject d, double oldValue, double newValue)
         {    
-            MapPage mapPage = d as MapPage;
+            MapView mapView = d as MapView;
             
-            if (mapPage.map.VisibleRegion != null && !mapPage.ignoreInternalUpdate)
-                mapPage.map.MoveToRegion(MapSpan.FromCenterAndRadius(mapPage.map.VisibleRegion.Center, new Distance(mapPage.Radius)));
+            if (mapView.map.VisibleRegion != null && !mapView.ignoreInternalUpdate)
+                mapView.map.MoveToRegion(MapSpan.FromCenterAndRadius(mapView.map.VisibleRegion.Center, new Distance(mapView.Radius)));
         }
 
         public static void CenterPropertyChanged(BindableObject d, Location oldValue, Location newValue)
         {
-            MapPage mapPage = d as MapPage;
+            MapView mapView = d as MapView;
             
-            if (newValue != null && !mapPage.ignoreInternalUpdate)
-                mapPage.map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(newValue.Latitude, newValue.Longitude), new Distance(mapPage.Radius)));
+            if (newValue != null && !mapView.ignoreInternalUpdate)
+                mapView.map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(newValue.Latitude, newValue.Longitude), new Distance(mapView.Radius)));
         }
         
         private Map map;
         private bool ignoreInternalUpdate;
 
-        public MapPage()
+        public MapView()
         {
             map = new Map();
             map.PropertyChanged += Map_PropertyChanged;

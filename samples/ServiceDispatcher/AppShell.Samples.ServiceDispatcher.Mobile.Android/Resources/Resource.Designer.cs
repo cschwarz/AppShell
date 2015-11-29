@@ -1484,1583 +1484,6 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat_android_id = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ViewStubCompat_android_id;
 			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat_android_inflatedId = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat_android_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ViewStubCompat_android_layout;
-			global::XLabs.Forms.Resource.Animation.abc_fade_in = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.abc_fade_in;
-			global::XLabs.Forms.Resource.Animation.abc_fade_out = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.abc_fade_out;
-			global::XLabs.Forms.Resource.Animation.abc_grow_fade_in_from_bottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::XLabs.Forms.Resource.Animation.abc_popup_enter = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.abc_popup_enter;
-			global::XLabs.Forms.Resource.Animation.abc_popup_exit = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.abc_popup_exit;
-			global::XLabs.Forms.Resource.Animation.abc_shrink_fade_out_from_bottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::XLabs.Forms.Resource.Animation.abc_slide_in_bottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.abc_slide_in_bottom;
-			global::XLabs.Forms.Resource.Animation.abc_slide_in_top = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.abc_slide_in_top;
-			global::XLabs.Forms.Resource.Animation.abc_slide_out_bottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.abc_slide_out_bottom;
-			global::XLabs.Forms.Resource.Animation.abc_slide_out_top = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.abc_slide_out_top;
-			global::XLabs.Forms.Resource.Animation.design_fab_in = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.design_fab_in;
-			global::XLabs.Forms.Resource.Animation.design_fab_out = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.design_fab_out;
-			global::XLabs.Forms.Resource.Animation.design_snackbar_in = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.design_snackbar_in;
-			global::XLabs.Forms.Resource.Animation.design_snackbar_out = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Animation.design_snackbar_out;
-			global::XLabs.Forms.Resource.Attribute.actionBarDivider = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionBarDivider;
-			global::XLabs.Forms.Resource.Attribute.actionBarItemBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionBarItemBackground;
-			global::XLabs.Forms.Resource.Attribute.actionBarPopupTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionBarPopupTheme;
-			global::XLabs.Forms.Resource.Attribute.actionBarSize = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionBarSize;
-			global::XLabs.Forms.Resource.Attribute.actionBarSplitStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionBarSplitStyle;
-			global::XLabs.Forms.Resource.Attribute.actionBarStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionBarStyle;
-			global::XLabs.Forms.Resource.Attribute.actionBarTabBarStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionBarTabBarStyle;
-			global::XLabs.Forms.Resource.Attribute.actionBarTabStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionBarTabStyle;
-			global::XLabs.Forms.Resource.Attribute.actionBarTabTextStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionBarTabTextStyle;
-			global::XLabs.Forms.Resource.Attribute.actionBarTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionBarTheme;
-			global::XLabs.Forms.Resource.Attribute.actionBarWidgetTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionBarWidgetTheme;
-			global::XLabs.Forms.Resource.Attribute.actionButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionButtonStyle;
-			global::XLabs.Forms.Resource.Attribute.actionDropDownStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionDropDownStyle;
-			global::XLabs.Forms.Resource.Attribute.actionLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionLayout;
-			global::XLabs.Forms.Resource.Attribute.actionMenuTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionMenuTextAppearance;
-			global::XLabs.Forms.Resource.Attribute.actionMenuTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionMenuTextColor;
-			global::XLabs.Forms.Resource.Attribute.actionModeBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModeBackground;
-			global::XLabs.Forms.Resource.Attribute.actionModeCloseButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModeCloseButtonStyle;
-			global::XLabs.Forms.Resource.Attribute.actionModeCloseDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModeCloseDrawable;
-			global::XLabs.Forms.Resource.Attribute.actionModeCopyDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModeCopyDrawable;
-			global::XLabs.Forms.Resource.Attribute.actionModeCutDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModeCutDrawable;
-			global::XLabs.Forms.Resource.Attribute.actionModeFindDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModeFindDrawable;
-			global::XLabs.Forms.Resource.Attribute.actionModePasteDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModePasteDrawable;
-			global::XLabs.Forms.Resource.Attribute.actionModePopupWindowStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModePopupWindowStyle;
-			global::XLabs.Forms.Resource.Attribute.actionModeSelectAllDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModeSelectAllDrawable;
-			global::XLabs.Forms.Resource.Attribute.actionModeShareDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModeShareDrawable;
-			global::XLabs.Forms.Resource.Attribute.actionModeSplitBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModeSplitBackground;
-			global::XLabs.Forms.Resource.Attribute.actionModeStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModeStyle;
-			global::XLabs.Forms.Resource.Attribute.actionModeWebSearchDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionModeWebSearchDrawable;
-			global::XLabs.Forms.Resource.Attribute.actionOverflowButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionOverflowButtonStyle;
-			global::XLabs.Forms.Resource.Attribute.actionOverflowMenuStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionOverflowMenuStyle;
-			global::XLabs.Forms.Resource.Attribute.actionProviderClass = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionProviderClass;
-			global::XLabs.Forms.Resource.Attribute.actionViewClass = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.actionViewClass;
-			global::XLabs.Forms.Resource.Attribute.activityChooserViewStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.activityChooserViewStyle;
-			global::XLabs.Forms.Resource.Attribute.alertDialogButtonGroupStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::XLabs.Forms.Resource.Attribute.alertDialogCenterButtons = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.alertDialogCenterButtons;
-			global::XLabs.Forms.Resource.Attribute.alertDialogStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.alertDialogStyle;
-			global::XLabs.Forms.Resource.Attribute.alertDialogTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.alertDialogTheme;
-			global::XLabs.Forms.Resource.Attribute.arrowHeadLength = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.arrowHeadLength;
-			global::XLabs.Forms.Resource.Attribute.arrowShaftLength = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.arrowShaftLength;
-			global::XLabs.Forms.Resource.Attribute.autoCompleteTextViewStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.autoCompleteTextViewStyle;
-			global::XLabs.Forms.Resource.Attribute.background = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.background;
-			global::XLabs.Forms.Resource.Attribute.backgroundSplit = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.backgroundSplit;
-			global::XLabs.Forms.Resource.Attribute.backgroundStacked = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.backgroundStacked;
-			global::XLabs.Forms.Resource.Attribute.backgroundTint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.backgroundTint;
-			global::XLabs.Forms.Resource.Attribute.backgroundTintMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.backgroundTintMode;
-			global::XLabs.Forms.Resource.Attribute.barLength = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.barLength;
-			global::XLabs.Forms.Resource.Attribute.behavior_overlapTop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.behavior_overlapTop;
-			global::XLabs.Forms.Resource.Attribute.borderWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.borderWidth;
-			global::XLabs.Forms.Resource.Attribute.borderlessButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.borderlessButtonStyle;
-			global::XLabs.Forms.Resource.Attribute.buttonBarButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.buttonBarButtonStyle;
-			global::XLabs.Forms.Resource.Attribute.buttonBarNegativeButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::XLabs.Forms.Resource.Attribute.buttonBarNeutralButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::XLabs.Forms.Resource.Attribute.buttonBarPositiveButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::XLabs.Forms.Resource.Attribute.buttonBarStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.buttonBarStyle;
-			global::XLabs.Forms.Resource.Attribute.buttonPanelSideLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.buttonPanelSideLayout;
-			global::XLabs.Forms.Resource.Attribute.buttonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.buttonStyle;
-			global::XLabs.Forms.Resource.Attribute.buttonStyleSmall = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.buttonStyleSmall;
-			global::XLabs.Forms.Resource.Attribute.buttonTint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.buttonTint;
-			global::XLabs.Forms.Resource.Attribute.buttonTintMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.buttonTintMode;
-			global::XLabs.Forms.Resource.Attribute.cardBackgroundColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.cardBackgroundColor;
-			global::XLabs.Forms.Resource.Attribute.cardCornerRadius = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.cardCornerRadius;
-			global::XLabs.Forms.Resource.Attribute.cardElevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.cardElevation;
-			global::XLabs.Forms.Resource.Attribute.cardMaxElevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.cardMaxElevation;
-			global::XLabs.Forms.Resource.Attribute.cardPreventCornerOverlap = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.cardPreventCornerOverlap;
-			global::XLabs.Forms.Resource.Attribute.cardUseCompatPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.cardUseCompatPadding;
-			global::XLabs.Forms.Resource.Attribute.checkboxStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.checkboxStyle;
-			global::XLabs.Forms.Resource.Attribute.checkedTextViewStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.checkedTextViewStyle;
-			global::XLabs.Forms.Resource.Attribute.closeIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.closeIcon;
-			global::XLabs.Forms.Resource.Attribute.closeItemLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.closeItemLayout;
-			global::XLabs.Forms.Resource.Attribute.collapseContentDescription = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.collapseContentDescription;
-			global::XLabs.Forms.Resource.Attribute.collapseIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.collapseIcon;
-			global::XLabs.Forms.Resource.Attribute.collapsedTitleGravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.collapsedTitleGravity;
-			global::XLabs.Forms.Resource.Attribute.collapsedTitleTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.collapsedTitleTextAppearance;
-			global::XLabs.Forms.Resource.Attribute.color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.color;
-			global::XLabs.Forms.Resource.Attribute.colorAccent = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.colorAccent;
-			global::XLabs.Forms.Resource.Attribute.colorButtonNormal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.colorButtonNormal;
-			global::XLabs.Forms.Resource.Attribute.colorControlActivated = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.colorControlActivated;
-			global::XLabs.Forms.Resource.Attribute.colorControlHighlight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.colorControlHighlight;
-			global::XLabs.Forms.Resource.Attribute.colorControlNormal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.colorControlNormal;
-			global::XLabs.Forms.Resource.Attribute.colorPrimary = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.colorPrimary;
-			global::XLabs.Forms.Resource.Attribute.colorPrimaryDark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.colorPrimaryDark;
-			global::XLabs.Forms.Resource.Attribute.colorSwitchThumbNormal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.colorSwitchThumbNormal;
-			global::XLabs.Forms.Resource.Attribute.commitIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.commitIcon;
-			global::XLabs.Forms.Resource.Attribute.contentInsetEnd = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.contentInsetEnd;
-			global::XLabs.Forms.Resource.Attribute.contentInsetLeft = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.contentInsetLeft;
-			global::XLabs.Forms.Resource.Attribute.contentInsetRight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.contentInsetRight;
-			global::XLabs.Forms.Resource.Attribute.contentInsetStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.contentInsetStart;
-			global::XLabs.Forms.Resource.Attribute.contentPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.contentPadding;
-			global::XLabs.Forms.Resource.Attribute.contentPaddingBottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.contentPaddingBottom;
-			global::XLabs.Forms.Resource.Attribute.contentPaddingLeft = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.contentPaddingLeft;
-			global::XLabs.Forms.Resource.Attribute.contentPaddingRight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.contentPaddingRight;
-			global::XLabs.Forms.Resource.Attribute.contentPaddingTop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.contentPaddingTop;
-			global::XLabs.Forms.Resource.Attribute.contentScrim = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.contentScrim;
-			global::XLabs.Forms.Resource.Attribute.controlBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.controlBackground;
-			global::XLabs.Forms.Resource.Attribute.customNavigationLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.customNavigationLayout;
-			global::XLabs.Forms.Resource.Attribute.defaultQueryHint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.defaultQueryHint;
-			global::XLabs.Forms.Resource.Attribute.dialogPreferredPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.dialogPreferredPadding;
-			global::XLabs.Forms.Resource.Attribute.dialogTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.dialogTheme;
-			global::XLabs.Forms.Resource.Attribute.displayOptions = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.displayOptions;
-			global::XLabs.Forms.Resource.Attribute.divider = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.divider;
-			global::XLabs.Forms.Resource.Attribute.dividerHorizontal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.dividerHorizontal;
-			global::XLabs.Forms.Resource.Attribute.dividerPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.dividerPadding;
-			global::XLabs.Forms.Resource.Attribute.dividerVertical = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.dividerVertical;
-			global::XLabs.Forms.Resource.Attribute.drawableSize = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.drawableSize;
-			global::XLabs.Forms.Resource.Attribute.drawerArrowStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.drawerArrowStyle;
-			global::XLabs.Forms.Resource.Attribute.dropDownListViewStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.dropDownListViewStyle;
-			global::XLabs.Forms.Resource.Attribute.dropdownListPreferredItemHeight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::XLabs.Forms.Resource.Attribute.editTextBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.editTextBackground;
-			global::XLabs.Forms.Resource.Attribute.editTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.editTextColor;
-			global::XLabs.Forms.Resource.Attribute.editTextStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.editTextStyle;
-			global::XLabs.Forms.Resource.Attribute.elevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.elevation;
-			global::XLabs.Forms.Resource.Attribute.errorEnabled = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.errorEnabled;
-			global::XLabs.Forms.Resource.Attribute.errorTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.errorTextAppearance;
-			global::XLabs.Forms.Resource.Attribute.expandActivityOverflowButtonDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::XLabs.Forms.Resource.Attribute.expanded = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.expanded;
-			global::XLabs.Forms.Resource.Attribute.expandedTitleGravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.expandedTitleGravity;
-			global::XLabs.Forms.Resource.Attribute.expandedTitleMargin = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.expandedTitleMargin;
-			global::XLabs.Forms.Resource.Attribute.expandedTitleMarginBottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.expandedTitleMarginBottom;
-			global::XLabs.Forms.Resource.Attribute.expandedTitleMarginEnd = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.expandedTitleMarginEnd;
-			global::XLabs.Forms.Resource.Attribute.expandedTitleMarginStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.expandedTitleMarginStart;
-			global::XLabs.Forms.Resource.Attribute.expandedTitleMarginTop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.expandedTitleMarginTop;
-			global::XLabs.Forms.Resource.Attribute.expandedTitleTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.expandedTitleTextAppearance;
-			global::XLabs.Forms.Resource.Attribute.externalRouteEnabledDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.externalRouteEnabledDrawable;
-			global::XLabs.Forms.Resource.Attribute.fabSize = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.fabSize;
-			global::XLabs.Forms.Resource.Attribute.gapBetweenBars = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.gapBetweenBars;
-			global::XLabs.Forms.Resource.Attribute.goIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.goIcon;
-			global::XLabs.Forms.Resource.Attribute.headerLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.headerLayout;
-			global::XLabs.Forms.Resource.Attribute.height = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.height;
-			global::XLabs.Forms.Resource.Attribute.hideOnContentScroll = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.hideOnContentScroll;
-			global::XLabs.Forms.Resource.Attribute.hintAnimationEnabled = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.hintAnimationEnabled;
-			global::XLabs.Forms.Resource.Attribute.hintTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.hintTextAppearance;
-			global::XLabs.Forms.Resource.Attribute.homeAsUpIndicator = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.homeAsUpIndicator;
-			global::XLabs.Forms.Resource.Attribute.homeLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.homeLayout;
-			global::XLabs.Forms.Resource.Attribute.icon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.icon;
-			global::XLabs.Forms.Resource.Attribute.iconifiedByDefault = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.iconifiedByDefault;
-			global::XLabs.Forms.Resource.Attribute.indeterminateProgressStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.indeterminateProgressStyle;
-			global::XLabs.Forms.Resource.Attribute.initialActivityCount = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.initialActivityCount;
-			global::XLabs.Forms.Resource.Attribute.insetForeground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.insetForeground;
-			global::XLabs.Forms.Resource.Attribute.isLightTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.isLightTheme;
-			global::XLabs.Forms.Resource.Attribute.itemBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.itemBackground;
-			global::XLabs.Forms.Resource.Attribute.itemIconTint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.itemIconTint;
-			global::XLabs.Forms.Resource.Attribute.itemPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.itemPadding;
-			global::XLabs.Forms.Resource.Attribute.itemTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.itemTextAppearance;
-			global::XLabs.Forms.Resource.Attribute.itemTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.itemTextColor;
-			global::XLabs.Forms.Resource.Attribute.keylines = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.keylines;
-			global::XLabs.Forms.Resource.Attribute.layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.layout;
-			global::XLabs.Forms.Resource.Attribute.layout_anchor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.layout_anchor;
-			global::XLabs.Forms.Resource.Attribute.layout_anchorGravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.layout_anchorGravity;
-			global::XLabs.Forms.Resource.Attribute.layout_behavior = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.layout_behavior;
-			global::XLabs.Forms.Resource.Attribute.layout_collapseMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.layout_collapseMode;
-			global::XLabs.Forms.Resource.Attribute.layout_collapseParallaxMultiplier = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.layout_collapseParallaxMultiplier;
-			global::XLabs.Forms.Resource.Attribute.layout_keyline = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.layout_keyline;
-			global::XLabs.Forms.Resource.Attribute.layout_scrollFlags = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.layout_scrollFlags;
-			global::XLabs.Forms.Resource.Attribute.layout_scrollInterpolator = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.layout_scrollInterpolator;
-			global::XLabs.Forms.Resource.Attribute.listChoiceBackgroundIndicator = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::XLabs.Forms.Resource.Attribute.listDividerAlertDialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.listDividerAlertDialog;
-			global::XLabs.Forms.Resource.Attribute.listItemLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.listItemLayout;
-			global::XLabs.Forms.Resource.Attribute.listLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.listLayout;
-			global::XLabs.Forms.Resource.Attribute.listPopupWindowStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.listPopupWindowStyle;
-			global::XLabs.Forms.Resource.Attribute.listPreferredItemHeight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.listPreferredItemHeight;
-			global::XLabs.Forms.Resource.Attribute.listPreferredItemHeightLarge = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.listPreferredItemHeightLarge;
-			global::XLabs.Forms.Resource.Attribute.listPreferredItemHeightSmall = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.listPreferredItemHeightSmall;
-			global::XLabs.Forms.Resource.Attribute.listPreferredItemPaddingLeft = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::XLabs.Forms.Resource.Attribute.listPreferredItemPaddingRight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.listPreferredItemPaddingRight;
-			global::XLabs.Forms.Resource.Attribute.logo = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.logo;
-			global::XLabs.Forms.Resource.Attribute.logoDescription = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.logoDescription;
-			global::XLabs.Forms.Resource.Attribute.maxActionInlineWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.maxActionInlineWidth;
-			global::XLabs.Forms.Resource.Attribute.maxButtonHeight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.maxButtonHeight;
-			global::XLabs.Forms.Resource.Attribute.measureWithLargestChild = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.measureWithLargestChild;
-			global::XLabs.Forms.Resource.Attribute.mediaRouteButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.mediaRouteButtonStyle;
-			global::XLabs.Forms.Resource.Attribute.mediaRouteCastDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.mediaRouteCastDrawable;
-			global::XLabs.Forms.Resource.Attribute.mediaRouteConnectingDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.mediaRouteConnectingDrawable;
-			global::XLabs.Forms.Resource.Attribute.mediaRouteOffDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.mediaRouteOffDrawable;
-			global::XLabs.Forms.Resource.Attribute.mediaRouteOnDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.mediaRouteOnDrawable;
-			global::XLabs.Forms.Resource.Attribute.mediaRoutePauseDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.mediaRoutePauseDrawable;
-			global::XLabs.Forms.Resource.Attribute.mediaRoutePlayDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.mediaRoutePlayDrawable;
-			global::XLabs.Forms.Resource.Attribute.mediaRouteSettingsDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.mediaRouteSettingsDrawable;
-			global::XLabs.Forms.Resource.Attribute.menu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.menu;
-			global::XLabs.Forms.Resource.Attribute.multiChoiceItemLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.multiChoiceItemLayout;
-			global::XLabs.Forms.Resource.Attribute.navigationContentDescription = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.navigationContentDescription;
-			global::XLabs.Forms.Resource.Attribute.navigationIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.navigationIcon;
-			global::XLabs.Forms.Resource.Attribute.navigationMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.navigationMode;
-			global::XLabs.Forms.Resource.Attribute.overlapAnchor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.overlapAnchor;
-			global::XLabs.Forms.Resource.Attribute.paddingEnd = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.paddingEnd;
-			global::XLabs.Forms.Resource.Attribute.paddingStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.paddingStart;
-			global::XLabs.Forms.Resource.Attribute.panelBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.panelBackground;
-			global::XLabs.Forms.Resource.Attribute.panelMenuListTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.panelMenuListTheme;
-			global::XLabs.Forms.Resource.Attribute.panelMenuListWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.panelMenuListWidth;
-			global::XLabs.Forms.Resource.Attribute.popupMenuStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.popupMenuStyle;
-			global::XLabs.Forms.Resource.Attribute.popupTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.popupTheme;
-			global::XLabs.Forms.Resource.Attribute.popupWindowStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.popupWindowStyle;
-			global::XLabs.Forms.Resource.Attribute.preserveIconSpacing = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.preserveIconSpacing;
-			global::XLabs.Forms.Resource.Attribute.pressedTranslationZ = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.pressedTranslationZ;
-			global::XLabs.Forms.Resource.Attribute.progressBarPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.progressBarPadding;
-			global::XLabs.Forms.Resource.Attribute.progressBarStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.progressBarStyle;
-			global::XLabs.Forms.Resource.Attribute.queryBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.queryBackground;
-			global::XLabs.Forms.Resource.Attribute.queryHint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.queryHint;
-			global::XLabs.Forms.Resource.Attribute.radioButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.radioButtonStyle;
-			global::XLabs.Forms.Resource.Attribute.ratingBarStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.ratingBarStyle;
-			global::XLabs.Forms.Resource.Attribute.rippleColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.rippleColor;
-			global::XLabs.Forms.Resource.Attribute.searchHintIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.searchHintIcon;
-			global::XLabs.Forms.Resource.Attribute.searchIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.searchIcon;
-			global::XLabs.Forms.Resource.Attribute.searchViewStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.searchViewStyle;
-			global::XLabs.Forms.Resource.Attribute.selectableItemBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.selectableItemBackground;
-			global::XLabs.Forms.Resource.Attribute.selectableItemBackgroundBorderless = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::XLabs.Forms.Resource.Attribute.showAsAction = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.showAsAction;
-			global::XLabs.Forms.Resource.Attribute.showDividers = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.showDividers;
-			global::XLabs.Forms.Resource.Attribute.showText = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.showText;
-			global::XLabs.Forms.Resource.Attribute.singleChoiceItemLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.singleChoiceItemLayout;
-			global::XLabs.Forms.Resource.Attribute.spinBars = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.spinBars;
-			global::XLabs.Forms.Resource.Attribute.spinnerDropDownItemStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.spinnerDropDownItemStyle;
-			global::XLabs.Forms.Resource.Attribute.spinnerStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.spinnerStyle;
-			global::XLabs.Forms.Resource.Attribute.splitTrack = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.splitTrack;
-			global::XLabs.Forms.Resource.Attribute.state_above_anchor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.state_above_anchor;
-			global::XLabs.Forms.Resource.Attribute.statusBarBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.statusBarBackground;
-			global::XLabs.Forms.Resource.Attribute.statusBarScrim = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.statusBarScrim;
-			global::XLabs.Forms.Resource.Attribute.submitBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.submitBackground;
-			global::XLabs.Forms.Resource.Attribute.subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.subtitle;
-			global::XLabs.Forms.Resource.Attribute.subtitleTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.subtitleTextAppearance;
-			global::XLabs.Forms.Resource.Attribute.subtitleTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.subtitleTextColor;
-			global::XLabs.Forms.Resource.Attribute.subtitleTextStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.subtitleTextStyle;
-			global::XLabs.Forms.Resource.Attribute.suggestionRowLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.suggestionRowLayout;
-			global::XLabs.Forms.Resource.Attribute.switchMinWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.switchMinWidth;
-			global::XLabs.Forms.Resource.Attribute.switchPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.switchPadding;
-			global::XLabs.Forms.Resource.Attribute.switchStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.switchStyle;
-			global::XLabs.Forms.Resource.Attribute.switchTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.switchTextAppearance;
-			global::XLabs.Forms.Resource.Attribute.tabBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabBackground;
-			global::XLabs.Forms.Resource.Attribute.tabContentStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabContentStart;
-			global::XLabs.Forms.Resource.Attribute.tabGravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabGravity;
-			global::XLabs.Forms.Resource.Attribute.tabIndicatorColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabIndicatorColor;
-			global::XLabs.Forms.Resource.Attribute.tabIndicatorHeight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabIndicatorHeight;
-			global::XLabs.Forms.Resource.Attribute.tabMaxWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabMaxWidth;
-			global::XLabs.Forms.Resource.Attribute.tabMinWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabMinWidth;
-			global::XLabs.Forms.Resource.Attribute.tabMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabMode;
-			global::XLabs.Forms.Resource.Attribute.tabPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabPadding;
-			global::XLabs.Forms.Resource.Attribute.tabPaddingBottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabPaddingBottom;
-			global::XLabs.Forms.Resource.Attribute.tabPaddingEnd = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabPaddingEnd;
-			global::XLabs.Forms.Resource.Attribute.tabPaddingStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabPaddingStart;
-			global::XLabs.Forms.Resource.Attribute.tabPaddingTop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabPaddingTop;
-			global::XLabs.Forms.Resource.Attribute.tabSelectedTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabSelectedTextColor;
-			global::XLabs.Forms.Resource.Attribute.tabTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabTextAppearance;
-			global::XLabs.Forms.Resource.Attribute.tabTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.tabTextColor;
-			global::XLabs.Forms.Resource.Attribute.textAllCaps = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.textAllCaps;
-			global::XLabs.Forms.Resource.Attribute.textAppearanceLargePopupMenu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::XLabs.Forms.Resource.Attribute.textAppearanceListItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.textAppearanceListItem;
-			global::XLabs.Forms.Resource.Attribute.textAppearanceListItemSmall = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.textAppearanceListItemSmall;
-			global::XLabs.Forms.Resource.Attribute.textAppearanceSearchResultSubtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::XLabs.Forms.Resource.Attribute.textAppearanceSearchResultTitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::XLabs.Forms.Resource.Attribute.textAppearanceSmallPopupMenu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::XLabs.Forms.Resource.Attribute.textColorAlertDialogListItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.textColorAlertDialogListItem;
-			global::XLabs.Forms.Resource.Attribute.textColorSearchUrl = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.textColorSearchUrl;
-			global::XLabs.Forms.Resource.Attribute.theme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.theme;
-			global::XLabs.Forms.Resource.Attribute.thickness = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.thickness;
-			global::XLabs.Forms.Resource.Attribute.thumbTextPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.thumbTextPadding;
-			global::XLabs.Forms.Resource.Attribute.title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.title;
-			global::XLabs.Forms.Resource.Attribute.titleEnabled = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.titleEnabled;
-			global::XLabs.Forms.Resource.Attribute.titleMarginBottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.titleMarginBottom;
-			global::XLabs.Forms.Resource.Attribute.titleMarginEnd = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.titleMarginEnd;
-			global::XLabs.Forms.Resource.Attribute.titleMarginStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.titleMarginStart;
-			global::XLabs.Forms.Resource.Attribute.titleMarginTop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.titleMarginTop;
-			global::XLabs.Forms.Resource.Attribute.titleMargins = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.titleMargins;
-			global::XLabs.Forms.Resource.Attribute.titleTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.titleTextAppearance;
-			global::XLabs.Forms.Resource.Attribute.titleTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.titleTextColor;
-			global::XLabs.Forms.Resource.Attribute.titleTextStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.titleTextStyle;
-			global::XLabs.Forms.Resource.Attribute.toolbarId = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.toolbarId;
-			global::XLabs.Forms.Resource.Attribute.toolbarNavigationButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::XLabs.Forms.Resource.Attribute.toolbarStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.toolbarStyle;
-			global::XLabs.Forms.Resource.Attribute.track = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.track;
-			global::XLabs.Forms.Resource.Attribute.voiceIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.voiceIcon;
-			global::XLabs.Forms.Resource.Attribute.windowActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.windowActionBar;
-			global::XLabs.Forms.Resource.Attribute.windowActionBarOverlay = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.windowActionBarOverlay;
-			global::XLabs.Forms.Resource.Attribute.windowActionModeOverlay = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.windowActionModeOverlay;
-			global::XLabs.Forms.Resource.Attribute.windowFixedHeightMajor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.windowFixedHeightMajor;
-			global::XLabs.Forms.Resource.Attribute.windowFixedHeightMinor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.windowFixedHeightMinor;
-			global::XLabs.Forms.Resource.Attribute.windowFixedWidthMajor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.windowFixedWidthMajor;
-			global::XLabs.Forms.Resource.Attribute.windowFixedWidthMinor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.windowFixedWidthMinor;
-			global::XLabs.Forms.Resource.Attribute.windowMinWidthMajor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.windowMinWidthMajor;
-			global::XLabs.Forms.Resource.Attribute.windowMinWidthMinor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.windowMinWidthMinor;
-			global::XLabs.Forms.Resource.Attribute.windowNoTitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Attribute.windowNoTitle;
-			global::XLabs.Forms.Resource.Boolean.abc_action_bar_embed_tabs = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::XLabs.Forms.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb;
-			global::XLabs.Forms.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive;
-			global::XLabs.Forms.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::XLabs.Forms.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon;
-			global::XLabs.Forms.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::XLabs.Forms.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
-			global::XLabs.Forms.Resource.Color.abc_background_cache_hint_selector_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::XLabs.Forms.Resource.Color.abc_background_cache_hint_selector_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::XLabs.Forms.Resource.Color.abc_color_highlight_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_color_highlight_material;
-			global::XLabs.Forms.Resource.Color.abc_input_method_navigation_guard = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_input_method_navigation_guard;
-			global::XLabs.Forms.Resource.Color.abc_primary_text_disable_only_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::XLabs.Forms.Resource.Color.abc_primary_text_disable_only_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::XLabs.Forms.Resource.Color.abc_primary_text_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_primary_text_material_dark;
-			global::XLabs.Forms.Resource.Color.abc_primary_text_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_primary_text_material_light;
-			global::XLabs.Forms.Resource.Color.abc_search_url_text = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_search_url_text;
-			global::XLabs.Forms.Resource.Color.abc_search_url_text_normal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_search_url_text_normal;
-			global::XLabs.Forms.Resource.Color.abc_search_url_text_pressed = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_search_url_text_pressed;
-			global::XLabs.Forms.Resource.Color.abc_search_url_text_selected = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_search_url_text_selected;
-			global::XLabs.Forms.Resource.Color.abc_secondary_text_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_secondary_text_material_dark;
-			global::XLabs.Forms.Resource.Color.abc_secondary_text_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.abc_secondary_text_material_light;
-			global::XLabs.Forms.Resource.Color.accent_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.accent_material_dark;
-			global::XLabs.Forms.Resource.Color.accent_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.accent_material_light;
-			global::XLabs.Forms.Resource.Color.background_floating_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.background_floating_material_dark;
-			global::XLabs.Forms.Resource.Color.background_floating_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.background_floating_material_light;
-			global::XLabs.Forms.Resource.Color.background_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.background_material_dark;
-			global::XLabs.Forms.Resource.Color.background_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.background_material_light;
-			global::XLabs.Forms.Resource.Color.bright_foreground_disabled_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.bright_foreground_disabled_material_dark;
-			global::XLabs.Forms.Resource.Color.bright_foreground_disabled_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.bright_foreground_disabled_material_light;
-			global::XLabs.Forms.Resource.Color.bright_foreground_inverse_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.bright_foreground_inverse_material_dark;
-			global::XLabs.Forms.Resource.Color.bright_foreground_inverse_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.bright_foreground_inverse_material_light;
-			global::XLabs.Forms.Resource.Color.bright_foreground_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.bright_foreground_material_dark;
-			global::XLabs.Forms.Resource.Color.bright_foreground_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.bright_foreground_material_light;
-			global::XLabs.Forms.Resource.Color.button_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.button_material_dark;
-			global::XLabs.Forms.Resource.Color.button_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.button_material_light;
-			global::XLabs.Forms.Resource.Color.calendar_active_month_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_active_month_bg;
-			global::XLabs.Forms.Resource.Color.calendar_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_bg;
-			global::XLabs.Forms.Resource.Color.calendar_divider = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_divider;
-			global::XLabs.Forms.Resource.Color.calendar_highlighted_day_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_highlighted_day_bg;
-			global::XLabs.Forms.Resource.Color.calendar_inactive_month_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_inactive_month_bg;
-			global::XLabs.Forms.Resource.Color.calendar_selected_day_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_selected_day_bg;
-			global::XLabs.Forms.Resource.Color.calendar_selected_range_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_selected_range_bg;
-			global::XLabs.Forms.Resource.Color.calendar_text_active = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_text_active;
-			global::XLabs.Forms.Resource.Color.calendar_text_inactive = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_text_inactive;
-			global::XLabs.Forms.Resource.Color.calendar_text_selected = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_text_selected;
-			global::XLabs.Forms.Resource.Color.calendar_text_selector = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_text_selector;
-			global::XLabs.Forms.Resource.Color.calendar_text_unselectable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.calendar_text_unselectable;
-			global::XLabs.Forms.Resource.Color.cardview_dark_background = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.cardview_dark_background;
-			global::XLabs.Forms.Resource.Color.cardview_light_background = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.cardview_light_background;
-			global::XLabs.Forms.Resource.Color.cardview_shadow_end_color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.cardview_shadow_end_color;
-			global::XLabs.Forms.Resource.Color.cardview_shadow_start_color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.cardview_shadow_start_color;
-			global::XLabs.Forms.Resource.Color.design_fab_shadow_end_color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.design_fab_shadow_end_color;
-			global::XLabs.Forms.Resource.Color.design_fab_shadow_mid_color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.design_fab_shadow_mid_color;
-			global::XLabs.Forms.Resource.Color.design_fab_shadow_start_color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.design_fab_shadow_start_color;
-			global::XLabs.Forms.Resource.Color.design_fab_stroke_end_inner_color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.design_fab_stroke_end_inner_color;
-			global::XLabs.Forms.Resource.Color.design_fab_stroke_end_outer_color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.design_fab_stroke_end_outer_color;
-			global::XLabs.Forms.Resource.Color.design_fab_stroke_top_inner_color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.design_fab_stroke_top_inner_color;
-			global::XLabs.Forms.Resource.Color.design_fab_stroke_top_outer_color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.design_fab_stroke_top_outer_color;
-			global::XLabs.Forms.Resource.Color.design_snackbar_background_color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.design_snackbar_background_color;
-			global::XLabs.Forms.Resource.Color.design_textinput_error_color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.design_textinput_error_color;
-			global::XLabs.Forms.Resource.Color.dim_foreground_disabled_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.dim_foreground_disabled_material_dark;
-			global::XLabs.Forms.Resource.Color.dim_foreground_disabled_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.dim_foreground_disabled_material_light;
-			global::XLabs.Forms.Resource.Color.dim_foreground_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.dim_foreground_material_dark;
-			global::XLabs.Forms.Resource.Color.dim_foreground_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.dim_foreground_material_light;
-			global::XLabs.Forms.Resource.Color.foreground_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.foreground_material_dark;
-			global::XLabs.Forms.Resource.Color.foreground_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.foreground_material_light;
-			global::XLabs.Forms.Resource.Color.highlighted_text_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.highlighted_text_material_dark;
-			global::XLabs.Forms.Resource.Color.highlighted_text_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.highlighted_text_material_light;
-			global::XLabs.Forms.Resource.Color.hint_foreground_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.hint_foreground_material_dark;
-			global::XLabs.Forms.Resource.Color.hint_foreground_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.hint_foreground_material_light;
-			global::XLabs.Forms.Resource.Color.material_blue_grey_800 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.material_blue_grey_800;
-			global::XLabs.Forms.Resource.Color.material_blue_grey_900 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.material_blue_grey_900;
-			global::XLabs.Forms.Resource.Color.material_blue_grey_950 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.material_blue_grey_950;
-			global::XLabs.Forms.Resource.Color.material_deep_teal_200 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.material_deep_teal_200;
-			global::XLabs.Forms.Resource.Color.material_deep_teal_500 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.material_deep_teal_500;
-			global::XLabs.Forms.Resource.Color.material_grey_100 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.material_grey_100;
-			global::XLabs.Forms.Resource.Color.material_grey_300 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.material_grey_300;
-			global::XLabs.Forms.Resource.Color.material_grey_50 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.material_grey_50;
-			global::XLabs.Forms.Resource.Color.material_grey_600 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.material_grey_600;
-			global::XLabs.Forms.Resource.Color.material_grey_800 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.material_grey_800;
-			global::XLabs.Forms.Resource.Color.material_grey_850 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.material_grey_850;
-			global::XLabs.Forms.Resource.Color.material_grey_900 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.material_grey_900;
-			global::XLabs.Forms.Resource.Color.primary_dark_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.primary_dark_material_dark;
-			global::XLabs.Forms.Resource.Color.primary_dark_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.primary_dark_material_light;
-			global::XLabs.Forms.Resource.Color.primary_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.primary_material_dark;
-			global::XLabs.Forms.Resource.Color.primary_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.primary_material_light;
-			global::XLabs.Forms.Resource.Color.primary_text_default_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.primary_text_default_material_dark;
-			global::XLabs.Forms.Resource.Color.primary_text_default_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.primary_text_default_material_light;
-			global::XLabs.Forms.Resource.Color.primary_text_disabled_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.primary_text_disabled_material_dark;
-			global::XLabs.Forms.Resource.Color.primary_text_disabled_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.primary_text_disabled_material_light;
-			global::XLabs.Forms.Resource.Color.ripple_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.ripple_material_dark;
-			global::XLabs.Forms.Resource.Color.ripple_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.ripple_material_light;
-			global::XLabs.Forms.Resource.Color.secondary_text_default_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.secondary_text_default_material_dark;
-			global::XLabs.Forms.Resource.Color.secondary_text_default_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.secondary_text_default_material_light;
-			global::XLabs.Forms.Resource.Color.secondary_text_disabled_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.secondary_text_disabled_material_dark;
-			global::XLabs.Forms.Resource.Color.secondary_text_disabled_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.secondary_text_disabled_material_light;
-			global::XLabs.Forms.Resource.Color.switch_thumb_disabled_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.switch_thumb_disabled_material_dark;
-			global::XLabs.Forms.Resource.Color.switch_thumb_disabled_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.switch_thumb_disabled_material_light;
-			global::XLabs.Forms.Resource.Color.switch_thumb_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.switch_thumb_material_dark;
-			global::XLabs.Forms.Resource.Color.switch_thumb_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.switch_thumb_material_light;
-			global::XLabs.Forms.Resource.Color.switch_thumb_normal_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.switch_thumb_normal_material_dark;
-			global::XLabs.Forms.Resource.Color.switch_thumb_normal_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Color.switch_thumb_normal_material_light;
-			global::XLabs.Forms.Resource.Dimension.abc_action_bar_content_inset_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::XLabs.Forms.Resource.Dimension.abc_action_bar_default_height_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_bar_default_height_material;
-			global::XLabs.Forms.Resource.Dimension.abc_action_bar_default_padding_end_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::XLabs.Forms.Resource.Dimension.abc_action_bar_default_padding_start_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::XLabs.Forms.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::XLabs.Forms.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::XLabs.Forms.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::XLabs.Forms.Resource.Dimension.abc_action_bar_progress_bar_size = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_bar_progress_bar_size;
-			global::XLabs.Forms.Resource.Dimension.abc_action_bar_stacked_max_height = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::XLabs.Forms.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::XLabs.Forms.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::XLabs.Forms.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::XLabs.Forms.Resource.Dimension.abc_action_button_min_height_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_button_min_height_material;
-			global::XLabs.Forms.Resource.Dimension.abc_action_button_min_width_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_button_min_width_material;
-			global::XLabs.Forms.Resource.Dimension.abc_action_button_min_width_overflow_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::XLabs.Forms.Resource.Dimension.abc_alert_dialog_button_bar_height = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::XLabs.Forms.Resource.Dimension.abc_button_inset_horizontal_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::XLabs.Forms.Resource.Dimension.abc_button_inset_vertical_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_button_inset_vertical_material;
-			global::XLabs.Forms.Resource.Dimension.abc_button_padding_horizontal_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::XLabs.Forms.Resource.Dimension.abc_button_padding_vertical_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_button_padding_vertical_material;
-			global::XLabs.Forms.Resource.Dimension.abc_config_prefDialogWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_config_prefDialogWidth;
-			global::XLabs.Forms.Resource.Dimension.abc_control_corner_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_control_corner_material;
-			global::XLabs.Forms.Resource.Dimension.abc_control_inset_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_control_inset_material;
-			global::XLabs.Forms.Resource.Dimension.abc_control_padding_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_control_padding_material;
-			global::XLabs.Forms.Resource.Dimension.abc_dialog_list_padding_vertical_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_dialog_list_padding_vertical_material;
-			global::XLabs.Forms.Resource.Dimension.abc_dialog_min_width_major = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_dialog_min_width_major;
-			global::XLabs.Forms.Resource.Dimension.abc_dialog_min_width_minor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_dialog_min_width_minor;
-			global::XLabs.Forms.Resource.Dimension.abc_dialog_padding_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_dialog_padding_material;
-			global::XLabs.Forms.Resource.Dimension.abc_dialog_padding_top_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_dialog_padding_top_material;
-			global::XLabs.Forms.Resource.Dimension.abc_disabled_alpha_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::XLabs.Forms.Resource.Dimension.abc_disabled_alpha_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::XLabs.Forms.Resource.Dimension.abc_dropdownitem_icon_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::XLabs.Forms.Resource.Dimension.abc_dropdownitem_text_padding_left = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::XLabs.Forms.Resource.Dimension.abc_dropdownitem_text_padding_right = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::XLabs.Forms.Resource.Dimension.abc_edit_text_inset_bottom_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::XLabs.Forms.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::XLabs.Forms.Resource.Dimension.abc_edit_text_inset_top_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::XLabs.Forms.Resource.Dimension.abc_floating_window_z = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_floating_window_z;
-			global::XLabs.Forms.Resource.Dimension.abc_list_item_padding_horizontal_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::XLabs.Forms.Resource.Dimension.abc_panel_menu_list_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_panel_menu_list_width;
-			global::XLabs.Forms.Resource.Dimension.abc_search_view_preferred_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_search_view_preferred_width;
-			global::XLabs.Forms.Resource.Dimension.abc_search_view_text_min_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_search_view_text_min_width;
-			global::XLabs.Forms.Resource.Dimension.abc_switch_padding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_switch_padding;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_body_1_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_body_1_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_body_2_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_body_2_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_button_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_button_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_caption_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_caption_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_display_1_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_display_1_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_display_2_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_display_2_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_display_3_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_display_3_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_display_4_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_display_4_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_headline_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_headline_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_large_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_large_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_medium_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_medium_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_menu_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_menu_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_small_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_small_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_subhead_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_subhead_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_title_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_title_material;
-			global::XLabs.Forms.Resource.Dimension.abc_text_size_title_material_toolbar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.abc_text_size_title_material_toolbar;
-			global::XLabs.Forms.Resource.Dimension.calendar_day_headers_paddingbottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.calendar_day_headers_paddingbottom;
-			global::XLabs.Forms.Resource.Dimension.calendar_month_title_bottommargin = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.calendar_month_title_bottommargin;
-			global::XLabs.Forms.Resource.Dimension.calendar_month_topmargin = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.calendar_month_topmargin;
-			global::XLabs.Forms.Resource.Dimension.calendar_text_medium = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.calendar_text_medium;
-			global::XLabs.Forms.Resource.Dimension.calendar_text_small = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.calendar_text_small;
-			global::XLabs.Forms.Resource.Dimension.cardview_compat_inset_shadow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.cardview_compat_inset_shadow;
-			global::XLabs.Forms.Resource.Dimension.cardview_default_elevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.cardview_default_elevation;
-			global::XLabs.Forms.Resource.Dimension.cardview_default_radius = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.cardview_default_radius;
-			global::XLabs.Forms.Resource.Dimension.design_appbar_elevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_appbar_elevation;
-			global::XLabs.Forms.Resource.Dimension.design_fab_border_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_fab_border_width;
-			global::XLabs.Forms.Resource.Dimension.design_fab_content_size = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_fab_content_size;
-			global::XLabs.Forms.Resource.Dimension.design_fab_elevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_fab_elevation;
-			global::XLabs.Forms.Resource.Dimension.design_fab_size_mini = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_fab_size_mini;
-			global::XLabs.Forms.Resource.Dimension.design_fab_size_normal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_fab_size_normal;
-			global::XLabs.Forms.Resource.Dimension.design_fab_translation_z_pressed = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_fab_translation_z_pressed;
-			global::XLabs.Forms.Resource.Dimension.design_navigation_elevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_navigation_elevation;
-			global::XLabs.Forms.Resource.Dimension.design_navigation_icon_padding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_navigation_icon_padding;
-			global::XLabs.Forms.Resource.Dimension.design_navigation_icon_size = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_navigation_icon_size;
-			global::XLabs.Forms.Resource.Dimension.design_navigation_max_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_navigation_max_width;
-			global::XLabs.Forms.Resource.Dimension.design_navigation_padding_bottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_navigation_padding_bottom;
-			global::XLabs.Forms.Resource.Dimension.design_navigation_padding_top_default = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_navigation_padding_top_default;
-			global::XLabs.Forms.Resource.Dimension.design_navigation_separator_vertical_padding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_navigation_separator_vertical_padding;
-			global::XLabs.Forms.Resource.Dimension.design_snackbar_action_inline_max_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_snackbar_action_inline_max_width;
-			global::XLabs.Forms.Resource.Dimension.design_snackbar_background_corner_radius = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_snackbar_background_corner_radius;
-			global::XLabs.Forms.Resource.Dimension.design_snackbar_elevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_snackbar_elevation;
-			global::XLabs.Forms.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
-			global::XLabs.Forms.Resource.Dimension.design_snackbar_max_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_snackbar_max_width;
-			global::XLabs.Forms.Resource.Dimension.design_snackbar_min_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_snackbar_min_width;
-			global::XLabs.Forms.Resource.Dimension.design_snackbar_padding_horizontal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_snackbar_padding_horizontal;
-			global::XLabs.Forms.Resource.Dimension.design_snackbar_padding_vertical = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_snackbar_padding_vertical;
-			global::XLabs.Forms.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines;
-			global::XLabs.Forms.Resource.Dimension.design_snackbar_text_size = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_snackbar_text_size;
-			global::XLabs.Forms.Resource.Dimension.design_tab_max_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_tab_max_width;
-			global::XLabs.Forms.Resource.Dimension.design_tab_min_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.design_tab_min_width;
-			global::XLabs.Forms.Resource.Dimension.dialog_fixed_height_major = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.dialog_fixed_height_major;
-			global::XLabs.Forms.Resource.Dimension.dialog_fixed_height_minor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.dialog_fixed_height_minor;
-			global::XLabs.Forms.Resource.Dimension.dialog_fixed_width_major = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.dialog_fixed_width_major;
-			global::XLabs.Forms.Resource.Dimension.dialog_fixed_width_minor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.dialog_fixed_width_minor;
-			global::XLabs.Forms.Resource.Dimension.disabled_alpha_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.disabled_alpha_material_dark;
-			global::XLabs.Forms.Resource.Dimension.disabled_alpha_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.disabled_alpha_material_light;
-			global::XLabs.Forms.Resource.Dimension.highlight_alpha_material_colored = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.highlight_alpha_material_colored;
-			global::XLabs.Forms.Resource.Dimension.highlight_alpha_material_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.highlight_alpha_material_dark;
-			global::XLabs.Forms.Resource.Dimension.highlight_alpha_material_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.highlight_alpha_material_light;
-			global::XLabs.Forms.Resource.Dimension.mr_media_route_controller_art_max_height = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.mr_media_route_controller_art_max_height;
-			global::XLabs.Forms.Resource.Dimension.notification_large_icon_height = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.notification_large_icon_height;
-			global::XLabs.Forms.Resource.Dimension.notification_large_icon_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.notification_large_icon_width;
-			global::XLabs.Forms.Resource.Dimension.notification_subtext_size = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Dimension.notification_subtext_size;
-			global::XLabs.Forms.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_action_bar_item_background_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_action_bar_item_background_material;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_borderless_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_borderless_material;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_check_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_check_material;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_colored_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_colored_material;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_default_mtrl_shape = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_radio_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_radio_material;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::XLabs.Forms.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::XLabs.Forms.Resource.Drawable.abc_cab_background_internal_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_cab_background_internal_bg;
-			global::XLabs.Forms.Resource.Drawable.abc_cab_background_top_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_cab_background_top_material;
-			global::XLabs.Forms.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_control_background_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_control_background_material;
-			global::XLabs.Forms.Resource.Drawable.abc_dialog_material_background_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_dialog_material_background_dark;
-			global::XLabs.Forms.Resource.Drawable.abc_dialog_material_background_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_dialog_material_background_light;
-			global::XLabs.Forms.Resource.Drawable.abc_edit_text_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_edit_text_material;
-			global::XLabs.Forms.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_ic_clear_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ic_clear_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_ic_search_api_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ic_search_api_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_item_background_holo_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_item_background_holo_dark;
-			global::XLabs.Forms.Resource.Drawable.abc_item_background_holo_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_item_background_holo_light;
-			global::XLabs.Forms.Resource.Drawable.abc_list_divider_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_list_focused_holo = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_list_focused_holo;
-			global::XLabs.Forms.Resource.Drawable.abc_list_longpressed_holo = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_list_longpressed_holo;
-			global::XLabs.Forms.Resource.Drawable.abc_list_pressed_holo_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::XLabs.Forms.Resource.Drawable.abc_list_pressed_holo_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_list_pressed_holo_light;
-			global::XLabs.Forms.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::XLabs.Forms.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::XLabs.Forms.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::XLabs.Forms.Resource.Drawable.abc_list_selector_disabled_holo_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::XLabs.Forms.Resource.Drawable.abc_list_selector_holo_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_list_selector_holo_dark;
-			global::XLabs.Forms.Resource.Drawable.abc_list_selector_holo_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_list_selector_holo_light;
-			global::XLabs.Forms.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::XLabs.Forms.Resource.Drawable.abc_popup_background_mtrl_mult = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::XLabs.Forms.Resource.Drawable.abc_ratingbar_full_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_ratingbar_full_material;
-			global::XLabs.Forms.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_spinner_textfield_background_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::XLabs.Forms.Resource.Drawable.abc_switch_thumb_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_switch_thumb_material;
-			global::XLabs.Forms.Resource.Drawable.abc_switch_track_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_tab_indicator_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_tab_indicator_material;
-			global::XLabs.Forms.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_text_cursor_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_text_cursor_material;
-			global::XLabs.Forms.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::XLabs.Forms.Resource.Drawable.abc_textfield_search_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.abc_textfield_search_material;
-			global::XLabs.Forms.Resource.Drawable.ad16 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ad16;
-			global::XLabs.Forms.Resource.Drawable.calendar_bg_selector = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.calendar_bg_selector;
-			global::XLabs.Forms.Resource.Drawable.design_fab_background = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.design_fab_background;
-			global::XLabs.Forms.Resource.Drawable.design_snackbar_background = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.design_snackbar_background;
-			global::XLabs.Forms.Resource.Drawable.ic_cast_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_cast_dark;
-			global::XLabs.Forms.Resource.Drawable.ic_cast_disabled_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_cast_disabled_light;
-			global::XLabs.Forms.Resource.Drawable.ic_cast_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_cast_light;
-			global::XLabs.Forms.Resource.Drawable.ic_cast_off_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_cast_off_light;
-			global::XLabs.Forms.Resource.Drawable.ic_cast_on_0_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_cast_on_0_light;
-			global::XLabs.Forms.Resource.Drawable.ic_cast_on_1_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_cast_on_1_light;
-			global::XLabs.Forms.Resource.Drawable.ic_cast_on_2_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_cast_on_2_light;
-			global::XLabs.Forms.Resource.Drawable.ic_cast_on_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_cast_on_light;
-			global::XLabs.Forms.Resource.Drawable.ic_media_pause = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_media_pause;
-			global::XLabs.Forms.Resource.Drawable.ic_media_play = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_media_play;
-			global::XLabs.Forms.Resource.Drawable.ic_media_route_disabled_mono_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_media_route_disabled_mono_dark;
-			global::XLabs.Forms.Resource.Drawable.ic_media_route_off_mono_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_media_route_off_mono_dark;
-			global::XLabs.Forms.Resource.Drawable.ic_media_route_on_0_mono_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_media_route_on_0_mono_dark;
-			global::XLabs.Forms.Resource.Drawable.ic_media_route_on_1_mono_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_media_route_on_1_mono_dark;
-			global::XLabs.Forms.Resource.Drawable.ic_media_route_on_2_mono_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_media_route_on_2_mono_dark;
-			global::XLabs.Forms.Resource.Drawable.ic_media_route_on_mono_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_media_route_on_mono_dark;
-			global::XLabs.Forms.Resource.Drawable.ic_pause_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_pause_dark;
-			global::XLabs.Forms.Resource.Drawable.ic_pause_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_pause_light;
-			global::XLabs.Forms.Resource.Drawable.ic_play_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_play_dark;
-			global::XLabs.Forms.Resource.Drawable.ic_play_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_play_light;
-			global::XLabs.Forms.Resource.Drawable.ic_setting_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_setting_dark;
-			global::XLabs.Forms.Resource.Drawable.ic_setting_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.ic_setting_light;
-			global::XLabs.Forms.Resource.Drawable.mr_ic_cast_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.mr_ic_cast_dark;
-			global::XLabs.Forms.Resource.Drawable.mr_ic_cast_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.mr_ic_cast_light;
-			global::XLabs.Forms.Resource.Drawable.mr_ic_media_route_connecting_mono_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.mr_ic_media_route_connecting_mono_dark;
-			global::XLabs.Forms.Resource.Drawable.mr_ic_media_route_connecting_mono_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.mr_ic_media_route_connecting_mono_light;
-			global::XLabs.Forms.Resource.Drawable.mr_ic_media_route_mono_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.mr_ic_media_route_mono_dark;
-			global::XLabs.Forms.Resource.Drawable.mr_ic_media_route_mono_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.mr_ic_media_route_mono_light;
-			global::XLabs.Forms.Resource.Drawable.mr_ic_pause_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.mr_ic_pause_dark;
-			global::XLabs.Forms.Resource.Drawable.mr_ic_pause_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.mr_ic_pause_light;
-			global::XLabs.Forms.Resource.Drawable.mr_ic_play_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.mr_ic_play_dark;
-			global::XLabs.Forms.Resource.Drawable.mr_ic_play_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.mr_ic_play_light;
-			global::XLabs.Forms.Resource.Drawable.mr_ic_settings_dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.mr_ic_settings_dark;
-			global::XLabs.Forms.Resource.Drawable.mr_ic_settings_light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.mr_ic_settings_light;
-			global::XLabs.Forms.Resource.Drawable.notification_template_icon_bg = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Drawable.notification_template_icon_bg;
-			global::XLabs.Forms.Resource.Id.action0 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action0;
-			global::XLabs.Forms.Resource.Id.action_bar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_bar;
-			global::XLabs.Forms.Resource.Id.action_bar_activity_content = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_bar_activity_content;
-			global::XLabs.Forms.Resource.Id.action_bar_container = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_bar_container;
-			global::XLabs.Forms.Resource.Id.action_bar_root = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_bar_root;
-			global::XLabs.Forms.Resource.Id.action_bar_spinner = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_bar_spinner;
-			global::XLabs.Forms.Resource.Id.action_bar_subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_bar_subtitle;
-			global::XLabs.Forms.Resource.Id.action_bar_title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_bar_title;
-			global::XLabs.Forms.Resource.Id.action_context_bar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_context_bar;
-			global::XLabs.Forms.Resource.Id.action_divider = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_divider;
-			global::XLabs.Forms.Resource.Id.action_menu_divider = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_menu_divider;
-			global::XLabs.Forms.Resource.Id.action_menu_presenter = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_menu_presenter;
-			global::XLabs.Forms.Resource.Id.action_mode_bar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_mode_bar;
-			global::XLabs.Forms.Resource.Id.action_mode_bar_stub = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_mode_bar_stub;
-			global::XLabs.Forms.Resource.Id.action_mode_close_button = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.action_mode_close_button;
-			global::XLabs.Forms.Resource.Id.activity_chooser_view_content = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.activity_chooser_view_content;
-			global::XLabs.Forms.Resource.Id.alertTitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.alertTitle;
-			global::XLabs.Forms.Resource.Id.always = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.always;
-			global::XLabs.Forms.Resource.Id.art = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.art;
-			global::XLabs.Forms.Resource.Id.beginning = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.beginning;
-			global::XLabs.Forms.Resource.Id.bottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.bottom;
-			global::XLabs.Forms.Resource.Id.buttonPanel = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.buttonPanel;
-			global::XLabs.Forms.Resource.Id.buttons = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.buttons;
-			global::XLabs.Forms.Resource.Id.calendar_grid = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.calendar_grid;
-			global::XLabs.Forms.Resource.Id.calendar_view = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.calendar_view;
-			global::XLabs.Forms.Resource.Id.cancel_action = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.cancel_action;
-			global::XLabs.Forms.Resource.Id.center = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.center;
-			global::XLabs.Forms.Resource.Id.center_horizontal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.center_horizontal;
-			global::XLabs.Forms.Resource.Id.center_vertical = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.center_vertical;
-			global::XLabs.Forms.Resource.Id.checkbox = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.checkbox;
-			global::XLabs.Forms.Resource.Id.chronometer = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.chronometer;
-			global::XLabs.Forms.Resource.Id.clip_horizontal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.clip_horizontal;
-			global::XLabs.Forms.Resource.Id.clip_vertical = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.clip_vertical;
-			global::XLabs.Forms.Resource.Id.collapseActionView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.collapseActionView;
-			global::XLabs.Forms.Resource.Id.contentPanel = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.contentPanel;
-			global::XLabs.Forms.Resource.Id.custom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.custom;
-			global::XLabs.Forms.Resource.Id.customPanel = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.customPanel;
-			global::XLabs.Forms.Resource.Id.decor_content_parent = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.decor_content_parent;
-			global::XLabs.Forms.Resource.Id.default_activity_button = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.default_activity_button;
-			global::XLabs.Forms.Resource.Id.default_control_frame = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.default_control_frame;
-			global::XLabs.Forms.Resource.Id.disableHome = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.disableHome;
-			global::XLabs.Forms.Resource.Id.disconnect = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.disconnect;
-			global::XLabs.Forms.Resource.Id.edit_query = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.edit_query;
-			global::XLabs.Forms.Resource.Id.end = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.end;
-			global::XLabs.Forms.Resource.Id.end_padder = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.end_padder;
-			global::XLabs.Forms.Resource.Id.enterAlways = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.enterAlways;
-			global::XLabs.Forms.Resource.Id.enterAlwaysCollapsed = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.enterAlwaysCollapsed;
-			global::XLabs.Forms.Resource.Id.exitUntilCollapsed = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.exitUntilCollapsed;
-			global::XLabs.Forms.Resource.Id.expand_activities_button = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.expand_activities_button;
-			global::XLabs.Forms.Resource.Id.expanded_menu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.expanded_menu;
-			global::XLabs.Forms.Resource.Id.fill = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.fill;
-			global::XLabs.Forms.Resource.Id.fill_horizontal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.fill_horizontal;
-			global::XLabs.Forms.Resource.Id.fill_vertical = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.fill_vertical;
-			global::XLabs.Forms.Resource.Id.@fixed = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.@fixed;
-			global::XLabs.Forms.Resource.Id.home = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.home;
-			global::XLabs.Forms.Resource.Id.homeAsUp = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.homeAsUp;
-			global::XLabs.Forms.Resource.Id.icon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.icon;
-			global::XLabs.Forms.Resource.Id.ifRoom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.ifRoom;
-			global::XLabs.Forms.Resource.Id.image = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.image;
-			global::XLabs.Forms.Resource.Id.info = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.info;
-			global::XLabs.Forms.Resource.Id.left = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.left;
-			global::XLabs.Forms.Resource.Id.left_arrow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.left_arrow;
-			global::XLabs.Forms.Resource.Id.line1 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.line1;
-			global::XLabs.Forms.Resource.Id.line3 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.line3;
-			global::XLabs.Forms.Resource.Id.listMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.listMode;
-			global::XLabs.Forms.Resource.Id.list_item = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.list_item;
-			global::XLabs.Forms.Resource.Id.media_actions = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.media_actions;
-			global::XLabs.Forms.Resource.Id.media_route_control_frame = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.media_route_control_frame;
-			global::XLabs.Forms.Resource.Id.media_route_list = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.media_route_list;
-			global::XLabs.Forms.Resource.Id.media_route_volume_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.media_route_volume_layout;
-			global::XLabs.Forms.Resource.Id.media_route_volume_slider = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.media_route_volume_slider;
-			global::XLabs.Forms.Resource.Id.middle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.middle;
-			global::XLabs.Forms.Resource.Id.mini = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.mini;
-			global::XLabs.Forms.Resource.Id.multiply = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.multiply;
-			global::XLabs.Forms.Resource.Id.never = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.never;
-			global::XLabs.Forms.Resource.Id.none = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.none;
-			global::XLabs.Forms.Resource.Id.normal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.normal;
-			global::XLabs.Forms.Resource.Id.parallax = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.parallax;
-			global::XLabs.Forms.Resource.Id.parentPanel = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.parentPanel;
-			global::XLabs.Forms.Resource.Id.pin = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.pin;
-			global::XLabs.Forms.Resource.Id.play_pause = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.play_pause;
-			global::XLabs.Forms.Resource.Id.progress_circular = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.progress_circular;
-			global::XLabs.Forms.Resource.Id.progress_horizontal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.progress_horizontal;
-			global::XLabs.Forms.Resource.Id.radio = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.radio;
-			global::XLabs.Forms.Resource.Id.right = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.right;
-			global::XLabs.Forms.Resource.Id.right_arrow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.right_arrow;
-			global::XLabs.Forms.Resource.Id.route_name = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.route_name;
-			global::XLabs.Forms.Resource.Id.screen = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.screen;
-			global::XLabs.Forms.Resource.Id.scroll = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.scroll;
-			global::XLabs.Forms.Resource.Id.scrollView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.scrollView;
-			global::XLabs.Forms.Resource.Id.scrollable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.scrollable;
-			global::XLabs.Forms.Resource.Id.search_badge = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.search_badge;
-			global::XLabs.Forms.Resource.Id.search_bar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.search_bar;
-			global::XLabs.Forms.Resource.Id.search_button = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.search_button;
-			global::XLabs.Forms.Resource.Id.search_close_btn = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.search_close_btn;
-			global::XLabs.Forms.Resource.Id.search_edit_frame = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.search_edit_frame;
-			global::XLabs.Forms.Resource.Id.search_go_btn = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.search_go_btn;
-			global::XLabs.Forms.Resource.Id.search_mag_icon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.search_mag_icon;
-			global::XLabs.Forms.Resource.Id.search_plate = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.search_plate;
-			global::XLabs.Forms.Resource.Id.search_src_text = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.search_src_text;
-			global::XLabs.Forms.Resource.Id.search_voice_btn = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.search_voice_btn;
-			global::XLabs.Forms.Resource.Id.select_dialog_listview = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.select_dialog_listview;
-			global::XLabs.Forms.Resource.Id.settings = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.settings;
-			global::XLabs.Forms.Resource.Id.shortcut = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.shortcut;
-			global::XLabs.Forms.Resource.Id.showCustom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.showCustom;
-			global::XLabs.Forms.Resource.Id.showHome = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.showHome;
-			global::XLabs.Forms.Resource.Id.showTitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.showTitle;
-			global::XLabs.Forms.Resource.Id.snackbar_action = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.snackbar_action;
-			global::XLabs.Forms.Resource.Id.snackbar_text = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.snackbar_text;
-			global::XLabs.Forms.Resource.Id.split_action_bar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.split_action_bar;
-			global::XLabs.Forms.Resource.Id.src_atop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.src_atop;
-			global::XLabs.Forms.Resource.Id.src_in = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.src_in;
-			global::XLabs.Forms.Resource.Id.src_over = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.src_over;
-			global::XLabs.Forms.Resource.Id.start = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.start;
-			global::XLabs.Forms.Resource.Id.status_bar_latest_event_content = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.status_bar_latest_event_content;
-			global::XLabs.Forms.Resource.Id.stop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.stop;
-			global::XLabs.Forms.Resource.Id.submit_area = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.submit_area;
-			global::XLabs.Forms.Resource.Id.subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.subtitle;
-			global::XLabs.Forms.Resource.Id.tabMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.tabMode;
-			global::XLabs.Forms.Resource.Id.text = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.text;
-			global::XLabs.Forms.Resource.Id.text2 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.text2;
-			global::XLabs.Forms.Resource.Id.textSpacerNoButtons = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.textSpacerNoButtons;
-			global::XLabs.Forms.Resource.Id.time = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.time;
-			global::XLabs.Forms.Resource.Id.title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.title;
-			global::XLabs.Forms.Resource.Id.title_bar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.title_bar;
-			global::XLabs.Forms.Resource.Id.title_template = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.title_template;
-			global::XLabs.Forms.Resource.Id.top = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.top;
-			global::XLabs.Forms.Resource.Id.topPanel = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.topPanel;
-			global::XLabs.Forms.Resource.Id.up = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.up;
-			global::XLabs.Forms.Resource.Id.useLogo = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.useLogo;
-			global::XLabs.Forms.Resource.Id.view_offset_helper = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.view_offset_helper;
-			global::XLabs.Forms.Resource.Id.withText = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.withText;
-			global::XLabs.Forms.Resource.Id.wrap_content = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Id.wrap_content;
-			global::XLabs.Forms.Resource.Integer.abc_config_activityDefaultDur = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Integer.abc_config_activityDefaultDur;
-			global::XLabs.Forms.Resource.Integer.abc_config_activityShortDur = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Integer.abc_config_activityShortDur;
-			global::XLabs.Forms.Resource.Integer.abc_max_action_buttons = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Integer.abc_max_action_buttons;
-			global::XLabs.Forms.Resource.Integer.cancel_button_image_alpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Integer.cancel_button_image_alpha;
-			global::XLabs.Forms.Resource.Integer.design_snackbar_text_max_lines = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Integer.design_snackbar_text_max_lines;
-			global::XLabs.Forms.Resource.Integer.status_bar_notification_info_maxnum = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Integer.status_bar_notification_info_maxnum;
-			global::XLabs.Forms.Resource.Layout.abc_action_bar_title_item = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_action_bar_title_item;
-			global::XLabs.Forms.Resource.Layout.abc_action_bar_up_container = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_action_bar_up_container;
-			global::XLabs.Forms.Resource.Layout.abc_action_bar_view_list_nav_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_action_bar_view_list_nav_layout;
-			global::XLabs.Forms.Resource.Layout.abc_action_menu_item_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_action_menu_item_layout;
-			global::XLabs.Forms.Resource.Layout.abc_action_menu_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_action_menu_layout;
-			global::XLabs.Forms.Resource.Layout.abc_action_mode_bar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_action_mode_bar;
-			global::XLabs.Forms.Resource.Layout.abc_action_mode_close_item_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_action_mode_close_item_material;
-			global::XLabs.Forms.Resource.Layout.abc_activity_chooser_view = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_activity_chooser_view;
-			global::XLabs.Forms.Resource.Layout.abc_activity_chooser_view_list_item = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::XLabs.Forms.Resource.Layout.abc_alert_dialog_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_alert_dialog_material;
-			global::XLabs.Forms.Resource.Layout.abc_dialog_title_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_dialog_title_material;
-			global::XLabs.Forms.Resource.Layout.abc_expanded_menu_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_expanded_menu_layout;
-			global::XLabs.Forms.Resource.Layout.abc_list_menu_item_checkbox = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_list_menu_item_checkbox;
-			global::XLabs.Forms.Resource.Layout.abc_list_menu_item_icon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_list_menu_item_icon;
-			global::XLabs.Forms.Resource.Layout.abc_list_menu_item_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_list_menu_item_layout;
-			global::XLabs.Forms.Resource.Layout.abc_list_menu_item_radio = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_list_menu_item_radio;
-			global::XLabs.Forms.Resource.Layout.abc_popup_menu_item_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_popup_menu_item_layout;
-			global::XLabs.Forms.Resource.Layout.abc_screen_content_include = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_screen_content_include;
-			global::XLabs.Forms.Resource.Layout.abc_screen_simple = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_screen_simple;
-			global::XLabs.Forms.Resource.Layout.abc_screen_simple_overlay_action_mode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::XLabs.Forms.Resource.Layout.abc_screen_toolbar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_screen_toolbar;
-			global::XLabs.Forms.Resource.Layout.abc_search_dropdown_item_icons_2line = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::XLabs.Forms.Resource.Layout.abc_search_view = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_search_view;
-			global::XLabs.Forms.Resource.Layout.abc_select_dialog_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.abc_select_dialog_material;
-			global::XLabs.Forms.Resource.Layout.calendar_pager_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.calendar_pager_layout;
-			global::XLabs.Forms.Resource.Layout.calendar_picker = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.calendar_picker;
-			global::XLabs.Forms.Resource.Layout.design_layout_snackbar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.design_layout_snackbar;
-			global::XLabs.Forms.Resource.Layout.design_layout_snackbar_include = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.design_layout_snackbar_include;
-			global::XLabs.Forms.Resource.Layout.design_layout_tab_icon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.design_layout_tab_icon;
-			global::XLabs.Forms.Resource.Layout.design_layout_tab_text = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.design_layout_tab_text;
-			global::XLabs.Forms.Resource.Layout.design_navigation_item = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.design_navigation_item;
-			global::XLabs.Forms.Resource.Layout.design_navigation_item_header = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.design_navigation_item_header;
-			global::XLabs.Forms.Resource.Layout.design_navigation_item_separator = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.design_navigation_item_separator;
-			global::XLabs.Forms.Resource.Layout.design_navigation_item_subheader = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.design_navigation_item_subheader;
-			global::XLabs.Forms.Resource.Layout.design_navigation_menu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.design_navigation_menu;
-			global::XLabs.Forms.Resource.Layout.dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.dialog;
-			global::XLabs.Forms.Resource.Layout.month = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.month;
-			global::XLabs.Forms.Resource.Layout.mr_media_route_chooser_dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.mr_media_route_chooser_dialog;
-			global::XLabs.Forms.Resource.Layout.mr_media_route_controller_material_dialog_b = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.mr_media_route_controller_material_dialog_b;
-			global::XLabs.Forms.Resource.Layout.mr_media_route_list_item = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.mr_media_route_list_item;
-			global::XLabs.Forms.Resource.Layout.notification_media_action = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.notification_media_action;
-			global::XLabs.Forms.Resource.Layout.notification_media_cancel_action = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.notification_media_cancel_action;
-			global::XLabs.Forms.Resource.Layout.notification_template_big_media = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.notification_template_big_media;
-			global::XLabs.Forms.Resource.Layout.notification_template_big_media_narrow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.notification_template_big_media_narrow;
-			global::XLabs.Forms.Resource.Layout.notification_template_lines = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.notification_template_lines;
-			global::XLabs.Forms.Resource.Layout.notification_template_media = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.notification_template_media;
-			global::XLabs.Forms.Resource.Layout.notification_template_part_chronometer = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.notification_template_part_chronometer;
-			global::XLabs.Forms.Resource.Layout.notification_template_part_time = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.notification_template_part_time;
-			global::XLabs.Forms.Resource.Layout.select_dialog_item_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.select_dialog_item_material;
-			global::XLabs.Forms.Resource.Layout.select_dialog_multichoice_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.select_dialog_multichoice_material;
-			global::XLabs.Forms.Resource.Layout.select_dialog_singlechoice_material = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.select_dialog_singlechoice_material;
-			global::XLabs.Forms.Resource.Layout.support_simple_spinner_dropdown_item = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::XLabs.Forms.Resource.Layout.week = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Layout.week;
-			global::XLabs.Forms.Resource.String.ApplicationName = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.ApplicationName;
-			global::XLabs.Forms.Resource.String.Hello = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.Hello;
-			global::XLabs.Forms.Resource.String.abc_action_bar_home_description = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_action_bar_home_description;
-			global::XLabs.Forms.Resource.String.abc_action_bar_home_description_format = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_action_bar_home_description_format;
-			global::XLabs.Forms.Resource.String.abc_action_bar_home_subtitle_description_format = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_action_bar_home_subtitle_description_format;
-			global::XLabs.Forms.Resource.String.abc_action_bar_up_description = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_action_bar_up_description;
-			global::XLabs.Forms.Resource.String.abc_action_menu_overflow_description = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_action_menu_overflow_description;
-			global::XLabs.Forms.Resource.String.abc_action_mode_done = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_action_mode_done;
-			global::XLabs.Forms.Resource.String.abc_activity_chooser_view_see_all = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_activity_chooser_view_see_all;
-			global::XLabs.Forms.Resource.String.abc_activitychooserview_choose_application = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_activitychooserview_choose_application;
-			global::XLabs.Forms.Resource.String.abc_search_hint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_search_hint;
-			global::XLabs.Forms.Resource.String.abc_searchview_description_clear = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_searchview_description_clear;
-			global::XLabs.Forms.Resource.String.abc_searchview_description_query = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_searchview_description_query;
-			global::XLabs.Forms.Resource.String.abc_searchview_description_search = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_searchview_description_search;
-			global::XLabs.Forms.Resource.String.abc_searchview_description_submit = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_searchview_description_submit;
-			global::XLabs.Forms.Resource.String.abc_searchview_description_voice = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_searchview_description_voice;
-			global::XLabs.Forms.Resource.String.abc_shareactionprovider_share_with = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_shareactionprovider_share_with;
-			global::XLabs.Forms.Resource.String.abc_shareactionprovider_share_with_application = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_shareactionprovider_share_with_application;
-			global::XLabs.Forms.Resource.String.abc_toolbar_collapse_description = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.abc_toolbar_collapse_description;
-			global::XLabs.Forms.Resource.String.appbar_scrolling_view_behavior = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.appbar_scrolling_view_behavior;
-			global::XLabs.Forms.Resource.String.day_name_format = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.day_name_format;
-			global::XLabs.Forms.Resource.String.full_date_format = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.full_date_format;
-			global::XLabs.Forms.Resource.String.invalid_date = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.invalid_date;
-			global::XLabs.Forms.Resource.String.library_name = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.library_name;
-			global::XLabs.Forms.Resource.String.month_name_format = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.month_name_format;
-			global::XLabs.Forms.Resource.String.mr_media_route_button_content_description = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.mr_media_route_button_content_description;
-			global::XLabs.Forms.Resource.String.mr_media_route_chooser_searching = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.mr_media_route_chooser_searching;
-			global::XLabs.Forms.Resource.String.mr_media_route_chooser_title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.mr_media_route_chooser_title;
-			global::XLabs.Forms.Resource.String.mr_media_route_controller_disconnect = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.mr_media_route_controller_disconnect;
-			global::XLabs.Forms.Resource.String.mr_media_route_controller_no_info_available = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.mr_media_route_controller_no_info_available;
-			global::XLabs.Forms.Resource.String.mr_media_route_controller_pause = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.mr_media_route_controller_pause;
-			global::XLabs.Forms.Resource.String.mr_media_route_controller_play = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.mr_media_route_controller_play;
-			global::XLabs.Forms.Resource.String.mr_media_route_controller_settings_description = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.mr_media_route_controller_settings_description;
-			global::XLabs.Forms.Resource.String.mr_media_route_controller_stop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.mr_media_route_controller_stop;
-			global::XLabs.Forms.Resource.String.mr_system_route_name = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.mr_system_route_name;
-			global::XLabs.Forms.Resource.String.mr_user_route_category_name = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.mr_user_route_category_name;
-			global::XLabs.Forms.Resource.String.status_bar_notification_info_overflow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.status_bar_notification_info_overflow;
-			global::XLabs.Forms.Resource.Style.AlertDialog_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.AlertDialog_AppCompat;
-			global::XLabs.Forms.Resource.Style.AlertDialog_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.AlertDialog_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Animation_AppCompat_Dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Animation_AppCompat_Dialog;
-			global::XLabs.Forms.Resource.Style.Animation_AppCompat_DropDownUp = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::XLabs.Forms.Resource.Style.Base_AlertDialog_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_AlertDialog_AppCompat;
-			global::XLabs.Forms.Resource.Style.Base_AlertDialog_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Base_Animation_AppCompat_Dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::XLabs.Forms.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp;
-			global::XLabs.Forms.Resource.Style.Base_DialogWindowTitle_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::XLabs.Forms.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Button = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Large = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Small = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::XLabs.Forms.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::XLabs.Forms.Resource.Style.Base_ThemeOverlay_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::XLabs.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::XLabs.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::XLabs.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::XLabs.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::XLabs.Forms.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::XLabs.Forms.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::XLabs.Forms.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::XLabs.Forms.Resource.Style.Base_V21_Theme_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V21_Theme_AppCompat;
-			global::XLabs.Forms.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::XLabs.Forms.Resource.Style.Base_V21_Theme_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::XLabs.Forms.Resource.Style.Base_V22_Theme_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V22_Theme_AppCompat;
-			global::XLabs.Forms.Resource.Style.Base_V22_Theme_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Base_V23_Theme_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V23_Theme_AppCompat;
-			global::XLabs.Forms.Resource.Style.Base_V23_Theme_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Base_V7_Theme_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V7_Theme_AppCompat;
-			global::XLabs.Forms.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::XLabs.Forms.Resource.Style.Base_V7_Theme_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::XLabs.Forms.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::XLabs.Forms.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionButton = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Button = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Button_Small = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_EditText = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ListView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_RatingBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_SearchView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Spinner = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Toolbar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::XLabs.Forms.Resource.Style.Base_Widget_Design_TabLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Base_Widget_Design_TabLayout;
-			global::XLabs.Forms.Resource.Style.CalendarCell = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.CalendarCell;
-			global::XLabs.Forms.Resource.Style.CalendarCell_CalendarDate = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.CalendarCell_CalendarDate;
-			global::XLabs.Forms.Resource.Style.CalendarCell_DayHeader = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.CalendarCell_DayHeader;
-			global::XLabs.Forms.Resource.Style.CalendarTitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.CalendarTitle;
-			global::XLabs.Forms.Resource.Style.CardView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.CardView;
-			global::XLabs.Forms.Resource.Style.CardView_Dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.CardView_Dark;
-			global::XLabs.Forms.Resource.Style.CardView_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.CardView_Light;
-			global::XLabs.Forms.Resource.Style.Platform_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Platform_AppCompat;
-			global::XLabs.Forms.Resource.Style.Platform_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Platform_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Platform_ThemeOverlay_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::XLabs.Forms.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::XLabs.Forms.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Platform_V11_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Platform_V11_AppCompat;
-			global::XLabs.Forms.Resource.Style.Platform_V11_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Platform_V11_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Platform_V14_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Platform_V14_AppCompat;
-			global::XLabs.Forms.Resource.Style.Platform_V14_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Platform_V14_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Platform_Widget_AppCompat_Spinner = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_ActionButton_Overflow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionButton_Overflow;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Body1 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Body2 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Button = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Button;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Caption = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Display1 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Display2 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Display3 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Display4 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Headline = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Large = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Large;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Medium = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Menu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Small = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Small;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Subhead = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Title;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::XLabs.Forms.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
-			global::XLabs.Forms.Resource.Style.TextAppearance_Design_Error = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_Design_Error;
-			global::XLabs.Forms.Resource.Style.TextAppearance_Design_Hint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_Design_Hint;
-			global::XLabs.Forms.Resource.Style.TextAppearance_Design_Snackbar_Message = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_Design_Snackbar_Message;
-			global::XLabs.Forms.Resource.Style.TextAppearance_Design_Tab = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_Design_Tab;
-			global::XLabs.Forms.Resource.Style.TextAppearance_StatusBar_EventContent = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent;
-			global::XLabs.Forms.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
-			global::XLabs.Forms.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
-			global::XLabs.Forms.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
-			global::XLabs.Forms.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
-			global::XLabs.Forms.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::XLabs.Forms.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::XLabs.Forms.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_CompactMenu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_Dialog;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Dialog_Alert = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light_Dialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::XLabs.Forms.Resource.Style.Theme_AppCompat_NoActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::XLabs.Forms.Resource.Style.Theme_MediaRouter = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_MediaRouter;
-			global::XLabs.Forms.Resource.Style.Theme_MediaRouter_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Theme_MediaRouter_Light;
-			global::XLabs.Forms.Resource.Style.ThemeOverlay_AppCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat;
-			global::XLabs.Forms.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::XLabs.Forms.Resource.Style.ThemeOverlay_AppCompat_Dark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::XLabs.Forms.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::XLabs.Forms.Resource.Style.ThemeOverlay_AppCompat_Light = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionButton = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ActionButton;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ActionMode;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActivityChooserView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Button = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Button;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Button_Borderless = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Button_Colored = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Button_Small = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Button_Small;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ButtonBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_EditText = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_EditText;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionButton = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_SearchView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ListPopupWindow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ListView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ListView;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ListView_DropDown = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ListView_Menu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_PopupMenu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_PopupWindow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ProgressBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_RatingBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_RatingBar;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_SearchView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_SearchView;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Spinner = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Spinner;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Toolbar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Toolbar;
-			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::XLabs.Forms.Resource.Style.Widget_Design_AppBarLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_Design_AppBarLayout;
-			global::XLabs.Forms.Resource.Style.Widget_Design_CollapsingToolbar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::XLabs.Forms.Resource.Style.Widget_Design_CoordinatorLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_Design_CoordinatorLayout;
-			global::XLabs.Forms.Resource.Style.Widget_Design_FloatingActionButton = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_Design_FloatingActionButton;
-			global::XLabs.Forms.Resource.Style.Widget_Design_NavigationView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_Design_NavigationView;
-			global::XLabs.Forms.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
-			global::XLabs.Forms.Resource.Style.Widget_Design_Snackbar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_Design_Snackbar;
-			global::XLabs.Forms.Resource.Style.Widget_Design_TabLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_Design_TabLayout;
-			global::XLabs.Forms.Resource.Style.Widget_Design_TextInputLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_Design_TextInputLayout;
-			global::XLabs.Forms.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
-			global::XLabs.Forms.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton;
-			global::XLabs.Forms.Resource.Styleable.ActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_background = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_background;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_backgroundSplit = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_backgroundSplit;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_backgroundStacked = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_backgroundStacked;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_contentInsetEnd = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_contentInsetLeft = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_contentInsetRight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_contentInsetRight;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_contentInsetStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_contentInsetStart;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_customNavigationLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_displayOptions = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_displayOptions;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_divider = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_divider;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_elevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_elevation;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_height = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_height;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_hideOnContentScroll = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_homeAsUpIndicator = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_homeLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_homeLayout;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_icon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_icon;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_itemPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_itemPadding;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_logo = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_logo;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_navigationMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_navigationMode;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_popupTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_popupTheme;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_progressBarPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_progressBarPadding;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_progressBarStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_progressBarStyle;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_subtitle;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_subtitleTextStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_title;
-			global::XLabs.Forms.Resource.Styleable.ActionBar_titleTextStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBar_titleTextStyle;
-			global::XLabs.Forms.Resource.Styleable.ActionBarLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBarLayout;
-			global::XLabs.Forms.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::XLabs.Forms.Resource.Styleable.ActionMenuItemView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionMenuItemView;
-			global::XLabs.Forms.Resource.Styleable.ActionMenuItemView_android_minWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::XLabs.Forms.Resource.Styleable.ActionMenuView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionMenuView;
-			global::XLabs.Forms.Resource.Styleable.ActionMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionMode;
-			global::XLabs.Forms.Resource.Styleable.ActionMode_background = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionMode_background;
-			global::XLabs.Forms.Resource.Styleable.ActionMode_backgroundSplit = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionMode_backgroundSplit;
-			global::XLabs.Forms.Resource.Styleable.ActionMode_closeItemLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionMode_closeItemLayout;
-			global::XLabs.Forms.Resource.Styleable.ActionMode_height = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionMode_height;
-			global::XLabs.Forms.Resource.Styleable.ActionMode_subtitleTextStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::XLabs.Forms.Resource.Styleable.ActionMode_titleTextStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActionMode_titleTextStyle;
-			global::XLabs.Forms.Resource.Styleable.ActivityChooserView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActivityChooserView;
-			global::XLabs.Forms.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::XLabs.Forms.Resource.Styleable.ActivityChooserView_initialActivityCount = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::XLabs.Forms.Resource.Styleable.AlertDialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AlertDialog;
-			global::XLabs.Forms.Resource.Styleable.AlertDialog_android_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AlertDialog_android_layout;
-			global::XLabs.Forms.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::XLabs.Forms.Resource.Styleable.AlertDialog_listItemLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AlertDialog_listItemLayout;
-			global::XLabs.Forms.Resource.Styleable.AlertDialog_listLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AlertDialog_listLayout;
-			global::XLabs.Forms.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::XLabs.Forms.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::XLabs.Forms.Resource.Styleable.AppBarLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AppBarLayout;
-			global::XLabs.Forms.Resource.Styleable.AppBarLayout_android_background = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AppBarLayout_android_background;
-			global::XLabs.Forms.Resource.Styleable.AppBarLayout_elevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AppBarLayout_elevation;
-			global::XLabs.Forms.Resource.Styleable.AppBarLayout_expanded = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AppBarLayout_expanded;
-			global::XLabs.Forms.Resource.Styleable.AppBarLayout_LayoutParams = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AppBarLayout_LayoutParams;
-			global::XLabs.Forms.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollFlags = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollFlags;
-			global::XLabs.Forms.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollInterpolator = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollInterpolator;
-			global::XLabs.Forms.Resource.Styleable.AppCompatTextView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AppCompatTextView;
-			global::XLabs.Forms.Resource.Styleable.AppCompatTextView_android_textAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::XLabs.Forms.Resource.Styleable.AppCompatTextView_textAllCaps = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::XLabs.Forms.Resource.Styleable.CardView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CardView;
-			global::XLabs.Forms.Resource.Styleable.CardView_cardBackgroundColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CardView_cardBackgroundColor;
-			global::XLabs.Forms.Resource.Styleable.CardView_cardCornerRadius = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CardView_cardCornerRadius;
-			global::XLabs.Forms.Resource.Styleable.CardView_cardElevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CardView_cardElevation;
-			global::XLabs.Forms.Resource.Styleable.CardView_cardMaxElevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CardView_cardMaxElevation;
-			global::XLabs.Forms.Resource.Styleable.CardView_cardPreventCornerOverlap = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CardView_cardPreventCornerOverlap;
-			global::XLabs.Forms.Resource.Styleable.CardView_cardUseCompatPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CardView_cardUseCompatPadding;
-			global::XLabs.Forms.Resource.Styleable.CardView_contentPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CardView_contentPadding;
-			global::XLabs.Forms.Resource.Styleable.CardView_contentPaddingBottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CardView_contentPaddingBottom;
-			global::XLabs.Forms.Resource.Styleable.CardView_contentPaddingLeft = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CardView_contentPaddingLeft;
-			global::XLabs.Forms.Resource.Styleable.CardView_contentPaddingRight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CardView_contentPaddingRight;
-			global::XLabs.Forms.Resource.Styleable.CardView_contentPaddingTop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CardView_contentPaddingTop;
-			global::XLabs.Forms.Resource.Styleable.CollapsingAppBarLayout_LayoutParams = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams;
-			global::XLabs.Forms.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseMode;
-			global::XLabs.Forms.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_title;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
-			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::XLabs.Forms.Resource.Styleable.CompoundButton = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CompoundButton;
-			global::XLabs.Forms.Resource.Styleable.CompoundButton_android_button = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CompoundButton_android_button;
-			global::XLabs.Forms.Resource.Styleable.CompoundButton_buttonTint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CompoundButton_buttonTint;
-			global::XLabs.Forms.Resource.Styleable.CompoundButton_buttonTintMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CoordinatorLayout;
-			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_keylines = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CoordinatorLayout_keylines;
-			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_LayoutParams = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams;
-			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_LayoutParams_android_layout_gravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_android_layout_gravity;
-			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchor;
-			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchorGravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchorGravity;
-			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_behavior = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_behavior;
-			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_keyline = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_keyline;
-			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.DrawerArrowToggle;
-			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_barLength = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_color = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.DrawerArrowToggle_color;
-			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_drawableSize = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_spinBars = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_thickness = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::XLabs.Forms.Resource.Styleable.FloatingActionButton = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.FloatingActionButton;
-			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_android_background = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.FloatingActionButton_android_background;
-			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_backgroundTint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.FloatingActionButton_backgroundTint;
-			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode;
-			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_borderWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.FloatingActionButton_borderWidth;
-			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_elevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.FloatingActionButton_elevation;
-			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_fabSize = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.FloatingActionButton_fabSize;
-			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
-			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_rippleColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.FloatingActionButton_rippleColor;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_android_gravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_android_orientation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_divider = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_divider;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_showDividers = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_Layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::XLabs.Forms.Resource.Styleable.ListPopupWindow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ListPopupWindow;
-			global::XLabs.Forms.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::XLabs.Forms.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::XLabs.Forms.Resource.Styleable.MediaRouteButton = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MediaRouteButton;
-			global::XLabs.Forms.Resource.Styleable.MediaRouteButton_android_minHeight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MediaRouteButton_android_minHeight;
-			global::XLabs.Forms.Resource.Styleable.MediaRouteButton_android_minWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MediaRouteButton_android_minWidth;
-			global::XLabs.Forms.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
-			global::XLabs.Forms.Resource.Styleable.MenuGroup = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuGroup;
-			global::XLabs.Forms.Resource.Styleable.MenuGroup_android_checkableBehavior = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::XLabs.Forms.Resource.Styleable.MenuGroup_android_enabled = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuGroup_android_enabled;
-			global::XLabs.Forms.Resource.Styleable.MenuGroup_android_id = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuGroup_android_id;
-			global::XLabs.Forms.Resource.Styleable.MenuGroup_android_menuCategory = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::XLabs.Forms.Resource.Styleable.MenuGroup_android_orderInCategory = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::XLabs.Forms.Resource.Styleable.MenuGroup_android_visible = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuGroup_android_visible;
-			global::XLabs.Forms.Resource.Styleable.MenuItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_actionLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_actionLayout;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_actionProviderClass = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_actionProviderClass;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_actionViewClass = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_actionViewClass;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_checkable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_checkable;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_checked = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_checked;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_enabled = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_enabled;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_icon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_icon;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_id = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_id;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_menuCategory = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_menuCategory;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_numericShortcut = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_onClick = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_onClick;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_orderInCategory = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_title;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_titleCondensed = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_android_visible = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_android_visible;
-			global::XLabs.Forms.Resource.Styleable.MenuItem_showAsAction = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuItem_showAsAction;
-			global::XLabs.Forms.Resource.Styleable.MenuView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuView;
-			global::XLabs.Forms.Resource.Styleable.MenuView_android_headerBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuView_android_headerBackground;
-			global::XLabs.Forms.Resource.Styleable.MenuView_android_horizontalDivider = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::XLabs.Forms.Resource.Styleable.MenuView_android_itemBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuView_android_itemBackground;
-			global::XLabs.Forms.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::XLabs.Forms.Resource.Styleable.MenuView_android_itemTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::XLabs.Forms.Resource.Styleable.MenuView_android_verticalDivider = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuView_android_verticalDivider;
-			global::XLabs.Forms.Resource.Styleable.MenuView_android_windowAnimationStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::XLabs.Forms.Resource.Styleable.MenuView_preserveIconSpacing = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::XLabs.Forms.Resource.Styleable.NavigationView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.NavigationView;
-			global::XLabs.Forms.Resource.Styleable.NavigationView_android_background = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.NavigationView_android_background;
-			global::XLabs.Forms.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows;
-			global::XLabs.Forms.Resource.Styleable.NavigationView_android_maxWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.NavigationView_android_maxWidth;
-			global::XLabs.Forms.Resource.Styleable.NavigationView_elevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.NavigationView_elevation;
-			global::XLabs.Forms.Resource.Styleable.NavigationView_headerLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.NavigationView_headerLayout;
-			global::XLabs.Forms.Resource.Styleable.NavigationView_itemBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.NavigationView_itemBackground;
-			global::XLabs.Forms.Resource.Styleable.NavigationView_itemIconTint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.NavigationView_itemIconTint;
-			global::XLabs.Forms.Resource.Styleable.NavigationView_itemTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.NavigationView_itemTextAppearance;
-			global::XLabs.Forms.Resource.Styleable.NavigationView_itemTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.NavigationView_itemTextColor;
-			global::XLabs.Forms.Resource.Styleable.NavigationView_menu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.NavigationView_menu;
-			global::XLabs.Forms.Resource.Styleable.PopupWindow = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.PopupWindow;
-			global::XLabs.Forms.Resource.Styleable.PopupWindow_android_popupBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::XLabs.Forms.Resource.Styleable.PopupWindow_overlapAnchor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::XLabs.Forms.Resource.Styleable.PopupWindowBackgroundState = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.PopupWindowBackgroundState;
-			global::XLabs.Forms.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::XLabs.Forms.Resource.Styleable.ScrimInsetsFrameLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ScrimInsetsFrameLayout;
-			global::XLabs.Forms.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
-			global::XLabs.Forms.Resource.Styleable.ScrollingViewBehavior_Params = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ScrollingViewBehavior_Params;
-			global::XLabs.Forms.Resource.Styleable.ScrollingViewBehavior_Params_behavior_overlapTop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ScrollingViewBehavior_Params_behavior_overlapTop;
-			global::XLabs.Forms.Resource.Styleable.SearchView = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView;
-			global::XLabs.Forms.Resource.Styleable.SearchView_android_focusable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_android_focusable;
-			global::XLabs.Forms.Resource.Styleable.SearchView_android_imeOptions = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_android_imeOptions;
-			global::XLabs.Forms.Resource.Styleable.SearchView_android_inputType = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_android_inputType;
-			global::XLabs.Forms.Resource.Styleable.SearchView_android_maxWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_android_maxWidth;
-			global::XLabs.Forms.Resource.Styleable.SearchView_closeIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_closeIcon;
-			global::XLabs.Forms.Resource.Styleable.SearchView_commitIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_commitIcon;
-			global::XLabs.Forms.Resource.Styleable.SearchView_defaultQueryHint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_defaultQueryHint;
-			global::XLabs.Forms.Resource.Styleable.SearchView_goIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_goIcon;
-			global::XLabs.Forms.Resource.Styleable.SearchView_iconifiedByDefault = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::XLabs.Forms.Resource.Styleable.SearchView_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_layout;
-			global::XLabs.Forms.Resource.Styleable.SearchView_queryBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_queryBackground;
-			global::XLabs.Forms.Resource.Styleable.SearchView_queryHint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_queryHint;
-			global::XLabs.Forms.Resource.Styleable.SearchView_searchHintIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_searchHintIcon;
-			global::XLabs.Forms.Resource.Styleable.SearchView_searchIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_searchIcon;
-			global::XLabs.Forms.Resource.Styleable.SearchView_submitBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_submitBackground;
-			global::XLabs.Forms.Resource.Styleable.SearchView_suggestionRowLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::XLabs.Forms.Resource.Styleable.SearchView_voiceIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SearchView_voiceIcon;
-			global::XLabs.Forms.Resource.Styleable.SnackbarLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SnackbarLayout;
-			global::XLabs.Forms.Resource.Styleable.SnackbarLayout_android_maxWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SnackbarLayout_android_maxWidth;
-			global::XLabs.Forms.Resource.Styleable.SnackbarLayout_elevation = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SnackbarLayout_elevation;
-			global::XLabs.Forms.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
-			global::XLabs.Forms.Resource.Styleable.Spinner = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Spinner;
-			global::XLabs.Forms.Resource.Styleable.Spinner_android_dropDownWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::XLabs.Forms.Resource.Styleable.Spinner_android_popupBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Spinner_android_popupBackground;
-			global::XLabs.Forms.Resource.Styleable.Spinner_android_prompt = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Spinner_android_prompt;
-			global::XLabs.Forms.Resource.Styleable.Spinner_popupTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Spinner_popupTheme;
-			global::XLabs.Forms.Resource.Styleable.SwitchCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SwitchCompat;
-			global::XLabs.Forms.Resource.Styleable.SwitchCompat_android_textOff = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SwitchCompat_android_textOff;
-			global::XLabs.Forms.Resource.Styleable.SwitchCompat_android_textOn = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SwitchCompat_android_textOn;
-			global::XLabs.Forms.Resource.Styleable.SwitchCompat_android_thumb = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SwitchCompat_android_thumb;
-			global::XLabs.Forms.Resource.Styleable.SwitchCompat_showText = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SwitchCompat_showText;
-			global::XLabs.Forms.Resource.Styleable.SwitchCompat_splitTrack = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SwitchCompat_splitTrack;
-			global::XLabs.Forms.Resource.Styleable.SwitchCompat_switchMinWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::XLabs.Forms.Resource.Styleable.SwitchCompat_switchPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SwitchCompat_switchPadding;
-			global::XLabs.Forms.Resource.Styleable.SwitchCompat_switchTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::XLabs.Forms.Resource.Styleable.SwitchCompat_thumbTextPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::XLabs.Forms.Resource.Styleable.SwitchCompat_track = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.SwitchCompat_track;
-			global::XLabs.Forms.Resource.Styleable.TabLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabBackground;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabContentStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabContentStart;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabGravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabGravity;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabIndicatorColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabIndicatorColor;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabIndicatorHeight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabIndicatorHeight;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabMaxWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabMaxWidth;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabMinWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabMinWidth;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabMode;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabPadding;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabPaddingBottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabPaddingBottom;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabPaddingEnd = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabPaddingEnd;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabPaddingStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabPaddingStart;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabPaddingTop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabPaddingTop;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabSelectedTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabSelectedTextColor;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabTextAppearance;
-			global::XLabs.Forms.Resource.Styleable.TabLayout_tabTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TabLayout_tabTextColor;
-			global::XLabs.Forms.Resource.Styleable.TextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextAppearance;
-			global::XLabs.Forms.Resource.Styleable.TextAppearance_android_textColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextAppearance_android_textColor;
-			global::XLabs.Forms.Resource.Styleable.TextAppearance_android_textSize = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextAppearance_android_textSize;
-			global::XLabs.Forms.Resource.Styleable.TextAppearance_android_textStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextAppearance_android_textStyle;
-			global::XLabs.Forms.Resource.Styleable.TextAppearance_android_typeface = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextAppearance_android_typeface;
-			global::XLabs.Forms.Resource.Styleable.TextAppearance_textAllCaps = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextAppearance_textAllCaps;
-			global::XLabs.Forms.Resource.Styleable.TextInputLayout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextInputLayout;
-			global::XLabs.Forms.Resource.Styleable.TextInputLayout_android_hint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextInputLayout_android_hint;
-			global::XLabs.Forms.Resource.Styleable.TextInputLayout_android_textColorHint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextInputLayout_android_textColorHint;
-			global::XLabs.Forms.Resource.Styleable.TextInputLayout_errorEnabled = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextInputLayout_errorEnabled;
-			global::XLabs.Forms.Resource.Styleable.TextInputLayout_errorTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextInputLayout_errorTextAppearance;
-			global::XLabs.Forms.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
-			global::XLabs.Forms.Resource.Styleable.TextInputLayout_hintTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.TextInputLayout_hintTextAppearance;
-			global::XLabs.Forms.Resource.Styleable.Theme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionBarDivider = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionBarDivider;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionBarItemBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionBarItemBackground;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionBarPopupTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionBarPopupTheme;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionBarSize = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionBarSize;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionBarSplitStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionBarSplitStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionBarStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionBarStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionBarTabBarStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionBarTabBarStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionBarTabStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionBarTabStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionBarTabTextStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionBarTabTextStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionBarTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionBarTheme;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionBarWidgetTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionBarWidgetTheme;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionButtonStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionDropDownStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionDropDownStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionMenuTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionMenuTextAppearance;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionMenuTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionMenuTextColor;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModeBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModeBackground;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModeCloseButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModeCloseButtonStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModeCloseDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModeCloseDrawable;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModeCopyDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModeCopyDrawable;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModeCutDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModeCutDrawable;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModeFindDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModeFindDrawable;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModePasteDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModePasteDrawable;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModePopupWindowStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModePopupWindowStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModeSelectAllDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModeSelectAllDrawable;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModeShareDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModeShareDrawable;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModeSplitBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModeSplitBackground;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModeStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModeStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionModeWebSearchDrawable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionModeWebSearchDrawable;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionOverflowButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionOverflowButtonStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_actionOverflowMenuStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_actionOverflowMenuStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_activityChooserViewStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_activityChooserViewStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_alertDialogButtonGroupStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_alertDialogButtonGroupStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_alertDialogCenterButtons = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_alertDialogCenterButtons;
-			global::XLabs.Forms.Resource.Styleable.Theme_alertDialogStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_alertDialogStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_alertDialogTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_alertDialogTheme;
-			global::XLabs.Forms.Resource.Styleable.Theme_android_windowAnimationStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_android_windowAnimationStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_android_windowIsFloating = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_android_windowIsFloating;
-			global::XLabs.Forms.Resource.Styleable.Theme_autoCompleteTextViewStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_autoCompleteTextViewStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_borderlessButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_borderlessButtonStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_buttonBarButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_buttonBarButtonStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_buttonBarNegativeButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_buttonBarNegativeButtonStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_buttonBarNeutralButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_buttonBarNeutralButtonStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_buttonBarPositiveButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_buttonBarPositiveButtonStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_buttonBarStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_buttonBarStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_buttonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_buttonStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_buttonStyleSmall = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_buttonStyleSmall;
-			global::XLabs.Forms.Resource.Styleable.Theme_checkboxStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_checkboxStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_checkedTextViewStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_checkedTextViewStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_colorAccent = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_colorAccent;
-			global::XLabs.Forms.Resource.Styleable.Theme_colorButtonNormal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_colorButtonNormal;
-			global::XLabs.Forms.Resource.Styleable.Theme_colorControlActivated = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_colorControlActivated;
-			global::XLabs.Forms.Resource.Styleable.Theme_colorControlHighlight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_colorControlHighlight;
-			global::XLabs.Forms.Resource.Styleable.Theme_colorControlNormal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_colorControlNormal;
-			global::XLabs.Forms.Resource.Styleable.Theme_colorPrimary = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_colorPrimary;
-			global::XLabs.Forms.Resource.Styleable.Theme_colorPrimaryDark = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_colorPrimaryDark;
-			global::XLabs.Forms.Resource.Styleable.Theme_colorSwitchThumbNormal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_colorSwitchThumbNormal;
-			global::XLabs.Forms.Resource.Styleable.Theme_controlBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_controlBackground;
-			global::XLabs.Forms.Resource.Styleable.Theme_dialogPreferredPadding = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_dialogPreferredPadding;
-			global::XLabs.Forms.Resource.Styleable.Theme_dialogTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_dialogTheme;
-			global::XLabs.Forms.Resource.Styleable.Theme_dividerHorizontal = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_dividerHorizontal;
-			global::XLabs.Forms.Resource.Styleable.Theme_dividerVertical = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_dividerVertical;
-			global::XLabs.Forms.Resource.Styleable.Theme_dropDownListViewStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_dropDownListViewStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_dropdownListPreferredItemHeight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_dropdownListPreferredItemHeight;
-			global::XLabs.Forms.Resource.Styleable.Theme_editTextBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_editTextBackground;
-			global::XLabs.Forms.Resource.Styleable.Theme_editTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_editTextColor;
-			global::XLabs.Forms.Resource.Styleable.Theme_editTextStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_editTextStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_homeAsUpIndicator = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_homeAsUpIndicator;
-			global::XLabs.Forms.Resource.Styleable.Theme_listChoiceBackgroundIndicator = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_listChoiceBackgroundIndicator;
-			global::XLabs.Forms.Resource.Styleable.Theme_listDividerAlertDialog = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_listDividerAlertDialog;
-			global::XLabs.Forms.Resource.Styleable.Theme_listPopupWindowStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_listPopupWindowStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_listPreferredItemHeight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_listPreferredItemHeight;
-			global::XLabs.Forms.Resource.Styleable.Theme_listPreferredItemHeightLarge = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_listPreferredItemHeightLarge;
-			global::XLabs.Forms.Resource.Styleable.Theme_listPreferredItemHeightSmall = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_listPreferredItemHeightSmall;
-			global::XLabs.Forms.Resource.Styleable.Theme_listPreferredItemPaddingLeft = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_listPreferredItemPaddingLeft;
-			global::XLabs.Forms.Resource.Styleable.Theme_listPreferredItemPaddingRight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_listPreferredItemPaddingRight;
-			global::XLabs.Forms.Resource.Styleable.Theme_panelBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_panelBackground;
-			global::XLabs.Forms.Resource.Styleable.Theme_panelMenuListTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_panelMenuListTheme;
-			global::XLabs.Forms.Resource.Styleable.Theme_panelMenuListWidth = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_panelMenuListWidth;
-			global::XLabs.Forms.Resource.Styleable.Theme_popupMenuStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_popupMenuStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_popupWindowStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_popupWindowStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_radioButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_radioButtonStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_ratingBarStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_ratingBarStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_searchViewStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_searchViewStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_selectableItemBackground = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_selectableItemBackground;
-			global::XLabs.Forms.Resource.Styleable.Theme_selectableItemBackgroundBorderless = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_selectableItemBackgroundBorderless;
-			global::XLabs.Forms.Resource.Styleable.Theme_spinnerDropDownItemStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_spinnerDropDownItemStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_spinnerStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_spinnerStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_switchStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_switchStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_textAppearanceLargePopupMenu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_textAppearanceLargePopupMenu;
-			global::XLabs.Forms.Resource.Styleable.Theme_textAppearanceListItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_textAppearanceListItem;
-			global::XLabs.Forms.Resource.Styleable.Theme_textAppearanceListItemSmall = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_textAppearanceListItemSmall;
-			global::XLabs.Forms.Resource.Styleable.Theme_textAppearanceSearchResultSubtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_textAppearanceSearchResultSubtitle;
-			global::XLabs.Forms.Resource.Styleable.Theme_textAppearanceSearchResultTitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_textAppearanceSearchResultTitle;
-			global::XLabs.Forms.Resource.Styleable.Theme_textAppearanceSmallPopupMenu = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_textAppearanceSmallPopupMenu;
-			global::XLabs.Forms.Resource.Styleable.Theme_textColorAlertDialogListItem = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_textColorAlertDialogListItem;
-			global::XLabs.Forms.Resource.Styleable.Theme_textColorSearchUrl = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_textColorSearchUrl;
-			global::XLabs.Forms.Resource.Styleable.Theme_toolbarNavigationButtonStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_toolbarNavigationButtonStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_toolbarStyle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_toolbarStyle;
-			global::XLabs.Forms.Resource.Styleable.Theme_windowActionBar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_windowActionBar;
-			global::XLabs.Forms.Resource.Styleable.Theme_windowActionBarOverlay = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_windowActionBarOverlay;
-			global::XLabs.Forms.Resource.Styleable.Theme_windowActionModeOverlay = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_windowActionModeOverlay;
-			global::XLabs.Forms.Resource.Styleable.Theme_windowFixedHeightMajor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_windowFixedHeightMajor;
-			global::XLabs.Forms.Resource.Styleable.Theme_windowFixedHeightMinor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_windowFixedHeightMinor;
-			global::XLabs.Forms.Resource.Styleable.Theme_windowFixedWidthMajor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_windowFixedWidthMajor;
-			global::XLabs.Forms.Resource.Styleable.Theme_windowFixedWidthMinor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_windowFixedWidthMinor;
-			global::XLabs.Forms.Resource.Styleable.Theme_windowMinWidthMajor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_windowMinWidthMajor;
-			global::XLabs.Forms.Resource.Styleable.Theme_windowMinWidthMinor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_windowMinWidthMinor;
-			global::XLabs.Forms.Resource.Styleable.Theme_windowNoTitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Theme_windowNoTitle;
-			global::XLabs.Forms.Resource.Styleable.Toolbar = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_android_gravity = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_android_gravity;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_android_minHeight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_android_minHeight;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_collapseContentDescription = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_collapseIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_collapseIcon;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_contentInsetEnd = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_contentInsetLeft = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_contentInsetRight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_contentInsetRight;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_contentInsetStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_contentInsetStart;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_logo = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_logo;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_logoDescription = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_logoDescription;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_maxButtonHeight = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_navigationContentDescription = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_navigationIcon = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_navigationIcon;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_popupTheme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_popupTheme;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_subtitle = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_subtitle;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_subtitleTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_subtitleTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_title = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_title;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_titleMarginBottom = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_titleMarginEnd = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_titleMarginStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_titleMarginStart;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_titleMarginTop = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_titleMarginTop;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_titleMargins = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_titleMargins;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_titleTextAppearance = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::XLabs.Forms.Resource.Styleable.Toolbar_titleTextColor = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.Toolbar_titleTextColor;
-			global::XLabs.Forms.Resource.Styleable.View = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.View;
-			global::XLabs.Forms.Resource.Styleable.View_android_focusable = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.View_android_focusable;
-			global::XLabs.Forms.Resource.Styleable.View_android_theme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.View_android_theme;
-			global::XLabs.Forms.Resource.Styleable.View_paddingEnd = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.View_paddingEnd;
-			global::XLabs.Forms.Resource.Styleable.View_paddingStart = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.View_paddingStart;
-			global::XLabs.Forms.Resource.Styleable.View_theme = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.View_theme;
-			global::XLabs.Forms.Resource.Styleable.ViewBackgroundHelper = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ViewBackgroundHelper;
-			global::XLabs.Forms.Resource.Styleable.ViewBackgroundHelper_android_background = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::XLabs.Forms.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::XLabs.Forms.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::XLabs.Forms.Resource.Styleable.ViewStubCompat = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ViewStubCompat;
-			global::XLabs.Forms.Resource.Styleable.ViewStubCompat_android_id = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ViewStubCompat_android_id;
-			global::XLabs.Forms.Resource.Styleable.ViewStubCompat_android_inflatedId = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::XLabs.Forms.Resource.Styleable.ViewStubCompat_android_layout = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.Styleable.ViewStubCompat_android_layout;
-			global::XLabs.Platform.Resource.String.ApplicationName = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.ApplicationName;
-			global::XLabs.Platform.Resource.String.Hello = global::AppShell.Samples.ServiceDispatcher.Mobile.Android.Resource.String.Hello;
 		}
 		
 		public partial class Animation
@@ -4008,32 +2431,32 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f080052
-			public const int abc_background_cache_hint_selector_material_dark = 2131230802;
+			// aapt resource value: 0x7f080047
+			public const int abc_background_cache_hint_selector_material_dark = 2131230791;
 			
-			// aapt resource value: 0x7f080053
-			public const int abc_background_cache_hint_selector_material_light = 2131230803;
+			// aapt resource value: 0x7f080048
+			public const int abc_background_cache_hint_selector_material_light = 2131230792;
 			
-			// aapt resource value: 0x7f080054
-			public const int abc_color_highlight_material = 2131230804;
+			// aapt resource value: 0x7f080049
+			public const int abc_color_highlight_material = 2131230793;
 			
 			// aapt resource value: 0x7f080004
 			public const int abc_input_method_navigation_guard = 2131230724;
 			
-			// aapt resource value: 0x7f080055
-			public const int abc_primary_text_disable_only_material_dark = 2131230805;
+			// aapt resource value: 0x7f08004a
+			public const int abc_primary_text_disable_only_material_dark = 2131230794;
 			
-			// aapt resource value: 0x7f080056
-			public const int abc_primary_text_disable_only_material_light = 2131230806;
+			// aapt resource value: 0x7f08004b
+			public const int abc_primary_text_disable_only_material_light = 2131230795;
 			
-			// aapt resource value: 0x7f080057
-			public const int abc_primary_text_material_dark = 2131230807;
+			// aapt resource value: 0x7f08004c
+			public const int abc_primary_text_material_dark = 2131230796;
 			
-			// aapt resource value: 0x7f080058
-			public const int abc_primary_text_material_light = 2131230808;
+			// aapt resource value: 0x7f08004d
+			public const int abc_primary_text_material_light = 2131230797;
 			
-			// aapt resource value: 0x7f080059
-			public const int abc_search_url_text = 2131230809;
+			// aapt resource value: 0x7f08004e
+			public const int abc_search_url_text = 2131230798;
 			
 			// aapt resource value: 0x7f080005
 			public const int abc_search_url_text_normal = 2131230725;
@@ -4044,11 +2467,11 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f080007
 			public const int abc_search_url_text_selected = 2131230727;
 			
-			// aapt resource value: 0x7f08005a
-			public const int abc_secondary_text_material_dark = 2131230810;
+			// aapt resource value: 0x7f08004f
+			public const int abc_secondary_text_material_dark = 2131230799;
 			
-			// aapt resource value: 0x7f08005b
-			public const int abc_secondary_text_material_light = 2131230811;
+			// aapt resource value: 0x7f080050
+			public const int abc_secondary_text_material_light = 2131230800;
 			
 			// aapt resource value: 0x7f080008
 			public const int accent_material_dark = 2131230728;
@@ -4091,42 +2514,6 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			
 			// aapt resource value: 0x7f080015
 			public const int button_material_light = 2131230741;
-			
-			// aapt resource value: 0x7f080047
-			public const int calendar_active_month_bg = 2131230791;
-			
-			// aapt resource value: 0x7f080048
-			public const int calendar_bg = 2131230792;
-			
-			// aapt resource value: 0x7f080049
-			public const int calendar_divider = 2131230793;
-			
-			// aapt resource value: 0x7f08004c
-			public const int calendar_highlighted_day_bg = 2131230796;
-			
-			// aapt resource value: 0x7f08004a
-			public const int calendar_inactive_month_bg = 2131230794;
-			
-			// aapt resource value: 0x7f08004b
-			public const int calendar_selected_day_bg = 2131230795;
-			
-			// aapt resource value: 0x7f08004d
-			public const int calendar_selected_range_bg = 2131230797;
-			
-			// aapt resource value: 0x7f08004f
-			public const int calendar_text_active = 2131230799;
-			
-			// aapt resource value: 0x7f08004e
-			public const int calendar_text_inactive = 2131230798;
-			
-			// aapt resource value: 0x7f080050
-			public const int calendar_text_selected = 2131230800;
-			
-			// aapt resource value: 0x7f08005c
-			public const int calendar_text_selector = 2131230812;
-			
-			// aapt resource value: 0x7f080051
-			public const int calendar_text_unselectable = 2131230801;
 			
 			// aapt resource value: 0x7f080000
 			public const int cardview_dark_background = 2131230720;
@@ -4281,11 +2668,11 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f08003b
 			public const int switch_thumb_disabled_material_light = 2131230779;
 			
-			// aapt resource value: 0x7f08005d
-			public const int switch_thumb_material_dark = 2131230813;
+			// aapt resource value: 0x7f080051
+			public const int switch_thumb_material_dark = 2131230801;
 			
-			// aapt resource value: 0x7f08005e
-			public const int switch_thumb_material_light = 2131230814;
+			// aapt resource value: 0x7f080052
+			public const int switch_thumb_material_light = 2131230802;
 			
 			// aapt resource value: 0x7f08003c
 			public const int switch_thumb_normal_material_dark = 2131230780;
@@ -4485,21 +2872,6 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			
 			// aapt resource value: 0x7f060008
 			public const int abc_text_size_title_material_toolbar = 2131099656;
-			
-			// aapt resource value: 0x7f060066
-			public const int calendar_day_headers_paddingbottom = 2131099750;
-			
-			// aapt resource value: 0x7f060068
-			public const int calendar_month_title_bottommargin = 2131099752;
-			
-			// aapt resource value: 0x7f060067
-			public const int calendar_month_topmargin = 2131099751;
-			
-			// aapt resource value: 0x7f060069
-			public const int calendar_text_medium = 2131099753;
-			
-			// aapt resource value: 0x7f06006a
-			public const int calendar_text_small = 2131099754;
 			
 			// aapt resource value: 0x7f060001
 			public const int cardview_compat_inset_shadow = 2131099649;
@@ -4827,124 +3199,118 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			public const int abc_textfield_search_material = 2130837565;
 			
 			// aapt resource value: 0x7f02003e
-			public const int ad16 = 2130837566;
+			public const int design_fab_background = 2130837566;
 			
 			// aapt resource value: 0x7f02003f
-			public const int calendar_bg_selector = 2130837567;
+			public const int design_snackbar_background = 2130837567;
 			
 			// aapt resource value: 0x7f020040
-			public const int design_fab_background = 2130837568;
+			public const int ic_cast_dark = 2130837568;
 			
 			// aapt resource value: 0x7f020041
-			public const int design_snackbar_background = 2130837569;
+			public const int ic_cast_disabled_light = 2130837569;
 			
 			// aapt resource value: 0x7f020042
-			public const int ic_cast_dark = 2130837570;
+			public const int ic_cast_light = 2130837570;
 			
 			// aapt resource value: 0x7f020043
-			public const int ic_cast_disabled_light = 2130837571;
+			public const int ic_cast_off_light = 2130837571;
 			
 			// aapt resource value: 0x7f020044
-			public const int ic_cast_light = 2130837572;
+			public const int ic_cast_on_0_light = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int ic_cast_off_light = 2130837573;
+			public const int ic_cast_on_1_light = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int ic_cast_on_0_light = 2130837574;
+			public const int ic_cast_on_2_light = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int ic_cast_on_1_light = 2130837575;
+			public const int ic_cast_on_light = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int ic_cast_on_2_light = 2130837576;
+			public const int ic_media_pause = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int ic_cast_on_light = 2130837577;
+			public const int ic_media_play = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int ic_media_pause = 2130837578;
+			public const int ic_media_route_disabled_mono_dark = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int ic_media_play = 2130837579;
+			public const int ic_media_route_off_mono_dark = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int ic_media_route_disabled_mono_dark = 2130837580;
+			public const int ic_media_route_on_0_mono_dark = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int ic_media_route_off_mono_dark = 2130837581;
+			public const int ic_media_route_on_1_mono_dark = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int ic_media_route_on_0_mono_dark = 2130837582;
+			public const int ic_media_route_on_2_mono_dark = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int ic_media_route_on_1_mono_dark = 2130837583;
+			public const int ic_media_route_on_mono_dark = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int ic_media_route_on_2_mono_dark = 2130837584;
+			public const int ic_pause_dark = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_media_route_on_mono_dark = 2130837585;
+			public const int ic_pause_light = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int ic_pause_dark = 2130837586;
+			public const int ic_play_dark = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int ic_pause_light = 2130837587;
+			public const int ic_play_light = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int ic_play_dark = 2130837588;
+			public const int ic_setting_dark = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int ic_play_light = 2130837589;
+			public const int ic_setting_light = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int ic_setting_dark = 2130837590;
+			public const int Icon = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int ic_setting_light = 2130837591;
+			public const int mr_ic_cast_dark = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int Icon = 2130837592;
+			public const int mr_ic_cast_light = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int mr_ic_cast_dark = 2130837593;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int mr_ic_cast_light = 2130837594;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837595;
+			public const int mr_ic_media_route_mono_dark = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int mr_ic_media_route_connecting_mono_light = 2130837596;
+			public const int mr_ic_media_route_mono_light = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int mr_ic_media_route_mono_dark = 2130837597;
+			public const int mr_ic_pause_dark = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int mr_ic_media_route_mono_light = 2130837598;
+			public const int mr_ic_pause_light = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int mr_ic_pause_dark = 2130837599;
+			public const int mr_ic_play_dark = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int mr_ic_pause_light = 2130837600;
+			public const int mr_ic_play_light = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int mr_ic_play_dark = 2130837601;
+			public const int mr_ic_settings_dark = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int mr_ic_play_light = 2130837602;
+			public const int mr_ic_settings_light = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int mr_ic_settings_dark = 2130837603;
-			
-			// aapt resource value: 0x7f020064
-			public const int mr_ic_settings_light = 2130837604;
-			
-			// aapt resource value: 0x7f020065
-			public const int notification_template_icon_bg = 2130837605;
+			public const int notification_template_icon_bg = 2130837603;
 			
 			static Drawable()
 			{
@@ -4959,11 +3325,11 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0069
-			public const int MyButton = 2131427433;
+			// aapt resource value: 0x7f0b0066
+			public const int MyButton = 2131427430;
 			
-			// aapt resource value: 0x7f0b0079
-			public const int action0 = 2131427449;
+			// aapt resource value: 0x7f0b0075
+			public const int action0 = 2131427445;
 			
 			// aapt resource value: 0x7f0b0055
 			public const int action_bar = 2131427413;
@@ -4989,8 +3355,8 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b0056
 			public const int action_context_bar = 2131427414;
 			
-			// aapt resource value: 0x7f0b007d
-			public const int action_divider = 2131427453;
+			// aapt resource value: 0x7f0b0079
+			public const int action_divider = 2131427449;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -5016,8 +3382,8 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b001c
 			public const int always = 2131427356;
 			
-			// aapt resource value: 0x7f0b0071
-			public const int art = 2131427441;
+			// aapt resource value: 0x7f0b006d
+			public const int art = 2131427437;
 			
 			// aapt resource value: 0x7f0b0019
 			public const int beginning = 2131427353;
@@ -5028,17 +3394,11 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b004b
 			public const int buttonPanel = 2131427403;
 			
+			// aapt resource value: 0x7f0b0072
+			public const int buttons = 2131427442;
+			
 			// aapt resource value: 0x7f0b0076
-			public const int buttons = 2131427446;
-			
-			// aapt resource value: 0x7f0b006a
-			public const int calendar_grid = 2131427434;
-			
-			// aapt resource value: 0x7f0b0064
-			public const int calendar_view = 2131427428;
-			
-			// aapt resource value: 0x7f0b007a
-			public const int cancel_action = 2131427450;
+			public const int cancel_action = 2131427446;
 			
 			// aapt resource value: 0x7f0b0029
 			public const int center = 2131427369;
@@ -5052,8 +3412,8 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b004d
 			public const int checkbox = 2131427405;
 			
-			// aapt resource value: 0x7f0b0080
-			public const int chronometer = 2131427456;
+			// aapt resource value: 0x7f0b007c
+			public const int chronometer = 2131427452;
 			
 			// aapt resource value: 0x7f0b0031
 			public const int clip_horizontal = 2131427377;
@@ -5079,14 +3439,14 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b003e
 			public const int default_activity_button = 2131427390;
 			
-			// aapt resource value: 0x7f0b0070
-			public const int default_control_frame = 2131427440;
+			// aapt resource value: 0x7f0b006c
+			public const int default_control_frame = 2131427436;
 			
 			// aapt resource value: 0x7f0b000d
 			public const int disableHome = 2131427341;
 			
-			// aapt resource value: 0x7f0b0077
-			public const int disconnect = 2131427447;
+			// aapt resource value: 0x7f0b0073
+			public const int disconnect = 2131427443;
 			
 			// aapt resource value: 0x7f0b0057
 			public const int edit_query = 2131427415;
@@ -5094,8 +3454,8 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b001a
 			public const int end = 2131427354;
 			
-			// aapt resource value: 0x7f0b0085
-			public const int end_padder = 2131427461;
+			// aapt resource value: 0x7f0b0081
+			public const int end_padder = 2131427457;
 			
 			// aapt resource value: 0x7f0b0022
 			public const int enterAlways = 2131427362;
@@ -5139,20 +3499,17 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b003d
 			public const int image = 2131427389;
 			
-			// aapt resource value: 0x7f0b0084
-			public const int info = 2131427460;
+			// aapt resource value: 0x7f0b0080
+			public const int info = 2131427456;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int left = 2131427373;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int left_arrow = 2131427430;
+			// aapt resource value: 0x7f0b007a
+			public const int line1 = 2131427450;
 			
 			// aapt resource value: 0x7f0b007e
-			public const int line1 = 2131427454;
-			
-			// aapt resource value: 0x7f0b0082
-			public const int line3 = 2131427458;
+			public const int line3 = 2131427454;
 			
 			// aapt resource value: 0x7f0b000a
 			public const int listMode = 2131427338;
@@ -5160,20 +3517,20 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b003f
 			public const int list_item = 2131427391;
 			
-			// aapt resource value: 0x7f0b007c
-			public const int media_actions = 2131427452;
-			
-			// aapt resource value: 0x7f0b006f
-			public const int media_route_control_frame = 2131427439;
+			// aapt resource value: 0x7f0b0078
+			public const int media_actions = 2131427448;
 			
 			// aapt resource value: 0x7f0b006b
-			public const int media_route_list = 2131427435;
+			public const int media_route_control_frame = 2131427435;
 			
-			// aapt resource value: 0x7f0b0074
-			public const int media_route_volume_layout = 2131427444;
+			// aapt resource value: 0x7f0b0067
+			public const int media_route_list = 2131427431;
 			
-			// aapt resource value: 0x7f0b0075
-			public const int media_route_volume_slider = 2131427445;
+			// aapt resource value: 0x7f0b0070
+			public const int media_route_volume_layout = 2131427440;
+			
+			// aapt resource value: 0x7f0b0071
+			public const int media_route_volume_slider = 2131427441;
 			
 			// aapt resource value: 0x7f0b001b
 			public const int middle = 2131427355;
@@ -5202,8 +3559,8 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b0027
 			public const int pin = 2131427367;
 			
-			// aapt resource value: 0x7f0b0072
-			public const int play_pause = 2131427442;
+			// aapt resource value: 0x7f0b006e
+			public const int play_pause = 2131427438;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int progress_circular = 2131427333;
@@ -5217,11 +3574,8 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b002e
 			public const int right = 2131427374;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int right_arrow = 2131427429;
-			
-			// aapt resource value: 0x7f0b006d
-			public const int route_name = 2131427437;
+			// aapt resource value: 0x7f0b0069
+			public const int route_name = 2131427433;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int screen = 2131427349;
@@ -5268,8 +3622,8 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b0063
 			public const int select_dialog_listview = 2131427427;
 			
-			// aapt resource value: 0x7f0b006e
-			public const int settings = 2131427438;
+			// aapt resource value: 0x7f0b006a
+			public const int settings = 2131427434;
 			
 			// aapt resource value: 0x7f0b004e
 			public const int shortcut = 2131427406;
@@ -5283,11 +3637,11 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b0012
 			public const int showTitle = 2131427346;
 			
-			// aapt resource value: 0x7f0b0068
-			public const int snackbar_action = 2131427432;
+			// aapt resource value: 0x7f0b0065
+			public const int snackbar_action = 2131427429;
 			
-			// aapt resource value: 0x7f0b0067
-			public const int snackbar_text = 2131427431;
+			// aapt resource value: 0x7f0b0064
+			public const int snackbar_text = 2131427428;
 			
 			// aapt resource value: 0x7f0b0007
 			public const int split_action_bar = 2131427335;
@@ -5304,38 +3658,38 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			// aapt resource value: 0x7f0b002f
 			public const int start = 2131427375;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int status_bar_latest_event_content = 2131427451;
+			// aapt resource value: 0x7f0b0077
+			public const int status_bar_latest_event_content = 2131427447;
 			
-			// aapt resource value: 0x7f0b0078
-			public const int stop = 2131427448;
+			// aapt resource value: 0x7f0b0074
+			public const int stop = 2131427444;
 			
 			// aapt resource value: 0x7f0b0060
 			public const int submit_area = 2131427424;
 			
-			// aapt resource value: 0x7f0b0073
-			public const int subtitle = 2131427443;
+			// aapt resource value: 0x7f0b006f
+			public const int subtitle = 2131427439;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int tabMode = 2131427340;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int text = 2131427459;
+			// aapt resource value: 0x7f0b007f
+			public const int text = 2131427455;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int text2 = 2131427457;
+			// aapt resource value: 0x7f0b007d
+			public const int text2 = 2131427453;
 			
 			// aapt resource value: 0x7f0b0048
 			public const int textSpacerNoButtons = 2131427400;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int time = 2131427455;
+			// aapt resource value: 0x7f0b007b
+			public const int time = 2131427451;
 			
 			// aapt resource value: 0x7f0b0041
 			public const int title = 2131427393;
 			
-			// aapt resource value: 0x7f0b006c
-			public const int title_bar = 2131427436;
+			// aapt resource value: 0x7f0b0068
+			public const int title_bar = 2131427432;
 			
 			// aapt resource value: 0x7f0b0044
 			public const int title_template = 2131427396;
@@ -5478,94 +3832,79 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			public const int abc_select_dialog_material = 2130903063;
 			
 			// aapt resource value: 0x7f030018
-			public const int calendar_pager_layout = 2130903064;
+			public const int design_layout_snackbar = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int calendar_picker = 2130903065;
+			public const int design_layout_snackbar_include = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int design_layout_snackbar = 2130903066;
+			public const int design_layout_tab_icon = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int design_layout_snackbar_include = 2130903067;
+			public const int design_layout_tab_text = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int design_layout_tab_icon = 2130903068;
+			public const int design_navigation_item = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int design_layout_tab_text = 2130903069;
+			public const int design_navigation_item_header = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int design_navigation_item = 2130903070;
+			public const int design_navigation_item_separator = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int design_navigation_item_header = 2130903071;
+			public const int design_navigation_item_subheader = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int design_navigation_item_separator = 2130903072;
+			public const int design_navigation_menu = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int design_navigation_item_subheader = 2130903073;
+			public const int Main = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int design_navigation_menu = 2130903074;
+			public const int mr_media_route_chooser_dialog = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int dialog = 2130903075;
+			public const int mr_media_route_controller_material_dialog_b = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int Main = 2130903076;
+			public const int mr_media_route_list_item = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int month = 2130903077;
+			public const int notification_media_action = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int mr_media_route_chooser_dialog = 2130903078;
+			public const int notification_media_cancel_action = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int mr_media_route_controller_material_dialog_b = 2130903079;
+			public const int notification_template_big_media = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int mr_media_route_list_item = 2130903080;
+			public const int notification_template_big_media_narrow = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int notification_media_action = 2130903081;
+			public const int notification_template_lines = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int notification_media_cancel_action = 2130903082;
+			public const int notification_template_media = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int notification_template_big_media = 2130903083;
+			public const int notification_template_part_chronometer = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int notification_template_big_media_narrow = 2130903084;
+			public const int notification_template_part_time = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int notification_template_lines = 2130903085;
+			public const int select_dialog_item_material = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int notification_template_media = 2130903086;
+			public const int select_dialog_multichoice_material = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int notification_template_part_chronometer = 2130903087;
+			public const int select_dialog_singlechoice_material = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int notification_template_part_time = 2130903088;
-			
-			// aapt resource value: 0x7f030031
-			public const int select_dialog_item_material = 2130903089;
-			
-			// aapt resource value: 0x7f030032
-			public const int select_dialog_multichoice_material = 2130903090;
-			
-			// aapt resource value: 0x7f030033
-			public const int select_dialog_singlechoice_material = 2130903091;
-			
-			// aapt resource value: 0x7f030034
-			public const int support_simple_spinner_dropdown_item = 2130903092;
-			
-			// aapt resource value: 0x7f030035
-			public const int week = 2130903093;
+			public const int support_simple_spinner_dropdown_item = 2130903088;
 			
 			static Layout()
 			{
@@ -5639,21 +3978,6 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			
 			// aapt resource value: 0x7f05001d
 			public const int appbar_scrolling_view_behavior = 2131034141;
-			
-			// aapt resource value: 0x7f050021
-			public const int day_name_format = 2131034145;
-			
-			// aapt resource value: 0x7f050024
-			public const int full_date_format = 2131034148;
-			
-			// aapt resource value: 0x7f050022
-			public const int invalid_date = 2131034146;
-			
-			// aapt resource value: 0x7f050020
-			public const int library_name = 2131034144;
-			
-			// aapt resource value: 0x7f050023
-			public const int month_name_format = 2131034147;
 			
 			// aapt resource value: 0x7f050000
 			public const int mr_media_route_button_content_description = 2131034112;
@@ -6132,18 +4456,6 @@ namespace AppShell.Samples.ServiceDispatcher.Mobile.Android
 			
 			// aapt resource value: 0x7f070136
 			public const int Base_Widget_Design_TabLayout = 2131165494;
-			
-			// aapt resource value: 0x7f070145
-			public const int CalendarCell = 2131165509;
-			
-			// aapt resource value: 0x7f070147
-			public const int CalendarCell_CalendarDate = 2131165511;
-			
-			// aapt resource value: 0x7f070146
-			public const int CalendarCell_DayHeader = 2131165510;
-			
-			// aapt resource value: 0x7f070144
-			public const int CalendarTitle = 2131165508;
 			
 			// aapt resource value: 0x7f070004
 			public const int CardView = 2131165188;

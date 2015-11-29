@@ -97,6 +97,7 @@
   <ItemGroup>
     <Compile Include="Providers\AndroidPlatformProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\ShellWebViewRenderer.cs" />
     <Compile Include="ShellActivity.cs" />
   </ItemGroup>
   <ItemGroup>

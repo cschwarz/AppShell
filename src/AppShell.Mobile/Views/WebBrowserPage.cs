@@ -1,15 +1,8 @@
 ﻿using Newtonsoft.Json;
-using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Reflection.Emit;
-using System.Text;
 using Xamarin.Forms;
-using XLabs.Forms.Controls;
-using XLabs.Serialization.JsonNET;
 
 namespace AppShell.Mobile
 {
@@ -60,12 +53,12 @@ namespace AppShell.Mobile
                 webBrowserPage.webView.Source = new HtmlWebViewSource() { Html = newValue };
         }
 
-        private HybridWebView webView;
+        private ShellWebView webView;
         private ConcurrentDictionary<string, EventRegistration> eventRegistrations;
 
         public WebBrowserPage(IServiceDispatcher serviceDispatcher, IPlatformProvider platformProvider)
         {
-            webView = new HybridWebView(new XLabs.Serialization.JsonNET.JsonSerializer());
+            webView = new ShellWebView();
             eventRegistrations = new ConcurrentDictionary<string, EventRegistration>();
             
             string serviceDispatcherScript = null;
@@ -74,13 +67,16 @@ namespace AppShell.Mobile
                 serviceDispatcherScript = streamReader.ReadToEnd();
 
             string services = JsonConvert.SerializeObject(serviceDispatcher.Services);
-
+                        
             webView.LoadFinished += (s, e) =>
             {
+                //webView.Eval(serviceDispatcherScript);
+                //webView.Eval(string.Format("serviceDispatcher.initialize({0});", services));
+
                 webView.InjectJavaScript(serviceDispatcherScript);
                 webView.InjectJavaScript(string.Format("serviceDispatcher.initialize({0});", services));
             };
-                        
+                            
             webView.RegisterCallback("dispatch", args =>
             {
                 DispatchData dispatchData = JsonConvert.DeserializeObject<DispatchData>(args);
@@ -114,7 +110,7 @@ namespace AppShell.Mobile
                 if (eventRegistrations.TryRemove(unsubscribeEventData.CallbackId, out eventRegistration))
                     serviceDispatcher.UnsubscribeEvent(unsubscribeEventData.ServiceName, eventRegistration);
             });
-
+            
             Content = webView;       
 
             SetBinding(UrlProperty, new Binding("Url"));

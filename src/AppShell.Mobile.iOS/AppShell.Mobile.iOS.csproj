@@ -40,6 +40,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\iOSPlatformProvider.cs" />
+    <Compile Include="Renderers\ShellWebViewRenderer.cs" />
     <Compile Include="ShellApplicationDelegate.cs" />
   </ItemGroup>
   <ItemGroup>

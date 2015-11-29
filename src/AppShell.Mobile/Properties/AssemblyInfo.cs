@@ -32,3 +32,6 @@ using AppShell;
 [assembly: AssemblyInformationalVersion("1.0.0.0")]
 
 [assembly: ShellResource]
+
+[assembly: InternalsVisibleTo("AppShell.Mobile.Android")]
+[assembly: InternalsVisibleTo("AppShell.Mobile.iOS")]

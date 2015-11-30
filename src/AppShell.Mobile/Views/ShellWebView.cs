@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace AppShell.Mobile
 {
-    public class ShellWebView : WebView
+    public class ShellWebView : View
     {
         class Message
         {
@@ -14,11 +14,13 @@ namespace AppShell.Mobile
             [JsonProperty("d")]
             public object Data { get; set; }
         }
+        
+        public static readonly BindableProperty SourceProperty = BindableProperty.Create<ShellWebView, WebViewSource>(d => d.Source, null);
+        public WebViewSource Source { get { return (WebViewSource)GetValue(SourceProperty); } set { SetValue(SourceProperty, value); } }
 
         public EventHandler LoadFinished;
 
         internal EventHandler<string> InjectJavaScriptRequested;
-
         internal Dictionary<string, Action<string>> Callbacks;
 
         public ShellWebView()

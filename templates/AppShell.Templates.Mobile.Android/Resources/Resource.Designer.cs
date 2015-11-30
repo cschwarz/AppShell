@@ -1484,8 +1484,6 @@ namespace AppShell.Templates.Mobile.Android
 			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat_android_id = global::AppShell.Templates.Mobile.Android.Resource.Styleable.ViewStubCompat_android_id;
 			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat_android_inflatedId = global::AppShell.Templates.Mobile.Android.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat_android_layout = global::AppShell.Templates.Mobile.Android.Resource.Styleable.ViewStubCompat_android_layout;
-			global::XLabs.Platform.Resource.String.ApplicationName = global::AppShell.Templates.Mobile.Android.Resource.String.ApplicationName;
-			global::XLabs.Platform.Resource.String.Hello = global::AppShell.Templates.Mobile.Android.Resource.String.Hello;
 		}
 		
 		public partial class Animation

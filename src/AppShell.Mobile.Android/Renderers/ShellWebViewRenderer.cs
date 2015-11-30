@@ -3,6 +3,7 @@ using AppShell.Mobile;
 using AppShell.Mobile.Android;
 using Java.Interop;
 using System;
+using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
@@ -10,7 +11,7 @@ using Xamarin.Forms.Platform.Android;
 
 namespace AppShell.Mobile.Android
 {
-    public class ShellWebViewRenderer : WebViewRenderer
+    public class ShellWebViewRenderer : ViewRenderer<ShellWebView, global::Android.Webkit.WebView>
     {
         class ShellWebViewClient : WebViewClient
         {
@@ -47,14 +48,45 @@ namespace AppShell.Mobile.Android
             }
         }
 
-        protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.WebView> e)
+        protected override void OnElementChanged(ElementChangedEventArgs<ShellWebView> e)
         {
             base.OnElementChanged(e);
 
-            (Element as ShellWebView).InjectJavaScriptRequested += InjectJavaScriptRequested;
+            global::Android.Webkit.WebView webView = new global::Android.Webkit.WebView(Context);
+            SetNativeControl(webView);
 
-            Control.SetWebViewClient(new ShellWebViewClient(Element as ShellWebView));
-            Control.AddJavascriptInterface(new ScriptInterface(Element as ShellWebView), "ScriptInterface");
+            Control.Settings.JavaScriptEnabled = true;
+
+            Element.InjectJavaScriptRequested += InjectJavaScriptRequested;
+            Control.SetWebViewClient(new ShellWebViewClient(Element));
+            Control.AddJavascriptInterface(new ScriptInterface(Element), "ScriptInterface");
+
+            UpdateSource();
+        }
+
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+
+            if (e.PropertyName == ShellWebView.SourceProperty.PropertyName)
+                UpdateSource();
+        }
+
+        private void UpdateSource()
+        {
+            if (Element.Source != null)
+            {
+                if (Element.Source is HtmlWebViewSource)
+                {
+                    HtmlWebViewSource htmlSource = Element.Source as HtmlWebViewSource;
+                    Control.LoadData(htmlSource.Html, "text/html", "UTF-8");
+                }
+                else if(Element.Source is UrlWebViewSource)
+                {
+                    UrlWebViewSource urlSource = Element.Source as UrlWebViewSource;
+                    Control.LoadUrl(urlSource.Url);
+                }
+            }
         }
 
         private void InjectJavaScriptRequested(object sender, string script)

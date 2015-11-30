@@ -35,3 +35,4 @@ using AppShell;
 
 [assembly: InternalsVisibleTo("AppShell.Mobile.Android")]
 [assembly: InternalsVisibleTo("AppShell.Mobile.iOS")]
+[assembly: InternalsVisibleTo("AppShell.Mobile.WinRT")]

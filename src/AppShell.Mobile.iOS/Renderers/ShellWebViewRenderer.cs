@@ -2,12 +2,10 @@
 using AppShell.Mobile.iOS;
 using Foundation;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel;
 using WebKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-using System.ComponentModel;
 
 [assembly: ExportRenderer(typeof(ShellWebView), typeof(ShellWebViewRenderer))]
 
@@ -46,26 +44,37 @@ namespace AppShell.Mobile.iOS
 
             Element.InjectJavaScriptRequested += InjectJavaScriptRequested;
 
-            if (Element.Source != null)
-            {
-                if (Element.Source is HtmlWebViewSource)
-                {
-                    HtmlWebViewSource htmlSource = Element.Source as HtmlWebViewSource;
-                    webView.LoadHtmlString(htmlSource.Html, new NSUrl(NSBundle.MainBundle.BundlePath, true));
-                }
-            }
+            UpdateSource();
         }
 
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
+
+            if (e.PropertyName == ShellWebView.SourceProperty.PropertyName)
+                UpdateSource();
+        }
+
+        private void UpdateSource()
+        {
+            if (Element.Source != null)
+            {
+                if (Element.Source is HtmlWebViewSource)
+                {
+                    HtmlWebViewSource htmlSource = Element.Source as HtmlWebViewSource;
+                    Control.LoadHtmlString(htmlSource.Html, new NSUrl(NSBundle.MainBundle.BundlePath, true));
+                }
+                else if (Element.Source is UrlWebViewSource)
+                {
+                    UrlWebViewSource urlSource = Element.Source as UrlWebViewSource;
+                    Control.LoadRequest(new NSUrlRequest(new NSUrl(urlSource.Url)));
+                }
+            }
         }
 
         private void InjectJavaScriptRequested(object sender, string script)
         {
-            Control.EvaluateJavaScript(script, (r, e) =>
-            {
-            });
+            Control.EvaluateJavaScript(script, (r, e) => { });
         }
     }
 }

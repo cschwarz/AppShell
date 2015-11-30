@@ -70,9 +70,6 @@ namespace AppShell.Mobile
                         
             webView.LoadFinished += (s, e) =>
             {
-                //webView.Eval(serviceDispatcherScript);
-                //webView.Eval(string.Format("serviceDispatcher.initialize({0});", services));
-
                 webView.InjectJavaScript(serviceDispatcherScript);
                 webView.InjectJavaScript(string.Format("serviceDispatcher.initialize({0});", services));
             };

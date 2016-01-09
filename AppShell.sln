@@ -1803,8 +1803,6 @@ Global
 		{C2287858-283A-4427-B307-45CFB4AAD739}.Debug|x86.Build.0 = Debug|x86
 		{C2287858-283A-4427-B307-45CFB4AAD739}.Debug|x86.Deploy.0 = Debug|x86
 		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|ARM.ActiveCfg = Release|ARM
 		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|ARM.Build.0 = Release|ARM
 		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|ARM.Deploy.0 = Release|ARM
@@ -1815,11 +1813,7 @@ Global
 		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
 		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|Mixed Platforms.Build.0 = Release|x86
-		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|Mixed Platforms.Deploy.0 = Release|x86
 		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|x86.ActiveCfg = Release|x86
-		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|x86.Build.0 = Release|x86
-		{C2287858-283A-4427-B307-45CFB4AAD739}.Release|x86.Deploy.0 = Release|x86
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Ad-Hoc|Any CPU.Deploy.0 = Release|Any CPU
@@ -1875,8 +1869,6 @@ Global
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Debug|x86.Build.0 = Debug|x86
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Debug|x86.Deploy.0 = Debug|x86
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|ARM.ActiveCfg = Release|ARM
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|ARM.Build.0 = Release|ARM
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|ARM.Deploy.0 = Release|ARM
@@ -1887,11 +1879,7 @@ Global
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|Mixed Platforms.Build.0 = Release|x86
-		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|Mixed Platforms.Deploy.0 = Release|x86
 		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|x86.ActiveCfg = Release|x86
-		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|x86.Build.0 = Release|x86
-		{A5B0BADE-E1F5-422D-BA48-6AE40B909686}.Release|x86.Deploy.0 = Release|x86
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Ad-Hoc|Any CPU.Deploy.0 = Release|Any CPU
@@ -1947,8 +1935,6 @@ Global
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Debug|x86.Build.0 = Debug|x86
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Debug|x86.Deploy.0 = Debug|x86
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|ARM.ActiveCfg = Release|ARM
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|ARM.Build.0 = Release|ARM
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|ARM.Deploy.0 = Release|ARM
@@ -1959,11 +1945,7 @@ Global
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|Mixed Platforms.Build.0 = Release|x86
-		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|Mixed Platforms.Deploy.0 = Release|x86
 		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|x86.ActiveCfg = Release|x86
-		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|x86.Build.0 = Release|x86
-		{DC36A746-58FC-4408-A87F-22B9E336C3F7}.Release|x86.Deploy.0 = Release|x86
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Ad-Hoc|Any CPU.Deploy.0 = Release|Any CPU
@@ -2019,8 +2001,6 @@ Global
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Debug|x86.Build.0 = Debug|x86
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Debug|x86.Deploy.0 = Debug|x86
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|ARM.ActiveCfg = Release|ARM
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|ARM.Build.0 = Release|ARM
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|ARM.Deploy.0 = Release|ARM
@@ -2031,11 +2011,7 @@ Global
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|Mixed Platforms.Build.0 = Release|x86
-		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|Mixed Platforms.Deploy.0 = Release|x86
 		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|x86.ActiveCfg = Release|x86
-		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|x86.Build.0 = Release|x86
-		{982CBF81-76EB-457B-95E3-25C5B414897C}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,7 +15,7 @@ namespace AppShell.Mobile.Views
         public static void ShellContentPropertyChanged(BindableObject d, View oldValue, View newValue)
         {
             ShellView shellView = d as ShellView;
-            shellView.ShellContentView.Content = newValue;
+            shellView.ShellContent = newValue;
         }
 
         private static void OnHasNavigationBarChanged(BindableObject d, bool oldValue, bool newValue)

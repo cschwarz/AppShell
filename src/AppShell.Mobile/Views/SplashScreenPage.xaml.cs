@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace AppShell.Mobile
+namespace AppShell.Mobile.Views
 {
     [View(typeof(SplashScreenHostViewModel))]
     public partial class SplashScreenPage : ContentPage

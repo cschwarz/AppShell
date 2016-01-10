@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>AppShell.NativeMaps.Mobile.Android</id>
+    <version>$version$</version>
+    <title>AppShell.NativeMaps.Mobile.Android</title>
+    <authors>Christian Schwarz</authors>
+    <owners>Christian Schwarz</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>AppShell.NativeMaps.Mobile.Android</description>
+    <copyright>Copyright 2015</copyright>
+    <tags>AppShell.NativeMaps.Mobile.Android</tags>
+    <dependencies>
+      <dependency id="AppShell" version="$version$" />
+      <dependency id="AppShell.Mobile" version="$version$" />
+      <dependency id="AppShell.NativeMaps.Mobile" version="$version$" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\AppShell.NativeMaps.Mobile.Android.dll" target="lib\MonoAndroid10"/>
+  </files>
+</package>

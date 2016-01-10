@@ -82,5 +82,10 @@ namespace AppShell.NativeMaps.Mobile.Android
         {
             base.OnElementPropertyChanged(sender, e);
         }
+
+        public override SizeRequest GetDesiredSize(int widthConstraint, int heightConstraint)
+        {
+            return new SizeRequest(new Size(ContextExtensions.ToPixels(Context, 40.0), ContextExtensions.ToPixels(Context, 40.0)));
+        }
     }
 }

@@ -110,5 +110,10 @@ namespace AppShell.NativeMaps.Mobile.iOS
             if (Element.Center != null)
                 Control.SetRegion(new MKCoordinateRegion(new CLLocationCoordinate2D(Element.Center.Latitude, Element.Center.Longitude), new MKCoordinateSpan(0, 360.0 / Math.Pow(2, Element.ZoomLevel + 1) * Element.Width / 256.0)), false);
         }
+
+        public override SizeRequest GetDesiredSize(double widthConstraint, double heightConstraint)
+        {
+            return UIViewExtensions.GetSizeRequest(Control, widthConstraint, heightConstraint, -1.0, -1.0);
+        }
     }
 }

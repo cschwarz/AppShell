@@ -8,7 +8,7 @@
       <RowDefinition />
       <RowDefinition />
     </Grid.RowDefinitions>
-    <maps:MapView Grid.Row="0" Center="{Binding Center1}" ZoomLevel="{Binding ZoomLevel1}" />
+    <maps:MapView Grid.Row="0" Center="{Binding Center1}" ZoomLevel="{Binding ZoomLevel1}" Markers="{Binding Markers1}" />
     <maps:MapView Grid.Row="1" Center="{Binding Center2}" ZoomLevel="{Binding ZoomLevel2}" />
   </Grid>  
 </ContentView>

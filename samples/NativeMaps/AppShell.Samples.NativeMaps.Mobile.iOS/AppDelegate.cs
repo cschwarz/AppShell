@@ -21,11 +21,12 @@ namespace AppShell.Samples.NativeMaps.Mobile.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            var mapViewModels = typeof(AppShell.NativeMaps.MapViewModel);
+            var mapViewModels = typeof(AppShell.NativeMaps.MapViewModel);            
             var mapViews = typeof(AppShell.NativeMaps.Mobile.MapView);
+            var mapRenderer = typeof(AppShell.NativeMaps.Mobile.iOS.MapViewRenderer);
+            var sampleViewModels = typeof(MultipleMapViewModel);
+            var sampleViews = typeof(Views.MultipleMapView);            
 
-            Xamarin.FormsMaps.Init();
-            
             return base.FinishedLaunching(app, options);
         }
     }

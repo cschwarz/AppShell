@@ -26,6 +26,1664 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 		
 		public static void UpdateIdValues()
 		{
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.abc_fade_in = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_fade_in;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.abc_fade_out = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_fade_out;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.abc_popup_enter = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_popup_enter;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.abc_popup_exit = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_popup_exit;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.abc_slide_in_bottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_slide_in_bottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.abc_slide_in_top = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_slide_in_top;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.abc_slide_out_bottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_slide_out_bottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.abc_slide_out_top = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_slide_out_top;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.design_fab_in = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.design_fab_in;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.design_fab_out = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.design_fab_out;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.design_snackbar_in = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.design_snackbar_in;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Animation.design_snackbar_out = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.design_snackbar_out;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionBarDivider = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionBarDivider;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionBarItemBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionBarItemBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionBarPopupTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionBarPopupTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionBarSize = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionBarSize;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionBarSplitStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionBarSplitStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionBarStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionBarStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionBarTabBarStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionBarTabBarStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionBarTabStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionBarTabStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionBarTabTextStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionBarTabTextStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionBarTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionBarTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionBarWidgetTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionBarWidgetTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionDropDownStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionDropDownStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionMenuTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionMenuTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionMenuTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionMenuTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModeBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModeBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModeCloseButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModeCloseButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModeCloseDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModeCloseDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModeCopyDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModeCopyDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModeCutDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModeCutDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModeFindDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModeFindDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModePasteDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModePasteDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModePopupWindowStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModePopupWindowStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModeSelectAllDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModeSelectAllDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModeShareDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModeShareDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModeSplitBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModeSplitBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModeStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModeStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionModeWebSearchDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionModeWebSearchDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionOverflowButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionOverflowButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionOverflowMenuStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionOverflowMenuStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionProviderClass = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionProviderClass;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.actionViewClass = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.actionViewClass;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.activityChooserViewStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.activityChooserViewStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.alertDialogCenterButtons = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.alertDialogCenterButtons;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.alertDialogStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.alertDialogStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.alertDialogTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.alertDialogTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.ambientEnabled = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.ambientEnabled;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.arrowHeadLength = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.arrowHeadLength;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.arrowShaftLength = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.arrowShaftLength;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.autoCompleteTextViewStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.autoCompleteTextViewStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.background = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.background;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.backgroundSplit = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.backgroundSplit;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.backgroundStacked = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.backgroundStacked;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.backgroundTint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.backgroundTint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.backgroundTintMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.backgroundTintMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.barLength = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.barLength;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.behavior_overlapTop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.behavior_overlapTop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.borderWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.borderWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.borderlessButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.borderlessButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.buttonBarButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.buttonBarButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.buttonBarStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.buttonBarStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.buttonPanelSideLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.buttonPanelSideLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.buttonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.buttonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.buttonStyleSmall = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.buttonStyleSmall;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.buttonTint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.buttonTint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.buttonTintMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.buttonTintMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.cameraBearing = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.cameraBearing;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.cameraTargetLat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.cameraTargetLat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.cameraTargetLng = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.cameraTargetLng;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.cameraTilt = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.cameraTilt;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.cameraZoom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.cameraZoom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.cardBackgroundColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.cardBackgroundColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.cardCornerRadius = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.cardCornerRadius;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.cardElevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.cardElevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.cardMaxElevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.cardMaxElevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.cardPreventCornerOverlap = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.cardPreventCornerOverlap;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.cardUseCompatPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.cardUseCompatPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.checkboxStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.checkboxStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.checkedTextViewStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.checkedTextViewStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.circleCrop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.circleCrop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.closeIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.closeIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.closeItemLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.closeItemLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.collapseContentDescription = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.collapseContentDescription;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.collapseIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.collapseIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.collapsedTitleGravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.collapsedTitleGravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.collapsedTitleTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.collapsedTitleTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.colorAccent = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.colorAccent;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.colorButtonNormal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.colorButtonNormal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.colorControlActivated = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.colorControlActivated;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.colorControlHighlight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.colorControlHighlight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.colorControlNormal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.colorControlNormal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.colorPrimary = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.colorPrimary;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.colorPrimaryDark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.colorPrimaryDark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.colorSwitchThumbNormal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.colorSwitchThumbNormal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.commitIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.commitIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.contentInsetEnd = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.contentInsetEnd;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.contentInsetLeft = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.contentInsetLeft;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.contentInsetRight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.contentInsetRight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.contentInsetStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.contentInsetStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.contentPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.contentPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.contentPaddingBottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.contentPaddingBottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.contentPaddingLeft = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.contentPaddingLeft;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.contentPaddingRight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.contentPaddingRight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.contentPaddingTop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.contentPaddingTop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.contentScrim = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.contentScrim;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.controlBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.controlBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.customNavigationLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.customNavigationLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.defaultQueryHint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.defaultQueryHint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.dialogPreferredPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.dialogPreferredPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.dialogTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.dialogTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.displayOptions = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.displayOptions;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.divider = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.divider;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.dividerHorizontal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.dividerHorizontal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.dividerPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.dividerPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.dividerVertical = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.dividerVertical;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.drawableSize = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.drawableSize;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.drawerArrowStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.drawerArrowStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.dropDownListViewStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.dropDownListViewStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.editTextBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.editTextBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.editTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.editTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.editTextStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.editTextStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.elevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.elevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.errorEnabled = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.errorEnabled;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.errorTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.errorTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.expanded = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.expanded;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleGravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleGravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleMargin = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleMargin;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleMarginBottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleMarginBottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleMarginEnd = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleMarginEnd;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleMarginStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleMarginStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleMarginTop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleMarginTop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.expandedTitleTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.externalRouteEnabledDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.externalRouteEnabledDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.fabSize = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.fabSize;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.gapBetweenBars = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.gapBetweenBars;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.goIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.goIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.headerLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.headerLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.height = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.height;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.hideOnContentScroll = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.hideOnContentScroll;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.hintAnimationEnabled = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.hintAnimationEnabled;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.hintTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.hintTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.homeAsUpIndicator = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.homeAsUpIndicator;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.homeLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.homeLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.icon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.icon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.iconifiedByDefault = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.iconifiedByDefault;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.imageAspectRatio = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.imageAspectRatio;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.imageAspectRatioAdjust = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.imageAspectRatioAdjust;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.indeterminateProgressStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.indeterminateProgressStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.initialActivityCount = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.initialActivityCount;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.insetForeground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.insetForeground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.isLightTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.isLightTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.itemBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.itemBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.itemIconTint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.itemIconTint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.itemPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.itemPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.itemTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.itemTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.itemTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.itemTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.keylines = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.keylines;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.layout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.layout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.layout_anchor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.layout_anchor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.layout_anchorGravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.layout_anchorGravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.layout_behavior = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.layout_behavior;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.layout_collapseMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.layout_collapseMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.layout_keyline = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.layout_keyline;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.layout_scrollFlags = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.layout_scrollFlags;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.layout_scrollInterpolator = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.layout_scrollInterpolator;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.listDividerAlertDialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.listDividerAlertDialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.listItemLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.listItemLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.listLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.listLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.listPopupWindowStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.listPopupWindowStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.listPreferredItemHeight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.listPreferredItemHeight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.listPreferredItemHeightLarge = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.listPreferredItemHeightLarge;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.listPreferredItemHeightSmall = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.listPreferredItemHeightSmall;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.listPreferredItemPaddingRight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.listPreferredItemPaddingRight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.liteMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.liteMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.logo = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.logo;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.logoDescription = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.logoDescription;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.mapType = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.mapType;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.maxActionInlineWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.maxActionInlineWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.maxButtonHeight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.maxButtonHeight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.measureWithLargestChild = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.measureWithLargestChild;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.mediaRouteButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.mediaRouteButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.mediaRouteCastDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.mediaRouteCastDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.mediaRouteConnectingDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.mediaRouteConnectingDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.mediaRouteOffDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.mediaRouteOffDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.mediaRouteOnDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.mediaRouteOnDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.mediaRoutePauseDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.mediaRoutePauseDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.mediaRoutePlayDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.mediaRoutePlayDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.mediaRouteSettingsDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.mediaRouteSettingsDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.menu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.menu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.multiChoiceItemLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.multiChoiceItemLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.navigationContentDescription = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.navigationContentDescription;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.navigationIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.navigationIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.navigationMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.navigationMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.overlapAnchor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.overlapAnchor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.paddingEnd = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.paddingEnd;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.paddingStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.paddingStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.panelBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.panelBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.panelMenuListTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.panelMenuListTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.panelMenuListWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.panelMenuListWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.popupMenuStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.popupMenuStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.popupTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.popupTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.popupWindowStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.popupWindowStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.preserveIconSpacing = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.preserveIconSpacing;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.pressedTranslationZ = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.pressedTranslationZ;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.progressBarPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.progressBarPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.progressBarStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.progressBarStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.queryBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.queryBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.queryHint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.queryHint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.radioButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.radioButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.ratingBarStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.ratingBarStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.rippleColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.rippleColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.searchHintIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.searchHintIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.searchIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.searchIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.searchViewStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.searchViewStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.selectableItemBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.selectableItemBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.showAsAction = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.showAsAction;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.showDividers = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.showDividers;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.showText = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.showText;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.singleChoiceItemLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.singleChoiceItemLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.spinBars = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.spinBars;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.spinnerDropDownItemStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.spinnerDropDownItemStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.spinnerStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.spinnerStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.splitTrack = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.splitTrack;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.state_above_anchor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.state_above_anchor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.statusBarBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.statusBarBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.statusBarScrim = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.statusBarScrim;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.submitBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.submitBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.subtitleTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.subtitleTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.subtitleTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.subtitleTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.subtitleTextStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.subtitleTextStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.suggestionRowLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.suggestionRowLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.switchMinWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.switchMinWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.switchPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.switchPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.switchStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.switchStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.switchTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.switchTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabContentStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabContentStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabGravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabGravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabIndicatorColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabIndicatorColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabIndicatorHeight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabIndicatorHeight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabMaxWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabMaxWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabMinWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabMinWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabPaddingBottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabPaddingBottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabPaddingEnd = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabPaddingEnd;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabPaddingStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabPaddingStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabPaddingTop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabPaddingTop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabSelectedTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabSelectedTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.tabTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.tabTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.textAllCaps = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.textAllCaps;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.textAppearanceListItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.textAppearanceListItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.textAppearanceListItemSmall = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.textAppearanceListItemSmall;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.textColorAlertDialogListItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.textColorAlertDialogListItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.textColorSearchUrl = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.textColorSearchUrl;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.theme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.theme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.thickness = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.thickness;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.thumbTextPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.thumbTextPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.titleEnabled = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.titleEnabled;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.titleMarginBottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.titleMarginBottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.titleMarginEnd = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.titleMarginEnd;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.titleMarginStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.titleMarginStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.titleMarginTop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.titleMarginTop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.titleMargins = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.titleMargins;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.titleTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.titleTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.titleTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.titleTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.titleTextStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.titleTextStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.toolbarId = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.toolbarId;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.toolbarStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.toolbarStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.track = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.track;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.uiCompass = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.uiCompass;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.uiMapToolbar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.uiMapToolbar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.uiRotateGestures = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.uiRotateGestures;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.uiScrollGestures = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.uiScrollGestures;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.uiTiltGestures = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.uiTiltGestures;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.uiZoomControls = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.uiZoomControls;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.uiZoomGestures = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.uiZoomGestures;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.useViewLifecycle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.useViewLifecycle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.voiceIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.voiceIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.windowActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.windowActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.windowActionBarOverlay = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.windowActionBarOverlay;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.windowActionModeOverlay = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.windowActionModeOverlay;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.windowFixedHeightMajor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.windowFixedHeightMajor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.windowFixedHeightMinor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.windowFixedHeightMinor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.windowFixedWidthMajor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.windowFixedWidthMajor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.windowFixedWidthMinor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.windowFixedWidthMinor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.windowMinWidthMajor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.windowMinWidthMajor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.windowMinWidthMinor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.windowMinWidthMinor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.windowNoTitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.windowNoTitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Attribute.zOrderOnTop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Attribute.zOrderOnTop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_color_highlight_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_color_highlight_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_input_method_navigation_guard = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_input_method_navigation_guard;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_primary_text_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_primary_text_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_primary_text_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_primary_text_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_search_url_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_search_url_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_search_url_text_normal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_search_url_text_normal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_search_url_text_pressed = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_search_url_text_pressed;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_search_url_text_selected = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_search_url_text_selected;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_secondary_text_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_secondary_text_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.abc_secondary_text_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.abc_secondary_text_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.accent_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.accent_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.accent_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.accent_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.background_floating_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.background_floating_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.background_floating_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.background_floating_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.background_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.background_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.background_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.background_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.bright_foreground_disabled_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.bright_foreground_disabled_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.bright_foreground_disabled_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.bright_foreground_disabled_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.bright_foreground_inverse_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.bright_foreground_inverse_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.bright_foreground_inverse_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.bright_foreground_inverse_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.bright_foreground_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.bright_foreground_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.bright_foreground_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.bright_foreground_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.button_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.button_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.button_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.button_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.cardview_dark_background = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.cardview_dark_background;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.cardview_light_background = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.cardview_light_background;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.cardview_shadow_end_color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.cardview_shadow_end_color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.cardview_shadow_start_color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.cardview_shadow_start_color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.common_action_bar_splitter = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.common_action_bar_splitter;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_dark_text_default = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_dark_text_default;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_dark_text_disabled = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_dark_text_disabled;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_dark_text_focused = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_dark_text_focused;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_dark_text_pressed = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_dark_text_pressed;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_default_background = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_default_background;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_light_text_default = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_light_text_default;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_light_text_disabled = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_light_text_disabled;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_light_text_focused = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_light_text_focused;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_light_text_pressed = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_light_text_pressed;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_text_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_text_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_text_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.common_signin_btn_text_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.design_fab_shadow_end_color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.design_fab_shadow_end_color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.design_fab_shadow_mid_color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.design_fab_shadow_mid_color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.design_fab_shadow_start_color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.design_fab_shadow_start_color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.design_fab_stroke_end_inner_color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.design_fab_stroke_end_inner_color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.design_fab_stroke_end_outer_color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.design_fab_stroke_end_outer_color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.design_fab_stroke_top_inner_color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.design_fab_stroke_top_inner_color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.design_fab_stroke_top_outer_color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.design_fab_stroke_top_outer_color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.design_snackbar_background_color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.design_snackbar_background_color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.design_textinput_error_color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.design_textinput_error_color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.dim_foreground_disabled_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.dim_foreground_disabled_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.dim_foreground_disabled_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.dim_foreground_disabled_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.dim_foreground_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.dim_foreground_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.dim_foreground_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.dim_foreground_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.foreground_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.foreground_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.foreground_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.foreground_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.highlighted_text_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.highlighted_text_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.highlighted_text_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.highlighted_text_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.hint_foreground_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.hint_foreground_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.hint_foreground_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.hint_foreground_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.material_blue_grey_800 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.material_blue_grey_800;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.material_blue_grey_900 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.material_blue_grey_900;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.material_blue_grey_950 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.material_blue_grey_950;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.material_deep_teal_200 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.material_deep_teal_200;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.material_deep_teal_500 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.material_deep_teal_500;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.material_grey_100 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.material_grey_100;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.material_grey_300 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.material_grey_300;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.material_grey_50 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.material_grey_50;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.material_grey_600 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.material_grey_600;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.material_grey_800 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.material_grey_800;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.material_grey_850 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.material_grey_850;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.material_grey_900 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.material_grey_900;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.primary_dark_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.primary_dark_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.primary_dark_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.primary_dark_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.primary_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.primary_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.primary_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.primary_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.primary_text_default_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.primary_text_default_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.primary_text_default_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.primary_text_default_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.primary_text_disabled_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.primary_text_disabled_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.primary_text_disabled_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.primary_text_disabled_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.ripple_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.ripple_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.ripple_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.ripple_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.secondary_text_default_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.secondary_text_default_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.secondary_text_default_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.secondary_text_default_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.secondary_text_disabled_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.secondary_text_disabled_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.secondary_text_disabled_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.secondary_text_disabled_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.switch_thumb_disabled_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.switch_thumb_disabled_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.switch_thumb_disabled_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.switch_thumb_disabled_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.switch_thumb_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.switch_thumb_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.switch_thumb_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.switch_thumb_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.switch_thumb_normal_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.switch_thumb_normal_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Color.switch_thumb_normal_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Color.switch_thumb_normal_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_default_height_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_default_height_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_button_min_height_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_button_min_height_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_button_min_width_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_button_min_width_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_button_inset_vertical_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_button_inset_vertical_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_button_padding_vertical_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_button_padding_vertical_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_config_prefDialogWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_config_prefDialogWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_control_corner_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_control_corner_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_control_inset_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_control_inset_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_control_padding_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_control_padding_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_dialog_list_padding_vertical_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_dialog_list_padding_vertical_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_dialog_min_width_major = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_dialog_min_width_major;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_dialog_min_width_minor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_dialog_min_width_minor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_dialog_padding_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_dialog_padding_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_dialog_padding_top_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_dialog_padding_top_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_floating_window_z = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_floating_window_z;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_panel_menu_list_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_panel_menu_list_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_search_view_preferred_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_search_view_preferred_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_search_view_text_min_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_search_view_text_min_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_switch_padding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_switch_padding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_body_1_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_body_1_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_body_2_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_body_2_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_button_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_button_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_caption_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_caption_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_display_1_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_display_1_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_display_2_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_display_2_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_display_3_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_display_3_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_display_4_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_display_4_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_headline_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_headline_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_large_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_large_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_medium_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_medium_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_menu_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_menu_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_small_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_small_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_subhead_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_subhead_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_title_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_title_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.cardview_compat_inset_shadow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.cardview_compat_inset_shadow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.cardview_default_elevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.cardview_default_elevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.cardview_default_radius = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.cardview_default_radius;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_appbar_elevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_appbar_elevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_fab_border_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_fab_border_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_fab_content_size = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_fab_content_size;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_fab_elevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_fab_elevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_fab_size_mini = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_fab_size_mini;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_fab_size_normal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_fab_size_normal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_fab_translation_z_pressed = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_fab_translation_z_pressed;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_elevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_elevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_icon_padding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_icon_padding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_icon_size = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_icon_size;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_max_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_max_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_padding_bottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_padding_bottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_padding_top_default = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_padding_top_default;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_elevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_elevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_max_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_max_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_min_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_min_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_padding_vertical = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_padding_vertical;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_text_size = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_snackbar_text_size;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_tab_max_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_tab_max_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.design_tab_min_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.design_tab_min_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.dialog_fixed_height_major = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.dialog_fixed_height_major;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.dialog_fixed_height_minor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.dialog_fixed_height_minor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.dialog_fixed_width_major = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.dialog_fixed_width_major;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.dialog_fixed_width_minor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.dialog_fixed_width_minor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.disabled_alpha_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.disabled_alpha_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.disabled_alpha_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.disabled_alpha_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.highlight_alpha_material_colored = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.highlight_alpha_material_colored;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.highlight_alpha_material_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.highlight_alpha_material_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.highlight_alpha_material_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.highlight_alpha_material_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.mr_media_route_controller_art_max_height = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.mr_media_route_controller_art_max_height;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.notification_large_icon_height = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.notification_large_icon_height;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.notification_large_icon_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.notification_large_icon_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Dimension.notification_subtext_size = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Dimension.notification_subtext_size;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_action_bar_item_background_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_action_bar_item_background_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_borderless_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_borderless_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_check_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_check_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_colored_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_colored_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_radio_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_radio_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_cab_background_internal_bg = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_cab_background_internal_bg;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_cab_background_top_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_cab_background_top_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_control_background_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_control_background_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_dialog_material_background_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_dialog_material_background_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_dialog_material_background_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_dialog_material_background_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_edit_text_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_edit_text_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_clear_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_clear_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_search_api_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_search_api_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_item_background_holo_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_item_background_holo_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_item_background_holo_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_item_background_holo_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_focused_holo = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_focused_holo;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_longpressed_holo = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_longpressed_holo;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_pressed_holo_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_pressed_holo_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_selector_holo_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_selector_holo_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_selector_holo_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_list_selector_holo_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_ratingbar_full_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_ratingbar_full_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_switch_thumb_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_switch_thumb_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_tab_indicator_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_tab_indicator_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_text_cursor_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_text_cursor_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.abc_textfield_search_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.abc_textfield_search_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_full_open_on_phone = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_full_open_on_phone;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_ic_googleplayservices = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_ic_googleplayservices;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_disabled_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_disabled_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_disabled_focus_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_disabled_focus_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_disabled_focus_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_disabled_focus_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_disabled_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_disabled_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_focus_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_focus_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_focus_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_focus_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_normal_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_normal_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_normal_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_normal_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_pressed_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_pressed_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_pressed_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_icon_pressed_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_disabled_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_disabled_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_disabled_focus_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_disabled_focus_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_disabled_focus_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_disabled_focus_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_disabled_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_disabled_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_focus_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_focus_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_focus_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_focus_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_normal_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_normal_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_normal_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_normal_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_pressed_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_pressed_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_pressed_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.common_signin_btn_text_pressed_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.design_fab_background = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.design_fab_background;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.design_snackbar_background = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.design_snackbar_background;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_disabled_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_disabled_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_off_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_off_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_on_0_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_on_0_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_on_1_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_on_1_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_on_2_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_on_2_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_on_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_cast_on_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_pause = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_pause;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_play = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_play;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_route_disabled_mono_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_route_disabled_mono_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_route_off_mono_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_route_off_mono_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_route_on_0_mono_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_route_on_0_mono_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_route_on_1_mono_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_route_on_1_mono_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_route_on_2_mono_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_route_on_2_mono_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_route_on_mono_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_media_route_on_mono_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_pause_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_pause_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_pause_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_pause_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_play_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_play_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_play_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_play_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_setting_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_setting_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.ic_setting_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.ic_setting_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_cast_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_cast_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_cast_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_cast_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_media_route_connecting_mono_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_media_route_connecting_mono_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_media_route_connecting_mono_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_media_route_connecting_mono_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_media_route_mono_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_media_route_mono_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_media_route_mono_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_media_route_mono_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_pause_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_pause_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_pause_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_pause_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_play_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_play_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_play_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_play_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_settings_dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_settings_dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_settings_light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.mr_ic_settings_light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Drawable.notification_template_icon_bg = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Drawable.notification_template_icon_bg;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action0 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action0;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_bar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_bar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_bar_activity_content = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_bar_activity_content;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_bar_container = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_bar_container;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_bar_root = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_bar_root;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_bar_spinner = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_bar_spinner;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_bar_subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_bar_subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_bar_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_bar_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_context_bar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_context_bar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_divider = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_divider;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_menu_divider = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_menu_divider;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_menu_presenter = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_menu_presenter;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_mode_bar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_mode_bar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_mode_bar_stub = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_mode_bar_stub;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.action_mode_close_button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.action_mode_close_button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.activity_chooser_view_content = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.activity_chooser_view_content;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.adjust_height = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.adjust_height;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.adjust_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.adjust_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.alertTitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.alertTitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.always = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.always;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.art = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.art;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.beginning = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.beginning;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.bottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.bottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.buttonPanel = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.buttonPanel;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.buttons = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.buttons;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.cancel_action = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.cancel_action;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.center = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.center;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.center_horizontal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.center_horizontal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.center_vertical = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.center_vertical;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.checkbox = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.checkbox;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.chronometer = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.chronometer;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.clip_horizontal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.clip_horizontal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.clip_vertical = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.clip_vertical;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.collapseActionView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.collapseActionView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.contentPanel = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.contentPanel;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.custom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.custom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.customPanel = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.customPanel;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.decor_content_parent = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.decor_content_parent;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.default_activity_button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.default_activity_button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.default_control_frame = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.default_control_frame;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.disableHome = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.disableHome;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.disconnect = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.disconnect;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.edit_query = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.edit_query;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.end = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.end;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.end_padder = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.end_padder;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.enterAlways = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.enterAlways;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.enterAlwaysCollapsed = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.enterAlwaysCollapsed;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.exitUntilCollapsed = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.exitUntilCollapsed;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.expand_activities_button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.expand_activities_button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.expanded_menu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.expanded_menu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.fill = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.fill;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.fill_horizontal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.fill_horizontal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.fill_vertical = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.fill_vertical;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.@fixed = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.@fixed;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.home = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.home;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.homeAsUp = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.homeAsUp;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.hybrid = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.hybrid;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.icon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.icon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.ifRoom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.ifRoom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.image = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.image;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.info = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.info;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.left = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.left;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.line1 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.line1;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.line3 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.line3;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.listMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.listMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.list_item = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.list_item;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.media_actions = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.media_actions;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.media_route_control_frame = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.media_route_control_frame;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.media_route_list = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.media_route_list;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.media_route_volume_layout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.media_route_volume_layout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.media_route_volume_slider = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.media_route_volume_slider;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.middle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.middle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.mini = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.mini;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.multiply = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.multiply;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.never = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.never;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.none = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.none;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.normal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.normal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.parallax = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.parallax;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.parentPanel = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.parentPanel;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.pin = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.pin;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.play_pause = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.play_pause;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.progress_circular = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.progress_circular;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.progress_horizontal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.progress_horizontal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.radio = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.radio;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.right = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.right;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.route_name = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.route_name;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.satellite = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.satellite;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.screen = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.screen;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.scroll = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.scroll;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.scrollView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.scrollView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.scrollable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.scrollable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.search_badge = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.search_badge;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.search_bar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.search_bar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.search_button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.search_button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.search_close_btn = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.search_close_btn;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.search_edit_frame = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.search_edit_frame;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.search_go_btn = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.search_go_btn;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.search_mag_icon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.search_mag_icon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.search_plate = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.search_plate;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.search_src_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.search_src_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.search_voice_btn = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.search_voice_btn;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.select_dialog_listview = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.select_dialog_listview;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.settings = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.settings;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.shortcut = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.shortcut;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.showCustom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.showCustom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.showHome = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.showHome;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.showTitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.showTitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.snackbar_action = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.snackbar_action;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.snackbar_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.snackbar_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.split_action_bar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.split_action_bar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.src_atop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.src_atop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.src_in = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.src_in;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.src_over = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.src_over;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.start = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.start;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.status_bar_latest_event_content = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.status_bar_latest_event_content;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.stop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.stop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.submit_area = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.submit_area;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.tabMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.tabMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.terrain = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.terrain;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.text2 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.text2;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.textSpacerNoButtons = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.textSpacerNoButtons;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.time = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.time;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.title_bar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.title_bar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.title_template = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.title_template;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.top = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.top;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.topPanel = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.topPanel;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.up = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.up;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.useLogo = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.useLogo;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.view_offset_helper = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.view_offset_helper;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.withText = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.withText;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Id.wrap_content = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Id.wrap_content;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Integer.abc_config_activityDefaultDur = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Integer.abc_config_activityDefaultDur;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Integer.abc_config_activityShortDur = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Integer.abc_config_activityShortDur;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Integer.abc_max_action_buttons = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Integer.abc_max_action_buttons;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Integer.cancel_button_image_alpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Integer.cancel_button_image_alpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Integer.design_snackbar_text_max_lines = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Integer.design_snackbar_text_max_lines;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Integer.google_play_services_version = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Integer.google_play_services_version;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Integer.status_bar_notification_info_maxnum = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Integer.status_bar_notification_info_maxnum;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_action_bar_title_item = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_action_bar_title_item;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_action_bar_up_container = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_action_bar_up_container;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_action_bar_view_list_nav_layout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_action_menu_item_layout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_action_menu_item_layout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_action_menu_layout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_action_menu_layout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_action_mode_bar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_action_mode_bar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_action_mode_close_item_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_action_mode_close_item_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_activity_chooser_view = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_activity_chooser_view;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_alert_dialog_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_alert_dialog_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_dialog_title_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_dialog_title_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_expanded_menu_layout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_expanded_menu_layout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_list_menu_item_checkbox = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_list_menu_item_checkbox;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_list_menu_item_icon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_list_menu_item_icon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_list_menu_item_layout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_list_menu_item_layout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_list_menu_item_radio = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_list_menu_item_radio;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_popup_menu_item_layout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_popup_menu_item_layout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_screen_content_include = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_screen_content_include;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_screen_simple = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_screen_simple;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_screen_toolbar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_screen_toolbar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_search_view = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_search_view;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.abc_select_dialog_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.abc_select_dialog_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.design_layout_snackbar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.design_layout_snackbar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.design_layout_snackbar_include = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.design_layout_snackbar_include;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.design_layout_tab_icon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.design_layout_tab_icon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.design_layout_tab_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.design_layout_tab_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.design_navigation_item = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.design_navigation_item;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.design_navigation_item_header = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.design_navigation_item_header;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.design_navigation_item_separator = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.design_navigation_item_separator;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.design_navigation_item_subheader = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.design_navigation_item_subheader;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.design_navigation_menu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.design_navigation_menu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.mr_media_route_chooser_dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.mr_media_route_chooser_dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.mr_media_route_controller_material_dialog_b = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.mr_media_route_controller_material_dialog_b;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.mr_media_route_list_item = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.mr_media_route_list_item;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.notification_media_action = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.notification_media_action;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.notification_media_cancel_action = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.notification_media_cancel_action;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.notification_template_big_media = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.notification_template_big_media;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.notification_template_big_media_narrow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.notification_template_big_media_narrow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.notification_template_lines = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.notification_template_lines;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.notification_template_media = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.notification_template_media;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.notification_template_part_chronometer = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.notification_template_part_chronometer;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.notification_template_part_time = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.notification_template_part_time;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.select_dialog_item_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.select_dialog_item_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.select_dialog_multichoice_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.select_dialog_multichoice_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.select_dialog_singlechoice_material = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.select_dialog_singlechoice_material;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.ApplicationName = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.ApplicationName;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.Hello = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.Hello;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_action_bar_home_description = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_action_bar_home_description;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_action_bar_home_description_format = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_action_bar_home_description_format;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_action_bar_home_subtitle_description_format = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_action_bar_up_description = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_action_bar_up_description;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_action_menu_overflow_description = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_action_menu_overflow_description;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_action_mode_done = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_action_mode_done;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_activity_chooser_view_see_all = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_activity_chooser_view_see_all;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_activitychooserview_choose_application = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_activitychooserview_choose_application;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_search_hint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_search_hint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_searchview_description_clear = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_searchview_description_clear;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_searchview_description_query = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_searchview_description_query;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_searchview_description_search = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_searchview_description_search;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_searchview_description_submit = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_searchview_description_submit;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_searchview_description_voice = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_searchview_description_voice;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_shareactionprovider_share_with = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_shareactionprovider_share_with;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_shareactionprovider_share_with_application = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_shareactionprovider_share_with_application;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.abc_toolbar_collapse_description = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.abc_toolbar_collapse_description;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.appbar_scrolling_view_behavior = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.appbar_scrolling_view_behavior;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.auth_google_play_services_client_facebook_display_name = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.auth_google_play_services_client_facebook_display_name;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.auth_google_play_services_client_google_display_name = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.auth_google_play_services_client_google_display_name;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_android_wear_notification_needs_update_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_android_wear_notification_needs_update_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_android_wear_update_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_android_wear_update_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_android_wear_update_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_android_wear_update_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_api_unavailable_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_api_unavailable_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_enable_button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_enable_button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_enable_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_enable_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_enable_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_enable_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_error_notification_requested_by_msg = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_error_notification_requested_by_msg;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_install_button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_install_button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_install_text_phone = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_install_text_phone;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_install_text_tablet = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_install_text_tablet;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_install_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_install_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_invalid_account_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_invalid_account_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_invalid_account_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_invalid_account_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_needs_enabling_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_needs_enabling_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_network_error_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_network_error_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_network_error_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_network_error_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_notification_needs_update_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_notification_needs_update_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_notification_ticker = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_notification_ticker;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_sign_in_failed_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_sign_in_failed_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_sign_in_failed_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_sign_in_failed_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_unknown_issue = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_unknown_issue;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_unsupported_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_unsupported_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_unsupported_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_unsupported_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_update_button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_update_button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_update_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_update_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_update_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_update_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_updating_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_updating_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_updating_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_google_play_services_updating_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_open_on_phone = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_open_on_phone;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_signin_button_text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_signin_button_text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.common_signin_button_text_long = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.common_signin_button_text_long;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.mr_media_route_button_content_description = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.mr_media_route_button_content_description;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.mr_media_route_chooser_searching = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.mr_media_route_chooser_searching;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.mr_media_route_chooser_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.mr_media_route_chooser_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.mr_media_route_controller_disconnect = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.mr_media_route_controller_disconnect;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.mr_media_route_controller_no_info_available = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.mr_media_route_controller_no_info_available;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.mr_media_route_controller_pause = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.mr_media_route_controller_pause;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.mr_media_route_controller_play = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.mr_media_route_controller_play;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.mr_media_route_controller_settings_description = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.mr_media_route_controller_settings_description;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.mr_media_route_controller_stop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.mr_media_route_controller_stop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.mr_system_route_name = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.mr_system_route_name;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.mr_user_route_category_name = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.mr_user_route_category_name;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.String.status_bar_notification_info_overflow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.String.status_bar_notification_info_overflow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.AlertDialog_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.AlertDialog_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.AlertDialog_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.AlertDialog_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Animation_AppCompat_Dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Animation_AppCompat_Dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_AlertDialog_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_AlertDialog_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V21_Theme_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V21_Theme_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V22_Theme_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V22_Theme_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V23_Theme_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V23_Theme_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V7_Theme_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V7_Theme_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_Design_TabLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Base_Widget_Design_TabLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.CardView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.CardView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.CardView_Dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.CardView_Dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.CardView_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.CardView_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Platform_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Platform_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Platform_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Platform_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Platform_V11_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Platform_V11_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Platform_V11_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Platform_V11_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Platform_V14_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Platform_V14_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Platform_V14_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Platform_V14_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionButton_Overflow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionButton_Overflow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Large = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Large;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Small = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Small;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Design_Error = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Design_Error;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Design_Hint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Design_Hint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Design_Tab = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Design_Tab;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_MediaRouter = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_MediaRouter;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Theme_MediaRouter_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Theme_MediaRouter_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionButton = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionButton;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActionMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Button_Small = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Button_Small;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_EditText = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_EditText;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ListView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ListView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_RatingBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_RatingBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_SearchView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_SearchView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Spinner = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Spinner;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Toolbar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Toolbar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_AppBarLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_AppBarLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_FloatingActionButton = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_FloatingActionButton;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_NavigationView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_NavigationView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_Snackbar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_Snackbar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_TabLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_TabLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_TextInputLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_Design_TextInputLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_background = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_background;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_backgroundSplit = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_backgroundSplit;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_backgroundStacked = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_backgroundStacked;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_contentInsetRight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_contentInsetRight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_contentInsetStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_contentInsetStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_displayOptions = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_displayOptions;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_divider = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_divider;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_elevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_elevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_height = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_height;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_homeLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_homeLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_icon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_icon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_itemPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_itemPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_logo = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_logo;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_navigationMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_navigationMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_popupTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_popupTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_progressBarPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_progressBarPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_progressBarStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_progressBarStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_titleTextStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBar_titleTextStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBarLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBarLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionMenuItemView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionMenuItemView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionMenuView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionMenuView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode_background = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode_background;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode_backgroundSplit = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode_backgroundSplit;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode_closeItemLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode_closeItemLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode_height = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode_height;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode_titleTextStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActionMode_titleTextStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActivityChooserView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActivityChooserView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog_android_layout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog_android_layout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog_listItemLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog_listItemLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog_listLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog_listLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout_android_background = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout_android_background;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout_elevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout_elevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout_expanded = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout_expanded;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout_LayoutParams = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout_LayoutParams;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollFlags = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollFlags;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollInterpolator = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollInterpolator;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AppCompatTextView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AppCompatTextView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CardView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CardView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CardView_cardBackgroundColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CardView_cardBackgroundColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CardView_cardCornerRadius = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CardView_cardCornerRadius;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CardView_cardElevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CardView_cardElevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CardView_cardMaxElevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CardView_cardMaxElevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CardView_contentPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CardView_contentPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CardView_contentPaddingBottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CardView_contentPaddingBottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CardView_contentPaddingLeft = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CardView_contentPaddingLeft;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CardView_contentPaddingRight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CardView_contentPaddingRight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CardView_contentPaddingTop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CardView_contentPaddingTop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CompoundButton = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CompoundButton;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CompoundButton_android_button = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CompoundButton_android_button;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CompoundButton_buttonTint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CompoundButton_buttonTint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_keylines = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_keylines;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_android_layout_gravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_android_layout_gravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchorGravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchorGravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_behavior = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_behavior;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_keyline = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_keyline;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_color = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_color;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_android_background = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_android_background;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_elevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_elevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_fabSize = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_fabSize;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_divider = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_divider;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ListPopupWindow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ListPopupWindow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LoadingImageView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LoadingImageView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LoadingImageView_circleCrop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LoadingImageView_circleCrop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LoadingImageView_imageAspectRatio = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LoadingImageView_imageAspectRatio;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.LoadingImageView_imageAspectRatioAdjust;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_ambientEnabled = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_ambientEnabled;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_cameraBearing = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_cameraBearing;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_cameraTargetLat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_cameraTargetLat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_cameraTargetLng = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_cameraTargetLng;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_cameraTilt = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_cameraTilt;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_cameraZoom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_cameraZoom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_liteMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_liteMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_mapType = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_mapType;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiCompass = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiCompass;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiMapToolbar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiMapToolbar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiRotateGestures = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiRotateGestures;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiScrollGestures = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiScrollGestures;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiTiltGestures = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiTiltGestures;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiZoomControls = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiZoomControls;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiZoomGestures = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_uiZoomGestures;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_useViewLifecycle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_useViewLifecycle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_zOrderOnTop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MapAttrs_zOrderOnTop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MediaRouteButton = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MediaRouteButton;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MediaRouteButton_android_minHeight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MediaRouteButton_android_minWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup_android_enabled = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup_android_enabled;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup_android_id = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup_android_id;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup_android_visible = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuGroup_android_visible;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_actionLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_actionLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_actionProviderClass = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_actionProviderClass;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_actionViewClass = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_actionViewClass;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_checkable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_checkable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_checked = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_checked;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_enabled = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_enabled;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_icon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_icon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_id = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_id;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_menuCategory = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_menuCategory;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_onClick = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_onClick;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_visible = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_android_visible;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_showAsAction = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuItem_showAsAction;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_headerBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_headerBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_itemBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_itemBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_verticalDivider = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_verticalDivider;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_android_background = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_android_background;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_android_maxWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_android_maxWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_elevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_elevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_headerLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_headerLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_itemBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_itemBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_itemIconTint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_itemIconTint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_itemTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_itemTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_menu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.NavigationView_menu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.PopupWindow = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.PopupWindow;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.PopupWindowBackgroundState = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.PopupWindowBackgroundState;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ScrollingViewBehavior_Params = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ScrollingViewBehavior_Params;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ScrollingViewBehavior_Params_behavior_overlapTop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ScrollingViewBehavior_Params_behavior_overlapTop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_android_focusable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_android_focusable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_android_imeOptions = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_android_imeOptions;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_android_inputType = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_android_inputType;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_android_maxWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_android_maxWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_closeIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_closeIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_commitIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_commitIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_defaultQueryHint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_defaultQueryHint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_goIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_goIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_layout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_layout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_queryBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_queryBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_queryHint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_queryHint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_searchHintIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_searchHintIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_searchIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_searchIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_submitBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_submitBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_voiceIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SearchView_voiceIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SnackbarLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SnackbarLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SnackbarLayout_elevation = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SnackbarLayout_elevation;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Spinner = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Spinner;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Spinner_android_popupBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Spinner_android_popupBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Spinner_android_prompt = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Spinner_android_prompt;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Spinner_popupTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Spinner_popupTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_android_textOff = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_android_textOff;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_android_textOn = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_android_textOn;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_android_thumb = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_android_thumb;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_showText = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_showText;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_splitTrack = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_splitTrack;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_switchPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_switchPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_track = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.SwitchCompat_track;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabContentStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabContentStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabGravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabGravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabMinWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabMinWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TabLayout_tabTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextAppearance_android_textColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextAppearance_android_textColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextAppearance_android_textSize = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextAppearance_android_textSize;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextAppearance_android_textStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextAppearance_android_textStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextAppearance_android_typeface = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextAppearance_android_typeface;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextAppearance_textAllCaps = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextAppearance_textAllCaps;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout_android_hint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout_android_hint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarDivider = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarDivider;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarItemBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarItemBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarPopupTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarPopupTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarSize = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarSize;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarSplitStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarSplitStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarTabBarStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarTabBarStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarTabStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarTabStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarTabTextStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarTabTextStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarWidgetTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionBarWidgetTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionDropDownStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionDropDownStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionMenuTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionMenuTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionMenuTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionMenuTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeCloseButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeCloseButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeCloseDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeCloseDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeCopyDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeCopyDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeCutDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeCutDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeFindDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeFindDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModePasteDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModePasteDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModePopupWindowStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModePopupWindowStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeSelectAllDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeSelectAllDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeShareDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeShareDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeSplitBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeSplitBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeWebSearchDrawable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionModeWebSearchDrawable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionOverflowButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionOverflowButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionOverflowMenuStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_actionOverflowMenuStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_activityChooserViewStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_activityChooserViewStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_alertDialogButtonGroupStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_alertDialogButtonGroupStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_alertDialogCenterButtons = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_alertDialogCenterButtons;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_alertDialogStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_alertDialogStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_alertDialogTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_alertDialogTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_android_windowAnimationStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_android_windowAnimationStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_android_windowIsFloating = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_android_windowIsFloating;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_autoCompleteTextViewStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_autoCompleteTextViewStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_borderlessButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_borderlessButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonBarButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonBarButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonBarNegativeButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonBarNegativeButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonBarNeutralButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonBarNeutralButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonBarPositiveButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonBarPositiveButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonBarStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonBarStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonStyleSmall = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_buttonStyleSmall;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_checkboxStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_checkboxStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_checkedTextViewStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_checkedTextViewStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorAccent = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorAccent;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorButtonNormal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorButtonNormal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorControlActivated = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorControlActivated;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorControlHighlight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorControlHighlight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorControlNormal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorControlNormal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorPrimary = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorPrimary;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorPrimaryDark = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorPrimaryDark;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorSwitchThumbNormal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_colorSwitchThumbNormal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_controlBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_controlBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_dialogPreferredPadding = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_dialogPreferredPadding;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_dialogTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_dialogTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_dividerHorizontal = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_dividerHorizontal;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_dividerVertical = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_dividerVertical;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_dropDownListViewStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_dropDownListViewStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_dropdownListPreferredItemHeight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_dropdownListPreferredItemHeight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_editTextBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_editTextBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_editTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_editTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_editTextStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_editTextStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_homeAsUpIndicator = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_homeAsUpIndicator;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listChoiceBackgroundIndicator = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listChoiceBackgroundIndicator;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listDividerAlertDialog = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listDividerAlertDialog;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listPopupWindowStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listPopupWindowStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listPreferredItemHeight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listPreferredItemHeight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listPreferredItemHeightLarge = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listPreferredItemHeightLarge;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listPreferredItemHeightSmall = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listPreferredItemHeightSmall;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listPreferredItemPaddingLeft = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listPreferredItemPaddingLeft;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listPreferredItemPaddingRight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_listPreferredItemPaddingRight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_panelBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_panelBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_panelMenuListTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_panelMenuListTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_panelMenuListWidth = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_panelMenuListWidth;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_popupMenuStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_popupMenuStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_popupWindowStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_popupWindowStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_radioButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_radioButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_ratingBarStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_ratingBarStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_searchViewStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_searchViewStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_selectableItemBackground = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_selectableItemBackground;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_selectableItemBackgroundBorderless = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_selectableItemBackgroundBorderless;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_spinnerDropDownItemStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_spinnerDropDownItemStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_spinnerStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_spinnerStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_switchStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_switchStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textAppearanceLargePopupMenu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textAppearanceLargePopupMenu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textAppearanceListItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textAppearanceListItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textAppearanceListItemSmall = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textAppearanceListItemSmall;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textAppearanceSearchResultSubtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textAppearanceSearchResultSubtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textAppearanceSearchResultTitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textAppearanceSearchResultTitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textAppearanceSmallPopupMenu = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textAppearanceSmallPopupMenu;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textColorAlertDialogListItem = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textColorAlertDialogListItem;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textColorSearchUrl = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_textColorSearchUrl;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_toolbarNavigationButtonStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_toolbarNavigationButtonStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_toolbarStyle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_toolbarStyle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowActionBar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowActionBar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowActionBarOverlay = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowActionBarOverlay;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowActionModeOverlay = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowActionModeOverlay;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowFixedHeightMajor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowFixedHeightMajor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowFixedHeightMinor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowFixedHeightMinor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowFixedWidthMajor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowFixedWidthMajor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowFixedWidthMinor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowFixedWidthMinor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowMinWidthMajor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowMinWidthMajor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowMinWidthMinor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowMinWidthMinor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowNoTitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Theme_windowNoTitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_android_gravity = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_android_gravity;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_android_minHeight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_android_minHeight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_collapseIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_collapseIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_contentInsetRight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_contentInsetRight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_contentInsetStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_contentInsetStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_logo = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_logo;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_logoDescription = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_logoDescription;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_navigationIcon = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_navigationIcon;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_popupTheme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_popupTheme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_subtitle = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_subtitle;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_title = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_title;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleMarginStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleMarginStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleMarginTop = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleMarginTop;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleMargins = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleMargins;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleTextColor = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.Toolbar_titleTextColor;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.View = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.View;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.View_android_focusable = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.View_android_focusable;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.View_android_theme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.View_android_theme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.View_paddingEnd = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.View_paddingEnd;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.View_paddingStart = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.View_paddingStart;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.View_theme = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.View_theme;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ViewBackgroundHelper = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ViewBackgroundHelper;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ViewStubCompat = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ViewStubCompat;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ViewStubCompat_android_id = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ViewStubCompat_android_id;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::AppShell.NativeMaps.Mobile.Android.Resource.Styleable.ViewStubCompat_android_layout = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_fade_in = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_fade_out = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_grow_fade_in_from_bottom = global::AppShell.Samples.NativeMaps.Mobile.Android.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -1544,185 +3202,188 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010089
-			public const int actionBarDivider = 2130772105;
-			
 			// aapt resource value: 0x7f01008a
-			public const int actionBarItemBackground = 2130772106;
-			
-			// aapt resource value: 0x7f010083
-			public const int actionBarPopupTheme = 2130772099;
-			
-			// aapt resource value: 0x7f010088
-			public const int actionBarSize = 2130772104;
-			
-			// aapt resource value: 0x7f010085
-			public const int actionBarSplitStyle = 2130772101;
-			
-			// aapt resource value: 0x7f010084
-			public const int actionBarStyle = 2130772100;
-			
-			// aapt resource value: 0x7f01007f
-			public const int actionBarTabBarStyle = 2130772095;
-			
-			// aapt resource value: 0x7f01007e
-			public const int actionBarTabStyle = 2130772094;
-			
-			// aapt resource value: 0x7f010080
-			public const int actionBarTabTextStyle = 2130772096;
-			
-			// aapt resource value: 0x7f010086
-			public const int actionBarTheme = 2130772102;
-			
-			// aapt resource value: 0x7f010087
-			public const int actionBarWidgetTheme = 2130772103;
-			
-			// aapt resource value: 0x7f0100a3
-			public const int actionButtonStyle = 2130772131;
-			
-			// aapt resource value: 0x7f01009f
-			public const int actionDropDownStyle = 2130772127;
-			
-			// aapt resource value: 0x7f01005a
-			public const int actionLayout = 2130772058;
+			public const int actionBarDivider = 2130772106;
 			
 			// aapt resource value: 0x7f01008b
-			public const int actionMenuTextAppearance = 2130772107;
+			public const int actionBarItemBackground = 2130772107;
 			
-			// aapt resource value: 0x7f01008c
-			public const int actionMenuTextColor = 2130772108;
+			// aapt resource value: 0x7f010084
+			public const int actionBarPopupTheme = 2130772100;
 			
-			// aapt resource value: 0x7f01008f
-			public const int actionModeBackground = 2130772111;
+			// aapt resource value: 0x7f010089
+			public const int actionBarSize = 2130772105;
 			
-			// aapt resource value: 0x7f01008e
-			public const int actionModeCloseButtonStyle = 2130772110;
+			// aapt resource value: 0x7f010086
+			public const int actionBarSplitStyle = 2130772102;
 			
-			// aapt resource value: 0x7f010091
-			public const int actionModeCloseDrawable = 2130772113;
+			// aapt resource value: 0x7f010085
+			public const int actionBarStyle = 2130772101;
 			
-			// aapt resource value: 0x7f010093
-			public const int actionModeCopyDrawable = 2130772115;
+			// aapt resource value: 0x7f010080
+			public const int actionBarTabBarStyle = 2130772096;
 			
-			// aapt resource value: 0x7f010092
-			public const int actionModeCutDrawable = 2130772114;
-			
-			// aapt resource value: 0x7f010097
-			public const int actionModeFindDrawable = 2130772119;
-			
-			// aapt resource value: 0x7f010094
-			public const int actionModePasteDrawable = 2130772116;
-			
-			// aapt resource value: 0x7f010099
-			public const int actionModePopupWindowStyle = 2130772121;
-			
-			// aapt resource value: 0x7f010095
-			public const int actionModeSelectAllDrawable = 2130772117;
-			
-			// aapt resource value: 0x7f010096
-			public const int actionModeShareDrawable = 2130772118;
-			
-			// aapt resource value: 0x7f010090
-			public const int actionModeSplitBackground = 2130772112;
-			
-			// aapt resource value: 0x7f01008d
-			public const int actionModeStyle = 2130772109;
-			
-			// aapt resource value: 0x7f010098
-			public const int actionModeWebSearchDrawable = 2130772120;
+			// aapt resource value: 0x7f01007f
+			public const int actionBarTabStyle = 2130772095;
 			
 			// aapt resource value: 0x7f010081
-			public const int actionOverflowButtonStyle = 2130772097;
+			public const int actionBarTabTextStyle = 2130772097;
 			
-			// aapt resource value: 0x7f010082
-			public const int actionOverflowMenuStyle = 2130772098;
+			// aapt resource value: 0x7f010087
+			public const int actionBarTheme = 2130772103;
 			
-			// aapt resource value: 0x7f01005c
-			public const int actionProviderClass = 2130772060;
-			
-			// aapt resource value: 0x7f01005b
-			public const int actionViewClass = 2130772059;
-			
-			// aapt resource value: 0x7f0100ab
-			public const int activityChooserViewStyle = 2130772139;
-			
-			// aapt resource value: 0x7f0100cd
-			public const int alertDialogButtonGroupStyle = 2130772173;
-			
-			// aapt resource value: 0x7f0100ce
-			public const int alertDialogCenterButtons = 2130772174;
-			
-			// aapt resource value: 0x7f0100cc
-			public const int alertDialogStyle = 2130772172;
-			
-			// aapt resource value: 0x7f0100cf
-			public const int alertDialogTheme = 2130772175;
-			
-			// aapt resource value: 0x7f010052
-			public const int arrowHeadLength = 2130772050;
-			
-			// aapt resource value: 0x7f010053
-			public const int arrowShaftLength = 2130772051;
-			
-			// aapt resource value: 0x7f0100d4
-			public const int autoCompleteTextViewStyle = 2130772180;
-			
-			// aapt resource value: 0x7f010033
-			public const int background = 2130772019;
-			
-			// aapt resource value: 0x7f010035
-			public const int backgroundSplit = 2130772021;
-			
-			// aapt resource value: 0x7f010034
-			public const int backgroundStacked = 2130772020;
-			
-			// aapt resource value: 0x7f0100f0
-			public const int backgroundTint = 2130772208;
-			
-			// aapt resource value: 0x7f0100f1
-			public const int backgroundTintMode = 2130772209;
-			
-			// aapt resource value: 0x7f010054
-			public const int barLength = 2130772052;
-			
-			// aapt resource value: 0x7f010115
-			public const int behavior_overlapTop = 2130772245;
-			
-			// aapt resource value: 0x7f01010d
-			public const int borderWidth = 2130772237;
-			
-			// aapt resource value: 0x7f0100a8
-			public const int borderlessButtonStyle = 2130772136;
-			
-			// aapt resource value: 0x7f0100a5
-			public const int buttonBarButtonStyle = 2130772133;
-			
-			// aapt resource value: 0x7f0100d2
-			public const int buttonBarNegativeButtonStyle = 2130772178;
-			
-			// aapt resource value: 0x7f0100d3
-			public const int buttonBarNeutralButtonStyle = 2130772179;
-			
-			// aapt resource value: 0x7f0100d1
-			public const int buttonBarPositiveButtonStyle = 2130772177;
+			// aapt resource value: 0x7f010088
+			public const int actionBarWidgetTheme = 2130772104;
 			
 			// aapt resource value: 0x7f0100a4
-			public const int buttonBarStyle = 2130772132;
+			public const int actionButtonStyle = 2130772132;
 			
-			// aapt resource value: 0x7f010046
-			public const int buttonPanelSideLayout = 2130772038;
+			// aapt resource value: 0x7f0100a0
+			public const int actionDropDownStyle = 2130772128;
+			
+			// aapt resource value: 0x7f01005b
+			public const int actionLayout = 2130772059;
+			
+			// aapt resource value: 0x7f01008c
+			public const int actionMenuTextAppearance = 2130772108;
+			
+			// aapt resource value: 0x7f01008d
+			public const int actionMenuTextColor = 2130772109;
+			
+			// aapt resource value: 0x7f010090
+			public const int actionModeBackground = 2130772112;
+			
+			// aapt resource value: 0x7f01008f
+			public const int actionModeCloseButtonStyle = 2130772111;
+			
+			// aapt resource value: 0x7f010092
+			public const int actionModeCloseDrawable = 2130772114;
+			
+			// aapt resource value: 0x7f010094
+			public const int actionModeCopyDrawable = 2130772116;
+			
+			// aapt resource value: 0x7f010093
+			public const int actionModeCutDrawable = 2130772115;
+			
+			// aapt resource value: 0x7f010098
+			public const int actionModeFindDrawable = 2130772120;
+			
+			// aapt resource value: 0x7f010095
+			public const int actionModePasteDrawable = 2130772117;
+			
+			// aapt resource value: 0x7f01009a
+			public const int actionModePopupWindowStyle = 2130772122;
+			
+			// aapt resource value: 0x7f010096
+			public const int actionModeSelectAllDrawable = 2130772118;
+			
+			// aapt resource value: 0x7f010097
+			public const int actionModeShareDrawable = 2130772119;
+			
+			// aapt resource value: 0x7f010091
+			public const int actionModeSplitBackground = 2130772113;
+			
+			// aapt resource value: 0x7f01008e
+			public const int actionModeStyle = 2130772110;
+			
+			// aapt resource value: 0x7f010099
+			public const int actionModeWebSearchDrawable = 2130772121;
+			
+			// aapt resource value: 0x7f010082
+			public const int actionOverflowButtonStyle = 2130772098;
+			
+			// aapt resource value: 0x7f010083
+			public const int actionOverflowMenuStyle = 2130772099;
+			
+			// aapt resource value: 0x7f01005d
+			public const int actionProviderClass = 2130772061;
+			
+			// aapt resource value: 0x7f01005c
+			public const int actionViewClass = 2130772060;
+			
+			// aapt resource value: 0x7f0100ac
+			public const int activityChooserViewStyle = 2130772140;
+			
+			// aapt resource value: 0x7f0100ce
+			public const int alertDialogButtonGroupStyle = 2130772174;
+			
+			// aapt resource value: 0x7f0100cf
+			public const int alertDialogCenterButtons = 2130772175;
+			
+			// aapt resource value: 0x7f0100cd
+			public const int alertDialogStyle = 2130772173;
+			
+			// aapt resource value: 0x7f0100d0
+			public const int alertDialogTheme = 2130772176;
+			
+			// aapt resource value: 0x7f010010
+			public const int ambientEnabled = 2130771984;
+			
+			// aapt resource value: 0x7f010053
+			public const int arrowHeadLength = 2130772051;
+			
+			// aapt resource value: 0x7f010054
+			public const int arrowShaftLength = 2130772052;
 			
 			// aapt resource value: 0x7f0100d5
-			public const int buttonStyle = 2130772181;
+			public const int autoCompleteTextViewStyle = 2130772181;
+			
+			// aapt resource value: 0x7f010034
+			public const int background = 2130772020;
+			
+			// aapt resource value: 0x7f010036
+			public const int backgroundSplit = 2130772022;
+			
+			// aapt resource value: 0x7f010035
+			public const int backgroundStacked = 2130772021;
+			
+			// aapt resource value: 0x7f0100f1
+			public const int backgroundTint = 2130772209;
+			
+			// aapt resource value: 0x7f0100f2
+			public const int backgroundTintMode = 2130772210;
+			
+			// aapt resource value: 0x7f010055
+			public const int barLength = 2130772053;
+			
+			// aapt resource value: 0x7f010116
+			public const int behavior_overlapTop = 2130772246;
+			
+			// aapt resource value: 0x7f01010e
+			public const int borderWidth = 2130772238;
+			
+			// aapt resource value: 0x7f0100a9
+			public const int borderlessButtonStyle = 2130772137;
+			
+			// aapt resource value: 0x7f0100a6
+			public const int buttonBarButtonStyle = 2130772134;
+			
+			// aapt resource value: 0x7f0100d3
+			public const int buttonBarNegativeButtonStyle = 2130772179;
+			
+			// aapt resource value: 0x7f0100d4
+			public const int buttonBarNeutralButtonStyle = 2130772180;
+			
+			// aapt resource value: 0x7f0100d2
+			public const int buttonBarPositiveButtonStyle = 2130772178;
+			
+			// aapt resource value: 0x7f0100a5
+			public const int buttonBarStyle = 2130772133;
+			
+			// aapt resource value: 0x7f010047
+			public const int buttonPanelSideLayout = 2130772039;
 			
 			// aapt resource value: 0x7f0100d6
-			public const int buttonStyleSmall = 2130772182;
+			public const int buttonStyle = 2130772182;
 			
-			// aapt resource value: 0x7f01004c
-			public const int buttonTint = 2130772044;
+			// aapt resource value: 0x7f0100d7
+			public const int buttonStyleSmall = 2130772183;
 			
 			// aapt resource value: 0x7f01004d
-			public const int buttonTintMode = 2130772045;
+			public const int buttonTint = 2130772045;
+			
+			// aapt resource value: 0x7f01004e
+			public const int buttonTintMode = 2130772046;
 			
 			// aapt resource value: 0x7f010001
 			public const int cameraBearing = 2130771969;
@@ -1739,647 +3400,647 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			// aapt resource value: 0x7f010005
 			public const int cameraZoom = 2130771973;
 			
-			// aapt resource value: 0x7f01001c
-			public const int cardBackgroundColor = 2130771996;
-			
 			// aapt resource value: 0x7f01001d
-			public const int cardCornerRadius = 2130771997;
+			public const int cardBackgroundColor = 2130771997;
 			
 			// aapt resource value: 0x7f01001e
-			public const int cardElevation = 2130771998;
+			public const int cardCornerRadius = 2130771998;
 			
 			// aapt resource value: 0x7f01001f
-			public const int cardMaxElevation = 2130771999;
-			
-			// aapt resource value: 0x7f010021
-			public const int cardPreventCornerOverlap = 2130772001;
+			public const int cardElevation = 2130771999;
 			
 			// aapt resource value: 0x7f010020
-			public const int cardUseCompatPadding = 2130772000;
-			
-			// aapt resource value: 0x7f0100d7
-			public const int checkboxStyle = 2130772183;
-			
-			// aapt resource value: 0x7f0100d8
-			public const int checkedTextViewStyle = 2130772184;
-			
-			// aapt resource value: 0x7f010012
-			public const int circleCrop = 2130771986;
-			
-			// aapt resource value: 0x7f010064
-			public const int closeIcon = 2130772068;
-			
-			// aapt resource value: 0x7f010043
-			public const int closeItemLayout = 2130772035;
-			
-			// aapt resource value: 0x7f0100e7
-			public const int collapseContentDescription = 2130772199;
-			
-			// aapt resource value: 0x7f0100e6
-			public const int collapseIcon = 2130772198;
-			
-			// aapt resource value: 0x7f010101
-			public const int collapsedTitleGravity = 2130772225;
-			
-			// aapt resource value: 0x7f0100fd
-			public const int collapsedTitleTextAppearance = 2130772221;
-			
-			// aapt resource value: 0x7f01004e
-			public const int color = 2130772046;
-			
-			// aapt resource value: 0x7f0100c5
-			public const int colorAccent = 2130772165;
-			
-			// aapt resource value: 0x7f0100c9
-			public const int colorButtonNormal = 2130772169;
-			
-			// aapt resource value: 0x7f0100c7
-			public const int colorControlActivated = 2130772167;
-			
-			// aapt resource value: 0x7f0100c8
-			public const int colorControlHighlight = 2130772168;
-			
-			// aapt resource value: 0x7f0100c6
-			public const int colorControlNormal = 2130772166;
-			
-			// aapt resource value: 0x7f0100c3
-			public const int colorPrimary = 2130772163;
-			
-			// aapt resource value: 0x7f0100c4
-			public const int colorPrimaryDark = 2130772164;
-			
-			// aapt resource value: 0x7f0100ca
-			public const int colorSwitchThumbNormal = 2130772170;
-			
-			// aapt resource value: 0x7f010069
-			public const int commitIcon = 2130772073;
-			
-			// aapt resource value: 0x7f01003e
-			public const int contentInsetEnd = 2130772030;
-			
-			// aapt resource value: 0x7f01003f
-			public const int contentInsetLeft = 2130772031;
-			
-			// aapt resource value: 0x7f010040
-			public const int contentInsetRight = 2130772032;
-			
-			// aapt resource value: 0x7f01003d
-			public const int contentInsetStart = 2130772029;
+			public const int cardMaxElevation = 2130772000;
 			
 			// aapt resource value: 0x7f010022
-			public const int contentPadding = 2130772002;
+			public const int cardPreventCornerOverlap = 2130772002;
 			
-			// aapt resource value: 0x7f010026
-			public const int contentPaddingBottom = 2130772006;
+			// aapt resource value: 0x7f010021
+			public const int cardUseCompatPadding = 2130772001;
 			
-			// aapt resource value: 0x7f010023
-			public const int contentPaddingLeft = 2130772003;
-			
-			// aapt resource value: 0x7f010024
-			public const int contentPaddingRight = 2130772004;
-			
-			// aapt resource value: 0x7f010025
-			public const int contentPaddingTop = 2130772005;
-			
-			// aapt resource value: 0x7f0100fe
-			public const int contentScrim = 2130772222;
-			
-			// aapt resource value: 0x7f0100cb
-			public const int controlBackground = 2130772171;
-			
-			// aapt resource value: 0x7f010036
-			public const int customNavigationLayout = 2130772022;
-			
-			// aapt resource value: 0x7f010063
-			public const int defaultQueryHint = 2130772067;
-			
-			// aapt resource value: 0x7f01009d
-			public const int dialogPreferredPadding = 2130772125;
-			
-			// aapt resource value: 0x7f01009c
-			public const int dialogTheme = 2130772124;
-			
-			// aapt resource value: 0x7f01002c
-			public const int displayOptions = 2130772012;
-			
-			// aapt resource value: 0x7f010032
-			public const int divider = 2130772018;
-			
-			// aapt resource value: 0x7f0100aa
-			public const int dividerHorizontal = 2130772138;
-			
-			// aapt resource value: 0x7f010058
-			public const int dividerPadding = 2130772056;
-			
-			// aapt resource value: 0x7f0100a9
-			public const int dividerVertical = 2130772137;
-			
-			// aapt resource value: 0x7f010050
-			public const int drawableSize = 2130772048;
-			
-			// aapt resource value: 0x7f010027
-			public const int drawerArrowStyle = 2130772007;
-			
-			// aapt resource value: 0x7f0100bb
-			public const int dropDownListViewStyle = 2130772155;
-			
-			// aapt resource value: 0x7f0100a0
-			public const int dropdownListPreferredItemHeight = 2130772128;
-			
-			// aapt resource value: 0x7f0100b1
-			public const int editTextBackground = 2130772145;
-			
-			// aapt resource value: 0x7f0100b0
-			public const int editTextColor = 2130772144;
+			// aapt resource value: 0x7f0100d8
+			public const int checkboxStyle = 2130772184;
 			
 			// aapt resource value: 0x7f0100d9
-			public const int editTextStyle = 2130772185;
+			public const int checkedTextViewStyle = 2130772185;
 			
-			// aapt resource value: 0x7f010041
-			public const int elevation = 2130772033;
-			
-			// aapt resource value: 0x7f010128
-			public const int errorEnabled = 2130772264;
-			
-			// aapt resource value: 0x7f010129
-			public const int errorTextAppearance = 2130772265;
-			
-			// aapt resource value: 0x7f010045
-			public const int expandActivityOverflowButtonDrawable = 2130772037;
-			
-			// aapt resource value: 0x7f0100f2
-			public const int expanded = 2130772210;
-			
-			// aapt resource value: 0x7f010102
-			public const int expandedTitleGravity = 2130772226;
-			
-			// aapt resource value: 0x7f0100f7
-			public const int expandedTitleMargin = 2130772215;
-			
-			// aapt resource value: 0x7f0100fb
-			public const int expandedTitleMarginBottom = 2130772219;
-			
-			// aapt resource value: 0x7f0100fa
-			public const int expandedTitleMarginEnd = 2130772218;
-			
-			// aapt resource value: 0x7f0100f8
-			public const int expandedTitleMarginStart = 2130772216;
-			
-			// aapt resource value: 0x7f0100f9
-			public const int expandedTitleMarginTop = 2130772217;
-			
-			// aapt resource value: 0x7f0100fc
-			public const int expandedTitleTextAppearance = 2130772220;
-			
-			// aapt resource value: 0x7f01001b
-			public const int externalRouteEnabledDrawable = 2130771995;
-			
-			// aapt resource value: 0x7f01010b
-			public const int fabSize = 2130772235;
-			
-			// aapt resource value: 0x7f010051
-			public const int gapBetweenBars = 2130772049;
+			// aapt resource value: 0x7f010013
+			public const int circleCrop = 2130771987;
 			
 			// aapt resource value: 0x7f010065
-			public const int goIcon = 2130772069;
-			
-			// aapt resource value: 0x7f010113
-			public const int headerLayout = 2130772243;
-			
-			// aapt resource value: 0x7f010028
-			public const int height = 2130772008;
-			
-			// aapt resource value: 0x7f01003c
-			public const int hideOnContentScroll = 2130772028;
-			
-			// aapt resource value: 0x7f01012a
-			public const int hintAnimationEnabled = 2130772266;
-			
-			// aapt resource value: 0x7f010127
-			public const int hintTextAppearance = 2130772263;
-			
-			// aapt resource value: 0x7f0100a2
-			public const int homeAsUpIndicator = 2130772130;
-			
-			// aapt resource value: 0x7f010037
-			public const int homeLayout = 2130772023;
-			
-			// aapt resource value: 0x7f010030
-			public const int icon = 2130772016;
-			
-			// aapt resource value: 0x7f010061
-			public const int iconifiedByDefault = 2130772065;
-			
-			// aapt resource value: 0x7f010011
-			public const int imageAspectRatio = 2130771985;
-			
-			// aapt resource value: 0x7f010010
-			public const int imageAspectRatioAdjust = 2130771984;
-			
-			// aapt resource value: 0x7f010039
-			public const int indeterminateProgressStyle = 2130772025;
+			public const int closeIcon = 2130772069;
 			
 			// aapt resource value: 0x7f010044
-			public const int initialActivityCount = 2130772036;
+			public const int closeItemLayout = 2130772036;
 			
-			// aapt resource value: 0x7f010114
-			public const int insetForeground = 2130772244;
+			// aapt resource value: 0x7f0100e8
+			public const int collapseContentDescription = 2130772200;
 			
-			// aapt resource value: 0x7f010029
-			public const int isLightTheme = 2130772009;
+			// aapt resource value: 0x7f0100e7
+			public const int collapseIcon = 2130772199;
 			
-			// aapt resource value: 0x7f010111
-			public const int itemBackground = 2130772241;
+			// aapt resource value: 0x7f010102
+			public const int collapsedTitleGravity = 2130772226;
 			
-			// aapt resource value: 0x7f01010f
-			public const int itemIconTint = 2130772239;
+			// aapt resource value: 0x7f0100fe
+			public const int collapsedTitleTextAppearance = 2130772222;
 			
-			// aapt resource value: 0x7f01003b
-			public const int itemPadding = 2130772027;
+			// aapt resource value: 0x7f01004f
+			public const int color = 2130772047;
 			
-			// aapt resource value: 0x7f010112
-			public const int itemTextAppearance = 2130772242;
+			// aapt resource value: 0x7f0100c6
+			public const int colorAccent = 2130772166;
 			
-			// aapt resource value: 0x7f010110
-			public const int itemTextColor = 2130772240;
+			// aapt resource value: 0x7f0100ca
+			public const int colorButtonNormal = 2130772170;
 			
-			// aapt resource value: 0x7f010104
-			public const int keylines = 2130772228;
+			// aapt resource value: 0x7f0100c8
+			public const int colorControlActivated = 2130772168;
 			
-			// aapt resource value: 0x7f010060
-			public const int layout = 2130772064;
+			// aapt resource value: 0x7f0100c9
+			public const int colorControlHighlight = 2130772169;
 			
-			// aapt resource value: 0x7f010107
-			public const int layout_anchor = 2130772231;
+			// aapt resource value: 0x7f0100c7
+			public const int colorControlNormal = 2130772167;
 			
-			// aapt resource value: 0x7f010109
-			public const int layout_anchorGravity = 2130772233;
+			// aapt resource value: 0x7f0100c4
+			public const int colorPrimary = 2130772164;
 			
-			// aapt resource value: 0x7f010106
-			public const int layout_behavior = 2130772230;
+			// aapt resource value: 0x7f0100c5
+			public const int colorPrimaryDark = 2130772165;
 			
-			// aapt resource value: 0x7f0100f5
-			public const int layout_collapseMode = 2130772213;
+			// aapt resource value: 0x7f0100cb
+			public const int colorSwitchThumbNormal = 2130772171;
 			
-			// aapt resource value: 0x7f0100f6
-			public const int layout_collapseParallaxMultiplier = 2130772214;
+			// aapt resource value: 0x7f01006a
+			public const int commitIcon = 2130772074;
 			
-			// aapt resource value: 0x7f010108
-			public const int layout_keyline = 2130772232;
+			// aapt resource value: 0x7f01003f
+			public const int contentInsetEnd = 2130772031;
 			
-			// aapt resource value: 0x7f0100f3
-			public const int layout_scrollFlags = 2130772211;
+			// aapt resource value: 0x7f010040
+			public const int contentInsetLeft = 2130772032;
 			
-			// aapt resource value: 0x7f0100f4
-			public const int layout_scrollInterpolator = 2130772212;
+			// aapt resource value: 0x7f010041
+			public const int contentInsetRight = 2130772033;
 			
-			// aapt resource value: 0x7f0100c2
-			public const int listChoiceBackgroundIndicator = 2130772162;
+			// aapt resource value: 0x7f01003e
+			public const int contentInsetStart = 2130772030;
+			
+			// aapt resource value: 0x7f010023
+			public const int contentPadding = 2130772003;
+			
+			// aapt resource value: 0x7f010027
+			public const int contentPaddingBottom = 2130772007;
+			
+			// aapt resource value: 0x7f010024
+			public const int contentPaddingLeft = 2130772004;
+			
+			// aapt resource value: 0x7f010025
+			public const int contentPaddingRight = 2130772005;
+			
+			// aapt resource value: 0x7f010026
+			public const int contentPaddingTop = 2130772006;
+			
+			// aapt resource value: 0x7f0100ff
+			public const int contentScrim = 2130772223;
+			
+			// aapt resource value: 0x7f0100cc
+			public const int controlBackground = 2130772172;
+			
+			// aapt resource value: 0x7f010037
+			public const int customNavigationLayout = 2130772023;
+			
+			// aapt resource value: 0x7f010064
+			public const int defaultQueryHint = 2130772068;
 			
 			// aapt resource value: 0x7f01009e
-			public const int listDividerAlertDialog = 2130772126;
+			public const int dialogPreferredPadding = 2130772126;
 			
-			// aapt resource value: 0x7f01004a
-			public const int listItemLayout = 2130772042;
+			// aapt resource value: 0x7f01009d
+			public const int dialogTheme = 2130772125;
 			
-			// aapt resource value: 0x7f010047
-			public const int listLayout = 2130772039;
+			// aapt resource value: 0x7f01002d
+			public const int displayOptions = 2130772013;
+			
+			// aapt resource value: 0x7f010033
+			public const int divider = 2130772019;
+			
+			// aapt resource value: 0x7f0100ab
+			public const int dividerHorizontal = 2130772139;
+			
+			// aapt resource value: 0x7f010059
+			public const int dividerPadding = 2130772057;
+			
+			// aapt resource value: 0x7f0100aa
+			public const int dividerVertical = 2130772138;
+			
+			// aapt resource value: 0x7f010051
+			public const int drawableSize = 2130772049;
+			
+			// aapt resource value: 0x7f010028
+			public const int drawerArrowStyle = 2130772008;
 			
 			// aapt resource value: 0x7f0100bc
-			public const int listPopupWindowStyle = 2130772156;
+			public const int dropDownListViewStyle = 2130772156;
 			
-			// aapt resource value: 0x7f0100b6
-			public const int listPreferredItemHeight = 2130772150;
+			// aapt resource value: 0x7f0100a1
+			public const int dropdownListPreferredItemHeight = 2130772129;
 			
-			// aapt resource value: 0x7f0100b8
-			public const int listPreferredItemHeightLarge = 2130772152;
+			// aapt resource value: 0x7f0100b2
+			public const int editTextBackground = 2130772146;
+			
+			// aapt resource value: 0x7f0100b1
+			public const int editTextColor = 2130772145;
+			
+			// aapt resource value: 0x7f0100da
+			public const int editTextStyle = 2130772186;
+			
+			// aapt resource value: 0x7f010042
+			public const int elevation = 2130772034;
+			
+			// aapt resource value: 0x7f010129
+			public const int errorEnabled = 2130772265;
+			
+			// aapt resource value: 0x7f01012a
+			public const int errorTextAppearance = 2130772266;
+			
+			// aapt resource value: 0x7f010046
+			public const int expandActivityOverflowButtonDrawable = 2130772038;
+			
+			// aapt resource value: 0x7f0100f3
+			public const int expanded = 2130772211;
+			
+			// aapt resource value: 0x7f010103
+			public const int expandedTitleGravity = 2130772227;
+			
+			// aapt resource value: 0x7f0100f8
+			public const int expandedTitleMargin = 2130772216;
+			
+			// aapt resource value: 0x7f0100fc
+			public const int expandedTitleMarginBottom = 2130772220;
+			
+			// aapt resource value: 0x7f0100fb
+			public const int expandedTitleMarginEnd = 2130772219;
+			
+			// aapt resource value: 0x7f0100f9
+			public const int expandedTitleMarginStart = 2130772217;
+			
+			// aapt resource value: 0x7f0100fa
+			public const int expandedTitleMarginTop = 2130772218;
+			
+			// aapt resource value: 0x7f0100fd
+			public const int expandedTitleTextAppearance = 2130772221;
+			
+			// aapt resource value: 0x7f01001c
+			public const int externalRouteEnabledDrawable = 2130771996;
+			
+			// aapt resource value: 0x7f01010c
+			public const int fabSize = 2130772236;
+			
+			// aapt resource value: 0x7f010052
+			public const int gapBetweenBars = 2130772050;
+			
+			// aapt resource value: 0x7f010066
+			public const int goIcon = 2130772070;
+			
+			// aapt resource value: 0x7f010114
+			public const int headerLayout = 2130772244;
+			
+			// aapt resource value: 0x7f010029
+			public const int height = 2130772009;
+			
+			// aapt resource value: 0x7f01003d
+			public const int hideOnContentScroll = 2130772029;
+			
+			// aapt resource value: 0x7f01012b
+			public const int hintAnimationEnabled = 2130772267;
+			
+			// aapt resource value: 0x7f010128
+			public const int hintTextAppearance = 2130772264;
+			
+			// aapt resource value: 0x7f0100a3
+			public const int homeAsUpIndicator = 2130772131;
+			
+			// aapt resource value: 0x7f010038
+			public const int homeLayout = 2130772024;
+			
+			// aapt resource value: 0x7f010031
+			public const int icon = 2130772017;
+			
+			// aapt resource value: 0x7f010062
+			public const int iconifiedByDefault = 2130772066;
+			
+			// aapt resource value: 0x7f010012
+			public const int imageAspectRatio = 2130771986;
+			
+			// aapt resource value: 0x7f010011
+			public const int imageAspectRatioAdjust = 2130771985;
+			
+			// aapt resource value: 0x7f01003a
+			public const int indeterminateProgressStyle = 2130772026;
+			
+			// aapt resource value: 0x7f010045
+			public const int initialActivityCount = 2130772037;
+			
+			// aapt resource value: 0x7f010115
+			public const int insetForeground = 2130772245;
+			
+			// aapt resource value: 0x7f01002a
+			public const int isLightTheme = 2130772010;
+			
+			// aapt resource value: 0x7f010112
+			public const int itemBackground = 2130772242;
+			
+			// aapt resource value: 0x7f010110
+			public const int itemIconTint = 2130772240;
+			
+			// aapt resource value: 0x7f01003c
+			public const int itemPadding = 2130772028;
+			
+			// aapt resource value: 0x7f010113
+			public const int itemTextAppearance = 2130772243;
+			
+			// aapt resource value: 0x7f010111
+			public const int itemTextColor = 2130772241;
+			
+			// aapt resource value: 0x7f010105
+			public const int keylines = 2130772229;
+			
+			// aapt resource value: 0x7f010061
+			public const int layout = 2130772065;
+			
+			// aapt resource value: 0x7f010108
+			public const int layout_anchor = 2130772232;
+			
+			// aapt resource value: 0x7f01010a
+			public const int layout_anchorGravity = 2130772234;
+			
+			// aapt resource value: 0x7f010107
+			public const int layout_behavior = 2130772231;
+			
+			// aapt resource value: 0x7f0100f6
+			public const int layout_collapseMode = 2130772214;
+			
+			// aapt resource value: 0x7f0100f7
+			public const int layout_collapseParallaxMultiplier = 2130772215;
+			
+			// aapt resource value: 0x7f010109
+			public const int layout_keyline = 2130772233;
+			
+			// aapt resource value: 0x7f0100f4
+			public const int layout_scrollFlags = 2130772212;
+			
+			// aapt resource value: 0x7f0100f5
+			public const int layout_scrollInterpolator = 2130772213;
+			
+			// aapt resource value: 0x7f0100c3
+			public const int listChoiceBackgroundIndicator = 2130772163;
+			
+			// aapt resource value: 0x7f01009f
+			public const int listDividerAlertDialog = 2130772127;
+			
+			// aapt resource value: 0x7f01004b
+			public const int listItemLayout = 2130772043;
+			
+			// aapt resource value: 0x7f010048
+			public const int listLayout = 2130772040;
+			
+			// aapt resource value: 0x7f0100bd
+			public const int listPopupWindowStyle = 2130772157;
 			
 			// aapt resource value: 0x7f0100b7
-			public const int listPreferredItemHeightSmall = 2130772151;
+			public const int listPreferredItemHeight = 2130772151;
 			
 			// aapt resource value: 0x7f0100b9
-			public const int listPreferredItemPaddingLeft = 2130772153;
+			public const int listPreferredItemHeightLarge = 2130772153;
+			
+			// aapt resource value: 0x7f0100b8
+			public const int listPreferredItemHeightSmall = 2130772152;
 			
 			// aapt resource value: 0x7f0100ba
-			public const int listPreferredItemPaddingRight = 2130772154;
+			public const int listPreferredItemPaddingLeft = 2130772154;
+			
+			// aapt resource value: 0x7f0100bb
+			public const int listPreferredItemPaddingRight = 2130772155;
 			
 			// aapt resource value: 0x7f010006
 			public const int liteMode = 2130771974;
 			
-			// aapt resource value: 0x7f010031
-			public const int logo = 2130772017;
+			// aapt resource value: 0x7f010032
+			public const int logo = 2130772018;
 			
-			// aapt resource value: 0x7f0100ea
-			public const int logoDescription = 2130772202;
+			// aapt resource value: 0x7f0100eb
+			public const int logoDescription = 2130772203;
 			
 			// aapt resource value: 0x7f010000
 			public const int mapType = 2130771968;
 			
-			// aapt resource value: 0x7f010116
-			public const int maxActionInlineWidth = 2130772246;
+			// aapt resource value: 0x7f010117
+			public const int maxActionInlineWidth = 2130772247;
 			
-			// aapt resource value: 0x7f0100e5
-			public const int maxButtonHeight = 2130772197;
-			
-			// aapt resource value: 0x7f010056
-			public const int measureWithLargestChild = 2130772054;
-			
-			// aapt resource value: 0x7f010013
-			public const int mediaRouteButtonStyle = 2130771987;
-			
-			// aapt resource value: 0x7f010014
-			public const int mediaRouteCastDrawable = 2130771988;
-			
-			// aapt resource value: 0x7f010015
-			public const int mediaRouteConnectingDrawable = 2130771989;
-			
-			// aapt resource value: 0x7f010016
-			public const int mediaRouteOffDrawable = 2130771990;
-			
-			// aapt resource value: 0x7f010017
-			public const int mediaRouteOnDrawable = 2130771991;
-			
-			// aapt resource value: 0x7f010018
-			public const int mediaRoutePauseDrawable = 2130771992;
-			
-			// aapt resource value: 0x7f010019
-			public const int mediaRoutePlayDrawable = 2130771993;
-			
-			// aapt resource value: 0x7f01001a
-			public const int mediaRouteSettingsDrawable = 2130771994;
-			
-			// aapt resource value: 0x7f01010e
-			public const int menu = 2130772238;
-			
-			// aapt resource value: 0x7f010048
-			public const int multiChoiceItemLayout = 2130772040;
-			
-			// aapt resource value: 0x7f0100e9
-			public const int navigationContentDescription = 2130772201;
-			
-			// aapt resource value: 0x7f0100e8
-			public const int navigationIcon = 2130772200;
-			
-			// aapt resource value: 0x7f01002b
-			public const int navigationMode = 2130772011;
-			
-			// aapt resource value: 0x7f01005e
-			public const int overlapAnchor = 2130772062;
-			
-			// aapt resource value: 0x7f0100ee
-			public const int paddingEnd = 2130772206;
-			
-			// aapt resource value: 0x7f0100ed
-			public const int paddingStart = 2130772205;
-			
-			// aapt resource value: 0x7f0100bf
-			public const int panelBackground = 2130772159;
-			
-			// aapt resource value: 0x7f0100c1
-			public const int panelMenuListTheme = 2130772161;
-			
-			// aapt resource value: 0x7f0100c0
-			public const int panelMenuListWidth = 2130772160;
-			
-			// aapt resource value: 0x7f0100ae
-			public const int popupMenuStyle = 2130772142;
-			
-			// aapt resource value: 0x7f010042
-			public const int popupTheme = 2130772034;
-			
-			// aapt resource value: 0x7f0100af
-			public const int popupWindowStyle = 2130772143;
-			
-			// aapt resource value: 0x7f01005d
-			public const int preserveIconSpacing = 2130772061;
-			
-			// aapt resource value: 0x7f01010c
-			public const int pressedTranslationZ = 2130772236;
-			
-			// aapt resource value: 0x7f01003a
-			public const int progressBarPadding = 2130772026;
-			
-			// aapt resource value: 0x7f010038
-			public const int progressBarStyle = 2130772024;
-			
-			// aapt resource value: 0x7f01006b
-			public const int queryBackground = 2130772075;
-			
-			// aapt resource value: 0x7f010062
-			public const int queryHint = 2130772066;
-			
-			// aapt resource value: 0x7f0100da
-			public const int radioButtonStyle = 2130772186;
-			
-			// aapt resource value: 0x7f0100db
-			public const int ratingBarStyle = 2130772187;
-			
-			// aapt resource value: 0x7f01010a
-			public const int rippleColor = 2130772234;
-			
-			// aapt resource value: 0x7f010067
-			public const int searchHintIcon = 2130772071;
-			
-			// aapt resource value: 0x7f010066
-			public const int searchIcon = 2130772070;
-			
-			// aapt resource value: 0x7f0100b5
-			public const int searchViewStyle = 2130772149;
-			
-			// aapt resource value: 0x7f0100a6
-			public const int selectableItemBackground = 2130772134;
-			
-			// aapt resource value: 0x7f0100a7
-			public const int selectableItemBackgroundBorderless = 2130772135;
-			
-			// aapt resource value: 0x7f010059
-			public const int showAsAction = 2130772057;
+			// aapt resource value: 0x7f0100e6
+			public const int maxButtonHeight = 2130772198;
 			
 			// aapt resource value: 0x7f010057
-			public const int showDividers = 2130772055;
+			public const int measureWithLargestChild = 2130772055;
 			
-			// aapt resource value: 0x7f010073
-			public const int showText = 2130772083;
+			// aapt resource value: 0x7f010014
+			public const int mediaRouteButtonStyle = 2130771988;
+			
+			// aapt resource value: 0x7f010015
+			public const int mediaRouteCastDrawable = 2130771989;
+			
+			// aapt resource value: 0x7f010016
+			public const int mediaRouteConnectingDrawable = 2130771990;
+			
+			// aapt resource value: 0x7f010017
+			public const int mediaRouteOffDrawable = 2130771991;
+			
+			// aapt resource value: 0x7f010018
+			public const int mediaRouteOnDrawable = 2130771992;
+			
+			// aapt resource value: 0x7f010019
+			public const int mediaRoutePauseDrawable = 2130771993;
+			
+			// aapt resource value: 0x7f01001a
+			public const int mediaRoutePlayDrawable = 2130771994;
+			
+			// aapt resource value: 0x7f01001b
+			public const int mediaRouteSettingsDrawable = 2130771995;
+			
+			// aapt resource value: 0x7f01010f
+			public const int menu = 2130772239;
 			
 			// aapt resource value: 0x7f010049
-			public const int singleChoiceItemLayout = 2130772041;
+			public const int multiChoiceItemLayout = 2130772041;
 			
-			// aapt resource value: 0x7f01004f
-			public const int spinBars = 2130772047;
+			// aapt resource value: 0x7f0100ea
+			public const int navigationContentDescription = 2130772202;
 			
-			// aapt resource value: 0x7f0100a1
-			public const int spinnerDropDownItemStyle = 2130772129;
+			// aapt resource value: 0x7f0100e9
+			public const int navigationIcon = 2130772201;
 			
-			// aapt resource value: 0x7f0100dc
-			public const int spinnerStyle = 2130772188;
-			
-			// aapt resource value: 0x7f010072
-			public const int splitTrack = 2130772082;
+			// aapt resource value: 0x7f01002c
+			public const int navigationMode = 2130772012;
 			
 			// aapt resource value: 0x7f01005f
-			public const int state_above_anchor = 2130772063;
-			
-			// aapt resource value: 0x7f010105
-			public const int statusBarBackground = 2130772229;
-			
-			// aapt resource value: 0x7f0100ff
-			public const int statusBarScrim = 2130772223;
-			
-			// aapt resource value: 0x7f01006c
-			public const int submitBackground = 2130772076;
-			
-			// aapt resource value: 0x7f01002d
-			public const int subtitle = 2130772013;
-			
-			// aapt resource value: 0x7f0100df
-			public const int subtitleTextAppearance = 2130772191;
-			
-			// aapt resource value: 0x7f0100ec
-			public const int subtitleTextColor = 2130772204;
-			
-			// aapt resource value: 0x7f01002f
-			public const int subtitleTextStyle = 2130772015;
-			
-			// aapt resource value: 0x7f01006a
-			public const int suggestionRowLayout = 2130772074;
-			
-			// aapt resource value: 0x7f010070
-			public const int switchMinWidth = 2130772080;
-			
-			// aapt resource value: 0x7f010071
-			public const int switchPadding = 2130772081;
-			
-			// aapt resource value: 0x7f0100dd
-			public const int switchStyle = 2130772189;
-			
-			// aapt resource value: 0x7f01006f
-			public const int switchTextAppearance = 2130772079;
-			
-			// aapt resource value: 0x7f01011a
-			public const int tabBackground = 2130772250;
-			
-			// aapt resource value: 0x7f010119
-			public const int tabContentStart = 2130772249;
-			
-			// aapt resource value: 0x7f01011c
-			public const int tabGravity = 2130772252;
-			
-			// aapt resource value: 0x7f010117
-			public const int tabIndicatorColor = 2130772247;
-			
-			// aapt resource value: 0x7f010118
-			public const int tabIndicatorHeight = 2130772248;
-			
-			// aapt resource value: 0x7f01011e
-			public const int tabMaxWidth = 2130772254;
-			
-			// aapt resource value: 0x7f01011d
-			public const int tabMinWidth = 2130772253;
-			
-			// aapt resource value: 0x7f01011b
-			public const int tabMode = 2130772251;
-			
-			// aapt resource value: 0x7f010126
-			public const int tabPadding = 2130772262;
-			
-			// aapt resource value: 0x7f010125
-			public const int tabPaddingBottom = 2130772261;
-			
-			// aapt resource value: 0x7f010124
-			public const int tabPaddingEnd = 2130772260;
-			
-			// aapt resource value: 0x7f010122
-			public const int tabPaddingStart = 2130772258;
-			
-			// aapt resource value: 0x7f010123
-			public const int tabPaddingTop = 2130772259;
-			
-			// aapt resource value: 0x7f010121
-			public const int tabSelectedTextColor = 2130772257;
-			
-			// aapt resource value: 0x7f01011f
-			public const int tabTextAppearance = 2130772255;
-			
-			// aapt resource value: 0x7f010120
-			public const int tabTextColor = 2130772256;
-			
-			// aapt resource value: 0x7f01004b
-			public const int textAllCaps = 2130772043;
-			
-			// aapt resource value: 0x7f01009a
-			public const int textAppearanceLargePopupMenu = 2130772122;
-			
-			// aapt resource value: 0x7f0100bd
-			public const int textAppearanceListItem = 2130772157;
-			
-			// aapt resource value: 0x7f0100be
-			public const int textAppearanceListItemSmall = 2130772158;
-			
-			// aapt resource value: 0x7f0100b3
-			public const int textAppearanceSearchResultSubtitle = 2130772147;
-			
-			// aapt resource value: 0x7f0100b2
-			public const int textAppearanceSearchResultTitle = 2130772146;
-			
-			// aapt resource value: 0x7f01009b
-			public const int textAppearanceSmallPopupMenu = 2130772123;
-			
-			// aapt resource value: 0x7f0100d0
-			public const int textColorAlertDialogListItem = 2130772176;
-			
-			// aapt resource value: 0x7f0100b4
-			public const int textColorSearchUrl = 2130772148;
+			public const int overlapAnchor = 2130772063;
 			
 			// aapt resource value: 0x7f0100ef
-			public const int theme = 2130772207;
+			public const int paddingEnd = 2130772207;
 			
-			// aapt resource value: 0x7f010055
-			public const int thickness = 2130772053;
+			// aapt resource value: 0x7f0100ee
+			public const int paddingStart = 2130772206;
 			
-			// aapt resource value: 0x7f01006e
-			public const int thumbTextPadding = 2130772078;
+			// aapt resource value: 0x7f0100c0
+			public const int panelBackground = 2130772160;
 			
-			// aapt resource value: 0x7f01002a
-			public const int title = 2130772010;
+			// aapt resource value: 0x7f0100c2
+			public const int panelMenuListTheme = 2130772162;
 			
-			// aapt resource value: 0x7f010103
-			public const int titleEnabled = 2130772227;
+			// aapt resource value: 0x7f0100c1
+			public const int panelMenuListWidth = 2130772161;
 			
-			// aapt resource value: 0x7f0100e4
-			public const int titleMarginBottom = 2130772196;
+			// aapt resource value: 0x7f0100af
+			public const int popupMenuStyle = 2130772143;
 			
-			// aapt resource value: 0x7f0100e2
-			public const int titleMarginEnd = 2130772194;
+			// aapt resource value: 0x7f010043
+			public const int popupTheme = 2130772035;
 			
-			// aapt resource value: 0x7f0100e1
-			public const int titleMarginStart = 2130772193;
+			// aapt resource value: 0x7f0100b0
+			public const int popupWindowStyle = 2130772144;
 			
-			// aapt resource value: 0x7f0100e3
-			public const int titleMarginTop = 2130772195;
+			// aapt resource value: 0x7f01005e
+			public const int preserveIconSpacing = 2130772062;
 			
-			// aapt resource value: 0x7f0100e0
-			public const int titleMargins = 2130772192;
+			// aapt resource value: 0x7f01010d
+			public const int pressedTranslationZ = 2130772237;
 			
-			// aapt resource value: 0x7f0100de
-			public const int titleTextAppearance = 2130772190;
+			// aapt resource value: 0x7f01003b
+			public const int progressBarPadding = 2130772027;
 			
-			// aapt resource value: 0x7f0100eb
-			public const int titleTextColor = 2130772203;
+			// aapt resource value: 0x7f010039
+			public const int progressBarStyle = 2130772025;
 			
-			// aapt resource value: 0x7f01002e
-			public const int titleTextStyle = 2130772014;
+			// aapt resource value: 0x7f01006c
+			public const int queryBackground = 2130772076;
+			
+			// aapt resource value: 0x7f010063
+			public const int queryHint = 2130772067;
+			
+			// aapt resource value: 0x7f0100db
+			public const int radioButtonStyle = 2130772187;
+			
+			// aapt resource value: 0x7f0100dc
+			public const int ratingBarStyle = 2130772188;
+			
+			// aapt resource value: 0x7f01010b
+			public const int rippleColor = 2130772235;
+			
+			// aapt resource value: 0x7f010068
+			public const int searchHintIcon = 2130772072;
+			
+			// aapt resource value: 0x7f010067
+			public const int searchIcon = 2130772071;
+			
+			// aapt resource value: 0x7f0100b6
+			public const int searchViewStyle = 2130772150;
+			
+			// aapt resource value: 0x7f0100a7
+			public const int selectableItemBackground = 2130772135;
+			
+			// aapt resource value: 0x7f0100a8
+			public const int selectableItemBackgroundBorderless = 2130772136;
+			
+			// aapt resource value: 0x7f01005a
+			public const int showAsAction = 2130772058;
+			
+			// aapt resource value: 0x7f010058
+			public const int showDividers = 2130772056;
+			
+			// aapt resource value: 0x7f010074
+			public const int showText = 2130772084;
+			
+			// aapt resource value: 0x7f01004a
+			public const int singleChoiceItemLayout = 2130772042;
+			
+			// aapt resource value: 0x7f010050
+			public const int spinBars = 2130772048;
+			
+			// aapt resource value: 0x7f0100a2
+			public const int spinnerDropDownItemStyle = 2130772130;
+			
+			// aapt resource value: 0x7f0100dd
+			public const int spinnerStyle = 2130772189;
+			
+			// aapt resource value: 0x7f010073
+			public const int splitTrack = 2130772083;
+			
+			// aapt resource value: 0x7f010060
+			public const int state_above_anchor = 2130772064;
+			
+			// aapt resource value: 0x7f010106
+			public const int statusBarBackground = 2130772230;
 			
 			// aapt resource value: 0x7f010100
-			public const int toolbarId = 2130772224;
-			
-			// aapt resource value: 0x7f0100ad
-			public const int toolbarNavigationButtonStyle = 2130772141;
-			
-			// aapt resource value: 0x7f0100ac
-			public const int toolbarStyle = 2130772140;
+			public const int statusBarScrim = 2130772224;
 			
 			// aapt resource value: 0x7f01006d
-			public const int track = 2130772077;
+			public const int submitBackground = 2130772077;
+			
+			// aapt resource value: 0x7f01002e
+			public const int subtitle = 2130772014;
+			
+			// aapt resource value: 0x7f0100e0
+			public const int subtitleTextAppearance = 2130772192;
+			
+			// aapt resource value: 0x7f0100ed
+			public const int subtitleTextColor = 2130772205;
+			
+			// aapt resource value: 0x7f010030
+			public const int subtitleTextStyle = 2130772016;
+			
+			// aapt resource value: 0x7f01006b
+			public const int suggestionRowLayout = 2130772075;
+			
+			// aapt resource value: 0x7f010071
+			public const int switchMinWidth = 2130772081;
+			
+			// aapt resource value: 0x7f010072
+			public const int switchPadding = 2130772082;
+			
+			// aapt resource value: 0x7f0100de
+			public const int switchStyle = 2130772190;
+			
+			// aapt resource value: 0x7f010070
+			public const int switchTextAppearance = 2130772080;
+			
+			// aapt resource value: 0x7f01011b
+			public const int tabBackground = 2130772251;
+			
+			// aapt resource value: 0x7f01011a
+			public const int tabContentStart = 2130772250;
+			
+			// aapt resource value: 0x7f01011d
+			public const int tabGravity = 2130772253;
+			
+			// aapt resource value: 0x7f010118
+			public const int tabIndicatorColor = 2130772248;
+			
+			// aapt resource value: 0x7f010119
+			public const int tabIndicatorHeight = 2130772249;
+			
+			// aapt resource value: 0x7f01011f
+			public const int tabMaxWidth = 2130772255;
+			
+			// aapt resource value: 0x7f01011e
+			public const int tabMinWidth = 2130772254;
+			
+			// aapt resource value: 0x7f01011c
+			public const int tabMode = 2130772252;
+			
+			// aapt resource value: 0x7f010127
+			public const int tabPadding = 2130772263;
+			
+			// aapt resource value: 0x7f010126
+			public const int tabPaddingBottom = 2130772262;
+			
+			// aapt resource value: 0x7f010125
+			public const int tabPaddingEnd = 2130772261;
+			
+			// aapt resource value: 0x7f010123
+			public const int tabPaddingStart = 2130772259;
+			
+			// aapt resource value: 0x7f010124
+			public const int tabPaddingTop = 2130772260;
+			
+			// aapt resource value: 0x7f010122
+			public const int tabSelectedTextColor = 2130772258;
+			
+			// aapt resource value: 0x7f010120
+			public const int tabTextAppearance = 2130772256;
+			
+			// aapt resource value: 0x7f010121
+			public const int tabTextColor = 2130772257;
+			
+			// aapt resource value: 0x7f01004c
+			public const int textAllCaps = 2130772044;
+			
+			// aapt resource value: 0x7f01009b
+			public const int textAppearanceLargePopupMenu = 2130772123;
+			
+			// aapt resource value: 0x7f0100be
+			public const int textAppearanceListItem = 2130772158;
+			
+			// aapt resource value: 0x7f0100bf
+			public const int textAppearanceListItemSmall = 2130772159;
+			
+			// aapt resource value: 0x7f0100b4
+			public const int textAppearanceSearchResultSubtitle = 2130772148;
+			
+			// aapt resource value: 0x7f0100b3
+			public const int textAppearanceSearchResultTitle = 2130772147;
+			
+			// aapt resource value: 0x7f01009c
+			public const int textAppearanceSmallPopupMenu = 2130772124;
+			
+			// aapt resource value: 0x7f0100d1
+			public const int textColorAlertDialogListItem = 2130772177;
+			
+			// aapt resource value: 0x7f0100b5
+			public const int textColorSearchUrl = 2130772149;
+			
+			// aapt resource value: 0x7f0100f0
+			public const int theme = 2130772208;
+			
+			// aapt resource value: 0x7f010056
+			public const int thickness = 2130772054;
+			
+			// aapt resource value: 0x7f01006f
+			public const int thumbTextPadding = 2130772079;
+			
+			// aapt resource value: 0x7f01002b
+			public const int title = 2130772011;
+			
+			// aapt resource value: 0x7f010104
+			public const int titleEnabled = 2130772228;
+			
+			// aapt resource value: 0x7f0100e5
+			public const int titleMarginBottom = 2130772197;
+			
+			// aapt resource value: 0x7f0100e3
+			public const int titleMarginEnd = 2130772195;
+			
+			// aapt resource value: 0x7f0100e2
+			public const int titleMarginStart = 2130772194;
+			
+			// aapt resource value: 0x7f0100e4
+			public const int titleMarginTop = 2130772196;
+			
+			// aapt resource value: 0x7f0100e1
+			public const int titleMargins = 2130772193;
+			
+			// aapt resource value: 0x7f0100df
+			public const int titleTextAppearance = 2130772191;
+			
+			// aapt resource value: 0x7f0100ec
+			public const int titleTextColor = 2130772204;
+			
+			// aapt resource value: 0x7f01002f
+			public const int titleTextStyle = 2130772015;
+			
+			// aapt resource value: 0x7f010101
+			public const int toolbarId = 2130772225;
+			
+			// aapt resource value: 0x7f0100ae
+			public const int toolbarNavigationButtonStyle = 2130772142;
+			
+			// aapt resource value: 0x7f0100ad
+			public const int toolbarStyle = 2130772141;
+			
+			// aapt resource value: 0x7f01006e
+			public const int track = 2130772078;
 			
 			// aapt resource value: 0x7f010007
 			public const int uiCompass = 2130771975;
@@ -2405,38 +4066,38 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			// aapt resource value: 0x7f01000d
 			public const int useViewLifecycle = 2130771981;
 			
-			// aapt resource value: 0x7f010068
-			public const int voiceIcon = 2130772072;
-			
-			// aapt resource value: 0x7f010074
-			public const int windowActionBar = 2130772084;
-			
-			// aapt resource value: 0x7f010076
-			public const int windowActionBarOverlay = 2130772086;
-			
-			// aapt resource value: 0x7f010077
-			public const int windowActionModeOverlay = 2130772087;
-			
-			// aapt resource value: 0x7f01007b
-			public const int windowFixedHeightMajor = 2130772091;
-			
-			// aapt resource value: 0x7f010079
-			public const int windowFixedHeightMinor = 2130772089;
-			
-			// aapt resource value: 0x7f010078
-			public const int windowFixedWidthMajor = 2130772088;
-			
-			// aapt resource value: 0x7f01007a
-			public const int windowFixedWidthMinor = 2130772090;
-			
-			// aapt resource value: 0x7f01007c
-			public const int windowMinWidthMajor = 2130772092;
-			
-			// aapt resource value: 0x7f01007d
-			public const int windowMinWidthMinor = 2130772093;
+			// aapt resource value: 0x7f010069
+			public const int voiceIcon = 2130772073;
 			
 			// aapt resource value: 0x7f010075
-			public const int windowNoTitle = 2130772085;
+			public const int windowActionBar = 2130772085;
+			
+			// aapt resource value: 0x7f010077
+			public const int windowActionBarOverlay = 2130772087;
+			
+			// aapt resource value: 0x7f010078
+			public const int windowActionModeOverlay = 2130772088;
+			
+			// aapt resource value: 0x7f01007c
+			public const int windowFixedHeightMajor = 2130772092;
+			
+			// aapt resource value: 0x7f01007a
+			public const int windowFixedHeightMinor = 2130772090;
+			
+			// aapt resource value: 0x7f010079
+			public const int windowFixedWidthMajor = 2130772089;
+			
+			// aapt resource value: 0x7f01007b
+			public const int windowFixedWidthMinor = 2130772091;
+			
+			// aapt resource value: 0x7f01007d
+			public const int windowMinWidthMajor = 2130772093;
+			
+			// aapt resource value: 0x7f01007e
+			public const int windowMinWidthMinor = 2130772094;
+			
+			// aapt resource value: 0x7f010076
+			public const int windowNoTitle = 2130772086;
 			
 			// aapt resource value: 0x7f01000e
 			public const int zOrderOnTop = 2130771982;
@@ -3292,196 +4953,202 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public const int abc_textfield_search_material = 2130837565;
 			
 			// aapt resource value: 0x7f02003e
-			public const int common_full_open_on_phone = 2130837566;
+			public const int bus = 2130837566;
 			
 			// aapt resource value: 0x7f02003f
-			public const int common_ic_googleplayservices = 2130837567;
+			public const int common_full_open_on_phone = 2130837567;
 			
 			// aapt resource value: 0x7f020040
-			public const int common_signin_btn_icon_dark = 2130837568;
+			public const int common_ic_googleplayservices = 2130837568;
 			
 			// aapt resource value: 0x7f020041
-			public const int common_signin_btn_icon_disabled_dark = 2130837569;
+			public const int common_signin_btn_icon_dark = 2130837569;
 			
 			// aapt resource value: 0x7f020042
-			public const int common_signin_btn_icon_disabled_focus_dark = 2130837570;
+			public const int common_signin_btn_icon_disabled_dark = 2130837570;
 			
 			// aapt resource value: 0x7f020043
-			public const int common_signin_btn_icon_disabled_focus_light = 2130837571;
+			public const int common_signin_btn_icon_disabled_focus_dark = 2130837571;
 			
 			// aapt resource value: 0x7f020044
-			public const int common_signin_btn_icon_disabled_light = 2130837572;
+			public const int common_signin_btn_icon_disabled_focus_light = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int common_signin_btn_icon_focus_dark = 2130837573;
+			public const int common_signin_btn_icon_disabled_light = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int common_signin_btn_icon_focus_light = 2130837574;
+			public const int common_signin_btn_icon_focus_dark = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int common_signin_btn_icon_light = 2130837575;
+			public const int common_signin_btn_icon_focus_light = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int common_signin_btn_icon_normal_dark = 2130837576;
+			public const int common_signin_btn_icon_light = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int common_signin_btn_icon_normal_light = 2130837577;
+			public const int common_signin_btn_icon_normal_dark = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int common_signin_btn_icon_pressed_dark = 2130837578;
+			public const int common_signin_btn_icon_normal_light = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int common_signin_btn_icon_pressed_light = 2130837579;
+			public const int common_signin_btn_icon_pressed_dark = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int common_signin_btn_text_dark = 2130837580;
+			public const int common_signin_btn_icon_pressed_light = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int common_signin_btn_text_disabled_dark = 2130837581;
+			public const int common_signin_btn_text_dark = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int common_signin_btn_text_disabled_focus_dark = 2130837582;
+			public const int common_signin_btn_text_disabled_dark = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int common_signin_btn_text_disabled_focus_light = 2130837583;
+			public const int common_signin_btn_text_disabled_focus_dark = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int common_signin_btn_text_disabled_light = 2130837584;
+			public const int common_signin_btn_text_disabled_focus_light = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int common_signin_btn_text_focus_dark = 2130837585;
+			public const int common_signin_btn_text_disabled_light = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int common_signin_btn_text_focus_light = 2130837586;
+			public const int common_signin_btn_text_focus_dark = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int common_signin_btn_text_light = 2130837587;
+			public const int common_signin_btn_text_focus_light = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int common_signin_btn_text_normal_dark = 2130837588;
+			public const int common_signin_btn_text_light = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int common_signin_btn_text_normal_light = 2130837589;
+			public const int common_signin_btn_text_normal_dark = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int common_signin_btn_text_pressed_dark = 2130837590;
+			public const int common_signin_btn_text_normal_light = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int common_signin_btn_text_pressed_light = 2130837591;
+			public const int common_signin_btn_text_pressed_dark = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int design_fab_background = 2130837592;
+			public const int common_signin_btn_text_pressed_light = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int design_snackbar_background = 2130837593;
+			public const int design_fab_background = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int ic_cast_dark = 2130837594;
+			public const int design_snackbar_background = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int ic_cast_disabled_light = 2130837595;
+			public const int ic_cast_dark = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_cast_light = 2130837596;
+			public const int ic_cast_disabled_light = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_cast_off_light = 2130837597;
+			public const int ic_cast_light = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_cast_on_0_light = 2130837598;
+			public const int ic_cast_off_light = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_cast_on_1_light = 2130837599;
+			public const int ic_cast_on_0_light = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_cast_on_2_light = 2130837600;
+			public const int ic_cast_on_1_light = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_cast_on_light = 2130837601;
+			public const int ic_cast_on_2_light = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_media_pause = 2130837602;
+			public const int ic_cast_on_light = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_media_play = 2130837603;
+			public const int ic_media_pause = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_media_route_disabled_mono_dark = 2130837604;
+			public const int ic_media_play = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_media_route_off_mono_dark = 2130837605;
+			public const int ic_media_route_disabled_mono_dark = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_media_route_on_0_mono_dark = 2130837606;
+			public const int ic_media_route_off_mono_dark = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_media_route_on_1_mono_dark = 2130837607;
+			public const int ic_media_route_on_0_mono_dark = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_media_route_on_2_mono_dark = 2130837608;
+			public const int ic_media_route_on_1_mono_dark = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_media_route_on_mono_dark = 2130837609;
+			public const int ic_media_route_on_2_mono_dark = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_pause_dark = 2130837610;
+			public const int ic_media_route_on_mono_dark = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_pause_light = 2130837611;
+			public const int ic_pause_dark = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_play_dark = 2130837612;
+			public const int ic_pause_light = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_play_light = 2130837613;
+			public const int ic_play_dark = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_setting_dark = 2130837614;
+			public const int ic_play_light = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_setting_light = 2130837615;
+			public const int ic_setting_dark = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int Icon = 2130837616;
+			public const int ic_setting_light = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int mr_ic_cast_dark = 2130837617;
+			public const int Icon = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int mr_ic_cast_light = 2130837618;
+			public const int mr_ic_cast_dark = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837619;
+			public const int mr_ic_cast_light = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int mr_ic_media_route_connecting_mono_light = 2130837620;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int mr_ic_media_route_mono_dark = 2130837621;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int mr_ic_media_route_mono_light = 2130837622;
+			public const int mr_ic_media_route_mono_dark = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int mr_ic_pause_dark = 2130837623;
+			public const int mr_ic_media_route_mono_light = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int mr_ic_pause_light = 2130837624;
+			public const int mr_ic_pause_dark = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int mr_ic_play_dark = 2130837625;
+			public const int mr_ic_pause_light = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int mr_ic_play_light = 2130837626;
+			public const int mr_ic_play_dark = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int mr_ic_settings_dark = 2130837627;
+			public const int mr_ic_play_light = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int mr_ic_settings_light = 2130837628;
+			public const int mr_ic_settings_dark = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int notification_template_icon_bg = 2130837629;
+			public const int mr_ic_settings_light = 2130837629;
+			
+			// aapt resource value: 0x7f02007f
+			public const int notification_template_icon_bg = 2130837631;
+			
+			// aapt resource value: 0x7f02007e
+			public const int underground = 2130837630;
 			
 			static Drawable()
 			{
@@ -4183,8 +5850,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			// aapt resource value: 0x7f05000f
 			public const int common_android_wear_update_title = 2131034127;
 			
-			// aapt resource value: 0x7f05001f
-			public const int common_google_play_services_api_unavailable_text = 2131034143;
+			// aapt resource value: 0x7f05001d
+			public const int common_google_play_services_api_unavailable_text = 2131034141;
 			
 			// aapt resource value: 0x7f05000d
 			public const int common_google_play_services_enable_button = 2131034125;
@@ -4231,11 +5898,11 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			// aapt resource value: 0x7f050002
 			public const int common_google_play_services_notification_ticker = 2131034114;
 			
-			// aapt resource value: 0x7f050021
-			public const int common_google_play_services_sign_in_failed_text = 2131034145;
+			// aapt resource value: 0x7f05001f
+			public const int common_google_play_services_sign_in_failed_text = 2131034143;
 			
-			// aapt resource value: 0x7f050020
-			public const int common_google_play_services_sign_in_failed_title = 2131034144;
+			// aapt resource value: 0x7f05001e
+			public const int common_google_play_services_sign_in_failed_title = 2131034142;
 			
 			// aapt resource value: 0x7f050018
 			public const int common_google_play_services_unknown_issue = 2131034136;
@@ -4261,14 +5928,14 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			// aapt resource value: 0x7f050012
 			public const int common_google_play_services_updating_title = 2131034130;
 			
-			// aapt resource value: 0x7f05001e
-			public const int common_open_on_phone = 2131034142;
-			
 			// aapt resource value: 0x7f05001c
-			public const int common_signin_button_text = 2131034140;
+			public const int common_open_on_phone = 2131034140;
 			
-			// aapt resource value: 0x7f05001d
-			public const int common_signin_button_text_long = 2131034141;
+			// aapt resource value: 0x7f050020
+			public const int common_signin_button_text = 2131034144;
+			
+			// aapt resource value: 0x7f050021
+			public const int common_signin_button_text_long = 2131034145;
 			
 			// aapt resource value: 0x7f050022
 			public const int mr_media_route_button_content_description = 2131034146;
@@ -5305,8 +6972,7 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 		{
 			
 			public static int[] ActionBar = new int[] {
-					2130772008,
-					2130772010,
+					2130772009,
 					2130772011,
 					2130772012,
 					2130772013,
@@ -5331,7 +6997,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					2130772032,
 					2130772033,
 					2130772034,
-					2130772130};
+					2130772035,
+					2130772131};
 			
 			// aapt resource value: 10
 			public const int ActionBar_background = 10;
@@ -5429,12 +7096,12 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public static int[] ActionMenuView;
 			
 			public static int[] ActionMode = new int[] {
-					2130772008,
-					2130772014,
+					2130772009,
 					2130772015,
-					2130772019,
-					2130772021,
-					2130772035};
+					2130772016,
+					2130772020,
+					2130772022,
+					2130772036};
 			
 			// aapt resource value: 3
 			public const int ActionMode_background = 3;
@@ -5455,8 +7122,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public const int ActionMode_titleTextStyle = 1;
 			
 			public static int[] ActivityChooserView = new int[] {
-					2130772036,
-					2130772037};
+					2130772037,
+					2130772038};
 			
 			// aapt resource value: 1
 			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
@@ -5466,11 +7133,11 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			
 			public static int[] AlertDialog = new int[] {
 					16842994,
-					2130772038,
 					2130772039,
 					2130772040,
 					2130772041,
-					2130772042};
+					2130772042,
+					2130772043};
 			
 			// aapt resource value: 0
 			public const int AlertDialog_android_layout = 0;
@@ -5492,8 +7159,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			
 			public static int[] AppBarLayout = new int[] {
 					16842964,
-					2130772033,
-					2130772210};
+					2130772034,
+					2130772211};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_android_background = 0;
@@ -5505,8 +7172,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public const int AppBarLayout_expanded = 2;
 			
 			public static int[] AppBarLayout_LayoutParams = new int[] {
-					2130772211,
-					2130772212};
+					2130772212,
+					2130772213};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
@@ -5516,7 +7183,7 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			
 			public static int[] AppCompatTextView = new int[] {
 					16842804,
-					2130772043};
+					2130772044};
 			
 			// aapt resource value: 0
 			public const int AppCompatTextView_android_textAppearance = 0;
@@ -5525,7 +7192,6 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public const int AppCompatTextView_textAllCaps = 1;
 			
 			public static int[] CardView = new int[] {
-					2130771996,
 					2130771997,
 					2130771998,
 					2130771999,
@@ -5535,7 +7201,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					2130772003,
 					2130772004,
 					2130772005,
-					2130772006};
+					2130772006,
+					2130772007};
 			
 			// aapt resource value: 0
 			public const int CardView_cardBackgroundColor = 0;
@@ -5571,8 +7238,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public const int CardView_contentPaddingTop = 9;
 			
 			public static int[] CollapsingAppBarLayout_LayoutParams = new int[] {
-					2130772213,
-					2130772214};
+					2130772214,
+					2130772215};
 			
 			// aapt resource value: 0
 			public const int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
@@ -5581,8 +7248,7 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public const int CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = 1;
 			
 			public static int[] CollapsingToolbarLayout = new int[] {
-					2130772010,
-					2130772215,
+					2130772011,
 					2130772216,
 					2130772217,
 					2130772218,
@@ -5594,7 +7260,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					2130772224,
 					2130772225,
 					2130772226,
-					2130772227};
+					2130772227,
+					2130772228};
 			
 			// aapt resource value: 11
 			public const int CollapsingToolbarLayout_collapsedTitleGravity = 11;
@@ -5640,8 +7307,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			
 			public static int[] CompoundButton = new int[] {
 					16843015,
-					2130772044,
-					2130772045};
+					2130772045,
+					2130772046};
 			
 			// aapt resource value: 0
 			public const int CompoundButton_android_button = 0;
@@ -5653,8 +7320,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public const int CompoundButton_buttonTintMode = 2;
 			
 			public static int[] CoordinatorLayout = new int[] {
-					2130772228,
-					2130772229};
+					2130772229,
+					2130772230};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_keylines = 0;
@@ -5664,10 +7331,10 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			
 			public static int[] CoordinatorLayout_LayoutParams = new int[] {
 					16842931,
-					2130772230,
 					2130772231,
 					2130772232,
-					2130772233};
+					2130772233,
+					2130772234};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
@@ -5685,14 +7352,14 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public const int CoordinatorLayout_LayoutParams_layout_keyline = 3;
 			
 			public static int[] DrawerArrowToggle = new int[] {
-					2130772046,
 					2130772047,
 					2130772048,
 					2130772049,
 					2130772050,
 					2130772051,
 					2130772052,
-					2130772053};
+					2130772053,
+					2130772054};
 			
 			// aapt resource value: 4
 			public const int DrawerArrowToggle_arrowHeadLength = 4;
@@ -5720,13 +7387,13 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			
 			public static int[] FloatingActionButton = new int[] {
 					16842964,
-					2130772033,
-					2130772208,
+					2130772034,
 					2130772209,
-					2130772234,
+					2130772210,
 					2130772235,
 					2130772236,
-					2130772237};
+					2130772237,
+					2130772238};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_android_background = 0;
@@ -5758,10 +7425,10 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					16843046,
 					16843047,
 					16843048,
-					2130772018,
-					2130772054,
+					2130772019,
 					2130772055,
-					2130772056};
+					2130772056,
+					2130772057};
 			
 			// aapt resource value: 2
 			public const int LinearLayoutCompat_android_baselineAligned = 2;
@@ -5819,9 +7486,9 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
 			
 			public static int[] LoadingImageView = new int[] {
-					2130771984,
 					2130771985,
-					2130771986};
+					2130771986,
+					2130771987};
 			
 			// aapt resource value: 2
 			public const int LoadingImageView_circleCrop = 2;
@@ -5848,7 +7515,11 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					2130771980,
 					2130771981,
 					2130771982,
-					2130771983};
+					2130771983,
+					2130771984};
+			
+			// aapt resource value: 16
+			public const int MapAttrs_ambientEnabled = 16;
 			
 			// aapt resource value: 1
 			public const int MapAttrs_cameraBearing = 1;
@@ -5901,7 +7572,7 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public static int[] MediaRouteButton = new int[] {
 					16843071,
 					16843072,
-					2130771995};
+					2130771996};
 			
 			// aapt resource value: 1
 			public const int MediaRouteButton_android_minHeight = 1;
@@ -5952,10 +7623,10 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					16843236,
 					16843237,
 					16843375,
-					2130772057,
 					2130772058,
 					2130772059,
-					2130772060};
+					2130772060,
+					2130772061};
 			
 			// aapt resource value: 14
 			public const int MenuItem_actionLayout = 14;
@@ -6016,7 +7687,7 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					16843055,
 					16843056,
 					16843057,
-					2130772061};
+					2130772062};
 			
 			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;
@@ -6046,13 +7717,13 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					16842964,
 					16842973,
 					16843039,
-					2130772033,
-					2130772238,
+					2130772034,
 					2130772239,
 					2130772240,
 					2130772241,
 					2130772242,
-					2130772243};
+					2130772243,
+					2130772244};
 			
 			// aapt resource value: 0
 			public const int NavigationView_android_background = 0;
@@ -6086,7 +7757,7 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			
 			public static int[] PopupWindow = new int[] {
 					16843126,
-					2130772062};
+					2130772063};
 			
 			// aapt resource value: 0
 			public const int PopupWindow_android_popupBackground = 0;
@@ -6095,19 +7766,19 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public const int PopupWindow_overlapAnchor = 1;
 			
 			public static int[] PopupWindowBackgroundState = new int[] {
-					2130772063};
+					2130772064};
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
 			
 			public static int[] ScrimInsetsFrameLayout = new int[] {
-					2130772244};
+					2130772245};
 			
 			// aapt resource value: 0
 			public const int ScrimInsetsFrameLayout_insetForeground = 0;
 			
 			public static int[] ScrollingViewBehavior_Params = new int[] {
-					2130772245};
+					2130772246};
 			
 			// aapt resource value: 0
 			public const int ScrollingViewBehavior_Params_behavior_overlapTop = 0;
@@ -6117,7 +7788,6 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					16843039,
 					16843296,
 					16843364,
-					2130772064,
 					2130772065,
 					2130772066,
 					2130772067,
@@ -6129,7 +7799,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					2130772073,
 					2130772074,
 					2130772075,
-					2130772076};
+					2130772076,
+					2130772077};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -6184,8 +7855,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			
 			public static int[] SnackbarLayout = new int[] {
 					16843039,
-					2130772033,
-					2130772246};
+					2130772034,
+					2130772247};
 			
 			// aapt resource value: 0
 			public const int SnackbarLayout_android_maxWidth = 0;
@@ -6200,7 +7871,7 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					16843126,
 					16843131,
 					16843362,
-					2130772034};
+					2130772035};
 			
 			// aapt resource value: 2
 			public const int Spinner_android_dropDownWidth = 2;
@@ -6218,13 +7889,13 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					16843044,
 					16843045,
 					16843074,
-					2130772077,
 					2130772078,
 					2130772079,
 					2130772080,
 					2130772081,
 					2130772082,
-					2130772083};
+					2130772083,
+					2130772084};
 			
 			// aapt resource value: 1
 			public const int SwitchCompat_android_textOff = 1;
@@ -6257,7 +7928,6 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public const int SwitchCompat_track = 3;
 			
 			public static int[] TabLayout = new int[] {
-					2130772247,
 					2130772248,
 					2130772249,
 					2130772250,
@@ -6272,7 +7942,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					2130772259,
 					2130772260,
 					2130772261,
-					2130772262};
+					2130772262,
+					2130772263};
 			
 			// aapt resource value: 3
 			public const int TabLayout_tabBackground = 3;
@@ -6327,7 +7998,7 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					16842902,
 					16842903,
 					16842904,
-					2130772043};
+					2130772044};
 			
 			// aapt resource value: 3
 			public const int TextAppearance_android_textColor = 3;
@@ -6347,10 +8018,10 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public static int[] TextInputLayout = new int[] {
 					16842906,
 					16843088,
-					2130772263,
 					2130772264,
 					2130772265,
-					2130772266};
+					2130772266,
+					2130772267};
 			
 			// aapt resource value: 1
 			public const int TextInputLayout_android_hint = 1;
@@ -6373,7 +8044,6 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public static int[] Theme = new int[] {
 					16842839,
 					16842926,
-					2130772084,
 					2130772085,
 					2130772086,
 					2130772087,
@@ -6478,7 +8148,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					2130772186,
 					2130772187,
 					2130772188,
-					2130772189};
+					2130772189,
+					2130772190};
 			
 			// aapt resource value: 23
 			public const int Theme_actionBarDivider = 23;
@@ -6807,15 +8478,14 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public static int[] Toolbar = new int[] {
 					16842927,
 					16843072,
-					2130772010,
-					2130772013,
-					2130772017,
-					2130772029,
+					2130772011,
+					2130772014,
+					2130772018,
 					2130772030,
 					2130772031,
 					2130772032,
-					2130772034,
-					2130772190,
+					2130772033,
+					2130772035,
 					2130772191,
 					2130772192,
 					2130772193,
@@ -6829,7 +8499,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 					2130772201,
 					2130772202,
 					2130772203,
-					2130772204};
+					2130772204,
+					2130772205};
 			
 			// aapt resource value: 0
 			public const int Toolbar_android_gravity = 0;
@@ -6909,9 +8580,9 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			public static int[] View = new int[] {
 					16842752,
 					16842970,
-					2130772205,
 					2130772206,
-					2130772207};
+					2130772207,
+					2130772208};
 			
 			// aapt resource value: 1
 			public const int View_android_focusable = 1;
@@ -6930,8 +8601,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.Android
 			
 			public static int[] ViewBackgroundHelper = new int[] {
 					16842964,
-					2130772208,
-					2130772209};
+					2130772209,
+					2130772210};
 			
 			// aapt resource value: 0
 			public const int ViewBackgroundHelper_android_background = 0;

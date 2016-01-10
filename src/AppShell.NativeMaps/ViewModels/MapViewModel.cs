@@ -1,4 +1,6 @@
-﻿namespace AppShell.NativeMaps
+﻿using System.Collections.ObjectModel;
+
+namespace AppShell.NativeMaps
 {
     public class MapViewModel : ViewModel, IMapService
     {
@@ -11,7 +13,7 @@
                 if (center != value)
                 {
                     center = value;
-                    OnPropertyChanged("Center");
+                    OnPropertyChanged();
                 }
             }
         }
@@ -25,10 +27,27 @@
                 if (zoomLevel != value)
                 {
                     zoomLevel = value;
-                    OnPropertyChanged("ZoomLevel");
+                    OnPropertyChanged();
                 }
             }
         }
+
+        private MapType mapType;
+        public MapType MapType
+        {
+            get { return mapType; }
+            set
+            {
+                if (mapType != value)
+                {
+                    mapType = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public ObservableCollection<Marker> Markers { get; set; }
+        public ObservableCollection<TileOverlay> TileOverlays { get; set; }
 
         private IServiceDispatcher serviceDispatcher;
 
@@ -37,6 +56,10 @@
             this.serviceDispatcher = serviceDispatcher;
 
             serviceDispatcher.Subscribe<IMapService>(this);
+
+            MapType = MapType.Roads;
+            Markers = new ObservableCollection<Marker>();
+            TileOverlays = new ObservableCollection<TileOverlay>();
         }
 
         public override void Dispose()

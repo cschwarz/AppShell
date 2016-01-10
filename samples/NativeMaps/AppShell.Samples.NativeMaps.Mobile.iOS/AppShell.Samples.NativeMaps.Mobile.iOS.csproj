@@ -51,7 +51,7 @@
     </CodesignEntitlements>
     <CodesignKey>iPhone Developer: Christian Schwarz (963CMG9DYL)</CodesignKey>
     <MtouchDebug>True</MtouchDebug>
-    <CodesignProvision>f690ddcd-f130-4e85-8077-75b526824007</CodesignProvision>
+    <CodesignProvision>43747e24-660b-446e-b9b3-15867dd3bd17</CodesignProvision>
     <CodesignResourceRules />
     <CodesignExtraArgs />
     <MtouchSdkVersion>8.4</MtouchSdkVersion>
@@ -121,14 +121,6 @@
       <HintPath>..\..\..\packages\Xamarin.Forms.2.0.0.6490\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Xamarin.Forms.Maps, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Xamarin.Forms.Maps.2.0.0.6490\lib\Xamarin.iOS10\Xamarin.Forms.Maps.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Maps.iOS, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Xamarin.Forms.Maps.2.0.0.6490\lib\Xamarin.iOS10\Xamarin.Forms.Maps.iOS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Xamarin.Forms.2.0.0.6490\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
       <Private>True</Private>
@@ -145,6 +137,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
+    <BundleResource Include="Resources\bus.png" />
+    <BundleResource Include="Resources\underground.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\AppShell.Mobile.iOS\AppShell.Mobile.iOS.csproj">
@@ -156,6 +150,12 @@
     <ProjectReference Include="..\..\..\src\AppShell.Mobile\AppShell.Mobile.csproj">
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
       <Name>AppShell.Mobile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\src\AppShell.NativeMaps.Mobile.iOS\AppShell.NativeMaps.Mobile.iOS.csproj">
+      <Project>{73c285d1-f0cf-48a2-8274-30fe3cb46496}</Project>
+      <Name>AppShell.NativeMaps.Mobile.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
     <ProjectReference Include="..\..\..\src\AppShell.NativeMaps.Mobile\AppShell.NativeMaps.Mobile.csproj">
       <Project>{43b70d9c-4274-4c52-9dc7-488781f8c19c}</Project>

@@ -13,6 +13,7 @@
     <dependencies>
       <dependency id="AppShell" version="$version$" />
       <dependency id="AppShell.Mobile" version="$version$" />
+      <dependency id="AppShell.NativeMaps" version="$version$" />
       <dependency id="AppShell.NativeMaps.Mobile" version="$version$" />
     </dependencies>
   </metadata>

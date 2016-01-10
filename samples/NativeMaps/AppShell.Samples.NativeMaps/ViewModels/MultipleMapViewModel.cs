@@ -1,4 +1,5 @@
 ﻿using AppShell.NativeMaps;
+using System.Collections.ObjectModel;
 
 namespace AppShell.Samples.NativeMaps
 {
@@ -59,5 +60,7 @@ namespace AppShell.Samples.NativeMaps
                 }
             }
         }
+
+        public ObservableCollection<Marker> Markers1 { get; set; }        
     }
 }

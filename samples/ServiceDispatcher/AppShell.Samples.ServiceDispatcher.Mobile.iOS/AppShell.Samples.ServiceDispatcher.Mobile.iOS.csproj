@@ -51,7 +51,7 @@
     </CodesignEntitlements>
     <CodesignKey>iPhone Developer: Christian Schwarz (963CMG9DYL)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignProvision>f690ddcd-f130-4e85-8077-75b526824007</CodesignProvision>
+    <CodesignProvision>43747e24-660b-446e-b9b3-15867dd3bd17</CodesignProvision>
     <CodesignResourceRules />
     <CodesignExtraArgs />
   </PropertyGroup>

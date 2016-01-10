@@ -28,12 +28,15 @@ namespace AppShell.NativeMaps.Mobile.Android
 
     public class MapViewRenderer : ViewRenderer<MapView, GMaps.MapView>, GMaps.IOnMapReadyCallback
     {
+        private GMaps.GoogleMap googleMap;
+
         public void OnMapReady(GMaps.GoogleMap googleMap)
         {
-            googleMap.MapType = Element.MapType.ToNativeMapType();
+            this.googleMap = googleMap;
 
-            if (Element.Center != null)
-                googleMap.MoveCamera(GMaps.CameraUpdateFactory.NewLatLngZoom(new LatLng(Element.Center.Latitude, Element.Center.Longitude), (float)Element.ZoomLevel));
+            googleMap.MapType = Element.MapType.ToNativeMapType();
+            
+            SetCenter();
 
             if (Element.Markers != null)
             {
@@ -81,6 +84,15 @@ namespace AppShell.NativeMaps.Mobile.Android
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
+
+            if (e.PropertyName == MapView.CenterProperty.PropertyName)
+                SetCenter();
+        }
+
+        private void SetCenter()
+        {
+            if (Element.Center != null)
+                googleMap.MoveCamera(GMaps.CameraUpdateFactory.NewLatLngZoom(new LatLng(Element.Center.Latitude, Element.Center.Longitude), (float)Element.ZoomLevel));
         }
 
         public override SizeRequest GetDesiredSize(int widthConstraint, int heightConstraint)

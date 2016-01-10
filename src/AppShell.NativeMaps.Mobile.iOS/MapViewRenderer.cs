@@ -8,6 +8,7 @@ using System;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
+using System.ComponentModel;
 
 [assembly: ExportRenderer(typeof(MapView), typeof(MapViewRenderer))]
 
@@ -105,9 +106,22 @@ namespace AppShell.NativeMaps.Mobile.iOS
                 e.NewElement.SizeChanged += SizeChanged;
         }
 
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+
+            if (e.PropertyName == MapView.CenterProperty.PropertyName)
+                SetCenter();
+        }
+
         private void SizeChanged(object sender, EventArgs e)
         {
-            if (Element.Center != null)
+            SetCenter();
+        }
+
+        private void SetCenter()
+        {
+            if (Control.Center != null)
                 Control.SetRegion(new MKCoordinateRegion(new CLLocationCoordinate2D(Element.Center.Latitude, Element.Center.Longitude), new MKCoordinateSpan(0, 360.0 / Math.Pow(2, Element.ZoomLevel + 1) * Element.Width / 256.0)), false);
         }
 

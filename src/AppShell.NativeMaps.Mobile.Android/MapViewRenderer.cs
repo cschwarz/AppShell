@@ -30,6 +30,11 @@ namespace AppShell.NativeMaps.Mobile.Android
     {
         private GMaps.GoogleMap googleMap;
 
+        public MapViewRenderer()
+        {
+            AutoPackage = false;
+        }
+
         public void OnMapReady(GMaps.GoogleMap googleMap)
         {
             this.googleMap = googleMap;

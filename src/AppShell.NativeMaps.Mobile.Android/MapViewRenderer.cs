@@ -2,6 +2,9 @@ using Android.Gms.Maps.Model;
 using AppShell.NativeMaps.Mobile;
 using AppShell.NativeMaps.Mobile.Android;
 using Java.Net;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -29,35 +32,28 @@ namespace AppShell.NativeMaps.Mobile.Android
     public class MapViewRenderer : ViewRenderer<MapView, GMaps.MapView>, GMaps.IOnMapReadyCallback
     {
         private GMaps.GoogleMap googleMap;
+        private Dictionary<Marker, GMaps.Model.Marker> markers;
 
         public MapViewRenderer()
         {
             AutoPackage = false;
+            markers = new Dictionary<Marker, GMaps.Model.Marker>();
         }
 
         public void OnMapReady(GMaps.GoogleMap googleMap)
         {
             this.googleMap = googleMap;
 
-            googleMap.MapType = Element.MapType.ToNativeMapType();
-            
+            SetMapType();            
             SetCenter();
 
             if (Element.Markers != null)
             {
+                if (Element.Markers is ObservableCollection<Marker>)
+                    (Element.Markers as ObservableCollection<Marker>).CollectionChanged += Markers_CollectionChanged;
+
                 foreach (Marker marker in Element.Markers)
-                {
-                    MarkerOptions options = new MarkerOptions();
-                    options.SetPosition(new LatLng(marker.Center.Latitude, marker.Center.Longitude));
-
-                    if (!string.IsNullOrEmpty(marker.Icon))
-                        options.SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(marker.Icon)));
-
-                    options.SetTitle(marker.Title);
-                    options.SetSnippet(marker.Content);
-
-                    googleMap.AddMarker(options);
-                }
+                    AddMarker(marker);
             }
 
             if (Element.TileOverlays != null)
@@ -73,12 +69,42 @@ namespace AppShell.NativeMaps.Mobile.Android
                 }
             }
         }
-                
+
+        private void Markers_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            if (e.Action == NotifyCollectionChangedAction.Reset)
+            {
+                foreach (var marker in markers)
+                    marker.Value.Remove();
+                markers.Clear();
+            }                
+            else if (e.Action == NotifyCollectionChangedAction.Add)
+            {
+                foreach (Marker marker in e.NewItems)
+                    AddMarker(marker);
+            }
+        }
+
+        private void AddMarker(Marker marker)
+        {
+            MarkerOptions options = new MarkerOptions();
+            options.SetPosition(new LatLng(marker.Center.Latitude, marker.Center.Longitude));
+
+            if (!string.IsNullOrEmpty(marker.Icon))
+                options.SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(marker.Icon)));
+
+            options.SetTitle(marker.Title);
+            options.SetSnippet(marker.Content);
+
+            markers.Add(marker, googleMap.AddMarker(options));
+        }
+
         protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
         {
             base.OnElementChanged(e);
 
             GMaps.MapView nativeMapView = new GMaps.MapView(Context);
+
             nativeMapView.OnCreate(null);
             nativeMapView.OnResume();
             nativeMapView.GetMapAsync(this);
@@ -92,12 +118,21 @@ namespace AppShell.NativeMaps.Mobile.Android
 
             if (e.PropertyName == MapView.CenterProperty.PropertyName)
                 SetCenter();
+            else if (e.PropertyName == MapView.ZoomLevelProperty.PropertyName)
+                SetCenter();
+            else if (e.PropertyName == MapView.MapTypeProperty.PropertyName)
+                SetMapType();
         }
 
         private void SetCenter()
         {
             if (Element.Center != null)
                 googleMap.MoveCamera(GMaps.CameraUpdateFactory.NewLatLngZoom(new LatLng(Element.Center.Latitude, Element.Center.Longitude), (float)Element.ZoomLevel));
+        }
+
+        private void SetMapType()
+        {
+            googleMap.MapType = Element.MapType.ToNativeMapType();
         }
 
         public override SizeRequest GetDesiredSize(int widthConstraint, int heightConstraint)

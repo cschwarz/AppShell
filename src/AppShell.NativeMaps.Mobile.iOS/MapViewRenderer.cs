@@ -9,6 +9,9 @@ using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using System.ComponentModel;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using System.Collections.Generic;
 
 [assembly: ExportRenderer(typeof(MapView), typeof(MapViewRenderer))]
 
@@ -68,18 +71,29 @@ namespace AppShell.NativeMaps.Mobile.iOS
 
     public class MapViewRenderer : ViewRenderer<MapView, MKMapView>
     {
+        private Dictionary<Marker, MarkerAnnotation> markers;
+
+        public MapViewRenderer()
+        {
+            markers = new Dictionary<Marker, MarkerAnnotation>();
+        }
+
         protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
         {
             base.OnElementChanged(e);
 
             MKMapView mapView = new MKMapView();
+            SetNativeControl(mapView);
 
-            mapView.MapType = Element.MapType.ToNativeMapType();
+            SetMapType();
             
             if (Element.Markers != null)
             {
+                if (Element.Markers is ObservableCollection<Marker>)
+                    (Element.Markers as ObservableCollection<Marker>).CollectionChanged += Markers_CollectionChanged;
+
                 foreach (Marker marker in Element.Markers)
-                    mapView.AddAnnotation(new MarkerAnnotation(marker));
+                    AddMarker(marker);
             }
 
             if (Element.TileOverlays != null)
@@ -97,21 +111,45 @@ namespace AppShell.NativeMaps.Mobile.iOS
             }
 
             mapView.Delegate = new MapViewDelegate();
-
-            SetNativeControl(mapView);
-
+            
             if (e.OldElement != null)
                 e.OldElement.SizeChanged -= SizeChanged;
             if (e.NewElement != null)
                 e.NewElement.SizeChanged += SizeChanged;
         }
 
+        private void Markers_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            if (e.Action == NotifyCollectionChangedAction.Reset)
+            {
+                foreach (var marker in markers)
+                    Control.RemoveAnnotation(marker.Value);
+                markers.Clear();
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Add)
+            {
+                foreach (Marker marker in e.NewItems)
+                    AddMarker(marker);
+            }
+        }
+
+        private void AddMarker(Marker marker)
+        {
+            MarkerAnnotation annotation = new MarkerAnnotation(marker);
+            Control.AddAnnotation(new MarkerAnnotation(marker));
+            markers.Add(marker, annotation);
+        }
+        
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
 
             if (e.PropertyName == MapView.CenterProperty.PropertyName)
                 SetCenter();
+            else if (e.PropertyName == MapView.ZoomLevelProperty.PropertyName)
+                SetCenter();
+            else if (e.PropertyName == MapView.MapTypeProperty.PropertyName)
+                SetMapType();
         }
 
         private void SizeChanged(object sender, EventArgs e)
@@ -121,8 +159,13 @@ namespace AppShell.NativeMaps.Mobile.iOS
 
         private void SetCenter()
         {
-            if (Control.Center != null)
+            if (Element.Center != null)
                 Control.SetRegion(new MKCoordinateRegion(new CLLocationCoordinate2D(Element.Center.Latitude, Element.Center.Longitude), new MKCoordinateSpan(0, 360.0 / Math.Pow(2, Element.ZoomLevel + 1) * Element.Width / 256.0)), false);
+        }
+
+        private void SetMapType()
+        {
+            Control.MapType = Element.MapType.ToNativeMapType();
         }
 
         public override SizeRequest GetDesiredSize(double widthConstraint, double heightConstraint)

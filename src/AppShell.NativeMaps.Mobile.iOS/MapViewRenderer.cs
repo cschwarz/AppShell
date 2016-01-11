@@ -26,11 +26,11 @@ namespace AppShell.NativeMaps.Mobile.iOS
             if (annotation is MarkerAnnotation)
             {
                 Marker marker = (annotation as MarkerAnnotation).Marker;
-
+                
                 MKAnnotationView annotationView = mapView.DequeueReusableAnnotation(annotationId);
 
                 if (annotationView == null)
-                    annotationView = new MKAnnotationView(annotation, annotationId);
+                    annotationView = string.IsNullOrEmpty(marker.Icon) ? new MKPinAnnotationView(annotation, annotationId) : new MKAnnotationView(annotation, annotationId);
 
                 if (!string.IsNullOrEmpty(marker.Icon))
                     annotationView.Image = UIImage.FromBundle(marker.Icon);

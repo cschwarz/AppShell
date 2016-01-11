@@ -57,6 +57,10 @@ namespace AppShell.NativeMaps.Mobile.Android
 
             if (e.OldElement != null)
             {
+                foreach (var marker in markers)
+                    marker.Value.Remove();
+                markers.Clear();
+
                 if (e.OldElement.Markers != null)
                 {
                     if (e.OldElement.Markers is ObservableCollection<Marker>)

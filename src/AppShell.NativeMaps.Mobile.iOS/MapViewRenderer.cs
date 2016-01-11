@@ -12,6 +12,7 @@ using System.ComponentModel;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Collections.Generic;
+using System.Linq;
 
 [assembly: ExportRenderer(typeof(MapView), typeof(MapViewRenderer))]
 
@@ -92,6 +93,9 @@ namespace AppShell.NativeMaps.Mobile.iOS
             {
                 e.OldElement.SizeChanged -= SizeChanged;
 
+                Control.RemoveAnnotations(markers.Select(m => m.Value).ToArray());
+                markers.Clear();
+
                 if (e.OldElement.Markers != null)
                 {
                     if (e.OldElement.Markers is ObservableCollection<Marker>)
@@ -145,8 +149,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
         {
             if (e.Action == NotifyCollectionChangedAction.Reset)
             {
-                foreach (var marker in markers)
-                    Control.RemoveAnnotation(marker.Value);
+                Control.RemoveAnnotations(markers.Select(m => m.Value).ToArray());
                 markers.Clear();
             }
             else if (e.Action == NotifyCollectionChangedAction.Add)

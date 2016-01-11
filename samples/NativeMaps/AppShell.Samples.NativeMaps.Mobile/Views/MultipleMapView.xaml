@@ -7,8 +7,10 @@
     <Grid.RowDefinitions>
       <RowDefinition />
       <RowDefinition />
+      <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
     <maps:MapView Grid.Row="0" Center="{Binding Center1}" ZoomLevel="{Binding ZoomLevel1}" Markers="{Binding Markers1}" />
     <maps:MapView Grid.Row="1" Center="{Binding Center2}" ZoomLevel="{Binding ZoomLevel2}" />
+    <Button Grid.Row="2" Text="Remove Markers" Command="{Binding RemoveMarkersCommand}" />
   </Grid>  
 </ContentView>

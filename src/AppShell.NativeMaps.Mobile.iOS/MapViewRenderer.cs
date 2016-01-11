@@ -166,7 +166,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
         private void AddMarker(Marker marker)
         {
             MarkerAnnotation annotation = new MarkerAnnotation(marker);
-            Control.AddAnnotation(new MarkerAnnotation(marker));
+            Control.AddAnnotation(annotation);
             markers.Add(marker, annotation);
         }
         

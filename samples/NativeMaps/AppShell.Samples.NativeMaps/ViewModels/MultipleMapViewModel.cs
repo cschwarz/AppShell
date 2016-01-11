@@ -61,6 +61,18 @@ namespace AppShell.Samples.NativeMaps
             }
         }
 
-        public ObservableCollection<Marker> Markers1 { get; set; }        
+        public ObservableCollection<Marker> Markers1 { get; set; }
+
+        public Command RemoveMarkersCommand { get; private set; }
+
+        public MultipleMapViewModel()
+        {
+            RemoveMarkersCommand = new Command(RemoveMarkers);
+        }
+
+        public void RemoveMarkers()
+        {
+            Markers1.Clear();
+        }
     }
 }

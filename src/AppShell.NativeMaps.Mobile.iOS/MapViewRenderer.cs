@@ -82,40 +82,63 @@ namespace AppShell.NativeMaps.Mobile.iOS
         {
             base.OnElementChanged(e);
 
-            MKMapView mapView = new MKMapView();
-            SetNativeControl(mapView);
-
-            SetMapType();
-            
-            if (Element.Markers != null)
+            if (Control == null)
             {
-                if (Element.Markers is ObservableCollection<Marker>)
-                    (Element.Markers as ObservableCollection<Marker>).CollectionChanged += Markers_CollectionChanged;
-
-                foreach (Marker marker in Element.Markers)
-                    AddMarker(marker);
+                MKMapView mapView = new MKMapView();
+                SetNativeControl(mapView);
             }
 
-            if (Element.TileOverlays != null)
+            if (e.OldElement != null)
             {
-                foreach (TileOverlay tileOverlay in Element.TileOverlays)
+                e.OldElement.SizeChanged -= SizeChanged;
+
+                if (e.OldElement.Markers != null)
                 {
-                    if (tileOverlay is UrlTileOverlay)
-                    {
-                        MKTileOverlay overlay = new MKTileOverlay((tileOverlay as UrlTileOverlay).Url);
-                        overlay.CanReplaceMapContent = true;
-                        overlay.TileSize = new CoreGraphics.CGSize(tileOverlay.TileWidth, tileOverlay.TileHeight);
-                        mapView.AddOverlay(overlay, MKOverlayLevel.AboveLabels);
-                    }
+                    if (e.OldElement.Markers is ObservableCollection<Marker>)
+                        (e.OldElement.Markers as ObservableCollection<Marker>).CollectionChanged -= Markers_CollectionChanged;
+                }
+
+                if (e.OldElement.TileOverlays != null)
+                {
+                    if (e.OldElement.TileOverlays is ObservableCollection<TileOverlay>)
+                        (e.OldElement.TileOverlays as ObservableCollection<TileOverlay>).CollectionChanged -= TileOverlays_CollectionChanged;
                 }
             }
 
-            mapView.Delegate = new MapViewDelegate();
-            
-            if (e.OldElement != null)
-                e.OldElement.SizeChanged -= SizeChanged;
             if (e.NewElement != null)
+            {
                 e.NewElement.SizeChanged += SizeChanged;
+
+                SetMapType();
+
+                if (e.NewElement.Markers != null)
+                {
+                    if (e.NewElement.Markers is ObservableCollection<Marker>)
+                        (e.NewElement.Markers as ObservableCollection<Marker>).CollectionChanged += Markers_CollectionChanged;
+
+                    foreach (Marker marker in e.NewElement.Markers)
+                        AddMarker(marker);
+                }
+
+                if (e.NewElement.TileOverlays != null)
+                {
+                    if (e.NewElement.TileOverlays is ObservableCollection<TileOverlay>)
+                        (e.NewElement.TileOverlays as ObservableCollection<TileOverlay>).CollectionChanged += TileOverlays_CollectionChanged;
+
+                    foreach (TileOverlay tileOverlay in e.NewElement.TileOverlays)
+                    {
+                        if (tileOverlay is UrlTileOverlay)
+                        {
+                            MKTileOverlay overlay = new MKTileOverlay((tileOverlay as UrlTileOverlay).Url);
+                            overlay.CanReplaceMapContent = true;
+                            overlay.TileSize = new CoreGraphics.CGSize(tileOverlay.TileWidth, tileOverlay.TileHeight);
+                            Control.AddOverlay(overlay, MKOverlayLevel.AboveLabels);
+                        }
+                    }
+                }
+
+                Control.Delegate = new MapViewDelegate();
+            }
         }
 
         private void Markers_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
@@ -131,6 +154,10 @@ namespace AppShell.NativeMaps.Mobile.iOS
                 foreach (Marker marker in e.NewItems)
                     AddMarker(marker);
             }
+        }
+
+        private void TileOverlays_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
         }
 
         private void AddMarker(Marker marker)

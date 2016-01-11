@@ -40,11 +40,51 @@ namespace AppShell.NativeMaps.Mobile.Android
             markers = new Dictionary<Marker, GMaps.Model.Marker>();
         }
 
+        protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
+        {
+            base.OnElementChanged(e);
+
+            if (Control == null)
+            {
+                GMaps.MapView nativeMapView = new GMaps.MapView(Context);
+
+                nativeMapView.OnCreate(null);
+                nativeMapView.OnResume();
+                nativeMapView.GetMapAsync(this);
+
+                SetNativeControl(nativeMapView);
+            }
+
+            if (e.OldElement != null)
+            {
+                if (e.OldElement.Markers != null)
+                {
+                    if (e.OldElement.Markers is ObservableCollection<Marker>)
+                        (e.OldElement.Markers as ObservableCollection<Marker>).CollectionChanged -= Markers_CollectionChanged;
+                }
+
+                if (e.OldElement.TileOverlays != null)
+                {
+                    if (e.OldElement.TileOverlays is ObservableCollection<TileOverlay>)
+                        (e.OldElement.TileOverlays as ObservableCollection<TileOverlay>).CollectionChanged -= TileOverlays_CollectionChanged;
+                }
+            }
+
+            if (e.NewElement != null && googleMap != null)
+            {
+                InitializeElement();
+            }
+        }
+        
         public void OnMapReady(GMaps.GoogleMap googleMap)
         {
             this.googleMap = googleMap;
+            InitializeElement();
+        }
 
-            SetMapType();            
+        private void InitializeElement()
+        {
+            SetMapType();
             SetCenter();
 
             if (Element.Markers != null)
@@ -58,6 +98,9 @@ namespace AppShell.NativeMaps.Mobile.Android
 
             if (Element.TileOverlays != null)
             {
+                if (Element.TileOverlays is ObservableCollection<TileOverlay>)
+                    (Element.TileOverlays as ObservableCollection<TileOverlay>).CollectionChanged += TileOverlays_CollectionChanged;
+
                 foreach (TileOverlay tileOverlay in Element.TileOverlays)
                 {
                     TileOverlayOptions options = new TileOverlayOptions();
@@ -70,6 +113,18 @@ namespace AppShell.NativeMaps.Mobile.Android
             }
         }
 
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+
+            if (e.PropertyName == MapView.CenterProperty.PropertyName)
+                SetCenter();
+            else if (e.PropertyName == MapView.ZoomLevelProperty.PropertyName)
+                SetCenter();
+            else if (e.PropertyName == MapView.MapTypeProperty.PropertyName)
+                SetMapType();
+        }
+
         private void Markers_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             if (e.Action == NotifyCollectionChangedAction.Reset)
@@ -77,12 +132,16 @@ namespace AppShell.NativeMaps.Mobile.Android
                 foreach (var marker in markers)
                     marker.Value.Remove();
                 markers.Clear();
-            }                
+            }
             else if (e.Action == NotifyCollectionChangedAction.Add)
             {
                 foreach (Marker marker in e.NewItems)
                     AddMarker(marker);
             }
+        }
+
+        private void TileOverlays_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
         }
 
         private void AddMarker(Marker marker)
@@ -97,31 +156,6 @@ namespace AppShell.NativeMaps.Mobile.Android
             options.SetSnippet(marker.Content);
 
             markers.Add(marker, googleMap.AddMarker(options));
-        }
-
-        protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
-        {
-            base.OnElementChanged(e);
-
-            GMaps.MapView nativeMapView = new GMaps.MapView(Context);
-
-            nativeMapView.OnCreate(null);
-            nativeMapView.OnResume();
-            nativeMapView.GetMapAsync(this);
-
-            SetNativeControl(nativeMapView);
-        }
-
-        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
-            base.OnElementPropertyChanged(sender, e);
-
-            if (e.PropertyName == MapView.CenterProperty.PropertyName)
-                SetCenter();
-            else if (e.PropertyName == MapView.ZoomLevelProperty.PropertyName)
-                SetCenter();
-            else if (e.PropertyName == MapView.MapTypeProperty.PropertyName)
-                SetMapType();
         }
 
         private void SetCenter()

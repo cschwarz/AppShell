@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="AppShell.Samples.NativeMaps.Mobile.Android" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="15" />
-	<application android:label="AppShell.Samples.NativeMaps.Mobile.Android" android:icon="@drawable/Icon">
+	<application android:label="AppShell.Samples.NativeMaps.Mobile.Android" android:icon="@drawable/Icon" android:theme="@style/MaterialTheme">
 		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyC-B82fcH0bJ8gvbyAd_REoAseDuCxpiE8" />
 	</application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

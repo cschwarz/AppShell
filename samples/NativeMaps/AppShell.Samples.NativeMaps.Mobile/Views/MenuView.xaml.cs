@@ -2,10 +2,10 @@
 
 namespace AppShell.Samples.NativeMaps.Mobile.Views
 {
-    [View(typeof(MultipleMapViewModel))]
-    public partial class MultipleMapView : ContentView
+    [View(typeof(MenuViewModel))]
+    public partial class MenuView : ContentPage
     {
-        public MultipleMapView()
+        public MenuView()
         {
             InitializeComponent();
         }

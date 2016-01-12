@@ -45,6 +45,7 @@
     <Compile Include="Resolutions\IViewResolution.cs" />
     <Compile Include="Resolutions\ViewModelResolution.cs" />
     <Compile Include="Resolutions\ViewResolution.cs" />
+    <Compile Include="Services\IMasterDetailNavigationService.cs" />
     <Compile Include="Services\IService.cs" />
     <Compile Include="Services\ITabNavigationService.cs" />
     <Compile Include="Services\IWebBrowserService.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Factories\ViewFactory.cs" />
     <Compile Include="ViewModels\InlineStackShellViewModel.cs" />
     <Compile Include="ViewModels\IViewModel.cs" />
+    <Compile Include="ViewModels\MasterDetailShellViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="ViewModels\SplashScreenHostViewModel.cs" />
     <Compile Include="ViewModels\SplashScreenViewModel.cs" />

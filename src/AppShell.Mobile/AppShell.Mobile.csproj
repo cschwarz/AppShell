@@ -46,6 +46,7 @@
     <Compile Include="Views\InlineStackShellPage.xaml.cs">
       <DependentUpon>InlineStackShellPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\MasterDetailShellPage.cs" />
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>

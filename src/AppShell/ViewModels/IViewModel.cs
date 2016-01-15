@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 
 namespace AppShell
@@ -12,5 +13,6 @@ namespace AppShell
         string Icon { get; set; }
         bool IsLoading { get; set; }
         string LoadingText { get; set; }
+        ObservableCollection<ToolbarItemViewModel> ToolbarItems { get; set; }
     }
 }

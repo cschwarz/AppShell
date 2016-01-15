@@ -84,6 +84,8 @@
     <Compile Include="ViewModels\SplashScreenViewModel.cs" />
     <Compile Include="ViewModels\StackShellViewModel.cs" />
     <Compile Include="ViewModels\TabShellViewModel.cs" />
+    <Compile Include="ViewModels\ToolbarItemOrder.cs" />
+    <Compile Include="ViewModels\ToolbarItemViewModel.cs" />
     <Compile Include="ViewModels\ViewModel.cs" />
     <Compile Include="ViewModels\WebBrowserViewModel.cs" />
   </ItemGroup>

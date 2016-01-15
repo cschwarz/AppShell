@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace AppShell
@@ -102,11 +103,14 @@ namespace AppShell
                 }
             }
         }
-        
+
+        public ObservableCollection<ToolbarItemViewModel> ToolbarItems { get; set; }
+
         public ViewModel()
         {
             AllowClose = true;
             HasNavigationBar = true;
+            ToolbarItems = new ObservableCollection<ToolbarItemViewModel>();
         }
 
         protected virtual void OnPropertyChanged([CallerMemberName]string propertyName = null)

@@ -13,8 +13,10 @@ namespace AppShell.Samples.Navigation
             Title = "ViewModel2";
 
             this.serviceDispatcher = serviceDispatcher;
-
+            
             OpenTabViewModelCommand = new Command(OpenTabViewModel);
+
+            ToolbarItems.Add(new ToolbarItemViewModel() { Title = "Open", Command = OpenTabViewModelCommand });
         }
 
         public void OpenTabViewModel()

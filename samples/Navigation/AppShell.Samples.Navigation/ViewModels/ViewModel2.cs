@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace AppShell.Samples.Navigation
+﻿namespace AppShell.Samples.Navigation
 {
     public class ViewModel2 : ViewModel
     {

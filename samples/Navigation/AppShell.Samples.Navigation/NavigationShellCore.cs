@@ -1,6 +1,4 @@
-﻿using AppShell;
-
-namespace AppShell.Samples.Navigation
+﻿namespace AppShell.Samples.Navigation
 {
     public class NavigationShellCore : ShellCore
     {

@@ -22,7 +22,7 @@
 
         private void OpenDetail()
         {
-            serviceDispatcher.Dispatch<INavigationService>(Shells.MasterDetail, n => n.Push<DetailViewModel>());
+            serviceDispatcher.Dispatch<INavigationService>(ShellNames.MasterDetail, n => n.Push<DetailViewModel>());
         }
     }
 }

@@ -19,7 +19,7 @@
 
         private void Close()
         {
-            serviceDispatcher.Dispatch<INavigationService>(Shells.MasterDetail, n => n.Pop());
+            serviceDispatcher.Dispatch<INavigationService>(ShellNames.MasterDetail, n => n.Pop());
         }
     }
 }

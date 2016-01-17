@@ -19,8 +19,8 @@
 
         public void OpenMasterDetailViewModel()
         {
-            serviceDispatcher.Dispatch<IShellNavigationService>(n => n.Push<MasterDetailShellViewModel>(new { Name = Shells.MasterDetail, Master = new NavigationMasterViewModel(serviceDispatcher) }));            
-            serviceDispatcher.Dispatch<INavigationService>(Shells.MasterDetail, n => n.Push<ViewModel3>());            
+            serviceDispatcher.Dispatch<IShellNavigationService>(n => n.Push<MasterDetailShellViewModel>(new { Name = ShellNames.MasterDetail, Master = new NavigationMasterViewModel(serviceDispatcher) }));            
+            serviceDispatcher.Dispatch<INavigationService>(ShellNames.MasterDetail, n => n.Push<ViewModel3>());            
         }        
     }
 }

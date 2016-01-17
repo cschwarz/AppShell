@@ -13,7 +13,7 @@
 
         private void Back()
         {
-            serviceDispatcher.Dispatch<IShellNavigationService>(n => n.Push(Shells.Stack));
+            serviceDispatcher.Dispatch<IShellNavigationService>(n => n.Pop());
         }
     }
 }

@@ -10,14 +10,14 @@ namespace AppShell.Samples.NativeMaps
         public NativeMapsMasterViewModel(IServiceDispatcher serviceDispatcher)
             : base(serviceDispatcher)
         {
-            Items.Add(new MenuItem("Single Map", new TypeConfiguration(typeof(MapViewModel), ObjectExtensions.ToDictionary(new
+            Items.Add(new ViewModelMenuItem("Single Map", new TypeConfiguration(typeof(MapViewModel), ObjectExtensions.ToDictionary(new
             {
                 Title = "Single Map",
                 ZoomLevel = 15.0,
                 Center = new Location(48.21, 16.37)
             }))));
 
-            Items.Add(new MenuItem("Multiple Maps", new TypeConfiguration(typeof(MultipleMapViewModel), ObjectExtensions.ToDictionary(new
+            Items.Add(new ViewModelMenuItem("Multiple Maps", new TypeConfiguration(typeof(MultipleMapViewModel), ObjectExtensions.ToDictionary(new
             {
                 Title = "Multiple Maps",
                 ZoomLevel1 = 12.0,
@@ -34,7 +34,7 @@ namespace AppShell.Samples.NativeMaps
                 Center2 = new Location(40.7536868, -73.9982661)
             }))));
             
-            Items.Add(new MenuItem("Tile Overlay Map", new TypeConfiguration(typeof(MapViewModel), ObjectExtensions.ToDictionary(new
+            Items.Add(new ViewModelMenuItem("Tile Overlay Map", new TypeConfiguration(typeof(MapViewModel), ObjectExtensions.ToDictionary(new
             {
                 Title = "Tile Overlay Map",
                 ZoomLevel = 12.0,
@@ -43,7 +43,7 @@ namespace AppShell.Samples.NativeMaps
                 TileOverlays = new ObservableCollection<TileOverlay>(new List<TileOverlay>() { new UrlTileOverlay("http://maps.wien.gv.at/basemap/bmaphidpi/normal/google3857/{z}/{y}/{x}.jpeg", 512, 512) })
             }))));
 
-            Items.Add(new MenuItem("Satellite Map", new TypeConfiguration(typeof(MapViewModel), ObjectExtensions.ToDictionary(new
+            Items.Add(new ViewModelMenuItem("Satellite Map", new TypeConfiguration(typeof(MapViewModel), ObjectExtensions.ToDictionary(new
             {
                 Title = "Satellite Map",
                 ZoomLevel = 15.0,

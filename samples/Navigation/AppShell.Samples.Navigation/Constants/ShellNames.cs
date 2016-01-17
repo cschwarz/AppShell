@@ -1,6 +1,6 @@
 ﻿namespace AppShell.Samples.Navigation
 {
-    public static class Shells
+    public static class ShellNames
     {
         public const string Stack = "StackShell";
         public const string MasterDetail = "MasterDetail";

@@ -1,21 +1,42 @@
 ﻿using SimpleInjector;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
 
 namespace AppShell
 {
-    public abstract class ShellCore : IShellNavigationService
+    public abstract class ShellCore : IShellNavigationService,INotifyPropertyChanged
     {
         public static Container Container { get; private set; }
         public static Platform CurrentPlatform { get; private set; }
 
-        public string Name { get { return "ShellCore"; } }        
-        public event EventHandler<IViewModel> ShellViewModelPushed;
+        public string Name { get { return "ShellCore"; } }
 
-        protected IDictionary<string, IViewModel> shells;
+        private IViewModel activeShell;
+        public IViewModel ActiveShell
+        {
+            get { return activeShell; }
+            private set
+            {
+                if (activeShell != value)
+                {
+                    activeShell = value;
+
+                    if (PropertyChanged != null)
+                        PropertyChanged(this, new PropertyChangedEventArgs("ActiveShell"));
+                }
+            }
+        }
+
+        public ObservableCollection<IViewModel> Shells { get; private set; }
+        
         protected IPluginProvider pluginProvider;
         protected IServiceDispatcher serviceDispatcher;
-        
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public static void InitializeContainer()
         {
             Container = new Container();
@@ -32,7 +53,7 @@ namespace AppShell
 
         public ShellCore()
         {
-            shells = new Dictionary<string, IViewModel>();
+            Shells = new ObservableCollection<IViewModel>();
         }
 
         public virtual void Configure()
@@ -54,11 +75,7 @@ namespace AppShell
             Container.GetInstance<IServiceDispatcher>().Initialize();
             
             pluginProvider = Container.GetInstance<IPluginProvider>();
-
-            /*
-            foreach (TypeConfiguration pluginConfiguration in Container.GetInstance<IShellConfigurationProvider>().GetPlugins())
-                pluginProvider.StartPlugin(pluginConfiguration.Type, pluginConfiguration.Data);*/
-
+            
             serviceDispatcher = Container.GetInstance<IServiceDispatcher>();
             serviceDispatcher.Subscribe<IShellNavigationService>(this);
 
@@ -73,16 +90,7 @@ namespace AppShell
 
             pluginProvider.ShutdownPlugins();
         }
-
-        public void Push(string name)
-        {
-            if (!shells.ContainsKey(name))
-                throw new Exception();
-
-            if (ShellViewModelPushed != null)
-                ShellViewModelPushed(this, shells[name]);
-        }
-
+        
         public void Push<TViewModel>(Dictionary<string, object> data = null) where TViewModel : ShellViewModel
         {
             Push(typeof(TViewModel), data);
@@ -101,15 +109,14 @@ namespace AppShell
         public void Push(Type viewModelType, Dictionary<string, object> data = null)
         {
             IViewModel viewModel = Container.GetInstance<IViewModelFactory>().GetViewModel(viewModelType, data);
-            shells.Add(viewModel.Name, viewModel);
-
-            if (ShellViewModelPushed != null)
-                ShellViewModelPushed(this, viewModel);
+            Shells.Add(viewModel);
+            ActiveShell = viewModel;
         }
 
         public void Pop()
         {
-            throw new NotImplementedException();
+            Shells.Remove(Shells.Last());
+            ActiveShell = Shells.Last();
         }
     }
 }

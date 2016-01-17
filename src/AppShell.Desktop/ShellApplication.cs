@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows;
 
 namespace AppShell.Desktop
@@ -10,7 +11,7 @@ namespace AppShell.Desktop
         public ShellApplication()
         {
             shellCore = Activator.CreateInstance<T>();
-            shellCore.ShellViewModelPushed += ShellCore_ShellViewModelPushed;
+            shellCore.PropertyChanged += ShellCore_PropertyChanged;
         }
 
         protected virtual void ConfigurePlatform()
@@ -44,10 +45,13 @@ namespace AppShell.Desktop
             ShellCore.ShutdownContainer();
         }
 
-        private void ShellCore_ShellViewModelPushed(object sender, IViewModel e)
+        private void ShellCore_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            MainWindow.DataContext = e as ShellViewModel;
-            MainWindow.Content = ShellCore.Container.GetInstance<IViewFactory>().GetView(e);
-        }
+            if (e.PropertyName == "ActiveShell")
+            {
+                MainWindow.DataContext = shellCore.ActiveShell;
+                MainWindow.Content = ShellCore.Container.GetInstance<IViewFactory>().GetView(shellCore.ActiveShell);
+            }
+        }        
     }
 }

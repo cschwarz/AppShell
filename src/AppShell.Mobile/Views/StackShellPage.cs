@@ -1,52 +1,89 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using Xamarin.Forms;
 
 namespace AppShell.Mobile
 {
     [View(typeof(StackShellViewModel))]
     public class StackShellPage : NavigationPage
     {
-        private StackShellViewModel shellViewModel;
+        public static readonly BindableProperty ViewModelsProperty = BindableProperty.Create<StackShellPage, IEnumerable<IViewModel>>(d => d.ViewModels, null, propertyChanged: ViewModelsPropertyChanged);
+                
+        public IEnumerable<IViewModel> ViewModels { get { return (IEnumerable<IViewModel>)GetValue(ViewModelsProperty); } set { SetValue(ViewModelsProperty, value); } }
+        
+        public static void ViewModelsPropertyChanged(BindableObject d, IEnumerable<IViewModel> oldValue, IEnumerable<IViewModel> newValue)
+        {
+            StackShellPage stackShellPage = d as StackShellPage;
+            
+            if (oldValue != null)
+            {
+                if (oldValue is ObservableCollection<IViewModel>)
+                    (oldValue as ObservableCollection<IViewModel>).CollectionChanged -= stackShellPage.StackShellPage_CollectionChanged;
+            }
+
+            if (newValue != null)
+            {
+                stackShellPage.IsReady = false;
+
+                if (newValue is ObservableCollection<IViewModel>)
+                    (newValue as ObservableCollection<IViewModel>).CollectionChanged += stackShellPage.StackShellPage_CollectionChanged;
+
+                foreach (IViewModel viewModel in newValue)
+                    stackShellPage.AddView(viewModel);
+            }
+        }
+
+        private void StackShellPage_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            if (e.Action == NotifyCollectionChangedAction.Reset)
+            {
+                IsReady = false;
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Add)
+            {
+                foreach (IViewModel viewModel in e.NewItems)
+                    AddView(viewModel);
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Remove)
+            {
+                foreach (IViewModel viewModel in e.OldItems)
+                    PopAsync();
+            }
+        }
+
+        public event EventHandler<Page> Ready;
+
+        private bool isReady;
+        public bool IsReady
+        {
+            get { return isReady; }
+            private set
+            {
+                if (isReady != value)
+                {
+                    if (value && !isReady && Ready != null)
+                        Ready(this, this);
+
+                    isReady = value;
+                }
+            }
+        }
+
+        private async void AddView(IViewModel viewModel)
+        {
+            await PushAsync(ShellViewPage.Create(viewFactory.GetView(viewModel)));            
+            IsReady = true;
+        }
+        
         private IViewFactory viewFactory;
 
         public StackShellPage()
         {
             viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
             
-            Popped += StackShellPage_Popped;          
-        }
-        
-        private void StackShellPage_Popped(object sender, NavigationEventArgs e)
-        {
-            if (shellViewModel != null)
-            {
-                shellViewModel.ViewModelPopped -= ShellViewModel_ViewModelPopped;
-                shellViewModel.Pop();
-                shellViewModel.ViewModelPopped += ShellViewModel_ViewModelPopped;
-            }
-        }
-        
-        protected override void OnBindingContextChanged()
-        {            
-            base.OnBindingContextChanged();
-
-            shellViewModel = BindingContext as StackShellViewModel;
-
-            shellViewModel.ViewModelPushed += ShellViewModel_ViewModelPushed;
-            shellViewModel.ViewModelPopped += ShellViewModel_ViewModelPopped;
-
-            if (shellViewModel.ActiveItem != null)
-                PushAsync(ShellViewPage.Create(viewFactory.GetView(shellViewModel.ActiveItem)));
-        }
-        
-        private void ShellViewModel_ViewModelPushed(object sender, IViewModel e)
-        {
-            PushAsync(ShellViewPage.Create(viewFactory.GetView(e)));
-        }
-
-        private void ShellViewModel_ViewModelPopped(object sender, IViewModel e)
-        {
-            Popped -= StackShellPage_Popped;
-            PopAsync().ContinueWith(t => Popped += StackShellPage_Popped);
-        }
+            SetBinding(ViewModelsProperty, new Binding("Items"));
+        }        
     }
 }

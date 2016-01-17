@@ -41,6 +41,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\DetailViewModel.cs" />
     <Compile Include="ViewModels\NavigationMasterViewModel.cs" />
+    <Compile Include="ViewModels\SplashViewModel1.cs" />
+    <Compile Include="ViewModels\SplashViewModel2.cs" />
     <Compile Include="ViewModels\ViewModel2.cs" />
     <Compile Include="ViewModels\ViewModel1.cs" />
     <Compile Include="ViewModels\ViewModel3.cs" />

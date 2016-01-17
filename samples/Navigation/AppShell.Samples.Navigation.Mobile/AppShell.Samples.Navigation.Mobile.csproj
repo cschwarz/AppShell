@@ -43,6 +43,12 @@
     <Compile Include="Views\DetailView.xaml.cs">
       <DependentUpon>DetailView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SplashView1.xaml.cs">
+      <DependentUpon>SplashView1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SplashView2.xaml.cs">
+      <DependentUpon>SplashView2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\View1.xaml.cs">
       <DependentUpon>View1.xaml</DependentUpon>
     </Compile>
@@ -131,6 +137,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\DetailView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SplashView1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SplashView2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -8,6 +8,7 @@ using Xamarin.Forms;
 
 namespace AppShell.Mobile.Views
 {
+    /*
     [View(typeof(SplashScreenHostViewModel))]
     public partial class SplashScreenPage : ContentPage
     {
@@ -54,5 +55,5 @@ namespace AppShell.Mobile.Views
 
             Application.Current.MainPage = ShellCore.Container.GetInstance<IViewFactory>().GetView(shellViewModel) as Page;
         }
-    }
+    }*/
 }

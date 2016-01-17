@@ -3,6 +3,7 @@ using System.Windows;
 
 namespace AppShell.Desktop
 {
+    /*
     /// <summary>
     /// Interaction logic for SplashScreenWindow.xaml
     /// </summary>
@@ -78,5 +79,5 @@ namespace AppShell.Desktop
 
             Close();
         }
-    }
+    }*/
 }

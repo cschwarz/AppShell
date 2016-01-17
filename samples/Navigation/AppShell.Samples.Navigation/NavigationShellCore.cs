@@ -2,11 +2,10 @@
 {
     public class NavigationShellCore : ShellCore
     {
-        public override void Configure()
+        public override void Run()
         {
-            base.Configure();
-
-            Container.RegisterSingleton<IShellConfigurationProvider, NavigationShellConfigurationProvider>();
+            Push<StackShellViewModel>(new { Name = Shells.Stack });
+            Container.GetInstance<IServiceDispatcher>().Dispatch<INavigationService>(n => n.Push<ViewModel1>());
         }
     }
 }

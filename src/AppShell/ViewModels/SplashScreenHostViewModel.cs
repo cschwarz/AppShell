@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppShell
 {
+    /*
     public class SplashScreenHostViewModel : ViewModel
     {
         public event EventHandler ExitRequested;
@@ -111,5 +112,5 @@ namespace AppShell
             if (e.Result)
                 ShowNextSplashScreen();
         }
-    }
+    }*/
 }

@@ -3,12 +3,5 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:views="clr-namespace:AppShell.Mobile.Views;assembly=AppShell.Mobile"
              x:Class="AppShell.Samples.Navigation.Mobile.Views.View4">
-  <Grid>
-    <Grid.RowDefinitions>
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-    </Grid.RowDefinitions>
-    <Label Text="{Binding Title, StringFormat='Mobile View 4: {0}'}" Grid.Row="0" />
-    <Button Command="{Binding OpenViewModel5Command}" Text="Open" Grid.Row="1" />
-  </Grid>
+  <Label Text="{Binding Title, StringFormat='Mobile View 4: {0}'}" Grid.Row="0" />  
 </views:ShellView>

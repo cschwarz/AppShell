@@ -5,66 +5,11 @@ using System.Collections.ObjectModel;
 
 namespace AppShell.Samples.NativeMaps
 {
-    public class MenuItem
+    public class NativeMapsMasterViewModel : MasterViewModel
     {
-        public string Title { get; private set; }
-        public TypeConfiguration TypeConfiguration { get; private set; }
-                
-        public MenuItem(string title, TypeConfiguration typeConfiguration)
+        public NativeMapsMasterViewModel(IServiceDispatcher serviceDispatcher)
+            : base(serviceDispatcher)
         {
-            Title = title;
-            TypeConfiguration = typeConfiguration;
-        }
-    }
-
-    public class MenuViewModel : ViewModel
-    {
-        public ObservableCollection<MenuItem> Items { get; private set; }
-
-        private MenuItem selectedItem;
-        public MenuItem SelectedItem
-        {
-            get { return selectedItem; }
-            set
-            {
-                if (selectedItem != value)
-                {
-                    selectedItem = value;
-
-                    if (selectedItem != null)
-                    {
-                        serviceDispatcher.Dispatch<IMasterDetailNavigationService>(n => n.PushRoot(selectedItem.TypeConfiguration.Type, selectedItem.TypeConfiguration.Data));
-                        IsPresented = false;
-                    }
-
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        private bool isPresented;
-        public bool IsPresented
-        {
-            get { return isPresented; }
-            set
-            {
-                if (isPresented != value)
-                {
-                    isPresented = value;                    
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        private IServiceDispatcher serviceDispatcher;
-
-        public MenuViewModel(IServiceDispatcher serviceDispatcher)
-        {
-            this.serviceDispatcher = serviceDispatcher;
-
-            Title = "Menu";
-            Items = new ObservableCollection<MenuItem>();
-
             Items.Add(new MenuItem("Single Map", new TypeConfiguration(typeof(MapViewModel), ObjectExtensions.ToDictionary(new
             {
                 Title = "Single Map",

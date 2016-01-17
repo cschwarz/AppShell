@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AppShell.Samples.ServiceDispatcher
+﻿namespace AppShell.Samples.ServiceDispatcher
 {
     public class ServiceDispatcherShellCore : ShellCore
     {
-        public override void Configure()
+        public override void Run()
         {
-            base.Configure();
+            Push<StackShellViewModel>(new { Name = "Main" });
 
-            Container.RegisterSingleton<IShellConfigurationProvider, ServiceDispatcherShellConfigurationProvider>();
+            pluginProvider.StartPlugin<SamplePlugin>();
+
+            serviceDispatcher.Dispatch<INavigationService>(n => n.Push<WebBrowserViewModel>(new { EmbeddedHtml = "AppShell.Samples.ServiceDispatcher.ServiceDispatcher.html;AppShell.Samples.ServiceDispatcher" }));
         }
     }
 }

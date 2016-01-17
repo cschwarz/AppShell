@@ -36,10 +36,9 @@ namespace AppShell.NativeMaps.Mobile.Android
 
         public MapViewRenderer()
         {
-            AutoPackage = false;
             markers = new Dictionary<Marker, GMaps.Model.Marker>();
         }
-
+        
         protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
         {
             base.OnElementChanged(e);

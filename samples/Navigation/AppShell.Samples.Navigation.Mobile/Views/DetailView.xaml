@@ -2,6 +2,6 @@
 <views:ShellView xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:views="clr-namespace:AppShell.Mobile.Views;assembly=AppShell.Mobile"
-             x:Class="AppShell.Samples.Navigation.Mobile.Views.View3">
-  <Label Text="{Binding Title, StringFormat='Mobile View 3: {0}'}" Grid.Row="0" />  
+             x:Class="AppShell.Samples.Navigation.Mobile.Views.DetailView">
+  <Label Text="{Binding Title}" VerticalOptions="Center" HorizontalOptions="Center" />
 </views:ShellView>

@@ -36,12 +36,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Providers\NavigationShellConfigurationProvider.cs" />
+    <Compile Include="Constants\Shells.cs" />
     <Compile Include="NavigationShellCore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\SplashScreenLargeViewModel.cs" />
-    <Compile Include="ViewModels\SplashScreenNormalViewModel.cs" />
-    <Compile Include="ViewModels\SplashScreenSmallViewModel.cs" />
+    <Compile Include="ViewModels\DetailViewModel.cs" />
+    <Compile Include="ViewModels\NavigationMasterViewModel.cs" />
     <Compile Include="ViewModels\ViewModel2.cs" />
     <Compile Include="ViewModels\ViewModel1.cs" />
     <Compile Include="ViewModels\ViewModel3.cs" />

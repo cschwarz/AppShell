@@ -9,6 +9,6 @@
       <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
     <Label Text="{Binding Title, StringFormat='Mobile View 2: {0}'}" Grid.Row="0" />
-    <Button Command="{Binding OpenTabViewModelCommand}" Text="Open" Grid.Row="1" />
+    <Button Command="{Binding OpenMasterDetailViewModelCommand}" Text="Open" Grid.Row="1" />
   </Grid>
 </views:ShellView>

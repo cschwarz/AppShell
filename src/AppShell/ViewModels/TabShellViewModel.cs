@@ -4,8 +4,8 @@ namespace AppShell
 {
     public class TabShellViewModel : ShellViewModel, ITabNavigationService
     {
-        public TabShellViewModel(IShellConfigurationProvider configurationProvider, IServiceDispatcher serviceDispatcher, IViewModelFactory viewModelFactory)
-            : base(configurationProvider, serviceDispatcher, viewModelFactory)
+        public TabShellViewModel(IServiceDispatcher serviceDispatcher, IViewModelFactory viewModelFactory)
+            : base(serviceDispatcher, viewModelFactory)
         {
             serviceDispatcher.Subscribe<ITabNavigationService>(this);
         }

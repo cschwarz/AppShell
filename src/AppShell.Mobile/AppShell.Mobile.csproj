@@ -46,7 +46,11 @@
     <Compile Include="Views\InlineStackShellPage.xaml.cs">
       <DependentUpon>InlineStackShellPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\IPageReady.cs" />
     <Compile Include="Views\MasterDetailShellPage.cs" />
+    <Compile Include="Views\MasterView.xaml.cs">
+      <DependentUpon>MasterView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
@@ -116,6 +120,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\ShellView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MasterView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

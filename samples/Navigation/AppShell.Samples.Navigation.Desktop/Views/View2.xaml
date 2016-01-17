@@ -11,6 +11,6 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <TextBlock Text="{Binding Title, StringFormat='Desktop View 2: {0}'}" Grid.Row="0" />
-        <Button Command="{Binding OpenTabViewModelCommand}" Grid.Row="1">Open</Button>
+        <Button Command="{Binding OpenMasterDetailViewModelCommand}" Grid.Row="1">Open</Button>
     </Grid>
 </UserControl>

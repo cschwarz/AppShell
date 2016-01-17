@@ -2,7 +2,7 @@
 {
     public class ViewModel2 : ViewModel
     {
-        public Command OpenTabViewModelCommand { get; private set; }
+        public Command OpenMasterDetailViewModelCommand { get; private set; }
 
         private IServiceDispatcher serviceDispatcher;
 
@@ -12,17 +12,15 @@
 
             this.serviceDispatcher = serviceDispatcher;
             
-            OpenTabViewModelCommand = new Command(OpenTabViewModel);
+            OpenMasterDetailViewModelCommand = new Command(OpenMasterDetailViewModel);
 
-            ToolbarItems.Add(new ToolbarItemViewModel() { Title = "Open", Command = OpenTabViewModelCommand });
+            ToolbarItems.Add(new ToolbarItemViewModel() { Title = "Open", Command = OpenMasterDetailViewModelCommand });
         }
 
-        public void OpenTabViewModel()
+        public void OpenMasterDetailViewModel()
         {
-            serviceDispatcher.Dispatch<INavigationService>(n => n.Push<TabShellViewModel>(new { Name = "TabShell", HasNavigationBar = false }));
-            serviceDispatcher.Dispatch<INavigationService>("TabShell", n => n.Push<ViewModel3>());
-            serviceDispatcher.Dispatch<INavigationService>("TabShell", n => n.Push<InlineStackShellViewModel>(new { Name = "InlineStackShell", Title = "InlineStackShell" }));
-            serviceDispatcher.Dispatch<INavigationService>("InlineStackShell", n => n.Push<ViewModel4>());
+            serviceDispatcher.Dispatch<IShellNavigationService>(n => n.Push<MasterDetailShellViewModel>(new { Name = Shells.MasterDetail, Master = new NavigationMasterViewModel(serviceDispatcher) }));            
+            serviceDispatcher.Dispatch<INavigationService>(Shells.MasterDetail, n => n.Push<ViewModel3>());            
         }        
     }
 }

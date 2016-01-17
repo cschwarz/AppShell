@@ -5,8 +5,8 @@ namespace AppShell
     {
         public Command BackCommand { get; private set; }
 
-        public StackShellViewModel(IShellConfigurationProvider configurationProvider, IServiceDispatcher serviceDispatcher, IViewModelFactory viewModelFactory)
-            : base(configurationProvider, serviceDispatcher, viewModelFactory)
+        public StackShellViewModel(IServiceDispatcher serviceDispatcher, IViewModelFactory viewModelFactory)
+            : base(serviceDispatcher, viewModelFactory)
         {
             BackCommand = new Command(Back, CanBack);
         }

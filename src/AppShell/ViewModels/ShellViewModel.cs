@@ -29,7 +29,7 @@ namespace AppShell
         protected IServiceDispatcher serviceDispatcher;
         protected IViewModelFactory viewModelFactory;
 
-        public ShellViewModel(IShellConfigurationProvider configurationProvider, IServiceDispatcher serviceDispatcher, IViewModelFactory viewModelFactory)
+        public ShellViewModel(IServiceDispatcher serviceDispatcher, IViewModelFactory viewModelFactory)
         {
             this.serviceDispatcher = serviceDispatcher;
             this.viewModelFactory = viewModelFactory;

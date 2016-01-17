@@ -21,8 +21,8 @@ namespace AppShell
             }
         }
 
-        public MasterDetailShellViewModel(IShellConfigurationProvider configurationProvider, IServiceDispatcher serviceDispatcher, IViewModelFactory viewModelFactory)
-            : base(configurationProvider, serviceDispatcher, viewModelFactory)
+        public MasterDetailShellViewModel(IServiceDispatcher serviceDispatcher, IViewModelFactory viewModelFactory)
+            : base(serviceDispatcher, viewModelFactory)
         {
             serviceDispatcher.Subscribe<IMasterDetailNavigationService>(this);
         }

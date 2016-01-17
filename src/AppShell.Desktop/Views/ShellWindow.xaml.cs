@@ -21,16 +21,34 @@ namespace AppShell.Desktop
     {
         private ShellViewModel shellViewModel;
 
-        public ShellWindow(ShellViewModel shellViewModel)
+        public ShellWindow()
         {
             InitializeComponent();
 
-            this.shellViewModel = shellViewModel;
-
-            shellViewModel.CloseRequested += ShellViewModel_CloseRequested;
-            shellViewModel.DetachViewModelRequested += ShellViewModel_DetachViewModelRequested;
+            DataContextChanged += ShellWindow_DataContextChanged;
         }
 
+        private void ShellWindow_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (e.OldValue != null)
+            {
+                ShellViewModel oldShellViewModel = e.OldValue as ShellViewModel;
+
+                oldShellViewModel.CloseRequested += ShellViewModel_CloseRequested;
+                oldShellViewModel.DetachViewModelRequested += ShellViewModel_DetachViewModelRequested;
+
+            }
+            if (e.NewValue != null)
+            {
+                ShellViewModel newShellViewModel = e.NewValue as ShellViewModel;
+
+                shellViewModel = newShellViewModel;
+
+                newShellViewModel.CloseRequested += ShellViewModel_CloseRequested;
+                newShellViewModel.DetachViewModelRequested += ShellViewModel_DetachViewModelRequested;
+            }
+        }
+                
         private void ShellViewModel_CloseRequested(object sender, EventArgs e)
         {
             Close();

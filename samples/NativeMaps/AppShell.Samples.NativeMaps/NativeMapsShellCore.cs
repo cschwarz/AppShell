@@ -1,13 +1,14 @@
-﻿
+﻿using AppShell.NativeMaps;
+
 namespace AppShell.Samples.NativeMaps
 {
     public class NativeMapsShellCore : ShellCore
     {
-        public override void Configure()
+        public override void Run()
         {
-            base.Configure();
+            Push<MasterDetailShellViewModel>(new { Name = "Main", Master = new NativeMapsMasterViewModel(serviceDispatcher) });
 
-            Container.RegisterSingleton<IShellConfigurationProvider, NativeMapsShellConfigurationProvider>();
+            serviceDispatcher.Dispatch<INavigationService>(n => n.Push<MapViewModel>(new { Title = "Single Map", ZoomLevel = 15.0, Center = new Location(48.21, 16.37) }));
         }
     }
 }

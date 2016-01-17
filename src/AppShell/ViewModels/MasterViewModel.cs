@@ -1,16 +1,50 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
+using System.Windows.Input;
 
 namespace AppShell
 {
-    public class MenuItem
+    public abstract class MenuItem
     {
         public string Title { get; private set; }
-        public TypeConfiguration TypeConfiguration { get; private set; }
-
-        public MenuItem(string title, TypeConfiguration typeConfiguration)
+                
+        public MenuItem(string title)
         {
             Title = title;
+        }
+
+        public abstract void Execute(IServiceDispatcher serviceDispatcher);
+    }
+
+    public class CommandMenuItem : MenuItem
+    {
+        public ICommand Command { get; private set; }
+
+        public CommandMenuItem(string title, ICommand command)
+            : base(title)
+        {
+            Command = command;
+        }
+
+        public override void Execute(IServiceDispatcher serviceDispatcher)
+        {
+            Command.Execute(null);
+        }
+    }
+
+    public class ViewModelMenuItem : MenuItem
+    {
+        public TypeConfiguration TypeConfiguration { get; private set; }
+
+        public ViewModelMenuItem(string title, TypeConfiguration typeConfiguration)
+            : base(title)
+        {
             TypeConfiguration = typeConfiguration;
+        }
+
+        public override void Execute(IServiceDispatcher serviceDispatcher)
+        {
+            serviceDispatcher.Dispatch<IMasterDetailNavigationService>(n => n.PushRoot(TypeConfiguration.Type, TypeConfiguration.Data));
         }
     }
 
@@ -30,7 +64,7 @@ namespace AppShell
 
                     if (selectedItem != null)
                     {
-                        serviceDispatcher.Dispatch<IMasterDetailNavigationService>(n => n.PushRoot(selectedItem.TypeConfiguration.Type, selectedItem.TypeConfiguration.Data));
+                        selectedItem.Execute(serviceDispatcher);
                         IsPresented = false;
                     }
 
@@ -53,7 +87,7 @@ namespace AppShell
             }
         }
 
-        private IServiceDispatcher serviceDispatcher;
+        protected IServiceDispatcher serviceDispatcher;
 
         public MasterViewModel(IServiceDispatcher serviceDispatcher)
         {

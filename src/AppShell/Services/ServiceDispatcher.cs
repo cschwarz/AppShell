@@ -74,6 +74,7 @@ namespace AppShell
         public void Subscribe<T>(T service) where T : IService
         {
             Type serviceType = typeof(T);
+            TypeInfo serviceTypeInfo = serviceType.GetTypeInfo();
 
             if (!subscribedServices.ContainsKey(serviceType))
                 subscribedServices.Add(serviceType, new List<IService>());
@@ -82,7 +83,7 @@ namespace AppShell
 
             foreach (var eventRegistration in eventRegistrations)
             {
-                if (subscribedServices.ContainsKey(eventRegistration.Key))
+                if (eventRegistration.Key.GetTypeInfo().IsAssignableFrom(serviceTypeInfo))
                 {
                     foreach (var subscribeAction in eventRegistration.Value.Select(a => a.SubscribeAction).Cast<Action<T>>())
                         subscribeAction(service);
@@ -93,6 +94,7 @@ namespace AppShell
         public void Unsubscribe<T>(T service) where T : IService
         {
             Type serviceType = typeof(T);
+            TypeInfo serviceTypeInfo = serviceType.GetTypeInfo();
 
             if (!subscribedServices.ContainsKey(serviceType))
                 return;
@@ -101,7 +103,7 @@ namespace AppShell
 
             foreach (var eventRegistration in eventRegistrations)
             {
-                if (subscribedServices.ContainsKey(eventRegistration.Key))
+                if (eventRegistration.Key.GetTypeInfo().IsAssignableFrom(serviceTypeInfo))
                 {
                     foreach (var unsubscribeAction in eventRegistration.Value.Select(a => a.UnsubscribeAction).Cast<Action<T>>())
                         unsubscribeAction(service);

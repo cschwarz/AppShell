@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 using Xunit;
 
 namespace AppShell.Tests
@@ -73,6 +72,16 @@ namespace AppShell.Tests
             if (Event2 != null)
                 Event2(this, value);
         }
+    }
+
+    [Service("service2")]
+    public interface IService2 : IService
+    {
+    }
+    
+    public class Service2 : IService2
+    {
+        public string Name { get { return "Service2"; } }
     }
 
     public class DataTypeTest : IEquatable<DataTypeTest>
@@ -168,8 +177,9 @@ namespace AppShell.Tests
             ServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
             serviceDispatcher.Initialize();
 
-            Assert.Equal(1, serviceDispatcher.Services.Count);
+            Assert.Equal(2, serviceDispatcher.Services.Count);
             Assert.True(serviceDispatcher.Services.ContainsKey("service1"));
+            Assert.True(serviceDispatcher.Services.ContainsKey("service2"));
             Assert.Equal(4, serviceDispatcher.Services["service1"].Count());
             Assert.True(serviceDispatcher.Services["service1"].Contains("serviceMethod1"));
             Assert.True(serviceDispatcher.Services["service1"].Contains("serviceMethod2"));
@@ -429,6 +439,79 @@ namespace AppShell.Tests
             service1.RaiseEvent2("Event2");
 
             Assert.Equal("Event2", event2Raised);
+        }
+
+        [Fact]
+        public void EventShouldNotBeRaisedAfterEventUnsubscribe()
+        {
+            bool event1Raised = false;
+            EventHandler event1Handler = (o, e) => { event1Raised = true; };
+
+            IServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 service1 = new Service1();
+
+            serviceDispatcher.Subscribe<IService1>(service1);
+            EventRegistration eventRegistration = serviceDispatcher.SubscribeEvent<IService1>(s => s.Event1 += event1Handler, s => s.Event1 -= event1Handler);
+            serviceDispatcher.UnsubscribeEvent<IService1>(eventRegistration);
+
+            service1.RaiseEvent1();
+
+            Assert.False(event1Raised);
+        }
+
+        [Fact]
+        public void EventShouldNotBeRaisedAfterServiceUnsubscribe()
+        {
+            bool event1Raised = false;
+            EventHandler event1Handler = (o, e) => { event1Raised = true; };
+
+            IServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 service1 = new Service1();
+
+            serviceDispatcher.Subscribe<IService1>(service1);
+            EventRegistration eventRegistration = serviceDispatcher.SubscribeEvent<IService1>(s => s.Event1 += event1Handler, s => s.Event1 -= event1Handler);
+            serviceDispatcher.Unsubscribe<IService1>(service1);
+
+            service1.RaiseEvent1();
+
+            Assert.False(event1Raised);
+        }
+
+        [Fact]
+        public void ShouldSuccessfullySubscribeWithMultipleSubscribedServices()
+        {
+            EventHandler event1Handler = (o, e) => { };
+
+            IServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 service1 = new Service1();
+            Service2 service2 = new Service2();
+
+            serviceDispatcher.Subscribe<IService1>(service1);
+            serviceDispatcher.SubscribeEvent<IService1>(s => s.Event1 += event1Handler, s => s.Event1 -= event1Handler);
+            serviceDispatcher.Subscribe<IService2>(service2);
+        }
+
+        [Fact]
+        public void ShouldSuccessfullyUnsubscribeWithMultipleSubscribedServices()
+        {
+            EventHandler event1Handler = (o, e) => { };
+
+            IServiceDispatcher serviceDispatcher = new ServiceDispatcher(new TestPlatformProvider());
+            serviceDispatcher.Initialize();
+
+            Service1 service1 = new Service1();
+            Service2 service2 = new Service2();
+
+            serviceDispatcher.Subscribe<IService1>(service1);
+            serviceDispatcher.Subscribe<IService2>(service2);
+            serviceDispatcher.SubscribeEvent<IService1>(s => s.Event1 += event1Handler, s => s.Event1 -= event1Handler);
+            serviceDispatcher.Unsubscribe<IService2>(service2);
         }
     }
 }

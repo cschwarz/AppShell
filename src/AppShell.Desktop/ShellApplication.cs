@@ -24,17 +24,13 @@ namespace AppShell.Desktop
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-
-            MainWindow = new ShellWindow();
-
+            
             ShellCore.InitializeContainer();
 
             ConfigurePlatform();
 
             shellCore.Configure();
             shellCore.Initialize();
-
-            MainWindow.Show();
         }
 
         protected override void OnExit(ExitEventArgs e)
@@ -49,8 +45,25 @@ namespace AppShell.Desktop
         {
             if (e.PropertyName == "ActiveShell")
             {
+                Window previousWindow = MainWindow;
+
+                object view = ShellCore.Container.GetInstance<IViewFactory>().GetView(shellCore.ActiveShell);
+                
+                if (view is Window)
+                {
+                    MainWindow = view as Window;
+                }
+                else
+                {
+                    MainWindow = new ShellWindow();
+                    MainWindow.Content = view;
+                }
+
+                if (previousWindow != null)
+                    previousWindow.Close();
+                
                 MainWindow.DataContext = shellCore.ActiveShell;
-                MainWindow.Content = ShellCore.Container.GetInstance<IViewFactory>().GetView(shellCore.ActiveShell);
+                MainWindow.Show();
             }
         }        
     }

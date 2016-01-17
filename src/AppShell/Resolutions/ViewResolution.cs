@@ -13,17 +13,17 @@ namespace AppShell
 
             foreach (Type type in types)
             {
-                ViewAttribute viewAttribute = type.GetTypeInfo().GetCustomAttribute<ViewAttribute>();
+                IEnumerable<ViewAttribute> viewAttributes = type.GetTypeInfo().GetCustomAttributes<ViewAttribute>();
 
-                if (viewAttribute == null)
-                    continue;
-
-                viewMapping[viewAttribute.ViewModelType] = type;
-
-                foreach (Type subViewModelType in types.Where(t => t.GetTypeInfo().IsSubclassOf(viewAttribute.ViewModelType)))
+                foreach (ViewAttribute viewAttribute in viewAttributes)
                 {
-                    if (!viewMapping.ContainsKey(subViewModelType))
-                        viewMapping.Add(subViewModelType, type);
+                    viewMapping[viewAttribute.ViewModelType] = type;
+
+                    foreach (Type subViewModelType in types.Where(t => t.GetTypeInfo().IsSubclassOf(viewAttribute.ViewModelType)))
+                    {
+                        if (!viewMapping.ContainsKey(subViewModelType))
+                            viewMapping.Add(subViewModelType, type);
+                    }
                 }
             }
 

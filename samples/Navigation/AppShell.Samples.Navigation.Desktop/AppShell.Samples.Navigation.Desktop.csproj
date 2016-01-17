@@ -75,6 +75,15 @@
     </Compile>
     <Compile Include="NavigationApp.cs" />
     <Compile Include="ViewModels\DesktopViewModel2.cs" />
+    <Compile Include="Views\DetailView.xaml.cs">
+      <DependentUpon>DetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SplashView1.xaml.cs">
+      <DependentUpon>SplashView1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SplashView2.xaml.cs">
+      <DependentUpon>SplashView2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\View1.xaml.cs">
       <DependentUpon>View1.xaml</DependentUpon>
     </Compile>
@@ -119,6 +128,18 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\DetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SplashView1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SplashView2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\View1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

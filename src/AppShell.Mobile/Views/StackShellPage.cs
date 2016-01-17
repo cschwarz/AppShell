@@ -8,7 +8,8 @@ using Xamarin.Forms;
 namespace AppShell.Mobile
 {
     [View(typeof(StackShellViewModel))]
-    public class StackShellPage : NavigationPage
+    [View(typeof(SplashScreenShellViewModel))]
+    public class StackShellPage : NavigationPage, IPageReady
     {
         public static readonly BindableProperty ViewModelsProperty = BindableProperty.Create<StackShellPage, IEnumerable<IViewModel>>(d => d.ViewModels, null, propertyChanged: ViewModelsPropertyChanged);
                 

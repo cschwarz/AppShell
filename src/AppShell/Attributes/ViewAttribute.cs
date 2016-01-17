@@ -2,7 +2,7 @@
 
 namespace AppShell
 {
-    [AttributeUsage(AttributeTargets.Class)]
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     public class ViewAttribute : Attribute
     {
         public Type ViewModelType { get; private set; }

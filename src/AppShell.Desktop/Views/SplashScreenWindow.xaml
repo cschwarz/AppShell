@@ -1,9 +1,12 @@
-﻿<Window x:Class="AppShell.Desktop.SplashScreenWindow"
+﻿<Window x:Class="AppShell.Desktop.Views.SplashScreenWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:AppShell.Desktop"
         Title="SplashScreenWindow" Width="640" Height="480" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" SizeToContent="WidthAndHeight" BorderBrush="Black" BorderThickness="1">
+    <Window.Resources>
+        <local:ShellDataTemplateSelector x:Key="ShellDataTemplateSelector" />
+    </Window.Resources>
     <Grid>
-        <ContentControl Content="{Binding Content}" ContentTemplate="{Binding ContentTemplate}" />
+        <ContentControl Content="{Binding ActiveItem}" ContentTemplateSelector="{StaticResource ShellDataTemplateSelector}" />
     </Grid>
 </Window>

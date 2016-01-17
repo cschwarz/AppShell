@@ -1,5 +1,4 @@
-﻿
-namespace AppShell
+﻿namespace AppShell
 {
     public class StackShellViewModel : ShellViewModel
     {

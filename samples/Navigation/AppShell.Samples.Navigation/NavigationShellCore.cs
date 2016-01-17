@@ -4,7 +4,7 @@
     {
         public override void Run()
         {
-            Push<StackShellViewModel>(new { Name = ShellNames.Stack });
+            Push<SplashScreenShellViewModel>(new { Name = ShellNames.SplashScreen });
             Container.GetInstance<IServiceDispatcher>().Dispatch<INavigationService>(n => n.Push<SplashViewModel1>());
         }
     }

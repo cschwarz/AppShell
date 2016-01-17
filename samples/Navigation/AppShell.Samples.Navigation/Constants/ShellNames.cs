@@ -2,7 +2,8 @@
 {
     public static class ShellNames
     {
-        public const string Stack = "StackShell";
+        public const string SplashScreen = "SplashScreen";
+        public const string Stack = "Stack";
         public const string MasterDetail = "MasterDetail";
     }
 }

@@ -81,8 +81,7 @@
     <Compile Include="ViewModels\MasterDetailShellViewModel.cs" />
     <Compile Include="ViewModels\MasterViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
-    <Compile Include="ViewModels\SplashScreenHostViewModel.cs" />
-    <Compile Include="ViewModels\SplashScreenViewModel.cs" />
+    <Compile Include="ViewModels\SplashScreenShellViewModel.cs" />
     <Compile Include="ViewModels\StackShellViewModel.cs" />
     <Compile Include="ViewModels\TabShellViewModel.cs" />
     <Compile Include="ViewModels\ToolbarItemOrder.cs" />

@@ -13,7 +13,6 @@ namespace AppShell.Samples.Navigation
         public ViewModel1(IServiceDispatcher serviceDispatcher, IPlatformProvider platformProvider)
         {
             Title = "ViewModel1";
-            HasNavigationBar = false;
 
             this.serviceDispatcher = serviceDispatcher;
             this.platformProvider = platformProvider;
@@ -28,7 +27,7 @@ namespace AppShell.Samples.Navigation
 
         public void OpenViewModel2()
         {
-            serviceDispatcher.Dispatch<INavigationService>(n => n.Push<ViewModel2>());
+            serviceDispatcher.Dispatch<INavigationService>(n => n.Push<ViewModel2>(replace: true));
         }
 
         public void ShowMessage()

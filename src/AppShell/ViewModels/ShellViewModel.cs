@@ -49,26 +49,30 @@ namespace AppShell
             serviceDispatcher.Unsubscribe<INavigationService>(this);
         }
 
-        public void Push<TViewModel>(Dictionary<string, object> data = null) where TViewModel : class, IViewModel
+        public void Push<TViewModel>(Dictionary<string, object> data = null, bool replace = false) where TViewModel : class, IViewModel
         {
-            Push(typeof(TViewModel), data);
+            Push(typeof(TViewModel), data, replace);
         }
 
-        public void Push<TViewModel>(dynamic data) where TViewModel : class, IViewModel
+        public void Push<TViewModel>(dynamic data, bool replace = false) where TViewModel : class, IViewModel
         {
-            Push(typeof(TViewModel), ObjectExtensions.ToDictionary(data));
+            Push(typeof(TViewModel), ObjectExtensions.ToDictionary(data), replace);
         }
 
-        public void Push(string viewModelType, Dictionary<string, object> data = null)
+        public void Push(string viewModelType, Dictionary<string, object> data = null, bool replace = false)
         {
-            Push(Type.GetType(viewModelType), data);
+            Push(Type.GetType(viewModelType), data, replace);
         }
 
-        public void Push(Type viewModelType, Dictionary<string, object> data = null)
+        public void Push(Type viewModelType, Dictionary<string, object> data = null, bool replace = false)
         {
             IViewModel viewModel = viewModelFactory.GetViewModel(viewModelType, data);
-
+            
             Items.Add(viewModel);
+            
+            if (replace)
+                Items.Remove(ActiveItem);
+
             ActiveItem = viewModel;
 
             if (ViewModelPushed != null)

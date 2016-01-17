@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
+using System.Linq;
 using Xamarin.Forms;
 
 namespace AppShell.Mobile
@@ -61,7 +62,7 @@ namespace AppShell.Mobile
             else if (e.Action == NotifyCollectionChangedAction.Remove)
             {
                 foreach (IViewModel viewModel in e.OldItems)
-                    detailNavigationPage.PopAsync();
+                    detailNavigationPage.Navigation.RemovePage(detailNavigationPage.Navigation.NavigationStack.Single(p => p.BindingContext == viewModel));
             }
         }
 

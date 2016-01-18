@@ -1,6 +1,4 @@
-﻿
-using AppShell.Mobile;
-using AppShell.Mobile.iOS;
+﻿using AppShell.Mobile.iOS;
 using AppShell.Samples.Navigation.Mobile.Views;
 using Foundation;
 using UIKit;
@@ -11,7 +9,7 @@ namespace AppShell.Samples.Navigation.Mobile.iOS
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
     [Register("AppDelegate")]
-    public partial class AppDelegate : ShellApplicationDelegate<ShellApplication<NavigationShellCore>>
+    public partial class AppDelegate : ShellApplicationDelegate<NavigationApplication>
     {
         //
         // This method is invoked when the application has loaded and is ready to run. In this 

@@ -20,11 +20,17 @@ namespace AppShell.Mobile
             shellCore.PropertyChanged += ShellCore_PropertyChanged;
 
             ConfigurePlatform();
-
+            
             shellCore.Configure();
+        }
+
+        protected override void OnStart()
+        {
+            base.OnStart();
+
             shellCore.Initialize();
         }
-                
+
         protected virtual void ConfigurePlatform()
         {
             ShellCore.Container.RegisterSingleton<IViewFactory, MobileViewFactory>();

@@ -38,6 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="NavigationApplication.xaml.cs">
+      <DependentUpon>NavigationApplication.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\MobileViewModel2.cs" />
     <Compile Include="Views\DetailView.xaml.cs">
@@ -149,6 +152,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\SplashView2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NavigationApplication.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

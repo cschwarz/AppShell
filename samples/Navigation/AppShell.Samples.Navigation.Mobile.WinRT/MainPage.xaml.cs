@@ -1,9 +1,8 @@
-﻿using AppShell.Mobile;
-using AppShell.Mobile.WinRT;
+﻿using AppShell.Mobile.WinRT;
 
 namespace AppShell.Samples.Navigation.Mobile.WinRT
 {
-    public class NavigationShellPage : ShellPage<ShellApplication<NavigationShellCore>>
+    public class NavigationShellPage : ShellPage<NavigationApplication>
     {
     }
 

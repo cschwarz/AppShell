@@ -66,7 +66,7 @@ namespace AppShell.Mobile
 
                 IPageReady pageReady = page as IPageReady;
 
-                if (MainPage == null || pageReady == null || pageReady.IsReady)
+                if (pageReady == null || pageReady.IsReady)
                     MainPage = page;
                 else
                     pageReady.Ready += PageReady;

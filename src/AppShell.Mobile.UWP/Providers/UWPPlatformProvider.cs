@@ -4,13 +4,13 @@ using System.Reflection;
 using Windows.ApplicationModel;
 using Windows.Storage;
 
-namespace AppShell.Mobile.WinRT
+namespace AppShell.Mobile.UWP
 {
-    public class WinRTPlatformProvider : MobilePlatformProvider
+    public class UWPPlatformProvider : MobilePlatformProvider
     {
         public override Platform GetPlatform()
         {
-            return Platform.WinRT;
+            return Platform.UWP;
         }
 
         public override IEnumerable<Assembly> GetAssemblies()

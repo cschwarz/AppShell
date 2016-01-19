@@ -10,9 +10,10 @@ namespace AppShell
         Mac = 2,
         Android = 4,
         iOS = 8,
-        WindowsPhone = 16,
+        WinRT = 16,
+        UWP = 32,
         Desktop = Windows | Mac,
-        Mobile = Android | iOS | WindowsPhone,
+        Mobile = Android | iOS | WinRT | UWP,
         All = Desktop | Mobile
     }
 }

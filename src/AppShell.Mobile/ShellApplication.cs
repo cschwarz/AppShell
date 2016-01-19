@@ -22,13 +22,17 @@ namespace AppShell.Mobile
             ConfigurePlatform();
             
             shellCore.Configure();
+
+            if (ShellCore.CurrentPlatform == Platform.WinRT || ShellCore.CurrentPlatform == Platform.UWP)
+                shellCore.Initialize();
         }
 
         protected override void OnStart()
         {
             base.OnStart();
 
-            shellCore.Initialize();
+            if (!(ShellCore.CurrentPlatform == Platform.WinRT || ShellCore.CurrentPlatform == Platform.UWP))
+                shellCore.Initialize();
         }
 
         protected virtual void ConfigurePlatform()

@@ -10,7 +10,8 @@ namespace AppShell
     public abstract class ShellCore : IShellNavigationService,INotifyPropertyChanged
     {
         public static Container Container { get; private set; }
-        public static Platform CurrentPlatform { get; private set; }
+        
+        public static Platform CurrentPlatform { get { return Container.GetInstance<IPlatformProvider>().GetPlatform(); } }
 
         public string Name { get { return "ShellCore"; } }
 
@@ -68,8 +69,6 @@ namespace AppShell
 
         public virtual void Initialize()
         {
-            CurrentPlatform = Container.GetInstance<IPlatformProvider>().GetPlatform();
-
             Container.GetInstance<IViewModelFactory>().Initialize();
             Container.GetInstance<IViewFactory>().Initialize();
             Container.GetInstance<IServiceDispatcher>().Initialize();

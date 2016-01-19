@@ -1,9 +1,8 @@
 ﻿using AppShell.Mobile;
-using AppShell.Mobile.WinRT;
+using AppShell.Mobile.UWP;
+using AppShell.NativeMaps.Mobile.UWP;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
-
-namespace AppShell.Samples.NativeMaps.Mobile.WinRT
+namespace AppShell.Samples.NativeMaps.Mobile.UWP
 {
     public class NativeMapsShellPage : ShellPage<ShellApplication<NativeMapsShellCore>>
     {
@@ -14,6 +13,8 @@ namespace AppShell.Samples.NativeMaps.Mobile.WinRT
         public MainPage()
         {
             this.InitializeComponent();
+
+            MapViewRenderer.ApiKey = "cqCo1cfFgtjjwz2LX1mC~T-RrbLstKjU-MfedDTdxVA~AjEW5pD0EeNYilFetOkJuuyGgEy5hWxZ9072Oeo_cPjg_desmyRS6eQwP48Ks0qc";
 
             Init();
         }

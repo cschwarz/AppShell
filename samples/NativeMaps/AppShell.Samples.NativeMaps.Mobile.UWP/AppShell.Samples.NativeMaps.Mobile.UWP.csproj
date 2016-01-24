@@ -107,6 +107,8 @@
     <None Include="AppShell.Samples.NativeMaps.Mobile.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\bus.png" />
+    <Content Include="Assets\underground.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

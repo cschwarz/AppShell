@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using GMaps = Android.Gms.Maps;
@@ -153,7 +154,7 @@ namespace AppShell.NativeMaps.Mobile.Android
             options.SetPosition(new LatLng(marker.Center.Latitude, marker.Center.Longitude));
 
             if (!string.IsNullOrEmpty(marker.Icon))
-                options.SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(marker.Icon)));
+                options.SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(Path.GetFileNameWithoutExtension(marker.Icon))));
 
             options.SetTitle(marker.Title);
             options.SetSnippet(marker.Content);

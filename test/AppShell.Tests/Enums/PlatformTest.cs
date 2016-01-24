@@ -17,7 +17,8 @@ namespace AppShell.Tests
 
             Assert.False(Platform.Desktop.HasFlag(Platform.Android));
             Assert.False(Platform.Desktop.HasFlag(Platform.iOS));
-            Assert.False(Platform.Desktop.HasFlag(Platform.WindowsPhone));
+            Assert.False(Platform.Desktop.HasFlag(Platform.WinRT));
+            Assert.False(Platform.Desktop.HasFlag(Platform.UWP));
         }
 
         [Fact]
@@ -25,7 +26,8 @@ namespace AppShell.Tests
         {
             Assert.True(Platform.Mobile.HasFlag(Platform.Android));
             Assert.True(Platform.Mobile.HasFlag(Platform.iOS));
-            Assert.True(Platform.Mobile.HasFlag(Platform.WindowsPhone));
+            Assert.True(Platform.Mobile.HasFlag(Platform.WinRT));
+            Assert.True(Platform.Mobile.HasFlag(Platform.UWP));
 
             Assert.False(Platform.Mobile.HasFlag(Platform.Windows));
             Assert.False(Platform.Mobile.HasFlag(Platform.Mac));
@@ -36,7 +38,8 @@ namespace AppShell.Tests
         {
             Assert.True(Platform.All.HasFlag(Platform.Android));
             Assert.True(Platform.All.HasFlag(Platform.iOS));
-            Assert.True(Platform.All.HasFlag(Platform.WindowsPhone));
+            Assert.True(Platform.All.HasFlag(Platform.WinRT));
+            Assert.True(Platform.All.HasFlag(Platform.UWP));
 
             Assert.True(Platform.All.HasFlag(Platform.Windows));
             Assert.True(Platform.All.HasFlag(Platform.Mac));

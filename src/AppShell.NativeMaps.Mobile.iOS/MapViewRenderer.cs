@@ -13,6 +13,7 @@ using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 
 [assembly: ExportRenderer(typeof(MapView), typeof(MapViewRenderer))]
 
@@ -34,7 +35,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
                     annotationView = string.IsNullOrEmpty(marker.Icon) ? new MKPinAnnotationView(annotation, annotationId) : new MKAnnotationView(annotation, annotationId);
 
                 if (!string.IsNullOrEmpty(marker.Icon))
-                    annotationView.Image = UIImage.FromBundle(marker.Icon);
+                    annotationView.Image = UIImage.FromBundle(Path.GetFileNameWithoutExtension(marker.Icon));
 
                 if (!string.IsNullOrEmpty(marker.Title) || !string.IsNullOrEmpty(marker.Content))
                     annotationView.CanShowCallout = true;

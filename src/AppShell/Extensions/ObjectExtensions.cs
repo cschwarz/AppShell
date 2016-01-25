@@ -60,6 +60,9 @@ namespace System
         {
             Dictionary<string, object> dictionary = new Dictionary<string, object>();
 
+            if (value == null)
+                return dictionary;
+
             TypeInfo type = value.GetType().GetTypeInfo();
             foreach (PropertyInfo propertyInfo in type.DeclaredProperties)
                 dictionary[propertyInfo.Name] = propertyInfo.GetValue(value);

@@ -1,8 +1,8 @@
-﻿using System.Resources;
+﻿using AppShell;
 using System.Reflection;
+using System.Resources;
 using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using AppShell;
+using Xamarin.Forms.Xaml;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
@@ -32,6 +32,7 @@ using AppShell;
 [assembly: AssemblyInformationalVersion("1.0.0.0")]
 
 [assembly: ShellResource]
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
 [assembly: InternalsVisibleTo("AppShell.Mobile.Android")]
 [assembly: InternalsVisibleTo("AppShell.Mobile.iOS")]

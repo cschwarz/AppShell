@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppShell.Mobile.Views.MasterView"
-             BackgroundColor="#333333" Padding="0,36,0,0">
-  <ListView ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}">
+             Padding="0,36,0,0">
+  <ListView ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}" SeparatorVisibility="None">
     <ListView.ItemTemplate>
       <DataTemplate>
-        <TextCell Text="{Binding Title}" />
+        <ImageCell Text="{Binding Title}" ImageSource="{Binding Icon}" />
       </DataTemplate>
     </ListView.ItemTemplate>
   </ListView>

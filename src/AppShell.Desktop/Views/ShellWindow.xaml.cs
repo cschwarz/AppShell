@@ -23,8 +23,8 @@ namespace AppShell.Desktop
             {
                 ShellViewModel oldShellViewModel = e.OldValue as ShellViewModel;
 
-                oldShellViewModel.CloseRequested += ShellViewModel_CloseRequested;
-                oldShellViewModel.DetachViewModelRequested += ShellViewModel_DetachViewModelRequested;
+                oldShellViewModel.CloseRequested -= ShellViewModel_CloseRequested;
+                oldShellViewModel.DetachViewModelRequested -= ShellViewModel_DetachViewModelRequested;
 
             }
             if (e.NewValue != null)

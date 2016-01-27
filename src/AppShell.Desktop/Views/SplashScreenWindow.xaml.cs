@@ -6,8 +6,6 @@ namespace AppShell.Desktop.Views
     [View(typeof(SplashScreenShellViewModel))]
     public partial class SplashScreenWindow : Window
     {
-        private ShellViewModel shellViewModel;
-
         public SplashScreenWindow()
         {
             InitializeComponent();
@@ -27,9 +25,7 @@ namespace AppShell.Desktop.Views
             if (e.NewValue != null)
             {
                 ShellViewModel newShellViewModel = e.NewValue as ShellViewModel;
-
-                shellViewModel = newShellViewModel;
-
+                
                 newShellViewModel.CloseRequested += ShellViewModel_CloseRequested;
             }
         }

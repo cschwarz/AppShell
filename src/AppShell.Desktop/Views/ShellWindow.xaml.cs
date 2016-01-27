@@ -8,8 +8,6 @@ namespace AppShell.Desktop
     /// </summary>
     public partial class ShellWindow : Window
     {
-        private ShellViewModel shellViewModel;
-
         public ShellWindow()
         {
             InitializeComponent();
@@ -30,8 +28,6 @@ namespace AppShell.Desktop
             if (e.NewValue != null)
             {
                 ShellViewModel newShellViewModel = e.NewValue as ShellViewModel;
-
-                shellViewModel = newShellViewModel;
 
                 newShellViewModel.CloseRequested += ShellViewModel_CloseRequested;
                 newShellViewModel.DetachViewModelRequested += ShellViewModel_DetachViewModelRequested;

@@ -19,9 +19,13 @@ function ServiceDispatcher(data) {
     this._currentCallbackId = 0;    
 }
 
-ServiceDispatcher.prototype.initialize = function (services) {
+ServiceDispatcher.prototype.initialize = function () {
+    callNative('initialize');
+};
+
+ServiceDispatcher.prototype._initializeCallback = function (services) {
     var self = this;
-    
+        
     Object.keys(services).forEach(function (serviceName) {
         var service = {};
         
@@ -38,7 +42,7 @@ ServiceDispatcher.prototype.initialize = function (services) {
                         parameters.push(arguments[i]);
                     }
                 }
-                
+
                 callNative('dispatch', { serviceName: serviceName, instanceName: this.__instanceName, methodName: methodName, callbackId: callbackId, arguments: parameters });
             };
         });
@@ -83,5 +87,3 @@ ServiceDispatcher.prototype.subscribeEvent = function (serviceName, eventName, c
 ServiceDispatcher.prototype.unsubscribeEvent = function (serviceName, callbackId) {    
     callNative('unsubscribeEvent', { serviceName: serviceName, callbackId: callbackId });
 };
-
-window.serviceDispatcher = new ServiceDispatcher();

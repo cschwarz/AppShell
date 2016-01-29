@@ -1,9 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
@@ -53,22 +51,6 @@ namespace AppShell.Desktop.Views
             SetBinding(HtmlProperty, new Binding("Html"));
 
             WebBrowser.ObjectForScripting = new ScriptInterface(ShellCore.Container.GetInstance<IServiceDispatcher>(), WebBrowser);
-            
-            string serviceDispatcherScript = null;
-
-            using (StreamReader streamReader = new StreamReader(typeof(WebBrowserViewModel).Assembly.GetManifestResourceStream("AppShell.ServiceDispatcher.js")))
-                serviceDispatcherScript = streamReader.ReadToEnd();
-
-            string services = JsonConvert.SerializeObject(ShellCore.Container.GetInstance<IServiceDispatcher>().Services);
-
-            WebBrowser.LoadCompleted += (s, e) =>
-            {
-                dynamic document = WebBrowser.Document;
-                dynamic head = document.GetElementsByTagName("head")[0];
-                dynamic scriptElement = document.CreateElement("script");
-                scriptElement.text = string.Concat(serviceDispatcherScript, Environment.NewLine, string.Format("serviceDispatcher.initialize({0});", services));
-                head.AppendChild(scriptElement);
-            };
         }
     }
 
@@ -123,11 +105,17 @@ namespace AppShell.Desktop.Views
             
             switch(m.Action)
             {
+                case "initialize": Initialize(); break;
                 case "dispatch": Dispatch(JsonConvert.DeserializeObject<DispatchData>(m.Data)); break;
                 case "subscribeEvent": SubscribeEvent(JsonConvert.DeserializeObject<SubscribeEventData>(m.Data)); break;
                 case "unsubscribeEvent": UnsubscribeEvent(JsonConvert.DeserializeObject<UnsubscribeEventData>(m.Data)); break;
             }
         }
+        
+        private void Initialize()
+        {
+            webBrowser.InvokeScript("eval", string.Format("serviceDispatcher._initializeCallback({0});", JsonConvert.SerializeObject(ShellCore.Container.GetInstance<IServiceDispatcher>().Services)));
+        }        
 
         private void Dispatch(DispatchData data)
         {            

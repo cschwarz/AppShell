@@ -58,7 +58,6 @@ namespace AppShell.Mobile.WinRT
 
         private void NavigationCompleted(Windows.UI.Xaml.Controls.WebView sender, Windows.UI.Xaml.Controls.WebViewNavigationCompletedEventArgs args)
         {
-            Control.InvokeScriptAsync("eval", new[] { "function Native(action, data){window.external.notify(JSON.stringify({ a: action, d: data }));}" });
             Element.OnLoadFinished(sender, EventArgs.Empty);
         }
 

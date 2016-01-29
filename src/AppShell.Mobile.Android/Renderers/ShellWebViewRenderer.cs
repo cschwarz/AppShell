@@ -25,8 +25,7 @@ namespace AppShell.Mobile.Android
             public override void OnPageFinished(global::Android.Webkit.WebView view, string url)
             {
                 base.OnPageFinished(view, url);
-
-                view.LoadUrl("javascript: function Native(action, data){ ScriptInterface.call(JSON.stringify({ a: action, d: data }));}");
+                
                 webView.OnLoadFinished(this, EventArgs.Empty);
             }
         }

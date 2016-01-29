@@ -34,7 +34,6 @@ namespace AppShell.Mobile.iOS
             base.OnElementChanged(e);
 
             userController = new WKUserContentController();
-            userController.AddUserScript(new WKUserScript(new NSString("function Native(action, data){window.webkit.messageHandlers.native.postMessage(JSON.stringify({ a: action, d: data }));}"), WKUserScriptInjectionTime.AtDocumentEnd, false));
             userController.AddScriptMessageHandler(this, ScriptMessageHandlerName);
 
             WKWebView webView = new WKWebView(Frame, new WKWebViewConfiguration { UserContentController = userController });

@@ -1,4 +1,17 @@
-﻿function ServiceDispatcher(data) {
+﻿function callNative(name, data) {
+    var message = JSON.stringify({ a: name, d: JSON.stringify(data) });
+
+    if (window.ScriptInterface)
+        window.ScriptInterface.call(message);
+    else if (window.webkit)
+        window.webkit.messageHandlers.native.postMessage(message);
+    else if(window.external && window.external.notify)
+        window.external.notify(message);
+    else if (window.external)
+        window.external.Native(message);
+}
+
+function ServiceDispatcher(data) {
     this._services = {};
     this._dispatchCallbacks = {};
     this._eventCallbacks = {};
@@ -26,11 +39,7 @@ ServiceDispatcher.prototype.initialize = function (services) {
                     }
                 }
                 
-                if (window.Native)
-                    window.Native('dispatch', JSON.stringify({ serviceName: serviceName, instanceName: this.__instanceName, methodName: methodName, callbackId: callbackId, arguments: parameters }));
-                else if (window.external)
-                    window.external.Dispatch(serviceName, this.__instanceName, methodName, callbackId, JSON.stringify(parameters));
-                
+                callNative('dispatch', { serviceName: serviceName, instanceName: this.__instanceName, methodName: methodName, callbackId: callbackId, arguments: parameters });
             };
         });
 
@@ -66,19 +75,13 @@ ServiceDispatcher.prototype.subscribeEvent = function (serviceName, eventName, c
         callback(JSON.parse(e));
     };
 
-    if (window.Native)
-        window.Native('subscribeEvent', { serviceName: serviceName, eventName: eventName, callbackId: callbackId });
-    else if (window.external)
-        window.external.SubscribeEvent(serviceName, eventName, callbackId);
-
+    callNative('subscribeEvent', { serviceName: serviceName, eventName: eventName, callbackId: callbackId });
+    
     return callbackId;
 };
 
-ServiceDispatcher.prototype.unsubscribeEvent = function (serviceName, callbackId) {
-    if (window.Native)
-        window.Native('unsubscribeEvent', { serviceName: serviceName, callbackId: callbackId });
-    else if (window.external)
-        window.external.UnsubscribeEvent(serviceName, callbackId);
+ServiceDispatcher.prototype.unsubscribeEvent = function (serviceName, callbackId) {    
+    callNative('unsubscribeEvent', { serviceName: serviceName, callbackId: callbackId });
 };
 
 window.serviceDispatcher = new ServiceDispatcher();

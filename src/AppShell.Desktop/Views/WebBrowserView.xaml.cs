@@ -1,24 +1,11 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Windows.Threading;
 
 namespace AppShell.Desktop.Views
 {
@@ -64,28 +51,42 @@ namespace AppShell.Desktop.Views
             SetBinding(HtmlProperty, new Binding("Html"));
 
             WebBrowser.ObjectForScripting = new ScriptInterface(ShellCore.Container.GetInstance<IServiceDispatcher>(), WebBrowser);
-            
-            string serviceDispatcherScript = null;
-
-            using (StreamReader streamReader = new StreamReader(typeof(WebBrowserViewModel).Assembly.GetManifestResourceStream("AppShell.ServiceDispatcher.js")))
-                serviceDispatcherScript = streamReader.ReadToEnd();
-
-            string services = JsonConvert.SerializeObject(ShellCore.Container.GetInstance<IServiceDispatcher>().Services);
-
-            WebBrowser.LoadCompleted += (s, e) =>
-            {
-                dynamic document = WebBrowser.Document;
-                dynamic head = document.GetElementsByTagName("head")[0];
-                dynamic scriptElement = document.CreateElement("script");
-                scriptElement.text = string.Concat(serviceDispatcherScript, Environment.NewLine, string.Format("serviceDispatcher.initialize({0});", services));
-                head.AppendChild(scriptElement);
-            };
         }
     }
 
     [ComVisible(true)]
     public class ScriptInterface
     {
+        class Message
+        {
+            [JsonProperty("a")]
+            public string Action { get; set; }
+            [JsonProperty("d")]
+            public string Data { get; set; }
+        }
+
+        class DispatchData
+        {
+            public string ServiceName { get; set; }
+            public string InstanceName { get; set; }
+            public string MethodName { get; set; }
+            public string CallbackId { get; set; }
+            public object[] Arguments { get; set; }
+        }
+
+        class SubscribeEventData
+        {
+            public string ServiceName { get; set; }
+            public string EventName { get; set; }
+            public string CallbackId { get; set; }
+        }
+
+        class UnsubscribeEventData
+        {
+            public string ServiceName { get; set; }
+            public string CallbackId { get; set; }
+        }
+
         private IServiceDispatcher serviceDispatcher;
         private ConcurrentDictionary<string, EventRegistration> eventRegistrations;
 
@@ -98,44 +99,58 @@ namespace AppShell.Desktop.Views
             this.webBrowser = webBrowser;
         }
 
-        public string Dispatch(string serviceName, string instanceName, string methodName, string callbackId, string arguments)
+        public void Native(string message)
         {
-            object[] parameters = JsonConvert.DeserializeObject<object[]>(arguments);
-
-            for (int i = 0; i < parameters.Length; i++)
+            Message m = JsonConvert.DeserializeObject<Message>(message);
+            
+            switch(m.Action)
             {
-                if (parameters[i] is JArray)
-                    parameters[i] = (parameters[i] as JArray).ToObject<object[]>();
-                else if (parameters[i] is JObject)
-                    parameters[i] = (parameters[i] as JObject).ToObject<Dictionary<string, object>>();
+                case "initialize": Initialize(); break;
+                case "dispatch": Dispatch(JsonConvert.DeserializeObject<DispatchData>(m.Data)); break;
+                case "subscribeEvent": SubscribeEvent(JsonConvert.DeserializeObject<SubscribeEventData>(m.Data)); break;
+                case "unsubscribeEvent": UnsubscribeEvent(JsonConvert.DeserializeObject<UnsubscribeEventData>(m.Data)); break;
+            }
+        }
+        
+        private void Initialize()
+        {
+            webBrowser.InvokeScript("eval", string.Format("serviceDispatcher._initializeCallback({0});", JsonConvert.SerializeObject(ShellCore.Container.GetInstance<IServiceDispatcher>().Services)));
+        }        
+
+        private void Dispatch(DispatchData data)
+        {            
+            for (int i = 0; i < data.Arguments.Length; i++)
+            {
+                if (data.Arguments[i] is JArray)
+                    data.Arguments[i] = (data.Arguments[i] as JArray).ToObject<object[]>();
+                else if (data.Arguments[i] is JObject)
+                    data.Arguments[i] = (data.Arguments[i] as JObject).ToObject<Dictionary<string, object>>();
             }
 
-            string result = string.IsNullOrEmpty(instanceName)
-                ? JsonConvert.SerializeObject(serviceDispatcher.Dispatch(serviceName, methodName, parameters))
-                : JsonConvert.SerializeObject(serviceDispatcher.Dispatch(serviceName, instanceName, methodName, parameters));
+            string result = string.IsNullOrEmpty(data.InstanceName)
+                ? JsonConvert.SerializeObject(serviceDispatcher.Dispatch(data.ServiceName, data.MethodName, data.Arguments))
+                : JsonConvert.SerializeObject(serviceDispatcher.Dispatch(data.ServiceName, data.InstanceName, data.MethodName, data.Arguments));
 
-            if (callbackId != null)
-                webBrowser.InvokeScript("eval", string.Format("serviceDispatcher._dispatchCallback('{0}', {1})", callbackId, result));
-
-            return null;
+            if (data.CallbackId != null)
+                webBrowser.InvokeScript("eval", string.Format("serviceDispatcher._dispatchCallback('{0}', {1})", data.CallbackId, result));
         }
-                
-        public void SubscribeEvent(string serviceName, string eventName, string callbackId)
+
+        private void SubscribeEvent(SubscribeEventData data)
         {
-            EventRegistration eventRegistration = serviceDispatcher.SubscribeEvent(serviceName, eventName, this, (s, e) =>
+            EventRegistration eventRegistration = serviceDispatcher.SubscribeEvent(data.ServiceName, data.EventName, this, (s, e) =>
             {
-                if (callbackId != null)
-                    Application.Current.Dispatcher.Invoke(() => webBrowser.InvokeScript("eval", string.Format("serviceDispatcher._eventCallback('{0}', '{1}')", callbackId, JsonConvert.SerializeObject(e))));
+                if (data.CallbackId != null)
+                    Application.Current.Dispatcher.Invoke(() => webBrowser.InvokeScript("eval", string.Format("serviceDispatcher._eventCallback('{0}', '{1}')", data.CallbackId, JsonConvert.SerializeObject(e))));
             });
 
-            eventRegistrations.AddOrUpdate(callbackId, eventRegistration, (k, e) => e);
+            eventRegistrations.AddOrUpdate(data.CallbackId, eventRegistration, (k, e) => e);
         }
 
-        public void UnsubscribeEvent(string serviceName, string callbackId)
+        private void UnsubscribeEvent(UnsubscribeEventData data)
         {
             EventRegistration eventRegistration = null;
-            if (eventRegistrations.TryRemove(callbackId, out eventRegistration))
-                serviceDispatcher.UnsubscribeEvent(serviceName, eventRegistration);
+            if (eventRegistrations.TryRemove(data.CallbackId, out eventRegistration))
+                serviceDispatcher.UnsubscribeEvent(data.ServiceName, eventRegistration);
         }
     }
 }

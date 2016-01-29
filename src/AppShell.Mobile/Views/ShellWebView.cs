@@ -12,7 +12,7 @@ namespace AppShell.Mobile
             [JsonProperty("a")]
             public string Action { get; set; }
             [JsonProperty("d")]
-            public object Data { get; set; }
+            public string Data { get; set; }
         }
         
         public static readonly BindableProperty SourceProperty = BindableProperty.Create<ShellWebView, WebViewSource>(d => d.Source, null);
@@ -49,7 +49,7 @@ namespace AppShell.Mobile
             Message m = JsonConvert.DeserializeObject<Message>(message);
 
             if (Callbacks.ContainsKey(m.Action))
-                Callbacks[m.Action](m.Data.ToString());
+                Callbacks[m.Action](m.Data);
         }
 
         internal void OnLoadFinished(object sender, EventArgs e)

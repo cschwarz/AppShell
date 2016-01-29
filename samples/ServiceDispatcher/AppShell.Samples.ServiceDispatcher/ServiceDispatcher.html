@@ -10,6 +10,9 @@
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js"></script>
+    <script>
+        function callNative(e, t) { var i = JSON.stringify({ a: e, d: JSON.stringify(t) }); window.ScriptInterface ? window.ScriptInterface.call(i) : window.webkit ? window.webkit.messageHandlers["native"].postMessage(i) : window.external && window.external.notify ? window.external.notify(i) : window.external && window.external.Native(i) } function ServiceDispatcher(e) { this._services = {}, this._dispatchCallbacks = {}, this._eventCallbacks = {}, this._currentCallbackId = 0 } ServiceDispatcher.prototype.initialize = function () { callNative("initialize") }, ServiceDispatcher.prototype._initializeCallback = function (e) { var t = this; Object.keys(e).forEach(function (i) { var a = {}; e[i].forEach(function (e) { a[e] = function () { for (var a, c = [], n = 0; n < arguments.length; n++) "function" == typeof arguments[n] ? (a = (++t._currentCallbackId).toString(), t._dispatchCallbacks[a] = arguments[n]) : c.push(arguments[n]); callNative("dispatch", { serviceName: i, instanceName: this.__instanceName, methodName: e, callbackId: a, arguments: c }) } }), t._services[i] = a }), window.serviceDispatcherReady && window.serviceDispatcherReady() }, ServiceDispatcher.prototype.dispatch = function (e, t) { var i = this._services[e]; return i.__instanceName = t, i }, ServiceDispatcher.prototype._dispatchCallback = function (e, t) { this._dispatchCallbacks[e] && (this._dispatchCallbacks[e](t), delete this._dispatchCallbacks[e]) }, ServiceDispatcher.prototype._eventCallback = function (e, t) { this._eventCallbacks[e] && this._eventCallbacks[e](t) }, ServiceDispatcher.prototype.subscribeEvent = function (e, t, i) { var a = (++this._currentCallbackId).toString(); return this._eventCallbacks[a] = function (e) { i(JSON.parse(e)) }, callNative("subscribeEvent", { serviceName: e, eventName: t, callbackId: a }), a }, ServiceDispatcher.prototype.unsubscribeEvent = function (e, t) { callNative("unsubscribeEvent", { serviceName: e, callbackId: t }) };
+    </script>
 </head>
 <body>
     <span id="serviceDispatcherState">Initializing...</span>
@@ -43,6 +46,10 @@
                     serviceDispatcher.unsubscribeEvent('sampleService', callbackId);
             });
         }
+    </script>    
+    <script>        
+        window.serviceDispatcher = new ServiceDispatcher();
+        window.serviceDispatcher.initialize();
     </script>
 </body>
 </html>

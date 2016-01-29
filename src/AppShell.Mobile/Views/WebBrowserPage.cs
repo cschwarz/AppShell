@@ -1,7 +1,5 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Concurrent;
-using System.IO;
-using System.Reflection;
 using Xamarin.Forms;
 
 namespace AppShell.Mobile
@@ -61,19 +59,11 @@ namespace AppShell.Mobile
             webView = new ShellWebView();
             eventRegistrations = new ConcurrentDictionary<string, EventRegistration>();
             
-            string serviceDispatcherScript = null;
-
-            using (StreamReader streamReader = new StreamReader(typeof(WebBrowserViewModel).GetTypeInfo().Assembly.GetManifestResourceStream("AppShell.ServiceDispatcher.js")))
-                serviceDispatcherScript = streamReader.ReadToEnd();
-
-            string services = JsonConvert.SerializeObject(serviceDispatcher.Services);
-                        
-            webView.LoadFinished += (s, e) =>
+            webView.RegisterCallback("initialize", args =>
             {
-                webView.InjectJavaScript(serviceDispatcherScript);
-                webView.InjectJavaScript(string.Format("serviceDispatcher.initialize({0});", services));
-            };
-                            
+                platformProvider.ExecuteOnUIThread(() => webView.InjectJavaScript(string.Format("serviceDispatcher._initializeCallback({0});", JsonConvert.SerializeObject(serviceDispatcher.Services))));
+            });
+
             webView.RegisterCallback("dispatch", args =>
             {
                 DispatchData dispatchData = JsonConvert.DeserializeObject<DispatchData>(args);

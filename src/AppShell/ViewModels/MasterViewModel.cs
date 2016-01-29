@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Windows.Input;
 
 namespace AppShell
@@ -7,7 +6,8 @@ namespace AppShell
     public abstract class MenuItem
     {
         public string Title { get; private set; }
-                
+        public string Icon { get; set; }
+
         public MenuItem(string title)
         {
             Title = title;

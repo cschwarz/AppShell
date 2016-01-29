@@ -1,16 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace AppShell.Desktop
 {
@@ -19,8 +8,6 @@ namespace AppShell.Desktop
     /// </summary>
     public partial class ShellWindow : Window
     {
-        private ShellViewModel shellViewModel;
-
         public ShellWindow()
         {
             InitializeComponent();
@@ -34,15 +21,13 @@ namespace AppShell.Desktop
             {
                 ShellViewModel oldShellViewModel = e.OldValue as ShellViewModel;
 
-                oldShellViewModel.CloseRequested += ShellViewModel_CloseRequested;
-                oldShellViewModel.DetachViewModelRequested += ShellViewModel_DetachViewModelRequested;
+                oldShellViewModel.CloseRequested -= ShellViewModel_CloseRequested;
+                oldShellViewModel.DetachViewModelRequested -= ShellViewModel_DetachViewModelRequested;
 
             }
             if (e.NewValue != null)
             {
                 ShellViewModel newShellViewModel = e.NewValue as ShellViewModel;
-
-                shellViewModel = newShellViewModel;
 
                 newShellViewModel.CloseRequested += ShellViewModel_CloseRequested;
                 newShellViewModel.DetachViewModelRequested += ShellViewModel_DetachViewModelRequested;

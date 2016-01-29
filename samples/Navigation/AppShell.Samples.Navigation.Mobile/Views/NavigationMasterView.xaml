@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:AppShell.Mobile.Views;assembly=AppShell.Mobile"
+             x:Class="AppShell.Samples.Navigation.Mobile.Views.NavigationMasterView">
+  <views:MasterView>
+    <views:MasterView.HeaderContent>
+      <BoxView BackgroundColor="#D3D3D3" HeightRequest="64" />               
+    </views:MasterView.HeaderContent>
+  </views:MasterView>
+</ContentPage>

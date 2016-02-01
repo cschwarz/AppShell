@@ -12,7 +12,16 @@
     <ListView Grid.Row="1" ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}" SeparatorVisibility="None">
       <ListView.ItemTemplate>
         <DataTemplate>
-          <ImageCell Text="{Binding Title}" ImageSource="{Binding Icon}" />
+          <ViewCell>
+            <Grid Padding="10,0,10,0">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+              <Image Grid.Column="0" Source="{Binding Icon}" VerticalOptions="Center" />
+              <Label Grid.Column="1" Text="{Binding Title}" VerticalOptions="Center" />
+            </Grid>
+          </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>

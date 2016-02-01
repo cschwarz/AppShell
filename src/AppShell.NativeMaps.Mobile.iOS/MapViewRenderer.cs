@@ -157,6 +157,14 @@ namespace AppShell.NativeMaps.Mobile.iOS
                 foreach (Marker marker in e.NewItems)
                     AddMarker(marker);
             }
+            else if (e.Action == NotifyCollectionChangedAction.Remove)
+            {
+                foreach (Marker marker in e.OldItems)
+                {
+                    Control.RemoveAnnotation(markers[marker]);
+                    markers.Remove(marker);
+                }
+            }
         }
 
         private void TileOverlays_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)

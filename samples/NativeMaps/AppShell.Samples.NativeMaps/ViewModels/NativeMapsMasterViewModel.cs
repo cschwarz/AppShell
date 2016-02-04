@@ -26,7 +26,7 @@ namespace AppShell.Samples.NativeMaps
                 {
                     new Marker() { Center = new Location(48.20, 16.37), Icon = "bus" },
                     new Marker() { Center = new Location(48.22, 16.37), Icon = "underground" },
-                    new Marker() { Center = new Location(48.21, 16.36) },
+                    new Marker() { Center = new Location(48.21, 16.36), Draggable = true },
                     new Marker() { Center = new Location(48.21, 16.38), Title = "Title", Content = "Content" }
                 }),
                 ZoomLevel2 = 9.0,

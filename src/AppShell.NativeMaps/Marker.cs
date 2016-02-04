@@ -60,7 +60,21 @@ namespace AppShell.NativeMaps
                 }
             }
         }
-        
+
+        private bool draggable;
+        public bool Draggable
+        {
+            get { return draggable; }
+            set
+            {
+                if (draggable != value)
+                {
+                    draggable = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName]string propertyName = null)

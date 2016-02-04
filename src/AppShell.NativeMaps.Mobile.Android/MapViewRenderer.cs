@@ -145,6 +145,7 @@ namespace AppShell.NativeMaps.Mobile.Android
 
             options.SetTitle(marker.Title);
             options.SetSnippet(marker.Content);
+            options.Draggable(marker.Draggable);
 
             markers.Add(marker, googleMap.AddMarker(options));
 
@@ -174,6 +175,7 @@ namespace AppShell.NativeMaps.Mobile.Android
                     }
                 case "Title": markers[marker].Title = marker.Title; break;
                 case "Content": markers[marker].Snippet = marker.Icon; break;
+                case "Draggable": markers[marker].Draggable = marker.Draggable; break;
             }
         }
 

@@ -26,6 +26,8 @@ namespace AppShell.NativeMaps.Mobile.iOS
                 if (!string.IsNullOrEmpty(marker.Title) || !string.IsNullOrEmpty(marker.Content))
                     annotationView.CanShowCallout = true;
 
+                annotationView.Draggable = marker.Draggable;
+
                 return annotationView;
             }
 

@@ -72,7 +72,10 @@ namespace AppShell.Samples.NativeMaps
 
         public void RemoveMarkers()
         {
-            Markers1.Clear();
+            //Markers1.Clear();
+            //Markers1[0].Icon = "underground";
+            Markers1[0].Center = new Location(48.23, 16.37);
+            Markers1[1].Icon = "bus";
         }
     }
 }

@@ -1,7 +1,6 @@
 using Android.Gms.Maps.Model;
 using AppShell.NativeMaps.Mobile;
 using AppShell.NativeMaps.Mobile.Android;
-using Java.Net;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
@@ -14,21 +13,6 @@ using GMaps = Android.Gms.Maps;
 
 namespace AppShell.NativeMaps.Mobile.Android
 {
-    public class UrlTileOverlayProvider : UrlTileProvider
-    {
-        private UrlTileOverlay urlTileOverlay;
-
-        public UrlTileOverlayProvider(UrlTileOverlay urlTileOverlay) : base(urlTileOverlay.TileWidth, urlTileOverlay.TileHeight)
-        {
-            this.urlTileOverlay = urlTileOverlay;
-        }
-
-        public override URL GetTileUrl(int x, int y, int zoom)
-        {
-            return new URL(urlTileOverlay.Url.Replace("{z}", zoom.ToString()).Replace("{y}", y.ToString()).Replace("{x}", x.ToString()));            
-        }
-    }
-
     public class MapViewRenderer : ViewRenderer<MapView, GMaps.MapView>, GMaps.IOnMapReadyCallback
     {
         private GMaps.GoogleMap googleMap;
@@ -133,8 +117,7 @@ namespace AppShell.NativeMaps.Mobile.Android
             if (e.Action == NotifyCollectionChangedAction.Reset)
             {
                 foreach (var marker in markers)
-                    marker.Value.Remove();
-                markers.Clear();
+                    RemoveMarker(marker.Key);
             }
             else if (e.Action == NotifyCollectionChangedAction.Add)
             {
@@ -144,10 +127,7 @@ namespace AppShell.NativeMaps.Mobile.Android
             else if (e.Action == NotifyCollectionChangedAction.Remove)
             {
                 foreach (Marker marker in e.OldItems)
-                {
-                    markers[marker].Remove();
-                    markers.Remove(marker);
-                }
+                    RemoveMarker(marker);
             }
         }
 
@@ -167,6 +147,34 @@ namespace AppShell.NativeMaps.Mobile.Android
             options.SetSnippet(marker.Content);
 
             markers.Add(marker, googleMap.AddMarker(options));
+
+            marker.PropertyChanged += Marker_PropertyChanged;
+        }
+
+        private void RemoveMarker(Marker marker)
+        {
+            marker.PropertyChanged -= Marker_PropertyChanged;
+
+            markers[marker].Remove();
+            markers.Remove(marker);
+        }
+
+        private void Marker_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            Marker marker = sender as Marker;
+
+            switch (e.PropertyName)
+            {
+                case "Center": markers[marker].Position = new LatLng(marker.Center.Latitude, marker.Center.Longitude); break;
+                case "Icon":
+                    {
+                        if (!string.IsNullOrEmpty(marker.Icon))
+                            markers[marker].SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(marker.Icon)));                        
+                        break;
+                    }
+                case "Title": markers[marker].Title = marker.Title; break;
+                case "Content": markers[marker].Snippet = marker.Icon; break;
+            }
         }
 
         private void SetCenter()

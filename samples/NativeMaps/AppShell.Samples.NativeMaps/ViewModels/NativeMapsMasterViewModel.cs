@@ -49,6 +49,17 @@ namespace AppShell.Samples.NativeMaps
                 Center = new Location(48.21, 16.37),
                 MapType = MapType.Satellite
             })));
+
+            Items.Add(new ViewModelMenuItem("Two Way Map", TypeConfiguration.Create<TwoWayMapViewModel>(new
+            {
+                Title = "Two Way Map",
+                ZoomLevel = 12.0,
+                Center = new Location(48.21, 16.37),
+                Markers = new ObservableCollection<Marker>(new List<Marker>()
+                {
+                    new Marker() { Center = new Location(48.21, 16.37), Draggable = true }
+                })
+            })));
         }        
     }
 }

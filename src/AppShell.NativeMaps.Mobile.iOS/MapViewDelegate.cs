@@ -1,6 +1,7 @@
 ﻿using Foundation;
 using MapKit;
 using ObjCRuntime;
+using System;
 using UIKit;
 
 namespace AppShell.NativeMaps.Mobile.iOS
@@ -8,6 +9,13 @@ namespace AppShell.NativeMaps.Mobile.iOS
     public class MapViewDelegate : MKMapViewDelegate
     {
         static string annotationId = "MarkerAnnotation";
+
+        private MapView mapViewElement;
+
+        public MapViewDelegate(MapView mapView)
+        {
+            this.mapViewElement = mapView;
+        }
 
         public override MKAnnotationView GetViewForAnnotation(MKMapView mapView, IMKAnnotation annotation)
         {
@@ -42,6 +50,12 @@ namespace AppShell.NativeMaps.Mobile.iOS
                 return new MKTileOverlayRenderer((MKTileOverlay)nsObject);
 
             return null;
+        }
+
+        public override void RegionChanged(MKMapView mapView, bool animated)
+        {
+            //mapViewElement.ZoomLevel = Math.Log(45.0 * mapViewElement.Width / mapView.Region.Span.LongitudeDelta) / Math.Log(2) - 6.0;
+            //mapViewElement.Center = new Location(mapView.Region.Center.Latitude, mapView.Region.Center.Longitude);
         }
     }
 }

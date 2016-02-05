@@ -86,10 +86,10 @@ namespace AppShell.NativeMaps.Mobile.iOS
                     }
                 }
 
-                Control.Delegate = new MapViewDelegate();
+                Control.Delegate = new MapViewDelegate(Element);
             }
         }
-
+        
         private void Markers_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             if (e.Action == NotifyCollectionChangedAction.Reset)

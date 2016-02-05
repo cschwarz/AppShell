@@ -39,7 +39,7 @@ namespace AppShell.NativeMaps.Mobile.Android
             }
 
             if (e.OldElement != null)
-            {
+            {                
                 foreach (var marker in markers)
                     marker.Value.Remove();
                 markers.Clear();
@@ -98,6 +98,8 @@ namespace AppShell.NativeMaps.Mobile.Android
                     googleMap.AddTileOverlay(options);
                 }
             }
+
+            googleMap.CameraChange += GoogleMap_CameraChange;
         }
 
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -110,6 +112,12 @@ namespace AppShell.NativeMaps.Mobile.Android
                 SetCenter();
             else if (e.PropertyName == MapView.MapTypeProperty.PropertyName)
                 SetMapType();
+        }
+
+        private void GoogleMap_CameraChange(object sender, GMaps.GoogleMap.CameraChangeEventArgs e)
+        {
+            Element.Center = new Location(e.Position.Target.Latitude, e.Position.Target.Longitude);
+            Element.ZoomLevel = e.Position.Zoom;
         }
 
         private void Markers_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)

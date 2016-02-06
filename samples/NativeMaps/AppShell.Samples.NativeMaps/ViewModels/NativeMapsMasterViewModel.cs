@@ -57,7 +57,8 @@ namespace AppShell.Samples.NativeMaps
                 Center = new Location(48.21, 16.37),
                 Markers = new ObservableCollection<Marker>(new List<Marker>()
                 {
-                    new Marker() { Center = new Location(48.21, 16.37), Draggable = true }
+                    new Marker() { Center = new Location(48.23, 16.37), Draggable = true },
+                    new Marker() { Center = new Location(48.19, 16.37), Draggable = true }
                 })
             })));
         }        

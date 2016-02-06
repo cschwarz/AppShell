@@ -17,11 +17,11 @@ namespace AppShell.NativeMaps.Mobile.iOS
 {
     public class MapViewRenderer : ViewRenderer<MapView, MKMapView>
     {
-        private Dictionary<Marker, MarkerAnnotation> markers;
+        public TwoWayDictionary<Marker, MarkerAnnotation> Markers { get; private set; }
 
         public MapViewRenderer()
         {
-            markers = new Dictionary<Marker, MarkerAnnotation>();
+            Markers = new TwoWayDictionary<Marker, MarkerAnnotation>();
         }
 
         protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
@@ -38,8 +38,8 @@ namespace AppShell.NativeMaps.Mobile.iOS
             {
                 e.OldElement.SizeChanged -= SizeChanged;
 
-                Control.RemoveAnnotations(markers.Select(m => m.Value).ToArray());
-                markers.Clear();
+                Control.RemoveAnnotations(Markers.Select(m => m.Value).ToArray());
+                Markers.Clear();
 
                 if (e.OldElement.Markers != null)
                 {
@@ -86,7 +86,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
                     }
                 }
 
-                Control.Delegate = new MapViewDelegate(Element);
+                Control.Delegate = new MapViewDelegate(this, Element);
             }
         }
         
@@ -94,7 +94,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
         {
             if (e.Action == NotifyCollectionChangedAction.Reset)
             {
-                foreach (var marker in markers)
+                foreach (var marker in Markers)
                     RemoveMarker(marker.Key);
             }
             else if (e.Action == NotifyCollectionChangedAction.Add)
@@ -117,7 +117,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
         {
             MarkerAnnotation annotation = new MarkerAnnotation(marker);
             Control.AddAnnotation(annotation);
-            markers.Add(marker, annotation);
+            Markers.Add(marker, annotation);
 
             marker.PropertyChanged += Marker_PropertyChanged;
         }
@@ -126,15 +126,15 @@ namespace AppShell.NativeMaps.Mobile.iOS
         {
             marker.PropertyChanged -= Marker_PropertyChanged;
 
-            Control.RemoveAnnotation(markers[marker]);
-            markers.Remove(marker);
+            Control.RemoveAnnotation(Markers[marker]);
+            Markers.Remove(marker);
         }
 
         private void Marker_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             Marker marker = sender as Marker;
-            Control.RemoveAnnotation(markers[marker]);
-            Control.AddAnnotation(markers[marker]);            
+            Control.RemoveAnnotation(Markers[marker]);
+            Control.AddAnnotation(Markers[marker]);            
         }
 
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)

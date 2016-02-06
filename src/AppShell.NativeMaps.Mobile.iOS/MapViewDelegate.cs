@@ -10,10 +10,12 @@ namespace AppShell.NativeMaps.Mobile.iOS
     {
         static string annotationId = "MarkerAnnotation";
 
+        private MapViewRenderer mapViewRenderer;
         private MapView mapViewElement;
 
-        public MapViewDelegate(MapView mapView)
+        public MapViewDelegate(MapViewRenderer mapViewRenderer, MapView mapView)
         {
+            this.mapViewRenderer = mapViewRenderer;
             this.mapViewElement = mapView;
         }
 
@@ -56,6 +58,12 @@ namespace AppShell.NativeMaps.Mobile.iOS
         {
             //mapViewElement.ZoomLevel = Math.Log(45.0 * mapViewElement.Width / mapView.Region.Span.LongitudeDelta) / Math.Log(2) - 6.0;
             //mapViewElement.Center = new Location(mapView.Region.Center.Latitude, mapView.Region.Center.Longitude);
+        }
+
+        public override void DidSelectAnnotationView(MKMapView mapView, MKAnnotationView view)
+        {
+            if (view.Annotation is MarkerAnnotation)
+                mapViewElement.SelectedMarker = mapViewRenderer.Markers[view.Annotation as MarkerAnnotation];
         }
     }
 }

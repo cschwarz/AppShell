@@ -39,6 +39,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Attributes\ViewModelAttribute.cs" />
+    <Compile Include="Collections\LambdaEqualityComparer.cs" />
+    <Compile Include="Collections\TwoWayDictionary.cs" />
     <Compile Include="Enums\Platform.cs" />
     <Compile Include="Exceptions\ViewNotFoundException.cs" />
     <Compile Include="Resolutions\IViewModelResolution.cs" />

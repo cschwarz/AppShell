@@ -16,11 +16,11 @@ namespace AppShell.NativeMaps.Mobile.Android
     public class MapViewRenderer : ViewRenderer<MapView, GMaps.MapView>, GMaps.IOnMapReadyCallback
     {
         private GMaps.GoogleMap googleMap;
-        private Dictionary<Marker, GMaps.Model.Marker> markers;
+        private TwoWayDictionary<Marker, GMaps.Model.Marker> markers;
 
         public MapViewRenderer()
         {
-            markers = new Dictionary<Marker, GMaps.Model.Marker>();
+            markers = new TwoWayDictionary<Marker, GMaps.Model.Marker>(new LambdaEqualityComparer<GMaps.Model.Marker>((m1, m2) => m1.Id == m2.Id));
         }
         
         protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
@@ -100,6 +100,7 @@ namespace AppShell.NativeMaps.Mobile.Android
             }
 
             googleMap.CameraChange += GoogleMap_CameraChange;
+            googleMap.MarkerClick += GoogleMap_MarkerClick;
         }
 
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -118,6 +119,11 @@ namespace AppShell.NativeMaps.Mobile.Android
         {
             Element.Center = new Location(e.Position.Target.Latitude, e.Position.Target.Longitude);
             Element.ZoomLevel = e.Position.Zoom;
+        }
+
+        private void GoogleMap_MarkerClick(object sender, GMaps.GoogleMap.MarkerClickEventArgs e)
+        {
+            Element.SelectedMarker = markers[e.Marker];
         }
 
         private void Markers_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)

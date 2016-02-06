@@ -38,6 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Converters\LocationConverter.cs" />
+    <Compile Include="Converters\MarkerConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\MultipleMapView.xaml.cs">
       <DependentUpon>MultipleMapView.xaml</DependentUpon>

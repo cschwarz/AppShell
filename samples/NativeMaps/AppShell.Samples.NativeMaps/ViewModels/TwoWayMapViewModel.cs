@@ -34,5 +34,19 @@ namespace AppShell.Samples.NativeMaps
         }
                 
         public ObservableCollection<Marker> Markers { get; set; }
+
+        private Marker selectedMarker;
+        public Marker SelectedMarker
+        {
+            get { return selectedMarker; }
+            set
+            {
+                if (selectedMarker != value)
+                {
+                    selectedMarker = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
     }
 }

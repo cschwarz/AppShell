@@ -22,6 +22,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
         public override void SetCoordinate(CLLocationCoordinate2D value)
         {
             coordinate = value;
+            Marker.Center = new Location(value.Latitude, value.Longitude);
         }
     }
 }

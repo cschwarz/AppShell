@@ -101,8 +101,10 @@ namespace AppShell.NativeMaps.Mobile.Android
 
             googleMap.CameraChange += GoogleMap_CameraChange;
             googleMap.MarkerClick += GoogleMap_MarkerClick;
+            googleMap.MarkerDrag += GoogleMap_MarkerDrag;
+            googleMap.MarkerDragEnd += GoogleMap_MarkerDragEnd;
         }
-
+        
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
@@ -124,6 +126,16 @@ namespace AppShell.NativeMaps.Mobile.Android
         private void GoogleMap_MarkerClick(object sender, GMaps.GoogleMap.MarkerClickEventArgs e)
         {
             Element.SelectedMarker = markers[e.Marker];
+        }
+
+        private void GoogleMap_MarkerDrag(object sender, GMaps.GoogleMap.MarkerDragEventArgs e)
+        {
+            markers[e.Marker].Center = new Location(e.Marker.Position.Latitude, e.Marker.Position.Longitude);            
+        }
+
+        private void GoogleMap_MarkerDragEnd(object sender, GMaps.GoogleMap.MarkerDragEndEventArgs e)
+        {
+            markers[e.Marker].Center = new Location(e.Marker.Position.Latitude, e.Marker.Position.Longitude);
         }
 
         private void Markers_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)

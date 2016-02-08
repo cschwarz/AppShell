@@ -3,7 +3,6 @@ using AppShell.NativeMaps.Mobile.iOS;
 using CoreLocation;
 using MapKit;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
@@ -37,12 +36,12 @@ namespace AppShell.NativeMaps.Mobile.iOS
             if (e.OldElement != null)
             {
                 e.OldElement.SizeChanged -= SizeChanged;
-
-                Control.RemoveAnnotations(Markers.Select(m => m.Value).ToArray());
-                Markers.Clear();
-
+                
                 if (e.OldElement.Markers != null)
                 {
+                    foreach (Marker marker in e.OldElement.Markers)
+                        RemoveMarker(marker);
+
                     if (e.OldElement.Markers is ObservableCollection<Marker>)
                         (e.OldElement.Markers as ObservableCollection<Marker>).CollectionChanged -= Markers_CollectionChanged;
                 }
@@ -94,8 +93,8 @@ namespace AppShell.NativeMaps.Mobile.iOS
         {
             if (e.Action == NotifyCollectionChangedAction.Reset)
             {
-                foreach (var marker in Markers)
-                    RemoveMarker(marker.Key);
+                foreach (Marker marker in Markers.Select(m => m.Key).ToList())
+                    RemoveMarker(marker);
             }
             else if (e.Action == NotifyCollectionChangedAction.Add)
             {

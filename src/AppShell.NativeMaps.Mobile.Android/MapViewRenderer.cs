@@ -1,10 +1,10 @@
 using Android.Gms.Maps.Model;
 using AppShell.NativeMaps.Mobile;
 using AppShell.NativeMaps.Mobile.Android;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
+using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using GMaps = Android.Gms.Maps;
@@ -39,13 +39,12 @@ namespace AppShell.NativeMaps.Mobile.Android
             }
 
             if (e.OldElement != null)
-            {                
-                foreach (var marker in markers)
-                    marker.Value.Remove();
-                markers.Clear();
-
+            {   
                 if (e.OldElement.Markers != null)
                 {
+                    foreach (Marker marker in e.OldElement.Markers)
+                        RemoveMarker(marker);
+
                     if (e.OldElement.Markers is ObservableCollection<Marker>)
                         (e.OldElement.Markers as ObservableCollection<Marker>).CollectionChanged -= Markers_CollectionChanged;
                 }
@@ -142,8 +141,8 @@ namespace AppShell.NativeMaps.Mobile.Android
         {
             if (e.Action == NotifyCollectionChangedAction.Reset)
             {
-                foreach (var marker in markers)
-                    RemoveMarker(marker.Key);
+                foreach (Marker marker in markers.Select(m => m.Key).ToList())
+                    RemoveMarker(marker);
             }
             else if (e.Action == NotifyCollectionChangedAction.Add)
             {

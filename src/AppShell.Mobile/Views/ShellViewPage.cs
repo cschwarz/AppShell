@@ -1,7 +1,8 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
+using System.ComponentModel;
+using System.Linq;
 using Xamarin.Forms;
 
 namespace AppShell.Mobile
@@ -25,23 +26,74 @@ namespace AppShell.Mobile
             ShellViewPage shellViewPage = (ShellViewPage)bindable;
 
             if (oldValue is ObservableCollection<ToolbarItemViewModel>)
-                (oldValue as ObservableCollection<ToolbarItemViewModel>).CollectionChanged -= ShellToolbarItems_CollectionChanged;
+                (oldValue as ObservableCollection<ToolbarItemViewModel>).CollectionChanged -= shellViewPage.ShellToolbarItems_CollectionChanged;
             if (newValue != null)
             {
                 foreach (ToolbarItemViewModel item in newValue)
-                    shellViewPage.ToolbarItems.Add(new ToolbarItem() { Text = item.Title, Icon = item.Icon, Order = (Xamarin.Forms.ToolbarItemOrder)item.Order, Priority = item.Priority, Command = item.Command });
+                    shellViewPage.AddToolbarItem(item);
 
                 if (newValue is ObservableCollection<ToolbarItemViewModel>)
-                    (newValue as ObservableCollection<ToolbarItemViewModel>).CollectionChanged += ShellToolbarItems_CollectionChanged;
+                    (newValue as ObservableCollection<ToolbarItemViewModel>).CollectionChanged += shellViewPage.ShellToolbarItems_CollectionChanged;
             }
         }
 
-        private static void ShellToolbarItems_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        private void AddToolbarItem(ToolbarItemViewModel item)
         {
+            ToolbarItem nativeItem = new ToolbarItem() { Text = item.Title, Icon = item.Icon, Order = (Xamarin.Forms.ToolbarItemOrder)item.Order, Priority = item.Priority, Command = item.Command };
+
+            item.PropertyChanged += ToolbarItemViewModel_PropertyChanged;
+
+            ToolbarItems.Add(nativeItem);
+            toolbarItemMapping.Add(item, nativeItem);
         }
+
+        private void RemoveToolbarItem(ToolbarItemViewModel item)
+        {
+            item.PropertyChanged -= ToolbarItemViewModel_PropertyChanged;
+
+            ToolbarItems.Remove(toolbarItemMapping[item]);
+            toolbarItemMapping.Remove(item);
+        }
+
+        private void ToolbarItemViewModel_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            ToolbarItemViewModel item = sender as ToolbarItemViewModel;
+
+            switch (e.PropertyName)
+            {
+                case "Title": toolbarItemMapping[item].Text = item.Title; break;
+                case "Icon": toolbarItemMapping[item].Icon = item.Icon; break;
+                case "Order": toolbarItemMapping[item].Order = (Xamarin.Forms.ToolbarItemOrder)item.Order; break;
+                case "Priority": toolbarItemMapping[item].Priority = item.Priority; break;
+                case "Command": toolbarItemMapping[item].Command = item.Command; break;
+            }
+        }
+
+        private void ShellToolbarItems_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            if (e.Action == NotifyCollectionChangedAction.Reset)
+            {
+                foreach (ToolbarItemViewModel item in toolbarItemMapping.Select(i => i.Key).ToList())
+                    RemoveToolbarItem(item);
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Add)
+            {
+                foreach (ToolbarItemViewModel item in e.NewItems)
+                    AddToolbarItem(item);
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Remove)
+            {
+                foreach (ToolbarItemViewModel item in e.OldItems)
+                    RemoveToolbarItem(item);
+            }            
+        }
+
+        private Dictionary<ToolbarItemViewModel, ToolbarItem> toolbarItemMapping;
 
         public ShellViewPage()
         {
+            toolbarItemMapping = new Dictionary<ToolbarItemViewModel, ToolbarItem>();
+
             SetBinding(HasNavigationBarProperty, new Binding("HasNavigationBar"));
             SetBinding(ShellToolbarItemsProperty, new Binding("ToolbarItems"));
         }

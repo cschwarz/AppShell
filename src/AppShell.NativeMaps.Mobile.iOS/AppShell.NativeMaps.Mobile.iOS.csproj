@@ -37,7 +37,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Extensions\MapTypeExtensions.cs" />
+    <Compile Include="MapViewDelegate.cs" />
     <Compile Include="MapViewRenderer.cs" />
+    <Compile Include="MarkerAnnotation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

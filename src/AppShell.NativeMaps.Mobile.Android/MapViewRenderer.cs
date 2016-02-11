@@ -1,12 +1,10 @@
 using Android.Gms.Maps.Model;
 using AppShell.NativeMaps.Mobile;
 using AppShell.NativeMaps.Mobile.Android;
-using Java.Net;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
-using System.IO;
+using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using GMaps = Android.Gms.Maps;
@@ -15,29 +13,14 @@ using GMaps = Android.Gms.Maps;
 
 namespace AppShell.NativeMaps.Mobile.Android
 {
-    public class UrlTileOverlayProvider : UrlTileProvider
-    {
-        private UrlTileOverlay urlTileOverlay;
-
-        public UrlTileOverlayProvider(UrlTileOverlay urlTileOverlay) : base(urlTileOverlay.TileWidth, urlTileOverlay.TileHeight)
-        {
-            this.urlTileOverlay = urlTileOverlay;
-        }
-
-        public override URL GetTileUrl(int x, int y, int zoom)
-        {
-            return new URL(urlTileOverlay.Url.Replace("{z}", zoom.ToString()).Replace("{y}", y.ToString()).Replace("{x}", x.ToString()));            
-        }
-    }
-
     public class MapViewRenderer : ViewRenderer<MapView, GMaps.MapView>, GMaps.IOnMapReadyCallback
     {
         private GMaps.GoogleMap googleMap;
-        private Dictionary<Marker, GMaps.Model.Marker> markers;
+        private TwoWayDictionary<Marker, GMaps.Model.Marker> markers;
 
         public MapViewRenderer()
         {
-            markers = new Dictionary<Marker, GMaps.Model.Marker>();
+            markers = new TwoWayDictionary<Marker, GMaps.Model.Marker>(new LambdaEqualityComparer<GMaps.Model.Marker>((m1, m2) => m1.Id == m2.Id));
         }
         
         protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
@@ -56,13 +39,12 @@ namespace AppShell.NativeMaps.Mobile.Android
             }
 
             if (e.OldElement != null)
-            {
-                foreach (var marker in markers)
-                    marker.Value.Remove();
-                markers.Clear();
-
+            {   
                 if (e.OldElement.Markers != null)
                 {
+                    foreach (Marker marker in e.OldElement.Markers)
+                        RemoveMarker(marker);
+
                     if (e.OldElement.Markers is ObservableCollection<Marker>)
                         (e.OldElement.Markers as ObservableCollection<Marker>).CollectionChanged -= Markers_CollectionChanged;
                 }
@@ -115,8 +97,13 @@ namespace AppShell.NativeMaps.Mobile.Android
                     googleMap.AddTileOverlay(options);
                 }
             }
-        }
 
+            googleMap.CameraChange += GoogleMap_CameraChange;
+            googleMap.MarkerClick += GoogleMap_MarkerClick;
+            googleMap.MarkerDrag += GoogleMap_MarkerDrag;
+            googleMap.MarkerDragEnd += GoogleMap_MarkerDragEnd;
+        }
+        
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
@@ -129,18 +116,43 @@ namespace AppShell.NativeMaps.Mobile.Android
                 SetMapType();
         }
 
+        private void GoogleMap_CameraChange(object sender, GMaps.GoogleMap.CameraChangeEventArgs e)
+        {
+            Element.Center = new Location(e.Position.Target.Latitude, e.Position.Target.Longitude);
+            Element.ZoomLevel = e.Position.Zoom;
+        }
+
+        private void GoogleMap_MarkerClick(object sender, GMaps.GoogleMap.MarkerClickEventArgs e)
+        {
+            Element.SelectedMarker = markers[e.Marker];
+        }
+
+        private void GoogleMap_MarkerDrag(object sender, GMaps.GoogleMap.MarkerDragEventArgs e)
+        {
+            markers[e.Marker].Center = new Location(e.Marker.Position.Latitude, e.Marker.Position.Longitude);            
+        }
+
+        private void GoogleMap_MarkerDragEnd(object sender, GMaps.GoogleMap.MarkerDragEndEventArgs e)
+        {
+            markers[e.Marker].Center = new Location(e.Marker.Position.Latitude, e.Marker.Position.Longitude);
+        }
+
         private void Markers_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             if (e.Action == NotifyCollectionChangedAction.Reset)
             {
-                foreach (var marker in markers)
-                    marker.Value.Remove();
-                markers.Clear();
+                foreach (Marker marker in markers.Select(m => m.Key).ToList())
+                    RemoveMarker(marker);
             }
             else if (e.Action == NotifyCollectionChangedAction.Add)
             {
                 foreach (Marker marker in e.NewItems)
                     AddMarker(marker);
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Remove)
+            {
+                foreach (Marker marker in e.OldItems)
+                    RemoveMarker(marker);
             }
         }
 
@@ -154,12 +166,42 @@ namespace AppShell.NativeMaps.Mobile.Android
             options.SetPosition(new LatLng(marker.Center.Latitude, marker.Center.Longitude));
 
             if (!string.IsNullOrEmpty(marker.Icon))
-                options.SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(Path.GetFileNameWithoutExtension(marker.Icon))));
+                options.SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(marker.Icon)));
 
             options.SetTitle(marker.Title);
             options.SetSnippet(marker.Content);
+            options.Draggable(marker.Draggable);
 
             markers.Add(marker, googleMap.AddMarker(options));
+
+            marker.PropertyChanged += Marker_PropertyChanged;
+        }
+
+        private void RemoveMarker(Marker marker)
+        {
+            marker.PropertyChanged -= Marker_PropertyChanged;
+
+            markers[marker].Remove();
+            markers.Remove(marker);
+        }
+
+        private void Marker_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            Marker marker = sender as Marker;
+
+            switch (e.PropertyName)
+            {
+                case "Center": markers[marker].Position = new LatLng(marker.Center.Latitude, marker.Center.Longitude); break;
+                case "Icon":
+                    {
+                        if (!string.IsNullOrEmpty(marker.Icon))
+                            markers[marker].SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(marker.Icon)));                        
+                        break;
+                    }
+                case "Title": markers[marker].Title = marker.Title; break;
+                case "Content": markers[marker].Snippet = marker.Icon; break;
+                case "Draggable": markers[marker].Draggable = marker.Draggable; break;
+            }
         }
 
         private void SetCenter()

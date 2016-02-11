@@ -127,6 +127,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
+    <BundleResource Include="Resources\Icon16.png" />
+    <BundleResource Include="Resources\Icon24.png" />
+    <BundleResource Include="Resources\Icon32.png" />
+    <BundleResource Include="Resources\Icon48.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\AppShell.Mobile.iOS\AppShell.Mobile.iOS.csproj">

@@ -46,6 +46,20 @@ namespace AppShell.NativeMaps
             }
         }
 
+        private Marker selectedMarker;
+        public Marker SelectedMarker
+        {
+            get { return selectedMarker; }
+            set
+            {
+                if (selectedMarker != value)
+                {
+                    selectedMarker = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         public ObservableCollection<Marker> Markers { get; set; }
         public ObservableCollection<TileOverlay> TileOverlays { get; set; }
 

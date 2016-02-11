@@ -27,7 +27,7 @@ namespace AppShell.Samples.Navigation
 
         public void OpenViewModel2()
         {
-            serviceDispatcher.Dispatch<INavigationService>(n => n.Push<ViewModel2>(replace: true));
+            serviceDispatcher.Dispatch<INavigationService>(ShellNames.Stack, n => n.Push<ViewModel2>(replace: true));
         }
 
         public void ShowMessage()

@@ -53,6 +53,9 @@ namespace AppShell
         {
             IViewModel viewModel = viewModelFactory.GetViewModel(viewModelType, data);
 
+            foreach (IViewModel item in Items)
+                item.Dispose();
+
             Items.Clear();
             Items.Add(viewModel);
             ActiveItem = viewModel;

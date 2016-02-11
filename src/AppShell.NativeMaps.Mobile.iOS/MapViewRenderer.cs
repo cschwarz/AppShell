@@ -1,83 +1,26 @@
 ﻿using AppShell.NativeMaps.Mobile;
 using AppShell.NativeMaps.Mobile.iOS;
 using CoreLocation;
-using Foundation;
 using MapKit;
-using ObjCRuntime;
 using System;
-using UIKit;
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.iOS;
-using System.ComponentModel;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
-using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
-using System.IO;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportRenderer(typeof(MapView), typeof(MapViewRenderer))]
 
 namespace AppShell.NativeMaps.Mobile.iOS
 {
-    public class MapViewDelegate : MKMapViewDelegate
-    {
-        static string annotationId = "MarkerAnnotation";
-
-        public override MKAnnotationView GetViewForAnnotation(MKMapView mapView, IMKAnnotation annotation)
-        {
-            if (annotation is MarkerAnnotation)
-            {
-                Marker marker = (annotation as MarkerAnnotation).Marker;
-                
-                MKAnnotationView annotationView = mapView.DequeueReusableAnnotation(annotationId);
-
-                if (annotationView == null)
-                    annotationView = string.IsNullOrEmpty(marker.Icon) ? new MKPinAnnotationView(annotation, annotationId) : new MKAnnotationView(annotation, annotationId);
-
-                if (!string.IsNullOrEmpty(marker.Icon))
-                    annotationView.Image = UIImage.FromBundle(Path.GetFileNameWithoutExtension(marker.Icon));
-
-                if (!string.IsNullOrEmpty(marker.Title) || !string.IsNullOrEmpty(marker.Content))
-                    annotationView.CanShowCallout = true;
-
-                return annotationView;
-            }
-
-            return base.GetViewForAnnotation(mapView, annotation);
-        }
-
-        public override MKOverlayRenderer OverlayRenderer(MKMapView mapView, IMKOverlay overlay)
-        {
-            NSObject nsObject = Runtime.GetNSObject(overlay.Handle);
-
-            if (nsObject is MKTileOverlay)
-                return new MKTileOverlayRenderer((MKTileOverlay)nsObject);
-
-            return null;
-        }
-    }
-
-    public class MarkerAnnotation : MKAnnotation
-    {
-        public Marker Marker { get; private set; }
-
-        public MarkerAnnotation(Marker marker)
-        {
-            Marker = marker;
-        }
-
-        public override CLLocationCoordinate2D Coordinate { get { return new CLLocationCoordinate2D(Marker.Center.Latitude, Marker.Center.Longitude); } }
-        public override string Title { get { return Marker.Title; } }
-        public override string Subtitle { get { return Marker.Content; } }
-    }
-
     public class MapViewRenderer : ViewRenderer<MapView, MKMapView>
     {
-        private Dictionary<Marker, MarkerAnnotation> markers;
+        public TwoWayDictionary<Marker, MarkerAnnotation> Markers { get; private set; }
 
         public MapViewRenderer()
         {
-            markers = new Dictionary<Marker, MarkerAnnotation>();
+            Markers = new TwoWayDictionary<Marker, MarkerAnnotation>();
         }
 
         protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
@@ -93,12 +36,12 @@ namespace AppShell.NativeMaps.Mobile.iOS
             if (e.OldElement != null)
             {
                 e.OldElement.SizeChanged -= SizeChanged;
-
-                Control.RemoveAnnotations(markers.Select(m => m.Value).ToArray());
-                markers.Clear();
-
+                
                 if (e.OldElement.Markers != null)
                 {
+                    foreach (Marker marker in e.OldElement.Markers)
+                        RemoveMarker(marker);
+
                     if (e.OldElement.Markers is ObservableCollection<Marker>)
                         (e.OldElement.Markers as ObservableCollection<Marker>).CollectionChanged -= Markers_CollectionChanged;
                 }
@@ -142,21 +85,26 @@ namespace AppShell.NativeMaps.Mobile.iOS
                     }
                 }
 
-                Control.Delegate = new MapViewDelegate();
+                Control.Delegate = new MapViewDelegate(this, Element);
             }
         }
-
+        
         private void Markers_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             if (e.Action == NotifyCollectionChangedAction.Reset)
             {
-                Control.RemoveAnnotations(markers.Select(m => m.Value).ToArray());
-                markers.Clear();
+                foreach (Marker marker in Markers.Select(m => m.Key).ToList())
+                    RemoveMarker(marker);
             }
             else if (e.Action == NotifyCollectionChangedAction.Add)
             {
                 foreach (Marker marker in e.NewItems)
                     AddMarker(marker);
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Remove)
+            {
+                foreach (Marker marker in e.OldItems)
+                    RemoveMarker(marker);
             }
         }
 
@@ -168,9 +116,26 @@ namespace AppShell.NativeMaps.Mobile.iOS
         {
             MarkerAnnotation annotation = new MarkerAnnotation(marker);
             Control.AddAnnotation(annotation);
-            markers.Add(marker, annotation);
+            Markers.Add(marker, annotation);
+
+            marker.PropertyChanged += Marker_PropertyChanged;
         }
         
+        private void RemoveMarker(Marker marker)
+        {
+            marker.PropertyChanged -= Marker_PropertyChanged;
+
+            Control.RemoveAnnotation(Markers[marker]);
+            Markers.Remove(marker);
+        }
+
+        private void Marker_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            Marker marker = sender as Marker;
+            Control.RemoveAnnotation(Markers[marker]);
+            Control.AddAnnotation(Markers[marker]);            
+        }
+
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);

@@ -69,11 +69,13 @@ namespace AppShell
             IViewModel viewModel = viewModelFactory.GetViewModel(viewModelType, data);
             
             Items.Add(viewModel);
-            
+                        
             if (replace)
                 Items.Remove(ActiveItem);
 
             ActiveItem = viewModel;
+
+            ActiveItem.OnActivated();
 
             if (ViewModelPushed != null)
                 ViewModelPushed(this, viewModel);
@@ -90,6 +92,9 @@ namespace AppShell
                 ActiveItem = Items.Last();
             else
                 ActiveItem = null;
+
+            if (ActiveItem != null)
+                ActiveItem.OnActivated();
 
             if (ViewModelPopped != null)
                 ViewModelPopped(this, viewModel);

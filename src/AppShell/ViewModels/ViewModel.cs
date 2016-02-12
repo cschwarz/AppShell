@@ -123,6 +123,10 @@ namespace AppShell
         {
         }
 
+        public virtual void OnActivated()
+        {
+        }
+        
         public event PropertyChangedEventHandler PropertyChanged;
     }
 }

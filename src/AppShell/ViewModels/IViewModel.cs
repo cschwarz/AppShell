@@ -14,5 +14,6 @@ namespace AppShell
         bool IsLoading { get; set; }
         string LoadingText { get; set; }
         ObservableCollection<ToolbarItemViewModel> ToolbarItems { get; set; }
+        void OnActivated();
     }
 }

@@ -124,6 +124,7 @@ namespace AppShell.NativeMaps.Mobile.Android
 
         private void GoogleMap_MarkerClick(object sender, GMaps.GoogleMap.MarkerClickEventArgs e)
         {
+            e.Handled = false;
             Element.SelectedMarker = markers[e.Marker];
         }
 

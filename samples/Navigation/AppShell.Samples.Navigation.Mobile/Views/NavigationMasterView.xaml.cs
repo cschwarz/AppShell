@@ -1,5 +1,4 @@
-﻿using AppShell;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace AppShell.Samples.Navigation.Mobile.Views
 {

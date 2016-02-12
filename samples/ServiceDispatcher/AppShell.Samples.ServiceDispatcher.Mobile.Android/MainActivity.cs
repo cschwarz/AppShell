@@ -1,6 +1,5 @@
 ﻿using Android.App;
 using Android.Content.PM;
-using Android.OS;
 using AppShell.Mobile;
 using AppShell.Mobile.Android;
 

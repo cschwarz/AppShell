@@ -1,6 +1,4 @@
-﻿using AppShell;
-
-namespace AppShell.Templates
+﻿namespace AppShell.Templates
 {
     public class __shellname__ShellConfigurationProvider : ShellConfigurationProvider
     {

@@ -1,7 +1,6 @@
 ﻿using Foundation;
 using MapKit;
 using ObjCRuntime;
-using System;
 using UIKit;
 
 namespace AppShell.NativeMaps.Mobile.iOS

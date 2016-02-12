@@ -118,8 +118,8 @@ namespace AppShell.NativeMaps.Mobile.Android
 
         private void GoogleMap_CameraChange(object sender, GMaps.GoogleMap.CameraChangeEventArgs e)
         {
-            Element.Center = new Location(e.Position.Target.Latitude, e.Position.Target.Longitude);
-            Element.ZoomLevel = e.Position.Zoom;
+            //Element.Center = new Location(e.Position.Target.Latitude, e.Position.Target.Longitude);
+            //Element.ZoomLevel = e.Position.Zoom;
         }
 
         private void GoogleMap_MarkerClick(object sender, GMaps.GoogleMap.MarkerClickEventArgs e)

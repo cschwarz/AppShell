@@ -30,7 +30,7 @@ namespace AppShell
         public override void Dispose()
         {
             base.Dispose();
-            
+
             serviceDispatcher.Unsubscribe<IMasterDetailNavigationService>(this);
         }
 

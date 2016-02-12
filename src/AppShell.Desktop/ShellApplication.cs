@@ -18,13 +18,13 @@ namespace AppShell.Desktop
         {
             ShellCore.Container.RegisterSingleton<IPlatformProvider, DesktopPlatformProvider>();
             ShellCore.Container.RegisterSingleton<IViewFactory, DesktopViewFactory>();
-            ShellCore.Container.RegisterSingleton<IDataTemplateFactory, DesktopDataTemplateFactory>();            
+            ShellCore.Container.RegisterSingleton<IDataTemplateFactory, DesktopDataTemplateFactory>();
         }
 
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            
+
             ShellCore.InitializeContainer();
 
             ConfigurePlatform();
@@ -36,7 +36,7 @@ namespace AppShell.Desktop
         protected override void OnExit(ExitEventArgs e)
         {
             base.OnExit(e);
-            
+
             shellCore.Shutdown();
             ShellCore.ShutdownContainer();
         }
@@ -48,7 +48,7 @@ namespace AppShell.Desktop
                 Window previousWindow = MainWindow;
 
                 object view = ShellCore.Container.GetInstance<IViewFactory>().GetView(shellCore.ActiveShell);
-                
+
                 if (view is Window)
                 {
                     MainWindow = view as Window;
@@ -61,10 +61,10 @@ namespace AppShell.Desktop
 
                 if (previousWindow != null)
                     previousWindow.Close();
-                
+
                 MainWindow.DataContext = shellCore.ActiveShell;
                 MainWindow.Show();
             }
-        }        
+        }
     }
 }

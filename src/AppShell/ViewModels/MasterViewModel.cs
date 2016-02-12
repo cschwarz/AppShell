@@ -97,5 +97,5 @@ namespace AppShell
 
             Items = new ObservableCollection<MenuItem>();
         }
-    }    
+    }
 }

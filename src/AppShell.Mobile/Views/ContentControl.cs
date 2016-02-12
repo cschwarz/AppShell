@@ -12,8 +12,8 @@ namespace AppShell.Mobile
     {
         public static readonly BindableProperty ContentContextProperty = BindableProperty.Create<ContentControl, object>(x => x.ContentContext, null, propertyChanged: OnContentContextChanged);
 
-        private IViewFactory viewFactory;    
-            
+        private IViewFactory viewFactory;
+
         public ContentControl()
         {
             viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
@@ -29,8 +29,8 @@ namespace AppShell.Mobile
                 if (contentControl.Content != null)
                     contentControl.Content.BindingContext = newValue;
             }
-        }        
-        
+        }
+
         public object ContentContext
         {
             get { return (object)GetValue(ContentContextProperty); }

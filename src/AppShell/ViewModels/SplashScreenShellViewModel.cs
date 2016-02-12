@@ -6,5 +6,5 @@
         : base(serviceDispatcher, viewModelFactory)
         {
         }
-    }        
+    }
 }

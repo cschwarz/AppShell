@@ -23,7 +23,7 @@ namespace AppShell.Desktop.Views
 
         public static void UrlPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            WebBrowserView webBrowserView  = d as WebBrowserView;
+            WebBrowserView webBrowserView = d as WebBrowserView;
 
             if (e.NewValue != null)
             {
@@ -41,7 +41,7 @@ namespace AppShell.Desktop.Views
                 string html = (string)e.NewValue;
                 webBrowserView.WebBrowser.NavigateToString(html);
             }
-        }        
+        }
 
         public WebBrowserView()
         {
@@ -102,8 +102,8 @@ namespace AppShell.Desktop.Views
         public void Native(string message)
         {
             Message m = JsonConvert.DeserializeObject<Message>(message);
-            
-            switch(m.Action)
+
+            switch (m.Action)
             {
                 case "initialize": Initialize(); break;
                 case "dispatch": Dispatch(JsonConvert.DeserializeObject<DispatchData>(m.Data)); break;
@@ -111,14 +111,14 @@ namespace AppShell.Desktop.Views
                 case "unsubscribeEvent": UnsubscribeEvent(JsonConvert.DeserializeObject<UnsubscribeEventData>(m.Data)); break;
             }
         }
-        
+
         private void Initialize()
         {
             webBrowser.InvokeScript("eval", string.Format("serviceDispatcher._initializeCallback({0});", JsonConvert.SerializeObject(ShellCore.Container.GetInstance<IServiceDispatcher>().Services)));
-        }        
+        }
 
         private void Dispatch(DispatchData data)
-        {            
+        {
             for (int i = 0; i < data.Arguments.Length; i++)
             {
                 if (data.Arguments[i] is JArray)

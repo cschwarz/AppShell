@@ -37,7 +37,7 @@ namespace AppShell.Templates.Wizard
                 dte.Solution.Remove(dte.Solution.Projects.Cast<Project>().Where(p => p.Name.EndsWith(".Mobile.Android")).Single());
             }
 
-            AddNugetSolutionFolder();            
+            AddNugetSolutionFolder();
             SetStartupProject();
             RemoveKeepFiles();
         }
@@ -115,7 +115,7 @@ namespace AppShell.Templates.Wizard
                 solutionFolderProject.ProjectItems.AddFromFile(targetFile);
             }
         }
-        
+
         private void SetStartupProject()
         {
             dte.Solution.Properties.Item("StartupProject").Value = dte.Solution.Projects.Cast<Project>().Where(p => p.Name.EndsWith(".Desktop")).Single().Name;

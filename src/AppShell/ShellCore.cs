@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace AppShell
 {
-    public abstract class ShellCore : IShellNavigationService,INotifyPropertyChanged
+    public abstract class ShellCore : IShellNavigationService, INotifyPropertyChanged
     {
         public static Container Container { get; private set; }
         public static Platform CurrentPlatform { get; private set; }
@@ -31,7 +31,7 @@ namespace AppShell
         }
 
         public ObservableCollection<IViewModel> Shells { get; private set; }
-        
+
         protected IPluginProvider pluginProvider;
         protected IServiceDispatcher serviceDispatcher;
 
@@ -41,7 +41,7 @@ namespace AppShell
         {
             Container = new Container();
         }
-        
+
         public static void ShutdownContainer()
         {
             if (Container != null)
@@ -73,9 +73,9 @@ namespace AppShell
             Container.GetInstance<IViewModelFactory>().Initialize();
             Container.GetInstance<IViewFactory>().Initialize();
             Container.GetInstance<IServiceDispatcher>().Initialize();
-            
+
             pluginProvider = Container.GetInstance<IPluginProvider>();
-            
+
             serviceDispatcher = Container.GetInstance<IServiceDispatcher>();
             serviceDispatcher.Subscribe<IShellNavigationService>(this);
 
@@ -90,7 +90,7 @@ namespace AppShell
 
             pluginProvider.ShutdownPlugins();
         }
-        
+
         public void Push<TViewModel>(Dictionary<string, object> data = null) where TViewModel : ShellViewModel
         {
             Push(typeof(TViewModel), data);

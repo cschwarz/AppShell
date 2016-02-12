@@ -32,7 +32,7 @@ namespace AppShell.Samples.NativeMaps
                 }
             }
         }
-                
+
         public ObservableCollection<Marker> Markers { get; set; }
 
         private Marker selectedMarker;

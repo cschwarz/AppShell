@@ -41,7 +41,7 @@ namespace AppShell.Mobile.WinRT
                 if (Element.Source is HtmlWebViewSource)
                 {
                     HtmlWebViewSource htmlSource = Element.Source as HtmlWebViewSource;
-                    Control.NavigateToString(htmlSource.Html);   
+                    Control.NavigateToString(htmlSource.Html);
                 }
                 else if (Element.Source is UrlWebViewSource)
                 {

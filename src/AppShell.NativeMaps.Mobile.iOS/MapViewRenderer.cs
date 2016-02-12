@@ -36,7 +36,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
             if (e.OldElement != null)
             {
                 e.OldElement.SizeChanged -= SizeChanged;
-                
+
                 if (e.OldElement.Markers != null)
                 {
                     foreach (Marker marker in e.OldElement.Markers)
@@ -88,7 +88,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
                 Control.Delegate = new MapViewDelegate(this, Element);
             }
         }
-        
+
         private void Markers_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             if (e.Action == NotifyCollectionChangedAction.Reset)
@@ -120,7 +120,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
 
             marker.PropertyChanged += Marker_PropertyChanged;
         }
-        
+
         private void RemoveMarker(Marker marker)
         {
             marker.PropertyChanged -= Marker_PropertyChanged;
@@ -133,7 +133,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
         {
             Marker marker = sender as Marker;
             Control.RemoveAnnotation(Markers[marker]);
-            Control.AddAnnotation(Markers[marker]);            
+            Control.AddAnnotation(Markers[marker]);
         }
 
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)

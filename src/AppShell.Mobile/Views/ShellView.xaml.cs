@@ -11,7 +11,7 @@ namespace AppShell.Mobile.Views
 
         public View ShellContent { get { return (View)GetValue(ShellContentProperty); } set { SetValue(ShellContentProperty, value); } }
         public bool HasNavigationBar { get { return (bool)GetValue(HasNavigationBarProperty); } set { SetValue(HasNavigationBarProperty, value); } }
-        
+
         public static void ShellContentPropertyChanged(BindableObject d, View oldValue, View newValue)
         {
             ShellView shellView = d as ShellView;

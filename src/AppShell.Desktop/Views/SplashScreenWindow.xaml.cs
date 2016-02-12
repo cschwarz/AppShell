@@ -12,7 +12,7 @@ namespace AppShell.Desktop.Views
 
             DataContextChanged += SplashScreenWindow_DataContextChanged;
         }
-        
+
         private void SplashScreenWindow_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             if (e.OldValue != null)
@@ -25,7 +25,7 @@ namespace AppShell.Desktop.Views
             if (e.NewValue != null)
             {
                 ShellViewModel newShellViewModel = e.NewValue as ShellViewModel;
-                
+
                 newShellViewModel.CloseRequested += ShellViewModel_CloseRequested;
             }
         }
@@ -34,7 +34,7 @@ namespace AppShell.Desktop.Views
         {
             Close();
         }
-        
+
         protected override void OnRenderSizeChanged(SizeChangedInfo sizeInfo)
         {
             base.OnRenderSizeChanged(sizeInfo);

@@ -17,7 +17,7 @@ namespace AppShell.NativeMaps
                 }
             }
         }
-        
+
         private double zoomLevel;
         public double ZoomLevel
         {

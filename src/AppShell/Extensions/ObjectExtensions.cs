@@ -13,7 +13,7 @@ namespace System
                 return null;
 
             Type valueType = value.GetType();
-                        
+
             TypeInfo valueTypeInfo = valueType.GetTypeInfo();
             TypeInfo conversionTypeInfo = conversionType.GetTypeInfo();
 
@@ -35,7 +35,7 @@ namespace System
                     return array;
                 }
             }
-            else if (valueType.IsArray && 
+            else if (valueType.IsArray &&
                 conversionType.GenericTypeArguments.Length == 1 &&
                 conversionType.GetGenericTypeDefinition().MakeGenericType(typeof(object)).GetTypeInfo().IsAssignableFrom(typeof(List<object>).GetTypeInfo()))
             {
@@ -45,7 +45,7 @@ namespace System
                 if (valueArray != null)
                 {
                     IList list = (IList)Activator.CreateInstance(typeof(List<>).MakeGenericType(genericConversionType));
-                    
+
                     for (int i = 0; i < valueArray.Length; i++)
                         list.Add(valueArray.GetValue(i).ChangeType(genericConversionType));
 

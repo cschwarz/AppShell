@@ -12,13 +12,13 @@ namespace AppShell.Mobile
     public class StackShellPage : NavigationPage, IPageReady
     {
         public static readonly BindableProperty ViewModelsProperty = BindableProperty.Create<StackShellPage, IEnumerable<IViewModel>>(d => d.ViewModels, null, propertyChanged: ViewModelsPropertyChanged);
-                
+
         public IEnumerable<IViewModel> ViewModels { get { return (IEnumerable<IViewModel>)GetValue(ViewModelsProperty); } set { SetValue(ViewModelsProperty, value); } }
-        
+
         public static void ViewModelsPropertyChanged(BindableObject d, IEnumerable<IViewModel> oldValue, IEnumerable<IViewModel> newValue)
         {
             StackShellPage stackShellPage = d as StackShellPage;
-            
+
             if (oldValue != null)
             {
                 if (oldValue is ObservableCollection<IViewModel>)
@@ -75,17 +75,17 @@ namespace AppShell.Mobile
 
         private async void AddView(IViewModel viewModel)
         {
-            await PushAsync(ShellViewPage.Create(viewFactory.GetView(viewModel)));            
+            await PushAsync(ShellViewPage.Create(viewFactory.GetView(viewModel)));
             IsReady = true;
         }
-        
+
         private IViewFactory viewFactory;
 
         public StackShellPage()
         {
             viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
-            
+
             SetBinding(ViewModelsProperty, new Binding("Items"));
-        }        
+        }
     }
 }

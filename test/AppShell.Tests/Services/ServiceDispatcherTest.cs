@@ -78,7 +78,7 @@ namespace AppShell.Tests
     public interface IService2 : IService
     {
     }
-    
+
     public class Service2 : IService2
     {
         public string Name { get { return "Service2"; } }
@@ -332,7 +332,7 @@ namespace AppShell.Tests
             serviceDispatcher.Subscribe<IService1>(service1);
             Assert.Equal(3, serviceDispatcher.Dispatch<IService1, int>(s => s.ServiceMethod3(1, 2)).Single());
         }
-        
+
         [Fact]
         public void DispatchReflection_ServiceShouldReturnValue()
         {

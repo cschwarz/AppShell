@@ -33,7 +33,7 @@ namespace AppShell.Desktop
                 newShellViewModel.DetachViewModelRequested += ShellViewModel_DetachViewModelRequested;
             }
         }
-                
+
         private void ShellViewModel_CloseRequested(object sender, EventArgs e)
         {
             Close();

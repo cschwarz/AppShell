@@ -32,7 +32,7 @@ namespace AppShell.Samples.NativeMaps
                 ZoomLevel2 = 9.0,
                 Center2 = new Location(40.7536868, -73.9982661)
             })));
-            
+
             Items.Add(new ViewModelMenuItem("Tile Overlay Map", TypeConfiguration.Create<MapViewModel>(new
             {
                 Title = "Tile Overlay Map",
@@ -61,6 +61,6 @@ namespace AppShell.Samples.NativeMaps
                     new Marker() { Center = new Location(48.19, 16.37), Draggable = true }
                 })
             })));
-        }        
+        }
     }
 }

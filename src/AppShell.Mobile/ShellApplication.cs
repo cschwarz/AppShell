@@ -20,7 +20,7 @@ namespace AppShell.Mobile
             shellCore.PropertyChanged += ShellCore_PropertyChanged;
 
             ConfigurePlatform();
-            
+
             shellCore.Configure();
         }
 

@@ -14,6 +14,6 @@ namespace AppShell.Mobile.iOS
         public override IEnumerable<Assembly> GetAssemblies()
         {
             return AppDomain.CurrentDomain.GetAssemblies();
-        }        
+        }
     }
 }

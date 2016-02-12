@@ -4,7 +4,7 @@
     public class MobileViewModel2 : ViewModel2
     {
         public MobileViewModel2(IServiceDispatcher serviceDispatcher)
-            :  base(serviceDispatcher)
+            : base(serviceDispatcher)
         {
             Title = "MobileViewModel2";
         }

@@ -123,7 +123,7 @@ namespace AppShell
                     predicate(service);
             }
         }
-                
+
         public IEnumerable<TResult> Dispatch<T, TResult>(Func<T, TResult> predicate) where T : IService
         {
             List<TResult> results = new List<TResult>();
@@ -189,7 +189,7 @@ namespace AppShell
                 T service = subscribedServices[serviceType].Single(s => s.Name == instanceName) as T;
                 return predicate(service);
             }
-            
+
             return default(TResult);
         }
 
@@ -212,7 +212,7 @@ namespace AppShell
                     parameters = parameters.Select((p, i) => p.ChangeType(parameterInfos[i].ParameterType)).ToArray();
                 }
 
-                return method.Invoke(service, parameters);                
+                return method.Invoke(service, parameters);
             }
 
             return null;
@@ -235,7 +235,7 @@ namespace AppShell
 
             return eventRegistration;
         }
-        
+
         public EventRegistration SubscribeEvent(string serviceName, string eventName, object target, Action<object, object> callback)
         {
             if (!serviceNameTypeMapping.ContainsKey(serviceName))
@@ -245,11 +245,11 @@ namespace AppShell
 
             if (!eventRegistrations.ContainsKey(serviceType))
                 eventRegistrations.Add(serviceType, new List<EventRegistration>());
-            
+
             EventInfo eventInfo = serviceType.GetRuntimeEvent(eventName);
             Type eventType = eventInfo.EventHandlerType.GetRuntimeMethods().Single(m => m.Name == "Invoke").GetParameters()[1].ParameterType;
-            
-            MulticastDelegate handler = (MulticastDelegate)createEventHandlerMethod.MakeGenericMethod(eventType).Invoke(this, new object[] { callback });            
+
+            MulticastDelegate handler = (MulticastDelegate)createEventHandlerMethod.MakeGenericMethod(eventType).Invoke(this, new object[] { callback });
 
             Action<object> subscribe = s => { eventInfo.AddEventHandler(s, handler); };
             Action<object> unsubscribe = s => { eventInfo.RemoveEventHandler(s, handler); };

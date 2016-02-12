@@ -13,7 +13,7 @@ namespace AppShell.Samples.Todo.Mobile.WinRT
         {
             this.InitializeComponent();
 
-            Init();            
+            Init();
         }
     }
 }

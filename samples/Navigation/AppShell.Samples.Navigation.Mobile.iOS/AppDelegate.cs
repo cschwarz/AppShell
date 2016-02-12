@@ -21,7 +21,7 @@ namespace AppShell.Samples.Navigation.Mobile.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             var views = typeof(View1);
-            
+
             return base.FinishedLaunching(app, options);
         }
     }

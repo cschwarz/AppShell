@@ -22,7 +22,7 @@ namespace AppShell.NativeMaps.Mobile.Android
         {
             markers = new TwoWayDictionary<Marker, GMaps.Model.Marker>(new LambdaEqualityComparer<GMaps.Model.Marker>((m1, m2) => m1.Id == m2.Id));
         }
-        
+
         protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
         {
             base.OnElementChanged(e);
@@ -39,7 +39,7 @@ namespace AppShell.NativeMaps.Mobile.Android
             }
 
             if (e.OldElement != null)
-            {   
+            {
                 if (e.OldElement.Markers != null)
                 {
                     foreach (Marker marker in e.OldElement.Markers)
@@ -61,7 +61,7 @@ namespace AppShell.NativeMaps.Mobile.Android
                 InitializeElement();
             }
         }
-        
+
         public void OnMapReady(GMaps.GoogleMap googleMap)
         {
             this.googleMap = googleMap;
@@ -103,7 +103,7 @@ namespace AppShell.NativeMaps.Mobile.Android
             googleMap.MarkerDrag += GoogleMap_MarkerDrag;
             googleMap.MarkerDragEnd += GoogleMap_MarkerDragEnd;
         }
-        
+
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
@@ -130,7 +130,7 @@ namespace AppShell.NativeMaps.Mobile.Android
 
         private void GoogleMap_MarkerDrag(object sender, GMaps.GoogleMap.MarkerDragEventArgs e)
         {
-            markers[e.Marker].Center = new Location(e.Marker.Position.Latitude, e.Marker.Position.Longitude);            
+            markers[e.Marker].Center = new Location(e.Marker.Position.Latitude, e.Marker.Position.Longitude);
         }
 
         private void GoogleMap_MarkerDragEnd(object sender, GMaps.GoogleMap.MarkerDragEndEventArgs e)
@@ -196,7 +196,7 @@ namespace AppShell.NativeMaps.Mobile.Android
                 case "Icon":
                     {
                         if (!string.IsNullOrEmpty(marker.Icon))
-                            markers[marker].SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(marker.Icon)));                        
+                            markers[marker].SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(marker.Icon)));
                         break;
                     }
                 case "Title": markers[marker].Title = marker.Title; break;

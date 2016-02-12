@@ -14,7 +14,7 @@ namespace AppShell
         public ViewModelFactory(IPlatformProvider platformProvider, IViewModelResolution viewModelResolution)
         {
             this.platformProvider = platformProvider;
-            this.viewModelResolution = viewModelResolution;               
+            this.viewModelResolution = viewModelResolution;
         }
 
         public virtual void Initialize()

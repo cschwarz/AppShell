@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 namespace AppShell
 {
     public class ViewModel : IViewModel
-    {   
+    {
         private bool allowClose;
         public bool AllowClose
         {
@@ -33,7 +33,7 @@ namespace AppShell
                 }
             }
         }
-        
+
         private string name;
         public string Name
         {
@@ -61,7 +61,7 @@ namespace AppShell
                 }
             }
         }
-        
+
         private string icon;
         public string Icon
         {
@@ -126,7 +126,7 @@ namespace AppShell
         public virtual void OnActivated()
         {
         }
-        
+
         public event PropertyChangedEventHandler PropertyChanged;
     }
 }

@@ -14,7 +14,7 @@ namespace AppShell
         public ViewFactory(IPlatformProvider platformProvider, IViewResolution viewResolution)
         {
             this.platformProvider = platformProvider;
-            this.viewResolution = viewResolution;               
+            this.viewResolution = viewResolution;
         }
 
         public virtual void Initialize()
@@ -26,7 +26,7 @@ namespace AppShell
 
             viewMapping = viewResolution.GetViewMapping(types);
         }
-        
+
         public void Register<TViewModel, TView>()
         {
             viewMapping[typeof(TViewModel)] = typeof(TView);

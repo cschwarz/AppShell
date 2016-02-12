@@ -14,14 +14,14 @@ namespace AppShell.Mobile.WinRT
             ShellCore.InitializeContainer();
             ShellCore.Container.RegisterSingleton<IPlatformProvider, WinRTPlatformProvider>();
 
-            ConfigurePlatform();            
+            ConfigurePlatform();
         }
-        
+
         protected void Init()
         {
             LoadApplication(Activator.CreateInstance<TApplication>());
         }
-        
+
         protected virtual void ConfigurePlatform()
         {
         }

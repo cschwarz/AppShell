@@ -27,8 +27,8 @@ namespace AppShell
         void Subscribe<T>(T service) where T : IService;
         void Unsubscribe<T>(T service) where T : IService;
 
-        void Dispatch<T>(Action<T> predicate) where T : IService;        
-        IEnumerable<TResult> Dispatch<T, TResult>(Func<T, TResult> predicate) where T : IService;        
+        void Dispatch<T>(Action<T> predicate) where T : IService;
+        IEnumerable<TResult> Dispatch<T, TResult>(Func<T, TResult> predicate) where T : IService;
         IEnumerable<object> Dispatch(string serviceName, string methodName, object[] parameters);
 
         void Dispatch<T>(string instanceName, Action<T> predicate) where T : class, IService;

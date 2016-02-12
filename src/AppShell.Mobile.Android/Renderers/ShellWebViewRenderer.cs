@@ -25,7 +25,7 @@ namespace AppShell.Mobile.Android
             public override void OnPageFinished(global::Android.Webkit.WebView view, string url)
             {
                 base.OnPageFinished(view, url);
-                
+
                 webView.OnLoadFinished(this, EventArgs.Empty);
             }
         }
@@ -38,7 +38,7 @@ namespace AppShell.Mobile.Android
             {
                 this.webView = webView;
             }
-                        
+
             [Export("call")]
             [JavascriptInterface]
             public void Call(string message)
@@ -80,7 +80,7 @@ namespace AppShell.Mobile.Android
                     HtmlWebViewSource htmlSource = Element.Source as HtmlWebViewSource;
                     Control.LoadData(htmlSource.Html, "text/html", "UTF-8");
                 }
-                else if(Element.Source is UrlWebViewSource)
+                else if (Element.Source is UrlWebViewSource)
                 {
                     UrlWebViewSource urlSource = Element.Source as UrlWebViewSource;
                     Control.LoadUrl(urlSource.Url);

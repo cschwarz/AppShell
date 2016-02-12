@@ -17,6 +17,6 @@ namespace AppShell.Samples.Navigation
             this.platformProvider = platformProvider;
 
             Task.Delay(1500).ContinueWith(t => platformProvider.ExecuteOnUIThread(() => serviceDispatcher.Dispatch<INavigationService>(ShellNames.SplashScreen, n => n.Push<SplashViewModel2>(replace: true))));
-        }        
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace AppShell
             : this(type, null)
         {
         }
-        
+
         public TypeConfiguration(Type type, Dictionary<string, object> data)
         {
             Type = type;

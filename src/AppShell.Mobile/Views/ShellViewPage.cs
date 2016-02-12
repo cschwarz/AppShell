@@ -85,7 +85,7 @@ namespace AppShell.Mobile
             {
                 foreach (ToolbarItemViewModel item in e.OldItems)
                     RemoveToolbarItem(item);
-            }            
+            }
         }
 
         private Dictionary<ToolbarItemViewModel, ToolbarItem> toolbarItemMapping;
@@ -110,7 +110,7 @@ namespace AppShell.Mobile
             {
                 View view = content as View;
                 page = new ShellViewPage() { Content = view };
-                page.BindingContext = view.BindingContext;                
+                page.BindingContext = view.BindingContext;
             }
 
             if (page != null)

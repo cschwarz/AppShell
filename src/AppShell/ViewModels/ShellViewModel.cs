@@ -67,9 +67,9 @@ namespace AppShell
         public void Push(Type viewModelType, Dictionary<string, object> data = null, bool replace = false)
         {
             IViewModel viewModel = viewModelFactory.GetViewModel(viewModelType, data);
-            
+
             Items.Add(viewModel);
-                        
+
             if (replace)
                 Items.Remove(ActiveItem);
 
@@ -80,11 +80,11 @@ namespace AppShell
             if (ViewModelPushed != null)
                 ViewModelPushed(this, viewModel);
         }
-        
+
         public void Pop()
         {
             IViewModel viewModel = Items.Last();
-            viewModel.Dispose();                
+            viewModel.Dispose();
 
             Items.Remove(viewModel);
 

@@ -61,7 +61,7 @@ namespace AppShell
         {
             this.serviceDispatcher = serviceDispatcher;
 
-            serviceDispatcher.Subscribe<IWebBrowserService>(this);            
+            serviceDispatcher.Subscribe<IWebBrowserService>(this);
         }
 
         public override void Dispose()

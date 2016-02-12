@@ -4,7 +4,7 @@ using System.Windows.Input;
 namespace AppShell
 {
     public class Command : ICommand
-    {        
+    {
         private Action executeAction;
         private Action<object> executeActionWithParameter;
         private Func<bool> canExecuteAction;
@@ -41,7 +41,7 @@ namespace AppShell
 
             return true;
         }
-        
+
         public void Execute(object parameter)
         {
             if (executeAction != null)

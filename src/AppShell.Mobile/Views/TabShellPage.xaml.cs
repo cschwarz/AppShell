@@ -22,7 +22,7 @@ namespace AppShell.Mobile.Views
             InitializeComponent();
 
             SetBinding(HasNavigationBarProperty, new Binding("HasNavigationBar"));
-            
+
             viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
         }
 

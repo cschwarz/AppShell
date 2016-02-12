@@ -100,10 +100,7 @@ namespace AppShell
                 ViewModelPopped(this, viewModel);
 
             if (!Items.Any())
-            {
-                if (CloseRequested != null)
-                    CloseRequested(this, EventArgs.Empty);
-            }
+                OnCloseRequested();
         }
 
         public IViewModel GetActive()
@@ -124,6 +121,12 @@ namespace AppShell
 
             if (DetachViewModelRequested != null)
                 DetachViewModelRequested(this, viewModel);
+        }
+
+        protected virtual void OnCloseRequested()
+        {
+            if (CloseRequested != null)
+                CloseRequested(this, EventArgs.Empty);
         }
     }
 }

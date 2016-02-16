@@ -7,8 +7,10 @@
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
       <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
     <Label Text="{Binding Title, StringFormat='Mobile View 2: {0}'}" Grid.Row="0" />
     <Button Command="{Binding OpenMasterDetailViewModelCommand}" Text="Open" Grid.Row="1" />
+    <Button Command="{Binding BackCommand}" Text="Back" Grid.Row="2" />
   </Grid>
 </views:ShellView>

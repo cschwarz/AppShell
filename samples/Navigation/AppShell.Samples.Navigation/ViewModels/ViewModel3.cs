@@ -24,5 +24,10 @@
         {
             serviceDispatcher.Dispatch<INavigationService>(ShellNames.MasterDetail, n => n.Push<DetailViewModel>());
         }
+
+        public override void OnActivated()
+        {
+            base.OnActivated();
+        }
     }
 }

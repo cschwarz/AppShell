@@ -9,8 +9,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <TextBlock Text="{Binding Title, StringFormat='Desktop View 2: {0}'}" Grid.Row="0" />
         <Button Command="{Binding OpenMasterDetailViewModelCommand}" Grid.Row="1">Open</Button>
+        <Button Command="{Binding BackCommand}" Grid.Row="2">Back</Button>
     </Grid>
 </UserControl>

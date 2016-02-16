@@ -50,8 +50,10 @@ namespace AppShell.Mobile
             }
             else if (e.Action == NotifyCollectionChangedAction.Remove)
             {
+                ignoreUpdate = true;
+
                 foreach (IViewModel viewModel in e.OldItems)
-                    Navigation.RemovePage(Navigation.NavigationStack.Single(p => p.BindingContext == viewModel));
+                    Navigation.RemovePage(Navigation.NavigationStack.Single(p => p.BindingContext == viewModel));                
             }
         }
 
@@ -80,12 +82,33 @@ namespace AppShell.Mobile
         }
 
         private IViewFactory viewFactory;
+        private bool ignoreUpdate;
 
         public StackShellPage()
         {
             viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
 
+            Popped += StackShellPage_Popped;
+
             SetBinding(ViewModelsProperty, new Binding("Items"));
+        }
+        
+        private void StackShellPage_Popped(object sender, NavigationEventArgs e)
+        {
+            if (ignoreUpdate)
+            {
+                ignoreUpdate = false;
+                return;
+            }
+
+            if (ViewModels is ObservableCollection<IViewModel>)
+                (ViewModels as ObservableCollection<IViewModel>).CollectionChanged -= StackShellPage_CollectionChanged;
+
+            if (BindingContext is ShellViewModel)
+                (BindingContext as ShellViewModel).Pop();
+            
+            if (ViewModels is ObservableCollection<IViewModel>)
+                (ViewModels as ObservableCollection<IViewModel>).CollectionChanged += StackShellPage_CollectionChanged;
         }
     }
 }

@@ -27,12 +27,17 @@ namespace AppShell.Samples.Navigation
 
         public void OpenViewModel2()
         {
-            serviceDispatcher.Dispatch<INavigationService>(ShellNames.Stack, n => n.Push<ViewModel2>(replace: true));
+            serviceDispatcher.Dispatch<INavigationService>(ShellNames.Stack, n => n.Push<ViewModel2>());
         }
 
         public void ShowMessage()
         {
             platformProvider.ShowMessage("Title", "Sample Message", "OK");
+        }
+
+        public override void OnActivated()
+        {
+            base.OnActivated();
         }
     }
 }

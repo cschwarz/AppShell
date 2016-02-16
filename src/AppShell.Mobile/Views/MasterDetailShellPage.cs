@@ -36,7 +36,7 @@ namespace AppShell.Mobile
 
             if (newValue != null)
             {
-                masterDetailShellPage.detailNavigationPage = new NavigationPage();
+                masterDetailShellPage.CreateDetailPage();
                 masterDetailShellPage.IsReady = false;
 
                 if (newValue is ObservableCollection<IViewModel>)
@@ -51,7 +51,7 @@ namespace AppShell.Mobile
         {
             if (e.Action == NotifyCollectionChangedAction.Reset)
             {
-                detailNavigationPage = new NavigationPage();
+                CreateDetailPage();
                 IsReady = false;
             }
             else if (e.Action == NotifyCollectionChangedAction.Add)
@@ -61,6 +61,8 @@ namespace AppShell.Mobile
             }
             else if (e.Action == NotifyCollectionChangedAction.Remove)
             {
+                ignoreUpdate = true;
+
                 foreach (IViewModel viewModel in e.OldItems)
                     detailNavigationPage.Navigation.RemovePage(detailNavigationPage.Navigation.NavigationStack.Single(p => p.BindingContext == viewModel));
             }
@@ -83,7 +85,7 @@ namespace AppShell.Mobile
                 }
             }
         }
-
+        
         private async void AddView(IViewModel viewModel)
         {
             await detailNavigationPage.PushAsync(ShellViewPage.Create(viewFactory.GetView(viewModel)));
@@ -93,6 +95,7 @@ namespace AppShell.Mobile
 
         private IViewFactory viewFactory;
         private NavigationPage detailNavigationPage;
+        private bool ignoreUpdate;
 
         public MasterDetailShellPage()
         {
@@ -101,6 +104,33 @@ namespace AppShell.Mobile
             SetBinding(MasterViewModelProperty, new Binding("Master"));
             SetBinding(DetailViewModelsProperty, new Binding("Items"));
             SetBinding(IsPresentedProperty, new Binding("Master.IsPresented", BindingMode.TwoWay));
+        }
+
+        private void CreateDetailPage()
+        {
+            if (detailNavigationPage != null)
+                detailNavigationPage.Popped -= DetailNavigationPage_Popped;
+
+            detailNavigationPage = new NavigationPage();
+            detailNavigationPage.Popped += DetailNavigationPage_Popped;
+        }
+
+        private void DetailNavigationPage_Popped(object sender, NavigationEventArgs e)
+        {
+            if (ignoreUpdate)
+            {
+                ignoreUpdate = false;
+                return;
+            }
+
+            if (DetailViewModels is ObservableCollection<IViewModel>)
+                (DetailViewModels as ObservableCollection<IViewModel>).CollectionChanged -= MasterDetailShellPage_CollectionChanged;
+
+            if (BindingContext is ShellViewModel)
+                (BindingContext as ShellViewModel).Pop();
+
+            if (DetailViewModels is ObservableCollection<IViewModel>)
+                (DetailViewModels as ObservableCollection<IViewModel>).CollectionChanged += MasterDetailShellPage_CollectionChanged;
         }
     }
 }

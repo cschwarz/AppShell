@@ -41,5 +41,10 @@ namespace AppShell.Desktop
         {
             MessageBox.Show(message, title);
         }
+
+        public string GetDocumentFolderPath()
+        {
+            return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        }
     }
 }

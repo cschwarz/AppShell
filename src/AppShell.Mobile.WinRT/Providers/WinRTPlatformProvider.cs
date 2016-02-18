@@ -29,5 +29,10 @@ namespace AppShell.Mobile.WinRT
 
             return assemblies;
         }
+
+        public override string GetDocumentFolderPath()
+        {
+            return ApplicationData.Current.LocalFolder.Path;
+        }
     }
 }

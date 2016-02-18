@@ -9,6 +9,7 @@ namespace AppShell.Mobile
     {
         public abstract IEnumerable<Assembly> GetAssemblies();
         public abstract Platform GetPlatform();
+        public abstract string GetDocumentFolderPath();
 
         public void ExecuteOnUIThread(Action action)
         {

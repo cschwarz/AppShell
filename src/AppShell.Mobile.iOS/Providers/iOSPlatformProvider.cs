@@ -15,5 +15,10 @@ namespace AppShell.Mobile.iOS
         {
             return AppDomain.CurrentDomain.GetAssemblies();
         }
+
+        public override string GetDocumentFolderPath()
+        {
+            return Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+        }
     }
 }

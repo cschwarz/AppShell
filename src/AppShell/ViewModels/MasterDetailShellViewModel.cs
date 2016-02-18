@@ -31,6 +31,9 @@ namespace AppShell
         {
             base.Dispose();
 
+            if (Master != null)
+                Master.Dispose();
+
             serviceDispatcher.Unsubscribe<IMasterDetailNavigationService>(this);
         }
 

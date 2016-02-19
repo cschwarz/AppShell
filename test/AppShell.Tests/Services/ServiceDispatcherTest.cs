@@ -161,6 +161,11 @@ namespace AppShell.Tests
             {
                 throw new NotImplementedException();
             }
+
+            public string GetDocumentFolderPath()
+            {
+                throw new NotImplementedException();
+            }
         }
 
         [Fact]

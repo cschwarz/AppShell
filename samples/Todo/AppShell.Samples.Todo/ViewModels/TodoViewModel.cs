@@ -1,10 +1,13 @@
-﻿using System.Collections.ObjectModel;
+﻿using AppShell.Data;
+using SQLite;
+using System;
+using System.Collections.ObjectModel;
 
 namespace AppShell.Samples.Todo
 {
     public class TodoViewModel : ViewModel
     {
-        public ObservableCollection<string> Items { get; private set; }
+        public ObservableCollection<TodoItemViewModel> Items { get; private set; }
 
         private string todoItem;
         public string TodoItem
@@ -23,17 +26,34 @@ namespace AppShell.Samples.Todo
 
         public Command AddItemCommand { get; private set; }
 
-        public TodoViewModel()
+        protected ISQLiteDatabase database;
+        protected SQLiteConnection connection;
+
+        public TodoViewModel(ISQLiteDatabase database)
         {
+            this.database = database;
+
             AllowClose = false;
             AddItemCommand = new Command(AddItem, CanAddItem);
 
-            Items = new ObservableCollection<string>();
+            Items = new ObservableCollection<TodoItemViewModel>();
+
+            connection = database.GetConnection("TodoApp/Todo.db");
+            connection.CreateTable<TodoItem>();
+
+            foreach (TodoItem item in connection.Query<TodoItem>("SELECT * FROM TodoItem"))
+                Items.Add(new TodoItemViewModel(item));
         }
 
         public void AddItem()
         {
-            Items.Add(TodoItem);
+            TodoItem todoItem = new TodoItem();
+            todoItem.Id = Guid.NewGuid();
+            todoItem.Text = TodoItem;
+
+            connection.Insert(todoItem);
+
+            Items.Add(new TodoItemViewModel(todoItem));
             TodoItem = string.Empty;
         }
 

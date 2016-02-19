@@ -13,6 +13,12 @@
     </Grid.RowDefinitions>
     <Entry Text="{Binding TodoItem}" Grid.Column="0" Grid.Row="0" />
     <Button Command="{Binding AddItemCommand}" Text="Add" Grid.Column="1" Grid.Row="0" />
-    <ListView ItemsSource="{Binding Items}" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" />
+    <ListView ItemsSource="{Binding Items}" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <TextCell Text="{Binding Text}" />
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
   </Grid>        
 </ContentPage>

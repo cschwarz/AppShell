@@ -26,6 +26,8 @@ namespace AppShell.Samples.Todo.Mobile.Android
 		
 		public static void UpdateIdValues()
 		{
+			global::AppShell.Data.Mobile.Android.Resource.String.ApplicationName = global::AppShell.Samples.Todo.Mobile.Android.Resource.String.ApplicationName;
+			global::AppShell.Data.Mobile.Android.Resource.String.Hello = global::AppShell.Samples.Todo.Mobile.Android.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_fade_in = global::AppShell.Samples.Todo.Mobile.Android.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_fade_out = global::AppShell.Samples.Todo.Mobile.Android.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_grow_fade_in_from_bottom = global::AppShell.Samples.Todo.Mobile.Android.Resource.Animation.abc_grow_fade_in_from_bottom;

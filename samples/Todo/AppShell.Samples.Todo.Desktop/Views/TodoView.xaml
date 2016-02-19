@@ -16,6 +16,6 @@
         </Grid.RowDefinitions>
         <TextBox Text="{Binding TodoItem, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" Grid.Row="0" />
         <Button Command="{Binding AddItemCommand}" Content="Add" Grid.Column="1" Grid.Row="0" />
-        <ListBox ItemsSource="{Binding Items}" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" />
+        <ListBox ItemsSource="{Binding Items}" DisplayMemberPath="Text" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" />
     </Grid>    
 </UserControl>

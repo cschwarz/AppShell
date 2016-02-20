@@ -85,7 +85,7 @@ namespace AppShell.Mobile
                 }
             }
         }
-        
+
         private async void AddView(IViewModel viewModel)
         {
             await detailNavigationPage.PushAsync(ShellViewPage.Create(viewFactory.GetView(viewModel)));

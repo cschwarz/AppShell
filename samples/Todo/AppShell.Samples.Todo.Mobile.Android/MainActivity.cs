@@ -1,9 +1,9 @@
 ﻿using Android.App;
 using Android.Content.PM;
-using AppShell.Mobile;
-using AppShell.Mobile.Android;
 using AppShell.Data;
 using AppShell.Data.Mobile.Android;
+using AppShell.Mobile;
+using AppShell.Mobile.Android;
 
 namespace AppShell.Samples.Todo.Mobile.Android
 {

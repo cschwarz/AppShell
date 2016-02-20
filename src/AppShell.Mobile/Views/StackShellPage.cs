@@ -53,7 +53,7 @@ namespace AppShell.Mobile
                 ignoreUpdate = true;
 
                 foreach (IViewModel viewModel in e.OldItems)
-                    Navigation.RemovePage(Navigation.NavigationStack.Single(p => p.BindingContext == viewModel));                
+                    Navigation.RemovePage(Navigation.NavigationStack.Single(p => p.BindingContext == viewModel));
             }
         }
 
@@ -92,7 +92,7 @@ namespace AppShell.Mobile
 
             SetBinding(ViewModelsProperty, new Binding("Items"));
         }
-        
+
         private void StackShellPage_Popped(object sender, NavigationEventArgs e)
         {
             if (ignoreUpdate)
@@ -106,7 +106,7 @@ namespace AppShell.Mobile
 
             if (BindingContext is ShellViewModel)
                 (BindingContext as ShellViewModel).Pop();
-            
+
             if (ViewModels is ObservableCollection<IViewModel>)
                 (ViewModels as ObservableCollection<IViewModel>).CollectionChanged += StackShellPage_CollectionChanged;
         }

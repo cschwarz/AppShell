@@ -6,7 +6,7 @@ namespace AppShell.Samples.Todo
     {
         public Guid Id { get; set; }
         public string Text { get; set; }
-        
+
         public TodoItemViewModel(TodoItem item)
         {
             Id = item.Id;

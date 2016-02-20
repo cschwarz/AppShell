@@ -17,10 +17,12 @@ namespace AppShell.NativeMaps.Mobile.iOS
     public class MapViewRenderer : ViewRenderer<MapView, MKMapView>
     {
         public TwoWayDictionary<Marker, MarkerAnnotation> Markers { get; private set; }
+        public TwoWayDictionary<TileOverlay, MKTileOverlay> TileOverlays { get; private set; }
 
         public MapViewRenderer()
         {
             Markers = new TwoWayDictionary<Marker, MarkerAnnotation>();
+            TileOverlays = new TwoWayDictionary<TileOverlay, MKTileOverlay>();
         }
 
         protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
@@ -48,6 +50,9 @@ namespace AppShell.NativeMaps.Mobile.iOS
 
                 if (e.OldElement.TileOverlays != null)
                 {
+                    foreach (TileOverlay tileOverlay in e.OldElement.TileOverlays)
+                        RemoveTileOverlay(tileOverlay);
+
                     if (e.OldElement.TileOverlays is ObservableCollection<TileOverlay>)
                         (e.OldElement.TileOverlays as ObservableCollection<TileOverlay>).CollectionChanged -= TileOverlays_CollectionChanged;
                 }
@@ -74,15 +79,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
                         (e.NewElement.TileOverlays as ObservableCollection<TileOverlay>).CollectionChanged += TileOverlays_CollectionChanged;
 
                     foreach (TileOverlay tileOverlay in e.NewElement.TileOverlays)
-                    {
-                        if (tileOverlay is UrlTileOverlay)
-                        {
-                            MKTileOverlay overlay = new MKTileOverlay((tileOverlay as UrlTileOverlay).Url);
-                            overlay.CanReplaceMapContent = true;
-                            overlay.TileSize = new CoreGraphics.CGSize(tileOverlay.TileWidth, tileOverlay.TileHeight);
-                            Control.AddOverlay(overlay, MKOverlayLevel.AboveLabels);
-                        }
-                    }
+                        AddTileOverlay(tileOverlay);
                 }
 
                 Control.Delegate = new MapViewDelegate(this, Element);
@@ -110,6 +107,21 @@ namespace AppShell.NativeMaps.Mobile.iOS
 
         private void TileOverlays_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
+            if (e.Action == NotifyCollectionChangedAction.Reset)
+            {
+                foreach (TileOverlay tileOverlay in TileOverlays.Select(m => m.Key).ToList())
+                    RemoveTileOverlay(tileOverlay);
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Add)
+            {
+                foreach (TileOverlay tileOverlay in e.NewItems)
+                    AddTileOverlay(tileOverlay);
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Remove)
+            {
+                foreach (TileOverlay tileOverlay in e.OldItems)
+                    RemoveTileOverlay(tileOverlay);
+            }
         }
 
         private void AddMarker(Marker marker)
@@ -127,6 +139,25 @@ namespace AppShell.NativeMaps.Mobile.iOS
 
             Control.RemoveAnnotation(Markers[marker]);
             Markers.Remove(marker);
+        }
+
+        private void AddTileOverlay(TileOverlay tileOverlay)
+        {
+            if (tileOverlay is UrlTileOverlay)
+            {
+                MKTileOverlay overlay = new MKTileOverlay((tileOverlay as UrlTileOverlay).Url);
+                overlay.CanReplaceMapContent = true;
+                overlay.TileSize = new CoreGraphics.CGSize(tileOverlay.TileWidth, tileOverlay.TileHeight);
+                Control.AddOverlay(overlay, MKOverlayLevel.AboveLabels);
+
+                TileOverlays.Add(tileOverlay, overlay);
+            }
+        }
+
+        private void RemoveTileOverlay(TileOverlay tileOverlay)
+        {
+            Control.RemoveOverlay(TileOverlays[tileOverlay]);
+            TileOverlays.Remove(tileOverlay);
         }
 
         private void Marker_PropertyChanged(object sender, PropertyChangedEventArgs e)

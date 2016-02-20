@@ -51,6 +51,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\NativeMapsMasterViewModel.cs" />
     <Compile Include="ViewModels\MultipleMapViewModel.cs" />
+    <Compile Include="ViewModels\TileOverlayMapViewModel.cs" />
     <Compile Include="ViewModels\TwoWayMapViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -33,13 +33,11 @@ namespace AppShell.Samples.NativeMaps
                 Center2 = new Location(40.7536868, -73.9982661)
             })));
 
-            Items.Add(new ViewModelMenuItem("Tile Overlay Map", TypeConfiguration.Create<MapViewModel>(new
+            Items.Add(new ViewModelMenuItem("Tile Overlay Map", TypeConfiguration.Create<TileOverlayMapViewModel>(new
             {
                 Title = "Tile Overlay Map",
                 ZoomLevel = 12.0,
-                Center = new Location(48.21, 16.37),
-                MapType = MapType.None,
-                TileOverlays = new ObservableCollection<TileOverlay>(new List<TileOverlay>() { new UrlTileOverlay("http://maps.wien.gv.at/basemap/bmaphidpi/normal/google3857/{z}/{y}/{x}.jpeg", 512, 512) })
+                Center = new Location(48.21, 16.37)
             })));
 
             Items.Add(new ViewModelMenuItem("Satellite Map", TypeConfiguration.Create<MapViewModel>(new

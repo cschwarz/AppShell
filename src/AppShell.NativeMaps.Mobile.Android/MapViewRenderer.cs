@@ -17,10 +17,12 @@ namespace AppShell.NativeMaps.Mobile.Android
     {
         private GMaps.GoogleMap googleMap;
         private TwoWayDictionary<Marker, GMaps.Model.Marker> markers;
+        private TwoWayDictionary<TileOverlay, GMaps.Model.TileOverlay> tileOverlays;
 
         public MapViewRenderer()
         {
             markers = new TwoWayDictionary<Marker, GMaps.Model.Marker>(new LambdaEqualityComparer<GMaps.Model.Marker>((m1, m2) => m1.Id == m2.Id));
+            tileOverlays = new TwoWayDictionary<TileOverlay, GMaps.Model.TileOverlay>(new LambdaEqualityComparer<GMaps.Model.TileOverlay>((m1, m2) => m1.Id == m2.Id));
         }
 
         protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
@@ -51,6 +53,9 @@ namespace AppShell.NativeMaps.Mobile.Android
 
                 if (e.OldElement.TileOverlays != null)
                 {
+                    foreach (TileOverlay tileOverlay in e.OldElement.TileOverlays)
+                        RemoveTileOverlay(tileOverlay);
+
                     if (e.OldElement.TileOverlays is ObservableCollection<TileOverlay>)
                         (e.OldElement.TileOverlays as ObservableCollection<TileOverlay>).CollectionChanged -= TileOverlays_CollectionChanged;
                 }
@@ -88,14 +93,7 @@ namespace AppShell.NativeMaps.Mobile.Android
                     (Element.TileOverlays as ObservableCollection<TileOverlay>).CollectionChanged += TileOverlays_CollectionChanged;
 
                 foreach (TileOverlay tileOverlay in Element.TileOverlays)
-                {
-                    TileOverlayOptions options = new TileOverlayOptions();
-
-                    if (tileOverlay is UrlTileOverlay)
-                        options.InvokeTileProvider(new UrlTileOverlayProvider(tileOverlay as UrlTileOverlay));
-
-                    googleMap.AddTileOverlay(options);
-                }
+                    AddTileOverlay(tileOverlay);
             }
 
             googleMap.CameraChange += GoogleMap_CameraChange;
@@ -159,6 +157,21 @@ namespace AppShell.NativeMaps.Mobile.Android
 
         private void TileOverlays_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
+            if (e.Action == NotifyCollectionChangedAction.Reset)
+            {
+                foreach (TileOverlay tileOverlay in tileOverlays.Select(m => m.Key).ToList())
+                    RemoveTileOverlay(tileOverlay);
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Add)
+            {
+                foreach (TileOverlay tileOverlay in e.NewItems)
+                    AddTileOverlay(tileOverlay);
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Remove)
+            {
+                foreach (TileOverlay tileOverlay in e.OldItems)
+                    RemoveTileOverlay(tileOverlay);
+            }
         }
 
         private void AddMarker(Marker marker)
@@ -184,6 +197,22 @@ namespace AppShell.NativeMaps.Mobile.Android
 
             markers[marker].Remove();
             markers.Remove(marker);
+        }
+
+        private void AddTileOverlay(TileOverlay tileOverlay)
+        {
+            TileOverlayOptions options = new TileOverlayOptions();
+
+            if (tileOverlay is UrlTileOverlay)
+                options.InvokeTileProvider(new UrlTileOverlayProvider(tileOverlay as UrlTileOverlay));
+
+            tileOverlays.Add(tileOverlay, googleMap.AddTileOverlay(options));
+        }
+
+        private void RemoveTileOverlay(TileOverlay tileOverlay)
+        {
+            tileOverlays[tileOverlay].Remove();
+            tileOverlays.Remove(tileOverlay);
         }
 
         private void Marker_PropertyChanged(object sender, PropertyChangedEventArgs e)

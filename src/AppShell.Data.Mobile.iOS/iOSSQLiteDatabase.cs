@@ -14,7 +14,7 @@ namespace AppShell.Data.Mobile.iOS
 
         public SQLiteConnection GetConnection(string databaseName)
         {
-            string databasePath = Path.Combine(platformProvider.GetDocumentFolderPath(), databaseName);
+            string databasePath = Path.Combine(platformProvider.GetDocumentFolderPath(), "..", "Library", databaseName);
             string databaseDirectory = Path.GetDirectoryName(databasePath);
 
             if (!Directory.Exists(databaseDirectory))

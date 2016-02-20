@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>AppShell.Data.Desktop</id>
+    <version>$version$</version>
+    <title>AppShell.Data.Desktop</title>
+    <authors>Christian Schwarz</authors>
+    <owners>Christian Schwarz</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>AppShell.Data.Desktop</description>
+    <copyright>Copyright 2015</copyright>
+    <tags>AppShell.Data.Desktop</tags>
+    <dependencies>
+      <dependency id="AppShell" version="$version$" />
+      <dependency id="AppShell.Data" version="$version$" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\AppShell.Data.Desktop.dll" target="lib\net45"/>
+  </files>
+</package>

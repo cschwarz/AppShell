@@ -1,4 +1,6 @@
 ﻿
+using AppShell.Data;
+using AppShell.Data.Mobile.iOS;
 using AppShell.Mobile;
 using AppShell.Mobile.iOS;
 using AppShell.Samples.Todo.Mobile.Views;
@@ -25,6 +27,13 @@ namespace AppShell.Samples.Todo.Mobile.iOS
             var views = typeof(TodoPage);
 
             return base.FinishedLaunching(app, options);
+        }
+
+        protected override void ConfigurePlatform()
+        {
+            base.ConfigurePlatform();
+            
+            ShellCore.Container.RegisterSingleton<ISQLiteDatabase, iOSSQLiteDatabase>();
         }
     }
 }

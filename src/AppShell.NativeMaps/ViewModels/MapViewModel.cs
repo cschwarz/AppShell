@@ -60,6 +60,17 @@ namespace AppShell.NativeMaps
             }
         }
 
+        private Location navigationDestination;
+        public Location NavigationDestination
+        {
+            get { return navigationDestination; }
+            set
+            {
+                navigationDestination = value;
+                OnPropertyChanged();
+            }
+        }
+
         public ObservableCollection<Marker> Markers { get; set; }
         public ObservableCollection<TileOverlay> TileOverlays { get; set; }
 

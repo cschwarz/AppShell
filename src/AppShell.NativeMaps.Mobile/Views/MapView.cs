@@ -13,6 +13,7 @@ namespace AppShell.NativeMaps.Mobile
         public static readonly BindableProperty MarkersProperty = BindableProperty.Create<MapView, IEnumerable<Marker>>(d => d.Markers, null);
         public static readonly BindableProperty TileOverlaysProperty = BindableProperty.Create<MapView, IEnumerable<TileOverlay>>(d => d.TileOverlays, null);
         public static readonly BindableProperty SelectedMarkerProperty = BindableProperty.Create<MapView, Marker>(d => d.SelectedMarker, null, BindingMode.TwoWay);
+        public static readonly BindableProperty NavigationDestinationProperty = BindableProperty.Create<MapView, Location>(d => d.NavigationDestination, null);
 
         public double ZoomLevel { get { return (double)GetValue(ZoomLevelProperty); } set { SetValue(ZoomLevelProperty, value); } }
         public Location Center { get { return (Location)GetValue(CenterProperty); } set { SetValue(CenterProperty, value); } }
@@ -20,6 +21,7 @@ namespace AppShell.NativeMaps.Mobile
         public IEnumerable<Marker> Markers { get { return (IEnumerable<Marker>)GetValue(MarkersProperty); } set { SetValue(MarkersProperty, value); } }
         public IEnumerable<TileOverlay> TileOverlays { get { return (IEnumerable<TileOverlay>)GetValue(TileOverlaysProperty); } set { SetValue(TileOverlaysProperty, value); } }
         public Marker SelectedMarker { get { return (Marker)GetValue(SelectedMarkerProperty); } set { SetValue(SelectedMarkerProperty, value); } }
+        public Location NavigationDestination { get { return (Location)GetValue(NavigationDestinationProperty); } set { SetValue(NavigationDestinationProperty, value); } }
         public double Radius
         {
             get { return 16000000 / Math.Pow(2, ZoomLevel); }
@@ -34,6 +36,7 @@ namespace AppShell.NativeMaps.Mobile
             SetBinding(MarkersProperty, new Binding("Markers"));
             SetBinding(TileOverlaysProperty, new Binding("TileOverlays"));
             SetBinding(SelectedMarkerProperty, new Binding("SelectedMarker"));
+            SetBinding(NavigationDestinationProperty, new Binding("NavigationDestination"));
         }
     }
 }

@@ -177,6 +177,8 @@ namespace AppShell.NativeMaps.Mobile.iOS
                 SetCenter();
             else if (e.PropertyName == MapView.MapTypeProperty.PropertyName)
                 SetMapType();
+            else if (e.PropertyName == MapView.NavigationDestinationProperty.PropertyName)
+                NavigateTo();
         }
 
         private void SizeChanged(object sender, EventArgs e)
@@ -193,6 +195,15 @@ namespace AppShell.NativeMaps.Mobile.iOS
         private void SetMapType()
         {
             Control.MapType = Element.MapType.ToNativeMapType();
+        }
+
+        private void NavigateTo()
+        {
+            if (Element.NavigationDestination != null)
+            {
+                MKMapItem destinationMapItem = new MKMapItem(new MKPlacemark(new CLLocationCoordinate2D(Element.NavigationDestination.Latitude, Element.NavigationDestination.Longitude), (MKPlacemarkAddress)null));
+                destinationMapItem.OpenInMaps(new MKLaunchOptions() { DirectionsMode = MKDirectionsMode.Driving });
+            }
         }
 
         public override SizeRequest GetDesiredSize(double widthConstraint, double heightConstraint)

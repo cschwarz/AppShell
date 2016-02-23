@@ -33,6 +33,39 @@ namespace AppShell.Samples.NativeMaps
             }
         }
 
+        private Marker selectedMarker1;
+        public Marker SelectedMarker1
+        {
+            get { return selectedMarker1; }
+            set
+            {
+                if (selectedMarker1 != value)
+                {
+                    selectedMarker1 = value;
+                    OnPropertyChanged();
+
+                    ToolbarItems.Clear();
+
+                    if (selectedMarker1 != null)
+                        ToolbarItems.Add(new ToolbarItemViewModel() { Command = new Command(NavigateTo), Title = "Navigate To" });
+                }
+            }
+        }
+
+        private Location navigationDestination1;
+        public Location NavigationDestination1
+        {
+            get { return navigationDestination1; }
+            set
+            {
+                if (navigationDestination1 != value)
+                {
+                    navigationDestination1 = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         private double zoomLevel2;
         public double ZoomLevel2
         {
@@ -73,6 +106,15 @@ namespace AppShell.Samples.NativeMaps
         public void RemoveMarkers()
         {
             Markers1.Clear();
+        }
+
+        private void NavigateTo()
+        {
+            if (SelectedMarker1 != null)
+            {
+                NavigationDestination1 = selectedMarker1.Center;
+                NavigationDestination1 = null;
+            }
         }
     }
 }

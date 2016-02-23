@@ -1,9 +1,12 @@
+using Android.Content;
 using Android.Gms.Maps.Model;
+using Android.Net;
 using AppShell.NativeMaps.Mobile;
 using AppShell.NativeMaps.Mobile.Android;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -96,6 +99,7 @@ namespace AppShell.NativeMaps.Mobile.Android
                     AddTileOverlay(tileOverlay);
             }
 
+            googleMap.UiSettings.MapToolbarEnabled = false;
             googleMap.CameraChange += GoogleMap_CameraChange;
             googleMap.MarkerClick += GoogleMap_MarkerClick;
             googleMap.MarkerDrag += GoogleMap_MarkerDrag;
@@ -112,6 +116,8 @@ namespace AppShell.NativeMaps.Mobile.Android
                 SetCenter();
             else if (e.PropertyName == MapView.MapTypeProperty.PropertyName)
                 SetMapType();
+            else if (e.PropertyName == MapView.NavigationDestinationProperty.PropertyName)
+                NavigateTo();
         }
 
         private void GoogleMap_CameraChange(object sender, GMaps.GoogleMap.CameraChangeEventArgs e)
@@ -243,6 +249,18 @@ namespace AppShell.NativeMaps.Mobile.Android
         private void SetMapType()
         {
             googleMap.MapType = Element.MapType.ToNativeMapType();
+        }
+
+        private void NavigateTo()
+        {
+            if (Element.NavigationDestination != null)
+            {
+                Uri uri = Uri.Parse(string.Format(CultureInfo.InvariantCulture, "google.navigation:q={0},{1}", Element.NavigationDestination.Latitude, Element.NavigationDestination.Longitude));
+                Intent navigationIntent = new Intent(Intent.ActionView, uri);
+                navigationIntent.SetPackage("com.google.android.apps.maps");
+
+                Forms.Context.StartActivity(navigationIntent);
+            }
         }
 
         public override SizeRequest GetDesiredSize(int widthConstraint, int heightConstraint)

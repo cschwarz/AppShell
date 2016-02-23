@@ -1,5 +1,6 @@
 ﻿using AppShell.NativeMaps;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 
 namespace AppShell.Samples.NativeMaps
 {
@@ -113,7 +114,7 @@ namespace AppShell.Samples.NativeMaps
             if (SelectedMarker1 != null)
             {
                 NavigationDestination1 = selectedMarker1.Center;
-                NavigationDestination1 = null;
+                Task.Delay(100).ContinueWith(t => NavigationDestination1 = null);
             }
         }
     }

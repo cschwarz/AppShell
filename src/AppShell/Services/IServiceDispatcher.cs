@@ -34,6 +34,8 @@ namespace AppShell
         TResult Dispatch<T, TResult>(string instanceName, Func<T, TResult> predicate) where T : class, IService;
         object Dispatch(string serviceName, string instanceName, string methodName, object[] parameters);
 
+        T Dispatch<T>(string instanceName) where T : class, IService;
+
         EventRegistration SubscribeEvent<T>(Action<T> subscribe, Action<T> unsubscribe) where T : class;
         EventRegistration SubscribeEvent(string serviceName, string eventName, object target, Action<object, object> callback);
         void UnsubscribeEvent<T>(EventRegistration eventRegistration) where T : class;

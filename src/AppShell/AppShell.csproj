@@ -47,6 +47,7 @@
     <Compile Include="Resolutions\IViewResolution.cs" />
     <Compile Include="Resolutions\ViewModelResolution.cs" />
     <Compile Include="Resolutions\ViewResolution.cs" />
+    <Compile Include="Services\IDetachService.cs" />
     <Compile Include="Services\IMasterDetailNavigationService.cs" />
     <Compile Include="Services\IService.cs" />
     <Compile Include="Services\IShellNavigationService.cs" />

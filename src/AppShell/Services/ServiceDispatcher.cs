@@ -218,6 +218,16 @@ namespace AppShell
             return null;
         }
 
+        public T Dispatch<T>(string instanceName) where T : class, IService
+        {
+            Type serviceType = typeof(T);
+
+            if (subscribedServices.ContainsKey(serviceType))
+                return subscribedServices[serviceType].Single(s => s.Name == instanceName) as T;
+
+            return null;
+        }
+
         public EventRegistration SubscribeEvent<T>(Action<T> subscribe, Action<T> unsubscribe) where T : class
         {
             if (!eventRegistrations.ContainsKey(typeof(T)))

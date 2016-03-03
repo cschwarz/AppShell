@@ -8,17 +8,20 @@ namespace AppShell.Desktop
     /// </summary>
     public partial class DetachedWindow : Window
     {
-        public DetachedWindow()
+        private ShellViewModel shellViewModel;
+
+        public DetachedWindow(ShellViewModel shellViewModel)
         {
             InitializeComponent();
+
+            this.shellViewModel = shellViewModel;
         }
 
         protected override void OnClosed(EventArgs e)
         {
             base.OnClosed(e);
 
-            if (DataContext is IViewModel)
-                (DataContext as IViewModel).Dispose();
+            shellViewModel.CloseDetached(DataContext as IViewModel);
         }
     }
 }

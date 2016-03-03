@@ -5,15 +5,16 @@ using System.Linq;
 
 namespace AppShell
 {
-    public class ShellViewModel : ViewModel, INavigationService
+    public class ShellViewModel : ViewModel, INavigationService, IDetachService
     {
         public event EventHandler<IViewModel> ViewModelPushed;
         public event EventHandler<IViewModel> ViewModelPopped;
 
-        public event EventHandler<IViewModel> DetachViewModelRequested;
+        public event EventHandler<IViewModel> ActivateDetachedRequested;
         public event EventHandler CloseRequested;
 
         public ObservableCollection<IViewModel> Items { get; private set; }
+        public ObservableCollection<IViewModel> DetachedItems { get; private set; }
 
         private IViewModel activeItem;
         public IViewModel ActiveItem
@@ -35,8 +36,10 @@ namespace AppShell
             this.viewModelFactory = viewModelFactory;
 
             serviceDispatcher.Subscribe<INavigationService>(this);
+            serviceDispatcher.Subscribe<IDetachService>(this);
 
             Items = new ObservableCollection<IViewModel>();
+            DetachedItems = new ObservableCollection<IViewModel>();
         }
 
         public override void Dispose()
@@ -47,6 +50,7 @@ namespace AppShell
                 viewModel.Dispose();
 
             serviceDispatcher.Unsubscribe<INavigationService>(this);
+            serviceDispatcher.Unsubscribe<IDetachService>(this);
         }
 
         public void Push<TViewModel>(Dictionary<string, object> data = null, bool replace = false) where TViewModel : class, IViewModel
@@ -119,8 +123,59 @@ namespace AppShell
             else
                 ActiveItem = null;
 
-            if (DetachViewModelRequested != null)
-                DetachViewModelRequested(this, viewModel);
+            DetachedItems.Add(viewModel);
+        }
+
+        public void PushDetached<TViewModel>(Dictionary<string, object> data = null) where TViewModel : class, IViewModel
+        {
+            PushDetached(typeof(TViewModel), data);
+        }
+
+        public void PushDetached<TViewModel>(dynamic data) where TViewModel : class, IViewModel
+        {
+            PushDetached(typeof(TViewModel), ObjectExtensions.ToDictionary(data));
+        }
+
+        public void PushDetached(string viewModelType, Dictionary<string, object> data = null)
+        {
+            PushDetached(Type.GetType(viewModelType), data);
+        }
+
+        public void PushDetached(Type viewModelType, Dictionary<string, object> data = null)
+        {
+            IViewModel viewModel = viewModelFactory.GetViewModel(viewModelType, data);
+
+            viewModel.OnActivated();
+
+            DetachedItems.Add(viewModel);
+        }
+
+        public void CloseDetached(string name)
+        {
+            foreach (IViewModel viewModel in DetachedItems.Where(v => v.Name == name).ToList())
+                CloseDetached(viewModel);
+        }
+
+        public void ActivateDetached(string name)
+        {
+            foreach (IViewModel viewModel in DetachedItems.Where(v => v.Name == name))
+            {
+                viewModel.OnActivated();
+
+                if (ActivateDetachedRequested != null)
+                    ActivateDetachedRequested(this, viewModel);
+            }            
+        }
+
+        public void CloseDetached(IViewModel viewModel)
+        {
+            viewModel.Dispose();
+            DetachedItems.Remove(viewModel);
+        }
+
+        public bool DetachedExists(string name)
+        {
+            return DetachedItems.Any(d => d.Name == name);
         }
 
         protected virtual void OnCloseRequested()

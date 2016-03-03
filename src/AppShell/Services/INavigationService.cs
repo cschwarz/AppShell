@@ -15,7 +15,5 @@ namespace AppShell
         void Pop();
         [ServiceMethod("getActive")]
         IViewModel GetActive();
-        [ServiceMethod("detachActive")]
-        void DetachActive();
     }
 }

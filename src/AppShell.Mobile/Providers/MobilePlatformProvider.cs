@@ -20,5 +20,10 @@ namespace AppShell.Mobile
         {
             Application.Current.MainPage.DisplayAlert(title, message, cancel);
         }
+
+        public void OpenUrl(string url)
+        {
+            Device.OpenUri(new Uri(url));
+        }
     }
 }

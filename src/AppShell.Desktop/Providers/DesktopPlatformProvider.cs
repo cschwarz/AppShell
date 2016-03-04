@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -45,6 +46,11 @@ namespace AppShell.Desktop
         public string GetDocumentFolderPath()
         {
             return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        }
+
+        public void OpenUrl(string url)
+        {
+            Process.Start(url);
         }
     }
 }

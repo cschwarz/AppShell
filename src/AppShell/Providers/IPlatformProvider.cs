@@ -11,5 +11,6 @@ namespace AppShell
         void ExecuteOnUIThread(Action action);
         void ShowMessage(string title, string message, string cancel);
         string GetDocumentFolderPath();
+        void OpenUrl(string url);
     }
 }

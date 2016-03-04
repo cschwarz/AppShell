@@ -166,6 +166,11 @@ namespace AppShell.Tests
             {
                 throw new NotImplementedException();
             }
+
+            public void OpenUrl(string url)
+            {
+                throw new NotImplementedException();
+            }
         }
 
         [Fact]

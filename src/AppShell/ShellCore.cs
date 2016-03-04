@@ -14,8 +14,8 @@ namespace AppShell
 
         public string Name { get { return "ShellCore"; } }
 
-        private IViewModel activeShell;
-        public IViewModel ActiveShell
+        private ShellViewModel activeShell;
+        public ShellViewModel ActiveShell
         {
             get { return activeShell; }
             private set
@@ -30,7 +30,7 @@ namespace AppShell
             }
         }
 
-        public ObservableCollection<IViewModel> Shells { get; private set; }
+        public ObservableCollection<ShellViewModel> Shells { get; private set; }
 
         protected IPluginProvider pluginProvider;
         protected IServiceDispatcher serviceDispatcher;
@@ -53,7 +53,7 @@ namespace AppShell
 
         public ShellCore()
         {
-            Shells = new ObservableCollection<IViewModel>();
+            Shells = new ObservableCollection<ShellViewModel>();
         }
 
         public virtual void Configure()
@@ -108,15 +108,21 @@ namespace AppShell
 
         public void Push(Type viewModelType, Dictionary<string, object> data = null)
         {
-            IViewModel viewModel = Container.GetInstance<IViewModelFactory>().GetViewModel(viewModelType, data);
+            ShellViewModel viewModel = Container.GetInstance<IViewModelFactory>().GetViewModel(viewModelType, data) as ShellViewModel;
             Shells.Add(viewModel);
             ActiveShell = viewModel;
+
+            ActiveShell.OnActivated();
         }
 
         public void Pop()
         {
             Shells.Remove(Shells.Last());
             ActiveShell = Shells.Last();
+
+            ActiveShell.OnActivated();
+            if (ActiveShell.ActiveItem != null)
+                ActiveShell.ActiveItem.OnActivated();
         }
     }
 }

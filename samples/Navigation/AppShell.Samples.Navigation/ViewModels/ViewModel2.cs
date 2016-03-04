@@ -29,5 +29,10 @@
         {
             serviceDispatcher.Dispatch<INavigationService>(ShellNames.Stack, n => n.Pop());
         }
+
+        public override void OnActivated()
+        {
+            base.OnActivated();
+        }
     }
 }

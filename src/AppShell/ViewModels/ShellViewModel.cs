@@ -164,7 +164,7 @@ namespace AppShell
 
                 if (ActivateDetachedRequested != null)
                     ActivateDetachedRequested(this, viewModel);
-            }            
+            }
         }
 
         public void CloseDetached(IViewModel viewModel)

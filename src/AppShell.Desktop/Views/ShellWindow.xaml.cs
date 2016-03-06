@@ -76,7 +76,7 @@ namespace AppShell.Desktop
                 }
             }
         }
-        
+
         private void ShellViewModel_ActivateDetachedRequested(object sender, IViewModel e)
         {
             if (detachedWindows.ContainsKey(e))
@@ -86,6 +86,6 @@ namespace AppShell.Desktop
         private void ShellViewModel_CloseRequested(object sender, EventArgs e)
         {
             Close();
-        }        
+        }
     }
 }

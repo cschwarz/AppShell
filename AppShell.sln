@@ -32,6 +32,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{977D80E1-BC17-4757-B943-95603CA86FE1}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		version.txt = version.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{97AC81CD-4EAD-4056-8369-BFAD21C72812}"
@@ -133,6 +135,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Data.Mobile.Android", "src\AppShell.Data.Mobile.Android\AppShell.Data.Mobile.Android.csproj", "{E7466FFC-8878-447F-BF92-537CB57C6D08}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Data.Mobile.iOS", "src\AppShell.Data.Mobile.iOS\AppShell.Data.Mobile.iOS.csproj", "{B17319F1-3EDC-490E-A7BE-D506A46EA321}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{BBD4E561-3D06-4A32-AD63-5E6F1861BECB}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\update-version.ps1 = scripts\update-version.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

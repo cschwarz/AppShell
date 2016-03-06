@@ -1,0 +1,41 @@
+configuration: Release
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+install:
+- ps: .\scripts\update-version.ps1
+xamarin:
+  email: christian.schwarz@refactory.at
+  password:
+    secure: H4gw3tIEpJ6ElrhwcqmSdw==
+  android: true
+  ios: true
+before_build:
+- ps: nuget restore
+build:
+  project: AppShell.sln
+  publish_nuget: true
+  publish_nuget_symbols: true
+  include_nuget_references: true
+  verbosity: minimal
+test:
+  assemblies: '**\*.Tests.dll'
+deploy:
+- provider: NuGet
+  name: development
+  server: https://www.myget.org/F/appshell/api/v2/package
+  api_key:
+    secure: 1z5/yKOcTtb7iqitTKq4jfUED7+pQyJkHz5TryyO4hSAvjrKRThI5e0MRVBkxxzx
+  symbol_server: https://www.myget.org/F/appshell/api/v2/package
+  on:
+    branch: master
+- provider: NuGet
+  name: development tag
+  server: https://www.myget.org/F/appshell/api/v2/package
+  api_key:
+    secure: 1z5/yKOcTtb7iqitTKq4jfUED7+pQyJkHz5TryyO4hSAvjrKRThI5e0MRVBkxxzx
+  symbol_server: https://www.myget.org/F/appshell/api/v2/package
+  on:
+    appveyor_repo_tag: true

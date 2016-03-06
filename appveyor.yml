@@ -1,4 +1,10 @@
 configuration: Release
+xamarin:
+  email: christian.schwarz@refactory.at
+  password:
+    secure: H4gw3tIEpJ6ElrhwcqmSdw==
+  android: true
+  ios: true
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
@@ -6,12 +12,6 @@ assembly_info:
   assembly_informational_version: '{version}'
 install:
 - ps: .\scripts\update-version.ps1
-xamarin:
-  email: christian.schwarz@refactory.at
-  password:
-    secure: H4gw3tIEpJ6ElrhwcqmSdw==
-  android: true
-  ios: true
 before_build:
 - ps: nuget restore
 build:

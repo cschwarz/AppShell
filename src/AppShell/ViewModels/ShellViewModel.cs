@@ -115,11 +115,11 @@ namespace AppShell
                 viewModel.Dispose();
 
                 Items.RemoveAt(i);
-                
+
                 if (ViewModelPopped != null)
                     ViewModelPopped(this, viewModel);
             }
-            
+
             ActiveItem = Items.Single();
             ActiveItem.OnActivated();
         }

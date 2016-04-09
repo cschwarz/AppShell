@@ -6,13 +6,15 @@ namespace AppShell.Mobile.Views
     [View(typeof(TabShellViewModel))]
     public partial class TabShellPage : TabbedPage
     {
-        public static readonly BindableProperty HasNavigationBarProperty = BindableProperty.Create<TabShellPage, bool>(x => x.HasNavigationBar, true, propertyChanged: OnHasNavigationBarChanged);
+        public static readonly BindableProperty HasNavigationBarProperty = BindableProperty.Create("HasNavigationBar", typeof(bool), typeof(TabShellPage), true, propertyChanged: OnHasNavigationBarChanged);
         public bool HasNavigationBar { get { return (bool)GetValue(HasNavigationBarProperty); } set { SetValue(HasNavigationBarProperty, value); } }
 
-        private static void OnHasNavigationBarChanged(BindableObject bindable, bool oldValue, bool newValue)
+        private static void OnHasNavigationBarChanged(BindableObject d, object oldValue, object newValue)
         {
-            TabShellPage tabShellPage = (TabShellPage)bindable;
-            NavigationPage.SetHasNavigationBar(tabShellPage, newValue);
+            TabShellPage tabShellPage = d as TabShellPage;
+            bool newHasNavigationBar = (bool)newValue;
+
+            NavigationPage.SetHasNavigationBar(tabShellPage, newHasNavigationBar);
         }
 
         private IViewFactory viewFactory;

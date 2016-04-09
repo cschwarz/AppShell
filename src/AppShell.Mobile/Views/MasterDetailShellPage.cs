@@ -10,39 +10,42 @@ namespace AppShell.Mobile
     [View(typeof(MasterDetailShellViewModel))]
     public class MasterDetailShellPage : MasterDetailPage, IPageReady
     {
-        public static readonly BindableProperty MasterViewModelProperty = BindableProperty.Create<MasterDetailShellPage, IViewModel>(d => d.MasterViewModel, null, propertyChanged: MasterViewModelPropertyChanged);
-        public static readonly BindableProperty DetailViewModelsProperty = BindableProperty.Create<MasterDetailShellPage, IEnumerable<IViewModel>>(d => d.DetailViewModels, null, propertyChanged: DetailViewModelsPropertyChanged);
+        public static readonly BindableProperty MasterViewModelProperty = BindableProperty.Create("MasterViewModel", typeof(IViewModel), typeof(MasterDetailShellPage), null, propertyChanged: MasterViewModelPropertyChanged);
+        public static readonly BindableProperty DetailViewModelsProperty = BindableProperty.Create("DetailViewModels", typeof(IEnumerable<IViewModel>), typeof(MasterDetailShellPage), null, propertyChanged: DetailViewModelsPropertyChanged);
 
         public IViewModel MasterViewModel { get { return (IViewModel)GetValue(MasterViewModelProperty); } set { SetValue(MasterViewModelProperty, value); } }
         public IEnumerable<IViewModel> DetailViewModels { get { return (IEnumerable<IViewModel>)GetValue(DetailViewModelsProperty); } set { SetValue(DetailViewModelsProperty, value); } }
 
-        public static void MasterViewModelPropertyChanged(BindableObject d, IViewModel oldValue, IViewModel newValue)
+        public static void MasterViewModelPropertyChanged(BindableObject d, object oldValue, object newValue)
         {
             MasterDetailShellPage masterDetailShellPage = d as MasterDetailShellPage;
+            IViewModel newViewModel = newValue as IViewModel;
 
-            if (newValue != null)
-                masterDetailShellPage.Master = ShellViewPage.Create(masterDetailShellPage.viewFactory.GetView(newValue));
+            if (newViewModel != null)
+                masterDetailShellPage.Master = ShellViewPage.Create(masterDetailShellPage.viewFactory.GetView(newViewModel));
         }
 
-        public static void DetailViewModelsPropertyChanged(BindableObject d, IEnumerable<IViewModel> oldValue, IEnumerable<IViewModel> newValue)
+        public static void DetailViewModelsPropertyChanged(BindableObject d, object oldValue, object newValue)
         {
             MasterDetailShellPage masterDetailShellPage = d as MasterDetailShellPage;
+            IEnumerable<IViewModel> oldViewModels = oldValue as IEnumerable<IViewModel>;
+            IEnumerable<IViewModel> newViewModels = newValue as IEnumerable<IViewModel>;
 
-            if (oldValue != null)
+            if (oldViewModels != null)
             {
-                if (oldValue is ObservableCollection<IViewModel>)
-                    (oldValue as ObservableCollection<IViewModel>).CollectionChanged -= masterDetailShellPage.MasterDetailShellPage_CollectionChanged;
+                if (oldViewModels is ObservableCollection<IViewModel>)
+                    (oldViewModels as ObservableCollection<IViewModel>).CollectionChanged -= masterDetailShellPage.MasterDetailShellPage_CollectionChanged;
             }
 
-            if (newValue != null)
+            if (newViewModels != null)
             {
                 masterDetailShellPage.CreateDetailPage();
                 masterDetailShellPage.IsReady = false;
 
-                if (newValue is ObservableCollection<IViewModel>)
-                    (newValue as ObservableCollection<IViewModel>).CollectionChanged += masterDetailShellPage.MasterDetailShellPage_CollectionChanged;
+                if (newViewModels is ObservableCollection<IViewModel>)
+                    (newViewModels as ObservableCollection<IViewModel>).CollectionChanged += masterDetailShellPage.MasterDetailShellPage_CollectionChanged;
 
-                foreach (IViewModel viewModel in newValue)
+                foreach (IViewModel viewModel in newViewModels)
                     masterDetailShellPage.AddView(viewModel);
             }
         }

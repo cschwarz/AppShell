@@ -6,24 +6,28 @@ namespace AppShell.Mobile.Views
     [ContentProperty("ShellContent")]
     public partial class ShellView : ContentView
     {
-        public static readonly BindableProperty ShellContentProperty = BindableProperty.Create<ShellView, View>(d => d.ShellContent, null, propertyChanged: ShellContentPropertyChanged);
-        public static readonly BindableProperty HasNavigationBarProperty = BindableProperty.Create<ShellView, bool>(x => x.HasNavigationBar, true, propertyChanged: OnHasNavigationBarChanged);
+        public static readonly BindableProperty ShellContentProperty = BindableProperty.Create("ShellContent", typeof(View), typeof(ShellView), null, propertyChanged: ShellContentPropertyChanged);
+        public static readonly BindableProperty HasNavigationBarProperty = BindableProperty.Create("HasNavigationBar", typeof(bool), typeof(ShellView), true, propertyChanged: OnHasNavigationBarChanged);
 
         public View ShellContent { get { return (View)GetValue(ShellContentProperty); } set { SetValue(ShellContentProperty, value); } }
         public bool HasNavigationBar { get { return (bool)GetValue(HasNavigationBarProperty); } set { SetValue(HasNavigationBarProperty, value); } }
 
-        public static void ShellContentPropertyChanged(BindableObject d, View oldValue, View newValue)
+        public static void ShellContentPropertyChanged(BindableObject d, object oldValue, object newValue)
         {
             ShellView shellView = d as ShellView;
-            shellView.ShellContentView.Content = newValue;
+            View newView = newValue as View;
+
+            shellView.ShellContentView.Content = newView;
         }
 
-        private static void OnHasNavigationBarChanged(BindableObject d, bool oldValue, bool newValue)
+        private static void OnHasNavigationBarChanged(BindableObject d, object oldValue, object newValue)
         {
             ShellView shellView = d as ShellView;
-            NavigationPage.SetHasNavigationBar(shellView, newValue);
+            bool newHasNavigationBar = (bool)newValue;
 
-            if (!newValue)
+            NavigationPage.SetHasNavigationBar(shellView, newHasNavigationBar);
+
+            if (!newHasNavigationBar)
                 shellView.Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
         }
 

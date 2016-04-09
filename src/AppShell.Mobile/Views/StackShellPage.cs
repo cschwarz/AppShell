@@ -11,28 +11,30 @@ namespace AppShell.Mobile
     [View(typeof(SplashScreenShellViewModel))]
     public class StackShellPage : NavigationPage, IPageReady
     {
-        public static readonly BindableProperty ViewModelsProperty = BindableProperty.Create<StackShellPage, IEnumerable<IViewModel>>(d => d.ViewModels, null, propertyChanged: ViewModelsPropertyChanged);
+        public static readonly BindableProperty ViewModelsProperty = BindableProperty.Create("ViewModels", typeof(IEnumerable<IViewModel>), typeof(StackShellPage), null, propertyChanged: ViewModelsPropertyChanged);
 
         public IEnumerable<IViewModel> ViewModels { get { return (IEnumerable<IViewModel>)GetValue(ViewModelsProperty); } set { SetValue(ViewModelsProperty, value); } }
 
-        public static void ViewModelsPropertyChanged(BindableObject d, IEnumerable<IViewModel> oldValue, IEnumerable<IViewModel> newValue)
+        public static void ViewModelsPropertyChanged(BindableObject d, object oldValue, object newValue)
         {
             StackShellPage stackShellPage = d as StackShellPage;
+            IEnumerable<IViewModel> oldViewModels = oldValue as IEnumerable<IViewModel>;
+            IEnumerable<IViewModel> newViewModels = newValue as IEnumerable<IViewModel>;
 
-            if (oldValue != null)
+            if (oldViewModels != null)
             {
-                if (oldValue is ObservableCollection<IViewModel>)
-                    (oldValue as ObservableCollection<IViewModel>).CollectionChanged -= stackShellPage.StackShellPage_CollectionChanged;
+                if (oldViewModels is ObservableCollection<IViewModel>)
+                    (oldViewModels as ObservableCollection<IViewModel>).CollectionChanged -= stackShellPage.StackShellPage_CollectionChanged;
             }
 
-            if (newValue != null)
+            if (newViewModels != null)
             {
                 stackShellPage.IsReady = false;
 
-                if (newValue is ObservableCollection<IViewModel>)
-                    (newValue as ObservableCollection<IViewModel>).CollectionChanged += stackShellPage.StackShellPage_CollectionChanged;
+                if (newViewModels is ObservableCollection<IViewModel>)
+                    (newViewModels as ObservableCollection<IViewModel>).CollectionChanged += stackShellPage.StackShellPage_CollectionChanged;
 
-                foreach (IViewModel viewModel in newValue)
+                foreach (IViewModel viewModel in newViewModels)
                     stackShellPage.AddView(viewModel);
             }
         }

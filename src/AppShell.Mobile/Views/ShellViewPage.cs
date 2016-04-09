@@ -9,31 +9,35 @@ namespace AppShell.Mobile
 {
     public class ShellViewPage : ContentPage
     {
-        public static readonly BindableProperty HasNavigationBarProperty = BindableProperty.Create<ShellViewPage, bool>(x => x.HasNavigationBar, true, propertyChanged: OnHasNavigationBarChanged);
-        public static readonly BindableProperty ShellToolbarItemsProperty = BindableProperty.Create<ShellViewPage, IEnumerable<ToolbarItemViewModel>>(x => x.ShellToolbarItems, null, propertyChanged: OnShellToolbarItemsChanged);
+        public static readonly BindableProperty HasNavigationBarProperty = BindableProperty.Create("HasNavigationBar", typeof(bool), typeof(ShellViewPage), true, propertyChanged: OnHasNavigationBarChanged);
+        public static readonly BindableProperty ShellToolbarItemsProperty = BindableProperty.Create("ShellToolbarItems", typeof(IEnumerable<ToolbarItemViewModel>), typeof(ShellViewPage), null, propertyChanged: OnShellToolbarItemsChanged);
 
         public bool HasNavigationBar { get { return (bool)GetValue(HasNavigationBarProperty); } set { SetValue(HasNavigationBarProperty, value); } }
         public IEnumerable<ToolbarItemViewModel> ShellToolbarItems { get { return (IEnumerable<ToolbarItemViewModel>)GetValue(ShellToolbarItemsProperty); } set { SetValue(ShellToolbarItemsProperty, value); } }
 
-        private static void OnHasNavigationBarChanged(BindableObject bindable, bool oldValue, bool newValue)
+        private static void OnHasNavigationBarChanged(BindableObject bindable, object oldValue, object newValue)
         {
             ShellViewPage shellViewPage = (ShellViewPage)bindable;
-            NavigationPage.SetHasNavigationBar(shellViewPage, newValue);
+            bool newHasNavigationBar = (bool)newValue;
+
+            NavigationPage.SetHasNavigationBar(shellViewPage, newHasNavigationBar);
         }
 
-        private static void OnShellToolbarItemsChanged(BindableObject bindable, IEnumerable<ToolbarItemViewModel> oldValue, IEnumerable<ToolbarItemViewModel> newValue)
+        private static void OnShellToolbarItemsChanged(BindableObject bindable, object oldValue, object newValue)
         {
             ShellViewPage shellViewPage = (ShellViewPage)bindable;
+            IEnumerable<IViewModel> oldToolbarItems = oldValue as IEnumerable<IViewModel>;
+            IEnumerable<IViewModel> newToolbarItems = newValue as IEnumerable<IViewModel>;
 
-            if (oldValue is ObservableCollection<ToolbarItemViewModel>)
-                (oldValue as ObservableCollection<ToolbarItemViewModel>).CollectionChanged -= shellViewPage.ShellToolbarItems_CollectionChanged;
-            if (newValue != null)
+            if (oldToolbarItems is ObservableCollection<ToolbarItemViewModel>)
+                (oldToolbarItems as ObservableCollection<ToolbarItemViewModel>).CollectionChanged -= shellViewPage.ShellToolbarItems_CollectionChanged;
+            if (newToolbarItems != null)
             {
-                foreach (ToolbarItemViewModel item in newValue)
+                foreach (ToolbarItemViewModel item in newToolbarItems)
                     shellViewPage.AddToolbarItem(item);
 
-                if (newValue is ObservableCollection<ToolbarItemViewModel>)
-                    (newValue as ObservableCollection<ToolbarItemViewModel>).CollectionChanged += shellViewPage.ShellToolbarItems_CollectionChanged;
+                if (newToolbarItems is ObservableCollection<ToolbarItemViewModel>)
+                    (newToolbarItems as ObservableCollection<ToolbarItemViewModel>).CollectionChanged += shellViewPage.ShellToolbarItems_CollectionChanged;
             }
         }
 

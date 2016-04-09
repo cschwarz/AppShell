@@ -15,7 +15,7 @@ namespace AppShell.Mobile
             public string Data { get; set; }
         }
 
-        public static readonly BindableProperty SourceProperty = BindableProperty.Create<ShellWebView, WebViewSource>(d => d.Source, null);
+        public static readonly BindableProperty SourceProperty = BindableProperty.Create("Source", typeof(WebViewSource), typeof(ShellWebView), null);
         public WebViewSource Source { get { return (WebViewSource)GetValue(SourceProperty); } set { SetValue(SourceProperty, value); } }
 
         public EventHandler LoadFinished;

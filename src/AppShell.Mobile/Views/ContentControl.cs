@@ -5,7 +5,7 @@ namespace AppShell.Mobile
 {
     public class ContentControl : ContentView
     {
-        public static readonly BindableProperty ContentContextProperty = BindableProperty.Create<ContentControl, object>(x => x.ContentContext, null, propertyChanged: OnContentContextChanged);
+        public static readonly BindableProperty ContentContextProperty = BindableProperty.Create("ContentContext", typeof(object), typeof(ContentControl), null, propertyChanged: OnContentContextChanged);
 
         private IViewFactory viewFactory;
 

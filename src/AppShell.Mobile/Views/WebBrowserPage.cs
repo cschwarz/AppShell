@@ -29,26 +29,28 @@ namespace AppShell.Mobile
             public string CallbackId { get; set; }
         }
 
-        public static readonly BindableProperty UrlProperty = BindableProperty.Create<WebBrowserPage, string>(d => d.Url, null, propertyChanged: UrlPropertyChanged);
-        public static readonly BindableProperty HtmlProperty = BindableProperty.Create<WebBrowserPage, string>(d => d.Html, null, propertyChanged: HtmlPropertyChanged);
+        public static readonly BindableProperty UrlProperty = BindableProperty.Create("Url", typeof(string), typeof(WebBrowserPage), null, propertyChanged: UrlPropertyChanged);
+        public static readonly BindableProperty HtmlProperty = BindableProperty.Create("Html", typeof(string), typeof(WebBrowserPage), null, propertyChanged: HtmlPropertyChanged);
 
         public string Url { get { return (string)GetValue(UrlProperty); } set { SetValue(UrlProperty, value); } }
         public string Html { get { return (string)GetValue(HtmlProperty); } set { SetValue(HtmlProperty, value); } }
 
-        public static void UrlPropertyChanged(BindableObject d, string oldValue, string newValue)
+        public static void UrlPropertyChanged(BindableObject d, object oldValue, object newValue)
         {
             WebBrowserPage webBrowserPage = d as WebBrowserPage;
+            string newUrl = (string)newValue;
 
-            if (newValue != null)
-                webBrowserPage.webView.Source = new UrlWebViewSource() { Url = newValue };
+            if (newUrl != null)
+                webBrowserPage.webView.Source = new UrlWebViewSource() { Url = newUrl };
         }
 
-        public static void HtmlPropertyChanged(BindableObject d, string oldValue, string newValue)
+        public static void HtmlPropertyChanged(BindableObject d, object oldValue, object newValue)
         {
             WebBrowserPage webBrowserPage = d as WebBrowserPage;
+            string newHtml = (string)newValue;
 
-            if (newValue != null)
-                webBrowserPage.webView.Source = new HtmlWebViewSource() { Html = newValue };
+            if (newHtml != null)
+                webBrowserPage.webView.Source = new HtmlWebViewSource() { Html = newHtml };
         }
 
         private ShellWebView webView;

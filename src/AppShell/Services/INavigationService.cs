@@ -13,6 +13,8 @@ namespace AppShell
         void Push(string viewModelType, Dictionary<string, object> data = null, bool replace = false);
         [ServiceMethod("pop")]
         void Pop();
+        [ServiceMethod("popToRoot")]
+        void PopToRoot();
         [ServiceMethod("getActive")]
         IViewModel GetActive();
     }

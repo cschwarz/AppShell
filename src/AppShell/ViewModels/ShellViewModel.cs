@@ -107,6 +107,23 @@ namespace AppShell
                 OnCloseRequested();
         }
 
+        public void PopToRoot()
+        {
+            for (int i = Items.Count - 1; i > 0; i--)
+            {
+                IViewModel viewModel = Items[i];
+                viewModel.Dispose();
+
+                Items.RemoveAt(i);
+                
+                if (ViewModelPopped != null)
+                    ViewModelPopped(this, viewModel);
+            }
+            
+            ActiveItem = Items.Single();
+            ActiveItem.OnActivated();
+        }
+
         public IViewModel GetActive()
         {
             return ActiveItem;

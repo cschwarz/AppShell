@@ -136,6 +136,11 @@ namespace AppShell.Tests
                 return false;
             return Equals((DataTypeTest)obj);
         }
+
+        public override int GetHashCode()
+        {
+            return new { StringValue, LongValue, FloatValue, DoubleValue, StringArray, LongArray, StringEnumerable, LongEnumerable, StringDictionary }.GetHashCode();
+        }
     }
 
     public class ServiceDispatcherTest

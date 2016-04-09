@@ -16,6 +16,8 @@ namespace AppShell
         void CloseDetached(IViewModel viewModel);
         [ServiceMethod("closeDetached")]
         void CloseDetached(string name);
+        [ServiceMethod("closeAllDetached")]
+        void CloseAllDetached();
         [ServiceMethod("activateDetached")]
         void ActivateDetached(string name);
         [ServiceMethod("detachedExists")]

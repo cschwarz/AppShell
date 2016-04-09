@@ -173,6 +173,14 @@ namespace AppShell
             DetachedItems.Remove(viewModel);
         }
 
+        public void CloseAllDetached()
+        {
+            foreach (IViewModel viewModel in DetachedItems)
+                viewModel.Dispose();
+
+            DetachedItems.Clear();
+        }
+
         public bool DetachedExists(string name)
         {
             return DetachedItems.Any(d => d.Name == name);

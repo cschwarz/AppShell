@@ -75,6 +75,13 @@ namespace AppShell.Desktop
                     }
                 }
             }
+            else if (e.Action == NotifyCollectionChangedAction.Reset)
+            {
+                foreach (var detachedWindow in detachedWindows)
+                    detachedWindow.Value.Close();
+
+                detachedWindows.Clear();
+            }
         }
 
         private void ShellViewModel_ActivateDetachedRequested(object sender, IViewModel e)

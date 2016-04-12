@@ -21,7 +21,7 @@ namespace AppShell.Mobile.iOS
         public void DidFinishNavigation(WKWebView webView, WKNavigation navigation)
         {
             if (Element != null)
-                (Element as ShellWebView).OnLoadFinished(webView, EventArgs.Empty);
+                (Element as ShellWebView).OnNavigationCompleted(webView, webView.Url.AbsoluteString);
         }
 
         public void DidReceiveScriptMessage(WKUserContentController userContentController, WKScriptMessage message)

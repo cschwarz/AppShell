@@ -15,7 +15,7 @@ namespace AppShell.Desktop.Views
     [View(typeof(WebBrowserViewModel))]
     public partial class WebBrowserView : UserControl
     {
-        public static readonly DependencyProperty UrlProperty = DependencyProperty.Register("Url", typeof(string), typeof(WebBrowserView), new PropertyMetadata(null, UrlPropertyChanged));
+        public static readonly DependencyProperty UrlProperty = DependencyProperty.Register("Url", typeof(string), typeof(WebBrowserView), new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, UrlPropertyChanged));
         public static readonly DependencyProperty HtmlProperty = DependencyProperty.Register("Html", typeof(string), typeof(WebBrowserView), new PropertyMetadata(null, HtmlPropertyChanged));
 
         public string Url { get { return (string)GetValue(UrlProperty); } set { SetValue(UrlProperty, value); } }
@@ -25,7 +25,7 @@ namespace AppShell.Desktop.Views
         {
             WebBrowserView webBrowserView = d as WebBrowserView;
 
-            if (e.NewValue != null)
+            if (e.NewValue != null && (webBrowserView.WebBrowser.Source == null || webBrowserView.WebBrowser.Source.AbsoluteUri != (string)e.NewValue))
             {
                 string url = (string)e.NewValue;
                 webBrowserView.WebBrowser.Navigate(url);
@@ -51,6 +51,7 @@ namespace AppShell.Desktop.Views
             SetBinding(HtmlProperty, new Binding("Html"));
 
             WebBrowser.ObjectForScripting = new ScriptInterface(ShellCore.Container.GetInstance<IServiceDispatcher>(), WebBrowser);
+            WebBrowser.Navigated += (s, e) => Url = e.Uri.AbsoluteUri;
         }
     }
 

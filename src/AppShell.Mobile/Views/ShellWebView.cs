@@ -18,7 +18,7 @@ namespace AppShell.Mobile
         public static readonly BindableProperty SourceProperty = BindableProperty.Create("Source", typeof(WebViewSource), typeof(ShellWebView), null);
         public WebViewSource Source { get { return (WebViewSource)GetValue(SourceProperty); } set { SetValue(SourceProperty, value); } }
 
-        public EventHandler LoadFinished;
+        public EventHandler<string> NavigationCompleted;
 
         internal EventHandler<string> InjectJavaScriptRequested;
         internal Dictionary<string, Action<string>> Callbacks;
@@ -52,10 +52,13 @@ namespace AppShell.Mobile
                 Callbacks[m.Action](m.Data);
         }
 
-        internal void OnLoadFinished(object sender, EventArgs e)
+        internal void OnNavigationCompleted(object sender, string e)
         {
-            if (LoadFinished != null)
-                LoadFinished(sender, e);
+            if (Source is UrlWebViewSource)
+                (Source as UrlWebViewSource).Url = e;
+
+            if (NavigationCompleted != null)
+                NavigationCompleted(sender, e);
         }
     }
 }

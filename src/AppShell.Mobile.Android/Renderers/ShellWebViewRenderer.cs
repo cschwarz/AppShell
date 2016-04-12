@@ -26,7 +26,7 @@ namespace AppShell.Mobile.Android
             {
                 base.OnPageFinished(view, url);
 
-                webView.OnLoadFinished(this, EventArgs.Empty);
+                webView.OnNavigationCompleted(this, url);
             }
         }
 

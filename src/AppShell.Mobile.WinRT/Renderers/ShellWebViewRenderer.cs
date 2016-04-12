@@ -58,7 +58,7 @@ namespace AppShell.Mobile.WinRT
 
         private void NavigationCompleted(Windows.UI.Xaml.Controls.WebView sender, Windows.UI.Xaml.Controls.WebViewNavigationCompletedEventArgs args)
         {
-            Element.OnLoadFinished(sender, EventArgs.Empty);
+            Element.OnNavigationCompleted(sender, args.Uri.AbsoluteUri);
         }
 
         private void ScriptNotify(object sender, Windows.UI.Xaml.Controls.NotifyEventArgs e)

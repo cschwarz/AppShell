@@ -29,7 +29,7 @@ namespace AppShell.Mobile
             public string CallbackId { get; set; }
         }
 
-        public static readonly BindableProperty UrlProperty = BindableProperty.Create("Url", typeof(string), typeof(WebBrowserPage), null, propertyChanged: UrlPropertyChanged);
+        public static readonly BindableProperty UrlProperty = BindableProperty.Create("Url", typeof(string), typeof(WebBrowserPage), null, propertyChanged: UrlPropertyChanged, defaultBindingMode: BindingMode.TwoWay);
         public static readonly BindableProperty HtmlProperty = BindableProperty.Create("Html", typeof(string), typeof(WebBrowserPage), null, propertyChanged: HtmlPropertyChanged);
 
         public string Url { get { return (string)GetValue(UrlProperty); } set { SetValue(UrlProperty, value); } }
@@ -40,7 +40,7 @@ namespace AppShell.Mobile
             WebBrowserPage webBrowserPage = d as WebBrowserPage;
             string newUrl = (string)newValue;
 
-            if (newUrl != null)
+            if (newUrl != null && (webBrowserPage.webView.Source == null || (webBrowserPage.webView.Source is UrlWebViewSource) && ((UrlWebViewSource)webBrowserPage.webView.Source).Url != newUrl))
                 webBrowserPage.webView.Source = new UrlWebViewSource() { Url = newUrl };
         }
 
@@ -104,6 +104,12 @@ namespace AppShell.Mobile
 
             SetBinding(UrlProperty, new Binding("Url"));
             SetBinding(HtmlProperty, new Binding("Html"));
+
+            webView.NavigationCompleted += (s, e) =>
+            {
+                if (webView.Source is UrlWebViewSource)
+                    Url = e;
+            };
         }
     }
 }

@@ -26,8 +26,8 @@ namespace AppShell.Mobile
         private static void OnShellToolbarItemsChanged(BindableObject bindable, object oldValue, object newValue)
         {
             ShellViewPage shellViewPage = (ShellViewPage)bindable;
-            IEnumerable<IViewModel> oldToolbarItems = oldValue as IEnumerable<IViewModel>;
-            IEnumerable<IViewModel> newToolbarItems = newValue as IEnumerable<IViewModel>;
+            IEnumerable<ToolbarItemViewModel> oldToolbarItems = oldValue as IEnumerable<ToolbarItemViewModel>;
+            IEnumerable<ToolbarItemViewModel> newToolbarItems = newValue as IEnumerable<ToolbarItemViewModel>;
 
             if (oldToolbarItems is ObservableCollection<ToolbarItemViewModel>)
                 (oldToolbarItems as ObservableCollection<ToolbarItemViewModel>).CollectionChanged -= shellViewPage.ShellToolbarItems_CollectionChanged;

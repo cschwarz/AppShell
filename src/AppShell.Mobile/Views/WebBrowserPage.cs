@@ -35,18 +35,18 @@ namespace AppShell.Mobile
         public string Url { get { return (string)GetValue(UrlProperty); } set { SetValue(UrlProperty, value); } }
         public string Html { get { return (string)GetValue(HtmlProperty); } set { SetValue(HtmlProperty, value); } }
 
-        public static void UrlPropertyChanged(BindableObject d, object oldValue, object newValue)
+        public static void UrlPropertyChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
-            WebBrowserPage webBrowserPage = d as WebBrowserPage;
+            WebBrowserPage webBrowserPage = (WebBrowserPage)bindableObject;
             string newUrl = (string)newValue;
 
             if (newUrl != null && (webBrowserPage.webView.Source == null || (webBrowserPage.webView.Source is UrlWebViewSource) && ((UrlWebViewSource)webBrowserPage.webView.Source).Url != newUrl))
                 webBrowserPage.webView.Source = new UrlWebViewSource() { Url = newUrl };
         }
 
-        public static void HtmlPropertyChanged(BindableObject d, object oldValue, object newValue)
+        public static void HtmlPropertyChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
-            WebBrowserPage webBrowserPage = d as WebBrowserPage;
+            WebBrowserPage webBrowserPage = (WebBrowserPage)bindableObject;
             string newHtml = (string)newValue;
 
             if (newHtml != null)

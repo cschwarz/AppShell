@@ -16,20 +16,20 @@ namespace AppShell.Mobile
         public IViewModel MasterViewModel { get { return (IViewModel)GetValue(MasterViewModelProperty); } set { SetValue(MasterViewModelProperty, value); } }
         public IEnumerable<IViewModel> DetailViewModels { get { return (IEnumerable<IViewModel>)GetValue(DetailViewModelsProperty); } set { SetValue(DetailViewModelsProperty, value); } }
 
-        public static void MasterViewModelPropertyChanged(BindableObject d, object oldValue, object newValue)
+        public static void MasterViewModelPropertyChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
-            MasterDetailShellPage masterDetailShellPage = d as MasterDetailShellPage;
-            IViewModel newViewModel = newValue as IViewModel;
+            MasterDetailShellPage masterDetailShellPage = (MasterDetailShellPage)bindableObject;
+            IViewModel newViewModel = (IViewModel)newValue;
 
             if (newViewModel != null)
                 masterDetailShellPage.Master = ShellViewPage.Create(masterDetailShellPage.viewFactory.GetView(newViewModel));
         }
 
-        public static void DetailViewModelsPropertyChanged(BindableObject d, object oldValue, object newValue)
+        public static void DetailViewModelsPropertyChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
-            MasterDetailShellPage masterDetailShellPage = d as MasterDetailShellPage;
-            IEnumerable<IViewModel> oldViewModels = oldValue as IEnumerable<IViewModel>;
-            IEnumerable<IViewModel> newViewModels = newValue as IEnumerable<IViewModel>;
+            MasterDetailShellPage masterDetailShellPage = (MasterDetailShellPage)bindableObject;
+            IEnumerable<IViewModel> oldViewModels = (IEnumerable<IViewModel>)oldValue;
+            IEnumerable<IViewModel> newViewModels = (IEnumerable<IViewModel>)newValue;
 
             if (oldViewModels != null)
             {

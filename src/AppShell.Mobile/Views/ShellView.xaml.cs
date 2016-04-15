@@ -12,17 +12,17 @@ namespace AppShell.Mobile.Views
         public View ShellContent { get { return (View)GetValue(ShellContentProperty); } set { SetValue(ShellContentProperty, value); } }
         public bool HasNavigationBar { get { return (bool)GetValue(HasNavigationBarProperty); } set { SetValue(HasNavigationBarProperty, value); } }
 
-        public static void ShellContentPropertyChanged(BindableObject d, object oldValue, object newValue)
+        public static void ShellContentPropertyChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
-            ShellView shellView = d as ShellView;
-            View newView = newValue as View;
+            ShellView shellView = (ShellView)bindableObject;
+            View newView = (View)newValue;
 
             shellView.ShellContentView.Content = newView;
         }
 
-        private static void OnHasNavigationBarChanged(BindableObject d, object oldValue, object newValue)
+        private static void OnHasNavigationBarChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
-            ShellView shellView = d as ShellView;
+            ShellView shellView = (ShellView)bindableObject;
             bool newHasNavigationBar = (bool)newValue;
 
             NavigationPage.SetHasNavigationBar(shellView, newHasNavigationBar);

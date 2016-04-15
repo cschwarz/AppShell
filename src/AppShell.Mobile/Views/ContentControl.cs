@@ -14,9 +14,9 @@ namespace AppShell.Mobile
             viewFactory = ShellCore.Container.GetInstance<IViewFactory>();
         }
 
-        private static void OnContentContextChanged(BindableObject bindable, object oldValue, object newValue)
+        private static void OnContentContextChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
-            ContentControl contentControl = (ContentControl)bindable;
+            ContentControl contentControl = (ContentControl)bindableObject;
 
             if (newValue != null)
             {

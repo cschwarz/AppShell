@@ -15,19 +15,19 @@ namespace AppShell.Mobile
         public bool HasNavigationBar { get { return (bool)GetValue(HasNavigationBarProperty); } set { SetValue(HasNavigationBarProperty, value); } }
         public IEnumerable<ToolbarItemViewModel> ShellToolbarItems { get { return (IEnumerable<ToolbarItemViewModel>)GetValue(ShellToolbarItemsProperty); } set { SetValue(ShellToolbarItemsProperty, value); } }
 
-        private static void OnHasNavigationBarChanged(BindableObject bindable, object oldValue, object newValue)
+        private static void OnHasNavigationBarChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
-            ShellViewPage shellViewPage = (ShellViewPage)bindable;
+            ShellViewPage shellViewPage = (ShellViewPage)bindableObject;
             bool newHasNavigationBar = (bool)newValue;
 
             NavigationPage.SetHasNavigationBar(shellViewPage, newHasNavigationBar);
         }
 
-        private static void OnShellToolbarItemsChanged(BindableObject bindable, object oldValue, object newValue)
+        private static void OnShellToolbarItemsChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
-            ShellViewPage shellViewPage = (ShellViewPage)bindable;
-            IEnumerable<ToolbarItemViewModel> oldToolbarItems = oldValue as IEnumerable<ToolbarItemViewModel>;
-            IEnumerable<ToolbarItemViewModel> newToolbarItems = newValue as IEnumerable<ToolbarItemViewModel>;
+            ShellViewPage shellViewPage = (ShellViewPage)bindableObject;
+            IEnumerable<ToolbarItemViewModel> oldToolbarItems = (IEnumerable<ToolbarItemViewModel>)oldValue;
+            IEnumerable<ToolbarItemViewModel> newToolbarItems = (IEnumerable<ToolbarItemViewModel>)newValue;
 
             if (oldToolbarItems is ObservableCollection<ToolbarItemViewModel>)
                 (oldToolbarItems as ObservableCollection<ToolbarItemViewModel>).CollectionChanged -= shellViewPage.ShellToolbarItems_CollectionChanged;

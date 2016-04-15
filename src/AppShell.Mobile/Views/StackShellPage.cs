@@ -15,11 +15,11 @@ namespace AppShell.Mobile
 
         public IEnumerable<IViewModel> ViewModels { get { return (IEnumerable<IViewModel>)GetValue(ViewModelsProperty); } set { SetValue(ViewModelsProperty, value); } }
 
-        public static void ViewModelsPropertyChanged(BindableObject d, object oldValue, object newValue)
+        public static void ViewModelsPropertyChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
-            StackShellPage stackShellPage = d as StackShellPage;
-            IEnumerable<IViewModel> oldViewModels = oldValue as IEnumerable<IViewModel>;
-            IEnumerable<IViewModel> newViewModels = newValue as IEnumerable<IViewModel>;
+            StackShellPage stackShellPage = (StackShellPage)bindableObject;
+            IEnumerable<IViewModel> oldViewModels = (IEnumerable<IViewModel>)oldValue;
+            IEnumerable<IViewModel> newViewModels = (IEnumerable<IViewModel>)newValue;
 
             if (oldViewModels != null)
             {

@@ -9,10 +9,10 @@ namespace AppShell.Mobile.Views
 
         public View HeaderContent { get { return (View)GetValue(HeaderContentProperty); } set { SetValue(HeaderContentProperty, value); } }
 
-        public static void HeaderContentPropertyChanged(BindableObject d, object oldValue, object newValue)
+        public static void HeaderContentPropertyChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
-            MasterView masterView = d as MasterView;
-            View newView = newValue as View;
+            MasterView masterView = (MasterView)bindableObject;
+            View newView = (View)newValue;
 
             masterView.Header.Content = newView;
         }

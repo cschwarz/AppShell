@@ -9,9 +9,9 @@ namespace AppShell.Mobile.Views
         public static readonly BindableProperty HasNavigationBarProperty = BindableProperty.Create("HasNavigationBar", typeof(bool), typeof(TabShellPage), true, propertyChanged: OnHasNavigationBarChanged);
         public bool HasNavigationBar { get { return (bool)GetValue(HasNavigationBarProperty); } set { SetValue(HasNavigationBarProperty, value); } }
 
-        private static void OnHasNavigationBarChanged(BindableObject d, object oldValue, object newValue)
+        private static void OnHasNavigationBarChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
-            TabShellPage tabShellPage = d as TabShellPage;
+            TabShellPage tabShellPage = (TabShellPage)bindableObject;
             bool newHasNavigationBar = (bool)newValue;
 
             NavigationPage.SetHasNavigationBar(tabShellPage, newHasNavigationBar);

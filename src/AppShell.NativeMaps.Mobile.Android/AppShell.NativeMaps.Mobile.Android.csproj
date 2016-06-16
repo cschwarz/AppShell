@@ -118,7 +118,7 @@
     <Compile Include="UrlTileOverlayProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AppShell.Mobile.NativeMaps.Android.nuspec" />
+    <None Include="AppShell.NativeMaps.Mobile.Android.nuspec" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
   </ItemGroup>

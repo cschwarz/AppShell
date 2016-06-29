@@ -138,9 +138,8 @@ namespace AppShell.NativeMaps.Mobile.iOS
             marker.PropertyChanged -= Marker_PropertyChanged;
 
             Control.RemoveAnnotation(Markers[marker]);
-
-            if (Markers.ContainsKey(marker))
-                Markers.Remove(marker);
+            
+            Markers.Remove(marker);
         }
 
         private void AddTileOverlay(TileOverlay tileOverlay)
@@ -159,9 +158,8 @@ namespace AppShell.NativeMaps.Mobile.iOS
         private void RemoveTileOverlay(TileOverlay tileOverlay)
         {
             Control.RemoveOverlay(TileOverlays[tileOverlay]);
-
-            if (TileOverlays.ContainsKey(tileOverlay))
-                TileOverlays.Remove(tileOverlay);
+            
+            TileOverlays.Remove(tileOverlay);
         }
 
         private void Marker_PropertyChanged(object sender, PropertyChangedEventArgs e)

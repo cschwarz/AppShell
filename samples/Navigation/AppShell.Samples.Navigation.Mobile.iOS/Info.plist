@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>AppShell.Samples.Navigation.Mobile.iOS</string>
+	<string>Navigation</string>
 	<key>CFBundleIdentifier</key>
 	<string>at.refactory.appshell.samples.navigation</string>
 	<key>CFBundleShortVersionString</key>

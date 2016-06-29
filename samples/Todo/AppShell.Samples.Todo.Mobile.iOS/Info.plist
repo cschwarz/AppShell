@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>AppShell.Samples.Todo.Mobile.iOS</string>
+	<string>Todo</string>
 	<key>CFBundleIdentifier</key>
 	<string>at.refactory.appshell.samples.todo</string>
 	<key>CFBundleShortVersionString</key>

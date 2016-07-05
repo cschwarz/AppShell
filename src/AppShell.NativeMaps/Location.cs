@@ -32,5 +32,20 @@ namespace AppShell.NativeMaps
         {
             return new { Latitude, Longitude }.GetHashCode();
         }
+
+        public static bool operator ==(Location x, Location y)
+        {
+            if (ReferenceEquals(x, y))
+                return true;
+
+            if (((object)x == null) || ((object)y == null))
+                return false;
+
+            return x.Equals(y);
+        }
+        public static bool operator !=(Location x, Location y)
+        {
+            return !(x == y);
+        }        
     }
 }

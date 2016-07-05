@@ -47,13 +47,8 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
-    <CodesignEntitlements>
-    </CodesignEntitlements>
-    <CodesignKey>iPhone Developer: Christian Schwarz (963CMG9DYL)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>True</MtouchDebug>
-    <CodesignProvision>43747e24-660b-446e-b9b3-15867dd3bd17</CodesignProvision>
-    <CodesignResourceRules />
-    <CodesignExtraArgs />
     <MtouchSdkVersion>8.4</MtouchSdkVersion>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchProfiling>False</MtouchProfiling>

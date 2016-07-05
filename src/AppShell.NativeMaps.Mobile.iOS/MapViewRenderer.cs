@@ -165,6 +165,10 @@ namespace AppShell.NativeMaps.Mobile.iOS
         private void Marker_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             Marker marker = sender as Marker;
+            
+            if (e.PropertyName == "Center")
+                Markers[marker].SetCoordinate(new CLLocationCoordinate2D(marker.Center.Latitude, marker.Center.Longitude));
+
             Control.RemoveAnnotation(Markers[marker]);
             Control.AddAnnotation(Markers[marker]);
         }

@@ -19,6 +19,20 @@ namespace AppShell
             }
         }
 
+        private string script;
+        public string Script
+        {
+            get { return script; }
+            set
+            {
+                if (script != value)
+                {
+                    script = value;
+                    OnPropertyChanged("Script");
+                }
+            }
+        }
+
         private string html;
         public string Html
         {
@@ -69,6 +83,11 @@ namespace AppShell
             base.Dispose();
 
             serviceDispatcher.Unsubscribe<IWebBrowserService>(this);
+        }
+
+        public void InvokeScript(string script)
+        {
+            Script = script;
         }
 
         public void Navigate(string url)

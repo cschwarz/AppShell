@@ -16,6 +16,7 @@ namespace AppShell.Desktop.Views
     public partial class WebBrowserView : UserControl
     {
         public static readonly DependencyProperty UrlProperty = DependencyProperty.Register("Url", typeof(string), typeof(WebBrowserView), new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, UrlPropertyChanged));
+        public static readonly DependencyProperty ScriptProperty = DependencyProperty.Register("Script", typeof(string), typeof(WebBrowserView), new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, ScriptPropertyChanged));
         public static readonly DependencyProperty HtmlProperty = DependencyProperty.Register("Html", typeof(string), typeof(WebBrowserView), new PropertyMetadata(null, HtmlPropertyChanged));
 
         public string Url { get { return (string)GetValue(UrlProperty); } set { SetValue(UrlProperty, value); } }
@@ -43,12 +44,24 @@ namespace AppShell.Desktop.Views
             }
         }
 
+        public static void ScriptPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            WebBrowserView webBrowserView = d as WebBrowserView;
+
+            if (e.NewValue != null)
+            {
+                string script = (string)e.NewValue;
+                webBrowserView.WebBrowser.InvokeScript(script);
+            }
+        }
+
         public WebBrowserView()
         {
             InitializeComponent();
 
             SetBinding(UrlProperty, new Binding("Url"));
             SetBinding(HtmlProperty, new Binding("Html"));
+            SetBinding(ScriptProperty, new Binding("Script"));
 
             WebBrowser.ObjectForScripting = new ScriptInterface(ShellCore.Container.GetInstance<IServiceDispatcher>(), WebBrowser);
             WebBrowser.Navigated += (s, e) => Url = e.Uri.AbsoluteUri;

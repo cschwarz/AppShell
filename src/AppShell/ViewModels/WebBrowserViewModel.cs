@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Reflection;
 
 namespace AppShell
@@ -69,6 +70,8 @@ namespace AppShell
             }
         }
 
+        public Func<string, object[], object> ScriptInvoker;
+
         private IServiceDispatcher serviceDispatcher;
 
         public WebBrowserViewModel(IServiceDispatcher serviceDispatcher)
@@ -88,6 +91,13 @@ namespace AppShell
         public void InvokeScript(string script)
         {
             Script = script;
+        }
+
+        public object InvokeScript(string script, object[] args)
+        {
+            if (ScriptInvoker != null)
+                return ScriptInvoker(script, args);
+            return null;
         }
 
         public void Navigate(string url)

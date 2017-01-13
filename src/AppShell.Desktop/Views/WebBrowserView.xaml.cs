@@ -58,13 +58,25 @@ namespace AppShell.Desktop.Views
         public WebBrowserView()
         {
             InitializeComponent();
-
+            this.DataContextChanged += WebBrowserView_DataContextChanged;
             SetBinding(UrlProperty, new Binding("Url"));
             SetBinding(HtmlProperty, new Binding("Html"));
             SetBinding(ScriptProperty, new Binding("Script"));
 
             WebBrowser.ObjectForScripting = new ScriptInterface(ShellCore.Container.GetInstance<IServiceDispatcher>(), WebBrowser);
             WebBrowser.Navigated += (s, e) => Url = e.Uri.AbsoluteUri;
+        }
+
+        private void WebBrowserView_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (this.DataContext is WebBrowserViewModel)
+            {
+                (this.DataContext as WebBrowserViewModel).ScriptInvoker = new System.Func<string, object[], object>((script, args) =>
+                {
+                    return WebBrowser.InvokeScript(script, args);
+                });
+                this.DataContextChanged -= WebBrowserView_DataContextChanged;
+            }
         }
     }
 

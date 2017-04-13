@@ -26,7 +26,6 @@ namespace AppShell.Templates.Mobile.Android
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::AppShell.Templates.Mobile.Android.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Attribute

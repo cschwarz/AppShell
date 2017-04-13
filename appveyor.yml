@@ -10,10 +10,15 @@ assembly_info:
   file: '**\AssemblyInfo.*'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
+clone_folder: c:\projects\my-project
+init:
+  - cd \
+  - appveyor DownloadFile "http://dl.google.com/android/android-sdk_r24.4.1-windows.zip"
+  - 7z x "android-sdk_r24.4.1-windows.zip" > nul
+  - cd c:\projects\my-project
 install:
   - ps: .\scripts\update-version.ps1
-  - echo y | "%ProgramFiles(x86)%\Android\android-sdk\tools\android" list sdk --all
-  - echo y | "%ProgramFiles(x86)%\Android\android-sdk\tools\android" --silent update sdk --no-ui --all --filter tools,platform-tools,build-tools-23.0.3,android-24,extra-android-m2repository,extra-google-m2repository,extra-google-google_play_services
+  - echo y | "C:\android-sdk-windows\tools\android" --silent update sdk --no-ui --all --filter tools,platform-tools,build-tools-23.0.3,android-24,extra-android-m2repository,extra-google-m2repository,extra-google-google_play_services
 before_build:
 - ps: nuget restore
 build:

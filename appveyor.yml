@@ -12,7 +12,7 @@ assembly_info:
   assembly_informational_version: '{version}'
 install:
   - ps: .\scripts\update-version.ps1
-  - echo y | "$env:localappdata\Android\android-sdk\tools\android" --silent update sdk --no-ui --all --filter android-24,platform-tools,tools,build-tools-23.0.3
+  - echo y | "%localappdata%\Android\android-sdk\tools\android" --silent update sdk --no-ui --all --filter android-24,platform-tools,tools,build-tools-23.0.3
 before_build:
 - ps: nuget restore
 build:

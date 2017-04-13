@@ -14,6 +14,9 @@ install:
   - ps: .\scripts\update-version.ps1
   - dir %LocalAppData%
   - dir %LocalAppData%\Android
+  - echo %ANDROID_HOME%
+  - dir "%ProgramFiles%"
+  - dir "%ProgramFiles(x86)%"
   - echo y | "%LocalAppData%\Android\android-sdk\tools\android" --silent update sdk --no-ui --all --filter android-24,platform-tools,tools,build-tools-23.0.3
 before_build:
 - ps: nuget restore

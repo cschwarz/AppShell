@@ -19,6 +19,20 @@ namespace AppShell.NativeMaps
             }
         }
 
+        private string id;
+        public string Id
+        {
+            get { return id; }
+            set
+            {
+                if (id != value)
+                {
+                    id = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         private string icon;
         public string Icon
         {
@@ -70,6 +84,34 @@ namespace AppShell.NativeMaps
                 if (draggable != value)
                 {
                     draggable = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private string layer;
+        public string Layer
+        {
+            get { return layer; }
+            set
+            {
+                if (layer != value)
+                {
+                    layer = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private string label;
+        public string Label
+        {
+            get { return label; }
+            set
+            {
+                if (label != value)
+                {
+                    label = value;
                     OnPropertyChanged();
                 }
             }

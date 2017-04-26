@@ -1,5 +1,6 @@
 using Android.Content;
 using Android.Gms.Maps.Model;
+using Android.Graphics;
 using Android.Net;
 using AppShell.NativeMaps.Mobile;
 using AppShell.NativeMaps.Mobile.Android;
@@ -18,6 +19,7 @@ namespace AppShell.NativeMaps.Mobile.Android
 {
     public class MapViewRenderer : ViewRenderer<MapView, GMaps.MapView>, GMaps.IOnMapReadyCallback
     {
+        private IImageResolver imageResolver;
         private GMaps.GoogleMap googleMap;
         private TwoWayDictionary<Marker, GMaps.Model.Marker> markers;
         private TwoWayDictionary<TileOverlay, GMaps.Model.TileOverlay> tileOverlays;
@@ -26,6 +28,7 @@ namespace AppShell.NativeMaps.Mobile.Android
         {
             markers = new TwoWayDictionary<Marker, GMaps.Model.Marker>(new LambdaEqualityComparer<GMaps.Model.Marker>((m1, m2) => m1.Id == m2.Id));
             tileOverlays = new TwoWayDictionary<TileOverlay, GMaps.Model.TileOverlay>(new LambdaEqualityComparer<GMaps.Model.TileOverlay>((m1, m2) => m1.Id == m2.Id));
+            imageResolver = AppShell.ShellCore.Container.GetInstance<IImageResolver>();
         }
 
         protected override void OnElementChanged(ElementChangedEventArgs<MapView> e)
@@ -186,7 +189,18 @@ namespace AppShell.NativeMaps.Mobile.Android
             options.SetPosition(new LatLng(marker.Center.Latitude, marker.Center.Longitude));
 
             if (!string.IsNullOrEmpty(marker.Icon))
-                options.SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(marker.Icon)));
+            {
+                if (imageResolver != null)
+                {
+                    System.IO.Stream stream = imageResolver.Resolve(marker.Layer, marker.Icon);
+                    if (stream !=null)
+                        options.SetIcon(BitmapDescriptorFactory.FromBitmap(BitmapFactory.DecodeStream(stream)));
+                }
+                else
+                    options.SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(marker.Icon)));
+                if (marker.Label != null)
+                    CreateLabelMarker(marker);
+            }
 
             options.SetTitle(marker.Title);
             options.SetSnippet(marker.Content);
@@ -249,6 +263,37 @@ namespace AppShell.NativeMaps.Mobile.Android
         private void SetMapType()
         {
             googleMap.MapType = Element.MapType.ToNativeMapType();
+        }
+
+        private void CreateLabelMarker(Marker marker)
+        {
+            Paint labelTextPaint = new Paint();
+            labelTextPaint.Flags = PaintFlags.AntiAlias;
+            labelTextPaint.TextSize = 10.0f;
+            labelTextPaint.SetStyle(Paint.Style.Stroke);
+            labelTextPaint.Color = Xamarin.Forms.Color.White.ToAndroid();
+            labelTextPaint.StrokeWidth = 8.0f;
+
+            Rect boundsText = new Rect();
+            labelTextPaint.GetTextBounds(marker.Label, 0, marker.Label.Length, boundsText);
+            MarkerOptions options = new MarkerOptions();
+            options.SetPosition(new LatLng(marker.Center.Latitude, marker.Center.Longitude));
+            options.Anchor(0.5f,  0.0f);
+            Bitmap labelBitmap = Bitmap.CreateBitmap(boundsText.Width(), boundsText.Height() * 2, Bitmap.Config.Argb8888);
+
+            Canvas canvas = new Canvas(labelBitmap);
+            canvas.DrawText(marker.Label, 0, boundsText.Height() * 2, labelTextPaint);
+            labelTextPaint.SetStyle(Paint.Style.Fill);
+            labelTextPaint.Color = global::Android.Graphics.Color.DarkGray;
+            canvas.DrawText(marker.Label, 0, boundsText.Height() * 2, labelTextPaint);
+
+            options.SetIcon(BitmapDescriptorFactory.FromBitmap(labelBitmap));
+
+            markers.Add(new Marker()
+            {
+                Id = marker.Id + "-Label",
+                Center = marker.Center
+            }, googleMap.AddMarker(options));
         }
 
         private void NavigateTo()

@@ -269,7 +269,7 @@ namespace AppShell.NativeMaps.Mobile.Android
         {
             Paint labelTextPaint = new Paint();
             labelTextPaint.Flags = PaintFlags.AntiAlias;
-            labelTextPaint.TextSize = 10.0f;
+            labelTextPaint.TextSize = 20.0f;
             labelTextPaint.SetStyle(Paint.Style.Stroke);
             labelTextPaint.Color = Xamarin.Forms.Color.White.ToAndroid();
             labelTextPaint.StrokeWidth = 8.0f;

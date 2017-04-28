@@ -75,6 +75,20 @@ namespace AppShell.NativeMaps
             }
         }
 
+        private int symbolsize;
+        public int Symbolsize
+        {
+            get { return symbolsize; }
+            set
+            {
+                if (symbolsize != value)
+                {
+                    symbolsize = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         private bool draggable;
         public bool Draggable
         {

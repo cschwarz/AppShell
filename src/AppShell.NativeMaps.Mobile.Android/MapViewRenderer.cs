@@ -193,7 +193,9 @@ namespace AppShell.NativeMaps.Mobile.Android
                 if (imageResolver != null)
                 {
                     System.IO.Stream stream = imageResolver.Resolve(marker.Layer, marker.Icon);
-                    if (stream !=null)
+                    if (stream ==null)
+                        stream = imageResolver.Resolve(marker);
+                    if (stream != null)
                         options.SetIcon(BitmapDescriptorFactory.FromBitmap(BitmapFactory.DecodeStream(stream)));
                 }
                 else

@@ -41,6 +41,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Label.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="MapType.cs" />
     <Compile Include="Marker.cs" />

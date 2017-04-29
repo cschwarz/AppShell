@@ -269,25 +269,27 @@ namespace AppShell.NativeMaps.Mobile.Android
 
         private void CreateLabelMarker(Marker marker)
         {
+            if (marker.Label.Text == null)
+                return;
             Paint labelTextPaint = new Paint();
             labelTextPaint.Flags = PaintFlags.AntiAlias;
-            labelTextPaint.TextSize = marker.Symbolsize !=0 ? marker.Symbolsize/2.0f : 25.0f;
+            labelTextPaint.TextSize = marker.Label.TextSize != 0 ? marker.Label.TextSize : 25.0f;
             labelTextPaint.SetStyle(Paint.Style.Stroke);
             labelTextPaint.Color = Xamarin.Forms.Color.White.ToAndroid();
             labelTextPaint.StrokeWidth = 8.0f;
 
             Rect boundsText = new Rect();
-            labelTextPaint.GetTextBounds(marker.Label, 0, marker.Label.Length, boundsText);
+            labelTextPaint.GetTextBounds(marker.Label.Text, 0, marker.Label.Text.Length, boundsText);
             MarkerOptions options = new MarkerOptions();
             options.SetPosition(new LatLng(marker.Center.Latitude, marker.Center.Longitude));
-            options.Anchor(0.5f,  0.0f);
+            options.Anchor(marker.Label.AnchorPointX, marker.Label.AnchorPointY);
             Bitmap labelBitmap = Bitmap.CreateBitmap(boundsText.Width(), boundsText.Height() * 2, Bitmap.Config.Argb8888);
 
             Canvas canvas = new Canvas(labelBitmap);
-            canvas.DrawText(marker.Label, 0, boundsText.Height() * 2, labelTextPaint);
+            canvas.DrawText(marker.Label.Text, 0, boundsText.Height() * 2, labelTextPaint);
             labelTextPaint.SetStyle(Paint.Style.Fill);
             labelTextPaint.Color = global::Android.Graphics.Color.DarkGray;
-            canvas.DrawText(marker.Label, 0, boundsText.Height() * 2, labelTextPaint);
+            canvas.DrawText(marker.Label.Text, 0, boundsText.Height() * 2, labelTextPaint);
 
             options.SetIcon(BitmapDescriptorFactory.FromBitmap(labelBitmap));
 

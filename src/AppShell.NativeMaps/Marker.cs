@@ -75,20 +75,6 @@ namespace AppShell.NativeMaps
             }
         }
 
-        private int symbolsize;
-        public int Symbolsize
-        {
-            get { return symbolsize; }
-            set
-            {
-                if (symbolsize != value)
-                {
-                    symbolsize = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
         private bool draggable;
         public bool Draggable
         {
@@ -117,8 +103,8 @@ namespace AppShell.NativeMaps
             }
         }
 
-        private string label;
-        public string Label
+        private Label label;
+        public Label Label
         {
             get { return label; }
             set

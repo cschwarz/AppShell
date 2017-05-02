@@ -20,7 +20,9 @@ namespace AppShell.Data.Mobile.iOS
             if (!Directory.Exists(databaseDirectory))
                 Directory.CreateDirectory(databaseDirectory);
 
-            return new SQLiteConnection(databasePath);
+            SQLiteConnection sqlLiteConnection = new SQLiteConnection(databasePath);
+            sqlLiteConnection.BusyTimeout = System.TimeSpan.FromSeconds(30);
+            return sqlLiteConnection;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using CoreGraphics;
+using Foundation;
 using MapKit;
 using ObjCRuntime;
 using UIKit;
@@ -36,7 +37,8 @@ namespace AppShell.NativeMaps.Mobile.iOS
                     annotationView.CanShowCallout = true;
 
                 annotationView.Draggable = marker.Draggable;
-
+                if (!marker.Draggable)
+                    AddLabelSubView(marker, annotationView);
                 return annotationView;
             }
 
@@ -63,6 +65,20 @@ namespace AppShell.NativeMaps.Mobile.iOS
         {
             if (view.Annotation is MarkerAnnotation)
                 mapViewElement.SelectedMarker = mapViewRenderer.Markers[view.Annotation as MarkerAnnotation];
+        }
+
+        private void AddLabelSubView(Marker marker, MKAnnotationView annotationView)
+        {
+            if (annotationView == null || annotationView.Image == null)
+                return;
+            UILabel label = new UILabel();
+            label.TextAlignment = UITextAlignment.Center;
+            label.TextColor = UIColor.Black;
+            label.Font = UIFont.FromName("GillSans-Light", annotationView.Image.Size.Height / 2.0f);
+            label.Text = marker.Label.Text;
+            label.SizeToFit();
+            label.Frame = new CGRect(-label.Bounds.Width * 0.25, annotationView.Image.Size.Height, label.Bounds.Width, label.Bounds.Height);
+            annotationView.AddSubview(label);
         }
     }
 }

@@ -37,7 +37,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
                     annotationView.CanShowCallout = true;
 
                 annotationView.Draggable = marker.Draggable;
-                if (!marker.Draggable)
+                if (!marker.Draggable && marker.Label != null)
                     AddLabelSubView(marker, annotationView);
                 return annotationView;
             }

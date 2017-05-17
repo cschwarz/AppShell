@@ -24,8 +24,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
             if (annotation is MarkerAnnotation)
             {
                 Marker marker = (annotation as MarkerAnnotation).Marker;
-
-                MKAnnotationView annotationView = mapView.DequeueReusableAnnotation(annotationId);
+                MKAnnotationView annotationView = marker == null || (!marker.Draggable && marker.Label == null) ? mapView.DequeueReusableAnnotation(annotationId) : null;
 
                 if (annotationView == null)
                     annotationView = string.IsNullOrEmpty(marker.Icon) ? new MKPinAnnotationView(annotation, annotationId) : new MKAnnotationView(annotation, annotationId);

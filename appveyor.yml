@@ -11,7 +11,7 @@ assembly_info:
   file: '**\AssemblyInfo.*'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
-clone_folder: c:\projects\my-project
+clone_folder: c:\a
 init:
 #  - cd \
 #  - appveyor DownloadFile "http://dl.google.com/android/android-sdk_r24.4.1-windows.zip"

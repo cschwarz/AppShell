@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8191DD5A-EE1A-4489-A5BE-42486D01DFDC}"
 	ProjectSection(SolutionItems) = preProject
@@ -43,6 +43,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{97AC81CD-4EAD-4056-8369-BFAD21C72812}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NativeMaps", "NativeMaps", "{7499C756-2409-48B1-88CF-CA2FB8331360}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{BBD4E561-3D06-4A32-AD63-5E6F1861BECB}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\update-version.ps1 = scripts\update-version.ps1
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell", "src\AppShell\AppShell.csproj", "{DE3520C9-7226-4FFE-88F1-A72FFE6A88D3}"
 EndProject
@@ -139,11 +144,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Data.Mobile.Android", "src\AppShell.Data.Mobile.Android\AppShell.Data.Mobile.Android.csproj", "{E7466FFC-8878-447F-BF92-537CB57C6D08}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Data.Mobile.iOS", "src\AppShell.Data.Mobile.iOS\AppShell.Data.Mobile.iOS.csproj", "{B17319F1-3EDC-490E-A7BE-D506A46EA321}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{BBD4E561-3D06-4A32-AD63-5E6F1861BECB}"
-	ProjectSection(SolutionItems) = preProject
-		scripts\update-version.ps1 = scripts\update-version.ps1
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2387,5 +2387,8 @@ Global
 		{2A04126F-0BDA-444A-8B5C-5F96F9A22B83} = {DA3B3A42-8F3D-4AC8-B709-FA165215B746}
 		{E7466FFC-8878-447F-BF92-537CB57C6D08} = {DA3B3A42-8F3D-4AC8-B709-FA165215B746}
 		{B17319F1-3EDC-490E-A7BE-D506A46EA321} = {DA3B3A42-8F3D-4AC8-B709-FA165215B746}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97986905-D671-4E0E-BB22-1E8E7FBF78E7}
 	EndGlobalSection
 EndGlobal

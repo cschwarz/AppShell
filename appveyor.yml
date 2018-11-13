@@ -1,4 +1,5 @@
 configuration: Release
+image: Visual Studio 2017
 xamarin:
   email: christian.schwarz@refactory.at
   password:

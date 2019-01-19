@@ -18,6 +18,11 @@ namespace AppShell.NativeMaps
             }
         }
 
+        public double MapZoomLevel
+        {
+            get;set;
+        }
+
         private double zoomLevel;
         public double ZoomLevel
         {

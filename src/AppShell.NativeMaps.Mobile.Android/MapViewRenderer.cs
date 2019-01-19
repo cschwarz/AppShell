@@ -125,8 +125,7 @@ namespace AppShell.NativeMaps.Mobile.Android
 
         private void GoogleMap_CameraChange(object sender, GMaps.GoogleMap.CameraChangeEventArgs e)
         {
-            //Element.Center = new Location(e.Position.Target.Latitude, e.Position.Target.Longitude);
-            //Element.ZoomLevel = e.Position.Zoom;
+            Element.MapZoomLevel = e.Position.Zoom;
         }
 
         private void GoogleMap_MarkerClick(object sender, GMaps.GoogleMap.MarkerClickEventArgs e)
@@ -219,6 +218,16 @@ namespace AppShell.NativeMaps.Mobile.Android
 
             markers[marker].Remove();
             markers.Remove(marker);
+
+            if (marker.Label != null && marker.Id != null && markers.Any(m => m.Key.Id == marker.Id + "-Label"))
+            {
+                var labelMarker = markers.FirstOrDefault(m => m.Key.Id == marker.Id + "-Label");
+                if (labelMarker.Key != null)
+                {
+                    markers[labelMarker.Key].Remove();
+                    markers.Remove(labelMarker.Key);
+                }
+            }
         }
 
         private void AddTileOverlay(TileOverlay tileOverlay)

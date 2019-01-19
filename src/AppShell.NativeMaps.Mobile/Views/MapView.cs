@@ -7,6 +7,7 @@ namespace AppShell.NativeMaps.Mobile
     [View(typeof(MapViewModel))]
     public class MapView : View
     {
+        public static readonly BindableProperty MapZoomLevelProperty = BindableProperty.Create("MapZoomLevel", typeof(double), typeof(MapView), 10.0, BindingMode.TwoWay);
         public static readonly BindableProperty ZoomLevelProperty = BindableProperty.Create("ZoomLevel", typeof(double), typeof(MapView), 10.0, BindingMode.TwoWay);
         public static readonly BindableProperty CenterProperty = BindableProperty.Create("Center", typeof(Location), typeof(MapView), null, BindingMode.TwoWay);
         public static readonly BindableProperty MapTypeProperty = BindableProperty.Create("MapType", typeof(MapType), typeof(MapView), MapType.Roads);
@@ -15,6 +16,7 @@ namespace AppShell.NativeMaps.Mobile
         public static readonly BindableProperty SelectedMarkerProperty = BindableProperty.Create("SelectedMarker", typeof(Marker), typeof(MapView), null, BindingMode.TwoWay);
         public static readonly BindableProperty NavigationDestinationProperty = BindableProperty.Create("NavigationDestination", typeof(Location), typeof(MapView), null);
 
+        public double MapZoomLevel { get { return (double)GetValue(MapZoomLevelProperty); } set { SetValue(MapZoomLevelProperty, value); } }
         public double ZoomLevel { get { return (double)GetValue(ZoomLevelProperty); } set { SetValue(ZoomLevelProperty, value); } }
         public Location Center { get { return (Location)GetValue(CenterProperty); } set { SetValue(CenterProperty, value); } }
         public MapType MapType { get { return (MapType)GetValue(MapTypeProperty); } set { SetValue(MapTypeProperty, value); } }
@@ -30,6 +32,7 @@ namespace AppShell.NativeMaps.Mobile
 
         public MapView()
         {
+            SetBinding(MapZoomLevelProperty, new Binding("MapZoomLevel"));
             SetBinding(ZoomLevelProperty, new Binding("ZoomLevel"));
             SetBinding(CenterProperty, new Binding("Center"));
             SetBinding(MapTypeProperty, new Binding("MapType"));

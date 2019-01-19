@@ -2,6 +2,7 @@
 using Foundation;
 using MapKit;
 using ObjCRuntime;
+using System;
 using UIKit;
 
 namespace AppShell.NativeMaps.Mobile.iOS
@@ -56,8 +57,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
 
         public override void RegionChanged(MKMapView mapView, bool animated)
         {
-            //mapViewElement.ZoomLevel = Math.Log(45.0 * mapViewElement.Width / mapView.Region.Span.LongitudeDelta) / Math.Log(2) - 6.0;
-            //mapViewElement.Center = new Location(mapView.Region.Center.Latitude, mapView.Region.Center.Longitude);
+            mapViewElement.MapZoomLevel = Math.Log(45.0 * mapViewElement.Width / mapView.Region.Span.LongitudeDelta) / Math.Log(2) - 6.0;
         }
 
         public override void DidSelectAnnotationView(MKMapView mapView, MKAnnotationView view)

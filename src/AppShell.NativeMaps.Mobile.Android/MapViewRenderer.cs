@@ -200,7 +200,7 @@ namespace AppShell.NativeMaps.Mobile.Android
                 else
                     options.SetIcon(BitmapDescriptorFactory.FromResource(ResourceManager.GetDrawableByName(marker.Icon)));
                 if (marker.Label != null)
-                    CreateLabelMarker(marker);
+                    CreateLabel(marker);
             }
 
             options.SetTitle(marker.Title);
@@ -215,19 +215,11 @@ namespace AppShell.NativeMaps.Mobile.Android
         private void RemoveMarker(Marker marker)
         {
             marker.PropertyChanged -= Marker_PropertyChanged;
+            if (marker.Label != null)
+                RemoveLabel(marker);
 
             markers[marker].Remove();
             markers.Remove(marker);
-
-            if (marker.Label != null && marker.Id != null && markers.Any(m => m.Key.Id == marker.Id + "-Label"))
-            {
-                var labelMarker = markers.FirstOrDefault(m => m.Key.Id == marker.Id + "-Label");
-                if (labelMarker.Key != null)
-                {
-                    markers[labelMarker.Key].Remove();
-                    markers.Remove(labelMarker.Key);
-                }
-            }
         }
 
         private void AddTileOverlay(TileOverlay tileOverlay)
@@ -276,7 +268,7 @@ namespace AppShell.NativeMaps.Mobile.Android
             googleMap.MapType = Element.MapType.ToNativeMapType();
         }
 
-        private void CreateLabelMarker(Marker marker)
+        private void CreateLabel(Marker marker)
         {
             if (marker.Label.Text == null)
                 return;
@@ -307,6 +299,19 @@ namespace AppShell.NativeMaps.Mobile.Android
                 Id = marker.Id + "-Label",
                 Center = marker.Center
             }, googleMap.AddMarker(options));
+        }
+
+        private void RemoveLabel(Marker marker)
+        {
+            if (marker.Id != null && markers.Any(m => m.Key.Id == marker.Id + "-Label"))
+            {
+                var labelMarker = markers.FirstOrDefault(m => m.Key.Id == marker.Id + "-Label");
+                if (labelMarker.Key != null)
+                {
+                    markers[labelMarker.Key].Remove();
+                    markers.Remove(labelMarker.Key);
+                }
+            }
         }
 
         private void NavigateTo()

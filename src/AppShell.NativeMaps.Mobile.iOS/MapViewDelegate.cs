@@ -76,7 +76,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
             label.Font = UIFont.FromName("GillSans-Light", annotationView.Image.Size.Height / 2.0f);
             label.Text = marker.Label.Text;
             label.SizeToFit();
-            label.Frame = new CGRect(-label.Bounds.Width * 0.25, annotationView.Image.Size.Height, label.Bounds.Width, label.Bounds.Height);
+            label.Frame = new CGRect(-label.Bounds.Width * 0.25, annotationView.Image.Size.Height / 2.0f, label.Bounds.Width, label.Bounds.Height);
             annotationView.AddSubview(label);
         }
     }

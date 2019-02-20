@@ -256,10 +256,10 @@ namespace AppShell.NativeMaps.Mobile.Android
                 case "Content": markers[marker].Snippet = marker.Icon; break;
                 case "Draggable": markers[marker].Draggable = marker.Draggable; break;
             }
-            if (marker.Id != null && marker.Label != null && markers.Any(m => m.Key.Id == marker.Id + "-Label"))
+            if (e.PropertyName == "Center" && marker.Id != null && marker.Label != null)
             {
-                var labelMarker = markers.FirstOrDefault(m => m.Key.Id == marker.Id + "-Label");
-                markers[labelMarker.Key].Position = new LatLng(marker.Center.Latitude, marker.Center.Longitude);
+                RemoveLabel(marker);
+                CreateLabel(marker);
             }
 
         }

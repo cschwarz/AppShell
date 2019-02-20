@@ -3536,44 +3536,44 @@ namespace AppShell.NativeMaps.Mobile.Android
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f0b0004
-			public static int abc_config_activityDefaultDur = 2131427332;
+			// aapt resource value: 0x7f0a0004
+			public static int abc_config_activityDefaultDur = 2131361796;
 			
-			// aapt resource value: 0x7f0b0005
-			public static int abc_config_activityShortDur = 2131427333;
+			// aapt resource value: 0x7f0a0005
+			public static int abc_config_activityShortDur = 2131361797;
 			
-			// aapt resource value: 0x7f0b0009
-			public static int app_bar_elevation_anim_duration = 2131427337;
+			// aapt resource value: 0x7f0a0009
+			public static int app_bar_elevation_anim_duration = 2131361801;
 			
-			// aapt resource value: 0x7f0b000a
-			public static int bottom_sheet_slide_duration = 2131427338;
+			// aapt resource value: 0x7f0a000a
+			public static int bottom_sheet_slide_duration = 2131361802;
 			
-			// aapt resource value: 0x7f0b0006
-			public static int cancel_button_image_alpha = 2131427334;
+			// aapt resource value: 0x7f0a0006
+			public static int cancel_button_image_alpha = 2131361798;
 			
-			// aapt resource value: 0x7f0b0008
-			public static int design_snackbar_text_max_lines = 2131427336;
+			// aapt resource value: 0x7f0a0008
+			public static int design_snackbar_text_max_lines = 2131361800;
 			
-			// aapt resource value: 0x7f0b0000
-			public static int google_play_services_version = 2131427328;
+			// aapt resource value: 0x7f0a0000
+			public static int google_play_services_version = 2131361792;
 			
-			// aapt resource value: 0x7f0b000b
-			public static int hide_password_duration = 2131427339;
+			// aapt resource value: 0x7f0a000b
+			public static int hide_password_duration = 2131361803;
 			
-			// aapt resource value: 0x7f0b0001
-			public static int mr_controller_volume_group_list_animation_duration_ms = 2131427329;
+			// aapt resource value: 0x7f0a0001
+			public static int mr_controller_volume_group_list_animation_duration_ms = 2131361793;
 			
-			// aapt resource value: 0x7f0b0002
-			public static int mr_controller_volume_group_list_fade_in_duration_ms = 2131427330;
+			// aapt resource value: 0x7f0a0002
+			public static int mr_controller_volume_group_list_fade_in_duration_ms = 2131361794;
 			
-			// aapt resource value: 0x7f0b0003
-			public static int mr_controller_volume_group_list_fade_out_duration_ms = 2131427331;
+			// aapt resource value: 0x7f0a0003
+			public static int mr_controller_volume_group_list_fade_out_duration_ms = 2131361795;
 			
-			// aapt resource value: 0x7f0b000c
-			public static int show_password_duration = 2131427340;
+			// aapt resource value: 0x7f0a000c
+			public static int show_password_duration = 2131361804;
 			
-			// aapt resource value: 0x7f0b0007
-			public static int status_bar_notification_info_maxnum = 2131427335;
+			// aapt resource value: 0x7f0a0007
+			public static int status_bar_notification_info_maxnum = 2131361799;
 			
 			static Integer()
 			{
@@ -3818,248 +3818,248 @@ namespace AppShell.NativeMaps.Mobile.Android
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f0a0050
-			public static int ApplicationName = 2131361872;
+			// aapt resource value: 0x7f0b0050
+			public static int ApplicationName = 2131427408;
 			
-			// aapt resource value: 0x7f0a004f
-			public static int Hello = 2131361871;
+			// aapt resource value: 0x7f0b004f
+			public static int Hello = 2131427407;
 			
-			// aapt resource value: 0x7f0a0026
-			public static int abc_action_bar_home_description = 2131361830;
+			// aapt resource value: 0x7f0b0026
+			public static int abc_action_bar_home_description = 2131427366;
 			
-			// aapt resource value: 0x7f0a0027
-			public static int abc_action_bar_home_description_format = 2131361831;
+			// aapt resource value: 0x7f0b0027
+			public static int abc_action_bar_home_description_format = 2131427367;
 			
-			// aapt resource value: 0x7f0a0028
-			public static int abc_action_bar_home_subtitle_description_format = 2131361832;
+			// aapt resource value: 0x7f0b0028
+			public static int abc_action_bar_home_subtitle_description_format = 2131427368;
 			
-			// aapt resource value: 0x7f0a0029
-			public static int abc_action_bar_up_description = 2131361833;
+			// aapt resource value: 0x7f0b0029
+			public static int abc_action_bar_up_description = 2131427369;
 			
-			// aapt resource value: 0x7f0a002a
-			public static int abc_action_menu_overflow_description = 2131361834;
+			// aapt resource value: 0x7f0b002a
+			public static int abc_action_menu_overflow_description = 2131427370;
 			
-			// aapt resource value: 0x7f0a002b
-			public static int abc_action_mode_done = 2131361835;
+			// aapt resource value: 0x7f0b002b
+			public static int abc_action_mode_done = 2131427371;
 			
-			// aapt resource value: 0x7f0a002c
-			public static int abc_activity_chooser_view_see_all = 2131361836;
+			// aapt resource value: 0x7f0b002c
+			public static int abc_activity_chooser_view_see_all = 2131427372;
 			
-			// aapt resource value: 0x7f0a002d
-			public static int abc_activitychooserview_choose_application = 2131361837;
+			// aapt resource value: 0x7f0b002d
+			public static int abc_activitychooserview_choose_application = 2131427373;
 			
-			// aapt resource value: 0x7f0a002e
-			public static int abc_capital_off = 2131361838;
+			// aapt resource value: 0x7f0b002e
+			public static int abc_capital_off = 2131427374;
 			
-			// aapt resource value: 0x7f0a002f
-			public static int abc_capital_on = 2131361839;
+			// aapt resource value: 0x7f0b002f
+			public static int abc_capital_on = 2131427375;
 			
-			// aapt resource value: 0x7f0a003b
-			public static int abc_font_family_body_1_material = 2131361851;
+			// aapt resource value: 0x7f0b003b
+			public static int abc_font_family_body_1_material = 2131427387;
 			
-			// aapt resource value: 0x7f0a003c
-			public static int abc_font_family_body_2_material = 2131361852;
+			// aapt resource value: 0x7f0b003c
+			public static int abc_font_family_body_2_material = 2131427388;
 			
-			// aapt resource value: 0x7f0a003d
-			public static int abc_font_family_button_material = 2131361853;
+			// aapt resource value: 0x7f0b003d
+			public static int abc_font_family_button_material = 2131427389;
 			
-			// aapt resource value: 0x7f0a003e
-			public static int abc_font_family_caption_material = 2131361854;
+			// aapt resource value: 0x7f0b003e
+			public static int abc_font_family_caption_material = 2131427390;
 			
-			// aapt resource value: 0x7f0a003f
-			public static int abc_font_family_display_1_material = 2131361855;
+			// aapt resource value: 0x7f0b003f
+			public static int abc_font_family_display_1_material = 2131427391;
 			
-			// aapt resource value: 0x7f0a0040
-			public static int abc_font_family_display_2_material = 2131361856;
+			// aapt resource value: 0x7f0b0040
+			public static int abc_font_family_display_2_material = 2131427392;
 			
-			// aapt resource value: 0x7f0a0041
-			public static int abc_font_family_display_3_material = 2131361857;
+			// aapt resource value: 0x7f0b0041
+			public static int abc_font_family_display_3_material = 2131427393;
 			
-			// aapt resource value: 0x7f0a0042
-			public static int abc_font_family_display_4_material = 2131361858;
+			// aapt resource value: 0x7f0b0042
+			public static int abc_font_family_display_4_material = 2131427394;
 			
-			// aapt resource value: 0x7f0a0043
-			public static int abc_font_family_headline_material = 2131361859;
+			// aapt resource value: 0x7f0b0043
+			public static int abc_font_family_headline_material = 2131427395;
 			
-			// aapt resource value: 0x7f0a0044
-			public static int abc_font_family_menu_material = 2131361860;
+			// aapt resource value: 0x7f0b0044
+			public static int abc_font_family_menu_material = 2131427396;
 			
-			// aapt resource value: 0x7f0a0045
-			public static int abc_font_family_subhead_material = 2131361861;
+			// aapt resource value: 0x7f0b0045
+			public static int abc_font_family_subhead_material = 2131427397;
 			
-			// aapt resource value: 0x7f0a0046
-			public static int abc_font_family_title_material = 2131361862;
+			// aapt resource value: 0x7f0b0046
+			public static int abc_font_family_title_material = 2131427398;
 			
-			// aapt resource value: 0x7f0a0030
-			public static int abc_search_hint = 2131361840;
+			// aapt resource value: 0x7f0b0030
+			public static int abc_search_hint = 2131427376;
 			
-			// aapt resource value: 0x7f0a0031
-			public static int abc_searchview_description_clear = 2131361841;
+			// aapt resource value: 0x7f0b0031
+			public static int abc_searchview_description_clear = 2131427377;
 			
-			// aapt resource value: 0x7f0a0032
-			public static int abc_searchview_description_query = 2131361842;
+			// aapt resource value: 0x7f0b0032
+			public static int abc_searchview_description_query = 2131427378;
 			
-			// aapt resource value: 0x7f0a0033
-			public static int abc_searchview_description_search = 2131361843;
+			// aapt resource value: 0x7f0b0033
+			public static int abc_searchview_description_search = 2131427379;
 			
-			// aapt resource value: 0x7f0a0034
-			public static int abc_searchview_description_submit = 2131361844;
+			// aapt resource value: 0x7f0b0034
+			public static int abc_searchview_description_submit = 2131427380;
 			
-			// aapt resource value: 0x7f0a0035
-			public static int abc_searchview_description_voice = 2131361845;
+			// aapt resource value: 0x7f0b0035
+			public static int abc_searchview_description_voice = 2131427381;
 			
-			// aapt resource value: 0x7f0a0036
-			public static int abc_shareactionprovider_share_with = 2131361846;
+			// aapt resource value: 0x7f0b0036
+			public static int abc_shareactionprovider_share_with = 2131427382;
 			
-			// aapt resource value: 0x7f0a0037
-			public static int abc_shareactionprovider_share_with_application = 2131361847;
+			// aapt resource value: 0x7f0b0037
+			public static int abc_shareactionprovider_share_with_application = 2131427383;
 			
-			// aapt resource value: 0x7f0a0038
-			public static int abc_toolbar_collapse_description = 2131361848;
+			// aapt resource value: 0x7f0b0038
+			public static int abc_toolbar_collapse_description = 2131427384;
 			
-			// aapt resource value: 0x7f0a0047
-			public static int appbar_scrolling_view_behavior = 2131361863;
+			// aapt resource value: 0x7f0b0047
+			public static int appbar_scrolling_view_behavior = 2131427399;
 			
-			// aapt resource value: 0x7f0a0048
-			public static int bottom_sheet_behavior = 2131361864;
+			// aapt resource value: 0x7f0b0048
+			public static int bottom_sheet_behavior = 2131427400;
 			
-			// aapt resource value: 0x7f0a0049
-			public static int character_counter_pattern = 2131361865;
+			// aapt resource value: 0x7f0b0049
+			public static int character_counter_pattern = 2131427401;
 			
-			// aapt resource value: 0x7f0a0000
-			public static int common_google_play_services_enable_button = 2131361792;
+			// aapt resource value: 0x7f0b0001
+			public static int common_google_play_services_enable_button = 2131427329;
 			
-			// aapt resource value: 0x7f0a0001
-			public static int common_google_play_services_enable_text = 2131361793;
+			// aapt resource value: 0x7f0b0002
+			public static int common_google_play_services_enable_text = 2131427330;
 			
-			// aapt resource value: 0x7f0a0002
-			public static int common_google_play_services_enable_title = 2131361794;
+			// aapt resource value: 0x7f0b0003
+			public static int common_google_play_services_enable_title = 2131427331;
 			
-			// aapt resource value: 0x7f0a0003
-			public static int common_google_play_services_install_button = 2131361795;
+			// aapt resource value: 0x7f0b0004
+			public static int common_google_play_services_install_button = 2131427332;
 			
-			// aapt resource value: 0x7f0a0004
-			public static int common_google_play_services_install_text = 2131361796;
+			// aapt resource value: 0x7f0b0005
+			public static int common_google_play_services_install_text = 2131427333;
 			
-			// aapt resource value: 0x7f0a0005
-			public static int common_google_play_services_install_title = 2131361797;
+			// aapt resource value: 0x7f0b0006
+			public static int common_google_play_services_install_title = 2131427334;
 			
-			// aapt resource value: 0x7f0a0006
-			public static int common_google_play_services_notification_ticker = 2131361798;
+			// aapt resource value: 0x7f0b0007
+			public static int common_google_play_services_notification_ticker = 2131427335;
 			
-			// aapt resource value: 0x7f0a0010
-			public static int common_google_play_services_unknown_issue = 2131361808;
+			// aapt resource value: 0x7f0b0000
+			public static int common_google_play_services_unknown_issue = 2131427328;
 			
-			// aapt resource value: 0x7f0a0007
-			public static int common_google_play_services_unsupported_text = 2131361799;
+			// aapt resource value: 0x7f0b0008
+			public static int common_google_play_services_unsupported_text = 2131427336;
 			
-			// aapt resource value: 0x7f0a0008
-			public static int common_google_play_services_update_button = 2131361800;
+			// aapt resource value: 0x7f0b0009
+			public static int common_google_play_services_update_button = 2131427337;
 			
-			// aapt resource value: 0x7f0a0009
-			public static int common_google_play_services_update_text = 2131361801;
+			// aapt resource value: 0x7f0b000a
+			public static int common_google_play_services_update_text = 2131427338;
 			
-			// aapt resource value: 0x7f0a000a
-			public static int common_google_play_services_update_title = 2131361802;
+			// aapt resource value: 0x7f0b000b
+			public static int common_google_play_services_update_title = 2131427339;
 			
-			// aapt resource value: 0x7f0a000b
-			public static int common_google_play_services_updating_text = 2131361803;
+			// aapt resource value: 0x7f0b000c
+			public static int common_google_play_services_updating_text = 2131427340;
 			
-			// aapt resource value: 0x7f0a000c
-			public static int common_google_play_services_wear_update_text = 2131361804;
+			// aapt resource value: 0x7f0b000d
+			public static int common_google_play_services_wear_update_text = 2131427341;
 			
-			// aapt resource value: 0x7f0a000d
-			public static int common_open_on_phone = 2131361805;
+			// aapt resource value: 0x7f0b000e
+			public static int common_open_on_phone = 2131427342;
 			
-			// aapt resource value: 0x7f0a000e
-			public static int common_signin_button_text = 2131361806;
+			// aapt resource value: 0x7f0b000f
+			public static int common_signin_button_text = 2131427343;
 			
-			// aapt resource value: 0x7f0a000f
-			public static int common_signin_button_text_long = 2131361807;
+			// aapt resource value: 0x7f0b0010
+			public static int common_signin_button_text_long = 2131427344;
 			
-			// aapt resource value: 0x7f0a0011
-			public static int mr_button_content_description = 2131361809;
+			// aapt resource value: 0x7f0b0011
+			public static int mr_button_content_description = 2131427345;
 			
-			// aapt resource value: 0x7f0a0012
-			public static int mr_cast_button_connected = 2131361810;
+			// aapt resource value: 0x7f0b0012
+			public static int mr_cast_button_connected = 2131427346;
 			
-			// aapt resource value: 0x7f0a0013
-			public static int mr_cast_button_connecting = 2131361811;
+			// aapt resource value: 0x7f0b0013
+			public static int mr_cast_button_connecting = 2131427347;
 			
-			// aapt resource value: 0x7f0a0014
-			public static int mr_cast_button_disconnected = 2131361812;
+			// aapt resource value: 0x7f0b0014
+			public static int mr_cast_button_disconnected = 2131427348;
 			
-			// aapt resource value: 0x7f0a0015
-			public static int mr_chooser_searching = 2131361813;
+			// aapt resource value: 0x7f0b0015
+			public static int mr_chooser_searching = 2131427349;
 			
-			// aapt resource value: 0x7f0a0016
-			public static int mr_chooser_title = 2131361814;
+			// aapt resource value: 0x7f0b0016
+			public static int mr_chooser_title = 2131427350;
 			
-			// aapt resource value: 0x7f0a0017
-			public static int mr_controller_album_art = 2131361815;
+			// aapt resource value: 0x7f0b0017
+			public static int mr_controller_album_art = 2131427351;
 			
-			// aapt resource value: 0x7f0a0018
-			public static int mr_controller_casting_screen = 2131361816;
+			// aapt resource value: 0x7f0b0018
+			public static int mr_controller_casting_screen = 2131427352;
 			
-			// aapt resource value: 0x7f0a0019
-			public static int mr_controller_close_description = 2131361817;
+			// aapt resource value: 0x7f0b0019
+			public static int mr_controller_close_description = 2131427353;
 			
-			// aapt resource value: 0x7f0a001a
-			public static int mr_controller_collapse_group = 2131361818;
+			// aapt resource value: 0x7f0b001a
+			public static int mr_controller_collapse_group = 2131427354;
 			
-			// aapt resource value: 0x7f0a001b
-			public static int mr_controller_disconnect = 2131361819;
+			// aapt resource value: 0x7f0b001b
+			public static int mr_controller_disconnect = 2131427355;
 			
-			// aapt resource value: 0x7f0a001c
-			public static int mr_controller_expand_group = 2131361820;
+			// aapt resource value: 0x7f0b001c
+			public static int mr_controller_expand_group = 2131427356;
 			
-			// aapt resource value: 0x7f0a001d
-			public static int mr_controller_no_info_available = 2131361821;
+			// aapt resource value: 0x7f0b001d
+			public static int mr_controller_no_info_available = 2131427357;
 			
-			// aapt resource value: 0x7f0a001e
-			public static int mr_controller_no_media_selected = 2131361822;
+			// aapt resource value: 0x7f0b001e
+			public static int mr_controller_no_media_selected = 2131427358;
 			
-			// aapt resource value: 0x7f0a001f
-			public static int mr_controller_pause = 2131361823;
+			// aapt resource value: 0x7f0b001f
+			public static int mr_controller_pause = 2131427359;
 			
-			// aapt resource value: 0x7f0a0020
-			public static int mr_controller_play = 2131361824;
+			// aapt resource value: 0x7f0b0020
+			public static int mr_controller_play = 2131427360;
 			
-			// aapt resource value: 0x7f0a0025
-			public static int mr_controller_stop = 2131361829;
+			// aapt resource value: 0x7f0b0025
+			public static int mr_controller_stop = 2131427365;
 			
-			// aapt resource value: 0x7f0a0021
-			public static int mr_controller_stop_casting = 2131361825;
+			// aapt resource value: 0x7f0b0021
+			public static int mr_controller_stop_casting = 2131427361;
 			
-			// aapt resource value: 0x7f0a0022
-			public static int mr_controller_volume_slider = 2131361826;
+			// aapt resource value: 0x7f0b0022
+			public static int mr_controller_volume_slider = 2131427362;
 			
-			// aapt resource value: 0x7f0a0023
-			public static int mr_system_route_name = 2131361827;
+			// aapt resource value: 0x7f0b0023
+			public static int mr_system_route_name = 2131427363;
 			
-			// aapt resource value: 0x7f0a0024
-			public static int mr_user_route_category_name = 2131361828;
+			// aapt resource value: 0x7f0b0024
+			public static int mr_user_route_category_name = 2131427364;
 			
-			// aapt resource value: 0x7f0a004a
-			public static int password_toggle_content_description = 2131361866;
+			// aapt resource value: 0x7f0b004a
+			public static int password_toggle_content_description = 2131427402;
 			
-			// aapt resource value: 0x7f0a004b
-			public static int path_password_eye = 2131361867;
+			// aapt resource value: 0x7f0b004b
+			public static int path_password_eye = 2131427403;
 			
-			// aapt resource value: 0x7f0a004c
-			public static int path_password_eye_mask_strike_through = 2131361868;
+			// aapt resource value: 0x7f0b004c
+			public static int path_password_eye_mask_strike_through = 2131427404;
 			
-			// aapt resource value: 0x7f0a004d
-			public static int path_password_eye_mask_visible = 2131361869;
+			// aapt resource value: 0x7f0b004d
+			public static int path_password_eye_mask_visible = 2131427405;
 			
-			// aapt resource value: 0x7f0a004e
-			public static int path_password_strike_through = 2131361870;
+			// aapt resource value: 0x7f0b004e
+			public static int path_password_strike_through = 2131427406;
 			
-			// aapt resource value: 0x7f0a0039
-			public static int search_menu_title = 2131361849;
+			// aapt resource value: 0x7f0b0039
+			public static int search_menu_title = 2131427385;
 			
-			// aapt resource value: 0x7f0a003a
-			public static int status_bar_notification_info_overflow = 2131361850;
+			// aapt resource value: 0x7f0b003a
+			public static int status_bar_notification_info_overflow = 2131427386;
 			
 			static String()
 			{

@@ -136,10 +136,10 @@ namespace AppShell.NativeMaps.Mobile.iOS
         private void RemoveMarker(Marker marker)
         {
             marker.PropertyChanged -= Marker_PropertyChanged;
-
-            Control.RemoveAnnotation(Markers[marker]);
-            
-            Markers.Remove(marker);
+            if (Markers.ContainsKey(marker)){
+                Control.RemoveAnnotation(Markers[marker]);
+                Markers.Remove(marker);
+            }
         }
 
         private void AddTileOverlay(TileOverlay tileOverlay)

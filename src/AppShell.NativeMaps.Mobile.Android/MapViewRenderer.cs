@@ -219,8 +219,11 @@ namespace AppShell.NativeMaps.Mobile.Android
             if (marker.Label != null)
                 RemoveLabel(marker);
 
-            markers[marker].Remove();
-            markers.Remove(marker);
+            if (markers.ContainsKey(marker))
+            {
+                markers[marker].Remove();
+                markers.Remove(marker);
+            }
         }
 
         private void AddTileOverlay(TileOverlay tileOverlay)

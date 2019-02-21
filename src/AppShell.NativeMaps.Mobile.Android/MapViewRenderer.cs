@@ -186,6 +186,8 @@ namespace AppShell.NativeMaps.Mobile.Android
         private void AddMarker(Marker marker)
         {
             MarkerOptions options = new MarkerOptions();
+            if (marker.ZIndex.HasValue)
+                options.InvokeZIndex(marker.ZIndex.Value);
             options.SetPosition(new LatLng(marker.Center.Latitude, marker.Center.Longitude));
 
             if (!string.IsNullOrEmpty(marker.Icon))
@@ -259,10 +261,11 @@ namespace AppShell.NativeMaps.Mobile.Android
                 case "Content": markers[marker].Snippet = marker.Icon; break;
                 case "Draggable": markers[marker].Draggable = marker.Draggable; break;
             }
-            if (e.PropertyName == "Center" && marker.Id != null && marker.Label != null)
+            if (e.PropertyName == "Center" && marker.Id != null && marker.Label != null && markers.Any(m => m.Key.Id == marker.Id + "-Label"))
             {
-                RemoveLabel(marker);
-                CreateLabel(marker);
+                var labelMarker = markers.FirstOrDefault(m => m.Key.Id == marker.Id + "-Label");
+                if (labelMarker.Key != null)
+                    markers[labelMarker.Key].Position = new LatLng(marker.Center.Latitude, marker.Center.Longitude);
             }
 
         }
@@ -292,6 +295,8 @@ namespace AppShell.NativeMaps.Mobile.Android
             Rect boundsText = new Rect();
             labelTextPaint.GetTextBounds(marker.Label.Text, 0, marker.Label.Text.Length, boundsText);
             MarkerOptions options = new MarkerOptions();
+            if (marker.ZIndex.HasValue)
+                options.InvokeZIndex(marker.ZIndex.Value - 0.1f);
             options.SetPosition(new LatLng(marker.Center.Latitude, marker.Center.Longitude));
             options.Anchor(marker.Label.AnchorPointX, marker.Label.AnchorPointY);
             Bitmap labelBitmap = Bitmap.CreateBitmap(boundsText.Width(), boundsText.Height() * 2, Bitmap.Config.Argb8888);
@@ -303,7 +308,6 @@ namespace AppShell.NativeMaps.Mobile.Android
             canvas.DrawText(marker.Label.Text, 0, boundsText.Height() * 2, labelTextPaint);
 
             options.SetIcon(BitmapDescriptorFactory.FromBitmap(labelBitmap));
-
             markers.Add(new Marker()
             {
                 Id = marker.Id + "-Label",

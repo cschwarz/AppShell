@@ -103,6 +103,20 @@ namespace AppShell.NativeMaps
             }
         }
 
+        private int? zIndex;
+        public int? ZIndex
+        {
+            get { return zIndex; }
+            set
+            {
+                if (zIndex != value)
+                {
+                    zIndex = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         private Label label;
         public Label Label
         {

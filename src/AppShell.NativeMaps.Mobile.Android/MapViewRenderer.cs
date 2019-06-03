@@ -4,7 +4,6 @@ using Android.Graphics;
 using Android.Net;
 using AppShell.NativeMaps.Mobile;
 using AppShell.NativeMaps.Mobile.Android;
-using System;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;

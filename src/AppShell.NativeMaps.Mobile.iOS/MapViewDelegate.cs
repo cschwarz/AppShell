@@ -52,7 +52,24 @@ namespace AppShell.NativeMaps.Mobile.iOS
             if (nsObject is MKTileOverlay)
                 return new MKTileOverlayRenderer((MKTileOverlay)nsObject);
 
+            if (overlay is MKPolyline)
+            {
+                Polyline polyline = mapViewRenderer.Overlays[overlay] as Polyline;
+                return GetPolylineRenderer(overlay as MKPolyline, polyline.StrokeColor, polyline.StrokeWidth);
+            }
+
             return null;
+        }
+
+        private MKPolylineRenderer GetPolylineRenderer(MKPolyline polyline, string strokeColor, float? strokeWidth)
+        {
+            MKPolylineRenderer renderer = new MKPolylineRenderer(polyline);
+            if (strokeColor != null) {
+                var color = Xamarin.Forms.Color.FromHex(strokeColor);
+                renderer.StrokeColor = UIColor.FromRGBA((float)color.R, (float)color.G, (float)color.B, (float)color.A);
+            }
+            renderer.LineWidth = strokeWidth.HasValue ? strokeWidth.Value : 1.0f;
+            return renderer;
         }
 
         public override void RegionChanged(MKMapView mapView, bool animated)

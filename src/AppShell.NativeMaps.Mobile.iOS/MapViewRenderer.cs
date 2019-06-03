@@ -17,11 +17,13 @@ namespace AppShell.NativeMaps.Mobile.iOS
     public class MapViewRenderer : ViewRenderer<MapView, MKMapView>
     {
         public TwoWayDictionary<Marker, MarkerAnnotation> Markers { get; private set; }
+        public TwoWayDictionary<Marker, IMKOverlay> Overlays { get; private set; }
         public TwoWayDictionary<TileOverlay, MKTileOverlay> TileOverlays { get; private set; }
 
         public MapViewRenderer()
         {
             Markers = new TwoWayDictionary<Marker, MarkerAnnotation>();
+            Overlays = new TwoWayDictionary<Marker, IMKOverlay>();
             TileOverlays = new TwoWayDictionary<TileOverlay, MKTileOverlay>();
         }
 
@@ -126,11 +128,23 @@ namespace AppShell.NativeMaps.Mobile.iOS
 
         private void AddMarker(Marker marker)
         {
+            if (marker is Polyline)
+            {
+                AddPolyline(marker as Polyline);
+                return;
+            }
             MarkerAnnotation annotation = new MarkerAnnotation(marker);
             Control.AddAnnotation(annotation);
             Markers.Add(marker, annotation);
 
             marker.PropertyChanged += Marker_PropertyChanged;
+        }
+
+        private void AddPolyline(Polyline polyline)
+        {
+            MKPolyline naitivePolyline = MKPolyline.FromCoordinates(polyline.Points.Select(p => new CLLocationCoordinate2D(p.Latitude, p.Longitude)).ToArray());
+            Overlays.Add(polyline, naitivePolyline);
+            Control.InsertOverlay(naitivePolyline, (nuint)polyline.ZIndex, MKOverlayLevel.AboveLabels);
         }
 
         private void RemoveMarker(Marker marker)

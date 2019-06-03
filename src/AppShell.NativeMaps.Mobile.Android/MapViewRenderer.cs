@@ -4,6 +4,7 @@ using Android.Graphics;
 using Android.Net;
 using AppShell.NativeMaps.Mobile;
 using AppShell.NativeMaps.Mobile.Android;
+using System;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
@@ -12,6 +13,7 @@ using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using GMaps = Android.Gms.Maps;
+using Graphics = Android.Graphics;
 
 [assembly: ExportRenderer(typeof(MapView), typeof(MapViewRenderer))]
 
@@ -185,6 +187,12 @@ namespace AppShell.NativeMaps.Mobile.Android
 
         private void AddMarker(Marker marker)
         {
+            if (marker is Polyline)
+            {
+                AddPolyline(marker as Polyline);
+                return;
+            }
+
             MarkerOptions options = new MarkerOptions();
             if (marker.ZIndex.HasValue)
                 options.InvokeZIndex(marker.ZIndex.Value);
@@ -213,6 +221,19 @@ namespace AppShell.NativeMaps.Mobile.Android
             markers.Add(marker, googleMap.AddMarker(options));
 
             marker.PropertyChanged += Marker_PropertyChanged;
+        }
+
+        private void AddPolyline(Polyline polyline)
+        {
+                PolylineOptions options = new PolylineOptions();
+                options.Add(polyline.Points.Select(p => new LatLng(p.Latitude, p.Longitude)).ToArray());
+                if (polyline.ZIndex.HasValue)
+                    options.InvokeZIndex(polyline.ZIndex.Value);
+                if (polyline.StrokeColor != null)
+                    options.InvokeColor(Graphics.Color.ParseColor(polyline.StrokeColor));
+                if (polyline.StrokeWidth.HasValue)
+                    options.InvokeWidth(polyline.StrokeWidth.Value);
+                googleMap.AddPolyline(options);
         }
 
         private void RemoveMarker(Marker marker)

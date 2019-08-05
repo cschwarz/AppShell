@@ -142,6 +142,8 @@ namespace AppShell.NativeMaps.Mobile.iOS
 
         private void AddPolyline(Polyline polyline)
         {
+            if (Overlays.ContainsKey(polyline))
+                return;
             MKPolyline naitivePolyline = MKPolyline.FromCoordinates(polyline.Points.Select(p => new CLLocationCoordinate2D(p.Latitude, p.Longitude)).ToArray());
             Overlays.Add(polyline, naitivePolyline);
             Control.InsertOverlay(naitivePolyline, (nuint)polyline.ZIndex, MKOverlayLevel.AboveLabels);

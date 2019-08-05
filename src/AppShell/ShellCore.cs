@@ -117,6 +117,8 @@ namespace AppShell
 
         public void Pop()
         {
+            if (!Shells.Any())
+                return;
             Shells.Remove(Shells.Last());
             ActiveShell = Shells.Last();
 

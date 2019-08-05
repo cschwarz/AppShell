@@ -87,6 +87,8 @@ namespace AppShell
 
         public void Pop()
         {
+            if (Items.Count() == 1)
+                return;
             IViewModel viewModel = Items.Last();
             viewModel.Dispose();
 

@@ -85,9 +85,11 @@ namespace AppShell
                 ViewModelPushed(this, viewModel);
         }
 
-        public void Pop()
+        public void Pop(bool clear = false)
         {
-            if (Items.Count() == 1)
+            if (Items.Count() == 1 && !clear)
+                return;
+            if (!Items.Any())
                 return;
             IViewModel viewModel = Items.Last();
             viewModel.Dispose();

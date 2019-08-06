@@ -12,7 +12,7 @@ namespace AppShell
         [ServiceMethod("push")]
         void Push(string viewModelType, Dictionary<string, object> data = null, bool replace = false);
         [ServiceMethod("pop")]
-        void Pop();
+        void Pop(bool clear = false);
         [ServiceMethod("popToRoot")]
         void PopToRoot();
         [ServiceMethod("getActive")]

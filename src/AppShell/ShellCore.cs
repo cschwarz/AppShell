@@ -120,6 +120,8 @@ namespace AppShell
             if (!Shells.Any())
                 return;
             Shells.Remove(Shells.Last());
+            if (!Shells.Any())
+                return;
             ActiveShell = Shells.Last();
 
             ActiveShell.OnActivated();

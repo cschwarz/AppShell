@@ -169,8 +169,7 @@ namespace AppShell.NativeMaps.Mobile.iOS
                 MKTileOverlay overlay = new MKTileOverlay((tileOverlay as UrlTileOverlay).Url);
                 overlay.CanReplaceMapContent = true;
                 overlay.TileSize = new CoreGraphics.CGSize(tileOverlay.TileWidth, tileOverlay.TileHeight);
-                Control.AddOverlay(overlay, MKOverlayLevel.AboveLabels);
-
+                Control.InsertOverlay(overlay, 0);
                 TileOverlays.Add(tileOverlay, overlay);
             }
         }

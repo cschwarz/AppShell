@@ -292,7 +292,7 @@ namespace AppShell.NativeMaps.Mobile.Android
 
         private void SetCenter()
         {
-            if (Element.Center != null)
+            if (Element != null && Element.Center != null)
                 googleMap.MoveCamera(GMaps.CameraUpdateFactory.NewLatLngZoom(new LatLng(Element.Center.Latitude, Element.Center.Longitude), (float)Element.ZoomLevel));
         }
 
